@@ -1,0 +1,342 @@
+[
+  {
+    "id": 44,
+    "zh": "核能燃料",
+    "en": "Enriched Uranium"
+  },
+  {
+    "id": 2312,
+    "zh": "超张力塑料",
+    "en": "Supertensile Plastics"
+  },
+  {
+    "id": 2317,
+    "zh": "氧化物",
+    "en": "Oxides"
+  },
+  {
+    "id": 2319,
+    "zh": "培养基",
+    "en": "Test Cultures"
+  },
+  {
+    "id": 2321,
+    "zh": "聚芳酰胺",
+    "en": "Polyaramids"
+  },
+  {
+    "id": 2327,
+    "zh": "微纤维护盾",
+    "en": "Microfiber Shielding"
+  },
+  {
+    "id": 2328,
+    "zh": "水冷CPU",
+    "en": "Water-Cooled CPU"
+  },
+  {
+    "id": 2329,
+    "zh": "生物电池",
+    "en": "Biocells"
+  },
+  {
+    "id": 2344,
+    "zh": "凝缩液",
+    "en": "Condensates"
+  },
+  {
+    "id": 2345,
+    "zh": "监控无人机",
+    "en": "Camera Drones"
+  },
+  {
+    "id": 2346,
+    "zh": "合成神经键",
+    "en": "Synthetic Synapses"
+  },
+  {
+    "id": 2348,
+    "zh": "凝胶基质生物胶",
+    "en": "Gel-Matrix Biopaste"
+  },
+  {
+    "id": 2349,
+    "zh": "超级计算机",
+    "en": "Supercomputers"
+  },
+  {
+    "id": 2351,
+    "zh": "灵巧单元建筑模块",
+    "en": "Smartfab Units"
+  },
+  {
+    "id": 2352,
+    "zh": "核反应堆",
+    "en": "Nuclear Reactors"
+  },
+  {
+    "id": 2354,
+    "zh": "控制面板",
+    "en": "Neocoms"
+  },
+  {
+    "id": 2358,
+    "zh": "生物技术研究报告",
+    "en": "Biotech Research Reports"
+  },
+  {
+    "id": 2360,
+    "zh": "工业炸药",
+    "en": "Industrial Explosives"
+  },
+  {
+    "id": 2361,
+    "zh": "密封薄膜",
+    "en": "Hermetic Membranes"
+  },
+  {
+    "id": 2366,
+    "zh": "危险物探测系统",
+    "en": "Hazmat Detection Systems"
+  },
+  {
+    "id": 2367,
+    "zh": "冷冻保存防腐剂",
+    "en": "Cryoprotectant Solution"
+  },
+  {
+    "id": 2389,
+    "zh": "等离子体团",
+    "en": "Plasmoids"
+  },
+  {
+    "id": 2390,
+    "zh": "电解物",
+    "en": "Electrolytes"
+  },
+  {
+    "id": 2392,
+    "zh": "氧化剂",
+    "en": "Oxidizing Compound"
+  },
+  {
+    "id": 2393,
+    "zh": "细菌",
+    "en": "Bacteria"
+  },
+  {
+    "id": 2395,
+    "zh": "蛋白质",
+    "en": "Proteins"
+  },
+  {
+    "id": 2396,
+    "zh": "生物燃料",
+    "en": "Biofuels"
+  },
+  {
+    "id": 2397,
+    "zh": "工业纤维",
+    "en": "Industrial Fibers"
+  },
+  {
+    "id": 2398,
+    "zh": "反应金属",
+    "en": "Reactive Metals"
+  },
+  {
+    "id": 2399,
+    "zh": "稀有金属",
+    "en": "Precious Metals"
+  },
+  {
+    "id": 2400,
+    "zh": "有毒金属",
+    "en": "Toxic Metals"
+  },
+  {
+    "id": 2401,
+    "zh": "手性结构",
+    "en": "Chiral Structures"
+  },
+  {
+    "id": 2463,
+    "zh": "纳米体",
+    "en": "Nanites"
+  },
+  {
+    "id": 2867,
+    "zh": "广播节点",
+    "en": "Broadcast Node"
+  },
+  {
+    "id": 2868,
+    "zh": "反破损快速反应无人机",
+    "en": "Integrity Response Drones"
+  },
+  {
+    "id": 2869,
+    "zh": "纳米-工厂",
+    "en": "Nano-Factory"
+  },
+  {
+    "id": 2870,
+    "zh": "有机砂浆喷注器",
+    "en": "Organic Mortar Applicators"
+  },
+  {
+    "id": 2871,
+    "zh": "递推计算模块",
+    "en": "Recursive Computing Module"
+  },
+  {
+    "id": 2872,
+    "zh": "自协调能源核心",
+    "en": "Self-Harmonizing Power Core"
+  },
+  {
+    "id": 2875,
+    "zh": "无菌管道",
+    "en": "Sterile Conduits"
+  },
+  {
+    "id": 2876,
+    "zh": "湿件主机",
+    "en": "Wetware Mainframe"
+  },
+  {
+    "id": 3645,
+    "zh": "水",
+    "en": "Water"
+  },
+  {
+    "id": 3683,
+    "zh": "氧",
+    "en": "Oxygen"
+  },
+  {
+    "id": 3689,
+    "zh": "机械元件",
+    "en": "Mechanical Parts"
+  },
+  {
+    "id": 3691,
+    "zh": "合成油",
+    "en": "Synthetic Oil"
+  },
+  {
+    "id": 3693,
+    "zh": "肥料",
+    "en": "Fertilizer"
+  },
+  {
+    "id": 3695,
+    "zh": "合成纺织品",
+    "en": "Polytextiles"
+  },
+  {
+    "id": 3697,
+    "zh": "硅酸盐玻璃",
+    "en": "Silicate Glass"
+  },
+  {
+    "id": 3725,
+    "zh": "家畜",
+    "en": "Livestock"
+  },
+  {
+    "id": 3775,
+    "zh": "病原体",
+    "en": "Viral Agent"
+  },
+  {
+    "id": 3779,
+    "zh": "生物质",
+    "en": "Biomass"
+  },
+  {
+    "id": 3828,
+    "zh": "建筑模块",
+    "en": "Construction Blocks"
+  },
+  {
+    "id": 9828,
+    "zh": "硅",
+    "en": "Silicon"
+  },
+  {
+    "id": 9830,
+    "zh": "火箭燃料",
+    "en": "Rocket Fuel"
+  },
+  {
+    "id": 9832,
+    "zh": "冷却剂",
+    "en": "Coolant"
+  },
+  {
+    "id": 9834,
+    "zh": "制导系统",
+    "en": "Guidance Systems"
+  },
+  {
+    "id": 9836,
+    "zh": "消费级电器",
+    "en": "Consumer Electronics"
+  },
+  {
+    "id": 9838,
+    "zh": "超导体",
+    "en": "Superconductors"
+  },
+  {
+    "id": 9840,
+    "zh": "传信器",
+    "en": "Transmitter"
+  },
+  {
+    "id": 9842,
+    "zh": "微型电子元件",
+    "en": "Miniature Electronics"
+  },
+  {
+    "id": 9846,
+    "zh": "大气内穿梭机",
+    "en": "Planetary Vehicles"
+  },
+  {
+    "id": 9848,
+    "zh": "机器人技术",
+    "en": "Robotics"
+  },
+  {
+    "id": 12836,
+    "zh": "透颅微控器",
+    "en": "Transcranial Microcontrollers"
+  },
+  {
+    "id": 15317,
+    "zh": "基因肉制品",
+    "en": "Genetically Enhanced Livestock"
+  },
+  {
+    "id": 17136,
+    "zh": "乌克米超导体",
+    "en": "Ukomi Superconductors"
+  },
+  {
+    "id": 17392,
+    "zh": "数据芯片",
+    "en": "Data Chips"
+  },
+  {
+    "id": 17898,
+    "zh": "高科技传信器",
+    "en": "High-Tech Transmitters"
+  },
+  {
+    "id": 28974,
+    "zh": "疫苗",
+    "en": "Vaccines"
+  }
+]
