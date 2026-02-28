@@ -1,12 +1,13 @@
 import configparser
 import csv
 import json
+import math
 import subprocess
 import sys
 from pathlib import Path
 
-from Utilities.name_mapping import id_to_name, name_to_id
-from pulp import LpInteger, LpMaximize, LpProblem, LpVariable, PULP_CBC_CMD, lpSum
+from Utilities.name_mapping import id_to_name, load_types_map, name_to_id
+from pulp import LpInteger, LpMaximize, LpProblem, LpStatus, LpVariable, PULP_CBC_CMD, lpSum
 
 
 def find_repo_root() -> Path:
@@ -32,23 +33,47 @@ def load_config(config_path: Path):
 def load_provider(provider_csv: Path):
     provider_dict = {}
     with provider_csv.open("r", encoding="utf-8") as f:
-        for row in csv.reader(f, delimiter="\t"):
-            if len(row) < 2:
+        for raw_line in f:
+            line = raw_line.strip()
+            if not line:
                 continue
-            provider_dict[row[0].strip()] = int(row[1])
+
+            if "	" in line:
+                parts = [part.strip() for part in line.split("	") if part.strip()]
+            else:
+                parts = line.split()
+
+            if len(parts) < 2:
+                continue
+
+            name = parts[0]
+            qty_text = "".join(parts[1:]).replace(",", "").replace("，", "")
+            if not qty_text.isdigit():
+                continue
+
+            provider_dict[name] = int(qty_text)
     return provider_dict
+
+
+def normalize_reprocessing_eff(eff: float) -> float:
+    if eff <= 0:
+        raise ValueError(f"无效精炼效率 eff={eff}，必须大于0")
+    if eff > 1:
+        return eff / 100
+    return eff
 
 
 def load_reprocessing_data(path: Path, eff: float):
     with path.open("r", encoding="utf-8") as f:
         reprocessing_data = json.load(f)
 
+    norm_eff = normalize_reprocessing_eff(eff)
     ore_to_materials = {ore["id"]: ore.get("materials", []) for ore in reprocessing_data}
     for ore_id, mats in ore_to_materials.items():
         for mat in mats:
-            mat["quantity"] = round(mat["quantity"] * eff)
+            mat["quantity"] = max(0, math.floor(mat["quantity"] * norm_eff))
 
-    return reprocessing_data, ore_to_materials
+    return reprocessing_data, ore_to_materials, norm_eff
 
 
 def load_prices(price_json: Path):
@@ -69,23 +94,26 @@ def load_preset_type_ids(preset_json: Path, alias_json: Path, preset_name: str, 
         raise ValueError(f"preset 不存在: {preset_name}")
 
     type_ids = set()
-    local_types_map: dict[int, dict] = {}
+    preset_types_map: dict[int, dict] = {}
     for alias in preset.get("children", []):
         rel_path = alias_map.get(alias)
         if not rel_path:
             raise ValueError(f"alias 不存在: {alias}")
-        with (repo_root / rel_path).open("r", encoding="utf-8") as f:
-            items = json.load(f)
-        for item in items:
-            tid = int(item["id"])
-            type_ids.add(tid)
-            local_types_map[tid] = {
-                "zh": item.get("zh", str(tid)),
-                "en": item.get("en", f"UNKNOWN_{tid}"),
-            }
+        child_types_map = load_types_map(repo_root / rel_path)
+        type_ids.update(child_types_map.keys())
+        preset_types_map.update(child_types_map)
 
-    return type_ids, id_to_name(local_types_map)
+    return type_ids, preset_types_map, id_to_name(preset_types_map)
 
+
+
+
+def dump_temp_json(temp_dir: Path, file_name: str, payload):
+    temp_dir.mkdir(parents=True, exist_ok=True)
+    path = temp_dir / file_name
+    with path.open("w", encoding="utf-8") as f:
+        json.dump(payload, f, ensure_ascii=False, indent=2)
+    print(f"[DEBUG] 已写入中间数据: {path}")
 
 def run_price_fetcher(repo_root: Path, preset_name: str, region_id: int, request_interval: float):
     script = repo_root / "Utilities" / "get_price_by_preset.py"
@@ -100,6 +128,25 @@ def run_price_fetcher(repo_root: Path, preset_name: str, region_id: int, request
     ]
     subprocess.run(cmd, cwd=repo_root, check=True)
 
+
+
+
+def build_provider_ore_mapping(provider_names, reprocessing_data):
+    ore_name_to_id = {ore.get("zh"): ore.get("id") for ore in reprocessing_data if ore.get("zh")}
+    provider_to_ore_id = {}
+    for pname in provider_names:
+        ore_id = ore_name_to_id.get(pname)
+        if ore_id is None:
+            ore_id = next(
+                (
+                    o["id"]
+                    for o in reprocessing_data
+                    if (o.get("zh") and (o["zh"] in pname or pname in o["zh"]))
+                ),
+                None,
+            )
+        provider_to_ore_id[pname] = ore_id
+    return provider_to_ore_id
 
 def main():
     repo_root = find_repo_root()
@@ -122,10 +169,17 @@ def main():
         cache_market_dir = repo_root / cache_market_dir
     cache_market = cache_market_dir / f"{preset_name}_region_{region_id}.json"
 
-    provider_dict = load_provider(provider_csv)
-    reprocessing_data, ore_to_materials = load_reprocessing_data(reprocessing_json, eff)
+    temp_dir = Path(config.get("paths", "temp_cache_dir", fallback="Cache/Temp"))
+    if not temp_dir.is_absolute():
+        temp_dir = repo_root / temp_dir
 
-    preset_type_ids, mineral_id_to_name = load_preset_type_ids(preset_json, alias_json, preset_name, repo_root)
+    provider_dict = load_provider(provider_csv)
+    reprocessing_data, ore_to_materials, norm_eff = load_reprocessing_data(reprocessing_json, eff)
+    provider_to_ore_id = build_provider_ore_mapping(provider_dict.keys(), reprocessing_data)
+
+    preset_type_ids, preset_types_map, mineral_id_to_name = load_preset_type_ids(
+        preset_json, alias_json, preset_name, repo_root
+    )
 
     if not cache_market.exists():
         run_price_fetcher(repo_root, preset_name, region_id, request_interval)
@@ -135,16 +189,59 @@ def main():
     mineral_id_to_price = load_prices(cache_market)
 
     purchase_list = {}
-    local_types_map = {tid: {"zh": name, "en": name} for tid, name in mineral_id_to_name.items()}
-    local_name_to_id = name_to_id(local_types_map, languages=("zh",))
+    unmatched_purchase_names = []
+    local_name_to_id = name_to_id(preset_types_map, languages=("zh",))
     with purchase_csv.open("r", encoding="utf-8") as f:
-        for row in csv.reader(f, delimiter="\t"):
+        for row in csv.reader(f, delimiter="	"):
             if len(row) < 2:
                 continue
             name = row[0].strip()
             qty = int(row[1])
             if name in local_name_to_id:
                 purchase_list[local_name_to_id[name]] = qty
+            else:
+                unmatched_purchase_names.append(name)
+
+    print(f"[DEBUG] provider数量: {len(provider_dict)}")
+    print(f"[DEBUG] 精炼效率配置={eff}，实际使用={norm_eff:.6f}")
+    print(f"[DEBUG] reprocessing矿石条目: {len(reprocessing_data)}")
+    print(f"[DEBUG] preset物料数量: {len(preset_type_ids)}")
+    print(f"[DEBUG] purchase目标数量: {len(purchase_list)}")
+    if unmatched_purchase_names:
+        print(f"[DEBUG] purchase_list中未映射名称({len(unmatched_purchase_names)}): {unmatched_purchase_names[:10]}")
+
+    unresolved_provider_names = [name for name, ore_id in provider_to_ore_id.items() if ore_id is None]
+    if unresolved_provider_names:
+        print(f"[DEBUG] provider中未匹配到矿石ID({len(unresolved_provider_names)}): {unresolved_provider_names[:10]}")
+
+    ore_yield_snapshot = [
+        {
+            "id": ore.get("id"),
+            "zh": ore.get("zh"),
+            "materials": ore_to_materials.get(ore.get("id"), []),
+        }
+        for ore in reprocessing_data
+    ]
+    dump_temp_json(
+        temp_dir,
+        "reprocessing_yield_snapshot.json",
+        {
+            "eff_config": eff,
+            "eff_used": norm_eff,
+            "ore_count": len(ore_yield_snapshot),
+            "ores": ore_yield_snapshot,
+        },
+    )
+    dump_temp_json(temp_dir, "provider_parsed.json", provider_dict)
+    dump_temp_json(temp_dir, "provider_ore_mapping.json", provider_to_ore_id)
+    dump_temp_json(
+        temp_dir,
+        "purchase_mapping.json",
+        {
+            "purchase_list": purchase_list,
+            "unmatched_purchase_names": unmatched_purchase_names,
+        },
+    )
 
     remaining_budget = budget
     remaining_demand = purchase_list.copy()
@@ -155,20 +252,29 @@ def main():
     )
 
     for mid, _ in sorted_targets:
-        if remaining_demand[mid] <= 0 or remaining_budget <= 0:
+        target_name = mineral_id_to_name.get(mid, str(mid))
+        if remaining_demand[mid] <= 0:
+            print(f"[DEBUG] 跳过目标 {target_name}({mid})，原因: 需求已满足")
+            continue
+        if remaining_budget <= 0:
+            print(f"[DEBUG] 跳过目标 {target_name}({mid})，原因: 预算耗尽")
             continue
 
         relevant_ores = []
         for pname in provider_dict:
-            ore_id = next((o["id"] for o in reprocessing_data if o["zh"] in pname), None)
+            ore_id = provider_to_ore_id.get(pname)
             if ore_id is None:
                 continue
             mats = ore_to_materials[ore_id]
             if any(mat["materialTypeID"] == mid for mat in mats):
                 relevant_ores.append(pname)
         if not relevant_ores:
+            print(f"[DEBUG] 目标 {target_name}({mid}) 无可用矿石（provider与reprocessing匹配后为空）")
             continue
 
+        print(
+            f"[DEBUG] 开始求解目标 {target_name}({mid})，剩余需求={remaining_demand[mid]}，候选矿石数={len(relevant_ores)}，剩余预算={remaining_budget:.2f}"
+        )
         prob = LpProblem(f"Step_{mid}", LpMaximize)
         x_vars = {}
         for pname in relevant_ores:
@@ -178,7 +284,7 @@ def main():
         coeffs = []
         vars_list = []
         for pname, var in x_vars.items():
-            ore_id = next((o["id"] for o in reprocessing_data if o["zh"] in pname), None)
+            ore_id = provider_to_ore_id.get(pname)
             for mat in ore_to_materials[ore_id]:
                 if mat["materialTypeID"] == mid:
                     coeffs.append(mat["quantity"])
@@ -187,7 +293,7 @@ def main():
 
         extra_terms = []
         for pname, var in x_vars.items():
-            ore_id = next((o["id"] for o in reprocessing_data if o["zh"] in pname), None)
+            ore_id = provider_to_ore_id.get(pname)
             for mat in ore_to_materials[ore_id]:
                 if mat["materialTypeID"] != mid:
                     extra_terms.append(
@@ -198,7 +304,7 @@ def main():
 
         objective_terms = []
         for pname, var in x_vars.items():
-            ore_id = next((o["id"] for o in reprocessing_data if o["zh"] in pname), None)
+            ore_id = provider_to_ore_id.get(pname)
             for mat in ore_to_materials[ore_id]:
                 if mat["materialTypeID"] == mid:
                     objective_terms.append(
@@ -208,12 +314,19 @@ def main():
 
         prob.solve(PULP_CBC_CMD(msg=0))
 
+        selected_batches = {pname: int(var.varValue or 0) for pname, var in x_vars.items() if int(var.varValue or 0) > 0}
+        print(
+            f"[DEBUG] 求解完成目标 {target_name}({mid})，状态={LpStatus.get(prob.status, prob.status)}，选中矿石种类={len(selected_batches)}"
+        )
+        if selected_batches:
+            print(f"[DEBUG] 选中批次数详情: {selected_batches}")
+
         for pname, var in x_vars.items():
             val = int(var.varValue or 0)
             if val <= 0:
                 continue
             used_ores_total[pname] = used_ores_total.get(pname, 0) + val * batch_size
-            ore_id = next((o["id"] for o in reprocessing_data if o["zh"] in pname), None)
+            ore_id = provider_to_ore_id.get(pname)
             for mat in ore_to_materials[ore_id]:
                 mid_mat = mat["materialTypeID"]
                 produced_qty = mat["quantity"] * val
@@ -231,6 +344,16 @@ def main():
         writer = csv.writer(f, delimiter="\t")
         for pname, qty in used_ores_total.items():
             writer.writerow([pname, qty])
+
+    dump_temp_json(
+        temp_dir,
+        "solver_result_summary.json",
+        {
+            "used_ores_total": used_ores_total,
+            "remaining_budget": remaining_budget,
+            "remaining_demand": remaining_demand,
+        },
+    )
 
     print("\n===== 分步 ILP 统计表 =====")
     print(f"剩余预算：{remaining_budget:.2f}\n")

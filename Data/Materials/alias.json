@@ -6,79 +6,79 @@
       "alias": "Basic_Materials.cloud",
       "folder": "Basic_Materials",
       "file": "cloud.json",
-      "path": "Data/Materials/Basic_Materials/cloud.json"
+      "path": "Data/Materials/Basic/cloud.json"
     },
     {
       "alias": "Basic_Materials.datacore",
       "folder": "Basic_Materials",
       "file": "datacore.json",
-      "path": "Data/Materials/Basic_Materials/datacore.json"
+      "path": "Data/Materials/Basic/datacore.json"
     },
     {
       "alias": "Basic_Materials.drone_components",
       "folder": "Basic_Materials",
       "file": "drone_components.json",
-      "path": "Data/Materials/Basic_Materials/drone_components.json"
+      "path": "Data/Materials/Basic/drone_components.json"
     },
     {
       "alias": "Basic_Materials.fuel_blocks",
       "folder": "Basic_Materials",
       "file": "fuel_blocks.json",
-      "path": "Data/Materials/Basic_Materials/fuel_blocks.json"
+      "path": "Data/Materials/Basic/fuel_blocks.json"
     },
     {
       "alias": "Basic_Materials.ice_product",
       "folder": "Basic_Materials",
       "file": "ice_product.json",
-      "path": "Data/Materials/Basic_Materials/ice_product.json"
+      "path": "Data/Materials/Basic/ice_product.json"
     },
     {
       "alias": "Basic_Materials.mineral",
       "folder": "Basic_Materials",
       "file": "mineral.json",
-      "path": "Data/Materials/Basic_Materials/mineral.json"
+      "path": "Data/Materials/Basic/mineral.json"
     },
     {
       "alias": "Basic_Materials.moon_materials",
       "folder": "Basic_Materials",
       "file": "moon_materials.json",
-      "path": "Data/Materials/Basic_Materials/moon_materials.json"
+      "path": "Data/Materials/Basic/moon_materials.json"
     },
     {
       "alias": "Basic_Materials.moon_ore",
       "folder": "Basic_Materials",
       "file": "moon_ore.json",
-      "path": "Data/Materials/Basic_Materials/moon_ore.json"
+      "path": "Data/Materials/Basic/moon_ore.json"
     },
     {
       "alias": "Basic_Materials.net",
       "folder": "Basic_Materials",
       "file": "net.json",
-      "path": "Data/Materials/Basic_Materials/net.json"
+      "path": "Data/Materials/Basic/net.json"
     },
     {
       "alias": "Basic_Materials.ores",
       "folder": "Basic_Materials",
       "file": "ores.json",
-      "path": "Data/Materials/Basic_Materials/ores.json"
+      "path": "Data/Materials/Basic/ore.json"
     },
     {
       "alias": "Basic_Materials.products_planet_industry",
       "folder": "Basic_Materials",
       "file": "products_planet_industry.json",
-      "path": "Data/Materials/Basic_Materials/products_planet_industry.json"
+      "path": "Data/Materials/Basic/products_planet_industry.json"
     },
     {
       "alias": "Basic_Materials.ram",
       "folder": "Basic_Materials",
       "file": "ram.json",
-      "path": "Data/Materials/Basic_Materials/ram.json"
+      "path": "Data/Materials/Basic/ram.json"
     },
     {
       "alias": "Basic_Materials.salvaged_materials",
       "folder": "Basic_Materials",
       "file": "salvaged_materials.json",
-      "path": "Data/Materials/Basic_Materials/salvaged_materials.json"
+      "path": "Data/Materials/Basic/salvaged_materials.json"
     },
     {
       "alias": "Components.components_Capital",
