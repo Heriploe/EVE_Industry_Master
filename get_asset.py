@@ -259,57 +259,7 @@ def split_assets_with_blueprints(assets, blueprints, types_file):
     return non_blueprint_assets, blueprint_assets
 
 
-def save_assets_bundle(base_dir, assets, blueprints, types_file):
-    non_blueprints, blueprint_assets = split_assets_with_blueprints(assets, blueprints, types_file)
-    save_json(base_dir / "assets_raw.json", assets)
-    save_json(base_dir / "blueprints_raw.json", blueprints)
-    save_json(base_dir / "final_non_blueprints.json", non_blueprints)
-    save_json(base_dir / "final_blueprints.json", blueprint_assets)
-
-
-def main():
-    settings = load_settings()
-    if not settings["client_id"] or not settings["client_secret"]:
-        raise ValueError("请先在 config.ini 的 [esi_auth] 中配置 client_id 和 client_secret")
-
-    tokens = load_cached_tokens(settings["cache_file"])
-    access_token = tokens.get("access_token")
-    refresh_token = tokens.get("refresh_token")
-
-    if refresh_token:
-        print("检测到缓存 refresh_token，优先尝试刷新 access_token...")
-        try:
-            access_token, refresh_token = refresh_access_token(
-                settings["client_id"], settings["client_secret"], refresh_token, settings["user_agent"]
-            )
-        except Exception as exc:  # noqa: BLE001
-            print(f"刷新失败，将重新进行浏览器认证: {exc}")
-            access_token = None
-
-    if not access_token:
-        code = get_authorization_code(settings["redirect_uri"], settings["client_id"], settings["scope"])
-        token_data = exchange_code_for_token(
-            settings["client_id"],
-            settings["client_secret"],
-            code,
-            settings["redirect_uri"],
-            settings["user_agent"],
-        )
-        access_token = token_data["access_token"]
-        refresh_token = token_data.get("refresh_token")
-
-    save_json(
-        settings["cache_file"],
-        {
-            "access_token": access_token,
-            "refresh_token": refresh_token,
-            "updated_at": int(time.time()),
-        },
-    )
-
-    char_id, char_name = get_character_id(access_token, settings["user_agent"])
-    print(f"Character: {char_name} ({char_id})")
-
+def fetch_all_data(access_token, settings, char_id):
     char_assets = get_all_pages(f"{ESI_BASE}/characters/{char_id}/assets/", access_token, settings["user_agent"])
     char_blueprints = get_all_pages(
         f"{ESI_BASE}/characters/{char_id}/blueprints/",
@@ -330,6 +280,107 @@ def main():
         access_token,
         settings["user_agent"],
     )
+
+    return char_assets, char_blueprints, corp_assets, corp_blueprints, corp_jobs
+
+
+def save_assets_bundle(base_dir, assets, blueprints, types_file):
+    non_blueprints, blueprint_assets = split_assets_with_blueprints(assets, blueprints, types_file)
+    save_json(base_dir / "assets_raw.json", assets)
+    save_json(base_dir / "blueprints_raw.json", blueprints)
+    save_json(base_dir / "final_non_blueprints.json", non_blueprints)
+    save_json(base_dir / "final_blueprints.json", blueprint_assets)
+
+
+def main():
+    settings = load_settings()
+    if not settings["client_id"] or not settings["client_secret"]:
+        raise ValueError("请先在 config.ini 的 [esi_auth] 中配置 client_id 和 client_secret")
+
+    settings["cache_file"].parent.mkdir(parents=True, exist_ok=True)
+    tokens = load_cached_tokens(settings["cache_file"])
+    access_token = tokens.get("access_token")
+    refresh_token = tokens.get("refresh_token")
+
+    def cache_tokens():
+        save_json(
+            settings["cache_file"],
+            {
+                "access_token": access_token,
+                "refresh_token": refresh_token,
+                "updated_at": int(time.time()),
+            },
+        )
+
+    if not access_token and refresh_token:
+        print("未找到缓存 access_token，尝试使用 refresh_token 获取...")
+        try:
+            access_token, refresh_token = refresh_access_token(
+                settings["client_id"], settings["client_secret"], refresh_token, settings["user_agent"]
+            )
+            cache_tokens()
+        except Exception as exc:  # noqa: BLE001
+            print(f"refresh_token 刷新失败: {exc}")
+            access_token = None
+
+    if not access_token:
+        print("缓存无可用 token，开始浏览器认证...")
+        code = get_authorization_code(settings["redirect_uri"], settings["client_id"], settings["scope"])
+        token_data = exchange_code_for_token(
+            settings["client_id"],
+            settings["client_secret"],
+            code,
+            settings["redirect_uri"],
+            settings["user_agent"],
+        )
+        access_token = token_data["access_token"]
+        refresh_token = token_data.get("refresh_token")
+        cache_tokens()
+
+    try:
+        char_id, char_name = get_character_id(access_token, settings["user_agent"])
+        print(f"Character: {char_name} ({char_id})")
+        char_assets, char_blueprints, corp_assets, corp_blueprints, corp_jobs = fetch_all_data(
+            access_token, settings, char_id
+        )
+    except Exception as first_exc:  # noqa: BLE001
+        print(f"使用缓存 token 获取数据失败: {first_exc}")
+        recovered = False
+
+        if refresh_token:
+            print("尝试使用 refresh_token 重新获取 access_token...")
+            try:
+                access_token, refresh_token = refresh_access_token(
+                    settings["client_id"], settings["client_secret"], refresh_token, settings["user_agent"]
+                )
+                cache_tokens()
+                char_id, char_name = get_character_id(access_token, settings["user_agent"])
+                print(f"Character: {char_name} ({char_id})")
+                char_assets, char_blueprints, corp_assets, corp_blueprints, corp_jobs = fetch_all_data(
+                    access_token, settings, char_id
+                )
+                recovered = True
+            except Exception as refresh_exc:  # noqa: BLE001
+                print(f"refresh_token 重试失败: {refresh_exc}")
+
+        if not recovered:
+            print("启动浏览器重新认证...")
+            code = get_authorization_code(settings["redirect_uri"], settings["client_id"], settings["scope"])
+            token_data = exchange_code_for_token(
+                settings["client_id"],
+                settings["client_secret"],
+                code,
+                settings["redirect_uri"],
+                settings["user_agent"],
+            )
+            access_token = token_data["access_token"]
+            refresh_token = token_data.get("refresh_token")
+            cache_tokens()
+            char_id, char_name = get_character_id(access_token, settings["user_agent"])
+            print(f"Character: {char_name} ({char_id})")
+            char_assets, char_blueprints, corp_assets, corp_blueprints, corp_jobs = fetch_all_data(
+                access_token, settings, char_id
+            )
 
     output_root = settings["output_dir"]
     save_assets_bundle(output_root / "Character", char_assets, char_blueprints, settings["types_file"])
