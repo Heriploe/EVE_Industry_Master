@@ -59,7 +59,7 @@ def load_settings():
         "redirect_uri": normalize_redirect_uri(cfg.get("redirect_uri", "http://localhost:5050/callback")),
         "scope": normalize_scope(cfg.get("scope", "")),
         "cache_file": REPO_ROOT / cfg.get("token_cache_file", "Cache/Asset/token_cache.json"),
-        "output_dir": REPO_ROOT / cfg.get("output_dir", "Asset"),
+        "output_dir": REPO_ROOT / cfg.get("output_dir", "Cache/Asset"),
         "corp_id": cfg.getint("corp_id", fallback=98822194),
         "user_agent": cfg.get("user_agent", "AssetScript/1.0").strip(),
         "types_file": REPO_ROOT / types_file,
