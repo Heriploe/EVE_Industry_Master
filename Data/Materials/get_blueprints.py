@@ -4,6 +4,13 @@ import yaml
 
 import configparser
 from pathlib import Path
+import sys
+
+REPO_ROOT = next((p for p in [Path(__file__).resolve().parent, *Path(__file__).resolve().parent.parents] if (p / "config.ini").exists()), Path(__file__).resolve().parent)
+if str(REPO_ROOT) not in sys.path:
+    sys.path.append(str(REPO_ROOT))
+
+from Utilities.name_mapping import load_types_map
 
 
 def _resolve_shared_path(config_key, default_rel_path):
@@ -29,9 +36,7 @@ types_file = _resolve_shared_path("types_json", "Data/types.json")
 os.makedirs(output_folder, exist_ok=True)
 
 # 读取 types.json
-with open(types_file, "r", encoding="utf-8") as f:
-    types_list = json.load(f)
-id_to_name = {item["id"]: {"zh": item["zh"], "en": item["en"]} for item in types_list}
+types_map = load_types_map(types_file)
 
 # 读取 blueprints.yaml
 with open(blueprints_file, "r", encoding="utf-8") as f:
@@ -66,7 +71,7 @@ for filename in os.listdir(source_folder):
             # 构建输出蓝图
             out_bp = {
                 "blueprintTypeID": bp.get("blueprintTypeID"),
-                "name": id_to_name.get(target_id, {"zh": "", "en": ""})
+                "name": types_map.get(target_id, {"zh": "", "en": ""})
             }
 
             # manufacturing 节点

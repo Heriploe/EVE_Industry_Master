@@ -4,6 +4,13 @@ from pulp import LpMaximize, LpProblem, LpVariable, lpSum, LpInteger, LpBinary
 
 import configparser
 from pathlib import Path
+import sys
+
+REPO_ROOT = next((p for p in [Path(__file__).resolve().parent, *Path(__file__).resolve().parent.parents] if (p / "config.ini").exists()), Path(__file__).resolve().parent)
+if str(REPO_ROOT) not in sys.path:
+    sys.path.append(str(REPO_ROOT))
+
+from Utilities.name_mapping import get_name as resolve_name, load_types_map
 
 
 def _resolve_shared_path(config_key, default_rel_path):
@@ -105,8 +112,7 @@ with open(TRADE_VOS_JSON, "r", encoding="utf-8") as f:
 vos_trade_ids = {int(item["id"]) for item in trade_vos_list}
 
 # ------------------ 读取 types.json ------------------
-with open(TYPES_JSON, "r", encoding="utf-8") as f:
-    types_list = json.load(f)
+types_map = load_types_map(TYPES_JSON)
 
 # ------------------ 读取 types_volume.json ------------------
 with open(TYPES_VOLUME_JSON, "r", encoding="utf-8") as f:
@@ -154,9 +160,6 @@ def get_activity(bp):
         return bp["reaction"], "reaction"
     return None, None
 
-
-def get_name(tid):
-    return types_map.get(int(tid), {"zh": f"未知_{tid}", "en": f"UNKNOWN_{tid}"})
 
 
 def get_jita_price(tid, field="buy"):
@@ -240,22 +243,12 @@ def should_filter_blueprint(bp_id, bp):
     return True
 
 
-# 建立 id → 名称映射
-types_map = {}
-for item in types_list:
-    tid = item.get("id")
-    if tid is not None:
-        types_map[int(tid)] = {
-            "zh": item.get("zh", f"未知_{tid}"),
-            "en": item.get("en", f"UNKNOWN_{tid}")
-        }
-
 # 建立蓝图ID → 名称映射
 bp_names = {}
 for bp in blueprints:
     bp_id = bp.get("blueprintTypeID")
     if bp_id:
-        bp_names[bp_id] = get_name(bp_id) if bp_id in types_map else {"zh": f"蓝图_{bp_id}", "en": f"BP_{bp_id}"}
+        bp_names[bp_id] = resolve_name(bp_id, types_map) if bp_id in types_map else {"zh": f"蓝图_{bp_id}", "en": f"BP_{bp_id}"}
 
 # ------------------ 建立 ILP ------------------
 model = LpProblem("Max_Profit_Min_Products", LpMaximize)
@@ -481,7 +474,7 @@ if model.status == 1:  # Optimal
                 price = get_jita_price(tid, "buy")
                 total_cost = qty * price
                 total_purchase_cost += total_cost
-                writer.writerow([get_name(tid)["zh"], qty])
+                writer.writerow([resolve_name(tid, types_map)["zh"], qty])
 
     # ------------------ 输出中文执行清单 CSV ------------------
     with open(EXECUTION_CSV, "w", newline="", encoding="utf-8") as f:
@@ -495,11 +488,11 @@ if model.status == 1:  # Optimal
 
                 # 直接获取蓝图名称
                 bp_id = bp.get("blueprintTypeID")
-                bp_name = get_name(bp_id)["zh"] if bp_id in types_map else f"蓝图_{bp_id}"
+                bp_name = resolve_name(bp_id, types_map)["zh"] if bp_id in types_map else f"蓝图_{bp_id}"
 
                 # 获取产物名称
                 products = activity.get("products", [])
-                product_names = ", ".join([get_name(p["typeID"])["zh"] for p in products])
+                product_names = ", ".join([resolve_name(p["typeID"], types_map)["zh"] for p in products])
 
                 # 计算该蓝图的利润
                 profit = bp_score[i] * runs
@@ -515,7 +508,7 @@ if model.status == 1:  # Optimal
             price = get_price(tid, "buy")
             value = qty * price
             total_value += value
-            writer.writerow([get_name(tid)["zh"], qty])
+            writer.writerow([resolve_name(tid, types_map)["zh"], qty])
 
     print(f"完成：采购清单 → {PURCHASE_CSV}")
     print(f"完成：执行清单 → {EXECUTION_CSV}")
@@ -543,8 +536,8 @@ if model.status == 1:  # Optimal
         if qty > 0:
             initial_inventory_list.append({
                 "type_id": tid,
-                "zh": get_name(tid)["zh"],
-                "en": get_name(tid)["en"],
+                "zh": resolve_name(tid, types_map)["zh"],
+                "en": resolve_name(tid, types_map)["en"],
                 "quantity": qty
             })
 
@@ -563,8 +556,8 @@ if model.status == 1:  # Optimal
         if qty > 0:
             final_inventory_list.append({
                 "type_id": tid,
-                "zh": get_name(tid)["zh"],
-                "en": get_name(tid)["en"],
+                "zh": resolve_name(tid, types_map)["zh"],
+                "en": resolve_name(tid, types_map)["en"],
                 "quantity": qty
             })
 

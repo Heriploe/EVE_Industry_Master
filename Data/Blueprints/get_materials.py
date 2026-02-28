@@ -3,6 +3,13 @@ import json
 
 import configparser
 from pathlib import Path
+import sys
+
+REPO_ROOT = next((p for p in [Path(__file__).resolve().parent, *Path(__file__).resolve().parent.parents] if (p / "config.ini").exists()), Path(__file__).resolve().parent)
+if str(REPO_ROOT) not in sys.path:
+    sys.path.append(str(REPO_ROOT))
+
+from Utilities.name_mapping import load_types_map
 
 
 def _resolve_shared_path(config_key, default_rel_path):
@@ -27,9 +34,7 @@ output_folder = "Test"    # 输出文件夹
 os.makedirs(output_folder, exist_ok=True)
 
 # 读取 types.json
-with open(types_file, "r", encoding="utf-8") as f:
-    types_list = json.load(f)
-id_to_name = {item["id"]: {"zh": item["zh"], "en": item["en"]} for item in types_list}
+types_map = load_types_map(types_file)
 
 # 遍历蓝图 JSON 文件
 for filename in os.listdir(source_folder):
@@ -50,8 +55,8 @@ for filename in os.listdir(source_folder):
             if typeID:
                 product_list.append({
                     "id": typeID,
-                    "zh": id_to_name.get(typeID, {}).get("zh", ""),
-                    "en": id_to_name.get(typeID, {}).get("en", "")
+                    "zh": types_map.get(typeID, {}).get("zh", ""),
+                    "en": types_map.get(typeID, {}).get("en", "")
                 })
 
         # 处理 reaction.products
@@ -61,8 +66,8 @@ for filename in os.listdir(source_folder):
             if typeID:
                 product_list.append({
                     "id": typeID,
-                    "zh": id_to_name.get(typeID, {}).get("zh", ""),
-                    "en": id_to_name.get(typeID, {}).get("en", "")
+                    "zh": types_map.get(typeID, {}).get("zh", ""),
+                    "en": types_map.get(typeID, {}).get("en", "")
                 })
 
     # 去重 products

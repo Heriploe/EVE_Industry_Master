@@ -1,6 +1,13 @@
 
 import configparser
 from pathlib import Path
+import sys
+
+REPO_ROOT = next((p for p in [Path(__file__).resolve().parent, *Path(__file__).resolve().parent.parents] if (p / "config.ini").exists()), Path(__file__).resolve().parent)
+if str(REPO_ROOT) not in sys.path:
+    sys.path.append(str(REPO_ROOT))
+
+from Utilities.name_mapping import get_name as resolve_name, load_types_map
 
 
 def _resolve_shared_path(config_key, default_rel_path):
@@ -138,10 +145,7 @@ with open(JITA_PRICES_JSON, "r", encoding="utf-8") as f:
 jita_prices = {int(k): v["jita"].get("buy", 0) if isinstance(v["jita"].get("buy"), (int, float)) else 0 
                for k, v in jita_prices_raw.items()}
 
-with open(TYPES_JSON, "r", encoding="utf-8") as f:
-    types_list = json.load(f)
-types_map = {int(item["id"]): {"zh": item.get("zh", ""), "en": item.get("en", "")} 
-             for item in types_list if item.get("id")}
+types_map = load_types_map(TYPES_JSON)
 
 execution_targets = {}
 try:
@@ -161,9 +165,6 @@ print(f"✓ T2映射: {len(t2_to_t1)} 对")
 print(f"✓ 目标: {len(execution_targets)} 个\n")
 
 # ==================工具函数==================
-def get_name(tid):
-    return types_map.get(int(tid), {"zh": f"未知_{tid}", "en": f"UNKNOWN_{tid}"})
-
 def get_price(tid):
     return jita_prices.get(int(tid), 0)
 
@@ -244,7 +245,7 @@ class ProductionPlanner:
                 continue
             
             product_id = products[0]["typeID"]
-            product_name = get_name(product_id)["zh"]
+            product_name = resolve_name(product_id, types_map)["zh"]
             quantity = products[0].get("quantity", 1) * runs
             
             print(f"\n目标: {product_name} × {quantity}")
@@ -256,7 +257,7 @@ class ProductionPlanner:
     
     def plan_product(self, product_id, quantity, depth=0):
         indent = "  " * depth
-        product_name = get_name(product_id)["zh"]
+        product_name = resolve_name(product_id, types_map)["zh"]
         
         # 检查库存
         available = self.working_inventory.get(product_id, 0)
@@ -311,7 +312,7 @@ class ProductionPlanner:
             task_id=self.task_counter,
             task_type=act_type,
             blueprint_id=bp_id,
-            blueprint_name=get_name(bp_id)["zh"],
+            blueprint_name=resolve_name(bp_id, types_map)["zh"],
             product_id=product_id,
             product_name=product_name,
             runs=runs_needed,
@@ -344,7 +345,7 @@ class ProductionPlanner:
                 shortage = runs_needed - available
                 copy_jobs = math.ceil(shortage / COPYING_RUNS_PER_JOB)
                 
-                bp_name = get_name(bp_id)["zh"]
+                bp_name = resolve_name(bp_id, types_map)["zh"]
                 print(f"{indent}📋 拷贝: {bp_name} ({copy_jobs}次)")
                 
                 task = TaskNode(
@@ -375,7 +376,7 @@ class ProductionPlanner:
         shortage = runs_needed - available
         invention_jobs = math.ceil(shortage / (T2_BLUEPRINT_RUNS_PER_INVENTION * INVENTION_BASE_SUCCESS_RATE))
         
-        t2_name = get_name(t2_bp_id)["zh"]
+        t2_name = resolve_name(t2_bp_id, types_map)["zh"]
         print(f"{indent}🔬 发明: {t2_name} ({invention_jobs}次)")
         
         # 获取T1蓝图
@@ -392,7 +393,7 @@ class ProductionPlanner:
             task_id=self.task_counter,
             task_type="invention",
             blueprint_id=t1_bp_id,
-            blueprint_name=get_name(t1_bp_id)["zh"],
+            blueprint_name=resolve_name(t1_bp_id, types_map)["zh"],
             product_id=t2_bp_id,
             product_name=t2_name,
             runs=invention_jobs,
