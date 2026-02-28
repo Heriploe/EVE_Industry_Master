@@ -4,7 +4,7 @@ from pathlib import Path
 
 
 REPO_ROOT = Path(__file__).resolve().parents[2]
-TYPE_MATERIALS_YAML = REPO_ROOT / "Reprocessing Ore" / "typeMaterials.yaml"
+TYPE_MATERIALS_YAML = REPO_ROOT / "Data" / "Reprocess" / "typeMaterials.yaml"
 MOON_MATERIALS_JSON = REPO_ROOT / "Data" / "Materials" / "Basic_Materials" / "moon_materials.json"
 TYPES_JSON = REPO_ROOT / "Data" / "types.json"
 OUTPUT_JSON = REPO_ROOT / "Data" / "Materials" / "Basic_Materials" / "moon_ore.json"

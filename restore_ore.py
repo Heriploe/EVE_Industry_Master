@@ -17,13 +17,13 @@ def load_config(config_path: Path):
     config = configparser.ConfigParser()
     config.read(config_path, encoding="utf-8")
 
-    batch_size = config.getint("solver", "batch_size", fallback=100)
-    budget = config.getfloat("solver", "budget", fallback=350_000_000)
-    eff = config.getfloat("solver", "eff", fallback=0.9063)
+    batch_size = config.getint("reprocessing_solver", "batch_size", fallback=100)
+    budget = config.getfloat("reprocessing_solver", "budget", fallback=350_000_000)
+    eff = config.getfloat("reprocessing_solver", "eff", fallback=0.9063)
 
-    preset_name = config.get("market", "preset", fallback="mineral&element")
-    region_id = config.getint("market", "region_id", fallback=10000002)
-    request_interval = config.getfloat("market", "request_interval", fallback=0.05)
+    preset_name = config.get("reprocessing_market", "preset", fallback="mineral&element")
+    region_id = config.getint("reprocessing_market", "region_id", fallback=10000002)
+    request_interval = config.getfloat("reprocessing_market", "request_interval", fallback=0.05)
 
     return batch_size, budget, eff, preset_name, region_id, request_interval
 
@@ -99,8 +99,7 @@ def run_price_fetcher(repo_root: Path, preset_name: str, region_id: int, request
 
 def main():
     repo_root = find_repo_root()
-    rp_dir = Path(__file__).resolve().parent
-    config_path = rp_dir / "config.ini"
+    config_path = repo_root / "config.ini"
 
     batch_size, budget, eff, preset_name, region_id, request_interval = load_config(config_path)
 
