@@ -138,10 +138,14 @@ def get_authorization_code(redirect_uri, client_id, scope):
         "response_type": "code",
         "redirect_uri": redirect_uri,
         "client_id": client_id,
-        "scope": scope,
         "state": state,
     }
-    auth_url = f"{LOGIN_BASE}/v2/oauth/authorize?{urllib.parse.urlencode(auth_params)}"
+    query_parts = [
+        f"{key}={urllib.parse.quote(str(value), safe='')}"
+        for key, value in auth_params.items()
+    ]
+    encoded_scope = urllib.parse.quote(scope, safe='')
+    auth_url = f"{LOGIN_BASE}/v2/oauth/authorize?{'&'.join(query_parts)}&scope={encoded_scope}"
 
     print("正在打开浏览器进行 EVE SSO 认证...")
     if not webbrowser.open(auth_url, new=1, autoraise=True):
