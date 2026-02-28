@@ -129,6 +129,25 @@ def run_price_fetcher(repo_root: Path, preset_name: str, region_id: int, request
     subprocess.run(cmd, cwd=repo_root, check=True)
 
 
+
+
+def build_provider_ore_mapping(provider_names, reprocessing_data):
+    ore_name_to_id = {ore.get("zh"): ore.get("id") for ore in reprocessing_data if ore.get("zh")}
+    provider_to_ore_id = {}
+    for pname in provider_names:
+        ore_id = ore_name_to_id.get(pname)
+        if ore_id is None:
+            ore_id = next(
+                (
+                    o["id"]
+                    for o in reprocessing_data
+                    if (o.get("zh") and (o["zh"] in pname or pname in o["zh"]))
+                ),
+                None,
+            )
+        provider_to_ore_id[pname] = ore_id
+    return provider_to_ore_id
+
 def main():
     repo_root = find_repo_root()
     config_path = repo_root / "config.ini"
@@ -156,6 +175,7 @@ def main():
 
     provider_dict = load_provider(provider_csv)
     reprocessing_data, ore_to_materials, norm_eff = load_reprocessing_data(reprocessing_json, eff)
+    provider_to_ore_id = build_provider_ore_mapping(provider_dict.keys(), reprocessing_data)
 
     preset_type_ids, preset_types_map, mineral_id_to_name = load_preset_type_ids(
         preset_json, alias_json, preset_name, repo_root
@@ -190,6 +210,10 @@ def main():
     if unmatched_purchase_names:
         print(f"[DEBUG] purchase_list中未映射名称({len(unmatched_purchase_names)}): {unmatched_purchase_names[:10]}")
 
+    unresolved_provider_names = [name for name, ore_id in provider_to_ore_id.items() if ore_id is None]
+    if unresolved_provider_names:
+        print(f"[DEBUG] provider中未匹配到矿石ID({len(unresolved_provider_names)}): {unresolved_provider_names[:10]}")
+
     ore_yield_snapshot = [
         {
             "id": ore.get("id"),
@@ -209,6 +233,7 @@ def main():
         },
     )
     dump_temp_json(temp_dir, "provider_parsed.json", provider_dict)
+    dump_temp_json(temp_dir, "provider_ore_mapping.json", provider_to_ore_id)
     dump_temp_json(
         temp_dir,
         "purchase_mapping.json",
@@ -237,7 +262,7 @@ def main():
 
         relevant_ores = []
         for pname in provider_dict:
-            ore_id = next((o["id"] for o in reprocessing_data if o["zh"] in pname), None)
+            ore_id = provider_to_ore_id.get(pname)
             if ore_id is None:
                 continue
             mats = ore_to_materials[ore_id]
@@ -259,7 +284,7 @@ def main():
         coeffs = []
         vars_list = []
         for pname, var in x_vars.items():
-            ore_id = next((o["id"] for o in reprocessing_data if o["zh"] in pname), None)
+            ore_id = provider_to_ore_id.get(pname)
             for mat in ore_to_materials[ore_id]:
                 if mat["materialTypeID"] == mid:
                     coeffs.append(mat["quantity"])
@@ -268,7 +293,7 @@ def main():
 
         extra_terms = []
         for pname, var in x_vars.items():
-            ore_id = next((o["id"] for o in reprocessing_data if o["zh"] in pname), None)
+            ore_id = provider_to_ore_id.get(pname)
             for mat in ore_to_materials[ore_id]:
                 if mat["materialTypeID"] != mid:
                     extra_terms.append(
@@ -279,7 +304,7 @@ def main():
 
         objective_terms = []
         for pname, var in x_vars.items():
-            ore_id = next((o["id"] for o in reprocessing_data if o["zh"] in pname), None)
+            ore_id = provider_to_ore_id.get(pname)
             for mat in ore_to_materials[ore_id]:
                 if mat["materialTypeID"] == mid:
                     objective_terms.append(
@@ -301,7 +326,7 @@ def main():
             if val <= 0:
                 continue
             used_ores_total[pname] = used_ores_total.get(pname, 0) + val * batch_size
-            ore_id = next((o["id"] for o in reprocessing_data if o["zh"] in pname), None)
+            ore_id = provider_to_ore_id.get(pname)
             for mat in ore_to_materials[ore_id]:
                 mid_mat = mat["materialTypeID"]
                 produced_qty = mat["quantity"] * val
