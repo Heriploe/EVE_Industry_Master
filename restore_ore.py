@@ -1,6 +1,7 @@
 import configparser
 import csv
 import json
+import math
 import subprocess
 import sys
 from pathlib import Path
@@ -54,16 +55,25 @@ def load_provider(provider_csv: Path):
     return provider_dict
 
 
+def normalize_reprocessing_eff(eff: float) -> float:
+    if eff <= 0:
+        raise ValueError(f"无效精炼效率 eff={eff}，必须大于0")
+    if eff > 1:
+        return eff / 100
+    return eff
+
+
 def load_reprocessing_data(path: Path, eff: float):
     with path.open("r", encoding="utf-8") as f:
         reprocessing_data = json.load(f)
 
+    norm_eff = normalize_reprocessing_eff(eff)
     ore_to_materials = {ore["id"]: ore.get("materials", []) for ore in reprocessing_data}
     for ore_id, mats in ore_to_materials.items():
         for mat in mats:
-            mat["quantity"] = round(mat["quantity"] * eff)
+            mat["quantity"] = max(0, math.floor(mat["quantity"] * norm_eff))
 
-    return reprocessing_data, ore_to_materials
+    return reprocessing_data, ore_to_materials, norm_eff
 
 
 def load_prices(price_json: Path):
@@ -132,7 +142,7 @@ def main():
     cache_market = cache_market_dir / f"{preset_name}_region_{region_id}.json"
 
     provider_dict = load_provider(provider_csv)
-    reprocessing_data, ore_to_materials = load_reprocessing_data(reprocessing_json, eff)
+    reprocessing_data, ore_to_materials, norm_eff = load_reprocessing_data(reprocessing_json, eff)
 
     preset_type_ids, preset_types_map, mineral_id_to_name = load_preset_type_ids(
         preset_json, alias_json, preset_name, repo_root
@@ -160,6 +170,7 @@ def main():
                 unmatched_purchase_names.append(name)
 
     print(f"[DEBUG] provider数量: {len(provider_dict)}")
+    print(f"[DEBUG] 精炼效率配置={eff}，实际使用={norm_eff:.6f}")
     print(f"[DEBUG] reprocessing矿石条目: {len(reprocessing_data)}")
     print(f"[DEBUG] preset物料数量: {len(preset_type_ids)}")
     print(f"[DEBUG] purchase目标数量: {len(purchase_list)}")
