@@ -1,0 +1,42 @@
+[
+  {
+    "id": 34201,
+    "zh": "加速装置解码器",
+    "en": "Accelerant Decryptor"
+  },
+  {
+    "id": 34202,
+    "zh": "获取装置解码器",
+    "en": "Attainment Decryptor"
+  },
+  {
+    "id": 34203,
+    "zh": "放大装置解码器",
+    "en": "Augmentation Decryptor"
+  },
+  {
+    "id": 34204,
+    "zh": "等价装置解码器",
+    "en": "Parity Decryptor"
+  },
+  {
+    "id": 34205,
+    "zh": "处理装置解码器",
+    "en": "Process Decryptor"
+  },
+  {
+    "id": 34206,
+    "zh": "对称装置解码器",
+    "en": "Symmetry Decryptor"
+  },
+  {
+    "id": 34207,
+    "zh": "优化的获取装置解码器",
+    "en": "Optimized Attainment Decryptor"
+  },
+  {
+    "id": 34208,
+    "zh": "优化的放大装置解码器",
+    "en": "Optimized Augmentation Decryptor"
+  }
+]
