@@ -1,6 +1,13 @@
 
 import configparser
 from pathlib import Path
+import sys
+
+REPO_ROOT = next((p for p in [Path(__file__).resolve().parent, *Path(__file__).resolve().parent.parents] if (p / "config.ini").exists()), Path(__file__).resolve().parent)
+if str(REPO_ROOT) not in sys.path:
+    sys.path.append(str(REPO_ROOT))
+
+from Utilities.name_mapping import get_name as resolve_name, load_types_map
 
 
 def _resolve_shared_path(config_key, default_rel_path):
@@ -66,21 +73,7 @@ with open(BLUEPRINTS_JSON, "r", encoding="utf-8") as f:
     blueprints = json.load(f)
 
 # 读取物品名称
-with open(TYPES_JSON, "r", encoding="utf-8") as f:
-    types_list = json.load(f)
-
-types_map = {}
-for item in types_list:
-    tid = item.get("id")
-    if tid is not None:
-        types_map[int(tid)] = {
-            "zh": item.get("zh", f"未知_{tid}"),
-            "en": item.get("en", f"UNKNOWN_{tid}")
-        }
-
-
-def get_name(tid):
-    return types_map.get(int(tid), {"zh": f"未知_{tid}", "en": f"UNKNOWN_{tid}"})
+types_map = load_types_map(TYPES_JSON)
 
 
 def get_jita_price(tid, field="buy"):
@@ -148,7 +141,7 @@ print(f"过滤掉: {len(filtered_out_products)} 个")
 if filtered_out_products:
     print("\n被过滤的产品（总价值低于阈值）:")
     for pid, info in sorted(filtered_out_products.items(), key=lambda x: x[1]["value"], reverse=True):
-        print(f"  {get_name(pid)['zh']}: {info['quantity']} × {info['price']:,.0f} = {info['value']:,.0f} ISK")
+        print(f"  {resolve_name(pid, types_map)['zh']}: {info['quantity']} × {info['price']:,.0f} = {info['value']:,.0f} ISK")
 
 # ------------------ 通过蓝图逆推 ------------------
 print(f"\n正在逆推蓝图需求...")
@@ -193,7 +186,7 @@ for product_id in filtered_products.keys():
         for bp_info in bp_options:
             bp = bp_info["blueprint"]
             bp_id = bp.get("blueprintTypeID")
-            bp_name_zh = get_name(bp_id)["zh"] if bp_id in types_map else f"蓝图_{bp_id}"
+            bp_name_zh = resolve_name(bp_id, types_map)["zh"] if bp_id in types_map else f"蓝图_{bp_id}"
             
             # 如果这个蓝图在原始执行清单中
             if bp_name_zh in execution_data:

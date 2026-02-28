@@ -5,6 +5,7 @@ import subprocess
 import sys
 from pathlib import Path
 
+from Utilities.name_mapping import id_to_name, name_to_id
 from pulp import LpInteger, LpMaximize, LpProblem, LpVariable, PULP_CBC_CMD, lpSum
 
 
@@ -68,7 +69,7 @@ def load_preset_type_ids(preset_json: Path, alias_json: Path, preset_name: str, 
         raise ValueError(f"preset 不存在: {preset_name}")
 
     type_ids = set()
-    id_to_name = {}
+    local_types_map: dict[int, dict] = {}
     for alias in preset.get("children", []):
         rel_path = alias_map.get(alias)
         if not rel_path:
@@ -78,9 +79,12 @@ def load_preset_type_ids(preset_json: Path, alias_json: Path, preset_name: str, 
         for item in items:
             tid = int(item["id"])
             type_ids.add(tid)
-            id_to_name[tid] = item.get("zh", str(tid))
+            local_types_map[tid] = {
+                "zh": item.get("zh", str(tid)),
+                "en": item.get("en", f"UNKNOWN_{tid}"),
+            }
 
-    return type_ids, id_to_name
+    return type_ids, id_to_name(local_types_map)
 
 
 def run_price_fetcher(repo_root: Path, preset_name: str, region_id: int, request_interval: float):
@@ -131,15 +135,16 @@ def main():
     mineral_id_to_price = load_prices(cache_market)
 
     purchase_list = {}
-    name_to_id = {v: k for k, v in mineral_id_to_name.items()}
+    local_types_map = {tid: {"zh": name, "en": name} for tid, name in mineral_id_to_name.items()}
+    local_name_to_id = name_to_id(local_types_map, languages=("zh",))
     with purchase_csv.open("r", encoding="utf-8") as f:
         for row in csv.reader(f, delimiter="\t"):
             if len(row) < 2:
                 continue
             name = row[0].strip()
             qty = int(row[1])
-            if name in name_to_id:
-                purchase_list[name_to_id[name]] = qty
+            if name in local_name_to_id:
+                purchase_list[local_name_to_id[name]] = qty
 
     remaining_budget = budget
     remaining_demand = purchase_list.copy()
