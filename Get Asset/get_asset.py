@@ -31,8 +31,8 @@ def normalize_scope(raw_scope):
         "esi-assets.read_corporation_assets.v1 "
         "esi-industry.read_character_jobs.v1 "
         "esi-industry.read_corporation_jobs.v1 "
-        "esi-industry.read_character_blueprints.v1 "
-        "esi-industry.read_corporation_blueprints.v1 "
+        "esi-characters.read_blueprints.v1 "
+        "esi-corporations.read_blueprints.v1 "
         "esi-universe.read_structures.v1"
     )
 
@@ -51,7 +51,7 @@ def load_settings():
     return {
         "client_id": cfg.get("client_id", "").strip(),
         "client_secret": cfg.get("client_secret", "").strip(),
-        "redirect_uri": cfg.get("redirect_uri", "http://127.0.0.1:8765/callback").strip(),
+        "redirect_uri": cfg.get("redirect_uri", "http://localhost/callback").strip(),
         "scope": normalize_scope(cfg.get("scope", "")),
         "cache_file": REPO_ROOT / cfg.get("token_cache_file", "Cache/Asset/token_cache.json"),
         "output_dir": REPO_ROOT / cfg.get("output_dir", "Cache/Asset"),
@@ -141,11 +141,13 @@ def get_authorization_code(redirect_uri, client_id, scope):
         "state": state,
     }
     query_parts = [
-        f"{key}={urllib.parse.quote(str(value), safe='')}"
-        for key, value in auth_params.items()
+        f"response_type={urllib.parse.quote(str(auth_params['response_type']), safe='')}",
+        f"client_id={urllib.parse.quote(str(auth_params['client_id']), safe='')}",
+        f"redirect_uri={auth_params['redirect_uri']}",
+        f"scope={urllib.parse.quote(scope, safe='')}",
+        f"state={urllib.parse.quote(str(auth_params['state']), safe='')}",
     ]
-    encoded_scope = urllib.parse.quote(scope, safe='')
-    auth_url = f"{LOGIN_BASE}/v2/oauth/authorize?{'&'.join(query_parts)}&scope={encoded_scope}"
+    auth_url = f"{LOGIN_BASE}/v2/oauth/authorize?{'&'.join(query_parts)}"
 
     print("正在打开浏览器进行 EVE SSO 认证...")
     print(f"DEBUG auth_url: {auth_url}")
