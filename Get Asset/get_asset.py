@@ -108,6 +108,16 @@ def exchange_code_for_token(client_id, client_secret, code, redirect_uri, user_a
     return r.json()
 
 
+def parse_code_from_callback_input(user_input):
+    value = (user_input or "").strip()
+    if not value:
+        return None
+    if value.startswith("http://") or value.startswith("https://"):
+        query = urllib.parse.parse_qs(urllib.parse.urlparse(value).query)
+        return query.get("code", [None])[0]
+    return value
+
+
 def get_authorization_code(redirect_uri, client_id, scope):
     parsed = urllib.parse.urlparse(redirect_uri)
     if parsed.scheme != "http":
@@ -131,9 +141,6 @@ def get_authorization_code(redirect_uri, client_id, scope):
         def log_message(self, format, *args):  # noqa: A003
             return
 
-    server = HTTPServer((parsed.hostname, parsed.port), OAuthCallbackHandler)
-    server.timeout = 180
-
     auth_params = {
         "response_type": "code",
         "redirect_uri": redirect_uri,
@@ -155,20 +162,32 @@ def get_authorization_code(redirect_uri, client_id, scope):
         print("自动打开浏览器失败，请手动访问以下链接：")
         print(auth_url)
 
-    deadline = time.time() + 180
-    while time.time() < deadline and callback_data["code"] is None and callback_data["error"] is None:
-        server.handle_request()
+    if parsed.hostname and parsed.port is not None:
+        server = HTTPServer((parsed.hostname, parsed.port), OAuthCallbackHandler)
+        server.timeout = 180
 
-    server.server_close()
+        deadline = time.time() + 180
+        while time.time() < deadline and callback_data["code"] is None and callback_data["error"] is None:
+            server.handle_request()
 
-    if callback_data["error"]:
-        raise RuntimeError(f"认证失败: {callback_data['error']}")
-    if callback_data["state"] != state:
-        raise RuntimeError("state 校验失败")
-    if not callback_data["code"]:
-        raise TimeoutError("等待认证回调超时")
+        server.server_close()
 
-    return callback_data["code"]
+        if callback_data["error"]:
+            raise RuntimeError(f"认证失败: {callback_data['error']}")
+        if callback_data["state"] != state:
+            raise RuntimeError("state 校验失败")
+        if not callback_data["code"]:
+            raise TimeoutError("等待认证回调超时")
+
+        return callback_data["code"]
+
+    print("redirect_uri 未包含端口，无法自动监听回调。")
+    print("请在浏览器完成授权后，将回调地址（或 code）粘贴到这里。")
+    user_input = input("callback url / code: ")
+    code = parse_code_from_callback_input(user_input)
+    if not code:
+        raise RuntimeError("未解析到授权 code")
+    return code
 
 
 def get_character_id(access_token, user_agent):
