@@ -8,8 +8,24 @@
 import json
 import csv
 import yaml
+import configparser
+from pathlib import Path
 from math import ceil
 from collections import defaultdict
+
+
+def _resolve_shared_path(config_key, default_rel_path):
+    current_dir = Path(__file__).resolve().parent
+    repo_root = next((p for p in [current_dir, *current_dir.parents] if (p / "config.ini").exists()), current_dir)
+
+    config = configparser.ConfigParser()
+    config.read(repo_root / "config.ini", encoding="utf-8")
+
+    path_value = config.get("paths", config_key, fallback=default_rel_path)
+    candidate = Path(path_value)
+    if not candidate.is_absolute():
+        candidate = repo_root / candidate
+    return str(candidate)
 
 
 # ================== 配置参数 ==================
@@ -18,10 +34,10 @@ class TaskConfig:
 
     # 文件路径
     EXECUTION_CSV = "Results/execution_list.csv"
-    BLUEPRINTS_YAML = "Source/blueprints.yaml"
+    BLUEPRINTS_YAML = _resolve_shared_path("blueprints_yaml", "Data/blueprints.yaml")
     BLUEPRINTS_JSON = "Source/blueprints_merged.json"  # 用于获取蓝图名称映射
     T2_JSON = "Source/T2.json"
-    TYPES_JSON = "Source/types.json"
+    TYPES_JSON = _resolve_shared_path("types_json", "Data/types.json")
 
     OUTPUT_CSV = "Results/task_list.csv"
     OUTPUT_SUMMARY_CSV = "Results/task_summary.csv"
