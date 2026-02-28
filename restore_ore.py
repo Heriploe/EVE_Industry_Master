@@ -5,7 +5,7 @@ import subprocess
 import sys
 from pathlib import Path
 
-from Utilities.name_mapping import id_to_name, name_to_id
+from Utilities.name_mapping import id_to_name, load_types_map, name_to_id
 from pulp import LpInteger, LpMaximize, LpProblem, LpVariable, PULP_CBC_CMD, lpSum
 
 
@@ -69,22 +69,16 @@ def load_preset_type_ids(preset_json: Path, alias_json: Path, preset_name: str, 
         raise ValueError(f"preset 不存在: {preset_name}")
 
     type_ids = set()
-    local_types_map: dict[int, dict] = {}
+    preset_types_map: dict[int, dict] = {}
     for alias in preset.get("children", []):
         rel_path = alias_map.get(alias)
         if not rel_path:
             raise ValueError(f"alias 不存在: {alias}")
-        with (repo_root / rel_path).open("r", encoding="utf-8") as f:
-            items = json.load(f)
-        for item in items:
-            tid = int(item["id"])
-            type_ids.add(tid)
-            local_types_map[tid] = {
-                "zh": item.get("zh", str(tid)),
-                "en": item.get("en", f"UNKNOWN_{tid}"),
-            }
+        child_types_map = load_types_map(repo_root / rel_path)
+        type_ids.update(child_types_map.keys())
+        preset_types_map.update(child_types_map)
 
-    return type_ids, id_to_name(local_types_map)
+    return type_ids, preset_types_map, id_to_name(preset_types_map)
 
 
 def run_price_fetcher(repo_root: Path, preset_name: str, region_id: int, request_interval: float):
@@ -125,7 +119,9 @@ def main():
     provider_dict = load_provider(provider_csv)
     reprocessing_data, ore_to_materials = load_reprocessing_data(reprocessing_json, eff)
 
-    preset_type_ids, mineral_id_to_name = load_preset_type_ids(preset_json, alias_json, preset_name, repo_root)
+    preset_type_ids, preset_types_map, mineral_id_to_name = load_preset_type_ids(
+        preset_json, alias_json, preset_name, repo_root
+    )
 
     if not cache_market.exists():
         run_price_fetcher(repo_root, preset_name, region_id, request_interval)
@@ -135,8 +131,7 @@ def main():
     mineral_id_to_price = load_prices(cache_market)
 
     purchase_list = {}
-    local_types_map = {tid: {"zh": name, "en": name} for tid, name in mineral_id_to_name.items()}
-    local_name_to_id = name_to_id(local_types_map, languages=("zh",))
+    local_name_to_id = name_to_id(preset_types_map, languages=("zh",))
     with purchase_csv.open("r", encoding="utf-8") as f:
         for row in csv.reader(f, delimiter="\t"):
             if len(row) < 2:
