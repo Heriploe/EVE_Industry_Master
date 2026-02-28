@@ -106,6 +106,15 @@ def load_preset_type_ids(preset_json: Path, alias_json: Path, preset_name: str, 
     return type_ids, preset_types_map, id_to_name(preset_types_map)
 
 
+
+
+def dump_temp_json(temp_dir: Path, file_name: str, payload):
+    temp_dir.mkdir(parents=True, exist_ok=True)
+    path = temp_dir / file_name
+    with path.open("w", encoding="utf-8") as f:
+        json.dump(payload, f, ensure_ascii=False, indent=2)
+    print(f"[DEBUG] 已写入中间数据: {path}")
+
 def run_price_fetcher(repo_root: Path, preset_name: str, region_id: int, request_interval: float):
     script = repo_root / "Utilities" / "get_price_by_preset.py"
     cmd = [
@@ -140,6 +149,10 @@ def main():
     if not cache_market_dir.is_absolute():
         cache_market_dir = repo_root / cache_market_dir
     cache_market = cache_market_dir / f"{preset_name}_region_{region_id}.json"
+
+    temp_dir = Path(config.get("paths", "temp_cache_dir", fallback="Cache/Temp"))
+    if not temp_dir.is_absolute():
+        temp_dir = repo_root / temp_dir
 
     provider_dict = load_provider(provider_csv)
     reprocessing_data, ore_to_materials, norm_eff = load_reprocessing_data(reprocessing_json, eff)
@@ -176,6 +189,34 @@ def main():
     print(f"[DEBUG] purchase目标数量: {len(purchase_list)}")
     if unmatched_purchase_names:
         print(f"[DEBUG] purchase_list中未映射名称({len(unmatched_purchase_names)}): {unmatched_purchase_names[:10]}")
+
+    ore_yield_snapshot = [
+        {
+            "id": ore.get("id"),
+            "zh": ore.get("zh"),
+            "materials": ore_to_materials.get(ore.get("id"), []),
+        }
+        for ore in reprocessing_data
+    ]
+    dump_temp_json(
+        temp_dir,
+        "reprocessing_yield_snapshot.json",
+        {
+            "eff_config": eff,
+            "eff_used": norm_eff,
+            "ore_count": len(ore_yield_snapshot),
+            "ores": ore_yield_snapshot,
+        },
+    )
+    dump_temp_json(temp_dir, "provider_parsed.json", provider_dict)
+    dump_temp_json(
+        temp_dir,
+        "purchase_mapping.json",
+        {
+            "purchase_list": purchase_list,
+            "unmatched_purchase_names": unmatched_purchase_names,
+        },
+    )
 
     remaining_budget = budget
     remaining_demand = purchase_list.copy()
@@ -278,6 +319,16 @@ def main():
         writer = csv.writer(f, delimiter="\t")
         for pname, qty in used_ores_total.items():
             writer.writerow([pname, qty])
+
+    dump_temp_json(
+        temp_dir,
+        "solver_result_summary.json",
+        {
+            "used_ores_total": used_ores_total,
+            "remaining_budget": remaining_budget,
+            "remaining_demand": remaining_demand,
+        },
+    )
 
     print("\n===== 分步 ILP 统计表 =====")
     print(f"剩余预算：{remaining_budget:.2f}\n")
