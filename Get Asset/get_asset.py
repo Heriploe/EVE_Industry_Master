@@ -7,17 +7,34 @@ import urllib.parse
 import webbrowser
 from http.server import BaseHTTPRequestHandler, HTTPServer
 from pathlib import Path
+import sys
 
 import requests
 
+REPO_ROOT = Path(__file__).resolve().parents[1]
+if str(REPO_ROOT) not in sys.path:
+    sys.path.append(str(REPO_ROOT))
+
+from Utilities.name_mapping import load_types_map
+
 ESI_BASE = "https://esi.evetech.net/latest"
 LOGIN_BASE = "https://login.eveonline.com"
-CONFIG_PATH = Path(__file__).resolve().parents[1] / "config.ini"
+CONFIG_PATH = REPO_ROOT / "config.ini"
 
 
 def normalize_scope(raw_scope):
     scope = urllib.parse.unquote(raw_scope or "").replace("+", " ").strip()
-    return " ".join(scope.split()) if scope else "esi-assets.read_assets.v1"
+    if scope:
+        return " ".join(scope.split())
+    return (
+        "esi-assets.read_assets.v1 "
+        "esi-assets.read_corporation_assets.v1 "
+        "esi-industry.read_character_jobs.v1 "
+        "esi-industry.read_corporation_jobs.v1 "
+        "esi-industry.read_character_blueprints.v1 "
+        "esi-industry.read_corporation_blueprints.v1 "
+        "esi-universe.read_structures.v1"
+    )
 
 
 def load_settings():
@@ -25,18 +42,21 @@ def load_settings():
     if not config.read(CONFIG_PATH, encoding="utf-8"):
         raise FileNotFoundError(f"未找到配置文件: {CONFIG_PATH}")
 
-    section = "esi_auth"
-    if section not in config:
+    if "esi_auth" not in config:
         raise KeyError("config.ini 缺少 [esi_auth] 配置")
 
-    cfg = config[section]
+    cfg = config["esi_auth"]
+    types_file = config.get("paths", "types_json", fallback="Data/types.json")
+
     return {
         "client_id": cfg.get("client_id", "").strip(),
         "client_secret": cfg.get("client_secret", "").strip(),
         "redirect_uri": cfg.get("redirect_uri", "http://127.0.0.1:8765/callback").strip(),
-        "scope": normalize_scope(cfg.get("scope", "esi-assets.read_assets.v1")),
-        "cache_file": Path(cfg.get("token_cache_file", "cache/Asset/token_cache.json")),
+        "scope": normalize_scope(cfg.get("scope", "")),
+        "cache_file": REPO_ROOT / cfg.get("token_cache_file", "Cache/Asset/token_cache.json"),
+        "output_dir": REPO_ROOT / cfg.get("output_dir", "Cache/Asset"),
         "user_agent": cfg.get("user_agent", "AssetScript/1.0").strip(),
+        "types_file": REPO_ROOT / types_file,
     }
 
 
@@ -47,68 +67,43 @@ def load_cached_tokens(cache_file):
         return json.load(f)
 
 
-def save_cached_tokens(cache_file, tokens):
-    cache_file.parent.mkdir(parents=True, exist_ok=True)
-    with cache_file.open("w", encoding="utf-8") as f:
-        json.dump(tokens, f, ensure_ascii=False, indent=2)
+def save_json(path, data):
+    path.parent.mkdir(parents=True, exist_ok=True)
+    with path.open("w", encoding="utf-8") as f:
+        json.dump(data, f, ensure_ascii=False, indent=2)
 
 
 def refresh_access_token(client_id, client_secret, refresh_token, user_agent):
-    auth = base64.b64encode(
-        f"{client_id}:{client_secret}".encode("utf-8")
-    ).decode("utf-8")
-
+    auth = base64.b64encode(f"{client_id}:{client_secret}".encode("utf-8")).decode("utf-8")
     headers = {
         "Authorization": f"Basic {auth}",
         "Content-Type": "application/x-www-form-urlencoded",
         "User-Agent": user_agent,
     }
+    data = {"grant_type": "refresh_token", "refresh_token": refresh_token}
 
-    data = {
-        "grant_type": "refresh_token",
-        "refresh_token": refresh_token
-    }
-
-    r = requests.post(
-        "https://login.eveonline.com/v2/oauth/token",
-        headers=headers,
-        data=data,
-        timeout=15
-    )
-
-    # 👇 关键调试信息
+    r = requests.post(f"{LOGIN_BASE}/v2/oauth/token", headers=headers, data=data, timeout=15)
     if r.status_code != 200:
-        print("Status:", r.status_code)
-        print("Response:", r.text)
-        raise RuntimeError("Refresh token failed")
+        raise RuntimeError(f"Refresh token failed: {r.status_code} {r.text}")
 
     token = r.json()
     return token["access_token"], token.get("refresh_token", refresh_token)
 
 
 def exchange_code_for_token(client_id, client_secret, code, redirect_uri, user_agent):
-    auth = base64.b64encode(
-        f"{client_id}:{client_secret}".encode("utf-8")
-    ).decode("utf-8")
-
+    auth = base64.b64encode(f"{client_id}:{client_secret}".encode("utf-8")).decode("utf-8")
     headers = {
         "Authorization": f"Basic {auth}",
         "Content-Type": "application/x-www-form-urlencoded",
         "User-Agent": user_agent,
     }
-
     data = {
         "grant_type": "authorization_code",
         "code": code,
         "redirect_uri": redirect_uri,
     }
 
-    r = requests.post(
-        f"{LOGIN_BASE}/v2/oauth/token",
-        headers=headers,
-        data=data,
-        timeout=15,
-    )
+    r = requests.post(f"{LOGIN_BASE}/v2/oauth/token", headers=headers, data=data, timeout=15)
     r.raise_for_status()
     return r.json()
 
@@ -170,56 +165,72 @@ def get_authorization_code(redirect_uri, client_id, scope):
 
 
 def get_character_id(access_token, user_agent):
-    """
-    从 access_token 中获取角色 ID
-    """
-    headers = {
-        "Authorization": f"Bearer {access_token}",
-        "User-Agent": user_agent,
-    }
-
-    r = requests.get(
-        f"{LOGIN_BASE}/oauth/verify",
-        headers=headers,
-        timeout=10
-    )
+    headers = {"Authorization": f"Bearer {access_token}", "User-Agent": user_agent}
+    r = requests.get(f"{LOGIN_BASE}/oauth/verify", headers=headers, timeout=10)
     r.raise_for_status()
-
     data = r.json()
     return data["CharacterID"], data["CharacterName"]
 
 
-def get_all_character_assets(character_id, access_token, user_agent):
-    """
-    自动处理 X-Pages，获取全部资产
-    """
-    headers = {
-        "Authorization": f"Bearer {access_token}",
-        "User-Agent": user_agent,
-    }
-
+def get_all_pages(url, access_token, user_agent):
+    headers = {"Authorization": f"Bearer {access_token}", "User-Agent": user_agent}
     page = 1
-    assets = []
+    results = []
 
     while True:
-        r = requests.get(
-            f"{ESI_BASE}/characters/{character_id}/assets/",
-            headers=headers,
-            params={"page": page},
-            timeout=20
-        )
+        r = requests.get(url, headers=headers, params={"page": page}, timeout=20)
+        if r.status_code == 403:
+            raise PermissionError(f"403 Forbidden: {url}")
         r.raise_for_status()
-
-        assets.extend(r.json())
+        results.extend(r.json())
 
         pages = int(r.headers.get("X-Pages", 1))
         if page >= pages:
             break
-
         page += 1
-        time.sleep(0.2)  # 防止 420
+        time.sleep(0.2)
 
-    return assets
+    return results
+
+
+def split_assets_with_blueprints(assets, blueprints, types_file):
+    type_dict = load_types_map(str(types_file))
+    blueprint_lookup = {bp["item_id"]: bp for bp in blueprints}
+
+    non_blueprint_assets = []
+    blueprint_assets = []
+
+    for asset in assets:
+        item_id = asset.get("item_id")
+        type_id = asset.get("type_id")
+        quantity = asset.get("quantity", 1)
+        is_blueprint_copy = asset.get("is_blueprint_copy", False)
+        names = type_dict.get(type_id, {"zh": "", "en": ""})
+
+        if item_id in blueprint_lookup:
+            bp = blueprint_lookup[item_id]
+            blueprint_assets.append(
+                {
+                    "id": type_id,
+                    "zh": names["zh"],
+                    "en": names["en"],
+                    "material_efficiency": bp.get("material_efficiency", 0),
+                    "time_efficiency": bp.get("time_efficiency", 0),
+                    "runs": bp.get("runs", -1),
+                    "is_blueprint_copy": is_blueprint_copy,
+                }
+            )
+        else:
+            non_blueprint_assets.append(
+                {
+                    "id": type_id,
+                    "zh": names["zh"],
+                    "en": names["en"],
+                    "quantity": quantity,
+                }
+            )
+
+    return non_blueprint_assets, blueprint_assets
 
 
 def main():
@@ -237,21 +248,14 @@ def main():
         print("检测到缓存 refresh_token，优先尝试刷新 access_token...")
         try:
             access_token, refresh_token = refresh_access_token(
-                settings["client_id"],
-                settings["client_secret"],
-                refresh_token,
-                settings["user_agent"],
+                settings["client_id"], settings["client_secret"], refresh_token, settings["user_agent"]
             )
         except Exception as exc:  # noqa: BLE001
             print(f"刷新失败，将重新进行浏览器认证: {exc}")
             access_token = None
 
     if not access_token:
-        code = get_authorization_code(
-            settings["redirect_uri"],
-            settings["client_id"],
-            settings["scope"],
-        )
+        code = get_authorization_code(settings["redirect_uri"], settings["client_id"], settings["scope"])
         token_data = exchange_code_for_token(
             settings["client_id"],
             settings["client_secret"],
@@ -262,7 +266,7 @@ def main():
         access_token = token_data["access_token"]
         refresh_token = token_data.get("refresh_token")
 
-    save_cached_tokens(
+    save_json(
         cache_file,
         {
             "access_token": access_token,
@@ -271,19 +275,38 @@ def main():
         },
     )
 
-    # 2. 获取角色信息
     char_id, char_name = get_character_id(access_token, settings["user_agent"])
     print(f"Character: {char_name} ({char_id})")
 
-    # 3. 获取资产
-    assets = get_all_character_assets(char_id, access_token, settings["user_agent"])
+    assets = get_all_pages(f"{ESI_BASE}/characters/{char_id}/assets/", access_token, settings["user_agent"])
     print(f"Total assets: {len(assets)}")
 
-    # 4. 打印部分示例
-    for a in assets[:10]:
-        print(a)
+    try:
+        blueprints = get_all_pages(
+            f"{ESI_BASE}/characters/{char_id}/blueprints/",
+            access_token,
+            settings["user_agent"],
+        )
+        print(f"Total blueprints: {len(blueprints)}")
+    except PermissionError as exc:
+        print(f"获取蓝图失败，按无蓝图处理: {exc}")
+        blueprints = []
 
-    print(f"Token 缓存已写入: {cache_file}")
+    non_blueprints, blueprint_assets = split_assets_with_blueprints(
+        assets,
+        blueprints,
+        settings["types_file"],
+    )
+
+    out_dir = settings["output_dir"]
+    save_json(out_dir / "character_assets_raw.json", assets)
+    save_json(out_dir / "character_blueprints_raw.json", blueprints)
+    save_json(out_dir / "final_non_blueprints.json", non_blueprints)
+    save_json(out_dir / "final_blueprints.json", blueprint_assets)
+
+    print(f"Token 缓存: {cache_file}")
+    print(f"非蓝图资产 {len(non_blueprints)} 条 -> {out_dir / 'final_non_blueprints.json'}")
+    print(f"蓝图资产 {len(blueprint_assets)} 条 -> {out_dir / 'final_blueprints.json'}")
 
 
 if __name__ == "__main__":
