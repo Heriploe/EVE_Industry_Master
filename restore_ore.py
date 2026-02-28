@@ -123,7 +123,11 @@ def main():
 
     preset_type_ids, mineral_id_to_name = load_preset_type_ids(preset_json, alias_json, preset_name, repo_root)
 
-    run_price_fetcher(repo_root, preset_name, region_id, request_interval)
+    if not cache_market.exists():
+        run_price_fetcher(repo_root, preset_name, region_id, request_interval)
+    else:
+        print(f"检测到已有市场缓存，跳过拉价: {cache_market}")
+
     mineral_id_to_price = load_prices(cache_market)
 
     purchase_list = {}
