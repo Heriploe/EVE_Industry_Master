@@ -1,0 +1,4899 @@
+{
+  "eff_config": 0.9063,
+  "eff_used": 0.9063,
+  "ore_count": 312,
+  "ores": [
+    {
+      "id": 18,
+      "zh": "斜长岩",
+      "materials": [
+        {
+          "materialTypeID": 34,
+          "quantity": 158
+        },
+        {
+          "materialTypeID": 36,
+          "quantity": 63
+        }
+      ]
+    },
+    {
+      "id": 19,
+      "zh": "灰岩",
+      "materials": [
+        {
+          "materialTypeID": 34,
+          "quantity": 43502
+        },
+        {
+          "materialTypeID": 37,
+          "quantity": 906
+        },
+        {
+          "materialTypeID": 38,
+          "quantity": 145
+        },
+        {
+          "materialTypeID": 39,
+          "quantity": 72
+        },
+        {
+          "materialTypeID": 40,
+          "quantity": 36
+        }
+      ]
+    },
+    {
+      "id": 20,
+      "zh": "水硼砂",
+      "materials": [
+        {
+          "materialTypeID": 36,
+          "quantity": 54
+        },
+        {
+          "materialTypeID": 37,
+          "quantity": 108
+        }
+      ]
+    },
+    {
+      "id": 21,
+      "zh": "同位原矿",
+      "materials": [
+        {
+          "materialTypeID": 35,
+          "quantity": 407
+        },
+        {
+          "materialTypeID": 38,
+          "quantity": 108
+        }
+      ]
+    },
+    {
+      "id": 22,
+      "zh": "艾克诺岩",
+      "materials": [
+        {
+          "materialTypeID": 35,
+          "quantity": 2900
+        },
+        {
+          "materialTypeID": 36,
+          "quantity": 1087
+        },
+        {
+          "materialTypeID": 40,
+          "quantity": 108
+        }
+      ]
+    },
+    {
+      "id": 1223,
+      "zh": "双多特石",
+      "materials": [
+        {
+          "materialTypeID": 35,
+          "quantity": 2900
+        },
+        {
+          "materialTypeID": 36,
+          "quantity": 1087
+        },
+        {
+          "materialTypeID": 39,
+          "quantity": 145
+        }
+      ]
+    },
+    {
+      "id": 1224,
+      "zh": "干焦岩",
+      "materials": [
+        {
+          "materialTypeID": 35,
+          "quantity": 81
+        },
+        {
+          "materialTypeID": 36,
+          "quantity": 27
+        }
+      ]
+    },
+    {
+      "id": 1225,
+      "zh": "克洛基石",
+      "materials": [
+        {
+          "materialTypeID": 35,
+          "quantity": 725
+        },
+        {
+          "materialTypeID": 36,
+          "quantity": 1812
+        },
+        {
+          "materialTypeID": 38,
+          "quantity": 725
+        }
+      ]
+    },
+    {
+      "id": 1226,
+      "zh": "杰斯贝矿",
+      "materials": [
+        {
+          "materialTypeID": 36,
+          "quantity": 135
+        },
+        {
+          "materialTypeID": 38,
+          "quantity": 45
+        }
+      ]
+    },
+    {
+      "id": 1227,
+      "zh": "奥贝尔石",
+      "materials": [
+        {
+          "materialTypeID": 35,
+          "quantity": 81
+        },
+        {
+          "materialTypeID": 37,
+          "quantity": 67
+        }
+      ]
+    },
+    {
+      "id": 1228,
+      "zh": "灼烧岩",
+      "materials": [
+        {
+          "materialTypeID": 34,
+          "quantity": 135
+        },
+        {
+          "materialTypeID": 35,
+          "quantity": 99
+        }
+      ]
+    },
+    {
+      "id": 1229,
+      "zh": "片麻岩",
+      "materials": [
+        {
+          "materialTypeID": 35,
+          "quantity": 1812
+        },
+        {
+          "materialTypeID": 36,
+          "quantity": 1359
+        },
+        {
+          "materialTypeID": 37,
+          "quantity": 725
+        }
+      ]
+    },
+    {
+      "id": 1231,
+      "zh": "希莫非特",
+      "materials": [
+        {
+          "materialTypeID": 37,
+          "quantity": 217
+        },
+        {
+          "materialTypeID": 38,
+          "quantity": 81
+        }
+      ]
+    },
+    {
+      "id": 1232,
+      "zh": "黑赭石",
+      "materials": [
+        {
+          "materialTypeID": 36,
+          "quantity": 1232
+        },
+        {
+          "materialTypeID": 37,
+          "quantity": 1087
+        },
+        {
+          "materialTypeID": 38,
+          "quantity": 290
+        }
+      ]
+    },
+    {
+      "id": 11396,
+      "zh": "基腹断岩",
+      "materials": [
+        {
+          "materialTypeID": 11399,
+          "quantity": 126
+        }
+      ]
+    },
+    {
+      "id": 17425,
+      "zh": "艾克诺岩（2级）",
+      "materials": [
+        {
+          "materialTypeID": 35,
+          "quantity": 3045
+        },
+        {
+          "materialTypeID": 36,
+          "quantity": 1141
+        },
+        {
+          "materialTypeID": 40,
+          "quantity": 114
+        }
+      ]
+    },
+    {
+      "id": 17426,
+      "zh": "艾克诺岩（3级）",
+      "materials": [
+        {
+          "materialTypeID": 35,
+          "quantity": 3190
+        },
+        {
+          "materialTypeID": 36,
+          "quantity": 1196
+        },
+        {
+          "materialTypeID": 40,
+          "quantity": 119
+        }
+      ]
+    },
+    {
+      "id": 17428,
+      "zh": "双多特石（2级）",
+      "materials": [
+        {
+          "materialTypeID": 35,
+          "quantity": 3045
+        },
+        {
+          "materialTypeID": 36,
+          "quantity": 1141
+        },
+        {
+          "materialTypeID": 39,
+          "quantity": 152
+        }
+      ]
+    },
+    {
+      "id": 17429,
+      "zh": "双多特石（3级）",
+      "materials": [
+        {
+          "materialTypeID": 35,
+          "quantity": 3190
+        },
+        {
+          "materialTypeID": 36,
+          "quantity": 1196
+        },
+        {
+          "materialTypeID": 39,
+          "quantity": 159
+        }
+      ]
+    },
+    {
+      "id": 17432,
+      "zh": "克洛基石（2级）",
+      "materials": [
+        {
+          "materialTypeID": 35,
+          "quantity": 761
+        },
+        {
+          "materialTypeID": 36,
+          "quantity": 1903
+        },
+        {
+          "materialTypeID": 38,
+          "quantity": 761
+        }
+      ]
+    },
+    {
+      "id": 17433,
+      "zh": "克洛基石（3级）",
+      "materials": [
+        {
+          "materialTypeID": 35,
+          "quantity": 797
+        },
+        {
+          "materialTypeID": 36,
+          "quantity": 1993
+        },
+        {
+          "materialTypeID": 38,
+          "quantity": 797
+        }
+      ]
+    },
+    {
+      "id": 17436,
+      "zh": "黑赭石（2级）",
+      "materials": [
+        {
+          "materialTypeID": 36,
+          "quantity": 1294
+        },
+        {
+          "materialTypeID": 37,
+          "quantity": 1141
+        },
+        {
+          "materialTypeID": 38,
+          "quantity": 304
+        }
+      ]
+    },
+    {
+      "id": 17437,
+      "zh": "黑赭石（3级）",
+      "materials": [
+        {
+          "materialTypeID": 36,
+          "quantity": 1355
+        },
+        {
+          "materialTypeID": 37,
+          "quantity": 1196
+        },
+        {
+          "materialTypeID": 38,
+          "quantity": 319
+        }
+      ]
+    },
+    {
+      "id": 17440,
+      "zh": "同位原矿（2级）",
+      "materials": [
+        {
+          "materialTypeID": 35,
+          "quantity": 428
+        },
+        {
+          "materialTypeID": 38,
+          "quantity": 114
+        }
+      ]
+    },
+    {
+      "id": 17441,
+      "zh": "同位原矿（3级）",
+      "materials": [
+        {
+          "materialTypeID": 35,
+          "quantity": 448
+        },
+        {
+          "materialTypeID": 38,
+          "quantity": 119
+        }
+      ]
+    },
+    {
+      "id": 17444,
+      "zh": "希莫非特（2级）",
+      "materials": [
+        {
+          "materialTypeID": 37,
+          "quantity": 228
+        },
+        {
+          "materialTypeID": 38,
+          "quantity": 86
+        }
+      ]
+    },
+    {
+      "id": 17445,
+      "zh": "希莫非特（3级）",
+      "materials": [
+        {
+          "materialTypeID": 37,
+          "quantity": 239
+        },
+        {
+          "materialTypeID": 38,
+          "quantity": 89
+        }
+      ]
+    },
+    {
+      "id": 17448,
+      "zh": "杰斯贝矿（2级）",
+      "materials": [
+        {
+          "materialTypeID": 36,
+          "quantity": 143
+        },
+        {
+          "materialTypeID": 38,
+          "quantity": 48
+        }
+      ]
+    },
+    {
+      "id": 17449,
+      "zh": "杰斯贝矿（3级）",
+      "materials": [
+        {
+          "materialTypeID": 36,
+          "quantity": 149
+        },
+        {
+          "materialTypeID": 38,
+          "quantity": 49
+        }
+      ]
+    },
+    {
+      "id": 17452,
+      "zh": "水硼砂（2级）",
+      "materials": [
+        {
+          "materialTypeID": 36,
+          "quantity": 57
+        },
+        {
+          "materialTypeID": 37,
+          "quantity": 114
+        }
+      ]
+    },
+    {
+      "id": 17453,
+      "zh": "水硼砂（3级）",
+      "materials": [
+        {
+          "materialTypeID": 36,
+          "quantity": 59
+        },
+        {
+          "materialTypeID": 37,
+          "quantity": 119
+        }
+      ]
+    },
+    {
+      "id": 17455,
+      "zh": "斜长岩（2级）",
+      "materials": [
+        {
+          "materialTypeID": 34,
+          "quantity": 166
+        },
+        {
+          "materialTypeID": 36,
+          "quantity": 67
+        }
+      ]
+    },
+    {
+      "id": 17456,
+      "zh": "斜长岩（3级）",
+      "materials": [
+        {
+          "materialTypeID": 34,
+          "quantity": 174
+        },
+        {
+          "materialTypeID": 36,
+          "quantity": 69
+        }
+      ]
+    },
+    {
+      "id": 17459,
+      "zh": "干焦岩（2级）",
+      "materials": [
+        {
+          "materialTypeID": 35,
+          "quantity": 86
+        },
+        {
+          "materialTypeID": 36,
+          "quantity": 29
+        }
+      ]
+    },
+    {
+      "id": 17460,
+      "zh": "干焦岩（3级）",
+      "materials": [
+        {
+          "materialTypeID": 35,
+          "quantity": 89
+        },
+        {
+          "materialTypeID": 36,
+          "quantity": 29
+        }
+      ]
+    },
+    {
+      "id": 17463,
+      "zh": "灼烧岩（2级）",
+      "materials": [
+        {
+          "materialTypeID": 34,
+          "quantity": 143
+        },
+        {
+          "materialTypeID": 35,
+          "quantity": 103
+        }
+      ]
+    },
+    {
+      "id": 17464,
+      "zh": "灼烧岩（3级）",
+      "materials": [
+        {
+          "materialTypeID": 34,
+          "quantity": 149
+        },
+        {
+          "materialTypeID": 35,
+          "quantity": 107
+        }
+      ]
+    },
+    {
+      "id": 17466,
+      "zh": "灰岩（2级）",
+      "materials": [
+        {
+          "materialTypeID": 34,
+          "quantity": 45677
+        },
+        {
+          "materialTypeID": 37,
+          "quantity": 951
+        },
+        {
+          "materialTypeID": 38,
+          "quantity": 152
+        },
+        {
+          "materialTypeID": 39,
+          "quantity": 76
+        },
+        {
+          "materialTypeID": 40,
+          "quantity": 38
+        }
+      ]
+    },
+    {
+      "id": 17467,
+      "zh": "灰岩（3级）",
+      "materials": [
+        {
+          "materialTypeID": 34,
+          "quantity": 47852
+        },
+        {
+          "materialTypeID": 37,
+          "quantity": 996
+        },
+        {
+          "materialTypeID": 38,
+          "quantity": 159
+        },
+        {
+          "materialTypeID": 39,
+          "quantity": 79
+        },
+        {
+          "materialTypeID": 40,
+          "quantity": 39
+        }
+      ]
+    },
+    {
+      "id": 17865,
+      "zh": "片麻岩（2级）",
+      "materials": [
+        {
+          "materialTypeID": 35,
+          "quantity": 1903
+        },
+        {
+          "materialTypeID": 36,
+          "quantity": 1427
+        },
+        {
+          "materialTypeID": 37,
+          "quantity": 761
+        }
+      ]
+    },
+    {
+      "id": 17866,
+      "zh": "片麻岩（3级）",
+      "materials": [
+        {
+          "materialTypeID": 35,
+          "quantity": 1993
+        },
+        {
+          "materialTypeID": 36,
+          "quantity": 1495
+        },
+        {
+          "materialTypeID": 37,
+          "quantity": 797
+        }
+      ]
+    },
+    {
+      "id": 17867,
+      "zh": "奥贝尔石（2级）",
+      "materials": [
+        {
+          "materialTypeID": 35,
+          "quantity": 86
+        },
+        {
+          "materialTypeID": 37,
+          "quantity": 71
+        }
+      ]
+    },
+    {
+      "id": 17868,
+      "zh": "奥贝尔石（3级）",
+      "materials": [
+        {
+          "materialTypeID": 35,
+          "quantity": 89
+        },
+        {
+          "materialTypeID": 37,
+          "quantity": 75
+        }
+      ]
+    },
+    {
+      "id": 17869,
+      "zh": "基腹断岩（2级）",
+      "materials": [
+        {
+          "materialTypeID": 11399,
+          "quantity": 133
+        }
+      ]
+    },
+    {
+      "id": 17870,
+      "zh": "基腹断岩（3级）",
+      "materials": [
+        {
+          "materialTypeID": 11399,
+          "quantity": 139
+        }
+      ]
+    },
+    {
+      "id": 46675,
+      "zh": "黑赭石（4级）",
+      "materials": [
+        {
+          "materialTypeID": 36,
+          "quantity": 1417
+        },
+        {
+          "materialTypeID": 37,
+          "quantity": 1250
+        },
+        {
+          "materialTypeID": 38,
+          "quantity": 333
+        }
+      ]
+    },
+    {
+      "id": 46676,
+      "zh": "双多特石（4级）",
+      "materials": [
+        {
+          "materialTypeID": 35,
+          "quantity": 3335
+        },
+        {
+          "materialTypeID": 36,
+          "quantity": 1250
+        },
+        {
+          "materialTypeID": 39,
+          "quantity": 166
+        }
+      ]
+    },
+    {
+      "id": 46677,
+      "zh": "克洛基石（4级）",
+      "materials": [
+        {
+          "materialTypeID": 35,
+          "quantity": 833
+        },
+        {
+          "materialTypeID": 36,
+          "quantity": 2084
+        },
+        {
+          "materialTypeID": 38,
+          "quantity": 833
+        }
+      ]
+    },
+    {
+      "id": 46678,
+      "zh": "艾克诺岩（4级）",
+      "materials": [
+        {
+          "materialTypeID": 35,
+          "quantity": 3335
+        },
+        {
+          "materialTypeID": 36,
+          "quantity": 1250
+        },
+        {
+          "materialTypeID": 40,
+          "quantity": 125
+        }
+      ]
+    },
+    {
+      "id": 46679,
+      "zh": "片麻岩（4级）",
+      "materials": [
+        {
+          "materialTypeID": 35,
+          "quantity": 2084
+        },
+        {
+          "materialTypeID": 36,
+          "quantity": 1563
+        },
+        {
+          "materialTypeID": 37,
+          "quantity": 833
+        }
+      ]
+    },
+    {
+      "id": 46680,
+      "zh": "同位原矿（4级）",
+      "materials": [
+        {
+          "materialTypeID": 35,
+          "quantity": 469
+        },
+        {
+          "materialTypeID": 38,
+          "quantity": 125
+        }
+      ]
+    },
+    {
+      "id": 46681,
+      "zh": "希莫非特（4级）",
+      "materials": [
+        {
+          "materialTypeID": 37,
+          "quantity": 250
+        },
+        {
+          "materialTypeID": 38,
+          "quantity": 94
+        }
+      ]
+    },
+    {
+      "id": 46682,
+      "zh": "杰斯贝矿（4级）",
+      "materials": [
+        {
+          "materialTypeID": 36,
+          "quantity": 156
+        },
+        {
+          "materialTypeID": 38,
+          "quantity": 52
+        }
+      ]
+    },
+    {
+      "id": 46683,
+      "zh": "水硼砂（4级）",
+      "materials": [
+        {
+          "materialTypeID": 36,
+          "quantity": 62
+        },
+        {
+          "materialTypeID": 37,
+          "quantity": 125
+        }
+      ]
+    },
+    {
+      "id": 46684,
+      "zh": "奥贝尔石（4级）",
+      "materials": [
+        {
+          "materialTypeID": 35,
+          "quantity": 94
+        },
+        {
+          "materialTypeID": 37,
+          "quantity": 77
+        }
+      ]
+    },
+    {
+      "id": 46685,
+      "zh": "斜长岩（4级）",
+      "materials": [
+        {
+          "materialTypeID": 34,
+          "quantity": 182
+        },
+        {
+          "materialTypeID": 36,
+          "quantity": 73
+        }
+      ]
+    },
+    {
+      "id": 46686,
+      "zh": "干焦岩（4级）",
+      "materials": [
+        {
+          "materialTypeID": 35,
+          "quantity": 94
+        },
+        {
+          "materialTypeID": 36,
+          "quantity": 31
+        }
+      ]
+    },
+    {
+      "id": 46687,
+      "zh": "灼烧岩（4级）",
+      "materials": [
+        {
+          "materialTypeID": 34,
+          "quantity": 156
+        },
+        {
+          "materialTypeID": 35,
+          "quantity": 113
+        }
+      ]
+    },
+    {
+      "id": 46688,
+      "zh": "灰岩（4级）",
+      "materials": [
+        {
+          "materialTypeID": 34,
+          "quantity": 50027
+        },
+        {
+          "materialTypeID": 37,
+          "quantity": 1042
+        },
+        {
+          "materialTypeID": 38,
+          "quantity": 166
+        },
+        {
+          "materialTypeID": 39,
+          "quantity": 83
+        },
+        {
+          "materialTypeID": 40,
+          "quantity": 41
+        }
+      ]
+    },
+    {
+      "id": 62520,
+      "zh": "高密度灼烧岩",
+      "materials": [
+        {
+          "materialTypeID": 34,
+          "quantity": 135
+        },
+        {
+          "materialTypeID": 35,
+          "quantity": 99
+        }
+      ]
+    },
+    {
+      "id": 62521,
+      "zh": "高密度灼烧岩（2级）",
+      "materials": [
+        {
+          "materialTypeID": 34,
+          "quantity": 143
+        },
+        {
+          "materialTypeID": 35,
+          "quantity": 103
+        }
+      ]
+    },
+    {
+      "id": 62522,
+      "zh": "高密度灼烧岩（3级）",
+      "materials": [
+        {
+          "materialTypeID": 34,
+          "quantity": 149
+        },
+        {
+          "materialTypeID": 35,
+          "quantity": 107
+        }
+      ]
+    },
+    {
+      "id": 62524,
+      "zh": "高密度干焦岩",
+      "materials": [
+        {
+          "materialTypeID": 35,
+          "quantity": 81
+        },
+        {
+          "materialTypeID": 36,
+          "quantity": 27
+        }
+      ]
+    },
+    {
+      "id": 62525,
+      "zh": "高密度干焦岩（2级）",
+      "materials": [
+        {
+          "materialTypeID": 35,
+          "quantity": 86
+        },
+        {
+          "materialTypeID": 36,
+          "quantity": 29
+        }
+      ]
+    },
+    {
+      "id": 62526,
+      "zh": "高密度干焦岩（3级）",
+      "materials": [
+        {
+          "materialTypeID": 35,
+          "quantity": 89
+        },
+        {
+          "materialTypeID": 36,
+          "quantity": 29
+        }
+      ]
+    },
+    {
+      "id": 62528,
+      "zh": "高密度斜长岩",
+      "materials": [
+        {
+          "materialTypeID": 34,
+          "quantity": 158
+        },
+        {
+          "materialTypeID": 36,
+          "quantity": 63
+        }
+      ]
+    },
+    {
+      "id": 62529,
+      "zh": "高密度斜长岩（2级）",
+      "materials": [
+        {
+          "materialTypeID": 34,
+          "quantity": 166
+        },
+        {
+          "materialTypeID": 36,
+          "quantity": 67
+        }
+      ]
+    },
+    {
+      "id": 62530,
+      "zh": "高密度斜长岩（3级）",
+      "materials": [
+        {
+          "materialTypeID": 34,
+          "quantity": 174
+        },
+        {
+          "materialTypeID": 36,
+          "quantity": 69
+        }
+      ]
+    },
+    {
+      "id": 62532,
+      "zh": "高密度奥贝尔石",
+      "materials": [
+        {
+          "materialTypeID": 35,
+          "quantity": 81
+        },
+        {
+          "materialTypeID": 37,
+          "quantity": 67
+        }
+      ]
+    },
+    {
+      "id": 62533,
+      "zh": "高密度奥贝尔石（2级）",
+      "materials": [
+        {
+          "materialTypeID": 35,
+          "quantity": 86
+        },
+        {
+          "materialTypeID": 37,
+          "quantity": 71
+        }
+      ]
+    },
+    {
+      "id": 62534,
+      "zh": "高密度奥贝尔石（3级）",
+      "materials": [
+        {
+          "materialTypeID": 35,
+          "quantity": 89
+        },
+        {
+          "materialTypeID": 37,
+          "quantity": 75
+        }
+      ]
+    },
+    {
+      "id": 62536,
+      "zh": "高密度水硼砂",
+      "materials": [
+        {
+          "materialTypeID": 36,
+          "quantity": 54
+        },
+        {
+          "materialTypeID": 37,
+          "quantity": 108
+        }
+      ]
+    },
+    {
+      "id": 62537,
+      "zh": "高密度水硼砂（2级）",
+      "materials": [
+        {
+          "materialTypeID": 36,
+          "quantity": 57
+        },
+        {
+          "materialTypeID": 37,
+          "quantity": 114
+        }
+      ]
+    },
+    {
+      "id": 62538,
+      "zh": "高密度水硼砂（3级）",
+      "materials": [
+        {
+          "materialTypeID": 36,
+          "quantity": 59
+        },
+        {
+          "materialTypeID": 37,
+          "quantity": 119
+        }
+      ]
+    },
+    {
+      "id": 62540,
+      "zh": "高密度杰斯贝矿",
+      "materials": [
+        {
+          "materialTypeID": 36,
+          "quantity": 135
+        },
+        {
+          "materialTypeID": 38,
+          "quantity": 45
+        }
+      ]
+    },
+    {
+      "id": 62541,
+      "zh": "高密度杰斯贝矿（2级）",
+      "materials": [
+        {
+          "materialTypeID": 36,
+          "quantity": 143
+        },
+        {
+          "materialTypeID": 38,
+          "quantity": 48
+        }
+      ]
+    },
+    {
+      "id": 62542,
+      "zh": "高密度杰斯贝矿（3级）",
+      "materials": [
+        {
+          "materialTypeID": 36,
+          "quantity": 149
+        },
+        {
+          "materialTypeID": 38,
+          "quantity": 49
+        }
+      ]
+    },
+    {
+      "id": 62544,
+      "zh": "高密度希莫非特",
+      "materials": [
+        {
+          "materialTypeID": 37,
+          "quantity": 217
+        },
+        {
+          "materialTypeID": 38,
+          "quantity": 81
+        }
+      ]
+    },
+    {
+      "id": 62545,
+      "zh": "高密度希莫非特（2级）",
+      "materials": [
+        {
+          "materialTypeID": 37,
+          "quantity": 228
+        },
+        {
+          "materialTypeID": 38,
+          "quantity": 86
+        }
+      ]
+    },
+    {
+      "id": 62546,
+      "zh": "高密度希莫非特（3级）",
+      "materials": [
+        {
+          "materialTypeID": 37,
+          "quantity": 239
+        },
+        {
+          "materialTypeID": 38,
+          "quantity": 89
+        }
+      ]
+    },
+    {
+      "id": 62548,
+      "zh": "高密度同位原矿",
+      "materials": [
+        {
+          "materialTypeID": 35,
+          "quantity": 407
+        },
+        {
+          "materialTypeID": 38,
+          "quantity": 108
+        }
+      ]
+    },
+    {
+      "id": 62549,
+      "zh": "高密度同位原矿（2级）",
+      "materials": [
+        {
+          "materialTypeID": 35,
+          "quantity": 428
+        },
+        {
+          "materialTypeID": 38,
+          "quantity": 114
+        }
+      ]
+    },
+    {
+      "id": 62550,
+      "zh": "高密度同位原矿（3级）",
+      "materials": [
+        {
+          "materialTypeID": 35,
+          "quantity": 448
+        },
+        {
+          "materialTypeID": 38,
+          "quantity": 119
+        }
+      ]
+    },
+    {
+      "id": 62552,
+      "zh": "高密度片麻岩",
+      "materials": [
+        {
+          "materialTypeID": 35,
+          "quantity": 1812
+        },
+        {
+          "materialTypeID": 36,
+          "quantity": 1359
+        },
+        {
+          "materialTypeID": 37,
+          "quantity": 725
+        }
+      ]
+    },
+    {
+      "id": 62553,
+      "zh": "高密度片麻岩（2级）",
+      "materials": [
+        {
+          "materialTypeID": 35,
+          "quantity": 1903
+        },
+        {
+          "materialTypeID": 36,
+          "quantity": 1427
+        },
+        {
+          "materialTypeID": 37,
+          "quantity": 761
+        }
+      ]
+    },
+    {
+      "id": 62554,
+      "zh": "高密度片麻岩（3级）",
+      "materials": [
+        {
+          "materialTypeID": 35,
+          "quantity": 1993
+        },
+        {
+          "materialTypeID": 36,
+          "quantity": 1495
+        },
+        {
+          "materialTypeID": 37,
+          "quantity": 797
+        }
+      ]
+    },
+    {
+      "id": 62556,
+      "zh": "高密度黑赭石",
+      "materials": [
+        {
+          "materialTypeID": 36,
+          "quantity": 1232
+        },
+        {
+          "materialTypeID": 37,
+          "quantity": 1087
+        },
+        {
+          "materialTypeID": 38,
+          "quantity": 290
+        }
+      ]
+    },
+    {
+      "id": 62557,
+      "zh": "高密度黑赭石（2级）",
+      "materials": [
+        {
+          "materialTypeID": 36,
+          "quantity": 1294
+        },
+        {
+          "materialTypeID": 37,
+          "quantity": 1141
+        },
+        {
+          "materialTypeID": 38,
+          "quantity": 304
+        }
+      ]
+    },
+    {
+      "id": 62558,
+      "zh": "高密度黑赭石（3级）",
+      "materials": [
+        {
+          "materialTypeID": 36,
+          "quantity": 1355
+        },
+        {
+          "materialTypeID": 37,
+          "quantity": 1196
+        },
+        {
+          "materialTypeID": 38,
+          "quantity": 319
+        }
+      ]
+    },
+    {
+      "id": 62560,
+      "zh": "高密度克洛基石",
+      "materials": [
+        {
+          "materialTypeID": 35,
+          "quantity": 725
+        },
+        {
+          "materialTypeID": 36,
+          "quantity": 1812
+        },
+        {
+          "materialTypeID": 38,
+          "quantity": 725
+        }
+      ]
+    },
+    {
+      "id": 62561,
+      "zh": "高密度克洛基石（2级）",
+      "materials": [
+        {
+          "materialTypeID": 35,
+          "quantity": 761
+        },
+        {
+          "materialTypeID": 36,
+          "quantity": 1903
+        },
+        {
+          "materialTypeID": 38,
+          "quantity": 761
+        }
+      ]
+    },
+    {
+      "id": 62562,
+      "zh": "高密度克洛基石（3级）",
+      "materials": [
+        {
+          "materialTypeID": 35,
+          "quantity": 797
+        },
+        {
+          "materialTypeID": 36,
+          "quantity": 1993
+        },
+        {
+          "materialTypeID": 38,
+          "quantity": 797
+        }
+      ]
+    },
+    {
+      "id": 62564,
+      "zh": "高密度双多特石",
+      "materials": [
+        {
+          "materialTypeID": 35,
+          "quantity": 2900
+        },
+        {
+          "materialTypeID": 36,
+          "quantity": 1087
+        },
+        {
+          "materialTypeID": 39,
+          "quantity": 145
+        }
+      ]
+    },
+    {
+      "id": 62565,
+      "zh": "高密度双多特石（2级）",
+      "materials": [
+        {
+          "materialTypeID": 35,
+          "quantity": 3045
+        },
+        {
+          "materialTypeID": 36,
+          "quantity": 1141
+        },
+        {
+          "materialTypeID": 39,
+          "quantity": 152
+        }
+      ]
+    },
+    {
+      "id": 62566,
+      "zh": "高密度双多特石（3级）",
+      "materials": [
+        {
+          "materialTypeID": 35,
+          "quantity": 3190
+        },
+        {
+          "materialTypeID": 36,
+          "quantity": 1196
+        },
+        {
+          "materialTypeID": 39,
+          "quantity": 159
+        }
+      ]
+    },
+    {
+      "id": 62568,
+      "zh": "高密度艾克诺岩",
+      "materials": [
+        {
+          "materialTypeID": 35,
+          "quantity": 2900
+        },
+        {
+          "materialTypeID": 36,
+          "quantity": 1087
+        },
+        {
+          "materialTypeID": 40,
+          "quantity": 108
+        }
+      ]
+    },
+    {
+      "id": 62569,
+      "zh": "高密度艾克诺岩（2级）",
+      "materials": [
+        {
+          "materialTypeID": 35,
+          "quantity": 3045
+        },
+        {
+          "materialTypeID": 36,
+          "quantity": 1141
+        },
+        {
+          "materialTypeID": 40,
+          "quantity": 114
+        }
+      ]
+    },
+    {
+      "id": 62570,
+      "zh": "高密度艾克诺岩（3级）",
+      "materials": [
+        {
+          "materialTypeID": 35,
+          "quantity": 3190
+        },
+        {
+          "materialTypeID": 36,
+          "quantity": 1196
+        },
+        {
+          "materialTypeID": 40,
+          "quantity": 119
+        }
+      ]
+    },
+    {
+      "id": 62572,
+      "zh": "高密度灰岩",
+      "materials": [
+        {
+          "materialTypeID": 34,
+          "quantity": 43502
+        },
+        {
+          "materialTypeID": 37,
+          "quantity": 906
+        },
+        {
+          "materialTypeID": 38,
+          "quantity": 145
+        },
+        {
+          "materialTypeID": 39,
+          "quantity": 72
+        },
+        {
+          "materialTypeID": 40,
+          "quantity": 36
+        }
+      ]
+    },
+    {
+      "id": 62573,
+      "zh": "高密度灰岩（2级）",
+      "materials": [
+        {
+          "materialTypeID": 34,
+          "quantity": 45677
+        },
+        {
+          "materialTypeID": 37,
+          "quantity": 951
+        },
+        {
+          "materialTypeID": 38,
+          "quantity": 152
+        },
+        {
+          "materialTypeID": 39,
+          "quantity": 76
+        },
+        {
+          "materialTypeID": 40,
+          "quantity": 38
+        }
+      ]
+    },
+    {
+      "id": 62574,
+      "zh": "高密度灰岩（3级）",
+      "materials": [
+        {
+          "materialTypeID": 34,
+          "quantity": 47852
+        },
+        {
+          "materialTypeID": 37,
+          "quantity": 996
+        },
+        {
+          "materialTypeID": 38,
+          "quantity": 159
+        },
+        {
+          "materialTypeID": 39,
+          "quantity": 79
+        },
+        {
+          "materialTypeID": 40,
+          "quantity": 39
+        }
+      ]
+    },
+    {
+      "id": 62586,
+      "zh": "高密度基腹断岩",
+      "materials": [
+        {
+          "materialTypeID": 11399,
+          "quantity": 126
+        }
+      ]
+    },
+    {
+      "id": 62587,
+      "zh": "高密度基腹断岩（2级）",
+      "materials": [
+        {
+          "materialTypeID": 11399,
+          "quantity": 133
+        }
+      ]
+    },
+    {
+      "id": 62588,
+      "zh": "高密度基腹断岩（3级）",
+      "materials": [
+        {
+          "materialTypeID": 11399,
+          "quantity": 139
+        }
+      ]
+    },
+    {
+      "id": 74521,
+      "zh": "摩多石",
+      "materials": [
+        {
+          "materialTypeID": 35,
+          "quantity": 87
+        }
+      ]
+    },
+    {
+      "id": 74522,
+      "zh": "摩多石（2级）",
+      "materials": [
+        {
+          "materialTypeID": 35,
+          "quantity": 91
+        }
+      ]
+    },
+    {
+      "id": 74523,
+      "zh": "摩多石（3级）",
+      "materials": [
+        {
+          "materialTypeID": 35,
+          "quantity": 96
+        }
+      ]
+    },
+    {
+      "id": 74524,
+      "zh": "摩多石（4级）",
+      "materials": [
+        {
+          "materialTypeID": 35,
+          "quantity": 101
+        }
+      ]
+    },
+    {
+      "id": 74525,
+      "zh": "钇岩",
+      "materials": [
+        {
+          "materialTypeID": 37,
+          "quantity": 217
+        }
+      ]
+    },
+    {
+      "id": 74526,
+      "zh": "钇岩（2级）",
+      "materials": [
+        {
+          "materialTypeID": 37,
+          "quantity": 228
+        }
+      ]
+    },
+    {
+      "id": 74527,
+      "zh": "钇岩（3级）",
+      "materials": [
+        {
+          "materialTypeID": 37,
+          "quantity": 239
+        }
+      ]
+    },
+    {
+      "id": 74528,
+      "zh": "钇岩（4级）",
+      "materials": [
+        {
+          "materialTypeID": 37,
+          "quantity": 250
+        }
+      ]
+    },
+    {
+      "id": 74529,
+      "zh": "艾弗石",
+      "materials": [
+        {
+          "materialTypeID": 39,
+          "quantity": 241
+        }
+      ]
+    },
+    {
+      "id": 74530,
+      "zh": "艾弗石（2级）",
+      "materials": [
+        {
+          "materialTypeID": 39,
+          "quantity": 252
+        }
+      ]
+    },
+    {
+      "id": 74531,
+      "zh": "艾弗石（3级）",
+      "materials": [
+        {
+          "materialTypeID": 39,
+          "quantity": 265
+        }
+      ]
+    },
+    {
+      "id": 74532,
+      "zh": "艾弗石（4级）",
+      "materials": [
+        {
+          "materialTypeID": 39,
+          "quantity": 277
+        }
+      ]
+    },
+    {
+      "id": 74533,
+      "zh": "杜希石",
+      "materials": [
+        {
+          "materialTypeID": 40,
+          "quantity": 154
+        }
+      ]
+    },
+    {
+      "id": 74534,
+      "zh": "杜希石（2级）",
+      "materials": [
+        {
+          "materialTypeID": 40,
+          "quantity": 162
+        }
+      ]
+    },
+    {
+      "id": 74535,
+      "zh": "杜希石（3级）",
+      "materials": [
+        {
+          "materialTypeID": 40,
+          "quantity": 169
+        }
+      ]
+    },
+    {
+      "id": 74536,
+      "zh": "杜希石（4级）",
+      "materials": [
+        {
+          "materialTypeID": 40,
+          "quantity": 177
+        }
+      ]
+    },
+    {
+      "id": 75275,
+      "zh": "高密度摩多石",
+      "materials": [
+        {
+          "materialTypeID": 35,
+          "quantity": 87
+        }
+      ]
+    },
+    {
+      "id": 75276,
+      "zh": "高密度摩多石（2级）",
+      "materials": [
+        {
+          "materialTypeID": 35,
+          "quantity": 91
+        }
+      ]
+    },
+    {
+      "id": 75277,
+      "zh": "高密度摩多石（3级）",
+      "materials": [
+        {
+          "materialTypeID": 35,
+          "quantity": 96
+        }
+      ]
+    },
+    {
+      "id": 75278,
+      "zh": "",
+      "materials": [
+        {
+          "materialTypeID": 35,
+          "quantity": 101
+        }
+      ]
+    },
+    {
+      "id": 75279,
+      "zh": "高密度钇岩",
+      "materials": [
+        {
+          "materialTypeID": 37,
+          "quantity": 217
+        }
+      ]
+    },
+    {
+      "id": 75280,
+      "zh": "高密度钇岩（2级）",
+      "materials": [
+        {
+          "materialTypeID": 37,
+          "quantity": 228
+        }
+      ]
+    },
+    {
+      "id": 75281,
+      "zh": "高密度钇岩（3级）",
+      "materials": [
+        {
+          "materialTypeID": 37,
+          "quantity": 239
+        }
+      ]
+    },
+    {
+      "id": 75282,
+      "zh": "高密度钇岩（4级）",
+      "materials": [
+        {
+          "materialTypeID": 37,
+          "quantity": 250
+        }
+      ]
+    },
+    {
+      "id": 75283,
+      "zh": "高密度艾弗石",
+      "materials": [
+        {
+          "materialTypeID": 39,
+          "quantity": 241
+        }
+      ]
+    },
+    {
+      "id": 75284,
+      "zh": "高密度艾弗石（2级）",
+      "materials": [
+        {
+          "materialTypeID": 39,
+          "quantity": 252
+        }
+      ]
+    },
+    {
+      "id": 75285,
+      "zh": "高密度艾弗石（3级）",
+      "materials": [
+        {
+          "materialTypeID": 39,
+          "quantity": 265
+        }
+      ]
+    },
+    {
+      "id": 75286,
+      "zh": "高密度艾弗石（4级）",
+      "materials": [
+        {
+          "materialTypeID": 39,
+          "quantity": 277
+        }
+      ]
+    },
+    {
+      "id": 75287,
+      "zh": "高密度杜希石",
+      "materials": [
+        {
+          "materialTypeID": 40,
+          "quantity": 154
+        }
+      ]
+    },
+    {
+      "id": 75288,
+      "zh": "高密度杜希石（2级）",
+      "materials": [
+        {
+          "materialTypeID": 40,
+          "quantity": 162
+        }
+      ]
+    },
+    {
+      "id": 75289,
+      "zh": "高密度杜希石（3级）",
+      "materials": [
+        {
+          "materialTypeID": 40,
+          "quantity": 169
+        }
+      ]
+    },
+    {
+      "id": 75290,
+      "zh": "高密度杜希石（4级）",
+      "materials": [
+        {
+          "materialTypeID": 40,
+          "quantity": 177
+        }
+      ]
+    },
+    {
+      "id": 81900,
+      "zh": "克里石",
+      "materials": [
+        {
+          "materialTypeID": 34,
+          "quantity": 271
+        },
+        {
+          "materialTypeID": 35,
+          "quantity": 181
+        },
+        {
+          "materialTypeID": 36,
+          "quantity": 498
+        }
+      ]
+    },
+    {
+      "id": 81901,
+      "zh": "克里石（2级）",
+      "materials": [
+        {
+          "materialTypeID": 34,
+          "quantity": 285
+        },
+        {
+          "materialTypeID": 35,
+          "quantity": 190
+        },
+        {
+          "materialTypeID": 36,
+          "quantity": 523
+        }
+      ]
+    },
+    {
+      "id": 81902,
+      "zh": "克里石（3级）",
+      "materials": [
+        {
+          "materialTypeID": 34,
+          "quantity": 299
+        },
+        {
+          "materialTypeID": 35,
+          "quantity": 199
+        },
+        {
+          "materialTypeID": 36,
+          "quantity": 548
+        }
+      ]
+    },
+    {
+      "id": 81903,
+      "zh": "克里石（4级）",
+      "materials": [
+        {
+          "materialTypeID": 34,
+          "quantity": 312
+        },
+        {
+          "materialTypeID": 35,
+          "quantity": 208
+        },
+        {
+          "materialTypeID": 36,
+          "quantity": 573
+        }
+      ]
+    },
+    {
+      "id": 81975,
+      "zh": "格里米尔",
+      "materials": [
+        {
+          "materialTypeID": 34,
+          "quantity": 226
+        },
+        {
+          "materialTypeID": 37,
+          "quantity": 72
+        }
+      ]
+    },
+    {
+      "id": 81976,
+      "zh": "格里米尔（2级）",
+      "materials": [
+        {
+          "materialTypeID": 34,
+          "quantity": 238
+        },
+        {
+          "materialTypeID": 37,
+          "quantity": 76
+        }
+      ]
+    },
+    {
+      "id": 81977,
+      "zh": "格里米尔（3级）",
+      "materials": [
+        {
+          "materialTypeID": 34,
+          "quantity": 249
+        },
+        {
+          "materialTypeID": 37,
+          "quantity": 79
+        }
+      ]
+    },
+    {
+      "id": 81978,
+      "zh": "格里米尔（4级）",
+      "materials": [
+        {
+          "materialTypeID": 34,
+          "quantity": 261
+        },
+        {
+          "materialTypeID": 37,
+          "quantity": 83
+        }
+      ]
+    },
+    {
+      "id": 82016,
+      "zh": "诺克希特",
+      "materials": [
+        {
+          "materialTypeID": 34,
+          "quantity": 815
+        },
+        {
+          "materialTypeID": 35,
+          "quantity": 135
+        },
+        {
+          "materialTypeID": 38,
+          "quantity": 95
+        }
+      ]
+    },
+    {
+      "id": 82017,
+      "zh": "诺克希特（2级）",
+      "materials": [
+        {
+          "materialTypeID": 34,
+          "quantity": 856
+        },
+        {
+          "materialTypeID": 35,
+          "quantity": 143
+        },
+        {
+          "materialTypeID": 38,
+          "quantity": 100
+        }
+      ]
+    },
+    {
+      "id": 82018,
+      "zh": "诺克希特（3级）",
+      "materials": [
+        {
+          "materialTypeID": 34,
+          "quantity": 897
+        },
+        {
+          "materialTypeID": 35,
+          "quantity": 149
+        },
+        {
+          "materialTypeID": 38,
+          "quantity": 105
+        }
+      ]
+    },
+    {
+      "id": 82019,
+      "zh": "诺克希特（4级）",
+      "materials": [
+        {
+          "materialTypeID": 34,
+          "quantity": 938
+        },
+        {
+          "materialTypeID": 35,
+          "quantity": 156
+        },
+        {
+          "materialTypeID": 38,
+          "quantity": 109
+        }
+      ]
+    },
+    {
+      "id": 82163,
+      "zh": "赫佐利姆",
+      "materials": [
+        {
+          "materialTypeID": 34,
+          "quantity": 1812
+        },
+        {
+          "materialTypeID": 37,
+          "quantity": 108
+        },
+        {
+          "materialTypeID": 39,
+          "quantity": 54
+        }
+      ]
+    },
+    {
+      "id": 82164,
+      "zh": "赫佐利姆（2级）",
+      "materials": [
+        {
+          "materialTypeID": 34,
+          "quantity": 1903
+        },
+        {
+          "materialTypeID": 37,
+          "quantity": 114
+        },
+        {
+          "materialTypeID": 39,
+          "quantity": 57
+        }
+      ]
+    },
+    {
+      "id": 82165,
+      "zh": "赫佐利姆（3级）",
+      "materials": [
+        {
+          "materialTypeID": 34,
+          "quantity": 1993
+        },
+        {
+          "materialTypeID": 37,
+          "quantity": 119
+        },
+        {
+          "materialTypeID": 39,
+          "quantity": 59
+        }
+      ]
+    },
+    {
+      "id": 82166,
+      "zh": "赫佐利姆（4级）",
+      "materials": [
+        {
+          "materialTypeID": 34,
+          "quantity": 2084
+        },
+        {
+          "materialTypeID": 37,
+          "quantity": 125
+        },
+        {
+          "materialTypeID": 39,
+          "quantity": 62
+        }
+      ]
+    },
+    {
+      "id": 82205,
+      "zh": "尤加石",
+      "materials": [
+        {
+          "materialTypeID": 34,
+          "quantity": 725
+        },
+        {
+          "materialTypeID": 40,
+          "quantity": 36
+        }
+      ]
+    },
+    {
+      "id": 82206,
+      "zh": "尤加石（2级）",
+      "materials": [
+        {
+          "materialTypeID": 34,
+          "quantity": 761
+        },
+        {
+          "materialTypeID": 40,
+          "quantity": 38
+        }
+      ]
+    },
+    {
+      "id": 82207,
+      "zh": "尤加石（3级）",
+      "materials": [
+        {
+          "materialTypeID": 34,
+          "quantity": 797
+        },
+        {
+          "materialTypeID": 40,
+          "quantity": 39
+        }
+      ]
+    },
+    {
+      "id": 82208,
+      "zh": "尤加石（4级）",
+      "materials": [
+        {
+          "materialTypeID": 34,
+          "quantity": 833
+        },
+        {
+          "materialTypeID": 40,
+          "quantity": 41
+        }
+      ]
+    },
+    {
+      "id": 82300,
+      "zh": "高密度克里石",
+      "materials": [
+        {
+          "materialTypeID": 34,
+          "quantity": 271
+        },
+        {
+          "materialTypeID": 35,
+          "quantity": 181
+        },
+        {
+          "materialTypeID": 36,
+          "quantity": 498
+        }
+      ]
+    },
+    {
+      "id": 82301,
+      "zh": "高密度克里石（2级）",
+      "materials": [
+        {
+          "materialTypeID": 34,
+          "quantity": 285
+        },
+        {
+          "materialTypeID": 35,
+          "quantity": 190
+        },
+        {
+          "materialTypeID": 36,
+          "quantity": 523
+        }
+      ]
+    },
+    {
+      "id": 82302,
+      "zh": "高密度克里石（3级）",
+      "materials": [
+        {
+          "materialTypeID": 34,
+          "quantity": 299
+        },
+        {
+          "materialTypeID": 35,
+          "quantity": 199
+        },
+        {
+          "materialTypeID": 36,
+          "quantity": 548
+        }
+      ]
+    },
+    {
+      "id": 82303,
+      "zh": "高密度克里石（4级）",
+      "materials": [
+        {
+          "materialTypeID": 34,
+          "quantity": 312
+        },
+        {
+          "materialTypeID": 35,
+          "quantity": 208
+        },
+        {
+          "materialTypeID": 36,
+          "quantity": 573
+        }
+      ]
+    },
+    {
+      "id": 82304,
+      "zh": "高密度诺克希特",
+      "materials": [
+        {
+          "materialTypeID": 34,
+          "quantity": 815
+        },
+        {
+          "materialTypeID": 35,
+          "quantity": 135
+        },
+        {
+          "materialTypeID": 38,
+          "quantity": 95
+        }
+      ]
+    },
+    {
+      "id": 82305,
+      "zh": "高密度诺克希特（2级）",
+      "materials": [
+        {
+          "materialTypeID": 34,
+          "quantity": 856
+        },
+        {
+          "materialTypeID": 35,
+          "quantity": 143
+        },
+        {
+          "materialTypeID": 38,
+          "quantity": 100
+        }
+      ]
+    },
+    {
+      "id": 82306,
+      "zh": "高密度诺克希特（3级）",
+      "materials": [
+        {
+          "materialTypeID": 34,
+          "quantity": 897
+        },
+        {
+          "materialTypeID": 35,
+          "quantity": 149
+        },
+        {
+          "materialTypeID": 38,
+          "quantity": 105
+        }
+      ]
+    },
+    {
+      "id": 82307,
+      "zh": "高密度诺克希特（4级）",
+      "materials": [
+        {
+          "materialTypeID": 34,
+          "quantity": 938
+        },
+        {
+          "materialTypeID": 35,
+          "quantity": 156
+        },
+        {
+          "materialTypeID": 38,
+          "quantity": 109
+        }
+      ]
+    },
+    {
+      "id": 82308,
+      "zh": "高密度尤加石",
+      "materials": [
+        {
+          "materialTypeID": 34,
+          "quantity": 725
+        },
+        {
+          "materialTypeID": 40,
+          "quantity": 36
+        }
+      ]
+    },
+    {
+      "id": 82309,
+      "zh": "高密度尤加石（2级）",
+      "materials": [
+        {
+          "materialTypeID": 34,
+          "quantity": 761
+        },
+        {
+          "materialTypeID": 40,
+          "quantity": 38
+        }
+      ]
+    },
+    {
+      "id": 82310,
+      "zh": "高密度尤加石（3级）",
+      "materials": [
+        {
+          "materialTypeID": 34,
+          "quantity": 797
+        },
+        {
+          "materialTypeID": 40,
+          "quantity": 39
+        }
+      ]
+    },
+    {
+      "id": 82311,
+      "zh": "高密度尤加石（4级）",
+      "materials": [
+        {
+          "materialTypeID": 34,
+          "quantity": 833
+        },
+        {
+          "materialTypeID": 40,
+          "quantity": 41
+        }
+      ]
+    },
+    {
+      "id": 82312,
+      "zh": "高密度赫佐利姆",
+      "materials": [
+        {
+          "materialTypeID": 34,
+          "quantity": 1812
+        },
+        {
+          "materialTypeID": 37,
+          "quantity": 108
+        },
+        {
+          "materialTypeID": 39,
+          "quantity": 54
+        }
+      ]
+    },
+    {
+      "id": 82313,
+      "zh": "高密度赫佐利姆（2级）",
+      "materials": [
+        {
+          "materialTypeID": 34,
+          "quantity": 1903
+        },
+        {
+          "materialTypeID": 37,
+          "quantity": 114
+        },
+        {
+          "materialTypeID": 39,
+          "quantity": 57
+        }
+      ]
+    },
+    {
+      "id": 82314,
+      "zh": "",
+      "materials": [
+        {
+          "materialTypeID": 34,
+          "quantity": 1993
+        },
+        {
+          "materialTypeID": 37,
+          "quantity": 119
+        },
+        {
+          "materialTypeID": 39,
+          "quantity": 59
+        }
+      ]
+    },
+    {
+      "id": 82315,
+      "zh": "高密度赫佐利姆（4级）",
+      "materials": [
+        {
+          "materialTypeID": 34,
+          "quantity": 2084
+        },
+        {
+          "materialTypeID": 37,
+          "quantity": 125
+        },
+        {
+          "materialTypeID": 39,
+          "quantity": 62
+        }
+      ]
+    },
+    {
+      "id": 82316,
+      "zh": "高密度格里米尔",
+      "materials": [
+        {
+          "materialTypeID": 34,
+          "quantity": 226
+        },
+        {
+          "materialTypeID": 37,
+          "quantity": 72
+        }
+      ]
+    },
+    {
+      "id": 82317,
+      "zh": "高密度格里米尔（2级）",
+      "materials": [
+        {
+          "materialTypeID": 34,
+          "quantity": 238
+        },
+        {
+          "materialTypeID": 37,
+          "quantity": 76
+        }
+      ]
+    },
+    {
+      "id": 82318,
+      "zh": "高密度格里米尔（3级）",
+      "materials": [
+        {
+          "materialTypeID": 34,
+          "quantity": 249
+        },
+        {
+          "materialTypeID": 37,
+          "quantity": 79
+        }
+      ]
+    },
+    {
+      "id": 82319,
+      "zh": "高密度格里米尔（4级）",
+      "materials": [
+        {
+          "materialTypeID": 34,
+          "quantity": 261
+        },
+        {
+          "materialTypeID": 37,
+          "quantity": 83
+        }
+      ]
+    },
+    {
+      "id": 29660,
+      "zh": "粗糙的镝汞合金",
+      "materials": [
+        {
+          "materialTypeID": 16646,
+          "quantity": 156
+        },
+        {
+          "materialTypeID": 16668,
+          "quantity": 66
+        }
+      ]
+    },
+    {
+      "id": 29661,
+      "zh": "粗糙的新汞合金",
+      "materials": [
+        {
+          "materialTypeID": 16646,
+          "quantity": 156
+        },
+        {
+          "materialTypeID": 16667,
+          "quantity": 66
+        }
+      ]
+    },
+    {
+      "id": 29662,
+      "zh": "粗糙的稀土钷",
+      "materials": [
+        {
+          "materialTypeID": 16643,
+          "quantity": 156
+        },
+        {
+          "materialTypeID": 17960,
+          "quantity": 66
+        }
+      ]
+    },
+    {
+      "id": 29663,
+      "zh": "粗糙的铁磁流体",
+      "materials": [
+        {
+          "materialTypeID": 16648,
+          "quantity": 156
+        },
+        {
+          "materialTypeID": 16669,
+          "quantity": 66
+        }
+      ]
+    },
+    {
+      "id": 29664,
+      "zh": "粗糙的超氟化物",
+      "materials": [
+        {
+          "materialTypeID": 16642,
+          "quantity": 156
+        },
+        {
+          "materialTypeID": 16666,
+          "quantity": 66
+        }
+      ]
+    },
+    {
+      "id": 32821,
+      "zh": "粗糙的铪化钒",
+      "materials": [
+        {
+          "materialTypeID": 16642,
+          "quantity": 148
+        },
+        {
+          "materialTypeID": 17959,
+          "quantity": 32
+        }
+      ]
+    },
+    {
+      "id": 32822,
+      "zh": "粗糙的铂锝合金",
+      "materials": [
+        {
+          "materialTypeID": 16644,
+          "quantity": 148
+        },
+        {
+          "materialTypeID": 16662,
+          "quantity": 32
+        }
+      ]
+    },
+    {
+      "id": 32823,
+      "zh": "粗糙的铯铬合金",
+      "materials": [
+        {
+          "materialTypeID": 16641,
+          "quantity": 148
+        },
+        {
+          "materialTypeID": 16664,
+          "quantity": 32
+        }
+      ]
+    },
+    {
+      "id": 32824,
+      "zh": "粗糙的镉化铯",
+      "materials": [
+        {
+          "materialTypeID": 16643,
+          "quantity": 148
+        },
+        {
+          "materialTypeID": 16663,
+          "quantity": 32
+        }
+      ]
+    },
+    {
+      "id": 32826,
+      "zh": "粗糙的轧制钨合金",
+      "materials": [
+        {
+          "materialTypeID": 16637,
+          "quantity": 148
+        },
+        {
+          "materialTypeID": 16657,
+          "quantity": 32
+        }
+      ]
+    },
+    {
+      "id": 32827,
+      "zh": "粗糙的铬化钛",
+      "materials": [
+        {
+          "materialTypeID": 16638,
+          "quantity": 148
+        },
+        {
+          "materialTypeID": 16654,
+          "quantity": 32
+        }
+      ]
+    },
+    {
+      "id": 32828,
+      "zh": "粗糙的菲尔合金",
+      "materials": [
+        {
+          "materialTypeID": 16639,
+          "quantity": 148
+        },
+        {
+          "materialTypeID": 16656,
+          "quantity": 32
+        }
+      ]
+    },
+    {
+      "id": 32829,
+      "zh": "粗糙的微晶合金",
+      "materials": [
+        {
+          "materialTypeID": 16640,
+          "quantity": 148
+        },
+        {
+          "materialTypeID": 16655,
+          "quantity": 32
+        }
+      ]
+    },
+    {
+      "id": 33017,
+      "zh": "失效的空间站钥匙",
+      "materials": [
+        {
+          "materialTypeID": 34,
+          "quantity": 25
+        },
+        {
+          "materialTypeID": 35,
+          "quantity": 14
+        },
+        {
+          "materialTypeID": 36,
+          "quantity": 18
+        },
+        {
+          "materialTypeID": 37,
+          "quantity": 21
+        },
+        {
+          "materialTypeID": 38,
+          "quantity": 15
+        },
+        {
+          "materialTypeID": 39,
+          "quantity": 32
+        },
+        {
+          "materialTypeID": 40,
+          "quantity": 10
+        },
+        {
+          "materialTypeID": 2871,
+          "quantity": 14
+        },
+        {
+          "materialTypeID": 4051,
+          "quantity": 14
+        },
+        {
+          "materialTypeID": 4312,
+          "quantity": 5
+        },
+        {
+          "materialTypeID": 11399,
+          "quantity": 7
+        },
+        {
+          "materialTypeID": 16275,
+          "quantity": 0
+        },
+        {
+          "materialTypeID": 16637,
+          "quantity": 15
+        },
+        {
+          "materialTypeID": 16638,
+          "quantity": 5
+        },
+        {
+          "materialTypeID": 16642,
+          "quantity": 20
+        },
+        {
+          "materialTypeID": 16649,
+          "quantity": 7
+        },
+        {
+          "materialTypeID": 16653,
+          "quantity": 21
+        },
+        {
+          "materialTypeID": 27274,
+          "quantity": 20
+        },
+        {
+          "materialTypeID": 30252,
+          "quantity": 9
+        }
+      ]
+    },
+    {
+      "id": 33338,
+      "zh": "粗糙的钷汞合金",
+      "materials": [
+        {
+          "materialTypeID": 16646,
+          "quantity": 156
+        },
+        {
+          "materialTypeID": 33337,
+          "quantity": 66
+        }
+      ]
+    },
+    {
+      "id": 33339,
+      "zh": "粗糙的铥铪合金",
+      "materials": [
+        {
+          "materialTypeID": 16648,
+          "quantity": 156
+        },
+        {
+          "materialTypeID": 33336,
+          "quantity": 66
+        }
+      ]
+    },
+    {
+      "id": 45490,
+      "zh": "沸石",
+      "materials": [
+        {
+          "materialTypeID": 35,
+          "quantity": 7250
+        },
+        {
+          "materialTypeID": 36,
+          "quantity": 362
+        },
+        {
+          "materialTypeID": 16634,
+          "quantity": 58
+        }
+      ]
+    },
+    {
+      "id": 45491,
+      "zh": "钾盐",
+      "materials": [
+        {
+          "materialTypeID": 35,
+          "quantity": 3625
+        },
+        {
+          "materialTypeID": 36,
+          "quantity": 362
+        },
+        {
+          "materialTypeID": 16635,
+          "quantity": 58
+        }
+      ]
+    },
+    {
+      "id": 45492,
+      "zh": "沥青",
+      "materials": [
+        {
+          "materialTypeID": 35,
+          "quantity": 5437
+        },
+        {
+          "materialTypeID": 36,
+          "quantity": 362
+        },
+        {
+          "materialTypeID": 16633,
+          "quantity": 58
+        }
+      ]
+    },
+    {
+      "id": 45493,
+      "zh": "柯石英",
+      "materials": [
+        {
+          "materialTypeID": 35,
+          "quantity": 1812
+        },
+        {
+          "materialTypeID": 36,
+          "quantity": 362
+        },
+        {
+          "materialTypeID": 16636,
+          "quantity": 58
+        }
+      ]
+    },
+    {
+      "id": 45494,
+      "zh": "钴酸盐",
+      "materials": [
+        {
+          "materialTypeID": 16640,
+          "quantity": 36
+        }
+      ]
+    },
+    {
+      "id": 45495,
+      "zh": "黑稀金矿",
+      "materials": [
+        {
+          "materialTypeID": 16639,
+          "quantity": 36
+        }
+      ]
+    },
+    {
+      "id": 45496,
+      "zh": "榍石",
+      "materials": [
+        {
+          "materialTypeID": 16638,
+          "quantity": 36
+        }
+      ]
+    },
+    {
+      "id": 45497,
+      "zh": "白钨矿",
+      "materials": [
+        {
+          "materialTypeID": 16637,
+          "quantity": 36
+        }
+      ]
+    },
+    {
+      "id": 45498,
+      "zh": "菱镉矿",
+      "materials": [
+        {
+          "materialTypeID": 16634,
+          "quantity": 9
+        },
+        {
+          "materialTypeID": 16643,
+          "quantity": 36
+        }
+      ]
+    },
+    {
+      "id": 45499,
+      "zh": "砷铂矿",
+      "materials": [
+        {
+          "materialTypeID": 16635,
+          "quantity": 9
+        },
+        {
+          "materialTypeID": 16644,
+          "quantity": 36
+        }
+      ]
+    },
+    {
+      "id": 45500,
+      "zh": "钒铅矿",
+      "materials": [
+        {
+          "materialTypeID": 16636,
+          "quantity": 9
+        },
+        {
+          "materialTypeID": 16642,
+          "quantity": 36
+        }
+      ]
+    },
+    {
+      "id": 45501,
+      "zh": "铬铁矿",
+      "materials": [
+        {
+          "materialTypeID": 16633,
+          "quantity": 9
+        },
+        {
+          "materialTypeID": 16641,
+          "quantity": 36
+        }
+      ]
+    },
+    {
+      "id": 45502,
+      "zh": "钒钾铀矿",
+      "materials": [
+        {
+          "materialTypeID": 16634,
+          "quantity": 13
+        },
+        {
+          "materialTypeID": 16640,
+          "quantity": 9
+        },
+        {
+          "materialTypeID": 16649,
+          "quantity": 45
+        }
+      ]
+    },
+    {
+      "id": 45503,
+      "zh": "锆石",
+      "materials": [
+        {
+          "materialTypeID": 16636,
+          "quantity": 13
+        },
+        {
+          "materialTypeID": 16638,
+          "quantity": 9
+        },
+        {
+          "materialTypeID": 16648,
+          "quantity": 45
+        }
+      ]
+    },
+    {
+      "id": 45504,
+      "zh": "铯榴石",
+      "materials": [
+        {
+          "materialTypeID": 16633,
+          "quantity": 13
+        },
+        {
+          "materialTypeID": 16639,
+          "quantity": 9
+        },
+        {
+          "materialTypeID": 16647,
+          "quantity": 45
+        }
+      ]
+    },
+    {
+      "id": 45506,
+      "zh": "朱砂",
+      "materials": [
+        {
+          "materialTypeID": 16635,
+          "quantity": 13
+        },
+        {
+          "materialTypeID": 16637,
+          "quantity": 9
+        },
+        {
+          "materialTypeID": 16646,
+          "quantity": 45
+        }
+      ]
+    },
+    {
+      "id": 45510,
+      "zh": "磷钇矿",
+      "materials": [
+        {
+          "materialTypeID": 16634,
+          "quantity": 18
+        },
+        {
+          "materialTypeID": 16640,
+          "quantity": 18
+        },
+        {
+          "materialTypeID": 16642,
+          "quantity": 9
+        },
+        {
+          "materialTypeID": 16650,
+          "quantity": 19
+        }
+      ]
+    },
+    {
+      "id": 45511,
+      "zh": "独居石",
+      "materials": [
+        {
+          "materialTypeID": 16635,
+          "quantity": 18
+        },
+        {
+          "materialTypeID": 16637,
+          "quantity": 18
+        },
+        {
+          "materialTypeID": 16641,
+          "quantity": 9
+        },
+        {
+          "materialTypeID": 16651,
+          "quantity": 19
+        }
+      ]
+    },
+    {
+      "id": 45512,
+      "zh": "铈铌钙钛矿",
+      "materials": [
+        {
+          "materialTypeID": 16633,
+          "quantity": 18
+        },
+        {
+          "materialTypeID": 16639,
+          "quantity": 18
+        },
+        {
+          "materialTypeID": 16644,
+          "quantity": 9
+        },
+        {
+          "materialTypeID": 16652,
+          "quantity": 19
+        }
+      ]
+    },
+    {
+      "id": 45513,
+      "zh": "硅铍钇矿",
+      "materials": [
+        {
+          "materialTypeID": 16636,
+          "quantity": 18
+        },
+        {
+          "materialTypeID": 16638,
+          "quantity": 18
+        },
+        {
+          "materialTypeID": 16643,
+          "quantity": 9
+        },
+        {
+          "materialTypeID": 16653,
+          "quantity": 19
+        }
+      ]
+    },
+    {
+      "id": 46280,
+      "zh": "富沸石",
+      "materials": [
+        {
+          "materialTypeID": 35,
+          "quantity": 8337
+        },
+        {
+          "materialTypeID": 36,
+          "quantity": 416
+        },
+        {
+          "materialTypeID": 16634,
+          "quantity": 67
+        }
+      ]
+    },
+    {
+      "id": 46281,
+      "zh": "耀沸石",
+      "materials": [
+        {
+          "materialTypeID": 35,
+          "quantity": 14500
+        },
+        {
+          "materialTypeID": 36,
+          "quantity": 725
+        },
+        {
+          "materialTypeID": 16634,
+          "quantity": 117
+        }
+      ]
+    },
+    {
+      "id": 46282,
+      "zh": "富钾盐",
+      "materials": [
+        {
+          "materialTypeID": 35,
+          "quantity": 4168
+        },
+        {
+          "materialTypeID": 36,
+          "quantity": 416
+        },
+        {
+          "materialTypeID": 16635,
+          "quantity": 67
+        }
+      ]
+    },
+    {
+      "id": 46283,
+      "zh": "耀钾盐",
+      "materials": [
+        {
+          "materialTypeID": 35,
+          "quantity": 7250
+        },
+        {
+          "materialTypeID": 36,
+          "quantity": 725
+        },
+        {
+          "materialTypeID": 16635,
+          "quantity": 117
+        }
+      ]
+    },
+    {
+      "id": 46284,
+      "zh": "富沥青",
+      "materials": [
+        {
+          "materialTypeID": 35,
+          "quantity": 6253
+        },
+        {
+          "materialTypeID": 36,
+          "quantity": 416
+        },
+        {
+          "materialTypeID": 16633,
+          "quantity": 67
+        }
+      ]
+    },
+    {
+      "id": 46285,
+      "zh": "耀沥青",
+      "materials": [
+        {
+          "materialTypeID": 35,
+          "quantity": 10875
+        },
+        {
+          "materialTypeID": 36,
+          "quantity": 725
+        },
+        {
+          "materialTypeID": 16633,
+          "quantity": 117
+        }
+      ]
+    },
+    {
+      "id": 46286,
+      "zh": "富柯石英",
+      "materials": [
+        {
+          "materialTypeID": 35,
+          "quantity": 2084
+        },
+        {
+          "materialTypeID": 36,
+          "quantity": 416
+        },
+        {
+          "materialTypeID": 16636,
+          "quantity": 67
+        }
+      ]
+    },
+    {
+      "id": 46287,
+      "zh": "耀柯石英",
+      "materials": [
+        {
+          "materialTypeID": 35,
+          "quantity": 3625
+        },
+        {
+          "materialTypeID": 36,
+          "quantity": 725
+        },
+        {
+          "materialTypeID": 16636,
+          "quantity": 117
+        }
+      ]
+    },
+    {
+      "id": 46288,
+      "zh": "多钴酸盐",
+      "materials": [
+        {
+          "materialTypeID": 16640,
+          "quantity": 41
+        }
+      ]
+    },
+    {
+      "id": 46289,
+      "zh": "荧钴酸盐",
+      "materials": [
+        {
+          "materialTypeID": 16640,
+          "quantity": 72
+        }
+      ]
+    },
+    {
+      "id": 46290,
+      "zh": "多黑稀金矿",
+      "materials": [
+        {
+          "materialTypeID": 16639,
+          "quantity": 41
+        }
+      ]
+    },
+    {
+      "id": 46291,
+      "zh": "荧黑稀金矿",
+      "materials": [
+        {
+          "materialTypeID": 16639,
+          "quantity": 72
+        }
+      ]
+    },
+    {
+      "id": 46292,
+      "zh": "多榍石",
+      "materials": [
+        {
+          "materialTypeID": 16638,
+          "quantity": 41
+        }
+      ]
+    },
+    {
+      "id": 46293,
+      "zh": "荧榍石",
+      "materials": [
+        {
+          "materialTypeID": 16638,
+          "quantity": 72
+        }
+      ]
+    },
+    {
+      "id": 46294,
+      "zh": "多白钨矿",
+      "materials": [
+        {
+          "materialTypeID": 16637,
+          "quantity": 41
+        }
+      ]
+    },
+    {
+      "id": 46295,
+      "zh": "荧白钨矿",
+      "materials": [
+        {
+          "materialTypeID": 16637,
+          "quantity": 72
+        }
+      ]
+    },
+    {
+      "id": 46296,
+      "zh": "丰菱镉矿",
+      "materials": [
+        {
+          "materialTypeID": 16634,
+          "quantity": 10
+        },
+        {
+          "materialTypeID": 16643,
+          "quantity": 41
+        }
+      ]
+    },
+    {
+      "id": 46297,
+      "zh": "闪菱镉矿",
+      "materials": [
+        {
+          "materialTypeID": 16634,
+          "quantity": 18
+        },
+        {
+          "materialTypeID": 16643,
+          "quantity": 72
+        }
+      ]
+    },
+    {
+      "id": 46298,
+      "zh": "丰砷铂矿",
+      "materials": [
+        {
+          "materialTypeID": 16635,
+          "quantity": 10
+        },
+        {
+          "materialTypeID": 16644,
+          "quantity": 41
+        }
+      ]
+    },
+    {
+      "id": 46299,
+      "zh": "闪砷铂矿",
+      "materials": [
+        {
+          "materialTypeID": 16635,
+          "quantity": 18
+        },
+        {
+          "materialTypeID": 16644,
+          "quantity": 72
+        }
+      ]
+    },
+    {
+      "id": 46300,
+      "zh": "丰钒铅矿",
+      "materials": [
+        {
+          "materialTypeID": 16636,
+          "quantity": 10
+        },
+        {
+          "materialTypeID": 16642,
+          "quantity": 41
+        }
+      ]
+    },
+    {
+      "id": 46301,
+      "zh": "闪钒铅矿",
+      "materials": [
+        {
+          "materialTypeID": 16636,
+          "quantity": 18
+        },
+        {
+          "materialTypeID": 16642,
+          "quantity": 72
+        }
+      ]
+    },
+    {
+      "id": 46302,
+      "zh": "丰铬铁矿",
+      "materials": [
+        {
+          "materialTypeID": 16633,
+          "quantity": 10
+        },
+        {
+          "materialTypeID": 16641,
+          "quantity": 41
+        }
+      ]
+    },
+    {
+      "id": 46303,
+      "zh": "闪铬铁矿",
+      "materials": [
+        {
+          "materialTypeID": 16633,
+          "quantity": 18
+        },
+        {
+          "materialTypeID": 16641,
+          "quantity": 72
+        }
+      ]
+    },
+    {
+      "id": 46304,
+      "zh": "盈钒钾铀矿",
+      "materials": [
+        {
+          "materialTypeID": 16634,
+          "quantity": 15
+        },
+        {
+          "materialTypeID": 16640,
+          "quantity": 10
+        },
+        {
+          "materialTypeID": 16649,
+          "quantity": 52
+        }
+      ]
+    },
+    {
+      "id": 46305,
+      "zh": "灼钒钾铀矿",
+      "materials": [
+        {
+          "materialTypeID": 16634,
+          "quantity": 27
+        },
+        {
+          "materialTypeID": 16640,
+          "quantity": 18
+        },
+        {
+          "materialTypeID": 16649,
+          "quantity": 90
+        }
+      ]
+    },
+    {
+      "id": 46306,
+      "zh": "盈锆石",
+      "materials": [
+        {
+          "materialTypeID": 16636,
+          "quantity": 15
+        },
+        {
+          "materialTypeID": 16638,
+          "quantity": 10
+        },
+        {
+          "materialTypeID": 16648,
+          "quantity": 52
+        }
+      ]
+    },
+    {
+      "id": 46307,
+      "zh": "灼锆石",
+      "materials": [
+        {
+          "materialTypeID": 16636,
+          "quantity": 27
+        },
+        {
+          "materialTypeID": 16638,
+          "quantity": 18
+        },
+        {
+          "materialTypeID": 16648,
+          "quantity": 90
+        }
+      ]
+    },
+    {
+      "id": 46308,
+      "zh": "盈铯榴石",
+      "materials": [
+        {
+          "materialTypeID": 16633,
+          "quantity": 15
+        },
+        {
+          "materialTypeID": 16639,
+          "quantity": 10
+        },
+        {
+          "materialTypeID": 16647,
+          "quantity": 52
+        }
+      ]
+    },
+    {
+      "id": 46309,
+      "zh": "灼铯榴石",
+      "materials": [
+        {
+          "materialTypeID": 16633,
+          "quantity": 27
+        },
+        {
+          "materialTypeID": 16639,
+          "quantity": 18
+        },
+        {
+          "materialTypeID": 16647,
+          "quantity": 90
+        }
+      ]
+    },
+    {
+      "id": 46310,
+      "zh": "盈朱砂",
+      "materials": [
+        {
+          "materialTypeID": 16635,
+          "quantity": 15
+        },
+        {
+          "materialTypeID": 16637,
+          "quantity": 10
+        },
+        {
+          "materialTypeID": 16646,
+          "quantity": 52
+        }
+      ]
+    },
+    {
+      "id": 46311,
+      "zh": "灼朱砂",
+      "materials": [
+        {
+          "materialTypeID": 16635,
+          "quantity": 27
+        },
+        {
+          "materialTypeID": 16637,
+          "quantity": 18
+        },
+        {
+          "materialTypeID": 16646,
+          "quantity": 90
+        }
+      ]
+    },
+    {
+      "id": 46312,
+      "zh": "裕磷钇矿",
+      "materials": [
+        {
+          "materialTypeID": 16634,
+          "quantity": 20
+        },
+        {
+          "materialTypeID": 16640,
+          "quantity": 20
+        },
+        {
+          "materialTypeID": 16642,
+          "quantity": 10
+        },
+        {
+          "materialTypeID": 16650,
+          "quantity": 22
+        }
+      ]
+    },
+    {
+      "id": 46313,
+      "zh": "辉磷钇矿",
+      "materials": [
+        {
+          "materialTypeID": 16634,
+          "quantity": 36
+        },
+        {
+          "materialTypeID": 16640,
+          "quantity": 36
+        },
+        {
+          "materialTypeID": 16642,
+          "quantity": 18
+        },
+        {
+          "materialTypeID": 16650,
+          "quantity": 39
+        }
+      ]
+    },
+    {
+      "id": 46314,
+      "zh": "裕独居石",
+      "materials": [
+        {
+          "materialTypeID": 16635,
+          "quantity": 20
+        },
+        {
+          "materialTypeID": 16637,
+          "quantity": 20
+        },
+        {
+          "materialTypeID": 16641,
+          "quantity": 10
+        },
+        {
+          "materialTypeID": 16651,
+          "quantity": 22
+        }
+      ]
+    },
+    {
+      "id": 46315,
+      "zh": "辉独居石",
+      "materials": [
+        {
+          "materialTypeID": 16635,
+          "quantity": 36
+        },
+        {
+          "materialTypeID": 16637,
+          "quantity": 36
+        },
+        {
+          "materialTypeID": 16641,
+          "quantity": 18
+        },
+        {
+          "materialTypeID": 16651,
+          "quantity": 39
+        }
+      ]
+    },
+    {
+      "id": 46316,
+      "zh": "裕铈铌钙钛矿",
+      "materials": [
+        {
+          "materialTypeID": 16633,
+          "quantity": 20
+        },
+        {
+          "materialTypeID": 16639,
+          "quantity": 20
+        },
+        {
+          "materialTypeID": 16644,
+          "quantity": 10
+        },
+        {
+          "materialTypeID": 16652,
+          "quantity": 22
+        }
+      ]
+    },
+    {
+      "id": 46317,
+      "zh": "辉铈铌钙钛矿",
+      "materials": [
+        {
+          "materialTypeID": 16633,
+          "quantity": 36
+        },
+        {
+          "materialTypeID": 16639,
+          "quantity": 36
+        },
+        {
+          "materialTypeID": 16644,
+          "quantity": 18
+        },
+        {
+          "materialTypeID": 16652,
+          "quantity": 39
+        }
+      ]
+    },
+    {
+      "id": 46318,
+      "zh": "裕硅铍钇矿",
+      "materials": [
+        {
+          "materialTypeID": 16636,
+          "quantity": 20
+        },
+        {
+          "materialTypeID": 16638,
+          "quantity": 20
+        },
+        {
+          "materialTypeID": 16643,
+          "quantity": 10
+        },
+        {
+          "materialTypeID": 16653,
+          "quantity": 22
+        }
+      ]
+    },
+    {
+      "id": 46319,
+      "zh": "辉硅铍钇矿",
+      "materials": [
+        {
+          "materialTypeID": 16636,
+          "quantity": 36
+        },
+        {
+          "materialTypeID": 16638,
+          "quantity": 36
+        },
+        {
+          "materialTypeID": 16643,
+          "quantity": 18
+        },
+        {
+          "materialTypeID": 16653,
+          "quantity": 39
+        }
+      ]
+    },
+    {
+      "id": 62454,
+      "zh": "高密度沥青",
+      "materials": [
+        {
+          "materialTypeID": 35,
+          "quantity": 5437
+        },
+        {
+          "materialTypeID": 36,
+          "quantity": 362
+        },
+        {
+          "materialTypeID": 16633,
+          "quantity": 58
+        }
+      ]
+    },
+    {
+      "id": 62455,
+      "zh": "高密度富沥青",
+      "materials": [
+        {
+          "materialTypeID": 35,
+          "quantity": 6253
+        },
+        {
+          "materialTypeID": 36,
+          "quantity": 416
+        },
+        {
+          "materialTypeID": 16633,
+          "quantity": 67
+        }
+      ]
+    },
+    {
+      "id": 62456,
+      "zh": "高密度耀沥青",
+      "materials": [
+        {
+          "materialTypeID": 35,
+          "quantity": 10875
+        },
+        {
+          "materialTypeID": 36,
+          "quantity": 725
+        },
+        {
+          "materialTypeID": 16633,
+          "quantity": 117
+        }
+      ]
+    },
+    {
+      "id": 62457,
+      "zh": "高密度柯石英",
+      "materials": [
+        {
+          "materialTypeID": 35,
+          "quantity": 1812
+        },
+        {
+          "materialTypeID": 36,
+          "quantity": 362
+        },
+        {
+          "materialTypeID": 16636,
+          "quantity": 58
+        }
+      ]
+    },
+    {
+      "id": 62458,
+      "zh": "高密度富柯石英",
+      "materials": [
+        {
+          "materialTypeID": 35,
+          "quantity": 2084
+        },
+        {
+          "materialTypeID": 36,
+          "quantity": 416
+        },
+        {
+          "materialTypeID": 16636,
+          "quantity": 67
+        }
+      ]
+    },
+    {
+      "id": 62459,
+      "zh": "高密度耀柯石英",
+      "materials": [
+        {
+          "materialTypeID": 35,
+          "quantity": 3625
+        },
+        {
+          "materialTypeID": 36,
+          "quantity": 725
+        },
+        {
+          "materialTypeID": 16636,
+          "quantity": 117
+        }
+      ]
+    },
+    {
+      "id": 62460,
+      "zh": "高密度钾盐",
+      "materials": [
+        {
+          "materialTypeID": 35,
+          "quantity": 3625
+        },
+        {
+          "materialTypeID": 36,
+          "quantity": 362
+        },
+        {
+          "materialTypeID": 16635,
+          "quantity": 58
+        }
+      ]
+    },
+    {
+      "id": 62461,
+      "zh": "高密度富钾盐",
+      "materials": [
+        {
+          "materialTypeID": 35,
+          "quantity": 4168
+        },
+        {
+          "materialTypeID": 36,
+          "quantity": 416
+        },
+        {
+          "materialTypeID": 16635,
+          "quantity": 67
+        }
+      ]
+    },
+    {
+      "id": 62463,
+      "zh": "高密度沸石",
+      "materials": [
+        {
+          "materialTypeID": 35,
+          "quantity": 7250
+        },
+        {
+          "materialTypeID": 36,
+          "quantity": 362
+        },
+        {
+          "materialTypeID": 16634,
+          "quantity": 58
+        }
+      ]
+    },
+    {
+      "id": 62464,
+      "zh": "高密度富沸石",
+      "materials": [
+        {
+          "materialTypeID": 35,
+          "quantity": 8337
+        },
+        {
+          "materialTypeID": 36,
+          "quantity": 416
+        },
+        {
+          "materialTypeID": 16634,
+          "quantity": 67
+        }
+      ]
+    },
+    {
+      "id": 62466,
+      "zh": "高密度耀钾盐",
+      "materials": [
+        {
+          "materialTypeID": 35,
+          "quantity": 7250
+        },
+        {
+          "materialTypeID": 36,
+          "quantity": 725
+        },
+        {
+          "materialTypeID": 16635,
+          "quantity": 117
+        }
+      ]
+    },
+    {
+      "id": 62467,
+      "zh": "高密度耀沸石",
+      "materials": [
+        {
+          "materialTypeID": 35,
+          "quantity": 14500
+        },
+        {
+          "materialTypeID": 36,
+          "quantity": 725
+        },
+        {
+          "materialTypeID": 16634,
+          "quantity": 117
+        }
+      ]
+    },
+    {
+      "id": 62468,
+      "zh": "高密度白钨矿",
+      "materials": [
+        {
+          "materialTypeID": 16637,
+          "quantity": 36
+        }
+      ]
+    },
+    {
+      "id": 62469,
+      "zh": "高密度多白钨矿",
+      "materials": [
+        {
+          "materialTypeID": 16637,
+          "quantity": 41
+        }
+      ]
+    },
+    {
+      "id": 62470,
+      "zh": "高密度荧白钨矿",
+      "materials": [
+        {
+          "materialTypeID": 16637,
+          "quantity": 72
+        }
+      ]
+    },
+    {
+      "id": 62471,
+      "zh": "高密度黑稀金矿",
+      "materials": [
+        {
+          "materialTypeID": 16639,
+          "quantity": 36
+        }
+      ]
+    },
+    {
+      "id": 62472,
+      "zh": "高密度多黑稀金矿",
+      "materials": [
+        {
+          "materialTypeID": 16639,
+          "quantity": 41
+        }
+      ]
+    },
+    {
+      "id": 62473,
+      "zh": "高密度荧黑稀金矿",
+      "materials": [
+        {
+          "materialTypeID": 16639,
+          "quantity": 72
+        }
+      ]
+    },
+    {
+      "id": 62474,
+      "zh": "高密度钴酸盐",
+      "materials": [
+        {
+          "materialTypeID": 16640,
+          "quantity": 36
+        }
+      ]
+    },
+    {
+      "id": 62475,
+      "zh": "高密度多钴酸盐",
+      "materials": [
+        {
+          "materialTypeID": 16640,
+          "quantity": 41
+        }
+      ]
+    },
+    {
+      "id": 62476,
+      "zh": "高密度荧钴酸盐",
+      "materials": [
+        {
+          "materialTypeID": 16640,
+          "quantity": 72
+        }
+      ]
+    },
+    {
+      "id": 62477,
+      "zh": "高密度榍石",
+      "materials": [
+        {
+          "materialTypeID": 16638,
+          "quantity": 36
+        }
+      ]
+    },
+    {
+      "id": 62478,
+      "zh": "高密度多榍石",
+      "materials": [
+        {
+          "materialTypeID": 16638,
+          "quantity": 41
+        }
+      ]
+    },
+    {
+      "id": 62479,
+      "zh": "高密度荧榍石",
+      "materials": [
+        {
+          "materialTypeID": 16638,
+          "quantity": 72
+        }
+      ]
+    },
+    {
+      "id": 62480,
+      "zh": "高密度铬铁矿",
+      "materials": [
+        {
+          "materialTypeID": 16633,
+          "quantity": 9
+        },
+        {
+          "materialTypeID": 16641,
+          "quantity": 36
+        }
+      ]
+    },
+    {
+      "id": 62481,
+      "zh": "高密度丰铬铁矿",
+      "materials": [
+        {
+          "materialTypeID": 16633,
+          "quantity": 10
+        },
+        {
+          "materialTypeID": 16641,
+          "quantity": 41
+        }
+      ]
+    },
+    {
+      "id": 62482,
+      "zh": "高密度闪铬铁矿",
+      "materials": [
+        {
+          "materialTypeID": 16633,
+          "quantity": 18
+        },
+        {
+          "materialTypeID": 16641,
+          "quantity": 72
+        }
+      ]
+    },
+    {
+      "id": 62483,
+      "zh": "高密度菱镉矿",
+      "materials": [
+        {
+          "materialTypeID": 16634,
+          "quantity": 9
+        },
+        {
+          "materialTypeID": 16643,
+          "quantity": 36
+        }
+      ]
+    },
+    {
+      "id": 62484,
+      "zh": "高密度丰菱镉矿",
+      "materials": [
+        {
+          "materialTypeID": 16634,
+          "quantity": 10
+        },
+        {
+          "materialTypeID": 16643,
+          "quantity": 41
+        }
+      ]
+    },
+    {
+      "id": 62485,
+      "zh": "高密度闪菱镉矿",
+      "materials": [
+        {
+          "materialTypeID": 16634,
+          "quantity": 18
+        },
+        {
+          "materialTypeID": 16643,
+          "quantity": 72
+        }
+      ]
+    },
+    {
+      "id": 62486,
+      "zh": "高密度砷铂矿",
+      "materials": [
+        {
+          "materialTypeID": 16635,
+          "quantity": 9
+        },
+        {
+          "materialTypeID": 16644,
+          "quantity": 36
+        }
+      ]
+    },
+    {
+      "id": 62487,
+      "zh": "高密度丰砷铂矿",
+      "materials": [
+        {
+          "materialTypeID": 16635,
+          "quantity": 10
+        },
+        {
+          "materialTypeID": 16644,
+          "quantity": 41
+        }
+      ]
+    },
+    {
+      "id": 62488,
+      "zh": "高密度闪砷铂矿",
+      "materials": [
+        {
+          "materialTypeID": 16635,
+          "quantity": 18
+        },
+        {
+          "materialTypeID": 16644,
+          "quantity": 72
+        }
+      ]
+    },
+    {
+      "id": 62489,
+      "zh": "高密度钒铅矿",
+      "materials": [
+        {
+          "materialTypeID": 16636,
+          "quantity": 9
+        },
+        {
+          "materialTypeID": 16642,
+          "quantity": 36
+        }
+      ]
+    },
+    {
+      "id": 62490,
+      "zh": "高密度丰钒铅矿",
+      "materials": [
+        {
+          "materialTypeID": 16636,
+          "quantity": 10
+        },
+        {
+          "materialTypeID": 16642,
+          "quantity": 41
+        }
+      ]
+    },
+    {
+      "id": 62491,
+      "zh": "高密度闪钒铅矿",
+      "materials": [
+        {
+          "materialTypeID": 16636,
+          "quantity": 18
+        },
+        {
+          "materialTypeID": 16642,
+          "quantity": 72
+        }
+      ]
+    },
+    {
+      "id": 62492,
+      "zh": "高密度钒钾铀矿",
+      "materials": [
+        {
+          "materialTypeID": 16634,
+          "quantity": 13
+        },
+        {
+          "materialTypeID": 16640,
+          "quantity": 9
+        },
+        {
+          "materialTypeID": 16649,
+          "quantity": 45
+        }
+      ]
+    },
+    {
+      "id": 62493,
+      "zh": "压缩盈钒钾铀矿",
+      "materials": [
+        {
+          "materialTypeID": 16634,
+          "quantity": 15
+        },
+        {
+          "materialTypeID": 16640,
+          "quantity": 10
+        },
+        {
+          "materialTypeID": 16649,
+          "quantity": 52
+        }
+      ]
+    },
+    {
+      "id": 62494,
+      "zh": "高密度灼钒钾铀矿",
+      "materials": [
+        {
+          "materialTypeID": 16634,
+          "quantity": 27
+        },
+        {
+          "materialTypeID": 16640,
+          "quantity": 18
+        },
+        {
+          "materialTypeID": 16649,
+          "quantity": 90
+        }
+      ]
+    },
+    {
+      "id": 62495,
+      "zh": "高密度朱砂",
+      "materials": [
+        {
+          "materialTypeID": 16635,
+          "quantity": 13
+        },
+        {
+          "materialTypeID": 16637,
+          "quantity": 9
+        },
+        {
+          "materialTypeID": 16646,
+          "quantity": 45
+        }
+      ]
+    },
+    {
+      "id": 62496,
+      "zh": "高密度盈朱砂",
+      "materials": [
+        {
+          "materialTypeID": 16635,
+          "quantity": 15
+        },
+        {
+          "materialTypeID": 16637,
+          "quantity": 10
+        },
+        {
+          "materialTypeID": 16646,
+          "quantity": 52
+        }
+      ]
+    },
+    {
+      "id": 62497,
+      "zh": "高密度灼朱砂",
+      "materials": [
+        {
+          "materialTypeID": 16635,
+          "quantity": 27
+        },
+        {
+          "materialTypeID": 16637,
+          "quantity": 18
+        },
+        {
+          "materialTypeID": 16646,
+          "quantity": 90
+        }
+      ]
+    },
+    {
+      "id": 62498,
+      "zh": "高密度铯榴石",
+      "materials": [
+        {
+          "materialTypeID": 16633,
+          "quantity": 13
+        },
+        {
+          "materialTypeID": 16639,
+          "quantity": 9
+        },
+        {
+          "materialTypeID": 16647,
+          "quantity": 45
+        }
+      ]
+    },
+    {
+      "id": 62499,
+      "zh": "高密度盈铯榴石",
+      "materials": [
+        {
+          "materialTypeID": 16633,
+          "quantity": 15
+        },
+        {
+          "materialTypeID": 16639,
+          "quantity": 10
+        },
+        {
+          "materialTypeID": 16647,
+          "quantity": 52
+        }
+      ]
+    },
+    {
+      "id": 62500,
+      "zh": "高密度灼铯榴石",
+      "materials": [
+        {
+          "materialTypeID": 16633,
+          "quantity": 27
+        },
+        {
+          "materialTypeID": 16639,
+          "quantity": 18
+        },
+        {
+          "materialTypeID": 16647,
+          "quantity": 90
+        }
+      ]
+    },
+    {
+      "id": 62501,
+      "zh": "高密度锆石",
+      "materials": [
+        {
+          "materialTypeID": 16636,
+          "quantity": 13
+        },
+        {
+          "materialTypeID": 16638,
+          "quantity": 9
+        },
+        {
+          "materialTypeID": 16648,
+          "quantity": 45
+        }
+      ]
+    },
+    {
+      "id": 62502,
+      "zh": "高密度盈锆石",
+      "materials": [
+        {
+          "materialTypeID": 16636,
+          "quantity": 15
+        },
+        {
+          "materialTypeID": 16638,
+          "quantity": 10
+        },
+        {
+          "materialTypeID": 16648,
+          "quantity": 52
+        }
+      ]
+    },
+    {
+      "id": 62503,
+      "zh": "高密度灼锆石",
+      "materials": [
+        {
+          "materialTypeID": 16636,
+          "quantity": 27
+        },
+        {
+          "materialTypeID": 16638,
+          "quantity": 18
+        },
+        {
+          "materialTypeID": 16648,
+          "quantity": 90
+        }
+      ]
+    },
+    {
+      "id": 62504,
+      "zh": "高密度铈铌钙钛矿",
+      "materials": [
+        {
+          "materialTypeID": 16633,
+          "quantity": 18
+        },
+        {
+          "materialTypeID": 16639,
+          "quantity": 18
+        },
+        {
+          "materialTypeID": 16644,
+          "quantity": 9
+        },
+        {
+          "materialTypeID": 16652,
+          "quantity": 19
+        }
+      ]
+    },
+    {
+      "id": 62505,
+      "zh": "高密度裕铈铌钙钛矿",
+      "materials": [
+        {
+          "materialTypeID": 16633,
+          "quantity": 20
+        },
+        {
+          "materialTypeID": 16639,
+          "quantity": 20
+        },
+        {
+          "materialTypeID": 16644,
+          "quantity": 10
+        },
+        {
+          "materialTypeID": 16652,
+          "quantity": 22
+        }
+      ]
+    },
+    {
+      "id": 62506,
+      "zh": "高密度辉铈铌钙钛矿",
+      "materials": [
+        {
+          "materialTypeID": 16633,
+          "quantity": 36
+        },
+        {
+          "materialTypeID": 16639,
+          "quantity": 36
+        },
+        {
+          "materialTypeID": 16644,
+          "quantity": 18
+        },
+        {
+          "materialTypeID": 16652,
+          "quantity": 39
+        }
+      ]
+    },
+    {
+      "id": 62507,
+      "zh": "高密度独居石",
+      "materials": [
+        {
+          "materialTypeID": 16635,
+          "quantity": 18
+        },
+        {
+          "materialTypeID": 16637,
+          "quantity": 18
+        },
+        {
+          "materialTypeID": 16641,
+          "quantity": 9
+        },
+        {
+          "materialTypeID": 16651,
+          "quantity": 19
+        }
+      ]
+    },
+    {
+      "id": 62508,
+      "zh": "高密度裕独居石",
+      "materials": [
+        {
+          "materialTypeID": 16635,
+          "quantity": 20
+        },
+        {
+          "materialTypeID": 16637,
+          "quantity": 20
+        },
+        {
+          "materialTypeID": 16641,
+          "quantity": 10
+        },
+        {
+          "materialTypeID": 16651,
+          "quantity": 22
+        }
+      ]
+    },
+    {
+      "id": 62509,
+      "zh": "高密度辉独居石",
+      "materials": [
+        {
+          "materialTypeID": 16635,
+          "quantity": 36
+        },
+        {
+          "materialTypeID": 16637,
+          "quantity": 36
+        },
+        {
+          "materialTypeID": 16641,
+          "quantity": 18
+        },
+        {
+          "materialTypeID": 16651,
+          "quantity": 39
+        }
+      ]
+    },
+    {
+      "id": 62510,
+      "zh": "高密度磷钇矿",
+      "materials": [
+        {
+          "materialTypeID": 16634,
+          "quantity": 18
+        },
+        {
+          "materialTypeID": 16640,
+          "quantity": 18
+        },
+        {
+          "materialTypeID": 16642,
+          "quantity": 9
+        },
+        {
+          "materialTypeID": 16650,
+          "quantity": 19
+        }
+      ]
+    },
+    {
+      "id": 62511,
+      "zh": "高密度裕磷钇矿",
+      "materials": [
+        {
+          "materialTypeID": 16634,
+          "quantity": 20
+        },
+        {
+          "materialTypeID": 16640,
+          "quantity": 20
+        },
+        {
+          "materialTypeID": 16642,
+          "quantity": 10
+        },
+        {
+          "materialTypeID": 16650,
+          "quantity": 22
+        }
+      ]
+    },
+    {
+      "id": 62512,
+      "zh": "高密度辉磷钇矿",
+      "materials": [
+        {
+          "materialTypeID": 16634,
+          "quantity": 36
+        },
+        {
+          "materialTypeID": 16640,
+          "quantity": 36
+        },
+        {
+          "materialTypeID": 16642,
+          "quantity": 18
+        },
+        {
+          "materialTypeID": 16650,
+          "quantity": 39
+        }
+      ]
+    },
+    {
+      "id": 62513,
+      "zh": "高密度硅铍钇矿",
+      "materials": [
+        {
+          "materialTypeID": 16636,
+          "quantity": 18
+        },
+        {
+          "materialTypeID": 16638,
+          "quantity": 18
+        },
+        {
+          "materialTypeID": 16643,
+          "quantity": 9
+        },
+        {
+          "materialTypeID": 16653,
+          "quantity": 19
+        }
+      ]
+    },
+    {
+      "id": 62514,
+      "zh": "高密度裕硅铍钇矿",
+      "materials": [
+        {
+          "materialTypeID": 16636,
+          "quantity": 20
+        },
+        {
+          "materialTypeID": 16638,
+          "quantity": 20
+        },
+        {
+          "materialTypeID": 16643,
+          "quantity": 10
+        },
+        {
+          "materialTypeID": 16653,
+          "quantity": 22
+        }
+      ]
+    },
+    {
+      "id": 62515,
+      "zh": "高密度辉硅铍钇矿",
+      "materials": [
+        {
+          "materialTypeID": 16636,
+          "quantity": 36
+        },
+        {
+          "materialTypeID": 16638,
+          "quantity": 36
+        },
+        {
+          "materialTypeID": 16643,
+          "quantity": 18
+        },
+        {
+          "materialTypeID": 16653,
+          "quantity": 39
+        }
+      ]
+    }
+  ]
+}
