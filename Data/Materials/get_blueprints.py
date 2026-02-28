@@ -2,11 +2,29 @@ import os
 import json
 import yaml
 
+import configparser
+from pathlib import Path
+
+
+def _resolve_shared_path(config_key, default_rel_path):
+    current_dir = Path(__file__).resolve().parent
+    repo_root = next((p for p in [current_dir, *current_dir.parents] if (p / "config.ini").exists()), current_dir)
+
+    config = configparser.ConfigParser()
+    config.read(repo_root / "config.ini", encoding="utf-8")
+
+    path_value = config.get("paths", config_key, fallback=default_rel_path)
+    candidate = Path(path_value)
+    if not candidate.is_absolute():
+        candidate = repo_root / candidate
+    return str(candidate)
+
+
 # 文件夹路径
 source_folder = "Ships"      # 原 JSON 文件夹
 output_folder = "Test"  # 输出蓝图 JSON 文件夹
-blueprints_file = "blueprints.yaml"
-types_file = "types.json"
+blueprints_file = _resolve_shared_path("blueprints_yaml", "Data/blueprints.yaml")
+types_file = _resolve_shared_path("types_json", "Data/types.json")
 
 os.makedirs(output_folder, exist_ok=True)
 

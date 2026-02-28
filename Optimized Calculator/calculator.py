@@ -2,6 +2,24 @@ import json
 import csv
 from pulp import LpMaximize, LpProblem, LpVariable, lpSum, LpInteger, LpBinary
 
+import configparser
+from pathlib import Path
+
+
+def _resolve_shared_path(config_key, default_rel_path):
+    current_dir = Path(__file__).resolve().parent
+    repo_root = next((p for p in [current_dir, *current_dir.parents] if (p / "config.ini").exists()), current_dir)
+
+    config = configparser.ConfigParser()
+    config.read(repo_root / "config.ini", encoding="utf-8")
+
+    path_value = config.get("paths", config_key, fallback=default_rel_path)
+    candidate = Path(path_value)
+    if not candidate.is_absolute():
+        candidate = repo_root / candidate
+    return str(candidate)
+
+
 # ================== 模式 ==================
 data_Dir = "Source"
 result_Dir = "Results"
@@ -28,7 +46,7 @@ BLUEPRINTS_JSON = f"{data_Dir}/blueprints_merged.json"
 JITA_PRICES_JSON = f"{data_Dir}/jita_prices.json"
 VOS_PRICES_JSON = f"{data_Dir}/vos_prices.json"
 TRADE_VOS_JSON = f"{data_Dir}/trade_vos.json"
-TYPES_JSON = f"{data_Dir}/types.json"
+TYPES_JSON = _resolve_shared_path("types_json", "Data/types.json")
 TYPES_VOLUME_JSON = f"{data_Dir}/types_volume.json"
 SHIPS_JSON = f"{data_Dir}/ships.json"
 T2_JSON = f"{data_Dir}/T2.json"
