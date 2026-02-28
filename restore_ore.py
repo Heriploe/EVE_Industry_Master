@@ -103,14 +103,20 @@ def main():
 
     batch_size, budget, eff, preset_name, region_id, request_interval = load_config(config_path)
 
+    config = configparser.ConfigParser()
+    config.read(config_path, encoding="utf-8")
+
     provider_csv = repo_root / "Cache" / "Input" / "provider.csv"
     purchase_csv = repo_root / "Cache" / "Input" / "purchase_list.csv"
-    purchase_ore_csv = repo_root / "Cache" / "Input" / "purchase_list_ore.csv"
+    purchase_ore_csv = repo_root / "Cache" / "Output" / "purchase_list_ore.csv"
 
     reprocessing_json = repo_root / "Data" / "Reprocess" / "reprocessing_ores.json"
     preset_json = repo_root / "Data" / "Materials" / "preset.json"
     alias_json = repo_root / "Data" / "Materials" / "alias.json"
-    cache_market = repo_root / "Cache" / "Market" / f"{preset_name}_region_{region_id}.json"
+    cache_market_dir = Path(config.get("paths", "market_cache_dir", fallback="Cache/Output"))
+    if not cache_market_dir.is_absolute():
+        cache_market_dir = repo_root / cache_market_dir
+    cache_market = cache_market_dir / f"{preset_name}_region_{region_id}.json"
 
     provider_dict = load_provider(provider_csv)
     reprocessing_data, ore_to_materials = load_reprocessing_data(reprocessing_json, eff)

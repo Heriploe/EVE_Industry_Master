@@ -7,7 +7,7 @@ REPO_ROOT = Path(__file__).resolve().parents[2]
 ORES_JSON = REPO_ROOT / "Data" / "Materials" / "Basic_Materials" / "ores.json"
 MOON_ORE_JSON = REPO_ROOT / "Data" / "Materials" / "Basic_Materials" / "moon_ore.json"
 TYPES_JSON = REPO_ROOT / "Data" / "types.json"
-TYPE_MATERIALS_YAML = REPO_ROOT / "Data" / "Reprocess" / "typeMaterials.yaml"
+TYPE_MATERIALS_YAML = REPO_ROOT / "Data" / "typeMaterials.yaml"
 OUTPUT_JSON = REPO_ROOT / "Data" / "Reprocess" / "reprocessing_ores.json"
 
 TYPE_ID_PATTERN = re.compile(r"^(\d+):\s*$")
