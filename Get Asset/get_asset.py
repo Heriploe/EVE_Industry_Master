@@ -148,6 +148,7 @@ def get_authorization_code(redirect_uri, client_id, scope):
     auth_url = f"{LOGIN_BASE}/v2/oauth/authorize?{'&'.join(query_parts)}&scope={encoded_scope}"
 
     print("正在打开浏览器进行 EVE SSO 认证...")
+    print(f"DEBUG auth_url: {auth_url}")
     if not webbrowser.open(auth_url, new=1, autoraise=True):
         print("自动打开浏览器失败，请手动访问以下链接：")
         print(auth_url)
@@ -182,6 +183,7 @@ def get_all_pages(url, access_token, user_agent):
     results = []
 
     while True:
+        print(f"DEBUG request_url: {url}?page={page}")
         r = requests.get(url, headers=headers, params={"page": page}, timeout=20)
         if r.status_code == 403:
             raise PermissionError(f"403 Forbidden: {url}")
