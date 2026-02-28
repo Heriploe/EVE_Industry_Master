@@ -6,7 +6,7 @@ import sys
 from pathlib import Path
 
 from Utilities.name_mapping import id_to_name, load_types_map, name_to_id
-from pulp import LpInteger, LpMaximize, LpProblem, LpVariable, PULP_CBC_CMD, lpSum
+from pulp import LpInteger, LpMaximize, LpProblem, LpStatus, LpVariable, PULP_CBC_CMD, lpSum
 
 
 def find_repo_root() -> Path:
@@ -131,15 +131,25 @@ def main():
     mineral_id_to_price = load_prices(cache_market)
 
     purchase_list = {}
+    unmatched_purchase_names = []
     local_name_to_id = name_to_id(preset_types_map, languages=("zh",))
     with purchase_csv.open("r", encoding="utf-8") as f:
-        for row in csv.reader(f, delimiter="\t"):
+        for row in csv.reader(f, delimiter="	"):
             if len(row) < 2:
                 continue
             name = row[0].strip()
             qty = int(row[1])
             if name in local_name_to_id:
                 purchase_list[local_name_to_id[name]] = qty
+            else:
+                unmatched_purchase_names.append(name)
+
+    print(f"[DEBUG] provider数量: {len(provider_dict)}")
+    print(f"[DEBUG] reprocessing矿石条目: {len(reprocessing_data)}")
+    print(f"[DEBUG] preset物料数量: {len(preset_type_ids)}")
+    print(f"[DEBUG] purchase目标数量: {len(purchase_list)}")
+    if unmatched_purchase_names:
+        print(f"[DEBUG] purchase_list中未映射名称({len(unmatched_purchase_names)}): {unmatched_purchase_names[:10]}")
 
     remaining_budget = budget
     remaining_demand = purchase_list.copy()
@@ -150,7 +160,12 @@ def main():
     )
 
     for mid, _ in sorted_targets:
-        if remaining_demand[mid] <= 0 or remaining_budget <= 0:
+        target_name = mineral_id_to_name.get(mid, str(mid))
+        if remaining_demand[mid] <= 0:
+            print(f"[DEBUG] 跳过目标 {target_name}({mid})，原因: 需求已满足")
+            continue
+        if remaining_budget <= 0:
+            print(f"[DEBUG] 跳过目标 {target_name}({mid})，原因: 预算耗尽")
             continue
 
         relevant_ores = []
@@ -162,8 +177,12 @@ def main():
             if any(mat["materialTypeID"] == mid for mat in mats):
                 relevant_ores.append(pname)
         if not relevant_ores:
+            print(f"[DEBUG] 目标 {target_name}({mid}) 无可用矿石（provider与reprocessing匹配后为空）")
             continue
 
+        print(
+            f"[DEBUG] 开始求解目标 {target_name}({mid})，剩余需求={remaining_demand[mid]}，候选矿石数={len(relevant_ores)}，剩余预算={remaining_budget:.2f}"
+        )
         prob = LpProblem(f"Step_{mid}", LpMaximize)
         x_vars = {}
         for pname in relevant_ores:
@@ -202,6 +221,13 @@ def main():
         prob += lpSum(objective_terms), f"MaxTarget_{mid}"
 
         prob.solve(PULP_CBC_CMD(msg=0))
+
+        selected_batches = {pname: int(var.varValue or 0) for pname, var in x_vars.items() if int(var.varValue or 0) > 0}
+        print(
+            f"[DEBUG] 求解完成目标 {target_name}({mid})，状态={LpStatus.get(prob.status, prob.status)}，选中矿石种类={len(selected_batches)}"
+        )
+        if selected_batches:
+            print(f"[DEBUG] 选中批次数详情: {selected_batches}")
 
         for pname, var in x_vars.items():
             val = int(var.varValue or 0)
