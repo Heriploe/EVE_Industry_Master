@@ -1,0 +1,29 @@
+provider.csv（塔拉岩（3级）	144
+高密度杰斯贝矿（4级）	9091
+高密度杰斯贝矿（3级）	16766
+高密度杰斯贝矿（2级）	17326）中提取名称（中文要去，英文不用），到reprocessing.json（[
+  {
+    id 18,
+    zh 斜长岩,
+    en Plagioclase,
+    materials [
+      {
+        materialTypeID 34,
+        quantity 175
+      },
+      {
+        materialTypeID 36,
+        quantity 70
+      }
+    ]
+  },）中找到对应id，缓存id和对应数量，在purchase_list.csv（三钛合金	141
+超新星诺克石	55418
+晶状石英核岩	6317）根据minerals.json（  {
+    id 34,
+    zh 三钛合金,
+    en Tritanium
+  },）获取id，缓存id和对应数量，试设计一种算法，将purchase_list中的矿物还原为provider中的原矿，如果所需矿物中某部分不在原矿化矿产物中则跳过，设置一个预算，如10000000，如果某种所需矿物还原需要附带大量其余矿物，则要求超过清单的额外部分价值不超过预算，单位价格从jita_prices.json（[
+  {
+    "id": 34,
+    "buy": 4.23
+  },）中获得

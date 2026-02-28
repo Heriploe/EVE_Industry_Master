@@ -1,0 +1,7859 @@
+[
+  {
+    "type_id": 17337,
+    "zh": "震荡电容器单元蓝图",
+    "en": "Oscillator Capacitor Unit Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 25981,
+    "zh": "大型能量武器冲击加速器蓝图 I",
+    "en": "Large Energy Collision Accelerator I Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 25903,
+    "zh": "大型打捞回收工具蓝图 I",
+    "en": "Large Salvage Tackle I Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 885,
+    "zh": "定相等离子弹蓝图 S",
+    "en": "Phased Plasma S Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 889,
+    "zh": "质子弹蓝图 M",
+    "en": "Proton M Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 1173,
+    "zh": "标准晶体蓝图 L",
+    "en": "Standard L Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 899,
+    "zh": "钛合金萨博弹蓝图 L",
+    "en": "Titanium Sabot L Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 17931,
+    "zh": "潜龙级蓝图",
+    "en": "Worm Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": 1,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 17931,
+    "zh": "潜龙级蓝图",
+    "en": "Worm Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": 1,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 1133,
+    "zh": "铅质轨道弹蓝图 S",
+    "en": "Lead Charge S Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 3587,
+    "zh": "小型远程护盾回充增量器蓝图 I",
+    "en": "Small Remote Shield Booster I Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 11268,
+    "zh": "多谱式电压薄膜蓝图 I",
+    "en": "Multispectrum Energized Membrane I Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 16241,
+    "zh": "促进级蓝图",
+    "en": "Catalyst Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 28673,
+    "zh": "合成型撞击感增效体蓝图",
+    "en": "Synth Crash Booster Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": 1000,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 1116,
+    "zh": "150mm磁轨炮蓝图 I",
+    "en": "150mm Railgun I Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 47969,
+    "zh": "轻型熵能分解者蓝图 I",
+    "en": "Light Entropic Disintegrator I Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": 5,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 4316,
+    "zh": "氢燃料块蓝图",
+    "en": "Hydrogen Fuel Block Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": 100,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 4314,
+    "zh": "氮燃料块蓝图",
+    "en": "Nitrogen Fuel Block Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": 100,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 26027,
+    "zh": "大型装卸加速装置蓝图 I",
+    "en": "Large Bay Loading Accelerator I Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 46157,
+    "zh": "亚甲基富勒烯反应配方",
+    "en": "Methanofullerene Reaction Formula",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 4314,
+    "zh": "氮燃料块蓝图",
+    "en": "Nitrogen Fuel Block Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": 100,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 46216,
+    "zh": "太赫兹超材料反应配方",
+    "en": "Terahertz Metamaterials Reaction Formula",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 31657,
+    "zh": "小型射弹武器范围扩大装置蓝图 I",
+    "en": "Small Projectile Ambit Extension I Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 1172,
+    "zh": "红外晶体蓝图 L",
+    "en": "Infrared L Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 1354,
+    "zh": "反应堆控制元件蓝图 I",
+    "en": "Reactor Control Unit I Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 57515,
+    "zh": "自动修复储藏装置密封蓝图",
+    "en": "Auto-Integrity Preservation Seal Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": 120,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 32873,
+    "zh": "阿尔格斯级蓝图",
+    "en": "Algos Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 46214,
+    "zh": "费米子冷凝物反应配方",
+    "en": "Fermionic Condensates Reaction Formula",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 4316,
+    "zh": "氢燃料块蓝图",
+    "en": "Hydrogen Fuel Block Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": 100,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 26047,
+    "zh": "大型射弹武器射速调节装置蓝图 I",
+    "en": "Large Projectile Burst Aerator I Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 1106,
+    "zh": "小型掠能器蓝图 I",
+    "en": "Small Energy Nosferatu I Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 46184,
+    "zh": "稀土钷反应配方",
+    "en": "Prometium Reaction Formula",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 31707,
+    "zh": "中型射弹武器急转控制器蓝图 I",
+    "en": "Medium Projectile Metastasis Adjuster I Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 1149,
+    "zh": "铅质轨道弹蓝图 L",
+    "en": "Lead Charge L Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 16241,
+    "zh": "促进级蓝图",
+    "en": "Catalyst Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": 8,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 32881,
+    "zh": "冲锋者级蓝图",
+    "en": "Venture Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": 12,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 3243,
+    "zh": "跃迁扰断器蓝图 I",
+    "en": "Warp Disruptor I Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 896,
+    "zh": "核芯弹蓝图 L",
+    "en": "Nuclear L Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 57515,
+    "zh": "自动修复储藏装置密封蓝图",
+    "en": "Auto-Integrity Preservation Seal Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": 120,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 31036,
+    "zh": "中型热能装甲强化装置蓝图 I",
+    "en": "Medium Thermal Armor Reinforcer I Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 4315,
+    "zh": "氦燃料块蓝图",
+    "en": "Helium Fuel Block Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": 100,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 46167,
+    "zh": "碳聚合物反应配方",
+    "en": "Carbon Polymers Reaction Formula",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 31178,
+    "zh": "小型复合碳素引擎舱蓝图 I",
+    "en": "Small Polycarbon Engine Housing I Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 1117,
+    "zh": "重型电子疾速炮蓝图 I",
+    "en": "Heavy Electron Blaster I Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 1137,
+    "zh": "反物质轨道弹蓝图 S",
+    "en": "Antimatter Charge S Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 4313,
+    "zh": "氧燃料块蓝图",
+    "en": "Oxygen Fuel Block Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": 100,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 1079,
+    "zh": "跃迁扰频器蓝图 I",
+    "en": "Warp Scrambler I Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 998,
+    "zh": "台风级蓝图",
+    "en": "Typhoon Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": 10,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 4314,
+    "zh": "氮燃料块蓝图",
+    "en": "Nitrogen Fuel Block Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": 100,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 824,
+    "zh": "双联180mm自动加农炮蓝图 I",
+    "en": "Dual 180mm AutoCannon I Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 937,
+    "zh": "检察官级蓝图",
+    "en": "Inquisitor Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 1318,
+    "zh": "扩充货柜舱蓝图 I",
+    "en": "Expanded Cargohold I Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 57515,
+    "zh": "自动修复储藏装置密封蓝图",
+    "en": "Auto-Integrity Preservation Seal Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": 120,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 31048,
+    "zh": "中型辅助纳米聚合器蓝图 I",
+    "en": "Medium Auxiliary Nano Pump I Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 4315,
+    "zh": "氦燃料块蓝图",
+    "en": "Helium Fuel Block Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": 100,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 31479,
+    "zh": "小型能量武器轨迹校准设备蓝图 I",
+    "en": "Small Energy Locus Coordinator I Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 26003,
+    "zh": "大型混合武器急转控制器蓝图 I",
+    "en": "Large Hybrid Metastasis Adjuster I Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 1141,
+    "zh": "铅质轨道弹蓝图 M",
+    "en": "Lead Charge M Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 1161,
+    "zh": "多频晶体蓝图 S",
+    "en": "Multifrequency S Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 31162,
+    "zh": "中型超空间速度调节器蓝图 I",
+    "en": "Medium Hyperspatial Velocity Optimizer I Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 823,
+    "zh": "280mm榴弹炮蓝图 I",
+    "en": "280mm Howitzer Artillery I Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 4315,
+    "zh": "氦燃料块蓝图",
+    "en": "Helium Fuel Block Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 2174,
+    "zh": "渗透者蓝图 I",
+    "en": "Infiltrator I Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 46183,
+    "zh": "铪化钒反应配方",
+    "en": "Vanadium Hafnite Reaction Formula",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 31024,
+    "zh": "中型动能装甲强化装置蓝图 I",
+    "en": "Medium Kinetic Armor Reinforcer I Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 31481,
+    "zh": "中型能量武器轨迹校准设备蓝图 I",
+    "en": "Medium Energy Locus Coordinator I Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 31671,
+    "zh": "中型射弹武器射速调节装置蓝图 I",
+    "en": "Medium Projectile Burst Aerator I Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 846,
+    "zh": "超级脉冲激光器蓝图 I",
+    "en": "Mega Pulse Laser I Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 35772,
+    "zh": "导弹制导增强器蓝图 I",
+    "en": "Missile Guidance Enhancer I Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 17931,
+    "zh": "潜龙级蓝图",
+    "en": "Worm Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": 1,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 26059,
+    "zh": "大型低摩擦喷嘴接口蓝图 I",
+    "en": "Large Low Friction Nozzle Joints I Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 1135,
+    "zh": "钼质轨道弹蓝图 S",
+    "en": "Uranium Charge S Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 819,
+    "zh": "125mm加特林自动加农炮蓝图 I",
+    "en": "125mm Gatling AutoCannon I Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 1136,
+    "zh": "锰质轨道弹蓝图 S",
+    "en": "Plutonium Charge S Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 17330,
+    "zh": "纳米电子微处理器蓝图",
+    "en": "Nanoelectrical Microprocessor Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 40338,
+    "zh": "制导干扰器蓝图 I",
+    "en": "Guidance Disruptor I Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 2739,
+    "zh": "纳米体修复粘合剂蓝图",
+    "en": "Nanite Repair Paste Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 693,
+    "zh": "狂暴级蓝图",
+    "en": "Tempest Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": 10,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 4394,
+    "zh": "无人机伤害增效装置蓝图 I",
+    "en": "Drone Damage Amplifier I Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": 50,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 46181,
+    "zh": "硫酸反应配方",
+    "en": "Sulfuric Acid Reaction Formula",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 10839,
+    "zh": "大型护盾回充增量器蓝图 I",
+    "en": "Large Shield Booster I Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 57523,
+    "zh": "生命保障备份装置蓝图",
+    "en": "Life Support Backup Unit Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": 120,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 31635,
+    "zh": "中型弹头爆燃辅助系统蓝图 I",
+    "en": "Medium Warhead Flare Catalyst I Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 57524,
+    "zh": "旗舰核心温度调节器蓝图",
+    "en": "Capital Core Temperature Regulator Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": 1,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 46163,
+    "zh": "石墨烯纳米带反应配方",
+    "en": "Graphene Nanoribbons Reaction Formula",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 4315,
+    "zh": "氦燃料块蓝图",
+    "en": "Helium Fuel Block Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": 100,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 4316,
+    "zh": "氢燃料块蓝图",
+    "en": "Hydrogen Fuel Block Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": 100,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 17350,
+    "zh": "碳化钨附甲蓝图",
+    "en": "Tungsten Carbide Armor Plate Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 944,
+    "zh": "惩罚者级蓝图",
+    "en": "Punisher Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 4316,
+    "zh": "氢燃料块蓝图",
+    "en": "Hydrogen Fuel Block Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": 100,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 4314,
+    "zh": "氮燃料块蓝图",
+    "en": "Nitrogen Fuel Block Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": 100,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 1143,
+    "zh": "钼质轨道弹蓝图 M",
+    "en": "Uranium Charge M Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 4313,
+    "zh": "氧燃料块蓝图",
+    "en": "Oxygen Fuel Block Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": 100,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 20614,
+    "zh": "\"甘油\"护盾回充增量增效器蓝图",
+    "en": "'Glycerine' Shield Boost Amplifier Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": 3,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 11612,
+    "zh": "散热槽蓝图 I",
+    "en": "Heat Sink I Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 4315,
+    "zh": "氦燃料块蓝图",
+    "en": "Helium Fuel Block Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": 100,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 46204,
+    "zh": "碳化钛反应配方",
+    "en": "Titanium Carbide Reaction Formula",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 46167,
+    "zh": "碳聚合物反应配方",
+    "en": "Carbon Polymers Reaction Formula",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 31801,
+    "zh": "小型核心防御力场稳固装置蓝图 I",
+    "en": "Small Core Defense Field Purger I Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 4314,
+    "zh": "氮燃料块蓝图",
+    "en": "Nitrogen Fuel Block Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": 100,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 881,
+    "zh": "质子弹蓝图 S",
+    "en": "Proton S Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 1247,
+    "zh": "电容通量线圈蓝图 I",
+    "en": "Capacitor Flux Coil I Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 31044,
+    "zh": "旗舰级热能装甲强化装置蓝图 II",
+    "en": "Capital Thermal Armor Reinforcer II Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": 2,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 48470,
+    "zh": "轻型视野型熵能分解者蓝图",
+    "en": "Light Scoped Entropic Disintegrator Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": 1,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 31611,
+    "zh": "中型火箭燃料缓冲隔离装置蓝图 I",
+    "en": "Medium Rocket Fuel Cache Partition I Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 4316,
+    "zh": "氢燃料块蓝图",
+    "en": "Hydrogen Fuel Block Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": 100,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 4315,
+    "zh": "氦燃料块蓝图",
+    "en": "Helium Fuel Block Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": 100,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 4314,
+    "zh": "氮燃料块蓝图",
+    "en": "Nitrogen Fuel Block Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": 100,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 692,
+    "zh": "刺客级蓝图",
+    "en": "Stabber Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": 6,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 57515,
+    "zh": "自动修复储藏装置密封蓝图",
+    "en": "Auto-Integrity Preservation Seal Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 4313,
+    "zh": "氧燃料块蓝图",
+    "en": "Oxygen Fuel Block Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": 100,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 4316,
+    "zh": "氢燃料块蓝图",
+    "en": "Hydrogen Fuel Block Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": 100,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 4315,
+    "zh": "氦燃料块蓝图",
+    "en": "Helium Fuel Block Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": 100,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 24349,
+    "zh": "小型牵引光束器蓝图 I",
+    "en": "Small Tractor Beam I Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": 40,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 86076,
+    "zh": "荣耀级腐朽型散热槽突变质体蓝图",
+    "en": "Glorified Decayed Heat Sink Mutaplasmid Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": 1,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 17336,
+    "zh": "雷达感应器组蓝图",
+    "en": "Radar Sensor Cluster Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 1196,
+    "zh": "电容回充器蓝图 I",
+    "en": "Cap Recharger I Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 46207,
+    "zh": "碳化钨反应配方",
+    "en": "Tungsten Carbide Reaction Formula",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 52349,
+    "zh": "暗泽裔重型熵能分解者蓝图",
+    "en": "Veles Heavy Entropic Disintegrator Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": 1,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 35791,
+    "zh": "导弹制导计算机蓝图 I",
+    "en": "Missile Guidance Computer I Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 32879,
+    "zh": "弯刀级蓝图",
+    "en": "Talwar Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": 2,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 16228,
+    "zh": "猛鲑级蓝图",
+    "en": "Ferox Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": 10,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 11394,
+    "zh": "审判者蓝图",
+    "en": "Retribution Blueprint",
+    "material_efficiency": 4,
+    "time_efficiency": 14,
+    "runs": 1,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 46212,
+    "zh": "超级突触纤维反应配方",
+    "en": "Hypersynaptic Fibers Reaction Formula",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 1169,
+    "zh": "多频晶体蓝图 M",
+    "en": "Multifrequency M Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 1214,
+    "zh": "胡蜂蓝图 I",
+    "en": "Wasp I Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 31787,
+    "zh": "旗舰级核心防御节能装置蓝图 II",
+    "en": "Capital Core Defense Charge Economizer II Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": 2,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 41535,
+    "zh": "绷带集成式分析仪蓝图",
+    "en": "Ligature Integrated Analyzer Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": 3,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 31681,
+    "zh": "小型射弹武器冲击加速器蓝图 I",
+    "en": "Small Projectile Collision Accelerator I Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 31373,
+    "zh": "中型电容器控制电路蓝图 I",
+    "en": "Medium Capacitor Control Circuit I Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 31527,
+    "zh": "小型混合武器射速调节装置蓝图 I",
+    "en": "Small Hybrid Burst Aerator I Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 16243,
+    "zh": "长尾鲛级蓝图",
+    "en": "Thrasher Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": 8,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 11394,
+    "zh": "审判者蓝图",
+    "en": "Retribution Blueprint",
+    "material_efficiency": 4,
+    "time_efficiency": 14,
+    "runs": 2,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 4316,
+    "zh": "氢燃料块蓝图",
+    "en": "Hydrogen Fuel Block Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": 100,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 4315,
+    "zh": "氦燃料块蓝图",
+    "en": "Helium Fuel Block Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": 100,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 46184,
+    "zh": "稀土钷反应配方",
+    "en": "Prometium Reaction Formula",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 33077,
+    "zh": "小型辅助装甲维修器蓝图",
+    "en": "Small Ancillary Armor Repairer Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": 10,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 12053,
+    "zh": "50MN微型跃迁推进器蓝图 I",
+    "en": "50MN Microwarpdrive I Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 10841,
+    "zh": "超大型护盾回充增量器蓝图 I",
+    "en": "X-Large Shield Booster I Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 1162,
+    "zh": "射频晶体蓝图 M",
+    "en": "Radio M Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 4314,
+    "zh": "氮燃料块蓝图",
+    "en": "Nitrogen Fuel Block Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": 100,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 52695,
+    "zh": "工业诱导力场发生器蓝图",
+    "en": "Industrial Cynosural Field Generator Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": 10,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 31539,
+    "zh": "小型混合武器冲击加速器蓝图 I",
+    "en": "Small Hybrid Collision Accelerator I Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 31118,
+    "zh": "小型货柜舱优化改造蓝图 I",
+    "en": "Small Cargohold Optimization I Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 1067,
+    "zh": "5MN微型跃迁推进器蓝图 I",
+    "en": "5MN Microwarpdrive I Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 812,
+    "zh": "炼狱轻型导弹蓝图",
+    "en": "Inferno Light Missile Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 882,
+    "zh": "硬钼弹蓝图 S",
+    "en": "Depleted Uranium S Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 11394,
+    "zh": "审判者蓝图",
+    "en": "Retribution Blueprint",
+    "material_efficiency": 2,
+    "time_efficiency": 4,
+    "runs": 1,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 46171,
+    "zh": "菲尔合金反应配方",
+    "en": "Fernite Alloy Reaction Formula",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 17931,
+    "zh": "潜龙级蓝图",
+    "en": "Worm Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": 1,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 26049,
+    "zh": "大型射弹武器冲击加速器蓝图 I",
+    "en": "Large Projectile Collision Accelerator I Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 32881,
+    "zh": "冲锋者级蓝图",
+    "en": "Venture Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": 12,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 46160,
+    "zh": "富勒烯层间石墨反应配方",
+    "en": "Fullerene Intercalated Graphite Reaction Formula",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 46169,
+    "zh": "微晶合金反应配方",
+    "en": "Crystallite Alloy Reaction Formula",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 886,
+    "zh": "电磁脉冲弹蓝图 S",
+    "en": "EMP S Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 2445,
+    "zh": "蛮妖蓝图 I",
+    "en": "Ogre I Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 4315,
+    "zh": "氦燃料块蓝图",
+    "en": "Helium Fuel Block Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": 100,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 46179,
+    "zh": "二硼硅反应配方",
+    "en": "Silicon Diborite Reaction Formula",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 17931,
+    "zh": "潜龙级蓝图",
+    "en": "Worm Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": 1,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 31789,
+    "zh": "小型核心防御力场扩张装置蓝图 I",
+    "en": "Small Core Defense Field Extender I Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 967,
+    "zh": "加达里穿梭机蓝图",
+    "en": "Caldari Shuttle Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 1138,
+    "zh": "铁质轨道弹蓝图 M",
+    "en": "Iron Charge M Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 848,
+    "zh": "超光速粒子集束激光器蓝图 I",
+    "en": "Tachyon Beam Laser I Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 1154,
+    "zh": "射频晶体蓝图 S",
+    "en": "Radio S Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 57508,
+    "zh": "R-O触发式神经链接回路蓝图",
+    "en": "R-O Trigger Neurolink Conduit Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": 1,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 16243,
+    "zh": "长尾鲛级蓝图",
+    "en": "Thrasher Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": 8,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 12014,
+    "zh": "阔刀级蓝图",
+    "en": "Broadsword Blueprint",
+    "material_efficiency": 2,
+    "time_efficiency": 4,
+    "runs": 1,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 33519,
+    "zh": "移动式牵引装置蓝图",
+    "en": "Mobile Tractor Unit Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 0,
+    "runs": 10,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 26061,
+    "zh": "大型辅助推进器蓝图 I",
+    "en": "Large Auxiliary Thrusters I Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 1150,
+    "zh": "钍质轨道弹蓝图 L",
+    "en": "Thorium Charge L Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 971,
+    "zh": "狂怒者级蓝图",
+    "en": "Vexor Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": 10,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 4313,
+    "zh": "氧燃料块蓝图",
+    "en": "Oxygen Fuel Block Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": 100,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 4394,
+    "zh": "无人机伤害增效装置蓝图 I",
+    "en": "Drone Damage Amplifier I Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": 50,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 4394,
+    "zh": "无人机伤害增效装置蓝图 I",
+    "en": "Drone Damage Amplifier I Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": 50,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 11130,
+    "zh": "盖伦特穿梭机蓝图",
+    "en": "Gallente Shuttle Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 4314,
+    "zh": "氮燃料块蓝图",
+    "en": "Nitrogen Fuel Block Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": 100,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 31731,
+    "zh": "中型爆炸护盾强化装置蓝图 I",
+    "en": "Medium Explosive Shield Reinforcer I Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 11634,
+    "zh": "信号放大器蓝图 I",
+    "en": "Signal Amplifier I Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 843,
+    "zh": "重型集束激光器蓝图 I",
+    "en": "Heavy Beam Laser I Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 17357,
+    "zh": "光子微处理器蓝图",
+    "en": "Photon Microprocessor Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 46167,
+    "zh": "碳聚合物反应配方",
+    "en": "Carbon Polymers Reaction Formula",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 31491,
+    "zh": "小型能量武器急转控制器蓝图 I",
+    "en": "Small Energy Metastasis Adjuster I Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 31529,
+    "zh": "中型混合武器射速调节装置蓝图 I",
+    "en": "Medium Hybrid Burst Aerator I Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 1130,
+    "zh": "铁质轨道弹蓝图 S",
+    "en": "Iron Charge S Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 12218,
+    "zh": "中型远程电容传输装置蓝图 I",
+    "en": "Medium Remote Capacitor Transmitter I Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 825,
+    "zh": "220mm火神自动加农炮蓝图 I",
+    "en": "220mm Vulcan AutoCannon I Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 46175,
+    "zh": "超氟化物反应配方",
+    "en": "Hyperflurite Reaction Formula",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 4315,
+    "zh": "氦燃料块蓝图",
+    "en": "Helium Fuel Block Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": 100,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 1128,
+    "zh": "中型电容注电器蓝图 I",
+    "en": "Medium Capacitor Booster I Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 4313,
+    "zh": "氧燃料块蓝图",
+    "en": "Oxygen Fuel Block Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": 100,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 28673,
+    "zh": "合成型撞击感增效体蓝图",
+    "en": "Synth Crash Booster Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": 1000,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 31084,
+    "zh": "小型打捞回收工具蓝图 I",
+    "en": "Small Salvage Tackle I Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 26079,
+    "zh": "大型爆炸护盾强化装置蓝图 I",
+    "en": "Large Explosive Shield Reinforcer I Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 9945,
+    "zh": "磁性力场稳定器蓝图 I",
+    "en": "Magnetic Field Stabilizer I Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 57523,
+    "zh": "生命保障备份装置蓝图",
+    "en": "Life Support Backup Unit Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 4315,
+    "zh": "氦燃料块蓝图",
+    "en": "Helium Fuel Block Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": 100,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 4314,
+    "zh": "氮燃料块蓝图",
+    "en": "Nitrogen Fuel Block Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": 100,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 4314,
+    "zh": "氮燃料块蓝图",
+    "en": "Nitrogen Fuel Block Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": 100,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 25971,
+    "zh": "大型能量武器范围扩大设备蓝图 I",
+    "en": "Large Energy Ambit Extension I Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 17931,
+    "zh": "潜龙级蓝图",
+    "en": "Worm Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": 1,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 3767,
+    "zh": "守夜者级蓝图",
+    "en": "Vigil Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 1124,
+    "zh": "中子疾速加农炮蓝图 I",
+    "en": "Neutron Blaster Cannon I Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 2513,
+    "zh": "雷神火箭蓝图",
+    "en": "Mjolnir Rocket Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 898,
+    "zh": "硬钼弹蓝图 L",
+    "en": "Depleted Uranium L Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 16228,
+    "zh": "猛鲑级蓝图",
+    "en": "Ferox Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": 10,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 11394,
+    "zh": "审判者蓝图",
+    "en": "Retribution Blueprint",
+    "material_efficiency": 4,
+    "time_efficiency": 14,
+    "runs": 1,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 46215,
+    "zh": "等离子体超材料反应配方",
+    "en": "Plasmonic Metamaterials Reaction Formula",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 46162,
+    "zh": "金属富勒烯钪反应配方",
+    "en": "Scandium Metallofullerene Reaction Formula",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 33077,
+    "zh": "小型辅助装甲维修器蓝图",
+    "en": "Small Ancillary Armor Repairer Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": 10,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 1186,
+    "zh": "小型电容器电池蓝图 I",
+    "en": "Small Cap Battery I Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 4316,
+    "zh": "氢燃料块蓝图",
+    "en": "Hydrogen Fuel Block Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": 100,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 31493,
+    "zh": "中型能量武器急转控制器蓝图 I",
+    "en": "Medium Energy Metastasis Adjuster I Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 4313,
+    "zh": "氧燃料块蓝图",
+    "en": "Oxygen Fuel Block Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 4316,
+    "zh": "氢燃料块蓝图",
+    "en": "Hydrogen Fuel Block Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": 100,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 4315,
+    "zh": "氦燃料块蓝图",
+    "en": "Helium Fuel Block Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": 100,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 52695,
+    "zh": "工业诱导力场发生器蓝图",
+    "en": "Industrial Cynosural Field Generator Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": 10,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 34291,
+    "zh": "偏振式火箭发射器蓝图",
+    "en": "Polarized Rocket Launcher Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": 1,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 46211,
+    "zh": "纳米晶体管反应配方",
+    "en": "Nanotransistors Reaction Formula",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 31433,
+    "zh": "中型能量武器范围扩大设备蓝图 I",
+    "en": "Medium Energy Ambit Extension I Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 31541,
+    "zh": "中型混合武器冲击加速器蓝图 I",
+    "en": "Medium Hybrid Collision Accelerator I Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 830,
+    "zh": "双联650mm频射加农炮蓝图 I",
+    "en": "Dual 650mm Repeating Cannon I Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 11133,
+    "zh": "米玛塔尔穿梭机蓝图",
+    "en": "Minmatar Shuttle Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 4316,
+    "zh": "氢燃料块蓝图",
+    "en": "Hydrogen Fuel Block Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": 100,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 24349,
+    "zh": "小型牵引光束器蓝图 I",
+    "en": "Small Tractor Beam I Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": 40,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 46176,
+    "zh": "新汞合金反应配方",
+    "en": "Neo Mercurite Reaction Formula",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 847,
+    "zh": "超级集束激光器蓝图 I",
+    "en": "Mega Beam Laser I Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 995,
+    "zh": "万王宝座级蓝图",
+    "en": "Megathron Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": 10,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 16228,
+    "zh": "猛鲑级蓝图",
+    "en": "Ferox Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": 10,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 46183,
+    "zh": "铪化钒反应配方",
+    "en": "Vanadium Hafnite Reaction Formula",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 26031,
+    "zh": "大型弹头加热辅助系统蓝图 I",
+    "en": "Large Warhead Calefaction Catalyst I Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 968,
+    "zh": "巨鸟级蓝图",
+    "en": "Moa Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 31817,
+    "zh": "小型核心防御操控稳定装置蓝图 I",
+    "en": "Small Core Defense Operational Solidifier I Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 4314,
+    "zh": "氮燃料块蓝图",
+    "en": "Nitrogen Fuel Block Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 4314,
+    "zh": "氮燃料块蓝图",
+    "en": "Nitrogen Fuel Block Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": 100,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 41650,
+    "zh": "中型辅助远程护盾回充增量器蓝图",
+    "en": "Medium Ancillary Remote Shield Booster Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": 10,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 24693,
+    "zh": "地狱天使级蓝图",
+    "en": "Abaddon Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": 10,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 4316,
+    "zh": "氢燃料块蓝图",
+    "en": "Hydrogen Fuel Block Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": 100,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 4314,
+    "zh": "氮燃料块蓝图",
+    "en": "Nitrogen Fuel Block Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": 100,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 86050,
+    "zh": "荣耀级怀璧型跃迁扰频器突变质体蓝图",
+    "en": "Glorified Gravid Warp Scrambler Mutaplasmid Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": 1,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 31693,
+    "zh": "小型射弹武器轨迹校准设备蓝图 I",
+    "en": "Small Projectile Locus Coordinator I Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 31361,
+    "zh": "中型辅助电源路由器蓝图 I",
+    "en": "Medium Ancillary Current Router I Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": 60,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 1175,
+    "zh": "X射线晶体蓝图 L",
+    "en": "Xray L Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 57512,
+    "zh": "引力超光速链接通信器蓝图",
+    "en": "Gravimetric-FTL Interlink Communicator Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": 1,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 4316,
+    "zh": "氢燃料块蓝图",
+    "en": "Hydrogen Fuel Block Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": 100,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 4315,
+    "zh": "氦燃料块蓝图",
+    "en": "Helium Fuel Block Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": 100,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 52695,
+    "zh": "工业诱导力场发生器蓝图",
+    "en": "Industrial Cynosural Field Generator Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": 10,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 34295,
+    "zh": "偏振式鱼雷发射器蓝图",
+    "en": "Polarized Torpedo Launcher Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": 3,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 48472,
+    "zh": "重型视野型熵能分解者蓝图",
+    "en": "Heavy Scoped Entropic Disintegrator Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": 1,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 949,
+    "zh": "茶隼级蓝图",
+    "en": "Kestrel Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 4314,
+    "zh": "氮燃料块蓝图",
+    "en": "Nitrogen Fuel Block Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": 100,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 33077,
+    "zh": "小型辅助装甲维修器蓝图",
+    "en": "Small Ancillary Armor Repairer Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": 50,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 31154,
+    "zh": "小型低摩擦喷嘴接口蓝图 I",
+    "en": "Small Low Friction Nozzle Joints I Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 4313,
+    "zh": "氧燃料块蓝图",
+    "en": "Oxygen Fuel Block Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": 100,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 17931,
+    "zh": "潜龙级蓝图",
+    "en": "Worm Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": 1,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 11394,
+    "zh": "审判者蓝图",
+    "en": "Retribution Blueprint",
+    "material_efficiency": 4,
+    "time_efficiency": 14,
+    "runs": 2,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 17931,
+    "zh": "潜龙级蓝图",
+    "en": "Worm Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": 1,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 691,
+    "zh": "裂谷级蓝图",
+    "en": "Rifter Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 46185,
+    "zh": "铥铪合金反应配方",
+    "en": "Thulium Hafnite Reaction Formula",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 25957,
+    "zh": "大型辅助电源路由器蓝图 I",
+    "en": "Large Ancillary Current Router I Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 31803,
+    "zh": "中型核心防御力场稳固装置蓝图 I",
+    "en": "Medium Core Defense Field Purger I Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 1165,
+    "zh": "标准晶体蓝图 M",
+    "en": "Standard M Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 11617,
+    "zh": "远距索敌计算机蓝图 I",
+    "en": "Remote Tracking Computer I Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 20,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 33517,
+    "zh": "移动式仓库蓝图",
+    "en": "Mobile Depot Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 17719,
+    "zh": "幽灵级蓝图",
+    "en": "Phantasm Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": 1,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 17719,
+    "zh": "幽灵级蓝图",
+    "en": "Phantasm Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": 1,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 25973,
+    "zh": "大型能量武器轨迹校准设备蓝图 I",
+    "en": "Large Energy Locus Coordinator I Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 941,
+    "zh": "因卡萨斯级蓝图",
+    "en": "Incursus Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 1109,
+    "zh": "小型能量中和器蓝图 I",
+    "en": "Small Energy Neutralizer I Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 1144,
+    "zh": "锰质轨道弹蓝图 M",
+    "en": "Plutonium Charge M Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 4313,
+    "zh": "氧燃料块蓝图",
+    "en": "Oxygen Fuel Block Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": 100,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 4316,
+    "zh": "氢燃料块蓝图",
+    "en": "Hydrogen Fuel Block Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": 100,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 31755,
+    "zh": "中型热能护盾强化装置蓝图 I",
+    "en": "Medium Thermal Shield Reinforcer I Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 1115,
+    "zh": "轻型中子疾速炮蓝图 I",
+    "en": "Light Neutron Blaster I Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 17931,
+    "zh": "潜龙级蓝图",
+    "en": "Worm Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": 1,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 31759,
+    "zh": "小型热能护盾强化装置蓝图 II",
+    "en": "Small Thermal Shield Reinforcer II Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": 2,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 33077,
+    "zh": "小型辅助装甲维修器蓝图",
+    "en": "Small Ancillary Armor Repairer Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": 25,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 4396,
+    "zh": "中型处理器超频组件蓝图 I",
+    "en": "Medium Processor Overclocking Unit I Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 1139,
+    "zh": "钨质轨道弹蓝图 M",
+    "en": "Tungsten Charge M Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 4313,
+    "zh": "氧燃料块蓝图",
+    "en": "Oxygen Fuel Block Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": 100,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 4314,
+    "zh": "氮燃料块蓝图",
+    "en": "Nitrogen Fuel Block Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": 100,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 33519,
+    "zh": "移动式牵引装置蓝图",
+    "en": "Mobile Tractor Unit Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 0,
+    "runs": 10,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 3830,
+    "zh": "中型护盾扩展装置蓝图 I",
+    "en": "Medium Shield Extender I Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 842,
+    "zh": "重型脉冲激光器蓝图 I",
+    "en": "Heavy Pulse Laser I Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 46166,
+    "zh": "镉化铯反应配方",
+    "en": "Caesarium Cadmide Reaction Formula",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 4315,
+    "zh": "氦燃料块蓝图",
+    "en": "Helium Fuel Block Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": 100,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 4394,
+    "zh": "无人机伤害增效装置蓝图 I",
+    "en": "Drone Damage Amplifier I Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": 50,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 26021,
+    "zh": "大型弹头强化辅助系统蓝图 I",
+    "en": "Large Warhead Rigor Catalyst I Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 3840,
+    "zh": "大型护盾扩展装置蓝图 I",
+    "en": "Large Shield Extender I Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 47259,
+    "zh": "突击型损伤控制蓝图 I",
+    "en": "Assault Damage Control I Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 26043,
+    "zh": "大型射弹武器急转控制器蓝图 I",
+    "en": "Large Projectile Metastasis Adjuster I Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 900,
+    "zh": "聚变弹蓝图 L",
+    "en": "Fusion L Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 1123,
+    "zh": "双联250mm磁轨炮蓝图 I",
+    "en": "Dual 250mm Railgun I Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 16241,
+    "zh": "促进级蓝图",
+    "en": "Catalyst Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": 8,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 28673,
+    "zh": "合成型撞击感增效体蓝图",
+    "en": "Synth Crash Booster Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": 1000,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 33519,
+    "zh": "移动式牵引装置蓝图",
+    "en": "Mobile Tractor Unit Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 0,
+    "runs": 10,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 845,
+    "zh": "双联重型集束激光器蓝图 I",
+    "en": "Dual Heavy Beam Laser I Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 833,
+    "zh": "1400mm榴弹炮蓝图 I",
+    "en": "1400mm Howitzer Artillery I Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 17350,
+    "zh": "碳化钨附甲蓝图",
+    "en": "Tungsten Carbide Armor Plate Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 4314,
+    "zh": "氮燃料块蓝图",
+    "en": "Nitrogen Fuel Block Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": 100,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 4313,
+    "zh": "氧燃料块蓝图",
+    "en": "Oxygen Fuel Block Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": 100,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 26083,
+    "zh": "大型热能护盾强化装置蓝图 I",
+    "en": "Large Thermal Shield Reinforcer I Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 57523,
+    "zh": "生命保障备份装置蓝图",
+    "en": "Life Support Backup Unit Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": 120,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 4316,
+    "zh": "氢燃料块蓝图",
+    "en": "Hydrogen Fuel Block Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": 100,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 4313,
+    "zh": "氧燃料块蓝图",
+    "en": "Oxygen Fuel Block Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": 100,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 86011,
+    "zh": "荣耀级波动重型能量中和器突变质体蓝图",
+    "en": "Glorified Unstable Heavy Energy Neutralizer Mutaplasmid Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": 1,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 26039,
+    "zh": "大型射弹武器范围扩大装置蓝图 I",
+    "en": "Large Projectile Ambit Extension I Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 26071,
+    "zh": "大型复合碳素引擎舱蓝图 I",
+    "en": "Large Polycarbon Engine Housing I Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 902,
+    "zh": "电磁脉冲弹蓝图 L",
+    "en": "EMP L Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 4316,
+    "zh": "氢燃料块蓝图",
+    "en": "Hydrogen Fuel Block Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": 100,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 31361,
+    "zh": "中型辅助电源路由器蓝图 I",
+    "en": "Medium Ancillary Current Router I Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": 60,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 46170,
+    "zh": "镝汞合金反应配方",
+    "en": "Dysporite Reaction Formula",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 57491,
+    "zh": "富氧有机溶剂反应配方",
+    "en": "Oxy-Organic Solvents Reaction Formula",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 17931,
+    "zh": "潜龙级蓝图",
+    "en": "Worm Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": 1,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 31160,
+    "zh": "小型超空间速度调节器蓝图 I",
+    "en": "Small Hyperspatial Velocity Optimizer I Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 31753,
+    "zh": "小型热能护盾强化装置蓝图 I",
+    "en": "Small Thermal Shield Reinforcer I Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 31443,
+    "zh": "小型能量武器发散调节装置蓝图 I",
+    "en": "Small Energy Burst Aerator I Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 688,
+    "zh": "乌鸦级蓝图",
+    "en": "Raven Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": 10,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 2487,
+    "zh": "武士蓝图 I",
+    "en": "Warrior I Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 4313,
+    "zh": "氧燃料块蓝图",
+    "en": "Oxygen Fuel Block Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": 100,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 4315,
+    "zh": "氦燃料块蓝图",
+    "en": "Helium Fuel Block Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": 100,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 52695,
+    "zh": "工业诱导力场发生器蓝图",
+    "en": "Industrial Cynosural Field Generator Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": 10,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 17931,
+    "zh": "潜龙级蓝图",
+    "en": "Worm Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": 1,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 1148,
+    "zh": "铱质轨道弹蓝图 L",
+    "en": "Iridium Charge L Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 17349,
+    "zh": "聚变推进器蓝图",
+    "en": "Fusion Thruster Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 17716,
+    "zh": "毒蜥级蓝图",
+    "en": "Gila Blueprint",
+    "material_efficiency": 6,
+    "time_efficiency": 6,
+    "runs": 1,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 3529,
+    "zh": "中型装甲维修器蓝图 I",
+    "en": "Medium Armor Repairer I Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 57523,
+    "zh": "生命保障备份装置蓝图",
+    "en": "Life Support Backup Unit Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": 200,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 4313,
+    "zh": "氧燃料块蓝图",
+    "en": "Oxygen Fuel Block Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": 100,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 4314,
+    "zh": "氮燃料块蓝图",
+    "en": "Nitrogen Fuel Block Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": 100,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 60338,
+    "zh": "气云采集器蓝图 I",
+    "en": "Gas Cloud Harvester I Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 880,
+    "zh": "核芯弹蓝图 S",
+    "en": "Nuclear S Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 57515,
+    "zh": "自动修复储藏装置密封蓝图",
+    "en": "Auto-Integrity Preservation Seal Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": 200,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 4315,
+    "zh": "氦燃料块蓝图",
+    "en": "Helium Fuel Block Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": 100,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 4315,
+    "zh": "氦燃料块蓝图",
+    "en": "Helium Fuel Block Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": 100,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 57515,
+    "zh": "自动修复储藏装置密封蓝图",
+    "en": "Auto-Integrity Preservation Seal Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": 120,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 4316,
+    "zh": "氢燃料块蓝图",
+    "en": "Hydrogen Fuel Block Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": 100,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 17931,
+    "zh": "潜龙级蓝图",
+    "en": "Worm Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": 1,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 11298,
+    "zh": "400mm钢附甲板蓝图 I",
+    "en": "400mm Steel Plates I Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 17479,
+    "zh": "回旋者级蓝图",
+    "en": "Retriever Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": 10,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 16243,
+    "zh": "长尾鲛级蓝图",
+    "en": "Thrasher Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 31012,
+    "zh": "中型爆炸装甲强化装置蓝图 I",
+    "en": "Medium Explosive Armor Reinforcer I Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 4315,
+    "zh": "氦燃料块蓝图",
+    "en": "Helium Fuel Block Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": 100,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 31373,
+    "zh": "中型电容器控制电路蓝图 I",
+    "en": "Medium Capacitor Control Circuit I Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": 60,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 1142,
+    "zh": "钍质轨道弹蓝图 M",
+    "en": "Thorium Charge M Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 1158,
+    "zh": "紫外晶体蓝图 S",
+    "en": "Ultraviolet S Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 46210,
+    "zh": "酚合成物反应配方",
+    "en": "Phenolic Composites Reaction Formula",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 33077,
+    "zh": "小型辅助装甲维修器蓝图",
+    "en": "Small Ancillary Armor Repairer Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": 50,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 26081,
+    "zh": "大型动能护盾强化装置蓝图 I",
+    "en": "Large Kinetic Shield Reinforcer I Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 11300,
+    "zh": "800mm钢附甲板蓝图 I",
+    "en": "800mm Steel Plates I Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 4316,
+    "zh": "氢燃料块蓝图",
+    "en": "Hydrogen Fuel Block Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": 100,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 4316,
+    "zh": "氢燃料块蓝图",
+    "en": "Hydrogen Fuel Block Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": 100,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 23534,
+    "zh": "全方位索敌连接蓝图 I",
+    "en": "Omnidirectional Tracking Link I Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 879,
+    "zh": "碳铅弹蓝图 S",
+    "en": "Carbonized Lead S Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 4314,
+    "zh": "氮燃料块蓝图",
+    "en": "Nitrogen Fuel Block Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": 100,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 839,
+    "zh": "四联轻型集束激光器蓝图 I",
+    "en": "Quad Light Beam Laser I Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 33823,
+    "zh": "全方位索敌增强器蓝图 I",
+    "en": "Omnidirectional Tracking Enhancer I Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 16228,
+    "zh": "猛鲑级蓝图",
+    "en": "Ferox Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": 10,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 31361,
+    "zh": "中型辅助电源路由器蓝图 I",
+    "en": "Medium Ancillary Current Router I Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 4314,
+    "zh": "氮燃料块蓝图",
+    "en": "Nitrogen Fuel Block Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": 100,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 1876,
+    "zh": "轻型快速导弹发射器蓝图 I",
+    "en": "Rapid Light Missile Launcher I Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 17931,
+    "zh": "潜龙级蓝图",
+    "en": "Worm Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": 1,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 17931,
+    "zh": "潜龙级蓝图",
+    "en": "Worm Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": 1,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 1102,
+    "zh": "停滞缠绕光束蓝图 I",
+    "en": "Stasis Webifier I Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 4315,
+    "zh": "氦燃料块蓝图",
+    "en": "Helium Fuel Block Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": 100,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 1168,
+    "zh": "伽玛晶体蓝图 M",
+    "en": "Gamma M Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 4314,
+    "zh": "氮燃料块蓝图",
+    "en": "Nitrogen Fuel Block Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": 100,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 31695,
+    "zh": "中型射弹武器轨迹校准设备蓝图 I",
+    "en": "Medium Projectile Locus Coordinator I Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 4314,
+    "zh": "氮燃料块蓝图",
+    "en": "Nitrogen Fuel Block Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": 100,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 4316,
+    "zh": "氢燃料块蓝图",
+    "en": "Hydrogen Fuel Block Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": 100,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 4315,
+    "zh": "氦燃料块蓝图",
+    "en": "Helium Fuel Block Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": 100,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 4315,
+    "zh": "氦燃料块蓝图",
+    "en": "Helium Fuel Block Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": 100,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 52695,
+    "zh": "工业诱导力场发生器蓝图",
+    "en": "Industrial Cynosural Field Generator Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": 10,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 17345,
+    "zh": "磁力感应器组蓝图",
+    "en": "Magnetometric Sensor Cluster Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 4313,
+    "zh": "氧燃料块蓝图",
+    "en": "Oxygen Fuel Block Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": 100,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 4314,
+    "zh": "氮燃料块蓝图",
+    "en": "Nitrogen Fuel Block Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": 100,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 46178,
+    "zh": "轧制钨合金反应配方",
+    "en": "Rolled Tungsten Alloy Reaction Formula",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 892,
+    "zh": "聚变弹蓝图 M",
+    "en": "Fusion M Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 692,
+    "zh": "刺客级蓝图",
+    "en": "Stabber Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": 6,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 17331,
+    "zh": "聚变反应堆机组蓝图",
+    "en": "Fusion Reactor Unit Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 26069,
+    "zh": "大型超空间速度调节器蓝图 I",
+    "en": "Large Hyperspatial Velocity Optimizer I Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 1164,
+    "zh": "红外晶体蓝图 M",
+    "en": "Infrared M Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 4314,
+    "zh": "氮燃料块蓝图",
+    "en": "Nitrogen Fuel Block Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": 100,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 4313,
+    "zh": "氧燃料块蓝图",
+    "en": "Oxygen Fuel Block Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": 100,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 26089,
+    "zh": "大型核心防御力场扩张装置蓝图 I",
+    "en": "Large Core Defense Field Extender I Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 31719,
+    "zh": "中型电磁护盾强化装置蓝图 I",
+    "en": "Medium EM Shield Reinforcer I Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 31659,
+    "zh": "中型射弹武器范围扩大装置蓝图 I",
+    "en": "Medium Projectile Ambit Extension I Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 17931,
+    "zh": "潜龙级蓝图",
+    "en": "Worm Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": 1,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 684,
+    "zh": "秃鹫级蓝图",
+    "en": "Condor Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 17359,
+    "zh": "线性护盾能量发射器蓝图",
+    "en": "Linear Shield Emitter Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 24349,
+    "zh": "小型牵引光束器蓝图 I",
+    "en": "Small Tractor Beam I Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": 40,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 1155,
+    "zh": "微波晶体蓝图 S",
+    "en": "Microwave S Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 12355,
+    "zh": "350mm磁轨炮蓝图 I",
+    "en": "350mm Railgun I Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 4313,
+    "zh": "氧燃料块蓝图",
+    "en": "Oxygen Fuel Block Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": 100,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 895,
+    "zh": "碳铅弹蓝图 L",
+    "en": "Carbonized Lead L Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 48104,
+    "zh": "介子异种等离子弹蓝图 M",
+    "en": "Meson Exotic Plasma M Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": 5,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 4313,
+    "zh": "氧燃料块蓝图",
+    "en": "Oxygen Fuel Block Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": 100,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 16241,
+    "zh": "促进级蓝图",
+    "en": "Catalyst Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": 8,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 2184,
+    "zh": "战锤蓝图 I",
+    "en": "Hammerhead I Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 4313,
+    "zh": "氧燃料块蓝图",
+    "en": "Oxygen Fuel Block Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": 100,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 46174,
+    "zh": "六元复合物反应配方",
+    "en": "Hexite Reaction Formula",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 46181,
+    "zh": "硫酸反应配方",
+    "en": "Sulfuric Acid Reaction Formula",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 971,
+    "zh": "狂怒者级蓝图",
+    "en": "Vexor Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": 10,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 17931,
+    "zh": "潜龙级蓝图",
+    "en": "Worm Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": 1,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 17330,
+    "zh": "纳米电子微处理器蓝图",
+    "en": "Nanoelectrical Microprocessor Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 57523,
+    "zh": "生命保障备份装置蓝图",
+    "en": "Life Support Backup Unit Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": 120,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 17338,
+    "zh": "反物质反应堆组件蓝图",
+    "en": "Antimatter Reactor Unit Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 4315,
+    "zh": "氦燃料块蓝图",
+    "en": "Helium Fuel Block Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": 100,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 17919,
+    "zh": "响尾蛇级蓝图",
+    "en": "Rattlesnake Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": 1,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 26017,
+    "zh": "大型液压舱推进器蓝图 I",
+    "en": "Large Hydraulic Bay Thrusters I Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 11356,
+    "zh": "小型远程装甲维修器蓝图 I",
+    "en": "Small Remote Armor Repairer I Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 1134,
+    "zh": "钍质轨道弹蓝图 S",
+    "en": "Thorium Charge S Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 4313,
+    "zh": "氧燃料块蓝图",
+    "en": "Oxygen Fuel Block Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": 100,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 12057,
+    "zh": "10MN加力燃烧器蓝图 I",
+    "en": "10MN Afterburner I Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 12270,
+    "zh": "重型能量中和器蓝图 I",
+    "en": "Heavy Energy Neutralizer I Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 32858,
+    "zh": "空间站集装箱蓝图",
+    "en": "Station Container Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 2604,
+    "zh": "纳米纤维内部构架蓝图 I",
+    "en": "Nanofiber Internal Structure I Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 4315,
+    "zh": "氦燃料块蓝图",
+    "en": "Helium Fuel Block Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": 100,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 4394,
+    "zh": "无人机伤害增效装置蓝图 I",
+    "en": "Drone Damage Amplifier I Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": 50,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 1131,
+    "zh": "钨质轨道弹蓝图 S",
+    "en": "Tungsten Charge S Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 2455,
+    "zh": "地精灵蓝图 I",
+    "en": "Hobgoblin I Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 4315,
+    "zh": "氦燃料块蓝图",
+    "en": "Helium Fuel Block Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": 100,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 31359,
+    "zh": "小型辅助电源路由器蓝图 I",
+    "en": "Small Ancillary Current Router I Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 4316,
+    "zh": "氢燃料块蓝图",
+    "en": "Hydrogen Fuel Block Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": 100,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 49777,
+    "zh": "重型突变适应紧凑型远程装甲维修器蓝图",
+    "en": "Heavy Mutadaptive Compact Remote Armor Repairer Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": 5,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 1167,
+    "zh": "X射线晶体蓝图 M",
+    "en": "Xray M Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 692,
+    "zh": "刺客级蓝图",
+    "en": "Stabber Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": 6,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 46170,
+    "zh": "镝汞合金反应配方",
+    "en": "Dysporite Reaction Formula",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 48473,
+    "zh": "潮上紧凑型熵能分解者蓝图",
+    "en": "Supratidal Compact Entropic Disintegrator Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": 1,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 1112,
+    "zh": "75mm加特林磁轨炮蓝图 I",
+    "en": "75mm Gatling Rail I Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 32879,
+    "zh": "弯刀级蓝图",
+    "en": "Talwar Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": 2,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 57491,
+    "zh": "富氧有机溶剂反应配方",
+    "en": "Oxy-Organic Solvents Reaction Formula",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 46207,
+    "zh": "碳化钨反应配方",
+    "en": "Tungsten Carbide Reaction Formula",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 17919,
+    "zh": "响尾蛇级蓝图",
+    "en": "Rattlesnake Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": 1,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 46204,
+    "zh": "碳化钛反应配方",
+    "en": "Titanium Carbide Reaction Formula",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 48098,
+    "zh": "重子异种等离子弹蓝图 S",
+    "en": "Baryon Exotic Plasma S Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": 5,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 2204,
+    "zh": "侍僧蓝图 I",
+    "en": "Acolyte I Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 31517,
+    "zh": "中型混合武器范围扩大装置蓝图 I",
+    "en": "Medium Hybrid Ambit Extension I Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 12266,
+    "zh": "中型能量中和器蓝图 I",
+    "en": "Medium Energy Neutralizer I Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 26077,
+    "zh": "大型电磁护盾强化装置蓝图 I",
+    "en": "Large EM Shield Reinforcer I Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 893,
+    "zh": "定相等离子弹蓝图 M",
+    "en": "Phased Plasma M Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 1540,
+    "zh": "能源诊断系统蓝图 I",
+    "en": "Power Diagnostic System I Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 831,
+    "zh": "800mm频射加农炮蓝图 I",
+    "en": "800mm Repeating Cannon I Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 4316,
+    "zh": "氢燃料块蓝图",
+    "en": "Hydrogen Fuel Block Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 23528,
+    "zh": "无人机链接增效器蓝图 I",
+    "en": "Drone Link Augmentor I Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 11619,
+    "zh": "协处理器蓝图 I",
+    "en": "Co-Processor I Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 1145,
+    "zh": "反物质轨道弹蓝图 M",
+    "en": "Antimatter Charge M Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 16228,
+    "zh": "猛鲑级蓝图",
+    "en": "Ferox Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": 10,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 4316,
+    "zh": "氢燃料块蓝图",
+    "en": "Hydrogen Fuel Block Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": 100,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 31609,
+    "zh": "小型火箭燃料缓冲隔离装置蓝图 I",
+    "en": "Small Rocket Fuel Cache Partition I Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 1163,
+    "zh": "微波晶体蓝图 M",
+    "en": "Microwave M Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 2021,
+    "zh": "大型电容器电池蓝图 I",
+    "en": "Large Cap Battery I Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 1099,
+    "zh": "小型装甲维修器蓝图 I",
+    "en": "Small Armor Repairer I Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 4314,
+    "zh": "氮燃料块蓝图",
+    "en": "Nitrogen Fuel Block Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": 100,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 31373,
+    "zh": "中型电容器控制电路蓝图 I",
+    "en": "Medium Capacitor Control Circuit I Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": 60,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 34285,
+    "zh": "偏振式200mm自动加农炮蓝图",
+    "en": "Polarized 200mm AutoCannon Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": 1,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 31647,
+    "zh": "中型弹头强化辅助系统蓝图 I",
+    "en": "Medium Warhead Rigor Catalyst I Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 1010,
+    "zh": "小型护盾扩展装置蓝图 I",
+    "en": "Small Shield Extender I Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 4314,
+    "zh": "氮燃料块蓝图",
+    "en": "Nitrogen Fuel Block Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": 100,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 46215,
+    "zh": "等离子体超材料反应配方",
+    "en": "Plasmonic Metamaterials Reaction Formula",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 31729,
+    "zh": "小型爆炸护盾强化装置蓝图 I",
+    "en": "Small Explosive Shield Reinforcer I Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 52695,
+    "zh": "工业诱导力场发生器蓝图",
+    "en": "Industrial Cynosural Field Generator Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 1177,
+    "zh": "多频晶体蓝图 L",
+    "en": "Multifrequency L Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 4315,
+    "zh": "氦燃料块蓝图",
+    "en": "Helium Fuel Block Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": 100,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 28673,
+    "zh": "合成型撞击感增效体蓝图",
+    "en": "Synth Crash Booster Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": 1000,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 1147,
+    "zh": "钨质轨道弹蓝图 L",
+    "en": "Tungsten Charge L Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 12055,
+    "zh": "500MN微型跃迁推进器蓝图 I",
+    "en": "500MN Microwarpdrive I Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 1140,
+    "zh": "铱质轨道弹蓝图 M",
+    "en": "Iridium Charge M Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 2515,
+    "zh": "炼狱火箭蓝图",
+    "en": "Inferno Rocket Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 4313,
+    "zh": "氧燃料块蓝图",
+    "en": "Oxygen Fuel Block Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": 100,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 57490,
+    "zh": "碳纤维反应配方",
+    "en": "Carbon Fiber Reaction Formula",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 17931,
+    "zh": "潜龙级蓝图",
+    "en": "Worm Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": 1,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 17931,
+    "zh": "潜龙级蓝图",
+    "en": "Worm Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": 1,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 1121,
+    "zh": "250mm磁轨炮蓝图 I",
+    "en": "250mm Railgun I Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 57515,
+    "zh": "自动修复储藏装置密封蓝图",
+    "en": "Auto-Integrity Preservation Seal Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": 200,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 4314,
+    "zh": "氮燃料块蓝图",
+    "en": "Nitrogen Fuel Block Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": 100,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 52695,
+    "zh": "工业诱导力场发生器蓝图",
+    "en": "Industrial Cynosural Field Generator Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": 10,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 25949,
+    "zh": "大型电容器控制电路蓝图 I",
+    "en": "Large Capacitor Control Circuit I Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 46182,
+    "zh": "铬化钛反应配方",
+    "en": "Titanium Chromide Reaction Formula",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 31120,
+    "zh": "中型货柜舱优化改造蓝图 I",
+    "en": "Medium Cargohold Optimization I Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 688,
+    "zh": "乌鸦级蓝图",
+    "en": "Raven Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": 10,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 32881,
+    "zh": "冲锋者级蓝图",
+    "en": "Venture Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": 12,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 31663,
+    "zh": "小型射弹武器范围扩大装置蓝图 II",
+    "en": "Small Projectile Ambit Extension II Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": 2,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 1151,
+    "zh": "钼质轨道弹蓝图 L",
+    "en": "Uranium Charge L Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 57515,
+    "zh": "自动修复储藏装置密封蓝图",
+    "en": "Auto-Integrity Preservation Seal Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": 120,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 4316,
+    "zh": "氢燃料块蓝图",
+    "en": "Hydrogen Fuel Block Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": 100,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 4315,
+    "zh": "氦燃料块蓝图",
+    "en": "Helium Fuel Block Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": 100,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 31577,
+    "zh": "中型混合武器急转控制器蓝图 I",
+    "en": "Medium Hybrid Metastasis Adjuster I Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 48104,
+    "zh": "介子异种等离子弹蓝图 M",
+    "en": "Meson Exotic Plasma M Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": 5,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 4315,
+    "zh": "氦燃料块蓝图",
+    "en": "Helium Fuel Block Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": 100,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 4313,
+    "zh": "氧燃料块蓝图",
+    "en": "Oxygen Fuel Block Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": 100,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 46176,
+    "zh": "新汞合金反应配方",
+    "en": "Neo Mercurite Reaction Formula",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 17931,
+    "zh": "潜龙级蓝图",
+    "en": "Worm Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": 1,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 840,
+    "zh": "聚焦中型脉冲激光器蓝图 I",
+    "en": "Focused Medium Pulse Laser I Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 57515,
+    "zh": "自动修复储藏装置密封蓝图",
+    "en": "Auto-Integrity Preservation Seal Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": 120,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 46204,
+    "zh": "碳化钛反应配方",
+    "en": "Titanium Carbide Reaction Formula",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 31431,
+    "zh": "小型能量武器范围扩大设备蓝图 I",
+    "en": "Small Energy Ambit Extension I Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 4314,
+    "zh": "氮燃料块蓝图",
+    "en": "Nitrogen Fuel Block Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": 100,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 24349,
+    "zh": "小型牵引光束器蓝图 I",
+    "en": "Small Tractor Beam I Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": 40,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 33519,
+    "zh": "移动式牵引装置蓝图",
+    "en": "Mobile Tractor Unit Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 0,
+    "runs": 10,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 834,
+    "zh": "加特林脉冲激光器蓝图 I",
+    "en": "Gatling Pulse Laser I Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 49714,
+    "zh": "奇奇莫拉级蓝图",
+    "en": "Kikimora Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": 1,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 844,
+    "zh": "双联重型脉冲激光器蓝图 I",
+    "en": "Dual Heavy Pulse Laser I Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 30988,
+    "zh": "小型三角装甲聚合器蓝图 I",
+    "en": "Small Trimark Armor Pump I Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 46167,
+    "zh": "碳聚合物反应配方",
+    "en": "Carbon Polymers Reaction Formula",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 17931,
+    "zh": "潜龙级蓝图",
+    "en": "Worm Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": 1,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 1132,
+    "zh": "铱质轨道弹蓝图 S",
+    "en": "Iridium Charge S Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 16228,
+    "zh": "猛鲑级蓝图",
+    "en": "Ferox Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": 10,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 17931,
+    "zh": "潜龙级蓝图",
+    "en": "Worm Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": 1,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 4313,
+    "zh": "氧燃料块蓝图",
+    "en": "Oxygen Fuel Block Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": 100,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 4313,
+    "zh": "氧燃料块蓝图",
+    "en": "Oxygen Fuel Block Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": 100,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 31791,
+    "zh": "中型核心防御力场扩张装置蓝图 I",
+    "en": "Medium Core Defense Field Extender I Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 1446,
+    "zh": "电容能源继电器蓝图 I",
+    "en": "Capacitor Power Relay I Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 31000,
+    "zh": "中型电磁装甲强化装置蓝图 I",
+    "en": "Medium EM Armor Reinforcer I Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 4315,
+    "zh": "氦燃料块蓝图",
+    "en": "Helium Fuel Block Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": 100,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 17931,
+    "zh": "潜龙级蓝图",
+    "en": "Worm Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": 1,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 1157,
+    "zh": "标准晶体蓝图 S",
+    "en": "Standard S Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 820,
+    "zh": "150mm轻型自动加农炮蓝图 I",
+    "en": "150mm Light AutoCannon I Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 4315,
+    "zh": "氦燃料块蓝图",
+    "en": "Helium Fuel Block Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": 100,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 24349,
+    "zh": "小型牵引光束器蓝图 I",
+    "en": "Small Tractor Beam I Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": 40,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 32881,
+    "zh": "冲锋者级蓝图",
+    "en": "Venture Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 28673,
+    "zh": "合成型撞击感增效体蓝图",
+    "en": "Synth Crash Booster Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": 1000,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 31455,
+    "zh": "小型能量武器冲击加速器蓝图 I",
+    "en": "Small Energy Collision Accelerator I Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 3577,
+    "zh": "重型电容注电器蓝图 I",
+    "en": "Heavy Capacitor Booster I Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 46158,
+    "zh": "富勒二茂铁反应配方",
+    "en": "Fulleroferrocene Reaction Formula",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 17931,
+    "zh": "潜龙级蓝图",
+    "en": "Worm Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": 1,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 822,
+    "zh": "250mm轻型加农炮蓝图 I",
+    "en": "250mm Light Artillery Cannon I Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 4316,
+    "zh": "氢燃料块蓝图",
+    "en": "Hydrogen Fuel Block Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": 100,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 46178,
+    "zh": "轧制钨合金反应配方",
+    "en": "Rolled Tungsten Alloy Reaction Formula",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 86006,
+    "zh": "荣耀级腐朽大型电容器电池突变质体蓝图",
+    "en": "Glorified Decayed Large Cap Battery Mutaplasmid Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": 1,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 25893,
+    "zh": "大型热能装甲强化装置蓝图 I",
+    "en": "Large Thermal Armor Reinforcer I Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 971,
+    "zh": "狂怒者级蓝图",
+    "en": "Vexor Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": 10,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 689,
+    "zh": "伐木者级蓝图",
+    "en": "Slasher Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 31601,
+    "zh": "中型液压舱推进器蓝图 I",
+    "en": "Medium Hydraulic Bay Thrusters I Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 17479,
+    "zh": "回旋者级蓝图",
+    "en": "Retriever Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": 10,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 1126,
+    "zh": "离子疾速加农炮蓝图 I",
+    "en": "Ion Blaster Cannon I Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 26073,
+    "zh": "大型货柜舱优化改造蓝图 I",
+    "en": "Large Cargohold Optimization I Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 31034,
+    "zh": "小型热能装甲强化装置蓝图 I",
+    "en": "Small Thermal Armor Reinforcer I Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 1176,
+    "zh": "伽玛晶体蓝图 L",
+    "en": "Gamma L Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 26029,
+    "zh": "大型弹头爆燃辅助系统蓝图 I",
+    "en": "Large Warhead Flare Catalyst I Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 52695,
+    "zh": "工业诱导力场发生器蓝图",
+    "en": "Industrial Cynosural Field Generator Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": 10,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 31072,
+    "zh": "中型纳米机器人加速器蓝图 II",
+    "en": "Medium Nanobot Accelerator II Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": 2,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 11803,
+    "zh": "远程感应抑阻器蓝图 I",
+    "en": "Remote Sensor Dampener I Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 17334,
+    "zh": "超立方电容器单元蓝图",
+    "en": "Tesseract Capacitor Unit Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 48098,
+    "zh": "重子异种等离子弹蓝图 S",
+    "en": "Baryon Exotic Plasma S Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": 5,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 17931,
+    "zh": "潜龙级蓝图",
+    "en": "Worm Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": 1,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 31717,
+    "zh": "小型电磁护盾强化装置蓝图 I",
+    "en": "Small EM Shield Reinforcer I Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 3607,
+    "zh": "大型远程护盾回充增量器蓝图 I",
+    "en": "Large Remote Shield Booster I Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 887,
+    "zh": "碳铅弹蓝图 M",
+    "en": "Carbonized Lead M Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 25737,
+    "zh": "大型电磁装甲强化装置蓝图 I",
+    "en": "Large EM Armor Reinforcer I Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 3597,
+    "zh": "中型远程护盾回充增量器蓝图 I",
+    "en": "Medium Remote Shield Booster I Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 976,
+    "zh": "镰刀级蓝图",
+    "en": "Scythe Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 31022,
+    "zh": "小型动能装甲强化装置蓝图 I",
+    "en": "Small Kinetic Armor Reinforcer I Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 826,
+    "zh": "425mm自动加农炮蓝图 I",
+    "en": "425mm AutoCannon I Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 4314,
+    "zh": "氮燃料块蓝图",
+    "en": "Nitrogen Fuel Block Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": 100,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 4314,
+    "zh": "氮燃料块蓝图",
+    "en": "Nitrogen Fuel Block Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": 100,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 25979,
+    "zh": "大型能量武器发散调节装置蓝图 I",
+    "en": "Large Energy Burst Aerator I Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 25862,
+    "zh": "打捞器蓝图 I",
+    "en": "Salvager I Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 12275,
+    "zh": "弹道控制系统蓝图 I",
+    "en": "Ballistic Control System I Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 1221,
+    "zh": "鞭挞鱼雷蓝图",
+    "en": "Scourge Torpedo Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 57515,
+    "zh": "自动修复储藏装置密封蓝图",
+    "en": "Auto-Integrity Preservation Seal Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": 120,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 31056,
+    "zh": "中型三角装甲聚合器蓝图 I",
+    "en": "Medium Trimark Armor Pump I Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 4314,
+    "zh": "氮燃料块蓝图",
+    "en": "Nitrogen Fuel Block Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": 100,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 46172,
+    "zh": "铁磁流体反应配方",
+    "en": "Ferrofluid Reaction Formula",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 1153,
+    "zh": "反物质轨道弹蓝图 L",
+    "en": "Antimatter Charge L Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 31235,
+    "zh": "中型水冷电子设备蓝图 II",
+    "en": "Medium Liquid Cooled Electronics II Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": 2,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 841,
+    "zh": "聚焦中型集束激光器蓝图 I",
+    "en": "Focused Medium Beam Laser I Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 11890,
+    "zh": "R.A.M. - 星舰科技蓝图",
+    "en": "R.A.M.- Starship Tech Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 838,
+    "zh": "小型聚焦集束激光器 I 蓝图",
+    "en": "Small Focused Beam Laser I Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 10630,
+    "zh": "火箭发射器蓝图 I",
+    "en": "Rocket Launcher I Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 20,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 46159,
+    "zh": "PPD富勒烯纤维反应配方",
+    "en": "PPD Fullerene Fibers Reaction Formula",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 4313,
+    "zh": "氧燃料块蓝图",
+    "en": "Oxygen Fuel Block Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": 100,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 4314,
+    "zh": "氮燃料块蓝图",
+    "en": "Nitrogen Fuel Block Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": 100,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 17931,
+    "zh": "潜龙级蓝图",
+    "en": "Worm Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": 1,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 1159,
+    "zh": "X射线晶体蓝图 S",
+    "en": "Xray S Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 4316,
+    "zh": "氢燃料块蓝图",
+    "en": "Hydrogen Fuel Block Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": 100,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 4315,
+    "zh": "氦燃料块蓝图",
+    "en": "Helium Fuel Block Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": 100,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 46206,
+    "zh": "菲尔合金碳化物反应配方",
+    "en": "Fernite Carbide Reaction Formula",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 2019,
+    "zh": "中型电容器电池蓝图 I",
+    "en": "Medium Cap Battery I Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 11621,
+    "zh": "索敌计算机蓝图 I",
+    "en": "Tracking Computer I Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 24349,
+    "zh": "小型牵引光束器蓝图 I",
+    "en": "Small Tractor Beam I Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": 40,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 28673,
+    "zh": "合成型撞击感增效体蓝图",
+    "en": "Synth Crash Booster Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": 1000,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 26007,
+    "zh": "大型混合武器射速调节装置蓝图 I",
+    "en": "Large Hybrid Burst Aerator I Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 16243,
+    "zh": "长尾鲛级蓝图",
+    "en": "Thrasher Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": 8,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 11394,
+    "zh": "审判者蓝图",
+    "en": "Retribution Blueprint",
+    "material_efficiency": 4,
+    "time_efficiency": 14,
+    "runs": 2,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 31587,
+    "zh": "小型装卸加速装置蓝图 I",
+    "en": "Small Bay Loading Accelerator I Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 31108,
+    "zh": "中型辅助推进器蓝图 I",
+    "en": "Medium Auxiliary Thrusters I Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 4314,
+    "zh": "氮燃料块蓝图",
+    "en": "Nitrogen Fuel Block Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": 100,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 17931,
+    "zh": "潜龙级蓝图",
+    "en": "Worm Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": 1,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 48473,
+    "zh": "潮上紧凑型熵能分解者蓝图",
+    "en": "Supratidal Compact Entropic Disintegrator Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": 1,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 17350,
+    "zh": "碳化钨附甲蓝图",
+    "en": "Tungsten Carbide Armor Plate Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 4316,
+    "zh": "氢燃料块蓝图",
+    "en": "Hydrogen Fuel Block Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": 100,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 57515,
+    "zh": "自动修复储藏装置密封蓝图",
+    "en": "Auto-Integrity Preservation Seal Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": 200,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 4316,
+    "zh": "氢燃料块蓝图",
+    "en": "Hydrogen Fuel Block Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": 100,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 4394,
+    "zh": "无人机伤害增效装置蓝图 I",
+    "en": "Drone Damage Amplifier I Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": 50,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 10679,
+    "zh": "125mm磁轨炮蓝图 I",
+    "en": "125mm Railgun I Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 2047,
+    "zh": "损伤控制装备蓝图 I",
+    "en": "Damage Control I Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 883,
+    "zh": "钛合金萨博弹蓝图 S",
+    "en": "Titanium Sabot S Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 1113,
+    "zh": "轻型电子疾速炮蓝图 I",
+    "en": "Light Electron Blaster I Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 12258,
+    "zh": "中型掠能器蓝图 I",
+    "en": "Medium Energy Nosferatu I Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 24349,
+    "zh": "小型牵引光束器蓝图 I",
+    "en": "Small Tractor Beam I Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 4313,
+    "zh": "氧燃料块蓝图",
+    "en": "Oxygen Fuel Block Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": 100,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 46177,
+    "zh": "铂锝合金反应配方",
+    "en": "Platinum Technite Reaction Formula",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 57492,
+    "zh": "增压氧化剂反应配方",
+    "en": "Pressurized Oxidizers Reaction Formula",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 33077,
+    "zh": "小型辅助装甲维修器蓝图",
+    "en": "Small Ancillary Armor Repairer Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": 50,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 901,
+    "zh": "定相等离子弹蓝图 L",
+    "en": "Phased Plasma L Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 1129,
+    "zh": "多谱式护盾增强器蓝图 I",
+    "en": "Multispectrum Shield Hardener I Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 4314,
+    "zh": "氮燃料块蓝图",
+    "en": "Nitrogen Fuel Block Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": 100,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 4313,
+    "zh": "氧燃料块蓝图",
+    "en": "Oxygen Fuel Block Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": 100,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 4313,
+    "zh": "氧燃料块蓝图",
+    "en": "Oxygen Fuel Block Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": 100,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 24349,
+    "zh": "小型牵引光束器蓝图 I",
+    "en": "Small Tractor Beam I Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": 20,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 31633,
+    "zh": "小型弹头爆燃辅助系统蓝图 I",
+    "en": "Small Warhead Flare Catalyst I Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 31515,
+    "zh": "小型混合武器范围扩大装置蓝图 I",
+    "en": "Small Hybrid Ambit Extension I Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 2194,
+    "zh": "执政官蓝图 I",
+    "en": "Praetor I Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 16243,
+    "zh": "长尾鲛级蓝图",
+    "en": "Thrasher Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": 8,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 16241,
+    "zh": "促进级蓝图",
+    "en": "Catalyst Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": 8,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 4315,
+    "zh": "氦燃料块蓝图",
+    "en": "Helium Fuel Block Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": 100,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 17931,
+    "zh": "潜龙级蓝图",
+    "en": "Worm Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": 1,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 17931,
+    "zh": "潜龙级蓝图",
+    "en": "Worm Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": 1,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 33077,
+    "zh": "小型辅助装甲维修器蓝图",
+    "en": "Small Ancillary Armor Repairer Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": 50,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 940,
+    "zh": "特里斯坦级蓝图",
+    "en": "Tristan Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 4313,
+    "zh": "氧燃料块蓝图",
+    "en": "Oxygen Fuel Block Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": 100,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 25891,
+    "zh": "大型动能装甲强化装置蓝图 I",
+    "en": "Large Kinetic Armor Reinforcer I Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 683,
+    "zh": "矮脚鸡级蓝图",
+    "en": "Bantam Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 46173,
+    "zh": "熔融冷凝物反应配方",
+    "en": "Fluxed Condensates Reaction Formula",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 4316,
+    "zh": "氢燃料块蓝图",
+    "en": "Hydrogen Fuel Block Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": 100,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 4316,
+    "zh": "氢燃料块蓝图",
+    "en": "Hydrogen Fuel Block Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": 100,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 811,
+    "zh": "鞭挞轻型导弹蓝图",
+    "en": "Scourge Light Missile Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 4311,
+    "zh": "龙卷风级蓝图",
+    "en": "Tornado Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": 10,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 4316,
+    "zh": "氢燃料块蓝图",
+    "en": "Hydrogen Fuel Block Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": 100,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 4315,
+    "zh": "氦燃料块蓝图",
+    "en": "Helium Fuel Block Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": 100,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 31180,
+    "zh": "中型复合碳素引擎舱蓝图 I",
+    "en": "Medium Polycarbon Engine Housing I Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 57523,
+    "zh": "生命保障备份装置蓝图",
+    "en": "Life Support Backup Unit Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": 120,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 11360,
+    "zh": "大型远程装甲维修器蓝图 I",
+    "en": "Large Remote Armor Repairer I Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 4313,
+    "zh": "氧燃料块蓝图",
+    "en": "Oxygen Fuel Block Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": 100,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 46182,
+    "zh": "铬化钛反应配方",
+    "en": "Titanium Chromide Reaction Formula",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 21558,
+    "zh": "800mm重型摇摆频射加农炮蓝图 I",
+    "en": "800mm Heavy 'Jolt' Repeating Cannon I Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": 3,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 34279,
+    "zh": "偏振式轻型中子疾速炮蓝图",
+    "en": "Polarized Light Neutron Blaster Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": 1,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 31457,
+    "zh": "中型能量武器冲击加速器蓝图 I",
+    "en": "Medium Energy Collision Accelerator I Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 894,
+    "zh": "电磁脉冲弹蓝图 M",
+    "en": "EMP M Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 827,
+    "zh": "650mm加农炮蓝图 I",
+    "en": "650mm Artillery Cannon I Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 814,
+    "zh": "星爆轻型导弹蓝图",
+    "en": "Nova Light Missile Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 46207,
+    "zh": "碳化钨反应配方",
+    "en": "Tungsten Carbide Reaction Formula",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 33519,
+    "zh": "移动式牵引装置蓝图",
+    "en": "Mobile Tractor Unit Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 0,
+    "runs": 10,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 2507,
+    "zh": "雷神鱼雷蓝图",
+    "en": "Mjolnir Torpedo Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 1152,
+    "zh": "锰质轨道弹蓝图 L",
+    "en": "Plutonium Charge L Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 31024,
+    "zh": "中型动能装甲强化装置蓝图 I",
+    "en": "Medium Kinetic Armor Reinforcer I Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 31086,
+    "zh": "中型打捞回收工具蓝图 I",
+    "en": "Medium Salvage Tackle I Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 31074,
+    "zh": "中型远程维修增效器蓝图 I",
+    "en": "Medium Remote Repair Augmentor I Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 32881,
+    "zh": "冲锋者级蓝图",
+    "en": "Venture Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 33895,
+    "zh": "中型横贯舱壁蓝图 I",
+    "en": "Medium Transverse Bulkhead I Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 22938,
+    "zh": "企业远距索敌计算机蓝图",
+    "en": "'Enterprise' Remote Tracking Computer Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": 3,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 31605,
+    "zh": "小型液压舱推进器蓝图 II",
+    "en": "Small Hydraulic Bay Thrusters II Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": 2,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 32879,
+    "zh": "弯刀级蓝图",
+    "en": "Talwar Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": 2,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 31066,
+    "zh": "中型纳米机器人加速器蓝图 I",
+    "en": "Medium Nanobot Accelerator I Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 24693,
+    "zh": "地狱天使级蓝图",
+    "en": "Abaddon Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": 10,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 693,
+    "zh": "狂暴级蓝图",
+    "en": "Tempest Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": 10,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 4311,
+    "zh": "龙卷风级蓝图",
+    "en": "Tornado Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": 10,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 24396,
+    "zh": "无人机导航电脑蓝图 I",
+    "en": "Drone Navigation Computer I Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 46213,
+    "zh": "铁磁胶体反应配方",
+    "en": "Ferrogel Reaction Formula",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 11135,
+    "zh": "艾玛穿梭机蓝图",
+    "en": "Amarr Shuttle Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 998,
+    "zh": "台风级蓝图",
+    "en": "Typhoon Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": 10,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 46176,
+    "zh": "新汞合金反应配方",
+    "en": "Neo Mercurite Reaction Formula",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 692,
+    "zh": "刺客级蓝图",
+    "en": "Stabber Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 971,
+    "zh": "狂怒者级蓝图",
+    "en": "Vexor Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 46208,
+    "zh": "多晶碳化硅纤维反应配方",
+    "en": "Sylramic Fibers Reaction Formula",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 16228,
+    "zh": "猛鲑级蓝图",
+    "en": "Ferox Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": 10,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 16228,
+    "zh": "猛鲑级蓝图",
+    "en": "Ferox Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": 10,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 46217,
+    "zh": "光子超材料反应配方",
+    "en": "Photonic Metamaterials Reaction Formula",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 687,
+    "zh": "狞獾级蓝图",
+    "en": "Caracal Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 16228,
+    "zh": "猛鲑级蓝图",
+    "en": "Ferox Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": 10,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 995,
+    "zh": "万王宝座级蓝图",
+    "en": "Megathron Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": 10,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 47973,
+    "zh": "潮上熵能分解者蓝图 I",
+    "en": "Supratidal Entropic Disintegrator I Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": 5,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 971,
+    "zh": "狂怒者级蓝图",
+    "en": "Vexor Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": 10,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 971,
+    "zh": "狂怒者级蓝图",
+    "en": "Vexor Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": 10,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 971,
+    "zh": "狂怒者级蓝图",
+    "en": "Vexor Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": 10,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 17479,
+    "zh": "回旋者级蓝图",
+    "en": "Retriever Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": 10,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 17719,
+    "zh": "幽灵级蓝图",
+    "en": "Phantasm Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": 1,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 33521,
+    "zh": "小屋移动式仓库蓝图",
+    "en": "'Wetu' Mobile Depot Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": 1,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 57515,
+    "zh": "自动修复储藏装置密封蓝图",
+    "en": "Auto-Integrity Preservation Seal Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 46209,
+    "zh": "富勒化合物反应配方",
+    "en": "Fullerides Reaction Formula",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 86047,
+    "zh": "荣耀级腐朽型跃迁扰断器突变质体蓝图",
+    "en": "Glorified Decayed Warp Disruptor Mutaplasmid Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": 1,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 49775,
+    "zh": "重型突变适应远程装甲维修器蓝图 I",
+    "en": "Heavy Mutadaptive Remote Armor Repairer I Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": 5,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 33519,
+    "zh": "移动式牵引装置蓝图",
+    "en": "Mobile Tractor Unit Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 46174,
+    "zh": "六元复合物反应配方",
+    "en": "Hexite Reaction Formula",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 46168,
+    "zh": "陶瓷粉末反应配方",
+    "en": "Ceramic Powder Reaction Formula",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 46166,
+    "zh": "镉化铯反应配方",
+    "en": "Caesarium Cadmide Reaction Formula",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 46178,
+    "zh": "轧制钨合金反应配方",
+    "en": "Rolled Tungsten Alloy Reaction Formula",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 46186,
+    "zh": "钷汞合金反应配方",
+    "en": "Promethium Mercurite Reaction Formula",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 46172,
+    "zh": "铁磁流体反应配方",
+    "en": "Ferrofluid Reaction Formula",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 46180,
+    "zh": "铯铬合金反应配方",
+    "en": "Solerium Reaction Formula",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 950,
+    "zh": "小鹰级蓝图",
+    "en": "Merlin Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 955,
+    "zh": "阿特龙级蓝图",
+    "en": "Atron Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 2162,
+    "zh": "磨难级蓝图",
+    "en": "Crucifier Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 983,
+    "zh": "獾级蓝图",
+    "en": "Badger Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 16237,
+    "zh": "强制者级蓝图",
+    "en": "Coercer Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 946,
+    "zh": "爆发级蓝图",
+    "en": "Burst Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 2465,
+    "zh": "大黄蜂蓝图 I",
+    "en": "Hornet I Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 15509,
+    "zh": "金星蓝图 I",
+    "en": "Vespa I Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 15511,
+    "zh": "瓦尔基里蓝图 I",
+    "en": "Valkyrie I Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 2477,
+    "zh": "狂战士蓝图 I",
+    "en": "Berserker I Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 26930,
+    "zh": "小型处理器超频组件蓝图 I",
+    "en": "Small Processor Overclocking Unit I Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 4398,
+    "zh": "大型处理器超频组件蓝图 I",
+    "en": "Large Processor Overclocking Unit I Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 31106,
+    "zh": "小型辅助推进器蓝图 I",
+    "en": "Small Auxiliary Thrusters I Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 1334,
+    "zh": "强化舱隔壁蓝图 I",
+    "en": "Reinforced Bulkheads I Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 1404,
+    "zh": "惯性稳定器蓝图 I",
+    "en": "Inertial Stabilizers I Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 31371,
+    "zh": "小型电容器控制电路蓝图 I",
+    "en": "Small Capacitor Control Circuit I Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 31010,
+    "zh": "小型爆炸装甲强化装置蓝图 I",
+    "en": "Small Explosive Armor Reinforcer I Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 30998,
+    "zh": "小型电磁装甲强化装置蓝图 I",
+    "en": "Small EM Armor Reinforcer I Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 25897,
+    "zh": "大型辅助纳米聚合器蓝图 I",
+    "en": "Large Auxiliary Nano Pump I Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 25895,
+    "zh": "大型三角装甲聚合器蓝图 I",
+    "en": "Large Trimark Armor Pump I Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 26087,
+    "zh": "大型核心防御操控稳定装置蓝图 I",
+    "en": "Large Core Defense Operational Solidifier I Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 26085,
+    "zh": "大型核心防御力场稳固装置蓝图 I",
+    "en": "Large Core Defense Field Purger I Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 31741,
+    "zh": "小型动能护盾强化装置蓝图 I",
+    "en": "Small Kinetic Shield Reinforcer I Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 31743,
+    "zh": "中型动能护盾强化装置蓝图 I",
+    "en": "Medium Kinetic Shield Reinforcer I Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 31819,
+    "zh": "中型核心防御操控稳定装置蓝图 I",
+    "en": "Medium Core Defense Operational Solidifier I Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 31621,
+    "zh": "小型弹头加热辅助系统蓝图 I",
+    "en": "Small Warhead Calefaction Catalyst I Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 31645,
+    "zh": "小型弹头强化辅助系统蓝图 I",
+    "en": "Small Warhead Rigor Catalyst I Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 31599,
+    "zh": "小型液压舱推进器蓝图 I",
+    "en": "Small Hydraulic Bay Thrusters I Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 31623,
+    "zh": "中型弹头加热辅助系统蓝图 I",
+    "en": "Medium Warhead Calefaction Catalyst I Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 31589,
+    "zh": "中型装卸加速装置蓝图 I",
+    "en": "Medium Bay Loading Accelerator I Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 26023,
+    "zh": "大型火箭燃料缓冲隔离装置蓝图 I",
+    "en": "Large Rocket Fuel Cache Partition I Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 12226,
+    "zh": "大型远程电容传输装置蓝图 I",
+    "en": "Large Remote Capacitor Transmitter I Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 1105,
+    "zh": "小型远程电容传输装置蓝图 I",
+    "en": "Small Remote Capacitor Transmitter I Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 12710,
+    "zh": "目标标记装置蓝图 I",
+    "en": "Target Painter I Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 3567,
+    "zh": "小型电容注电器蓝图 I",
+    "en": "Small Capacitor Booster I Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 11294,
+    "zh": "100mm钢附甲板蓝图 I",
+    "en": "100mm Steel Plates I Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 11296,
+    "zh": "200mm钢附甲板蓝图 I",
+    "en": "200mm Steel Plates I Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 1305,
+    "zh": "多谱式涂层蓝图 I",
+    "en": "Multispectrum Coating I Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 11358,
+    "zh": "中型远程装甲维修器蓝图 I",
+    "en": "Medium Remote Armor Repairer I Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 25975,
+    "zh": "大型能量武器急转控制器蓝图 I",
+    "en": "Large Energy Metastasis Adjuster I Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 31445,
+    "zh": "中型能量武器发散调节装置蓝图 I",
+    "en": "Medium Energy Burst Aerator I Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 33891,
+    "zh": "小型横贯舱壁蓝图 I",
+    "en": "Small Transverse Bulkhead I Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 1120,
+    "zh": "重型离子疾速炮蓝图 I",
+    "en": "Heavy Ion Blaster I Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 1119,
+    "zh": "重型中子疾速炮蓝图 I",
+    "en": "Heavy Neutron Blaster I Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 1118,
+    "zh": "双联150mm磁轨炮蓝图 I",
+    "en": "Dual 150mm Railgun I Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 1114,
+    "zh": "轻型离子疾速炮蓝图 I",
+    "en": "Light Ion Blaster I Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 1122,
+    "zh": "电子疾速加农炮蓝图 I",
+    "en": "Electron Blaster Cannon I Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 945,
+    "zh": "分裂者级蓝图",
+    "en": "Breacher Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 26041,
+    "zh": "大型射弹武器轨迹校准设备蓝图 I",
+    "en": "Large Projectile Locus Coordinator I Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 31705,
+    "zh": "小型射弹武器急转控制器蓝图 I",
+    "en": "Small Projectile Metastasis Adjuster I Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 31669,
+    "zh": "小型射弹武器射速调节装置蓝图 I",
+    "en": "Small Projectile Burst Aerator I Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 31683,
+    "zh": "中型射弹武器冲击加速器蓝图 I",
+    "en": "Medium Projectile Collision Accelerator I Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 12262,
+    "zh": "重型掠能器蓝图 I",
+    "en": "Heavy Energy Nosferatu I Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 12067,
+    "zh": "100MN加力燃烧器蓝图 I",
+    "en": "100MN Afterburner I Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 1072,
+    "zh": "1MN加力燃烧器蓝图 I",
+    "en": "1MN Afterburner I Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 1245,
+    "zh": "超载喷注系统蓝图 I",
+    "en": "Overdrive Injector System I Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 20,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 22779,
+    "zh": "跃迁干扰探针蓝图",
+    "en": "Warp Disrupt Probe Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 20,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 884,
+    "zh": "聚变弹蓝图 S",
+    "en": "Fusion S Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 891,
+    "zh": "钛合金萨博弹蓝图 M",
+    "en": "Titanium Sabot M Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 10837,
+    "zh": "中型护盾回充增量器蓝图 I",
+    "en": "Medium Shield Booster I Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 1032,
+    "zh": "小型护盾回充增量器蓝图 I",
+    "en": "Small Shield Booster I Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 13321,
+    "zh": "巡航导弹发射器蓝图 I",
+    "en": "Cruise Missile Launcher I Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 1096,
+    "zh": "回转稳定器蓝图 I",
+    "en": "Gyrostabilizer I Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 26009,
+    "zh": "大型混合武器冲击加速器蓝图 I",
+    "en": "Large Hybrid Collision Accelerator I Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 25999,
+    "zh": "大型混合武器范围扩大装置蓝图 I",
+    "en": "Large Hybrid Ambit Extension I Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 26001,
+    "zh": "大型混合武器轨迹校准设备蓝图 I",
+    "en": "Large Hybrid Locus Coordinator I Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 31575,
+    "zh": "小型混合武器急转控制器蓝图 I",
+    "en": "Small Hybrid Metastasis Adjuster I Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 31563,
+    "zh": "小型混合武器轨迹校准设备蓝图 I",
+    "en": "Small Hybrid Locus Coordinator I Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 31565,
+    "zh": "中型混合武器轨迹校准设备蓝图 I",
+    "en": "Medium Hybrid Locus Coordinator I Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 1220,
+    "zh": "鞭挞火箭蓝图",
+    "en": "Scourge Rocket Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 2517,
+    "zh": "星爆火箭蓝图",
+    "en": "Nova Rocket Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 813,
+    "zh": "雷神轻型导弹蓝图",
+    "en": "Mjolnir Light Missile Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 2511,
+    "zh": "炼狱鱼雷蓝图",
+    "en": "Inferno Torpedo Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 2509,
+    "zh": "星爆鱼雷蓝图",
+    "en": "Nova Torpedo Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 1146,
+    "zh": "铁质轨道弹蓝图 L",
+    "en": "Iron Charge L Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 897,
+    "zh": "质子弹蓝图 L",
+    "en": "Proton L Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 890,
+    "zh": "硬钼弹蓝图 M",
+    "en": "Depleted Uranium M Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 888,
+    "zh": "核芯弹蓝图 M",
+    "en": "Nuclear M Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 836,
+    "zh": "双联轻型集束激光器蓝图 I",
+    "en": "Dual Light Beam Laser I Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 835,
+    "zh": "双联轻型脉冲激光器蓝图 I",
+    "en": "Dual Light Pulse Laser I Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 837,
+    "zh": "小型聚焦脉冲激光器 I 蓝图",
+    "en": "Small Focused Pulse Laser I Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 1170,
+    "zh": "射频晶体蓝图 L",
+    "en": "Radio L Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 1171,
+    "zh": "微波晶体蓝图 L",
+    "en": "Microwave L Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 1174,
+    "zh": "紫外晶体蓝图 L",
+    "en": "Ultraviolet L Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 1160,
+    "zh": "伽玛晶体蓝图 S",
+    "en": "Gamma S Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 1156,
+    "zh": "红外晶体蓝图 S",
+    "en": "Infrared S Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 1166,
+    "zh": "紫外晶体蓝图 M",
+    "en": "Ultraviolet M Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 832,
+    "zh": "1200mm加农炮蓝图 I",
+    "en": "1200mm Artillery Cannon I Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 829,
+    "zh": "双联425mm自动加农炮蓝图 I",
+    "en": "Dual 425mm AutoCannon I Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 25889,
+    "zh": "大型爆炸装甲强化装置蓝图 I",
+    "en": "Large Explosive Armor Reinforcer I Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 31156,
+    "zh": "中型低摩擦喷嘴接口蓝图 I",
+    "en": "Medium Low Friction Nozzle Joints I Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 34273,
+    "zh": "偏振式小型聚焦脉冲激光器蓝图",
+    "en": "Polarized Small Focused Pulse Laser Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": 1,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 34293,
+    "zh": "偏振式重型攻击导弹发射器蓝图",
+    "en": "Polarized Heavy Assault Missile Launcher Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": 1,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 17919,
+    "zh": "响尾蛇级蓝图",
+    "en": "Rattlesnake Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": 1,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 86041,
+    "zh": "荣耀级波动大型护盾扩展装置突变质体蓝图",
+    "en": "Glorified Unstable Large Shield Extender Mutaplasmid Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": 1,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 11394,
+    "zh": "审判者蓝图",
+    "en": "Retribution Blueprint",
+    "material_efficiency": 2,
+    "time_efficiency": 4,
+    "runs": 1,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 11394,
+    "zh": "审判者蓝图",
+    "en": "Retribution Blueprint",
+    "material_efficiency": 4,
+    "time_efficiency": 14,
+    "runs": 2,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 11394,
+    "zh": "审判者蓝图",
+    "en": "Retribution Blueprint",
+    "material_efficiency": 4,
+    "time_efficiency": 14,
+    "runs": 2,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 46218,
+    "zh": "非线性超材料反应配方",
+    "en": "Nonlinear Metamaterials Reaction Formula",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 57493,
+    "zh": "强化碳纤维反应配方",
+    "en": "Reinforced Carbon Fiber Reaction Formula",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 46205,
+    "zh": "碳化晶体反应配方",
+    "en": "Crystalline Carbonide Reaction Formula",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 46169,
+    "zh": "微晶合金反应配方",
+    "en": "Crystallite Alloy Reaction Formula",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 4394,
+    "zh": "无人机伤害增效装置蓝图 I",
+    "en": "Drone Damage Amplifier I Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 57515,
+    "zh": "自动修复储藏装置密封蓝图",
+    "en": "Auto-Integrity Preservation Seal Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": 200,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 57515,
+    "zh": "自动修复储藏装置密封蓝图",
+    "en": "Auto-Integrity Preservation Seal Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": 200,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 57515,
+    "zh": "自动修复储藏装置密封蓝图",
+    "en": "Auto-Integrity Preservation Seal Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": 200,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 57523,
+    "zh": "生命保障备份装置蓝图",
+    "en": "Life Support Backup Unit Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": 200,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 57523,
+    "zh": "生命保障备份装置蓝图",
+    "en": "Life Support Backup Unit Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": 200,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 17329,
+    "zh": "离子推进器蓝图",
+    "en": "Ion Thruster Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 17323,
+    "zh": "碳化晶体附甲蓝图",
+    "en": "Crystalline Carbonide Armor Plate Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 17341,
+    "zh": "脉冲护盾发射器蓝图",
+    "en": "Pulse Shield Emitter Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 57523,
+    "zh": "生命保障备份装置蓝图",
+    "en": "Life Support Backup Unit Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": 120,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 57523,
+    "zh": "生命保障备份装置蓝图",
+    "en": "Life Support Backup Unit Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": 120,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 57523,
+    "zh": "生命保障备份装置蓝图",
+    "en": "Life Support Backup Unit Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": 120,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 57523,
+    "zh": "生命保障备份装置蓝图",
+    "en": "Life Support Backup Unit Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": 120,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 57523,
+    "zh": "生命保障备份装置蓝图",
+    "en": "Life Support Backup Unit Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": 120,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 57515,
+    "zh": "自动修复储藏装置密封蓝图",
+    "en": "Auto-Integrity Preservation Seal Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": 120,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 17931,
+    "zh": "潜龙级蓝图",
+    "en": "Worm Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": 1,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 17931,
+    "zh": "潜龙级蓝图",
+    "en": "Worm Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": 1,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 17931,
+    "zh": "潜龙级蓝图",
+    "en": "Worm Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": 1,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 17931,
+    "zh": "潜龙级蓝图",
+    "en": "Worm Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": 1,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 17931,
+    "zh": "潜龙级蓝图",
+    "en": "Worm Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": 1,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 17931,
+    "zh": "潜龙级蓝图",
+    "en": "Worm Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": 1,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 17931,
+    "zh": "潜龙级蓝图",
+    "en": "Worm Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": 1,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 17931,
+    "zh": "潜龙级蓝图",
+    "en": "Worm Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": 1,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 28673,
+    "zh": "合成型撞击感增效体蓝图",
+    "en": "Synth Crash Booster Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": 1000,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 28673,
+    "zh": "合成型撞击感增效体蓝图",
+    "en": "Synth Crash Booster Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": 1000,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 28673,
+    "zh": "合成型撞击感增效体蓝图",
+    "en": "Synth Crash Booster Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": 1000,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 28673,
+    "zh": "合成型撞击感增效体蓝图",
+    "en": "Synth Crash Booster Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": 1000,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 4394,
+    "zh": "无人机伤害增效装置蓝图 I",
+    "en": "Drone Damage Amplifier I Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": 50,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 4394,
+    "zh": "无人机伤害增效装置蓝图 I",
+    "en": "Drone Damage Amplifier I Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": 50,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 4394,
+    "zh": "无人机伤害增效装置蓝图 I",
+    "en": "Drone Damage Amplifier I Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": 50,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 4394,
+    "zh": "无人机伤害增效装置蓝图 I",
+    "en": "Drone Damage Amplifier I Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": 50,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 16243,
+    "zh": "长尾鲛级蓝图",
+    "en": "Thrasher Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": 8,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 692,
+    "zh": "刺客级蓝图",
+    "en": "Stabber Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": 6,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 692,
+    "zh": "刺客级蓝图",
+    "en": "Stabber Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": 6,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 4316,
+    "zh": "氢燃料块蓝图",
+    "en": "Hydrogen Fuel Block Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": 100,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 4316,
+    "zh": "氢燃料块蓝图",
+    "en": "Hydrogen Fuel Block Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": 100,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 4314,
+    "zh": "氮燃料块蓝图",
+    "en": "Nitrogen Fuel Block Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": 100,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 4314,
+    "zh": "氮燃料块蓝图",
+    "en": "Nitrogen Fuel Block Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": 100,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 32881,
+    "zh": "冲锋者级蓝图",
+    "en": "Venture Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": 12,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 52695,
+    "zh": "工业诱导力场发生器蓝图",
+    "en": "Industrial Cynosural Field Generator Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": 10,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 52695,
+    "zh": "工业诱导力场发生器蓝图",
+    "en": "Industrial Cynosural Field Generator Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": 10,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 52695,
+    "zh": "工业诱导力场发生器蓝图",
+    "en": "Industrial Cynosural Field Generator Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": 10,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 46179,
+    "zh": "二硼硅反应配方",
+    "en": "Silicon Diborite Reaction Formula",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 46177,
+    "zh": "铂锝合金反应配方",
+    "en": "Platinum Technite Reaction Formula",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 46181,
+    "zh": "硫酸反应配方",
+    "en": "Sulfuric Acid Reaction Formula",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 46215,
+    "zh": "等离子体超材料反应配方",
+    "en": "Plasmonic Metamaterials Reaction Formula",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 46182,
+    "zh": "铬化钛反应配方",
+    "en": "Titanium Chromide Reaction Formula",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 46165,
+    "zh": "C3-FTM酸反应配方",
+    "en": "C3-FTM Acid Reaction Formula",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 46164,
+    "zh": "碳86环氧树脂反应配方",
+    "en": "Carbon-86 Epoxy Resin Reaction Formula",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 46234,
+    "zh": "合成型撞击感增效体反应配方",
+    "en": "Synth Crash Booster Reaction Formula",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 46169,
+    "zh": "微晶合金反应配方",
+    "en": "Crystallite Alloy Reaction Formula",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 46171,
+    "zh": "菲尔合金反应配方",
+    "en": "Fernite Alloy Reaction Formula",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 46181,
+    "zh": "硫酸反应配方",
+    "en": "Sulfuric Acid Reaction Formula",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 46179,
+    "zh": "二硼硅反应配方",
+    "en": "Silicon Diborite Reaction Formula",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  },
+  {
+    "type_id": 24349,
+    "zh": "小型牵引光束器蓝图 I",
+    "en": "Small Tractor Beam I Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": 40,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 24349,
+    "zh": "小型牵引光束器蓝图 I",
+    "en": "Small Tractor Beam I Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": 40,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 24349,
+    "zh": "小型牵引光束器蓝图 I",
+    "en": "Small Tractor Beam I Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": 40,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 4313,
+    "zh": "氧燃料块蓝图",
+    "en": "Oxygen Fuel Block Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": 100,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 4313,
+    "zh": "氧燃料块蓝图",
+    "en": "Oxygen Fuel Block Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": 100,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 4313,
+    "zh": "氧燃料块蓝图",
+    "en": "Oxygen Fuel Block Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": 100,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 4313,
+    "zh": "氧燃料块蓝图",
+    "en": "Oxygen Fuel Block Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": 100,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 4313,
+    "zh": "氧燃料块蓝图",
+    "en": "Oxygen Fuel Block Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": 100,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 4313,
+    "zh": "氧燃料块蓝图",
+    "en": "Oxygen Fuel Block Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": 100,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 4316,
+    "zh": "氢燃料块蓝图",
+    "en": "Hydrogen Fuel Block Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": 100,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 4316,
+    "zh": "氢燃料块蓝图",
+    "en": "Hydrogen Fuel Block Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": 100,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 4316,
+    "zh": "氢燃料块蓝图",
+    "en": "Hydrogen Fuel Block Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": 100,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 4316,
+    "zh": "氢燃料块蓝图",
+    "en": "Hydrogen Fuel Block Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": 100,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 4316,
+    "zh": "氢燃料块蓝图",
+    "en": "Hydrogen Fuel Block Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": 100,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 4315,
+    "zh": "氦燃料块蓝图",
+    "en": "Helium Fuel Block Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": 100,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 4315,
+    "zh": "氦燃料块蓝图",
+    "en": "Helium Fuel Block Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": 100,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 4315,
+    "zh": "氦燃料块蓝图",
+    "en": "Helium Fuel Block Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": 100,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 4315,
+    "zh": "氦燃料块蓝图",
+    "en": "Helium Fuel Block Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": 100,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 4315,
+    "zh": "氦燃料块蓝图",
+    "en": "Helium Fuel Block Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": 100,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 4315,
+    "zh": "氦燃料块蓝图",
+    "en": "Helium Fuel Block Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": 100,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 4315,
+    "zh": "氦燃料块蓝图",
+    "en": "Helium Fuel Block Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": 100,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 4314,
+    "zh": "氮燃料块蓝图",
+    "en": "Nitrogen Fuel Block Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": 100,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 4314,
+    "zh": "氮燃料块蓝图",
+    "en": "Nitrogen Fuel Block Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": 100,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 4314,
+    "zh": "氮燃料块蓝图",
+    "en": "Nitrogen Fuel Block Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": 100,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 4314,
+    "zh": "氮燃料块蓝图",
+    "en": "Nitrogen Fuel Block Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": 100,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 4314,
+    "zh": "氮燃料块蓝图",
+    "en": "Nitrogen Fuel Block Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": 100,
+    "is_blueprint_copy": true
+  },
+  {
+    "type_id": 46207,
+    "zh": "碳化钨反应配方",
+    "en": "Tungsten Carbide Reaction Formula",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "is_blueprint_copy": false
+  }
+]

@@ -1,0 +1,1232 @@
+[
+  {
+    "type_id": 34,
+    "zh": "三钛合金",
+    "en": "Tritanium",
+    "quantity": 41588227
+  },
+  {
+    "type_id": 37,
+    "zh": "同位聚合体",
+    "en": "Isogen",
+    "quantity": 3479341
+  },
+  {
+    "type_id": 39,
+    "zh": "晶状石英核岩",
+    "en": "Zydrine",
+    "quantity": 209096
+  },
+  {
+    "type_id": 40,
+    "zh": "超噬矿",
+    "en": "Megacyte",
+    "quantity": 1
+  },
+  {
+    "type_id": 178,
+    "zh": "碳铅弹 S",
+    "en": "Carbonized Lead S",
+    "quantity": 305900
+  },
+  {
+    "type_id": 180,
+    "zh": "质子弹 S",
+    "en": "Proton S",
+    "quantity": 53800
+  },
+  {
+    "type_id": 181,
+    "zh": "硬钼弹 S",
+    "en": "Depleted Uranium S",
+    "quantity": 343600
+  },
+  {
+    "type_id": 183,
+    "zh": "聚变弹 S",
+    "en": "Fusion S",
+    "quantity": 1237400
+  },
+  {
+    "type_id": 200,
+    "zh": "定相等离子弹 L",
+    "en": "Phased Plasma L",
+    "quantity": 571100
+  },
+  {
+    "type_id": 210,
+    "zh": "鞭挞轻型导弹",
+    "en": "Scourge Light Missile",
+    "quantity": 693000
+  },
+  {
+    "type_id": 212,
+    "zh": "雷神轻型导弹",
+    "en": "Mjolnir Light Missile",
+    "quantity": 700
+  },
+  {
+    "type_id": 239,
+    "zh": "射频晶体 S",
+    "en": "Radio S",
+    "quantity": 663
+  },
+  {
+    "type_id": 241,
+    "zh": "红外晶体 S",
+    "en": "Infrared S",
+    "quantity": 654
+  },
+  {
+    "type_id": 242,
+    "zh": "标准晶体 S",
+    "en": "Standard S",
+    "quantity": 1230
+  },
+  {
+    "type_id": 243,
+    "zh": "紫外晶体 S",
+    "en": "Ultraviolet S",
+    "quantity": 1055
+  },
+  {
+    "type_id": 244,
+    "zh": "X射线晶体 S",
+    "en": "Xray S",
+    "quantity": 573
+  },
+  {
+    "type_id": 246,
+    "zh": "多频晶体 S",
+    "en": "Multifrequency S",
+    "quantity": 2806
+  },
+  {
+    "type_id": 249,
+    "zh": "红外晶体 M",
+    "en": "Infrared M",
+    "quantity": 576
+  },
+  {
+    "type_id": 250,
+    "zh": "标准晶体 M",
+    "en": "Standard M",
+    "quantity": 2395
+  },
+  {
+    "type_id": 251,
+    "zh": "紫外晶体 M",
+    "en": "Ultraviolet M",
+    "quantity": 610
+  },
+  {
+    "type_id": 254,
+    "zh": "多频晶体 M",
+    "en": "Multifrequency M",
+    "quantity": 2178
+  },
+  {
+    "type_id": 256,
+    "zh": "微波晶体 L",
+    "en": "Microwave L",
+    "quantity": 1484
+  },
+  {
+    "type_id": 258,
+    "zh": "标准晶体 L",
+    "en": "Standard L",
+    "quantity": 1549
+  },
+  {
+    "type_id": 377,
+    "zh": "小型护盾扩展装置 I",
+    "en": "Small Shield Extender I",
+    "quantity": 1498
+  },
+  {
+    "type_id": 399,
+    "zh": "小型护盾回充增量器 I",
+    "en": "Small Shield Booster I",
+    "quantity": 193
+  },
+  {
+    "type_id": 434,
+    "zh": "5MN微型跃迁推进器 I",
+    "en": "5MN Microwarpdrive I",
+    "quantity": 496
+  },
+  {
+    "type_id": 452,
+    "zh": "双联轻型集束激光器 I",
+    "en": "Dual Light Beam Laser I",
+    "quantity": 55
+  },
+  {
+    "type_id": 484,
+    "zh": "125mm加特林自动加农炮 I",
+    "en": "125mm Gatling AutoCannon I",
+    "quantity": 445
+  },
+  {
+    "type_id": 488,
+    "zh": "280mm榴弹炮 I",
+    "en": "280mm Howitzer Artillery I",
+    "quantity": 1405
+  },
+  {
+    "type_id": 523,
+    "zh": "小型装甲维修器 I",
+    "en": "Small Armor Repairer I",
+    "quantity": 155
+  },
+  {
+    "type_id": 533,
+    "zh": "小型能量中和器 I",
+    "en": "Small Energy Neutralizer I",
+    "quantity": 133
+  },
+  {
+    "type_id": 561,
+    "zh": "75mm加特林磁轨炮 I",
+    "en": "75mm Gatling Rail I",
+    "quantity": 400
+  },
+  {
+    "type_id": 562,
+    "zh": "轻型电子疾速炮 I",
+    "en": "Light Electron Blaster I",
+    "quantity": 125
+  },
+  {
+    "type_id": 563,
+    "zh": "轻型离子疾速炮 I",
+    "en": "Light Ion Blaster I",
+    "quantity": 196
+  },
+  {
+    "type_id": 565,
+    "zh": "150mm磁轨炮 I",
+    "en": "150mm Railgun I",
+    "quantity": 323
+  },
+  {
+    "type_id": 567,
+    "zh": "双联150mm磁轨炮 I",
+    "en": "Dual 150mm Railgun I",
+    "quantity": 52
+  },
+  {
+    "type_id": 597,
+    "zh": "惩罚者级",
+    "en": "Punisher",
+    "quantity": 1
+  },
+  {
+    "type_id": 1183,
+    "zh": "小型装甲维修器 II",
+    "en": "Small Armor Repairer II",
+    "quantity": 1
+  },
+  {
+    "type_id": 1185,
+    "zh": "小型电容器电池 I",
+    "en": "Small Cap Battery I",
+    "quantity": 240
+  },
+  {
+    "type_id": 1195,
+    "zh": "电容回充器 I",
+    "en": "Cap Recharger I",
+    "quantity": 1
+  },
+  {
+    "type_id": 1246,
+    "zh": "电容通量线圈 I",
+    "en": "Capacitor Flux Coil I",
+    "quantity": 86
+  },
+  {
+    "type_id": 1335,
+    "zh": "强化舱隔壁 II",
+    "en": "Reinforced Bulkheads II",
+    "quantity": 226
+  },
+  {
+    "type_id": 1353,
+    "zh": "反应堆控制元件 I",
+    "en": "Reactor Control Unit I",
+    "quantity": 298
+  },
+  {
+    "type_id": 1403,
+    "zh": "惯性稳定器 I",
+    "en": "Inertial Stabilizers I",
+    "quantity": 1738
+  },
+  {
+    "type_id": 1445,
+    "zh": "电容能源继电器 I",
+    "en": "Capacitor Power Relay I",
+    "quantity": 186
+  },
+  {
+    "type_id": 1541,
+    "zh": "能源诊断系统 II",
+    "en": "Power Diagnostic System II",
+    "quantity": 7
+  },
+  {
+    "type_id": 1977,
+    "zh": "索敌计算机 I",
+    "en": "Tracking Computer I",
+    "quantity": 192
+  },
+  {
+    "type_id": 1986,
+    "zh": "信号放大器 I",
+    "en": "Signal Amplifier I",
+    "quantity": 84
+  },
+  {
+    "type_id": 2020,
+    "zh": "大型电容器电池 I",
+    "en": "Large Cap Battery I",
+    "quantity": 27
+  },
+  {
+    "type_id": 2454,
+    "zh": "地精灵 I",
+    "en": "Hobgoblin I",
+    "quantity": 7520
+  },
+  {
+    "type_id": 3528,
+    "zh": "中型装甲维修器 I",
+    "en": "Medium Armor Repairer I",
+    "quantity": 118
+  },
+  {
+    "type_id": 3586,
+    "zh": "小型远程护盾回充增量器 I",
+    "en": "Small Remote Shield Booster I",
+    "quantity": 48
+  },
+  {
+    "type_id": 3687,
+    "zh": "电子元件",
+    "en": "Electronic Parts",
+    "quantity": 7
+  },
+  {
+    "type_id": 3689,
+    "zh": "机械元件",
+    "en": "Mechanical Parts",
+    "quantity": 3359
+  },
+  {
+    "type_id": 3828,
+    "zh": "建筑模块",
+    "en": "Construction Blocks",
+    "quantity": 1292
+  },
+  {
+    "type_id": 4051,
+    "zh": "氮燃料块",
+    "en": "Nitrogen Fuel Block",
+    "quantity": 4462
+  },
+  {
+    "type_id": 4246,
+    "zh": "氢燃料块",
+    "en": "Hydrogen Fuel Block",
+    "quantity": 7204
+  },
+  {
+    "type_id": 4247,
+    "zh": "氦燃料块",
+    "en": "Helium Fuel Block",
+    "quantity": 7709
+  },
+  {
+    "type_id": 4312,
+    "zh": "氧燃料块",
+    "en": "Oxygen Fuel Block",
+    "quantity": 12224
+  },
+  {
+    "type_id": 4395,
+    "zh": "中型处理器超频组件 I",
+    "en": "Medium Processor Overclocking Unit I",
+    "quantity": 1
+  },
+  {
+    "type_id": 4397,
+    "zh": "大型处理器超频组件 I",
+    "en": "Large Processor Overclocking Unit I",
+    "quantity": 15
+  },
+  {
+    "type_id": 9848,
+    "zh": "机器人技术",
+    "en": "Robotics",
+    "quantity": 1
+  },
+  {
+    "type_id": 10629,
+    "zh": "火箭发射器 I",
+    "en": "Rocket Launcher I",
+    "quantity": 781
+  },
+  {
+    "type_id": 10678,
+    "zh": "125mm磁轨炮 I",
+    "en": "125mm Railgun I",
+    "quantity": 190
+  },
+  {
+    "type_id": 11132,
+    "zh": "米玛塔尔穿梭机",
+    "en": "Minmatar Shuttle",
+    "quantity": 29
+  },
+  {
+    "type_id": 11293,
+    "zh": "100mm钢附甲板 I",
+    "en": "100mm Steel Plates I",
+    "quantity": 35
+  },
+  {
+    "type_id": 11478,
+    "zh": "R.A.M. - 星舰科技",
+    "en": "R.A.M.- Starship Tech",
+    "quantity": 6
+  },
+  {
+    "type_id": 11532,
+    "zh": "聚变推进器",
+    "en": "Fusion Thruster",
+    "quantity": 22
+  },
+  {
+    "type_id": 11537,
+    "zh": "雷达感应器组",
+    "en": "Radar Sensor Cluster",
+    "quantity": 29
+  },
+  {
+    "type_id": 11539,
+    "zh": "纳米电子微处理器",
+    "en": "Nanoelectrical Microprocessor",
+    "quantity": 22
+  },
+  {
+    "type_id": 11543,
+    "zh": "碳化钨附甲",
+    "en": "Tungsten Carbide Armor Plate",
+    "quantity": 893
+  },
+  {
+    "type_id": 11549,
+    "zh": "反物质反应堆组件",
+    "en": "Antimatter Reactor Unit",
+    "quantity": 8
+  },
+  {
+    "type_id": 11554,
+    "zh": "超立方电容器单元",
+    "en": "Tesseract Capacitor Unit",
+    "quantity": 98
+  },
+  {
+    "type_id": 11557,
+    "zh": "线性护盾能量发射器",
+    "en": "Linear Shield Emitter",
+    "quantity": 29
+  },
+  {
+    "type_id": 11558,
+    "zh": "恒定护盾发射器",
+    "en": "Sustained Shield Emitter",
+    "quantity": 3
+  },
+  {
+    "type_id": 11690,
+    "zh": "超导体轨道",
+    "en": "Superconductor Rails",
+    "quantity": 55
+  },
+  {
+    "type_id": 12265,
+    "zh": "中型能量中和器 I",
+    "en": "Medium Energy Neutralizer I",
+    "quantity": 24
+  },
+  {
+    "type_id": 12559,
+    "zh": "极光 S",
+    "en": "Aurora S",
+    "quantity": 1844
+  },
+  {
+    "type_id": 12608,
+    "zh": "冰雹 S",
+    "en": "Hail S",
+    "quantity": 2635000
+  },
+  {
+    "type_id": 12709,
+    "zh": "目标标记装置 I",
+    "en": "Target Painter I",
+    "quantity": 271
+  },
+  {
+    "type_id": 13320,
+    "zh": "巡航导弹发射器 I",
+    "en": "Cruise Missile Launcher I",
+    "quantity": 226
+  },
+  {
+    "type_id": 16633,
+    "zh": "烃类",
+    "en": "Hydrocarbons",
+    "quantity": 29
+  },
+  {
+    "type_id": 16634,
+    "zh": "标准大气",
+    "en": "Atmospheric Gases",
+    "quantity": 79669
+  },
+  {
+    "type_id": 16635,
+    "zh": "蒸发岩沉积物",
+    "en": "Evaporite Deposits",
+    "quantity": 46
+  },
+  {
+    "type_id": 16636,
+    "zh": "硅酸盐",
+    "en": "Silicates",
+    "quantity": 37616
+  },
+  {
+    "type_id": 16637,
+    "zh": "钨",
+    "en": "Tungsten",
+    "quantity": 10438
+  },
+  {
+    "type_id": 16638,
+    "zh": "钛",
+    "en": "Titanium",
+    "quantity": 540
+  },
+  {
+    "type_id": 16639,
+    "zh": "钪",
+    "en": "Scandium",
+    "quantity": 10875
+  },
+  {
+    "type_id": 16641,
+    "zh": "铬",
+    "en": "Chromium",
+    "quantity": 540
+  },
+  {
+    "type_id": 16642,
+    "zh": "钒",
+    "en": "Vanadium",
+    "quantity": 46
+  },
+  {
+    "type_id": 16644,
+    "zh": "铂",
+    "en": "Platinum",
+    "quantity": 14913
+  },
+  {
+    "type_id": 16646,
+    "zh": "汞",
+    "en": "Mercury",
+    "quantity": 13990
+  },
+  {
+    "type_id": 16648,
+    "zh": "铪",
+    "en": "Hafnium",
+    "quantity": 6800
+  },
+  {
+    "type_id": 16651,
+    "zh": "钕",
+    "en": "Neodymium",
+    "quantity": 4208
+  },
+  {
+    "type_id": 16652,
+    "zh": "钷",
+    "en": "Promethium",
+    "quantity": 21675
+  },
+  {
+    "type_id": 16653,
+    "zh": "铥",
+    "en": "Thulium",
+    "quantity": 6800
+  },
+  {
+    "type_id": 16654,
+    "zh": "铬化钛",
+    "en": "Titanium Chromide",
+    "quantity": 97
+  },
+  {
+    "type_id": 16656,
+    "zh": "菲尔合金",
+    "en": "Fernite Alloy",
+    "quantity": 82
+  },
+  {
+    "type_id": 16657,
+    "zh": "轧制钨合金",
+    "en": "Rolled Tungsten Alloy",
+    "quantity": 492
+  },
+  {
+    "type_id": 16658,
+    "zh": "二硼硅",
+    "en": "Silicon Diborite",
+    "quantity": 97
+  },
+  {
+    "type_id": 16659,
+    "zh": "碳聚合物",
+    "en": "Carbon Polymers",
+    "quantity": 36000
+  },
+  {
+    "type_id": 16660,
+    "zh": "陶瓷粉末",
+    "en": "Ceramic Powder",
+    "quantity": 4000
+  },
+  {
+    "type_id": 16661,
+    "zh": "硫酸",
+    "en": "Sulfuric Acid",
+    "quantity": 492
+  },
+  {
+    "type_id": 16667,
+    "zh": "新汞合金",
+    "en": "Neo Mercurite",
+    "quantity": 82
+  },
+  {
+    "type_id": 16670,
+    "zh": "碳化晶体",
+    "en": "Crystalline Carbonide",
+    "quantity": 1360000
+  },
+  {
+    "type_id": 16671,
+    "zh": "碳化钛",
+    "en": "Titanium Carbide",
+    "quantity": 3000000
+  },
+  {
+    "type_id": 16672,
+    "zh": "碳化钨",
+    "en": "Tungsten Carbide",
+    "quantity": 5759679
+  },
+  {
+    "type_id": 16673,
+    "zh": "菲尔合金碳化物",
+    "en": "Fernite Carbide",
+    "quantity": 1001900
+  },
+  {
+    "type_id": 16679,
+    "zh": "富勒化合物",
+    "en": "Fullerides",
+    "quantity": 15
+  },
+  {
+    "type_id": 17317,
+    "zh": "费米子冷凝物",
+    "en": "Fermionic Condensates",
+    "quantity": 36
+  },
+  {
+    "type_id": 17366,
+    "zh": "空间站集装箱",
+    "en": "Station Container",
+    "quantity": 57
+  },
+  {
+    "type_id": 17476,
+    "zh": "妄想级",
+    "en": "Covetor",
+    "quantity": 1
+  },
+  {
+    "type_id": 17478,
+    "zh": "回旋者级",
+    "en": "Retriever",
+    "quantity": 5
+  },
+  {
+    "type_id": 23533,
+    "zh": "全方位索敌连接 I",
+    "en": "Omnidirectional Tracking Link I",
+    "quantity": 96
+  },
+  {
+    "type_id": 24348,
+    "zh": "小型牵引光束 I",
+    "en": "Small Tractor Beam I",
+    "quantity": 20
+  },
+  {
+    "type_id": 25588,
+    "zh": "烧毁的遥感探测处理器",
+    "en": "Scorched Telemetry Processor",
+    "quantity": 10778
+  },
+  {
+    "type_id": 25589,
+    "zh": "出故障的护盾发射器",
+    "en": "Malfunctioning Shield Emitter",
+    "quantity": 5359
+  },
+  {
+    "type_id": 25590,
+    "zh": "受污染的纳米聚合体",
+    "en": "Contaminated Nanite Compound",
+    "quantity": 1024
+  },
+  {
+    "type_id": 25591,
+    "zh": "被污染的洛伦兹流体",
+    "en": "Contaminated Lorentz Fluid",
+    "quantity": 2
+  },
+  {
+    "type_id": 25592,
+    "zh": "有故障的电力泵",
+    "en": "Defective Current Pump",
+    "quantity": 3
+  },
+  {
+    "type_id": 25594,
+    "zh": "缠绕的能量管道",
+    "en": "Tangled Power Conduit",
+    "quantity": 1503
+  },
+  {
+    "type_id": 25596,
+    "zh": "损坏的无人机调制器",
+    "en": "Broken Drone Transceiver",
+    "quantity": 582
+  },
+  {
+    "type_id": 25598,
+    "zh": "堆砌的能源电路",
+    "en": "Tripped Power Circuit",
+    "quantity": 662
+  },
+  {
+    "type_id": 25601,
+    "zh": "烧焦的接口电路",
+    "en": "Fried Interface Circuit",
+    "quantity": 1
+  },
+  {
+    "type_id": 25602,
+    "zh": "推进装置控制台",
+    "en": "Thruster Console",
+    "quantity": 17
+  },
+  {
+    "type_id": 25603,
+    "zh": "短路的电容器控制台",
+    "en": "Melted Capacitor Console",
+    "quantity": 1294
+  },
+  {
+    "type_id": 25605,
+    "zh": "装甲附甲板",
+    "en": "Armor Plates",
+    "quantity": 2
+  },
+  {
+    "type_id": 25606,
+    "zh": "防御控制台",
+    "en": "Ward Console",
+    "quantity": 8324
+  },
+  {
+    "type_id": 25607,
+    "zh": "遥感探测处理器",
+    "en": "Telemetry Processor",
+    "quantity": 82
+  },
+  {
+    "type_id": 25613,
+    "zh": "能源管道",
+    "en": "Power Conduit",
+    "quantity": 13
+  },
+  {
+    "type_id": 25615,
+    "zh": "无人机调制器",
+    "en": "Drone Transceiver",
+    "quantity": 24
+  },
+  {
+    "type_id": 25616,
+    "zh": "人工神经网络",
+    "en": "Artificial Neural Network",
+    "quantity": 164
+  },
+  {
+    "type_id": 25622,
+    "zh": "电容器控制台",
+    "en": "Capacitor Console",
+    "quantity": 4
+  },
+  {
+    "type_id": 25623,
+    "zh": "传导性热塑塑料",
+    "en": "Conductive Thermoplastic",
+    "quantity": 5
+  },
+  {
+    "type_id": 25625,
+    "zh": "加强的防御控制台",
+    "en": "Enhanced Ward Console",
+    "quantity": 77
+  },
+  {
+    "type_id": 25892,
+    "zh": "大型热能装甲强化装置 I",
+    "en": "Large Thermal Armor Reinforcer I",
+    "quantity": 13
+  },
+  {
+    "type_id": 25972,
+    "zh": "大型能量武器轨迹校准设备 I",
+    "en": "Large Energy Locus Coordinator I",
+    "quantity": 9
+  },
+  {
+    "type_id": 26078,
+    "zh": "大型爆炸护盾强化装置 I",
+    "en": "Large Explosive Shield Reinforcer I",
+    "quantity": 5
+  },
+  {
+    "type_id": 26912,
+    "zh": "小型远程装甲维修器 II",
+    "en": "Small Remote Armor Repairer II",
+    "quantity": 58
+  },
+  {
+    "type_id": 26929,
+    "zh": "小型处理器超频组件 I",
+    "en": "Small Processor Overclocking Unit I",
+    "quantity": 1537
+  },
+  {
+    "type_id": 30303,
+    "zh": "富勒二茂铁",
+    "en": "Fulleroferrocene",
+    "quantity": 594
+  },
+  {
+    "type_id": 30304,
+    "zh": "PPD富勒烯纤维",
+    "en": "PPD Fullerene Fibers",
+    "quantity": 171
+  },
+  {
+    "type_id": 30305,
+    "zh": "富勒烯层间石墨",
+    "en": "Fullerene Intercalated Graphite",
+    "quantity": 351
+  },
+  {
+    "type_id": 30306,
+    "zh": "亚甲基富勒烯",
+    "en": "Methanofullerene",
+    "quantity": 171
+  },
+  {
+    "type_id": 30307,
+    "zh": "金属富勒烯镧",
+    "en": "Lanthanum Metallofullerene",
+    "quantity": 171
+  },
+  {
+    "type_id": 30308,
+    "zh": "金属富勒烯钪",
+    "en": "Scandium Metallofullerene",
+    "quantity": 117
+  },
+  {
+    "type_id": 30309,
+    "zh": "石墨烯纳米带",
+    "en": "Graphene Nanoribbons",
+    "quantity": 504
+  },
+  {
+    "type_id": 30310,
+    "zh": "碳86环氧树脂",
+    "en": "Carbon-86 Epoxy Resin",
+    "quantity": 342
+  },
+  {
+    "type_id": 30311,
+    "zh": "C3-FTM酸",
+    "en": "C3-FTM Acid",
+    "quantity": 234
+  },
+  {
+    "type_id": 30997,
+    "zh": "小型电磁装甲强化装置 I",
+    "en": "Small EM Armor Reinforcer I",
+    "quantity": 15
+  },
+  {
+    "type_id": 31003,
+    "zh": "小型电磁装甲强化装置 II",
+    "en": "Small EM Armor Reinforcer II",
+    "quantity": 9
+  },
+  {
+    "type_id": 31073,
+    "zh": "中型远程维修增效器 I",
+    "en": "Medium Remote Repair Augmentor I",
+    "quantity": 61
+  },
+  {
+    "type_id": 31111,
+    "zh": "小型辅助推进器 II",
+    "en": "Small Auxiliary Thrusters II",
+    "quantity": 184
+  },
+  {
+    "type_id": 31430,
+    "zh": "小型能量武器范围扩大设备 I",
+    "en": "Small Energy Ambit Extension I",
+    "quantity": 4
+  },
+  {
+    "type_id": 31436,
+    "zh": "小型能量武器范围扩大设备 II",
+    "en": "Small Energy Ambit Extension II",
+    "quantity": 7
+  },
+  {
+    "type_id": 31438,
+    "zh": "中型能量武器范围扩大设备 II",
+    "en": "Medium Energy Ambit Extension II",
+    "quantity": 1
+  },
+  {
+    "type_id": 31442,
+    "zh": "小型能量武器发散调节装置 I",
+    "en": "Small Energy Burst Aerator I",
+    "quantity": 75
+  },
+  {
+    "type_id": 31448,
+    "zh": "小型能量武器发散调节装置 II",
+    "en": "Small Energy Burst Aerator II",
+    "quantity": 223
+  },
+  {
+    "type_id": 31454,
+    "zh": "小型能量武器冲击加速器 I",
+    "en": "Small Energy Collision Accelerator I",
+    "quantity": 66
+  },
+  {
+    "type_id": 31456,
+    "zh": "中型能量武器冲击加速器 I",
+    "en": "Medium Energy Collision Accelerator I",
+    "quantity": 14
+  },
+  {
+    "type_id": 31460,
+    "zh": "小型能量武器冲击加速器 II",
+    "en": "Small Energy Collision Accelerator II",
+    "quantity": 106
+  },
+  {
+    "type_id": 31478,
+    "zh": "小型能量武器轨迹校准设备 I",
+    "en": "Small Energy Locus Coordinator I",
+    "quantity": 170
+  },
+  {
+    "type_id": 31484,
+    "zh": "小型能量武器轨迹校准设备 II",
+    "en": "Small Energy Locus Coordinator II",
+    "quantity": 280
+  },
+  {
+    "type_id": 31486,
+    "zh": "中型能量武器轨迹校准设备 II",
+    "en": "Medium Energy Locus Coordinator II",
+    "quantity": 169
+  },
+  {
+    "type_id": 31490,
+    "zh": "小型能量武器急转控制器 I",
+    "en": "Small Energy Metastasis Adjuster I",
+    "quantity": 6
+  },
+  {
+    "type_id": 31496,
+    "zh": "小型能量武器急转控制器 II",
+    "en": "Small Energy Metastasis Adjuster II",
+    "quantity": 16
+  },
+  {
+    "type_id": 31498,
+    "zh": "中型能量武器急转控制器 II",
+    "en": "Medium Energy Metastasis Adjuster II",
+    "quantity": 6
+  },
+  {
+    "type_id": 31514,
+    "zh": "小型混合武器范围扩大装置 I",
+    "en": "Small Hybrid Ambit Extension I",
+    "quantity": 9
+  },
+  {
+    "type_id": 31520,
+    "zh": "小型混合武器范围扩大装置 II",
+    "en": "Small Hybrid Ambit Extension II",
+    "quantity": 2
+  },
+  {
+    "type_id": 31522,
+    "zh": "中型混合武器范围扩大装置 II",
+    "en": "Medium Hybrid Ambit Extension II",
+    "quantity": 3
+  },
+  {
+    "type_id": 31526,
+    "zh": "小型混合武器射速调节装置 I",
+    "en": "Small Hybrid Burst Aerator I",
+    "quantity": 2
+  },
+  {
+    "type_id": 31528,
+    "zh": "中型混合武器射速调节装置 I",
+    "en": "Medium Hybrid Burst Aerator I",
+    "quantity": 21
+  },
+  {
+    "type_id": 31540,
+    "zh": "中型混合武器冲击加速器 I",
+    "en": "Medium Hybrid Collision Accelerator I",
+    "quantity": 27
+  },
+  {
+    "type_id": 31562,
+    "zh": "小型混合武器轨迹校准设备 I",
+    "en": "Small Hybrid Locus Coordinator I",
+    "quantity": 92
+  },
+  {
+    "type_id": 31564,
+    "zh": "中型混合武器轨迹校准设备 I",
+    "en": "Medium Hybrid Locus Coordinator I",
+    "quantity": 6
+  },
+  {
+    "type_id": 31574,
+    "zh": "小型混合武器急转控制器 I",
+    "en": "Small Hybrid Metastasis Adjuster I",
+    "quantity": 7
+  },
+  {
+    "type_id": 31576,
+    "zh": "中型混合武器急转控制器 I",
+    "en": "Medium Hybrid Metastasis Adjuster I",
+    "quantity": 12
+  },
+  {
+    "type_id": 31580,
+    "zh": "小型混合武器急转控制器 II",
+    "en": "Small Hybrid Metastasis Adjuster II",
+    "quantity": 1
+  },
+  {
+    "type_id": 31614,
+    "zh": "小型火箭燃料缓冲隔离装置 II",
+    "en": "Small Rocket Fuel Cache Partition II",
+    "quantity": 6
+  },
+  {
+    "type_id": 31620,
+    "zh": "小型弹头加热辅助系统 I",
+    "en": "Small Warhead Calefaction Catalyst I",
+    "quantity": 1
+  },
+  {
+    "type_id": 31632,
+    "zh": "小型弹头爆燃辅助系统 I",
+    "en": "Small Warhead Flare Catalyst I",
+    "quantity": 44
+  },
+  {
+    "type_id": 31644,
+    "zh": "小型弹头强化辅助系统 I",
+    "en": "Small Warhead Rigor Catalyst I",
+    "quantity": 59
+  },
+  {
+    "type_id": 31686,
+    "zh": "小型射弹武器冲击加速器 II",
+    "en": "Small Projectile Collision Accelerator II",
+    "quantity": 1
+  },
+  {
+    "type_id": 31692,
+    "zh": "小型射弹武器轨迹校准设备 I",
+    "en": "Small Projectile Locus Coordinator I",
+    "quantity": 690
+  },
+  {
+    "type_id": 31710,
+    "zh": "小型射弹武器急转控制器 II",
+    "en": "Small Projectile Metastasis Adjuster II",
+    "quantity": 3
+  },
+  {
+    "type_id": 31752,
+    "zh": "小型热能护盾强化装置 I",
+    "en": "Small Thermal Shield Reinforcer I",
+    "quantity": 8
+  },
+  {
+    "type_id": 31758,
+    "zh": "小型热能护盾强化装置 II",
+    "en": "Small Thermal Shield Reinforcer II",
+    "quantity": 90
+  },
+  {
+    "type_id": 31790,
+    "zh": "中型核心防御力场扩张装置 I",
+    "en": "Medium Core Defense Field Extender I",
+    "quantity": 438
+  },
+  {
+    "type_id": 31800,
+    "zh": "小型核心防御力场稳固装置 I",
+    "en": "Small Core Defense Field Purger I",
+    "quantity": 81
+  },
+  {
+    "type_id": 31810,
+    "zh": "小型核心防御力场稳固装置 II",
+    "en": "Small Core Defense Field Purger II",
+    "quantity": 61
+  },
+  {
+    "type_id": 31816,
+    "zh": "小型核心防御操控稳定装置 I",
+    "en": "Small Core Defense Operational Solidifier I",
+    "quantity": 11
+  },
+  {
+    "type_id": 31822,
+    "zh": "小型核心防御操控稳定装置 II",
+    "en": "Small Core Defense Operational Solidifier II",
+    "quantity": 7
+  },
+  {
+    "type_id": 33195,
+    "zh": "空间协调装置",
+    "en": "Spatial Attunement Unit",
+    "quantity": 22
+  },
+  {
+    "type_id": 33361,
+    "zh": "等离子体超材料",
+    "en": "Plasmonic Metamaterials",
+    "quantity": 24900
+  },
+  {
+    "type_id": 33362,
+    "zh": "非线性超材料",
+    "en": "Nonlinear Metamaterials",
+    "quantity": 504
+  },
+  {
+    "type_id": 33890,
+    "zh": "小型横贯舱壁 I",
+    "en": "Small Transverse Bulkhead I",
+    "quantity": 10
+  },
+  {
+    "type_id": 33892,
+    "zh": "小型横贯舱壁 II",
+    "en": "Small Transverse Bulkhead II",
+    "quantity": 16
+  },
+  {
+    "type_id": 35770,
+    "zh": "导弹制导增强器 I",
+    "en": "Missile Guidance Enhancer I",
+    "quantity": 87
+  },
+  {
+    "type_id": 35788,
+    "zh": "导弹制导计算机 I",
+    "en": "Missile Guidance Computer I",
+    "quantity": 347
+  },
+  {
+    "type_id": 37543,
+    "zh": "制导干扰器 I",
+    "en": "Guidance Disruptor I",
+    "quantity": 46
+  },
+  {
+    "type_id": 57456,
+    "zh": "增压氧化剂",
+    "en": "Pressurized Oxidizers",
+    "quantity": 1745
+  },
+  {
+    "type_id": 57457,
+    "zh": "强化碳纤维",
+    "en": "Reinforced Carbon Fiber",
+    "quantity": 2902
+  },
+  {
+    "type_id": 57478,
+    "zh": "自动修复储藏装置密封",
+    "en": "Auto-Integrity Preservation Seal",
+    "quantity": 5992
+  },
+  {
+    "type_id": 57479,
+    "zh": "核心温度调节器",
+    "en": "Core Temperature Regulator",
+    "quantity": 24
+  },
+  {
+    "type_id": 57486,
+    "zh": "生命保障备份装置",
+    "en": "Life Support Backup Unit",
+    "quantity": 2996
+  }
+]
