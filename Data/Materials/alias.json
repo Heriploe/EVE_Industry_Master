@@ -1,0 +1,210 @@
+{
+  "description": "Alias list for JSON files under Data/Materials subfolders",
+  "count": 34,
+  "aliases": [
+    {
+      "alias": "Basic_Materials.cloud",
+      "folder": "Basic_Materials",
+      "file": "cloud.json",
+      "path": "Data/Materials/Basic_Materials/cloud.json"
+    },
+    {
+      "alias": "Basic_Materials.datacore",
+      "folder": "Basic_Materials",
+      "file": "datacore.json",
+      "path": "Data/Materials/Basic_Materials/datacore.json"
+    },
+    {
+      "alias": "Basic_Materials.drone_components",
+      "folder": "Basic_Materials",
+      "file": "drone_components.json",
+      "path": "Data/Materials/Basic_Materials/drone_components.json"
+    },
+    {
+      "alias": "Basic_Materials.fuel_blocks",
+      "folder": "Basic_Materials",
+      "file": "fuel_blocks.json",
+      "path": "Data/Materials/Basic_Materials/fuel_blocks.json"
+    },
+    {
+      "alias": "Basic_Materials.ice_product",
+      "folder": "Basic_Materials",
+      "file": "ice_product.json",
+      "path": "Data/Materials/Basic_Materials/ice_product.json"
+    },
+    {
+      "alias": "Basic_Materials.mineral",
+      "folder": "Basic_Materials",
+      "file": "mineral.json",
+      "path": "Data/Materials/Basic_Materials/mineral.json"
+    },
+    {
+      "alias": "Basic_Materials.moon_materials",
+      "folder": "Basic_Materials",
+      "file": "moon_materials.json",
+      "path": "Data/Materials/Basic_Materials/moon_materials.json"
+    },
+    {
+      "alias": "Basic_Materials.moon_ore",
+      "folder": "Basic_Materials",
+      "file": "moon_ore.json",
+      "path": "Data/Materials/Basic_Materials/moon_ore.json"
+    },
+    {
+      "alias": "Basic_Materials.net",
+      "folder": "Basic_Materials",
+      "file": "net.json",
+      "path": "Data/Materials/Basic_Materials/net.json"
+    },
+    {
+      "alias": "Basic_Materials.ores",
+      "folder": "Basic_Materials",
+      "file": "ores.json",
+      "path": "Data/Materials/Basic_Materials/ores.json"
+    },
+    {
+      "alias": "Basic_Materials.products_planet_industry",
+      "folder": "Basic_Materials",
+      "file": "products_planet_industry.json",
+      "path": "Data/Materials/Basic_Materials/products_planet_industry.json"
+    },
+    {
+      "alias": "Basic_Materials.ram",
+      "folder": "Basic_Materials",
+      "file": "ram.json",
+      "path": "Data/Materials/Basic_Materials/ram.json"
+    },
+    {
+      "alias": "Basic_Materials.salvaged_materials",
+      "folder": "Basic_Materials",
+      "file": "salvaged_materials.json",
+      "path": "Data/Materials/Basic_Materials/salvaged_materials.json"
+    },
+    {
+      "alias": "Components.components_Capital",
+      "folder": "Components",
+      "file": "components_Capital.json",
+      "path": "Data/Materials/Components/components_Capital.json"
+    },
+    {
+      "alias": "Components.components_Capital_Advanced",
+      "folder": "Components",
+      "file": "components_Capital_Advanced.json",
+      "path": "Data/Materials/Components/components_Capital_Advanced.json"
+    },
+    {
+      "alias": "Components.components_T2",
+      "folder": "Components",
+      "file": "components_T2.json",
+      "path": "Data/Materials/Components/components_T2.json"
+    },
+    {
+      "alias": "Components.components_T3",
+      "folder": "Components",
+      "file": "components_T3.json",
+      "path": "Data/Materials/Components/components_T3.json"
+    },
+    {
+      "alias": "Modules.modules_T1",
+      "folder": "Modules",
+      "file": "modules_T1.json",
+      "path": "Data/Materials/Modules/modules_T1.json"
+    },
+    {
+      "alias": "Modules.modules_T2",
+      "folder": "Modules",
+      "file": "modules_T2.json",
+      "path": "Data/Materials/Modules/modules_T2.json"
+    },
+    {
+      "alias": "Reactions.complex_reaction",
+      "folder": "Reactions",
+      "file": "complex_reaction.json",
+      "path": "Data/Materials/Reactions/complex_reaction.json"
+    },
+    {
+      "alias": "Reactions.polymer_reaction",
+      "folder": "Reactions",
+      "file": "polymer_reaction.json",
+      "path": "Data/Materials/Reactions/polymer_reaction.json"
+    },
+    {
+      "alias": "Reactions.simple_reaction",
+      "folder": "Reactions",
+      "file": "simple_reaction.json",
+      "path": "Data/Materials/Reactions/simple_reaction.json"
+    },
+    {
+      "alias": "Rigs.rigs_T1",
+      "folder": "Rigs",
+      "file": "rigs_T1.json",
+      "path": "Data/Materials/Rigs/rigs_T1.json"
+    },
+    {
+      "alias": "Rigs.rigs_T2",
+      "folder": "Rigs",
+      "file": "rigs_T2.json",
+      "path": "Data/Materials/Rigs/rigs_T2.json"
+    },
+    {
+      "alias": "Ships.ships_Capital_T1",
+      "folder": "Ships",
+      "file": "ships_Capital_T1.json",
+      "path": "Data/Materials/Ships/ships_Capital_T1.json"
+    },
+    {
+      "alias": "Ships.ships_Capital_T1_Navy_Issue",
+      "folder": "Ships",
+      "file": "ships_Capital_T1_Navy_Issue.json",
+      "path": "Data/Materials/Ships/ships_Capital_T1_Navy_Issue.json"
+    },
+    {
+      "alias": "Ships.ships_Capital_T1_Special",
+      "folder": "Ships",
+      "file": "ships_Capital_T1_Special.json",
+      "path": "Data/Materials/Ships/ships_Capital_T1_Special.json"
+    },
+    {
+      "alias": "Ships.ships_Capital_T2",
+      "folder": "Ships",
+      "file": "ships_Capital_T2.json",
+      "path": "Data/Materials/Ships/ships_Capital_T2.json"
+    },
+    {
+      "alias": "Ships.ships_T1",
+      "folder": "Ships",
+      "file": "ships_T1.json",
+      "path": "Data/Materials/Ships/ships_T1.json"
+    },
+    {
+      "alias": "Ships.ships_T1_Navy_Issue",
+      "folder": "Ships",
+      "file": "ships_T1_Navy_Issue.json",
+      "path": "Data/Materials/Ships/ships_T1_Navy_Issue.json"
+    },
+    {
+      "alias": "Ships.ships_T1_Special",
+      "folder": "Ships",
+      "file": "ships_T1_Special.json",
+      "path": "Data/Materials/Ships/ships_T1_Special.json"
+    },
+    {
+      "alias": "Ships.ships_T2",
+      "folder": "Ships",
+      "file": "ships_T2.json",
+      "path": "Data/Materials/Ships/ships_T2.json"
+    },
+    {
+      "alias": "Ships.ships_T2_Special",
+      "folder": "Ships",
+      "file": "ships_T2_Special.json",
+      "path": "Data/Materials/Ships/ships_T2_Special.json"
+    },
+    {
+      "alias": "Ships.ships_T3",
+      "folder": "Ships",
+      "file": "ships_T3.json",
+      "path": "Data/Materials/Ships/ships_T3.json"
+    }
+  ]
+}
