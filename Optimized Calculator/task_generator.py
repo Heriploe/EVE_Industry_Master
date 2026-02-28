@@ -12,6 +12,13 @@ import configparser
 from pathlib import Path
 from math import ceil
 from collections import defaultdict
+import sys
+
+REPO_ROOT = next((p for p in [Path(__file__).resolve().parent, *Path(__file__).resolve().parent.parents] if (p / "config.ini").exists()), Path(__file__).resolve().parent)
+if str(REPO_ROOT) not in sys.path:
+    sys.path.append(str(REPO_ROOT))
+
+from Utilities.name_mapping import load_types_map, get_name
 
 
 def _resolve_shared_path(config_key, default_rel_path):
@@ -62,26 +69,6 @@ class TaskConfig:
 
 
 # ================== 辅助函数 ==================
-def load_types_map(types_json):
-    """加载物品ID到名称的映射"""
-    with open(types_json, "r", encoding="utf-8") as f:
-        types_list = json.load(f)
-
-    types_map = {}
-    for item in types_list:
-        tid = item.get("id")
-        if tid is not None:
-            types_map[int(tid)] = {
-                "zh": item.get("zh", f"未知_{tid}"),
-                "en": item.get("en", f"UNKNOWN_{tid}")
-            }
-    return types_map
-
-
-def get_name(tid, types_map):
-    """获取物品名称"""
-    return types_map.get(int(tid), {"zh": f"未知_{tid}", "en": f"UNKNOWN_{tid}"})
-
 
 def load_execution_list(csv_path):
     """

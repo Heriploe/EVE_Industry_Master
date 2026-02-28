@@ -2,6 +2,13 @@ import json
 
 import configparser
 from pathlib import Path
+import sys
+
+REPO_ROOT = next((p for p in [Path(__file__).resolve().parent, *Path(__file__).resolve().parent.parents] if (p / "config.ini").exists()), Path(__file__).resolve().parent)
+if str(REPO_ROOT) not in sys.path:
+    sys.path.append(str(REPO_ROOT))
+
+from Utilities.name_mapping import load_types_map
 
 
 def _resolve_shared_path(config_key, default_rel_path):
@@ -27,19 +34,9 @@ OUTPUT_NON_BP = "final_non_blueprints.json"
 OUTPUT_BP = "final_blueprints.json"
 # ==========================================
 
-def load_types(types_file):
-    """
-    构建 type_id -> {zh, en} 映射
-    """
-    with open(types_file, "r", encoding="utf-8") as f:
-        types = json.load(f)
-    type_dict = {t["id"]: {"zh": t.get("zh", ""), "en": t.get("en", "")} for t in types}
-    return type_dict
-
-
 def main():
     # 1️⃣ 读取类型映射
-    type_dict = load_types(TYPES_FILE)
+    type_dict = load_types_map(TYPES_FILE)
 
     # 2️⃣ 读取资产和蓝图
     with open(ASSETS_FILE, "r", encoding="utf-8") as f:

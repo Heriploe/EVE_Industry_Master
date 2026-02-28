@@ -1,9 +1,14 @@
 import json
 import re
+import sys
 from pathlib import Path
 
-
 REPO_ROOT = Path(__file__).resolve().parents[2]
+if str(REPO_ROOT) not in sys.path:
+    sys.path.append(str(REPO_ROOT))
+
+from Utilities.name_mapping import load_types_map
+
 ORES_JSON = REPO_ROOT / "Data" / "Materials" / "Basic_Materials" / "ores.json"
 MOON_ORE_JSON = REPO_ROOT / "Data" / "Materials" / "Basic_Materials" / "moon_ore.json"
 TYPES_JSON = REPO_ROOT / "Data" / "types.json"
@@ -19,12 +24,6 @@ def load_id_list(path: Path) -> list[int]:
     with path.open("r", encoding="utf-8") as f:
         data = json.load(f)
     return [int(item["id"]) for item in data]
-
-
-def load_types_map(path: Path) -> dict[int, dict]:
-    with path.open("r", encoding="utf-8") as f:
-        data = json.load(f)
-    return {int(item["id"]): item for item in data}
 
 
 def parse_type_materials(path: Path) -> dict[int, list[dict]]:
@@ -48,12 +47,7 @@ def parse_type_materials(path: Path) -> dict[int, list[dict]]:
 
             m_qty = QUANTITY_PATTERN.match(line)
             if m_qty and current_type_id is not None and current_material_id is not None:
-                result[current_type_id].append(
-                    {
-                        "materialTypeID": current_material_id,
-                        "quantity": int(m_qty.group(1)),
-                    }
-                )
+                result[current_type_id].append({"materialTypeID": current_material_id, "quantity": int(m_qty.group(1))})
                 current_material_id = None
 
     return result
@@ -88,14 +82,7 @@ def main() -> None:
             continue
 
         names = types_map.get(type_id, {})
-        output.append(
-            {
-                "id": type_id,
-                "zh": names.get("zh", ""),
-                "en": names.get("en", ""),
-                "materials": materials,
-            }
-        )
+        output.append({"id": type_id, "zh": names.get("zh", ""), "en": names.get("en", ""), "materials": materials})
 
     OUTPUT_JSON.parent.mkdir(parents=True, exist_ok=True)
     with OUTPUT_JSON.open("w", encoding="utf-8") as f:
