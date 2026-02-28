@@ -32,10 +32,25 @@ def load_config(config_path: Path):
 def load_provider(provider_csv: Path):
     provider_dict = {}
     with provider_csv.open("r", encoding="utf-8") as f:
-        for row in csv.reader(f, delimiter="\t"):
-            if len(row) < 2:
+        for raw_line in f:
+            line = raw_line.strip()
+            if not line:
                 continue
-            provider_dict[row[0].strip()] = int(row[1])
+
+            if "	" in line:
+                parts = [part.strip() for part in line.split("	") if part.strip()]
+            else:
+                parts = line.split()
+
+            if len(parts) < 2:
+                continue
+
+            name = parts[0]
+            qty_text = "".join(parts[1:]).replace(",", "").replace("，", "")
+            if not qty_text.isdigit():
+                continue
+
+            provider_dict[name] = int(qty_text)
     return provider_dict
 
 
