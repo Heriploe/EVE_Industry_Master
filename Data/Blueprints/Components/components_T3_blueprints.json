@@ -1,0 +1,966 @@
+[
+  {
+    "blueprintTypeID": 29993,
+    "name": {
+      "zh": "优化纳米引擎",
+      "en": "Optimized Nano-Engines"
+    },
+    "manufacturing": {
+      "materials": [
+        {
+          "quantity": 11,
+          "typeID": 30304
+        },
+        {
+          "quantity": 4,
+          "typeID": 30018
+        },
+        {
+          "quantity": 7,
+          "typeID": 30307
+        },
+        {
+          "quantity": 3,
+          "typeID": 30021
+        },
+        {
+          "quantity": 10,
+          "typeID": 30254
+        },
+        {
+          "quantity": 2,
+          "typeID": 30019
+        },
+        {
+          "quantity": 7,
+          "typeID": 30309
+        }
+      ],
+      "products": [
+        {
+          "quantity": 1,
+          "typeID": 29992
+        }
+      ],
+      "skills": [
+        {
+          "level": 5,
+          "typeID": 3380
+        },
+        {
+          "level": 2,
+          "typeID": 11448
+        },
+        {
+          "level": 2,
+          "typeID": 11452
+        }
+      ],
+      "time": 600
+    }
+  },
+  {
+    "blueprintTypeID": 29995,
+    "name": {
+      "zh": "战斗计算核心",
+      "en": "Warfare Computation Core"
+    },
+    "manufacturing": {
+      "materials": [
+        {
+          "quantity": 11,
+          "typeID": 30305
+        },
+        {
+          "quantity": 2,
+          "typeID": 30019
+        },
+        {
+          "quantity": 22,
+          "typeID": 30308
+        },
+        {
+          "quantity": 3,
+          "typeID": 30021
+        },
+        {
+          "quantity": 4,
+          "typeID": 30248
+        },
+        {
+          "quantity": 10,
+          "typeID": 30254
+        },
+        {
+          "quantity": 7,
+          "typeID": 30309
+        }
+      ],
+      "products": [
+        {
+          "quantity": 1,
+          "typeID": 29994
+        }
+      ],
+      "skills": [
+        {
+          "level": 5,
+          "typeID": 3380
+        },
+        {
+          "level": 2,
+          "typeID": 11448
+        },
+        {
+          "level": 2,
+          "typeID": 11452
+        }
+      ],
+      "time": 600
+    }
+  },
+  {
+    "blueprintTypeID": 29997,
+    "name": {
+      "zh": "应变神经可视接口",
+      "en": "Emergent Neurovisual Interface"
+    },
+    "manufacturing": {
+      "materials": [
+        {
+          "quantity": 6,
+          "typeID": 30304
+        },
+        {
+          "quantity": 50,
+          "typeID": 30307
+        },
+        {
+          "quantity": 310,
+          "typeID": 30311
+        },
+        {
+          "quantity": 7,
+          "typeID": 30252
+        },
+        {
+          "quantity": 7,
+          "typeID": 30268
+        },
+        {
+          "quantity": 7,
+          "typeID": 30269
+        },
+        {
+          "quantity": 7,
+          "typeID": 30270
+        },
+        {
+          "quantity": 7,
+          "typeID": 30271
+        }
+      ],
+      "products": [
+        {
+          "quantity": 1,
+          "typeID": 29996
+        }
+      ],
+      "skills": [
+        {
+          "level": 5,
+          "typeID": 3380
+        },
+        {
+          "level": 2,
+          "typeID": 11448
+        },
+        {
+          "level": 2,
+          "typeID": 11452
+        }
+      ],
+      "time": 600
+    }
+  },
+  {
+    "blueprintTypeID": 30003,
+    "name": {
+      "zh": "富勒烯夹页",
+      "en": "Fullerene Intercalated Sheets"
+    },
+    "manufacturing": {
+      "materials": [
+        {
+          "quantity": 6,
+          "typeID": 30304
+        },
+        {
+          "quantity": 2,
+          "typeID": 30305
+        },
+        {
+          "quantity": 4,
+          "typeID": 30019
+        },
+        {
+          "quantity": 6,
+          "typeID": 30021
+        },
+        {
+          "quantity": 55,
+          "typeID": 30251
+        },
+        {
+          "quantity": 2,
+          "typeID": 30259
+        },
+        {
+          "quantity": 33,
+          "typeID": 30303
+        }
+      ],
+      "products": [
+        {
+          "quantity": 1,
+          "typeID": 30002
+        }
+      ],
+      "skills": [
+        {
+          "level": 5,
+          "typeID": 3380
+        },
+        {
+          "level": 2,
+          "typeID": 11448
+        }
+      ],
+      "time": 600
+    }
+  },
+  {
+    "blueprintTypeID": 30009,
+    "name": {
+      "zh": "加强型金属富勒烯合金",
+      "en": "Reinforced Metallofullerene Alloys"
+    },
+    "manufacturing": {
+      "materials": [
+        {
+          "quantity": 11,
+          "typeID": 30305
+        },
+        {
+          "quantity": 2,
+          "typeID": 30019
+        },
+        {
+          "quantity": 22,
+          "typeID": 30308
+        },
+        {
+          "quantity": 3,
+          "typeID": 30021
+        },
+        {
+          "quantity": 4,
+          "typeID": 30022
+        },
+        {
+          "quantity": 10,
+          "typeID": 30254
+        },
+        {
+          "quantity": 7,
+          "typeID": 30309
+        }
+      ],
+      "products": [
+        {
+          "quantity": 1,
+          "typeID": 30008
+        }
+      ],
+      "skills": [
+        {
+          "level": 5,
+          "typeID": 3380
+        },
+        {
+          "level": 2,
+          "typeID": 11441
+        },
+        {
+          "level": 2,
+          "typeID": 11448
+        }
+      ],
+      "time": 600
+    }
+  },
+  {
+    "blueprintTypeID": 30465,
+    "name": {
+      "zh": "金属富勒烯附甲",
+      "en": "Metallofullerene Plating"
+    },
+    "manufacturing": {
+      "materials": [
+        {
+          "quantity": 4,
+          "typeID": 30304
+        },
+        {
+          "quantity": 4,
+          "typeID": 30021
+        },
+        {
+          "quantity": 6,
+          "typeID": 30254
+        },
+        {
+          "quantity": 17,
+          "typeID": 30303
+        }
+      ],
+      "products": [
+        {
+          "quantity": 1,
+          "typeID": 30464
+        }
+      ],
+      "skills": [
+        {
+          "level": 5,
+          "typeID": 3380
+        },
+        {
+          "level": 2,
+          "typeID": 11448
+        }
+      ],
+      "time": 600
+    }
+  },
+  {
+    "blueprintTypeID": 30467,
+    "name": {
+      "zh": "机械电子接口节点",
+      "en": "Electromechanical Interface Nexus"
+    },
+    "manufacturing": {
+      "materials": [
+        {
+          "quantity": 11,
+          "typeID": 30304
+        },
+        {
+          "quantity": 7,
+          "typeID": 30307
+        },
+        {
+          "quantity": 3,
+          "typeID": 30021
+        },
+        {
+          "quantity": 4,
+          "typeID": 30024
+        },
+        {
+          "quantity": 10,
+          "typeID": 30254
+        },
+        {
+          "quantity": 2,
+          "typeID": 30019
+        },
+        {
+          "quantity": 7,
+          "typeID": 30309
+        }
+      ],
+      "products": [
+        {
+          "quantity": 1,
+          "typeID": 30466
+        }
+      ],
+      "skills": [
+        {
+          "level": 5,
+          "typeID": 3380
+        },
+        {
+          "level": 2,
+          "typeID": 11448
+        },
+        {
+          "level": 2,
+          "typeID": 11452
+        }
+      ],
+      "time": 600
+    }
+  },
+  {
+    "blueprintTypeID": 30471,
+    "name": {
+      "zh": "神经视觉输出分析机",
+      "en": "Neurovisual Output Analyzer"
+    },
+    "manufacturing": {
+      "materials": [
+        {
+          "quantity": 4,
+          "typeID": 30019
+        },
+        {
+          "quantity": 44,
+          "typeID": 30308
+        },
+        {
+          "quantity": 4,
+          "typeID": 30021
+        },
+        {
+          "quantity": 222,
+          "typeID": 30310
+        },
+        {
+          "quantity": 11,
+          "typeID": 30254
+        },
+        {
+          "quantity": 4,
+          "typeID": 30259
+        },
+        {
+          "quantity": 56,
+          "typeID": 30303
+        }
+      ],
+      "products": [
+        {
+          "quantity": 1,
+          "typeID": 30470
+        }
+      ],
+      "skills": [
+        {
+          "level": 5,
+          "typeID": 3380
+        },
+        {
+          "level": 2,
+          "typeID": 11448
+        }
+      ],
+      "time": 600
+    }
+  },
+  {
+    "blueprintTypeID": 30475,
+    "name": {
+      "zh": "纳米线复合材料",
+      "en": "Nanowire Composites"
+    },
+    "manufacturing": {
+      "materials": [
+        {
+          "quantity": 2,
+          "typeID": 30304
+        },
+        {
+          "quantity": 3,
+          "typeID": 30021
+        },
+        {
+          "quantity": 3,
+          "typeID": 30254
+        },
+        {
+          "quantity": 11,
+          "typeID": 30303
+        }
+      ],
+      "products": [
+        {
+          "quantity": 1,
+          "typeID": 30474
+        }
+      ],
+      "skills": [
+        {
+          "level": 5,
+          "typeID": 3380
+        },
+        {
+          "level": 2,
+          "typeID": 11433
+        },
+        {
+          "level": 2,
+          "typeID": 11448
+        }
+      ],
+      "time": 600
+    }
+  },
+  {
+    "blueprintTypeID": 30477,
+    "name": {
+      "zh": "富勒二茂铁能量导管",
+      "en": "Fulleroferrocene Power Conduits"
+    },
+    "manufacturing": {
+      "materials": [
+        {
+          "quantity": 11,
+          "typeID": 30304
+        },
+        {
+          "quantity": 60,
+          "typeID": 30306
+        },
+        {
+          "quantity": 3,
+          "typeID": 30019
+        },
+        {
+          "quantity": 44,
+          "typeID": 30308
+        },
+        {
+          "quantity": 4,
+          "typeID": 30021
+        },
+        {
+          "quantity": 4,
+          "typeID": 30251
+        },
+        {
+          "quantity": 6,
+          "typeID": 30254
+        },
+        {
+          "quantity": 28,
+          "typeID": 30303
+        }
+      ],
+      "products": [
+        {
+          "quantity": 1,
+          "typeID": 30476
+        }
+      ],
+      "skills": [
+        {
+          "level": 5,
+          "typeID": 3380
+        },
+        {
+          "level": 2,
+          "typeID": 11448
+        }
+      ],
+      "time": 600
+    }
+  },
+  {
+    "blueprintTypeID": 30479,
+    "name": {
+      "zh": "重配置的亚空间校准器",
+      "en": "Reconfigured Subspace Calibrator"
+    },
+    "manufacturing": {
+      "materials": [
+        {
+          "quantity": 7,
+          "typeID": 30307
+        },
+        {
+          "quantity": 3,
+          "typeID": 30021
+        },
+        {
+          "quantity": 10,
+          "typeID": 30254
+        },
+        {
+          "quantity": 7,
+          "typeID": 30309
+        },
+        {
+          "quantity": 4,
+          "typeID": 30258
+        },
+        {
+          "quantity": 2,
+          "typeID": 30019
+        },
+        {
+          "quantity": 11,
+          "typeID": 30303
+        }
+      ],
+      "products": [
+        {
+          "quantity": 1,
+          "typeID": 30478
+        }
+      ],
+      "skills": [
+        {
+          "level": 5,
+          "typeID": 3380
+        },
+        {
+          "level": 2,
+          "typeID": 11446
+        },
+        {
+          "level": 2,
+          "typeID": 11448
+        }
+      ],
+      "time": 600
+    }
+  },
+  {
+    "blueprintTypeID": 34397,
+    "name": {
+      "zh": "自组装式纳米晶格",
+      "en": "Self-Assembling Nanolattice"
+    },
+    "manufacturing": {
+      "materials": [
+        {
+          "quantity": 5,
+          "typeID": 30311
+        },
+        {
+          "quantity": 13,
+          "typeID": 30310
+        },
+        {
+          "quantity": 1,
+          "typeID": 30270
+        },
+        {
+          "quantity": 1,
+          "typeID": 30269
+        },
+        {
+          "quantity": 1,
+          "typeID": 30271
+        },
+        {
+          "quantity": 300,
+          "typeID": 30303
+        },
+        {
+          "quantity": 15,
+          "typeID": 30309
+        },
+        {
+          "quantity": 2,
+          "typeID": 30022
+        },
+        {
+          "quantity": 1,
+          "typeID": 30268
+        },
+        {
+          "quantity": 40,
+          "typeID": 30307
+        },
+        {
+          "quantity": 15,
+          "typeID": 30251
+        },
+        {
+          "quantity": 1,
+          "typeID": 30252
+        }
+      ],
+      "products": [
+        {
+          "quantity": 1,
+          "typeID": 34396
+        }
+      ],
+      "skills": [
+        {
+          "level": 5,
+          "typeID": 3380
+        },
+        {
+          "level": 2,
+          "typeID": 11448
+        },
+        {
+          "level": 2,
+          "typeID": 11452
+        }
+      ],
+      "time": 600
+    }
+  },
+  {
+    "blueprintTypeID": 45656,
+    "name": {
+      "zh": "超导磁力放大器",
+      "en": "Superconducting Magnetometric Amplifier"
+    },
+    "manufacturing": {
+      "materials": [
+        {
+          "quantity": 2,
+          "typeID": 45660
+        },
+        {
+          "quantity": 2,
+          "typeID": 45662
+        },
+        {
+          "quantity": 2,
+          "typeID": 45663
+        },
+        {
+          "quantity": 10,
+          "typeID": 30304
+        },
+        {
+          "quantity": 10,
+          "typeID": 45661
+        },
+        {
+          "quantity": 20,
+          "typeID": 30305
+        },
+        {
+          "quantity": 20,
+          "typeID": 30308
+        },
+        {
+          "quantity": 60,
+          "typeID": 30303
+        }
+      ],
+      "products": [
+        {
+          "quantity": 1,
+          "typeID": 45652
+        }
+      ],
+      "skills": [
+        {
+          "level": 2,
+          "typeID": 11448
+        },
+        {
+          "level": 2,
+          "typeID": 11450
+        },
+        {
+          "level": 5,
+          "typeID": 3380
+        }
+      ],
+      "time": 600
+    }
+  },
+  {
+    "blueprintTypeID": 45657,
+    "name": {
+      "zh": "超导引力放大器",
+      "en": "Superconducting Gravimetric Amplifier"
+    },
+    "manufacturing": {
+      "materials": [
+        {
+          "quantity": 2,
+          "typeID": 45661
+        },
+        {
+          "quantity": 2,
+          "typeID": 45662
+        },
+        {
+          "quantity": 2,
+          "typeID": 45663
+        },
+        {
+          "quantity": 10,
+          "typeID": 30304
+        },
+        {
+          "quantity": 10,
+          "typeID": 45660
+        },
+        {
+          "quantity": 20,
+          "typeID": 30305
+        },
+        {
+          "quantity": 20,
+          "typeID": 30308
+        },
+        {
+          "quantity": 60,
+          "typeID": 30303
+        }
+      ],
+      "products": [
+        {
+          "quantity": 1,
+          "typeID": 45653
+        }
+      ],
+      "skills": [
+        {
+          "level": 2,
+          "typeID": 11446
+        },
+        {
+          "level": 2,
+          "typeID": 11454
+        },
+        {
+          "level": 5,
+          "typeID": 3380
+        }
+      ],
+      "time": 600
+    }
+  },
+  {
+    "blueprintTypeID": 45658,
+    "name": {
+      "zh": "超导雷达放大器",
+      "en": "Superconducting Radar Amplifier"
+    },
+    "manufacturing": {
+      "materials": [
+        {
+          "quantity": 2,
+          "typeID": 45660
+        },
+        {
+          "quantity": 2,
+          "typeID": 45661
+        },
+        {
+          "quantity": 2,
+          "typeID": 45663
+        },
+        {
+          "quantity": 10,
+          "typeID": 30304
+        },
+        {
+          "quantity": 10,
+          "typeID": 45662
+        },
+        {
+          "quantity": 20,
+          "typeID": 30305
+        },
+        {
+          "quantity": 20,
+          "typeID": 30308
+        },
+        {
+          "quantity": 60,
+          "typeID": 30303
+        }
+      ],
+      "products": [
+        {
+          "quantity": 1,
+          "typeID": 45654
+        }
+      ],
+      "skills": [
+        {
+          "level": 2,
+          "typeID": 11444
+        },
+        {
+          "level": 2,
+          "typeID": 11448
+        },
+        {
+          "level": 5,
+          "typeID": 3380
+        }
+      ],
+      "time": 600
+    }
+  },
+  {
+    "blueprintTypeID": 45659,
+    "name": {
+      "zh": "超导光雷达放大器",
+      "en": "Superconducting Ladar Amplifier"
+    },
+    "manufacturing": {
+      "materials": [
+        {
+          "quantity": 2,
+          "typeID": 45660
+        },
+        {
+          "quantity": 2,
+          "typeID": 45661
+        },
+        {
+          "quantity": 2,
+          "typeID": 45662
+        },
+        {
+          "quantity": 10,
+          "typeID": 30304
+        },
+        {
+          "quantity": 10,
+          "typeID": 45663
+        },
+        {
+          "quantity": 20,
+          "typeID": 30305
+        },
+        {
+          "quantity": 20,
+          "typeID": 30308
+        },
+        {
+          "quantity": 60,
+          "typeID": 30303
+        }
+      ],
+      "products": [
+        {
+          "quantity": 1,
+          "typeID": 45655
+        }
+      ],
+      "skills": [
+        {
+          "level": 2,
+          "typeID": 11445
+        },
+        {
+          "level": 2,
+          "typeID": 11447
+        },
+        {
+          "level": 5,
+          "typeID": 3380
+        }
+      ],
+      "time": 600
+    }
+  }
+]

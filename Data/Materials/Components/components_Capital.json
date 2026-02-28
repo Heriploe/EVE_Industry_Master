@@ -1,0 +1,127 @@
+[
+  {
+    "id": 21009,
+    "zh": "旗舰推进引擎",
+    "en": "Capital Propulsion Engine"
+  },
+  {
+    "id": 21011,
+    "zh": "旗舰炮台挂点",
+    "en": "Capital Turret Hardpoint"
+  },
+  {
+    "id": 21013,
+    "zh": "旗舰感应器组",
+    "en": "Capital Sensor Cluster"
+  },
+  {
+    "id": 21017,
+    "zh": "旗舰附甲",
+    "en": "Capital Armor Plates"
+  },
+  {
+    "id": 21019,
+    "zh": "旗舰电容器电池",
+    "en": "Capital Capacitor Battery"
+  },
+  {
+    "id": 21021,
+    "zh": "旗舰发电机组",
+    "en": "Capital Power Generator"
+  },
+  {
+    "id": 21023,
+    "zh": "旗舰护盾发射器",
+    "en": "Capital Shield Emitter"
+  },
+  {
+    "id": 21025,
+    "zh": "旗舰跳跃引擎",
+    "en": "Capital Jump Drive"
+  },
+  {
+    "id": 21027,
+    "zh": "旗舰货柜舱",
+    "en": "Capital Cargo Bay"
+  },
+  {
+    "id": 21029,
+    "zh": "旗舰无人机挂舱",
+    "en": "Capital Drone Bay"
+  },
+  {
+    "id": 21035,
+    "zh": "旗舰计算机系统",
+    "en": "Capital Computer System"
+  },
+  {
+    "id": 21037,
+    "zh": "旗舰建设构件",
+    "en": "Capital Construction Parts"
+  },
+  {
+    "id": 21039,
+    "zh": "旗舰会战能源阵列",
+    "en": "Capital Siege Array"
+  },
+  {
+    "id": 21041,
+    "zh": "旗舰发射器安装座",
+    "en": "Capital Launcher Hardpoint"
+  },
+  {
+    "id": 24545,
+    "zh": "旗舰跳跃桥接阵列",
+    "en": "Capital Jump Bridge Array"
+  },
+  {
+    "id": 24547,
+    "zh": "旗舰克隆舱",
+    "en": "Capital Clone Vat Bay"
+  },
+  {
+    "id": 24556,
+    "zh": "旗舰末日武器安装位",
+    "en": "Capital Doomsday Weapon Mount"
+  },
+  {
+    "id": 24558,
+    "zh": "旗舰船只维护舱",
+    "en": "Capital Ship Maintenance Bay"
+  },
+  {
+    "id": 24560,
+    "zh": "旗舰联合机库舱",
+    "en": "Capital Corporate Hangar Bay"
+  },
+  {
+    "id": 53035,
+    "zh": "旗舰级潮极熵能支架",
+    "en": "Capital Ultratidal Entropic Mounting"
+  },
+  {
+    "id": 53036,
+    "zh": "旗舰级辐射转化装置",
+    "en": "Capital Radiation Conversion Unit"
+  },
+  {
+    "id": 53037,
+    "zh": "旗舰级吸收推进器阵列",
+    "en": "Capital Absorption Thruster Array"
+  },
+  {
+    "id": 57487,
+    "zh": "旗舰级核心温度调节器",
+    "en": "Capital Core Temperature Regulator"
+  },
+  {
+    "id": 57488,
+    "zh": "神经链接防护单元",
+    "en": "Neurolink Protection Cell"
+  },
+  {
+    "id": 57489,
+    "zh": "加强型神经链接防护单元",
+    "en": "Enhanced Neurolink Protection Cell"
+  }
+]

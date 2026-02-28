@@ -1,0 +1,1954 @@
+[
+  {
+    "blueprintTypeID": 29040,
+    "name": {
+      "zh": "旗舰级反物质反应堆单元",
+      "en": "Capital Antimatter Reactor Unit"
+    },
+    "manufacturing": {
+      "materials": [
+        {
+          "quantity": 889,
+          "typeID": 16672
+        },
+        {
+          "quantity": 22,
+          "typeID": 17317
+        }
+      ],
+      "products": [
+        {
+          "quantity": 1,
+          "typeID": 29039
+        }
+      ],
+      "skills": [
+        {
+          "level": 5,
+          "typeID": 3380
+        },
+        {
+          "level": 4,
+          "typeID": 11433
+        },
+        {
+          "level": 1,
+          "typeID": 22242
+        }
+      ],
+      "time": 1500
+    }
+  },
+  {
+    "blueprintTypeID": 29042,
+    "name": {
+      "zh": "旗舰级碳化晶体附甲",
+      "en": "Capital Crystalline Carbonide Armor Plate"
+    },
+    "manufacturing": {
+      "materials": [
+        {
+          "quantity": 1667,
+          "typeID": 16678
+        },
+        {
+          "quantity": 2222,
+          "typeID": 16670
+        }
+      ],
+      "products": [
+        {
+          "quantity": 1,
+          "typeID": 29041
+        }
+      ],
+      "skills": [
+        {
+          "level": 5,
+          "typeID": 3380
+        },
+        {
+          "level": 4,
+          "typeID": 11529
+        },
+        {
+          "level": 1,
+          "typeID": 22242
+        }
+      ],
+      "time": 750
+    }
+  },
+  {
+    "blueprintTypeID": 29044,
+    "name": {
+      "zh": "旗舰级偏阻护盾发射器",
+      "en": "Capital Deflection Shield Emitter"
+    },
+    "manufacturing": {
+      "materials": [
+        {
+          "quantity": 2222,
+          "typeID": 16673
+        },
+        {
+          "quantity": 11,
+          "typeID": 16683
+        },
+        {
+          "quantity": 889,
+          "typeID": 16678
+        }
+      ],
+      "products": [
+        {
+          "quantity": 1,
+          "typeID": 29043
+        }
+      ],
+      "skills": [
+        {
+          "level": 5,
+          "typeID": 3380
+        },
+        {
+          "level": 4,
+          "typeID": 11443
+        },
+        {
+          "level": 1,
+          "typeID": 22242
+        }
+      ],
+      "time": 750
+    }
+  },
+  {
+    "blueprintTypeID": 29046,
+    "name": {
+      "zh": "旗舰级电解电容器单元",
+      "en": "Capital Electrolytic Capacitor Unit"
+    },
+    "manufacturing": {
+      "materials": [
+        {
+          "quantity": 2222,
+          "typeID": 16673
+        },
+        {
+          "quantity": 11,
+          "typeID": 16681
+        },
+        {
+          "quantity": 22,
+          "typeID": 33361
+        },
+        {
+          "quantity": 1111,
+          "typeID": 16679
+        }
+      ],
+      "products": [
+        {
+          "quantity": 1,
+          "typeID": 29045
+        }
+      ],
+      "skills": [
+        {
+          "level": 5,
+          "typeID": 3380
+        },
+        {
+          "level": 4,
+          "typeID": 11448
+        },
+        {
+          "level": 1,
+          "typeID": 22242
+        }
+      ],
+      "time": 750
+    }
+  },
+  {
+    "blueprintTypeID": 29048,
+    "name": {
+      "zh": "旗舰级电磁脉冲发生器",
+      "en": "Capital EM Pulse Generator"
+    },
+    "manufacturing": {
+      "materials": [
+        {
+          "quantity": 2222,
+          "typeID": 16672
+        },
+        {
+          "quantity": 67,
+          "typeID": 16680
+        },
+        {
+          "quantity": 22,
+          "typeID": 16681
+        }
+      ],
+      "products": [
+        {
+          "quantity": 1,
+          "typeID": 29047
+        }
+      ],
+      "skills": [
+        {
+          "level": 5,
+          "typeID": 3380
+        },
+        {
+          "level": 4,
+          "typeID": 11443
+        },
+        {
+          "level": 1,
+          "typeID": 22242
+        }
+      ],
+      "time": 750
+    }
+  },
+  {
+    "blueprintTypeID": 29050,
+    "name": {
+      "zh": "旗舰级碳化菲尔金属合成物附甲",
+      "en": "Capital Fernite Carbide Composite Armor Plate"
+    },
+    "manufacturing": {
+      "materials": [
+        {
+          "quantity": 2222,
+          "typeID": 16673
+        },
+        {
+          "quantity": 1667,
+          "typeID": 16678
+        }
+      ],
+      "products": [
+        {
+          "quantity": 1,
+          "typeID": 29049
+        }
+      ],
+      "skills": [
+        {
+          "level": 5,
+          "typeID": 3380
+        },
+        {
+          "level": 4,
+          "typeID": 11529
+        },
+        {
+          "level": 1,
+          "typeID": 22242
+        }
+      ],
+      "time": 750
+    }
+  },
+  {
+    "blueprintTypeID": 29052,
+    "name": {
+      "zh": "旗舰级聚变反应堆机组",
+      "en": "Capital Fusion Reactor Unit"
+    },
+    "manufacturing": {
+      "materials": [
+        {
+          "quantity": 22,
+          "typeID": 17317
+        },
+        {
+          "quantity": 889,
+          "typeID": 16670
+        }
+      ],
+      "products": [
+        {
+          "quantity": 1,
+          "typeID": 29051
+        }
+      ],
+      "skills": [
+        {
+          "level": 5,
+          "typeID": 3380
+        },
+        {
+          "level": 4,
+          "typeID": 11433
+        },
+        {
+          "level": 1,
+          "typeID": 22242
+        }
+      ],
+      "time": 1500
+    }
+  },
+  {
+    "blueprintTypeID": 29054,
+    "name": {
+      "zh": "旗舰级聚变推进器",
+      "en": "Capital Fusion Thruster"
+    },
+    "manufacturing": {
+      "materials": [
+        {
+          "quantity": 1333,
+          "typeID": 16672
+        },
+        {
+          "quantity": 33,
+          "typeID": 16680
+        },
+        {
+          "quantity": 11,
+          "typeID": 16683
+        }
+      ],
+      "products": [
+        {
+          "quantity": 1,
+          "typeID": 29053
+        }
+      ],
+      "skills": [
+        {
+          "level": 5,
+          "typeID": 3380
+        },
+        {
+          "level": 4,
+          "typeID": 11433
+        },
+        {
+          "level": 1,
+          "typeID": 22242
+        }
+      ],
+      "time": 750
+    }
+  },
+  {
+    "blueprintTypeID": 29056,
+    "name": {
+      "zh": "旗舰级引力感应器组",
+      "en": "Capital Gravimetric Sensor Cluster"
+    },
+    "manufacturing": {
+      "materials": [
+        {
+          "quantity": 11,
+          "typeID": 16681
+        },
+        {
+          "quantity": 22,
+          "typeID": 16682
+        },
+        {
+          "quantity": 2222,
+          "typeID": 16671
+        }
+      ],
+      "products": [
+        {
+          "quantity": 1,
+          "typeID": 29055
+        }
+      ],
+      "skills": [
+        {
+          "level": 5,
+          "typeID": 3380
+        },
+        {
+          "level": 4,
+          "typeID": 11453
+        },
+        {
+          "level": 1,
+          "typeID": 22242
+        }
+      ],
+      "time": 750
+    }
+  },
+  {
+    "blueprintTypeID": 29058,
+    "name": {
+      "zh": "旗舰级引力子脉冲发生器",
+      "en": "Capital Graviton Pulse Generator"
+    },
+    "manufacturing": {
+      "materials": [
+        {
+          "quantity": 67,
+          "typeID": 16680
+        },
+        {
+          "quantity": 22,
+          "typeID": 16681
+        },
+        {
+          "quantity": 2222,
+          "typeID": 16671
+        }
+      ],
+      "products": [
+        {
+          "quantity": 1,
+          "typeID": 29057
+        }
+      ],
+      "skills": [
+        {
+          "level": 5,
+          "typeID": 3380
+        },
+        {
+          "level": 4,
+          "typeID": 11446
+        },
+        {
+          "level": 1,
+          "typeID": 22242
+        }
+      ],
+      "time": 750
+    }
+  },
+  {
+    "blueprintTypeID": 29060,
+    "name": {
+      "zh": "旗舰级引力子反应堆机组",
+      "en": "Capital Graviton Reactor Unit"
+    },
+    "manufacturing": {
+      "materials": [
+        {
+          "quantity": 22,
+          "typeID": 17317
+        },
+        {
+          "quantity": 889,
+          "typeID": 16671
+        }
+      ],
+      "products": [
+        {
+          "quantity": 1,
+          "typeID": 29059
+        }
+      ],
+      "skills": [
+        {
+          "level": 5,
+          "typeID": 3380
+        },
+        {
+          "level": 4,
+          "typeID": 11446
+        },
+        {
+          "level": 1,
+          "typeID": 22242
+        }
+      ],
+      "time": 1500
+    }
+  },
+  {
+    "blueprintTypeID": 29062,
+    "name": {
+      "zh": "旗舰级离子推进器",
+      "en": "Capital Ion Thruster"
+    },
+    "manufacturing": {
+      "materials": [
+        {
+          "quantity": 33,
+          "typeID": 16680
+        },
+        {
+          "quantity": 11,
+          "typeID": 16683
+        },
+        {
+          "quantity": 1333,
+          "typeID": 16670
+        }
+      ],
+      "products": [
+        {
+          "quantity": 1,
+          "typeID": 29061
+        }
+      ],
+      "skills": [
+        {
+          "level": 5,
+          "typeID": 3380
+        },
+        {
+          "level": 4,
+          "typeID": 11441
+        },
+        {
+          "level": 1,
+          "typeID": 22242
+        }
+      ],
+      "time": 750
+    }
+  },
+  {
+    "blueprintTypeID": 29064,
+    "name": {
+      "zh": "旗舰级激光器定焦水晶",
+      "en": "Capital Laser Focusing Crystals"
+    },
+    "manufacturing": {
+      "materials": [
+        {
+          "quantity": 2556,
+          "typeID": 16672
+        },
+        {
+          "quantity": 11,
+          "typeID": 16682
+        },
+        {
+          "quantity": 778,
+          "typeID": 16679
+        }
+      ],
+      "products": [
+        {
+          "quantity": 1,
+          "typeID": 29063
+        }
+      ],
+      "skills": [
+        {
+          "level": 5,
+          "typeID": 3380
+        },
+        {
+          "level": 4,
+          "typeID": 11447
+        },
+        {
+          "level": 1,
+          "typeID": 22242
+        }
+      ],
+      "time": 750
+    }
+  },
+  {
+    "blueprintTypeID": 29066,
+    "name": {
+      "zh": "旗舰级光雷达感应器集群",
+      "en": "Capital Ladar Sensor Cluster"
+    },
+    "manufacturing": {
+      "materials": [
+        {
+          "quantity": 2222,
+          "typeID": 16673
+        },
+        {
+          "quantity": 22,
+          "typeID": 16682
+        },
+        {
+          "quantity": 11,
+          "typeID": 16681
+        }
+      ],
+      "products": [
+        {
+          "quantity": 1,
+          "typeID": 29065
+        }
+      ],
+      "skills": [
+        {
+          "level": 5,
+          "typeID": 3380
+        },
+        {
+          "level": 4,
+          "typeID": 11453
+        },
+        {
+          "level": 1,
+          "typeID": 22242
+        }
+      ],
+      "time": 750
+    }
+  },
+  {
+    "blueprintTypeID": 29068,
+    "name": {
+      "zh": "旗舰级线性护盾能量发射器",
+      "en": "Capital Linear Shield Emitter"
+    },
+    "manufacturing": {
+      "materials": [
+        {
+          "quantity": 2222,
+          "typeID": 16672
+        },
+        {
+          "quantity": 11,
+          "typeID": 16683
+        },
+        {
+          "quantity": 889,
+          "typeID": 16678
+        }
+      ],
+      "products": [
+        {
+          "quantity": 1,
+          "typeID": 29067
+        }
+      ],
+      "skills": [
+        {
+          "level": 5,
+          "typeID": 3380
+        },
+        {
+          "level": 4,
+          "typeID": 11443
+        },
+        {
+          "level": 1,
+          "typeID": 22242
+        }
+      ],
+      "time": 750
+    }
+  },
+  {
+    "blueprintTypeID": 29070,
+    "name": {
+      "zh": "旗舰级磁力感应器组",
+      "en": "Capital Magnetometric Sensor Cluster"
+    },
+    "manufacturing": {
+      "materials": [
+        {
+          "quantity": 11,
+          "typeID": 16681
+        },
+        {
+          "quantity": 22,
+          "typeID": 16682
+        },
+        {
+          "quantity": 2222,
+          "typeID": 16670
+        }
+      ],
+      "products": [
+        {
+          "quantity": 1,
+          "typeID": 29069
+        }
+      ],
+      "skills": [
+        {
+          "level": 5,
+          "typeID": 3380
+        },
+        {
+          "level": 4,
+          "typeID": 11453
+        },
+        {
+          "level": 1,
+          "typeID": 22242
+        }
+      ],
+      "time": 750
+    }
+  },
+  {
+    "blueprintTypeID": 29072,
+    "name": {
+      "zh": "旗舰级磁脉冲推进器",
+      "en": "Capital Magpulse Thruster"
+    },
+    "manufacturing": {
+      "materials": [
+        {
+          "quantity": 33,
+          "typeID": 16680
+        },
+        {
+          "quantity": 11,
+          "typeID": 16683
+        },
+        {
+          "quantity": 1333,
+          "typeID": 16671
+        }
+      ],
+      "products": [
+        {
+          "quantity": 1,
+          "typeID": 29071
+        }
+      ],
+      "skills": [
+        {
+          "level": 5,
+          "typeID": 3380
+        },
+        {
+          "level": 4,
+          "typeID": 11453
+        },
+        {
+          "level": 1,
+          "typeID": 22242
+        }
+      ],
+      "time": 750
+    }
+  },
+  {
+    "blueprintTypeID": 29074,
+    "name": {
+      "zh": "旗舰级纳米电子微处理器",
+      "en": "Capital Nanoelectrical Microprocessor"
+    },
+    "manufacturing": {
+      "materials": [
+        {
+          "quantity": 1667,
+          "typeID": 16672
+        },
+        {
+          "quantity": 56,
+          "typeID": 16680
+        },
+        {
+          "quantity": 22,
+          "typeID": 33360
+        },
+        {
+          "quantity": 22,
+          "typeID": 16681
+        }
+      ],
+      "products": [
+        {
+          "quantity": 1,
+          "typeID": 29073
+        }
+      ],
+      "skills": [
+        {
+          "level": 5,
+          "typeID": 3380
+        },
+        {
+          "level": 4,
+          "typeID": 11453
+        },
+        {
+          "level": 1,
+          "typeID": 22242
+        }
+      ],
+      "time": 750
+    }
+  },
+  {
+    "blueprintTypeID": 29076,
+    "name": {
+      "zh": "旗舰级纳米机械微处理器",
+      "en": "Capital Nanomechanical Microprocessor"
+    },
+    "manufacturing": {
+      "materials": [
+        {
+          "quantity": 56,
+          "typeID": 16680
+        },
+        {
+          "quantity": 1667,
+          "typeID": 16673
+        },
+        {
+          "quantity": 22,
+          "typeID": 33361
+        },
+        {
+          "quantity": 22,
+          "typeID": 16681
+        }
+      ],
+      "products": [
+        {
+          "quantity": 1,
+          "typeID": 29075
+        }
+      ],
+      "skills": [
+        {
+          "level": 5,
+          "typeID": 3380
+        },
+        {
+          "level": 4,
+          "typeID": 11453
+        },
+        {
+          "level": 1,
+          "typeID": 22242
+        }
+      ],
+      "time": 750
+    }
+  },
+  {
+    "blueprintTypeID": 29078,
+    "name": {
+      "zh": "旗舰级核脉冲发生器",
+      "en": "Capital Nuclear Pulse Generator"
+    },
+    "manufacturing": {
+      "materials": [
+        {
+          "quantity": 67,
+          "typeID": 16680
+        },
+        {
+          "quantity": 2222,
+          "typeID": 16673
+        },
+        {
+          "quantity": 22,
+          "typeID": 16681
+        }
+      ],
+      "products": [
+        {
+          "quantity": 1,
+          "typeID": 29077
+        }
+      ],
+      "skills": [
+        {
+          "level": 5,
+          "typeID": 3380
+        },
+        {
+          "level": 4,
+          "typeID": 11451
+        },
+        {
+          "level": 1,
+          "typeID": 22242
+        }
+      ],
+      "time": 750
+    }
+  },
+  {
+    "blueprintTypeID": 29080,
+    "name": {
+      "zh": "旗舰级核反应堆机组",
+      "en": "Capital Nuclear Reactor Unit"
+    },
+    "manufacturing": {
+      "materials": [
+        {
+          "quantity": 889,
+          "typeID": 16673
+        },
+        {
+          "quantity": 22,
+          "typeID": 17317
+        }
+      ],
+      "products": [
+        {
+          "quantity": 1,
+          "typeID": 29079
+        }
+      ],
+      "skills": [
+        {
+          "level": 5,
+          "typeID": 3380
+        },
+        {
+          "level": 4,
+          "typeID": 11451
+        },
+        {
+          "level": 1,
+          "typeID": 22242
+        }
+      ],
+      "time": 1500
+    }
+  },
+  {
+    "blueprintTypeID": 29082,
+    "name": {
+      "zh": "旗舰级震荡电容器单元",
+      "en": "Capital Oscillator Capacitor Unit"
+    },
+    "manufacturing": {
+      "materials": [
+        {
+          "quantity": 11,
+          "typeID": 16681
+        },
+        {
+          "quantity": 22,
+          "typeID": 33359
+        },
+        {
+          "quantity": 2222,
+          "typeID": 16670
+        },
+        {
+          "quantity": 1111,
+          "typeID": 16679
+        }
+      ],
+      "products": [
+        {
+          "quantity": 1,
+          "typeID": 29081
+        }
+      ],
+      "skills": [
+        {
+          "level": 5,
+          "typeID": 3380
+        },
+        {
+          "level": 4,
+          "typeID": 11448
+        },
+        {
+          "level": 1,
+          "typeID": 22242
+        }
+      ],
+      "time": 750
+    }
+  },
+  {
+    "blueprintTypeID": 29084,
+    "name": {
+      "zh": "旗舰级粒子加速装置",
+      "en": "Capital Particle Accelerator Unit"
+    },
+    "manufacturing": {
+      "materials": [
+        {
+          "quantity": 11,
+          "typeID": 16682
+        },
+        {
+          "quantity": 2556,
+          "typeID": 16670
+        },
+        {
+          "quantity": 778,
+          "typeID": 16679
+        }
+      ],
+      "products": [
+        {
+          "quantity": 1,
+          "typeID": 29083
+        }
+      ],
+      "skills": [
+        {
+          "level": 5,
+          "typeID": 3380
+        },
+        {
+          "level": 4,
+          "typeID": 11453
+        },
+        {
+          "level": 1,
+          "typeID": 22242
+        }
+      ],
+      "time": 750
+    }
+  },
+  {
+    "blueprintTypeID": 29086,
+    "name": {
+      "zh": "旗舰级光子微处理器",
+      "en": "Capital Photon Microprocessor"
+    },
+    "manufacturing": {
+      "materials": [
+        {
+          "quantity": 56,
+          "typeID": 16680
+        },
+        {
+          "quantity": 22,
+          "typeID": 16681
+        },
+        {
+          "quantity": 1667,
+          "typeID": 16670
+        },
+        {
+          "quantity": 22,
+          "typeID": 33359
+        }
+      ],
+      "products": [
+        {
+          "quantity": 1,
+          "typeID": 29085
+        }
+      ],
+      "skills": [
+        {
+          "level": 5,
+          "typeID": 3380
+        },
+        {
+          "level": 4,
+          "typeID": 11453
+        },
+        {
+          "level": 1,
+          "typeID": 22242
+        }
+      ],
+      "time": 750
+    }
+  },
+  {
+    "blueprintTypeID": 29088,
+    "name": {
+      "zh": "旗舰级等离子脉冲发生器",
+      "en": "Capital Plasma Pulse Generator"
+    },
+    "manufacturing": {
+      "materials": [
+        {
+          "quantity": 67,
+          "typeID": 16680
+        },
+        {
+          "quantity": 22,
+          "typeID": 16681
+        },
+        {
+          "quantity": 2222,
+          "typeID": 16670
+        }
+      ],
+      "products": [
+        {
+          "quantity": 1,
+          "typeID": 29087
+        }
+      ],
+      "skills": [
+        {
+          "level": 5,
+          "typeID": 3380
+        },
+        {
+          "level": 4,
+          "typeID": 11441
+        },
+        {
+          "level": 1,
+          "typeID": 22242
+        }
+      ],
+      "time": 750
+    }
+  },
+  {
+    "blueprintTypeID": 29090,
+    "name": {
+      "zh": "旗舰级等离子推进器",
+      "en": "Capital Plasma Thruster"
+    },
+    "manufacturing": {
+      "materials": [
+        {
+          "quantity": 33,
+          "typeID": 16680
+        },
+        {
+          "quantity": 1333,
+          "typeID": 16673
+        },
+        {
+          "quantity": 11,
+          "typeID": 16683
+        }
+      ],
+      "products": [
+        {
+          "quantity": 1,
+          "typeID": 29089
+        }
+      ],
+      "skills": [
+        {
+          "level": 5,
+          "typeID": 3380
+        },
+        {
+          "level": 4,
+          "typeID": 11441
+        },
+        {
+          "level": 1,
+          "typeID": 22242
+        }
+      ],
+      "time": 750
+    }
+  },
+  {
+    "blueprintTypeID": 29092,
+    "name": {
+      "zh": "旗舰级脉冲护盾发射器",
+      "en": "Capital Pulse Shield Emitter"
+    },
+    "manufacturing": {
+      "materials": [
+        {
+          "quantity": 11,
+          "typeID": 16683
+        },
+        {
+          "quantity": 889,
+          "typeID": 16678
+        },
+        {
+          "quantity": 2222,
+          "typeID": 16670
+        }
+      ],
+      "products": [
+        {
+          "quantity": 1,
+          "typeID": 29091
+        }
+      ],
+      "skills": [
+        {
+          "level": 5,
+          "typeID": 3380
+        },
+        {
+          "level": 4,
+          "typeID": 11443
+        },
+        {
+          "level": 1,
+          "typeID": 22242
+        }
+      ],
+      "time": 750
+    }
+  },
+  {
+    "blueprintTypeID": 29094,
+    "name": {
+      "zh": "旗舰级量子微处理器",
+      "en": "Capital Quantum Microprocessor"
+    },
+    "manufacturing": {
+      "materials": [
+        {
+          "quantity": 56,
+          "typeID": 16680
+        },
+        {
+          "quantity": 22,
+          "typeID": 16681
+        },
+        {
+          "quantity": 22,
+          "typeID": 33362
+        },
+        {
+          "quantity": 1667,
+          "typeID": 16671
+        }
+      ],
+      "products": [
+        {
+          "quantity": 1,
+          "typeID": 29093
+        }
+      ],
+      "skills": [
+        {
+          "level": 5,
+          "typeID": 3380
+        },
+        {
+          "level": 4,
+          "typeID": 11453
+        },
+        {
+          "level": 1,
+          "typeID": 22242
+        }
+      ],
+      "time": 750
+    }
+  },
+  {
+    "blueprintTypeID": 29096,
+    "name": {
+      "zh": "旗舰级雷达感应器组",
+      "en": "Capital Radar Sensor Cluster"
+    },
+    "manufacturing": {
+      "materials": [
+        {
+          "quantity": 2222,
+          "typeID": 16672
+        },
+        {
+          "quantity": 11,
+          "typeID": 16681
+        },
+        {
+          "quantity": 22,
+          "typeID": 16682
+        }
+      ],
+      "products": [
+        {
+          "quantity": 1,
+          "typeID": 29095
+        }
+      ],
+      "skills": [
+        {
+          "level": 5,
+          "typeID": 3380
+        },
+        {
+          "level": 4,
+          "typeID": 11453
+        },
+        {
+          "level": 1,
+          "typeID": 22242
+        }
+      ],
+      "time": 750
+    }
+  },
+  {
+    "blueprintTypeID": 29098,
+    "name": {
+      "zh": "旗舰级标量电容器单元",
+      "en": "Capital Scalar Capacitor Unit"
+    },
+    "manufacturing": {
+      "materials": [
+        {
+          "quantity": 11,
+          "typeID": 16681
+        },
+        {
+          "quantity": 22,
+          "typeID": 33362
+        },
+        {
+          "quantity": 1111,
+          "typeID": 16679
+        },
+        {
+          "quantity": 2222,
+          "typeID": 16671
+        }
+      ],
+      "products": [
+        {
+          "quantity": 1,
+          "typeID": 29097
+        }
+      ],
+      "skills": [
+        {
+          "level": 5,
+          "typeID": 3380
+        },
+        {
+          "level": 4,
+          "typeID": 11448
+        },
+        {
+          "level": 1,
+          "typeID": 22242
+        }
+      ],
+      "time": 750
+    }
+  },
+  {
+    "blueprintTypeID": 29100,
+    "name": {
+      "zh": "旗舰级超导体轨道",
+      "en": "Capital Superconductor Rails"
+    },
+    "manufacturing": {
+      "materials": [
+        {
+          "quantity": 11,
+          "typeID": 16682
+        },
+        {
+          "quantity": 778,
+          "typeID": 16679
+        },
+        {
+          "quantity": 2556,
+          "typeID": 16671
+        }
+      ],
+      "products": [
+        {
+          "quantity": 1,
+          "typeID": 29099
+        }
+      ],
+      "skills": [
+        {
+          "level": 5,
+          "typeID": 3380
+        },
+        {
+          "level": 4,
+          "typeID": 11453
+        },
+        {
+          "level": 1,
+          "typeID": 22242
+        }
+      ],
+      "time": 750
+    }
+  },
+  {
+    "blueprintTypeID": 29102,
+    "name": {
+      "zh": "旗舰级恒定护盾发射器",
+      "en": "Capital Sustained Shield Emitter"
+    },
+    "manufacturing": {
+      "materials": [
+        {
+          "quantity": 11,
+          "typeID": 16683
+        },
+        {
+          "quantity": 889,
+          "typeID": 16678
+        },
+        {
+          "quantity": 2222,
+          "typeID": 16671
+        }
+      ],
+      "products": [
+        {
+          "quantity": 1,
+          "typeID": 29101
+        }
+      ],
+      "skills": [
+        {
+          "level": 5,
+          "typeID": 3380
+        },
+        {
+          "level": 4,
+          "typeID": 11443
+        },
+        {
+          "level": 1,
+          "typeID": 22242
+        }
+      ],
+      "time": 750
+    }
+  },
+  {
+    "blueprintTypeID": 29104,
+    "name": {
+      "zh": "旗舰级超立方电容器单元",
+      "en": "Capital Tesseract Capacitor Unit"
+    },
+    "manufacturing": {
+      "materials": [
+        {
+          "quantity": 2222,
+          "typeID": 16672
+        },
+        {
+          "quantity": 11,
+          "typeID": 16681
+        },
+        {
+          "quantity": 22,
+          "typeID": 33360
+        },
+        {
+          "quantity": 1111,
+          "typeID": 16679
+        }
+      ],
+      "products": [
+        {
+          "quantity": 1,
+          "typeID": 29103
+        }
+      ],
+      "skills": [
+        {
+          "level": 5,
+          "typeID": 3380
+        },
+        {
+          "level": 4,
+          "typeID": 11448
+        },
+        {
+          "level": 1,
+          "typeID": 22242
+        }
+      ],
+      "time": 750
+    }
+  },
+  {
+    "blueprintTypeID": 29106,
+    "name": {
+      "zh": "旗舰级热核反应击发装置",
+      "en": "Capital Thermonuclear Trigger Unit"
+    },
+    "manufacturing": {
+      "materials": [
+        {
+          "quantity": 2556,
+          "typeID": 16673
+        },
+        {
+          "quantity": 11,
+          "typeID": 16682
+        },
+        {
+          "quantity": 778,
+          "typeID": 16679
+        }
+      ],
+      "products": [
+        {
+          "quantity": 1,
+          "typeID": 29105
+        }
+      ],
+      "skills": [
+        {
+          "level": 5,
+          "typeID": 3380
+        },
+        {
+          "level": 4,
+          "typeID": 11451
+        },
+        {
+          "level": 1,
+          "typeID": 22242
+        }
+      ],
+      "time": 750
+    }
+  },
+  {
+    "blueprintTypeID": 29108,
+    "name": {
+      "zh": "旗舰级迪波特钛合金附甲",
+      "en": "Capital Titanium Diborite Armor Plate"
+    },
+    "manufacturing": {
+      "materials": [
+        {
+          "quantity": 1667,
+          "typeID": 16678
+        },
+        {
+          "quantity": 2222,
+          "typeID": 16671
+        }
+      ],
+      "products": [
+        {
+          "quantity": 1,
+          "typeID": 29107
+        }
+      ],
+      "skills": [
+        {
+          "level": 5,
+          "typeID": 3380
+        },
+        {
+          "level": 4,
+          "typeID": 11529
+        },
+        {
+          "level": 1,
+          "typeID": 22242
+        }
+      ],
+      "time": 750
+    }
+  },
+  {
+    "blueprintTypeID": 29110,
+    "name": {
+      "zh": "旗舰级碳化钨附甲",
+      "en": "Capital Tungsten Carbide Armor Plate"
+    },
+    "manufacturing": {
+      "materials": [
+        {
+          "quantity": 2222,
+          "typeID": 16672
+        },
+        {
+          "quantity": 1667,
+          "typeID": 16678
+        }
+      ],
+      "products": [
+        {
+          "quantity": 1,
+          "typeID": 29109
+        }
+      ],
+      "skills": [
+        {
+          "level": 5,
+          "typeID": 3380
+        },
+        {
+          "level": 4,
+          "typeID": 11529
+        },
+        {
+          "level": 1,
+          "typeID": 22242
+        }
+      ],
+      "time": 750
+    }
+  },
+  {
+    "blueprintTypeID": 57511,
+    "name": {
+      "zh": "雷达超光速链接通信器",
+      "en": "Radar-FTL Interlink Communicator"
+    },
+    "manufacturing": {
+      "materials": [
+        {
+          "quantity": 1,
+          "typeID": 2872
+        },
+        {
+          "quantity": 1,
+          "typeID": 2876
+        },
+        {
+          "quantity": 2,
+          "typeID": 2867
+        },
+        {
+          "quantity": 40,
+          "typeID": 17317
+        },
+        {
+          "quantity": 130,
+          "typeID": 30308
+        },
+        {
+          "quantity": 190,
+          "typeID": 30304
+        },
+        {
+          "quantity": 190,
+          "typeID": 30306
+        },
+        {
+          "quantity": 190,
+          "typeID": 30307
+        },
+        {
+          "quantity": 260,
+          "typeID": 30311
+        },
+        {
+          "quantity": 380,
+          "typeID": 30310
+        },
+        {
+          "quantity": 390,
+          "typeID": 30305
+        },
+        {
+          "quantity": 560,
+          "typeID": 30309
+        },
+        {
+          "quantity": 560,
+          "typeID": 33360
+        },
+        {
+          "quantity": 660,
+          "typeID": 30303
+        }
+      ],
+      "products": [
+        {
+          "quantity": 1,
+          "typeID": 57474
+        }
+      ],
+      "skills": [
+        {
+          "level": 1,
+          "typeID": 22242
+        },
+        {
+          "level": 5,
+          "typeID": 11433
+        },
+        {
+          "level": 5,
+          "typeID": 11453
+        },
+        {
+          "level": 5,
+          "typeID": 11455
+        }
+      ],
+      "time": 16000
+    }
+  },
+  {
+    "blueprintTypeID": 57512,
+    "name": {
+      "zh": "引力超光速链接通信器",
+      "en": "Gravimetric-FTL Interlink Communicator"
+    },
+    "manufacturing": {
+      "materials": [
+        {
+          "quantity": 1,
+          "typeID": 2872
+        },
+        {
+          "quantity": 1,
+          "typeID": 2876
+        },
+        {
+          "quantity": 2,
+          "typeID": 2867
+        },
+        {
+          "quantity": 40,
+          "typeID": 17317
+        },
+        {
+          "quantity": 130,
+          "typeID": 30308
+        },
+        {
+          "quantity": 190,
+          "typeID": 30304
+        },
+        {
+          "quantity": 190,
+          "typeID": 30306
+        },
+        {
+          "quantity": 190,
+          "typeID": 30307
+        },
+        {
+          "quantity": 260,
+          "typeID": 30311
+        },
+        {
+          "quantity": 380,
+          "typeID": 30310
+        },
+        {
+          "quantity": 390,
+          "typeID": 30305
+        },
+        {
+          "quantity": 560,
+          "typeID": 30309
+        },
+        {
+          "quantity": 560,
+          "typeID": 33362
+        },
+        {
+          "quantity": 660,
+          "typeID": 30303
+        }
+      ],
+      "products": [
+        {
+          "quantity": 1,
+          "typeID": 57475
+        }
+      ],
+      "skills": [
+        {
+          "level": 1,
+          "typeID": 22242
+        },
+        {
+          "level": 5,
+          "typeID": 11448
+        },
+        {
+          "level": 5,
+          "typeID": 11453
+        },
+        {
+          "level": 5,
+          "typeID": 11455
+        }
+      ],
+      "time": 16000
+    }
+  },
+  {
+    "blueprintTypeID": 57513,
+    "name": {
+      "zh": "磁力超光速链接通信器",
+      "en": "Magnetometric-FTL Interlink Communicator"
+    },
+    "manufacturing": {
+      "materials": [
+        {
+          "quantity": 1,
+          "typeID": 2872
+        },
+        {
+          "quantity": 1,
+          "typeID": 2876
+        },
+        {
+          "quantity": 2,
+          "typeID": 2867
+        },
+        {
+          "quantity": 40,
+          "typeID": 17317
+        },
+        {
+          "quantity": 130,
+          "typeID": 30308
+        },
+        {
+          "quantity": 190,
+          "typeID": 30304
+        },
+        {
+          "quantity": 190,
+          "typeID": 30306
+        },
+        {
+          "quantity": 190,
+          "typeID": 30307
+        },
+        {
+          "quantity": 260,
+          "typeID": 30311
+        },
+        {
+          "quantity": 380,
+          "typeID": 30310
+        },
+        {
+          "quantity": 390,
+          "typeID": 30305
+        },
+        {
+          "quantity": 560,
+          "typeID": 30309
+        },
+        {
+          "quantity": 560,
+          "typeID": 33359
+        },
+        {
+          "quantity": 660,
+          "typeID": 30303
+        }
+      ],
+      "products": [
+        {
+          "quantity": 1,
+          "typeID": 57476
+        }
+      ],
+      "skills": [
+        {
+          "level": 1,
+          "typeID": 22242
+        },
+        {
+          "level": 5,
+          "typeID": 11441
+        },
+        {
+          "level": 5,
+          "typeID": 11453
+        },
+        {
+          "level": 5,
+          "typeID": 11455
+        }
+      ],
+      "time": 16000
+    }
+  },
+  {
+    "blueprintTypeID": 57514,
+    "name": {
+      "zh": "光雷达超光速链接通信器",
+      "en": "Ladar-FTL Interlink Communicator"
+    },
+    "manufacturing": {
+      "materials": [
+        {
+          "quantity": 1,
+          "typeID": 2872
+        },
+        {
+          "quantity": 1,
+          "typeID": 2876
+        },
+        {
+          "quantity": 2,
+          "typeID": 2867
+        },
+        {
+          "quantity": 40,
+          "typeID": 17317
+        },
+        {
+          "quantity": 130,
+          "typeID": 30308
+        },
+        {
+          "quantity": 190,
+          "typeID": 30304
+        },
+        {
+          "quantity": 190,
+          "typeID": 30306
+        },
+        {
+          "quantity": 190,
+          "typeID": 30307
+        },
+        {
+          "quantity": 260,
+          "typeID": 30311
+        },
+        {
+          "quantity": 380,
+          "typeID": 30310
+        },
+        {
+          "quantity": 390,
+          "typeID": 30305
+        },
+        {
+          "quantity": 560,
+          "typeID": 30309
+        },
+        {
+          "quantity": 560,
+          "typeID": 33361
+        },
+        {
+          "quantity": 660,
+          "typeID": 30303
+        }
+      ],
+      "products": [
+        {
+          "quantity": 1,
+          "typeID": 57477
+        }
+      ],
+      "skills": [
+        {
+          "level": 1,
+          "typeID": 22242
+        },
+        {
+          "level": 5,
+          "typeID": 11451
+        },
+        {
+          "level": 5,
+          "typeID": 11453
+        },
+        {
+          "level": 5,
+          "typeID": 11455
+        }
+      ],
+      "time": 16000
+    }
+  }
+]

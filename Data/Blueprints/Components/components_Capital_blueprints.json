@@ -1,0 +1,1530 @@
+[
+  {
+    "blueprintTypeID": 21010,
+    "name": {
+      "zh": "旗舰推进引擎",
+      "en": "Capital Propulsion Engine"
+    },
+    "manufacturing": {
+      "materials": [
+        {
+          "quantity": 1,
+          "typeID": 2872
+        },
+        {
+          "quantity": 100,
+          "typeID": 57457
+        },
+        {
+          "quantity": 285,
+          "typeID": 40
+        },
+        {
+          "quantity": 570,
+          "typeID": 39
+        },
+        {
+          "quantity": 1125,
+          "typeID": 38
+        },
+        {
+          "quantity": 11250,
+          "typeID": 37
+        },
+        {
+          "quantity": 40500,
+          "typeID": 34
+        },
+        {
+          "quantity": 40500,
+          "typeID": 36
+        },
+        {
+          "quantity": 146250,
+          "typeID": 35
+        }
+      ],
+      "products": [
+        {
+          "quantity": 1,
+          "typeID": 21009
+        }
+      ],
+      "skills": [
+        {
+          "level": 1,
+          "typeID": 22242
+        }
+      ],
+      "time": 16000
+    }
+  },
+  {
+    "blueprintTypeID": 21012,
+    "name": {
+      "zh": "旗舰炮台挂点",
+      "en": "Capital Turret Hardpoint"
+    },
+    "manufacturing": {
+      "materials": [
+        {
+          "quantity": 1,
+          "typeID": 2876
+        },
+        {
+          "quantity": 100,
+          "typeID": 57457
+        },
+        {
+          "quantity": 188,
+          "typeID": 40
+        },
+        {
+          "quantity": 390,
+          "typeID": 39
+        },
+        {
+          "quantity": 750,
+          "typeID": 38
+        },
+        {
+          "quantity": 7500,
+          "typeID": 37
+        },
+        {
+          "quantity": 27750,
+          "typeID": 34
+        },
+        {
+          "quantity": 28500,
+          "typeID": 36
+        },
+        {
+          "quantity": 101250,
+          "typeID": 35
+        }
+      ],
+      "products": [
+        {
+          "quantity": 1,
+          "typeID": 21011
+        }
+      ],
+      "skills": [
+        {
+          "level": 1,
+          "typeID": 22242
+        }
+      ],
+      "time": 16000
+    }
+  },
+  {
+    "blueprintTypeID": 21014,
+    "name": {
+      "zh": "旗舰感应器组",
+      "en": "Capital Sensor Cluster"
+    },
+    "manufacturing": {
+      "materials": [
+        {
+          "quantity": 1,
+          "typeID": 2867
+        },
+        {
+          "quantity": 100,
+          "typeID": 57457
+        },
+        {
+          "quantity": 285,
+          "typeID": 40
+        },
+        {
+          "quantity": 570,
+          "typeID": 39
+        },
+        {
+          "quantity": 1125,
+          "typeID": 38
+        },
+        {
+          "quantity": 11250,
+          "typeID": 37
+        },
+        {
+          "quantity": 40500,
+          "typeID": 34
+        },
+        {
+          "quantity": 40500,
+          "typeID": 36
+        },
+        {
+          "quantity": 146250,
+          "typeID": 35
+        }
+      ],
+      "products": [
+        {
+          "quantity": 1,
+          "typeID": 21013
+        }
+      ],
+      "skills": [
+        {
+          "level": 1,
+          "typeID": 22242
+        }
+      ],
+      "time": 16000
+    }
+  },
+  {
+    "blueprintTypeID": 21018,
+    "name": {
+      "zh": "旗舰附甲",
+      "en": "Capital Armor Plates"
+    },
+    "manufacturing": {
+      "materials": [
+        {
+          "quantity": 5,
+          "typeID": 2870
+        },
+        {
+          "quantity": 100,
+          "typeID": 57457
+        },
+        {
+          "quantity": 308,
+          "typeID": 40
+        },
+        {
+          "quantity": 615,
+          "typeID": 39
+        },
+        {
+          "quantity": 1200,
+          "typeID": 38
+        },
+        {
+          "quantity": 12000,
+          "typeID": 37
+        },
+        {
+          "quantity": 45000,
+          "typeID": 34
+        },
+        {
+          "quantity": 45000,
+          "typeID": 36
+        },
+        {
+          "quantity": 157500,
+          "typeID": 35
+        }
+      ],
+      "products": [
+        {
+          "quantity": 1,
+          "typeID": 21017
+        }
+      ],
+      "skills": [
+        {
+          "level": 1,
+          "typeID": 22242
+        }
+      ],
+      "time": 16000
+    }
+  },
+  {
+    "blueprintTypeID": 21020,
+    "name": {
+      "zh": "旗舰电容器电池",
+      "en": "Capital Capacitor Battery"
+    },
+    "manufacturing": {
+      "materials": [
+        {
+          "quantity": 1,
+          "typeID": 2872
+        },
+        {
+          "quantity": 100,
+          "typeID": 57457
+        },
+        {
+          "quantity": 278,
+          "typeID": 40
+        },
+        {
+          "quantity": 548,
+          "typeID": 39
+        },
+        {
+          "quantity": 1125,
+          "typeID": 38
+        },
+        {
+          "quantity": 11250,
+          "typeID": 37
+        },
+        {
+          "quantity": 39000,
+          "typeID": 34
+        },
+        {
+          "quantity": 39000,
+          "typeID": 36
+        },
+        {
+          "quantity": 142500,
+          "typeID": 35
+        }
+      ],
+      "products": [
+        {
+          "quantity": 1,
+          "typeID": 21019
+        }
+      ],
+      "skills": [
+        {
+          "level": 1,
+          "typeID": 22242
+        }
+      ],
+      "time": 16000
+    }
+  },
+  {
+    "blueprintTypeID": 21022,
+    "name": {
+      "zh": "旗舰发电机组",
+      "en": "Capital Power Generator"
+    },
+    "manufacturing": {
+      "materials": [
+        {
+          "quantity": 1,
+          "typeID": 2872
+        },
+        {
+          "quantity": 100,
+          "typeID": 57457
+        },
+        {
+          "quantity": 330,
+          "typeID": 40
+        },
+        {
+          "quantity": 660,
+          "typeID": 39
+        },
+        {
+          "quantity": 1350,
+          "typeID": 38
+        },
+        {
+          "quantity": 13500,
+          "typeID": 37
+        },
+        {
+          "quantity": 47250,
+          "typeID": 34
+        },
+        {
+          "quantity": 47250,
+          "typeID": 36
+        },
+        {
+          "quantity": 168750,
+          "typeID": 35
+        }
+      ],
+      "products": [
+        {
+          "quantity": 1,
+          "typeID": 21021
+        }
+      ],
+      "skills": [
+        {
+          "level": 1,
+          "typeID": 22242
+        }
+      ],
+      "time": 16000
+    }
+  },
+  {
+    "blueprintTypeID": 21024,
+    "name": {
+      "zh": "旗舰护盾发射器",
+      "en": "Capital Shield Emitter"
+    },
+    "manufacturing": {
+      "materials": [
+        {
+          "quantity": 1,
+          "typeID": 2871
+        },
+        {
+          "quantity": 100,
+          "typeID": 57457
+        },
+        {
+          "quantity": 308,
+          "typeID": 40
+        },
+        {
+          "quantity": 615,
+          "typeID": 39
+        },
+        {
+          "quantity": 1200,
+          "typeID": 38
+        },
+        {
+          "quantity": 12000,
+          "typeID": 37
+        },
+        {
+          "quantity": 45000,
+          "typeID": 34
+        },
+        {
+          "quantity": 45000,
+          "typeID": 36
+        },
+        {
+          "quantity": 157500,
+          "typeID": 35
+        }
+      ],
+      "products": [
+        {
+          "quantity": 1,
+          "typeID": 21023
+        }
+      ],
+      "skills": [
+        {
+          "level": 1,
+          "typeID": 22242
+        }
+      ],
+      "time": 16000
+    }
+  },
+  {
+    "blueprintTypeID": 21026,
+    "name": {
+      "zh": "旗舰跳跃引擎",
+      "en": "Capital Jump Drive"
+    },
+    "manufacturing": {
+      "materials": [
+        {
+          "quantity": 1,
+          "typeID": 2876
+        },
+        {
+          "quantity": 100,
+          "typeID": 57457
+        },
+        {
+          "quantity": 420,
+          "typeID": 40
+        },
+        {
+          "quantity": 900,
+          "typeID": 39
+        },
+        {
+          "quantity": 1688,
+          "typeID": 38
+        },
+        {
+          "quantity": 16875,
+          "typeID": 37
+        },
+        {
+          "quantity": 60000,
+          "typeID": 34
+        },
+        {
+          "quantity": 60000,
+          "typeID": 36
+        },
+        {
+          "quantity": 216000,
+          "typeID": 35
+        }
+      ],
+      "products": [
+        {
+          "quantity": 1,
+          "typeID": 21025
+        }
+      ],
+      "skills": [
+        {
+          "level": 1,
+          "typeID": 22242
+        }
+      ],
+      "time": 16000
+    }
+  },
+  {
+    "blueprintTypeID": 21028,
+    "name": {
+      "zh": "旗舰货柜舱",
+      "en": "Capital Cargo Bay"
+    },
+    "manufacturing": {
+      "materials": [
+        {
+          "quantity": 100,
+          "typeID": 57457
+        },
+        {
+          "quantity": 380,
+          "typeID": 40
+        },
+        {
+          "quantity": 760,
+          "typeID": 39
+        },
+        {
+          "quantity": 1500,
+          "typeID": 38
+        },
+        {
+          "quantity": 15000,
+          "typeID": 37
+        },
+        {
+          "quantity": 54000,
+          "typeID": 34
+        },
+        {
+          "quantity": 54000,
+          "typeID": 36
+        },
+        {
+          "quantity": 195000,
+          "typeID": 35
+        }
+      ],
+      "products": [
+        {
+          "quantity": 1,
+          "typeID": 21027
+        }
+      ],
+      "skills": [
+        {
+          "level": 1,
+          "typeID": 22242
+        }
+      ],
+      "time": 16000
+    }
+  },
+  {
+    "blueprintTypeID": 21030,
+    "name": {
+      "zh": "旗舰无人机挂舱",
+      "en": "Capital Drone Bay"
+    },
+    "manufacturing": {
+      "materials": [
+        {
+          "quantity": 1,
+          "typeID": 2867
+        },
+        {
+          "quantity": 100,
+          "typeID": 57457
+        },
+        {
+          "quantity": 173,
+          "typeID": 40
+        },
+        {
+          "quantity": 338,
+          "typeID": 39
+        },
+        {
+          "quantity": 675,
+          "typeID": 38
+        },
+        {
+          "quantity": 6750,
+          "typeID": 37
+        },
+        {
+          "quantity": 24375,
+          "typeID": 34
+        },
+        {
+          "quantity": 24375,
+          "typeID": 36
+        },
+        {
+          "quantity": 90000,
+          "typeID": 35
+        }
+      ],
+      "products": [
+        {
+          "quantity": 1,
+          "typeID": 21029
+        }
+      ],
+      "skills": [
+        {
+          "level": 1,
+          "typeID": 22242
+        }
+      ],
+      "time": 16000
+    }
+  },
+  {
+    "blueprintTypeID": 21036,
+    "name": {
+      "zh": "旗舰计算机系统",
+      "en": "Capital Computer System"
+    },
+    "manufacturing": {
+      "materials": [
+        {
+          "quantity": 1,
+          "typeID": 2871
+        },
+        {
+          "quantity": 100,
+          "typeID": 57457
+        },
+        {
+          "quantity": 285,
+          "typeID": 40
+        },
+        {
+          "quantity": 570,
+          "typeID": 39
+        },
+        {
+          "quantity": 1125,
+          "typeID": 38
+        },
+        {
+          "quantity": 11250,
+          "typeID": 37
+        },
+        {
+          "quantity": 40500,
+          "typeID": 34
+        },
+        {
+          "quantity": 40500,
+          "typeID": 36
+        },
+        {
+          "quantity": 146250,
+          "typeID": 35
+        }
+      ],
+      "products": [
+        {
+          "quantity": 1,
+          "typeID": 21035
+        }
+      ],
+      "skills": [
+        {
+          "level": 1,
+          "typeID": 22242
+        }
+      ],
+      "time": 16000
+    }
+  },
+  {
+    "blueprintTypeID": 21038,
+    "name": {
+      "zh": "旗舰建设构件",
+      "en": "Capital Construction Parts"
+    },
+    "manufacturing": {
+      "materials": [
+        {
+          "quantity": 100,
+          "typeID": 57457
+        },
+        {
+          "quantity": 210,
+          "typeID": 40
+        },
+        {
+          "quantity": 413,
+          "typeID": 39
+        },
+        {
+          "quantity": 750,
+          "typeID": 38
+        },
+        {
+          "quantity": 9000,
+          "typeID": 37
+        },
+        {
+          "quantity": 30000,
+          "typeID": 34
+        },
+        {
+          "quantity": 30000,
+          "typeID": 36
+        },
+        {
+          "quantity": 105000,
+          "typeID": 35
+        }
+      ],
+      "products": [
+        {
+          "quantity": 1,
+          "typeID": 21037
+        }
+      ],
+      "skills": [
+        {
+          "level": 1,
+          "typeID": 22242
+        }
+      ],
+      "time": 16000
+    }
+  },
+  {
+    "blueprintTypeID": 21040,
+    "name": {
+      "zh": "旗舰会战能源阵列",
+      "en": "Capital Siege Array"
+    },
+    "manufacturing": {
+      "materials": [
+        {
+          "quantity": 1,
+          "typeID": 2876
+        },
+        {
+          "quantity": 100,
+          "typeID": 57457
+        },
+        {
+          "quantity": 188,
+          "typeID": 40
+        },
+        {
+          "quantity": 390,
+          "typeID": 39
+        },
+        {
+          "quantity": 750,
+          "typeID": 38
+        },
+        {
+          "quantity": 7500,
+          "typeID": 37
+        },
+        {
+          "quantity": 27750,
+          "typeID": 34
+        },
+        {
+          "quantity": 28500,
+          "typeID": 36
+        },
+        {
+          "quantity": 101250,
+          "typeID": 35
+        }
+      ],
+      "products": [
+        {
+          "quantity": 1,
+          "typeID": 21039
+        }
+      ],
+      "skills": [
+        {
+          "level": 1,
+          "typeID": 22242
+        }
+      ],
+      "time": 16000
+    }
+  },
+  {
+    "blueprintTypeID": 21042,
+    "name": {
+      "zh": "旗舰发射器安装座",
+      "en": "Capital Launcher Hardpoint"
+    },
+    "manufacturing": {
+      "materials": [
+        {
+          "quantity": 1,
+          "typeID": 2876
+        },
+        {
+          "quantity": 100,
+          "typeID": 57457
+        },
+        {
+          "quantity": 188,
+          "typeID": 40
+        },
+        {
+          "quantity": 390,
+          "typeID": 39
+        },
+        {
+          "quantity": 750,
+          "typeID": 38
+        },
+        {
+          "quantity": 7500,
+          "typeID": 37
+        },
+        {
+          "quantity": 27750,
+          "typeID": 34
+        },
+        {
+          "quantity": 28500,
+          "typeID": 36
+        },
+        {
+          "quantity": 101250,
+          "typeID": 35
+        }
+      ],
+      "products": [
+        {
+          "quantity": 1,
+          "typeID": 21041
+        }
+      ],
+      "skills": [
+        {
+          "level": 1,
+          "typeID": 22242
+        }
+      ],
+      "time": 16000
+    }
+  },
+  {
+    "blueprintTypeID": 24546,
+    "name": {
+      "zh": "旗舰跳跃桥接阵列",
+      "en": "Capital Jump Bridge Array"
+    },
+    "manufacturing": {
+      "materials": [
+        {
+          "quantity": 1,
+          "typeID": 2876
+        },
+        {
+          "quantity": 2,
+          "typeID": 2867
+        },
+        {
+          "quantity": 100,
+          "typeID": 57457
+        },
+        {
+          "quantity": 1125,
+          "typeID": 40
+        },
+        {
+          "quantity": 2250,
+          "typeID": 39
+        },
+        {
+          "quantity": 4500,
+          "typeID": 38
+        },
+        {
+          "quantity": 37125,
+          "typeID": 37
+        },
+        {
+          "quantity": 135000,
+          "typeID": 36
+        },
+        {
+          "quantity": 150000,
+          "typeID": 34
+        },
+        {
+          "quantity": 495000,
+          "typeID": 35
+        }
+      ],
+      "products": [
+        {
+          "quantity": 1,
+          "typeID": 24545
+        }
+      ],
+      "skills": [
+        {
+          "level": 1,
+          "typeID": 22242
+        }
+      ],
+      "time": 16000
+    }
+  },
+  {
+    "blueprintTypeID": 24548,
+    "name": {
+      "zh": "旗舰克隆舱",
+      "en": "Capital Clone Vat Bay"
+    },
+    "manufacturing": {
+      "materials": [
+        {
+          "quantity": 2,
+          "typeID": 2868
+        },
+        {
+          "quantity": 2,
+          "typeID": 2875
+        },
+        {
+          "quantity": 100,
+          "typeID": 57457
+        },
+        {
+          "quantity": 488,
+          "typeID": 40
+        },
+        {
+          "quantity": 956,
+          "typeID": 39
+        },
+        {
+          "quantity": 1875,
+          "typeID": 38
+        },
+        {
+          "quantity": 16875,
+          "typeID": 37
+        },
+        {
+          "quantity": 60750,
+          "typeID": 36
+        },
+        {
+          "quantity": 67500,
+          "typeID": 34
+        },
+        {
+          "quantity": 243750,
+          "typeID": 35
+        }
+      ],
+      "products": [
+        {
+          "quantity": 1,
+          "typeID": 24547
+        }
+      ],
+      "skills": [
+        {
+          "level": 1,
+          "typeID": 22242
+        }
+      ],
+      "time": 16000
+    }
+  },
+  {
+    "blueprintTypeID": 24557,
+    "name": {
+      "zh": "旗舰末日武器安装位",
+      "en": "Capital Doomsday Weapon Mount"
+    },
+    "manufacturing": {
+      "materials": [
+        {
+          "quantity": 1,
+          "typeID": 2876
+        },
+        {
+          "quantity": 5,
+          "typeID": 2869
+        },
+        {
+          "quantity": 100,
+          "typeID": 57457
+        },
+        {
+          "quantity": 750,
+          "typeID": 40
+        },
+        {
+          "quantity": 1500,
+          "typeID": 39
+        },
+        {
+          "quantity": 3000,
+          "typeID": 38
+        },
+        {
+          "quantity": 27000,
+          "typeID": 37
+        },
+        {
+          "quantity": 91125,
+          "typeID": 36
+        },
+        {
+          "quantity": 101250,
+          "typeID": 34
+        },
+        {
+          "quantity": 375000,
+          "typeID": 35
+        }
+      ],
+      "products": [
+        {
+          "quantity": 1,
+          "typeID": 24556
+        }
+      ],
+      "skills": [
+        {
+          "level": 1,
+          "typeID": 22242
+        }
+      ],
+      "time": 16000
+    }
+  },
+  {
+    "blueprintTypeID": 24559,
+    "name": {
+      "zh": "旗舰船只维护舱",
+      "en": "Capital Ship Maintenance Bay"
+    },
+    "manufacturing": {
+      "materials": [
+        {
+          "quantity": 1,
+          "typeID": 2868
+        },
+        {
+          "quantity": 100,
+          "typeID": 57457
+        },
+        {
+          "quantity": 375,
+          "typeID": 40
+        },
+        {
+          "quantity": 750,
+          "typeID": 39
+        },
+        {
+          "quantity": 1500,
+          "typeID": 38
+        },
+        {
+          "quantity": 15000,
+          "typeID": 37
+        },
+        {
+          "quantity": 54000,
+          "typeID": 34
+        },
+        {
+          "quantity": 54000,
+          "typeID": 36
+        },
+        {
+          "quantity": 192000,
+          "typeID": 35
+        }
+      ],
+      "products": [
+        {
+          "quantity": 1,
+          "typeID": 24558
+        }
+      ],
+      "skills": [
+        {
+          "level": 1,
+          "typeID": 22242
+        }
+      ],
+      "time": 16000
+    }
+  },
+  {
+    "blueprintTypeID": 24561,
+    "name": {
+      "zh": "旗舰联合机库舱",
+      "en": "Capital Corporate Hangar Bay"
+    },
+    "manufacturing": {
+      "materials": [
+        {
+          "quantity": 100,
+          "typeID": 57457
+        },
+        {
+          "quantity": 398,
+          "typeID": 40
+        },
+        {
+          "quantity": 788,
+          "typeID": 39
+        },
+        {
+          "quantity": 1650,
+          "typeID": 38
+        },
+        {
+          "quantity": 16500,
+          "typeID": 37
+        },
+        {
+          "quantity": 56250,
+          "typeID": 34
+        },
+        {
+          "quantity": 56250,
+          "typeID": 36
+        },
+        {
+          "quantity": 202500,
+          "typeID": 35
+        }
+      ],
+      "products": [
+        {
+          "quantity": 1,
+          "typeID": 24560
+        }
+      ],
+      "skills": [
+        {
+          "level": 1,
+          "typeID": 22242
+        }
+      ],
+      "time": 16000
+    }
+  },
+  {
+    "blueprintTypeID": 53032,
+    "name": {
+      "zh": "旗舰级潮极熵能支架",
+      "en": "Capital Ultratidal Entropic Mounting"
+    },
+    "manufacturing": {
+      "materials": [
+        {
+          "quantity": 1,
+          "typeID": 53289
+        },
+        {
+          "quantity": 2,
+          "typeID": 53288
+        },
+        {
+          "quantity": 7,
+          "typeID": 53290
+        },
+        {
+          "quantity": 90,
+          "typeID": 48112
+        },
+        {
+          "quantity": 180,
+          "typeID": 47975
+        },
+        {
+          "quantity": 290,
+          "typeID": 40
+        },
+        {
+          "quantity": 657,
+          "typeID": 39
+        },
+        {
+          "quantity": 1769,
+          "typeID": 38
+        },
+        {
+          "quantity": 5820,
+          "typeID": 37
+        },
+        {
+          "quantity": 33758,
+          "typeID": 36
+        },
+        {
+          "quantity": 85370,
+          "typeID": 35
+        },
+        {
+          "quantity": 410184,
+          "typeID": 34
+        }
+      ],
+      "products": [
+        {
+          "quantity": 1,
+          "typeID": 53035
+        }
+      ],
+      "skills": [
+        {
+          "level": 1,
+          "typeID": 22242
+        }
+      ],
+      "time": 16000
+    }
+  },
+  {
+    "blueprintTypeID": 53033,
+    "name": {
+      "zh": "旗舰级辐射转化装置",
+      "en": "Capital Radiation Conversion Unit"
+    },
+    "manufacturing": {
+      "materials": [
+        {
+          "quantity": 3,
+          "typeID": 53289
+        },
+        {
+          "quantity": 3,
+          "typeID": 53290
+        },
+        {
+          "quantity": 12,
+          "typeID": 53288
+        },
+        {
+          "quantity": 45,
+          "typeID": 47975
+        },
+        {
+          "quantity": 45,
+          "typeID": 48112
+        },
+        {
+          "quantity": 251,
+          "typeID": 40
+        },
+        {
+          "quantity": 546,
+          "typeID": 39
+        },
+        {
+          "quantity": 1643,
+          "typeID": 38
+        },
+        {
+          "quantity": 5618,
+          "typeID": 37
+        },
+        {
+          "quantity": 34216,
+          "typeID": 36
+        },
+        {
+          "quantity": 82810,
+          "typeID": 35
+        },
+        {
+          "quantity": 382612,
+          "typeID": 34
+        }
+      ],
+      "products": [
+        {
+          "quantity": 1,
+          "typeID": 53036
+        }
+      ],
+      "skills": [
+        {
+          "level": 1,
+          "typeID": 22242
+        }
+      ],
+      "time": 16000
+    }
+  },
+  {
+    "blueprintTypeID": 53034,
+    "name": {
+      "zh": "旗舰级吸收推进器阵列",
+      "en": "Capital Absorption Thruster Array"
+    },
+    "manufacturing": {
+      "materials": [
+        {
+          "quantity": 1,
+          "typeID": 53289
+        },
+        {
+          "quantity": 1,
+          "typeID": 53290
+        },
+        {
+          "quantity": 10,
+          "typeID": 53288
+        },
+        {
+          "quantity": 90,
+          "typeID": 47975
+        },
+        {
+          "quantity": 227,
+          "typeID": 40
+        },
+        {
+          "quantity": 270,
+          "typeID": 48112
+        },
+        {
+          "quantity": 453,
+          "typeID": 39
+        },
+        {
+          "quantity": 1583,
+          "typeID": 38
+        },
+        {
+          "quantity": 5204,
+          "typeID": 37
+        },
+        {
+          "quantity": 31496,
+          "typeID": 36
+        },
+        {
+          "quantity": 82812,
+          "typeID": 35
+        },
+        {
+          "quantity": 342788,
+          "typeID": 34
+        }
+      ],
+      "products": [
+        {
+          "quantity": 1,
+          "typeID": 53037
+        }
+      ],
+      "skills": [
+        {
+          "level": 1,
+          "typeID": 22242
+        }
+      ],
+      "time": 16000
+    }
+  },
+  {
+    "blueprintTypeID": 57524,
+    "name": {
+      "zh": "旗舰级核心温度调节器",
+      "en": "Capital Core Temperature Regulator"
+    },
+    "manufacturing": {
+      "materials": [
+        {
+          "quantity": 20,
+          "typeID": 2868
+        },
+        {
+          "quantity": 20,
+          "typeID": 2872
+        },
+        {
+          "quantity": 35,
+          "typeID": 57479
+        }
+      ],
+      "products": [
+        {
+          "quantity": 1,
+          "typeID": 57487
+        }
+      ],
+      "skills": [
+        {
+          "level": 5,
+          "typeID": 3388
+        },
+        {
+          "level": 5,
+          "typeID": 11443
+        },
+        {
+          "level": 5,
+          "typeID": 11452
+        }
+      ],
+      "time": 16000
+    }
+  },
+  {
+    "blueprintTypeID": 57525,
+    "name": {
+      "zh": "神经链接防护单元",
+      "en": "Neurolink Protection Cell"
+    },
+    "manufacturing": {
+      "materials": [
+        {
+          "quantity": 1,
+          "typeID": 57450
+        },
+        {
+          "quantity": 1,
+          "typeID": 57483
+        },
+        {
+          "quantity": 5,
+          "typeID": 57482
+        },
+        {
+          "quantity": 10,
+          "typeID": 57458
+        },
+        {
+          "quantity": 75,
+          "typeID": 9842
+        },
+        {
+          "quantity": 300,
+          "typeID": 2346
+        }
+      ],
+      "products": [
+        {
+          "quantity": 1,
+          "typeID": 57488
+        }
+      ],
+      "skills": [
+        {
+          "level": 3,
+          "typeID": 11442
+        },
+        {
+          "level": 5,
+          "typeID": 3388
+        }
+      ],
+      "time": 16000
+    }
+  },
+  {
+    "blueprintTypeID": 57526,
+    "name": {
+      "zh": "加强型神经链接防护单元",
+      "en": "Enhanced Neurolink Protection Cell"
+    },
+    "manufacturing": {
+      "materials": [
+        {
+          "quantity": 10,
+          "typeID": 57442
+        },
+        {
+          "quantity": 10,
+          "typeID": 57444
+        },
+        {
+          "quantity": 10,
+          "typeID": 57451
+        },
+        {
+          "quantity": 10,
+          "typeID": 57483
+        },
+        {
+          "quantity": 20,
+          "typeID": 57449
+        },
+        {
+          "quantity": 75,
+          "typeID": 57482
+        },
+        {
+          "quantity": 150,
+          "typeID": 57458
+        },
+        {
+          "quantity": 3000,
+          "typeID": 2346
+        },
+        {
+          "quantity": 15000,
+          "typeID": 9842
+        }
+      ],
+      "products": [
+        {
+          "quantity": 1,
+          "typeID": 57489
+        }
+      ],
+      "skills": [
+        {
+          "level": 5,
+          "typeID": 3388
+        },
+        {
+          "level": 5,
+          "typeID": 11442
+        },
+        {
+          "level": 5,
+          "typeID": 11452
+        },
+        {
+          "level": 5,
+          "typeID": 11453
+        },
+        {
+          "level": 5,
+          "typeID": 11529
+        }
+      ],
+      "time": 32000
+    }
+  }
+]

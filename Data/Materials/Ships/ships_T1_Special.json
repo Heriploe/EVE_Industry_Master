@@ -1,0 +1,222 @@
+[
+  {
+    "id": 17715,
+    "zh": "毒蜥级",
+    "en": "Gila"
+  },
+  {
+    "id": 17718,
+    "zh": "幽灵级",
+    "en": "Phantasm"
+  },
+  {
+    "id": 17720,
+    "zh": "塞纳波级",
+    "en": "Cynabal"
+  },
+  {
+    "id": 17722,
+    "zh": "警惕级",
+    "en": "Vigilant"
+  },
+  {
+    "id": 17736,
+    "zh": "噩梦级",
+    "en": "Nightmare"
+  },
+  {
+    "id": 17738,
+    "zh": "马克瑞级",
+    "en": "Machariel"
+  },
+  {
+    "id": 17740,
+    "zh": "复仇者级",
+    "en": "Vindicator"
+  },
+  {
+    "id": 17918,
+    "zh": "响尾蛇级",
+    "en": "Rattlesnake"
+  },
+  {
+    "id": 17920,
+    "zh": "巴戈龙级",
+    "en": "Bhaalgorn"
+  },
+  {
+    "id": 17922,
+    "zh": "阿什姆级",
+    "en": "Ashimmu"
+  },
+  {
+    "id": 17924,
+    "zh": "魔女级",
+    "en": "Succubus"
+  },
+  {
+    "id": 17926,
+    "zh": "凝血级",
+    "en": "Cruor"
+  },
+  {
+    "id": 17928,
+    "zh": "夜魔侠级",
+    "en": "Daredevil"
+  },
+  {
+    "id": 17930,
+    "zh": "潜龙级",
+    "en": "Worm"
+  },
+  {
+    "id": 17932,
+    "zh": "德拉米尔级",
+    "en": "Dramiel"
+  },
+  {
+    "id": 33468,
+    "zh": "阿斯特罗级",
+    "en": "Astero"
+  },
+  {
+    "id": 33470,
+    "zh": "斯特修斯级",
+    "en": "Stratios"
+  },
+  {
+    "id": 33472,
+    "zh": "涅斯托级",
+    "en": "Nestor"
+  },
+  {
+    "id": 33816,
+    "zh": "加姆级",
+    "en": "Garmur"
+  },
+  {
+    "id": 33818,
+    "zh": "奥苏斯级",
+    "en": "Orthrus"
+  },
+  {
+    "id": 33820,
+    "zh": "巴盖斯级",
+    "en": "Barghest"
+  },
+  {
+    "id": 42685,
+    "zh": "旭日级",
+    "en": "Sunesis"
+  },
+  {
+    "id": 47269,
+    "zh": "达玛维克级",
+    "en": "Damavik"
+  },
+  {
+    "id": 47270,
+    "zh": "维德马克级",
+    "en": "Vedmak"
+  },
+  {
+    "id": 47271,
+    "zh": "勒沙克级",
+    "en": "Leshak"
+  },
+  {
+    "id": 3756,
+    "zh": "灵感级",
+    "en": "Gnosis"
+  },
+  {
+    "id": 47466,
+    "zh": "实践级",
+    "en": "Praxis"
+  },
+  {
+    "id": 49710,
+    "zh": "奇奇莫拉级",
+    "en": "Kikimora"
+  },
+  {
+    "id": 49711,
+    "zh": "德雷卡瓦级",
+    "en": "Drekavac"
+  },
+  {
+    "id": 49712,
+    "zh": "洛迪瓦级",
+    "en": "Rodiva"
+  },
+  {
+    "id": 54731,
+    "zh": "破天级",
+    "en": "Skybreaker"
+  },
+  {
+    "id": 54732,
+    "zh": "唤风级",
+    "en": "Stormbringer"
+  },
+  {
+    "id": 54733,
+    "zh": "雷裔级",
+    "en": "Thunderchild"
+  },
+  {
+    "id": 77114,
+    "zh": "变形级",
+    "en": "Metamorphosis"
+  },
+  {
+    "id": 78333,
+    "zh": "梅库巴尔级",
+    "en": "Mekubal"
+  },
+  {
+    "id": 78366,
+    "zh": "短吻鳄级",
+    "en": "Alligator"
+  },
+  {
+    "id": 78367,
+    "zh": "曼巴级",
+    "en": "Mamba"
+  },
+  {
+    "id": 78369,
+    "zh": "希兹里尔级",
+    "en": "Khizriel"
+  },
+  {
+    "id": 81008,
+    "zh": "狂风级",
+    "en": "Squall"
+  },
+  {
+    "id": 85086,
+    "zh": "纪念碑级",
+    "en": "Cenotaph"
+  },
+  {
+    "id": 85087,
+    "zh": "穹顶级",
+    "en": "Tholos"
+  },
+  {
+    "id": 89607,
+    "zh": "奥德修斯级",
+    "en": "Odysseus"
+  },
+  {
+    "id": 89647,
+    "zh": "开拓者级财团型",
+    "en": "Pioneer Consortium Issue"
+  },
+  {
+    "id": 89648,
+    "zh": "冲锋者级财团型",
+    "en": "Venture Consortium Issue"
+  }
+]

@@ -1,0 +1,202 @@
+[
+  {
+    "id": 29039,
+    "zh": "旗舰级反物质反应堆单元",
+    "en": "Capital Antimatter Reactor Unit"
+  },
+  {
+    "id": 29041,
+    "zh": "旗舰级碳化晶体附甲",
+    "en": "Capital Crystalline Carbonide Armor Plate"
+  },
+  {
+    "id": 29043,
+    "zh": "旗舰级偏阻护盾发射器",
+    "en": "Capital Deflection Shield Emitter"
+  },
+  {
+    "id": 29045,
+    "zh": "旗舰级电解电容器单元",
+    "en": "Capital Electrolytic Capacitor Unit"
+  },
+  {
+    "id": 29047,
+    "zh": "旗舰级电磁脉冲发生器",
+    "en": "Capital EM Pulse Generator"
+  },
+  {
+    "id": 29049,
+    "zh": "旗舰级碳化菲尔金属合成物附甲",
+    "en": "Capital Fernite Carbide Composite Armor Plate"
+  },
+  {
+    "id": 29051,
+    "zh": "旗舰级聚变反应堆机组",
+    "en": "Capital Fusion Reactor Unit"
+  },
+  {
+    "id": 29053,
+    "zh": "旗舰级聚变推进器",
+    "en": "Capital Fusion Thruster"
+  },
+  {
+    "id": 29055,
+    "zh": "旗舰级引力感应器组",
+    "en": "Capital Gravimetric Sensor Cluster"
+  },
+  {
+    "id": 29057,
+    "zh": "旗舰级引力子脉冲发生器",
+    "en": "Capital Graviton Pulse Generator"
+  },
+  {
+    "id": 29059,
+    "zh": "旗舰级引力子反应堆机组",
+    "en": "Capital Graviton Reactor Unit"
+  },
+  {
+    "id": 29061,
+    "zh": "旗舰级离子推进器",
+    "en": "Capital Ion Thruster"
+  },
+  {
+    "id": 29063,
+    "zh": "旗舰级激光器定焦水晶",
+    "en": "Capital Laser Focusing Crystals"
+  },
+  {
+    "id": 29065,
+    "zh": "旗舰级光雷达感应器集群",
+    "en": "Capital Ladar Sensor Cluster"
+  },
+  {
+    "id": 29067,
+    "zh": "旗舰级线性护盾能量发射器",
+    "en": "Capital Linear Shield Emitter"
+  },
+  {
+    "id": 29069,
+    "zh": "旗舰级磁力感应器组",
+    "en": "Capital Magnetometric Sensor Cluster"
+  },
+  {
+    "id": 29071,
+    "zh": "旗舰级磁脉冲推进器",
+    "en": "Capital Magpulse Thruster"
+  },
+  {
+    "id": 29073,
+    "zh": "旗舰级纳米电子微处理器",
+    "en": "Capital Nanoelectrical Microprocessor"
+  },
+  {
+    "id": 29075,
+    "zh": "旗舰级纳米机械微处理器",
+    "en": "Capital Nanomechanical Microprocessor"
+  },
+  {
+    "id": 29077,
+    "zh": "旗舰级核脉冲发生器",
+    "en": "Capital Nuclear Pulse Generator"
+  },
+  {
+    "id": 29079,
+    "zh": "旗舰级核反应堆机组",
+    "en": "Capital Nuclear Reactor Unit"
+  },
+  {
+    "id": 29081,
+    "zh": "旗舰级震荡电容器单元",
+    "en": "Capital Oscillator Capacitor Unit"
+  },
+  {
+    "id": 29083,
+    "zh": "旗舰级粒子加速装置",
+    "en": "Capital Particle Accelerator Unit"
+  },
+  {
+    "id": 29085,
+    "zh": "旗舰级光子微处理器",
+    "en": "Capital Photon Microprocessor"
+  },
+  {
+    "id": 29087,
+    "zh": "旗舰级等离子脉冲发生器",
+    "en": "Capital Plasma Pulse Generator"
+  },
+  {
+    "id": 29089,
+    "zh": "旗舰级等离子推进器",
+    "en": "Capital Plasma Thruster"
+  },
+  {
+    "id": 29091,
+    "zh": "旗舰级脉冲护盾发射器",
+    "en": "Capital Pulse Shield Emitter"
+  },
+  {
+    "id": 29093,
+    "zh": "旗舰级量子微处理器",
+    "en": "Capital Quantum Microprocessor"
+  },
+  {
+    "id": 29095,
+    "zh": "旗舰级雷达感应器组",
+    "en": "Capital Radar Sensor Cluster"
+  },
+  {
+    "id": 29097,
+    "zh": "旗舰级标量电容器单元",
+    "en": "Capital Scalar Capacitor Unit"
+  },
+  {
+    "id": 29099,
+    "zh": "旗舰级超导体轨道",
+    "en": "Capital Superconductor Rails"
+  },
+  {
+    "id": 29101,
+    "zh": "旗舰级恒定护盾发射器",
+    "en": "Capital Sustained Shield Emitter"
+  },
+  {
+    "id": 29103,
+    "zh": "旗舰级超立方电容器单元",
+    "en": "Capital Tesseract Capacitor Unit"
+  },
+  {
+    "id": 29105,
+    "zh": "旗舰级热核反应击发装置",
+    "en": "Capital Thermonuclear Trigger Unit"
+  },
+  {
+    "id": 29107,
+    "zh": "旗舰级迪波特钛合金附甲",
+    "en": "Capital Titanium Diborite Armor Plate"
+  },
+  {
+    "id": 29109,
+    "zh": "旗舰级碳化钨附甲",
+    "en": "Capital Tungsten Carbide Armor Plate"
+  },
+  {
+    "id": 57474,
+    "zh": "雷达超光速链接通信器",
+    "en": "Radar-FTL Interlink Communicator"
+  },
+  {
+    "id": 57475,
+    "zh": "引力超光速链接通信器",
+    "en": "Gravimetric-FTL Interlink Communicator"
+  },
+  {
+    "id": 57476,
+    "zh": "磁力超光速链接通信器",
+    "en": "Magnetometric-FTL Interlink Communicator"
+  },
+  {
+    "id": 57477,
+    "zh": "光雷达超光速链接通信器",
+    "en": "Ladar-FTL Interlink Communicator"
+  }
+]

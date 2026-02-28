@@ -1,0 +1,246 @@
+[
+  {
+    "blueprintTypeID": 4314,
+    "name": {
+      "zh": "氮燃料块",
+      "en": "Nitrogen Fuel Block"
+    },
+    "manufacturing": {
+      "materials": [
+        {
+          "quantity": 1,
+          "typeID": 9848
+        },
+        {
+          "quantity": 4,
+          "typeID": 44
+        },
+        {
+          "quantity": 4,
+          "typeID": 3689
+        },
+        {
+          "quantity": 9,
+          "typeID": 9832
+        },
+        {
+          "quantity": 20,
+          "typeID": 16275
+        },
+        {
+          "quantity": 22,
+          "typeID": 3683
+        },
+        {
+          "quantity": 170,
+          "typeID": 16272
+        },
+        {
+          "quantity": 350,
+          "typeID": 16273
+        },
+        {
+          "quantity": 450,
+          "typeID": 17888
+        }
+      ],
+      "products": [
+        {
+          "quantity": 40,
+          "typeID": 4051
+        }
+      ],
+      "skills": [
+        {
+          "level": 1,
+          "typeID": 3380
+        }
+      ],
+      "time": 900
+    },
+    "reaction": {}
+  },
+  {
+    "blueprintTypeID": 4316,
+    "name": {
+      "zh": "氢燃料块",
+      "en": "Hydrogen Fuel Block"
+    },
+    "manufacturing": {
+      "materials": [
+        {
+          "quantity": 1,
+          "typeID": 9848
+        },
+        {
+          "quantity": 4,
+          "typeID": 44
+        },
+        {
+          "quantity": 4,
+          "typeID": 3689
+        },
+        {
+          "quantity": 9,
+          "typeID": 9832
+        },
+        {
+          "quantity": 20,
+          "typeID": 16275
+        },
+        {
+          "quantity": 22,
+          "typeID": 3683
+        },
+        {
+          "quantity": 170,
+          "typeID": 16272
+        },
+        {
+          "quantity": 350,
+          "typeID": 16273
+        },
+        {
+          "quantity": 450,
+          "typeID": 17889
+        }
+      ],
+      "products": [
+        {
+          "quantity": 40,
+          "typeID": 4246
+        }
+      ],
+      "skills": [
+        {
+          "level": 1,
+          "typeID": 3380
+        }
+      ],
+      "time": 900
+    },
+    "reaction": {}
+  },
+  {
+    "blueprintTypeID": 4315,
+    "name": {
+      "zh": "氦燃料块",
+      "en": "Helium Fuel Block"
+    },
+    "manufacturing": {
+      "materials": [
+        {
+          "quantity": 1,
+          "typeID": 9848
+        },
+        {
+          "quantity": 4,
+          "typeID": 44
+        },
+        {
+          "quantity": 4,
+          "typeID": 3689
+        },
+        {
+          "quantity": 9,
+          "typeID": 9832
+        },
+        {
+          "quantity": 20,
+          "typeID": 16275
+        },
+        {
+          "quantity": 22,
+          "typeID": 3683
+        },
+        {
+          "quantity": 170,
+          "typeID": 16272
+        },
+        {
+          "quantity": 350,
+          "typeID": 16273
+        },
+        {
+          "quantity": 450,
+          "typeID": 16274
+        }
+      ],
+      "products": [
+        {
+          "quantity": 40,
+          "typeID": 4247
+        }
+      ],
+      "skills": [
+        {
+          "level": 1,
+          "typeID": 3380
+        }
+      ],
+      "time": 900
+    },
+    "reaction": {}
+  },
+  {
+    "blueprintTypeID": 4313,
+    "name": {
+      "zh": "氧燃料块",
+      "en": "Oxygen Fuel Block"
+    },
+    "manufacturing": {
+      "materials": [
+        {
+          "quantity": 1,
+          "typeID": 9848
+        },
+        {
+          "quantity": 4,
+          "typeID": 44
+        },
+        {
+          "quantity": 4,
+          "typeID": 3689
+        },
+        {
+          "quantity": 9,
+          "typeID": 9832
+        },
+        {
+          "quantity": 20,
+          "typeID": 16275
+        },
+        {
+          "quantity": 22,
+          "typeID": 3683
+        },
+        {
+          "quantity": 170,
+          "typeID": 16272
+        },
+        {
+          "quantity": 350,
+          "typeID": 16273
+        },
+        {
+          "quantity": 450,
+          "typeID": 17887
+        }
+      ],
+      "products": [
+        {
+          "quantity": 40,
+          "typeID": 4312
+        }
+      ],
+      "skills": [
+        {
+          "level": 1,
+          "typeID": 3380
+        }
+      ],
+      "time": 900
+    },
+    "reaction": {}
+  }
+]

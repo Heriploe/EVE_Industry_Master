@@ -1,0 +1,327 @@
+[
+  {
+    "id": 11530,
+    "zh": "等离子推进器",
+    "en": "Plasma Thruster"
+  },
+  {
+    "id": 11531,
+    "zh": "离子推进器",
+    "en": "Ion Thruster"
+  },
+  {
+    "id": 11532,
+    "zh": "聚变推进器",
+    "en": "Fusion Thruster"
+  },
+  {
+    "id": 11533,
+    "zh": "磁脉冲推进器",
+    "en": "Magpulse Thruster"
+  },
+  {
+    "id": 11534,
+    "zh": "引力感应器组",
+    "en": "Gravimetric Sensor Cluster"
+  },
+  {
+    "id": 11535,
+    "zh": "磁力感应器组",
+    "en": "Magnetometric Sensor Cluster"
+  },
+  {
+    "id": 11536,
+    "zh": "光雷达感应器组",
+    "en": "Ladar Sensor Cluster"
+  },
+  {
+    "id": 11537,
+    "zh": "雷达感应器组",
+    "en": "Radar Sensor Cluster"
+  },
+  {
+    "id": 11538,
+    "zh": "纳米机械微处理器",
+    "en": "Nanomechanical Microprocessor"
+  },
+  {
+    "id": 11539,
+    "zh": "纳米电子微处理器",
+    "en": "Nanoelectrical Microprocessor"
+  },
+  {
+    "id": 11540,
+    "zh": "量子微处理器",
+    "en": "Quantum Microprocessor"
+  },
+  {
+    "id": 11541,
+    "zh": "光子微处理器",
+    "en": "Photon Microprocessor"
+  },
+  {
+    "id": 11542,
+    "zh": "碳化菲尔金属合成物附甲",
+    "en": "Fernite Carbide Composite Armor Plate"
+  },
+  {
+    "id": 11543,
+    "zh": "碳化钨附甲",
+    "en": "Tungsten Carbide Armor Plate"
+  },
+  {
+    "id": 11544,
+    "zh": "迪波特钛合金附甲",
+    "en": "Titanium Diborite Armor Plate"
+  },
+  {
+    "id": 11545,
+    "zh": "碳化晶体附甲",
+    "en": "Crystalline Carbonide Armor Plate"
+  },
+  {
+    "id": 11547,
+    "zh": "聚变反应堆机组",
+    "en": "Fusion Reactor Unit"
+  },
+  {
+    "id": 11548,
+    "zh": "核反应堆机组",
+    "en": "Nuclear Reactor Unit"
+  },
+  {
+    "id": 11549,
+    "zh": "反物质反应堆组件",
+    "en": "Antimatter Reactor Unit"
+  },
+  {
+    "id": 11550,
+    "zh": "引力子反应器机组",
+    "en": "Graviton Reactor Unit"
+  },
+  {
+    "id": 11551,
+    "zh": "电解电容器单元",
+    "en": "Electrolytic Capacitor Unit"
+  },
+  {
+    "id": 11552,
+    "zh": "标量电容器单元",
+    "en": "Scalar Capacitor Unit"
+  },
+  {
+    "id": 11553,
+    "zh": "震荡电容器单元",
+    "en": "Oscillator Capacitor Unit"
+  },
+  {
+    "id": 11554,
+    "zh": "超立方电容器单元",
+    "en": "Tesseract Capacitor Unit"
+  },
+  {
+    "id": 11555,
+    "zh": "偏阻护盾发射器",
+    "en": "Deflection Shield Emitter"
+  },
+  {
+    "id": 11556,
+    "zh": "脉冲护盾发射器",
+    "en": "Pulse Shield Emitter"
+  },
+  {
+    "id": 11557,
+    "zh": "线性护盾能量发射器",
+    "en": "Linear Shield Emitter"
+  },
+  {
+    "id": 11558,
+    "zh": "恒定护盾发射器",
+    "en": "Sustained Shield Emitter"
+  },
+  {
+    "id": 11688,
+    "zh": "粒子加速装置",
+    "en": "Particle Accelerator Unit"
+  },
+  {
+    "id": 11689,
+    "zh": "激光器定焦水晶",
+    "en": "Laser Focusing Crystals"
+  },
+  {
+    "id": 11690,
+    "zh": "超导体轨道",
+    "en": "Superconductor Rails"
+  },
+  {
+    "id": 11691,
+    "zh": "热核反应击发装置",
+    "en": "Thermonuclear Trigger Unit"
+  },
+  {
+    "id": 11692,
+    "zh": "核脉冲发生器",
+    "en": "Nuclear Pulse Generator"
+  },
+  {
+    "id": 11693,
+    "zh": "引力子脉冲发生器",
+    "en": "Graviton Pulse Generator"
+  },
+  {
+    "id": 11694,
+    "zh": "电磁发生器",
+    "en": "EM Pulse Generator"
+  },
+  {
+    "id": 11695,
+    "zh": "等离子脉冲发生器",
+    "en": "Plasma Pulse Generator"
+  },
+  {
+    "id": 33195,
+    "zh": "空间协调装置",
+    "en": "Spatial Attunement Unit"
+  },
+  {
+    "id": 52310,
+    "zh": "辐射吸收推进器",
+    "en": "Radiation Absorption Thruster"
+  },
+  {
+    "id": 52311,
+    "zh": "奇点辐射转化器",
+    "en": "Singularity Radiation Convertor"
+  },
+  {
+    "id": 52312,
+    "zh": "零点力场操纵装置",
+    "en": "Zero-Point Field Manipulator"
+  },
+  {
+    "id": 52313,
+    "zh": "三元态处理器",
+    "en": "Trinary State Processor"
+  },
+  {
+    "id": 52314,
+    "zh": "晶格锁定同位聚合体",
+    "en": "Lattice Locked Dekaisogen"
+  },
+  {
+    "id": 53288,
+    "zh": "旗舰级奇点辐射转化器",
+    "en": "Capital Singularity Radiation Convertor"
+  },
+  {
+    "id": 53289,
+    "zh": "旗舰级零点力场操纵装置",
+    "en": "Capital Zero-Point Field Manipulator"
+  },
+  {
+    "id": 53290,
+    "zh": "旗舰级三元态处理器",
+    "en": "Capital Trinary State Processor"
+  },
+  {
+    "id": 57470,
+    "zh": "U-C触发式神经链接回路",
+    "en": "U-C Trigger Neurolink Conduit"
+  },
+  {
+    "id": 57471,
+    "zh": "R-O触发式神经链接回路",
+    "en": "R-O Trigger Neurolink Conduit"
+  },
+  {
+    "id": 57472,
+    "zh": "S-R触发式神经链接回路",
+    "en": "S-R Trigger Neurolink Conduit"
+  },
+  {
+    "id": 57473,
+    "zh": "G-O触发式神经链接回路",
+    "en": "G-O Trigger Neurolink Conduit"
+  },
+  {
+    "id": 57478,
+    "zh": "自动修复储藏装置密封",
+    "en": "Auto-Integrity Preservation Seal"
+  },
+  {
+    "id": 57479,
+    "zh": "核心温度调节器",
+    "en": "Core Temperature Regulator"
+  },
+  {
+    "id": 57480,
+    "zh": "可编程净化薄膜",
+    "en": "Programmable Purification Membrane"
+  },
+  {
+    "id": 57481,
+    "zh": "基因锁储藏装置",
+    "en": "Genetic Lock Preserver"
+  },
+  {
+    "id": 57482,
+    "zh": "基因保护过滤装置",
+    "en": "Genetic Safeguard Filter"
+  },
+  {
+    "id": 57483,
+    "zh": "神经链接增强器存储装置",
+    "en": "Neurolink Enhancer Reservoir"
+  },
+  {
+    "id": 57484,
+    "zh": "基因结构维修装置",
+    "en": "Genetic Structure Repairer"
+  },
+  {
+    "id": 57485,
+    "zh": "基因突变抑制装置",
+    "en": "Genetic Mutation Inhibitor"
+  },
+  {
+    "id": 57486,
+    "zh": "生命保障备份装置",
+    "en": "Life Support Backup Unit"
+  },
+  {
+    "id": 81063,
+    "zh": "裂变推进器",
+    "en": "Fission Thruster"
+  },
+  {
+    "id": 81064,
+    "zh": "超导引力传感器集群",
+    "en": "Hyperconductive Gravimetric Sensor Cluster"
+  },
+  {
+    "id": 81065,
+    "zh": "机电微处理器",
+    "en": "Electromechanical Microprocessor"
+  },
+  {
+    "id": 81066,
+    "zh": "多彩装甲附甲板",
+    "en": "Metaprismatic Armor Plate"
+  },
+  {
+    "id": 81067,
+    "zh": "斥力护盾发射器",
+    "en": "Repelling Shield Emitter"
+  },
+  {
+    "id": 81068,
+    "zh": "裂变反应堆处理器",
+    "en": "Fission Reactor Unit"
+  },
+  {
+    "id": 81069,
+    "zh": "五面体电容器处理器",
+    "en": "Pentachoron Capacitor Unit"
+  }
+]
