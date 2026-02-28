@@ -162,26 +162,32 @@ def get_authorization_code(redirect_uri, client_id, scope):
         print("自动打开浏览器失败，请手动访问以下链接：")
         print(auth_url)
 
-    if parsed.hostname and parsed.port is not None:
-        server = HTTPServer((parsed.hostname, parsed.port), OAuthCallbackHandler)
-        server.timeout = 180
+    server_port = parsed.port if parsed.port is not None else 80
+    if parsed.hostname:
+        try:
+            server = HTTPServer((parsed.hostname, server_port), OAuthCallbackHandler)
+            server.timeout = 180
 
-        deadline = time.time() + 180
-        while time.time() < deadline and callback_data["code"] is None and callback_data["error"] is None:
-            server.handle_request()
+            if parsed.port is None:
+                print(f"redirect_uri 未指定端口，自动尝试监听默认端口 {server_port}。")
 
-        server.server_close()
+            deadline = time.time() + 180
+            while time.time() < deadline and callback_data["code"] is None and callback_data["error"] is None:
+                server.handle_request()
 
-        if callback_data["error"]:
-            raise RuntimeError(f"认证失败: {callback_data['error']}")
-        if callback_data["state"] != state:
-            raise RuntimeError("state 校验失败")
-        if not callback_data["code"]:
-            raise TimeoutError("等待认证回调超时")
+            server.server_close()
 
-        return callback_data["code"]
+            if callback_data["error"]:
+                raise RuntimeError(f"认证失败: {callback_data['error']}")
+            if callback_data["state"] != state:
+                raise RuntimeError("state 校验失败")
+            if not callback_data["code"]:
+                raise TimeoutError("等待认证回调超时")
 
-    print("redirect_uri 未包含端口，无法自动监听回调。")
+            return callback_data["code"]
+        except OSError as exc:
+            print(f"自动监听回调失败({exc})，将回退手动输入 code。")
+
     print("请在浏览器完成授权后，将回调地址（或 code）粘贴到这里。")
     user_input = input("callback url / code: ")
     code = parse_code_from_callback_input(user_input)
