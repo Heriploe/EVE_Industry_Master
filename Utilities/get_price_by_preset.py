@@ -47,7 +47,7 @@ def main() -> None:
     default_region_id = config.getint("market", "region_id", fallback=DEFAULT_REGION_ID)
     default_request_interval = config.getfloat("market", "request_interval", fallback=DEFAULT_REQUEST_INTERVAL)
 
-    parser = argparse.ArgumentParser(description="按 preset 获取市场价格并缓存到 Cache/Output")
+    parser = argparse.ArgumentParser(description="按 preset 获取市场价格并缓存到 Cache/Market")
     parser.add_argument("preset", help="preset entry 名称")
     parser.add_argument("--region-id", type=int, default=default_region_id, help="市场区域ID")
     parser.add_argument("--request-interval", type=float, default=default_request_interval, help="请求间隔秒")
@@ -56,7 +56,7 @@ def main() -> None:
 
     alias_file = resolve_path(repo_root, config, "materials_alias_json", "Data/Materials/alias.json")
     preset_file = resolve_path(repo_root, config, "materials_preset_json", "Data/Materials/preset.json")
-    cache_dir = resolve_path(repo_root, config, "market_cache_dir", "Cache/Output")
+    cache_dir = resolve_path(repo_root, config, "market_cache_dir", "Cache/Market")
 
     aliases = load_json(alias_file).get("aliases", [])
     presets = load_json(preset_file)
