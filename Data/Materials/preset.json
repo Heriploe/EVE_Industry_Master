@@ -1,0 +1,9 @@
+[
+  {
+    "name": "mineral&element",
+    "children": [
+      "Basic_Materials.mineral",
+      "Basic_Materials.moon_materials"
+    ]
+  }
+]
