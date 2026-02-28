@@ -18,6 +18,15 @@ REPO_ROOT = Path(__file__).resolve().parent
 CONFIG_PATH = REPO_ROOT / "config.ini"
 
 
+def normalize_redirect_uri(raw_uri):
+    uri = (raw_uri or "").strip()
+    if not uri:
+        return "http://localhost:5050/callback"
+    # 兼容中文输入法下的全角冒号，避免 urlparse NFKC 报错
+    uri = uri.replace("：", ":")
+    return uri
+
+
 def normalize_scope(raw_scope):
     scope = urllib.parse.unquote(raw_scope or "").replace("+", " ").strip()
     if scope:
@@ -47,7 +56,7 @@ def load_settings():
     return {
         "client_id": cfg.get("client_id", "").strip(),
         "client_secret": cfg.get("client_secret", "").strip(),
-        "redirect_uri": cfg.get("redirect_uri", "http://localhost/callback").strip(),
+        "redirect_uri": normalize_redirect_uri(cfg.get("redirect_uri", "http://localhost:5050/callback")),
         "scope": normalize_scope(cfg.get("scope", "")),
         "cache_file": REPO_ROOT / cfg.get("token_cache_file", "Cache/Asset/token_cache.json"),
         "output_dir": REPO_ROOT / cfg.get("output_dir", "Asset"),
