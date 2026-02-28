@@ -1,3 +1,21 @@
+
+import configparser
+from pathlib import Path
+
+
+def _resolve_shared_path(config_key, default_rel_path):
+    current_dir = Path(__file__).resolve().parent
+    repo_root = next((p for p in [current_dir, *current_dir.parents] if (p / "config.ini").exists()), current_dir)
+
+    config = configparser.ConfigParser()
+    config.read(repo_root / "config.ini", encoding="utf-8")
+
+    path_value = config.get("paths", config_key, fallback=default_rel_path)
+    candidate = Path(path_value)
+    if not candidate.is_absolute():
+        candidate = repo_root / candidate
+    return str(candidate)
+
 """
 Task Scheduler v7.0 - 任务拆分 + 槽位并行 + 库存优先
 
@@ -45,7 +63,7 @@ BLUEPRINTS_JSON = f"{inventory_Dir}/blueprints.json"
 BLUEPRINTS_MERGED_JSON = f"{data_Dir}/blueprints_merged.json"
 T2_JSON = f"{data_Dir}/T2.json"
 JITA_PRICES_JSON = f"{data_Dir}/jita_prices.json"
-TYPES_JSON = f"{data_Dir}/types.json"
+TYPES_JSON = _resolve_shared_path("types_json", "Data/types.json")
 
 SIMULATION_RESULT_JSON = f"{result_Dir}/simulation_result.json"
 SIMULATION_RESULT_CSV = f"{result_Dir}/simulation_result.csv"

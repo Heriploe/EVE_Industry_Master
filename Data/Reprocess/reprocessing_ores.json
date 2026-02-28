@@ -1970,7 +1970,7 @@
   },
   {
     "id": 75278,
-    "zh": "高密度摩多石（4级）",
+    "zh": "",
     "en": "Compressed Mordunium IV-Grade",
     "materials": [
       {
@@ -2711,7 +2711,7 @@
   },
   {
     "id": 82314,
-    "zh": "高密度赫佐利姆（3级）",
+    "zh": "",
     "en": "Compressed Hezorime III-Grade",
     "materials": [
       {
@@ -2804,6 +2804,2402 @@
       {
         "materialTypeID": 37,
         "quantity": 92
+      }
+    ]
+  },
+  {
+    "id": 29660,
+    "zh": "粗糙的镝汞合金",
+    "en": "Unrefined Dysporite",
+    "materials": [
+      {
+        "materialTypeID": 16646,
+        "quantity": 173
+      },
+      {
+        "materialTypeID": 16668,
+        "quantity": 73
+      }
+    ]
+  },
+  {
+    "id": 29661,
+    "zh": "粗糙的新汞合金",
+    "en": "Unrefined Neo Mercurite",
+    "materials": [
+      {
+        "materialTypeID": 16646,
+        "quantity": 173
+      },
+      {
+        "materialTypeID": 16667,
+        "quantity": 73
+      }
+    ]
+  },
+  {
+    "id": 29662,
+    "zh": "粗糙的稀土钷",
+    "en": "Unrefined Prometium",
+    "materials": [
+      {
+        "materialTypeID": 16643,
+        "quantity": 173
+      },
+      {
+        "materialTypeID": 17960,
+        "quantity": 73
+      }
+    ]
+  },
+  {
+    "id": 29663,
+    "zh": "粗糙的铁磁流体",
+    "en": "Unrefined Ferrofluid",
+    "materials": [
+      {
+        "materialTypeID": 16648,
+        "quantity": 173
+      },
+      {
+        "materialTypeID": 16669,
+        "quantity": 73
+      }
+    ]
+  },
+  {
+    "id": 29664,
+    "zh": "粗糙的超氟化物",
+    "en": "Unrefined Hyperflurite",
+    "materials": [
+      {
+        "materialTypeID": 16642,
+        "quantity": 173
+      },
+      {
+        "materialTypeID": 16666,
+        "quantity": 73
+      }
+    ]
+  },
+  {
+    "id": 32821,
+    "zh": "粗糙的铪化钒",
+    "en": "Unrefined Vanadium Hafnite",
+    "materials": [
+      {
+        "materialTypeID": 16642,
+        "quantity": 164
+      },
+      {
+        "materialTypeID": 17959,
+        "quantity": 36
+      }
+    ]
+  },
+  {
+    "id": 32822,
+    "zh": "粗糙的铂锝合金",
+    "en": "Unrefined Platinum Technite",
+    "materials": [
+      {
+        "materialTypeID": 16644,
+        "quantity": 164
+      },
+      {
+        "materialTypeID": 16662,
+        "quantity": 36
+      }
+    ]
+  },
+  {
+    "id": 32823,
+    "zh": "粗糙的铯铬合金",
+    "en": "Unrefined Solerium",
+    "materials": [
+      {
+        "materialTypeID": 16641,
+        "quantity": 164
+      },
+      {
+        "materialTypeID": 16664,
+        "quantity": 36
+      }
+    ]
+  },
+  {
+    "id": 32824,
+    "zh": "粗糙的镉化铯",
+    "en": "Unrefined Caesarium Cadmide",
+    "materials": [
+      {
+        "materialTypeID": 16643,
+        "quantity": 164
+      },
+      {
+        "materialTypeID": 16663,
+        "quantity": 36
+      }
+    ]
+  },
+  {
+    "id": 32826,
+    "zh": "粗糙的轧制钨合金",
+    "en": "Unrefined Rolled Tungsten Alloy",
+    "materials": [
+      {
+        "materialTypeID": 16637,
+        "quantity": 164
+      },
+      {
+        "materialTypeID": 16657,
+        "quantity": 36
+      }
+    ]
+  },
+  {
+    "id": 32827,
+    "zh": "粗糙的铬化钛",
+    "en": "Unrefined Titanium Chromide",
+    "materials": [
+      {
+        "materialTypeID": 16638,
+        "quantity": 164
+      },
+      {
+        "materialTypeID": 16654,
+        "quantity": 36
+      }
+    ]
+  },
+  {
+    "id": 32828,
+    "zh": "粗糙的菲尔合金",
+    "en": "Unrefined Fernite Alloy",
+    "materials": [
+      {
+        "materialTypeID": 16639,
+        "quantity": 164
+      },
+      {
+        "materialTypeID": 16656,
+        "quantity": 36
+      }
+    ]
+  },
+  {
+    "id": 32829,
+    "zh": "粗糙的微晶合金",
+    "en": "Unrefined Crystallite Alloy",
+    "materials": [
+      {
+        "materialTypeID": 16640,
+        "quantity": 164
+      },
+      {
+        "materialTypeID": 16655,
+        "quantity": 36
+      }
+    ]
+  },
+  {
+    "id": 33017,
+    "zh": "失效的空间站钥匙",
+    "en": "Deactivated Station Key Pass",
+    "materials": [
+      {
+        "materialTypeID": 34,
+        "quantity": 28
+      },
+      {
+        "materialTypeID": 35,
+        "quantity": 16
+      },
+      {
+        "materialTypeID": 36,
+        "quantity": 20
+      },
+      {
+        "materialTypeID": 37,
+        "quantity": 24
+      },
+      {
+        "materialTypeID": 38,
+        "quantity": 17
+      },
+      {
+        "materialTypeID": 39,
+        "quantity": 36
+      },
+      {
+        "materialTypeID": 40,
+        "quantity": 12
+      },
+      {
+        "materialTypeID": 2871,
+        "quantity": 16
+      },
+      {
+        "materialTypeID": 4051,
+        "quantity": 16
+      },
+      {
+        "materialTypeID": 4312,
+        "quantity": 6
+      },
+      {
+        "materialTypeID": 11399,
+        "quantity": 8
+      },
+      {
+        "materialTypeID": 16275,
+        "quantity": 1
+      },
+      {
+        "materialTypeID": 16637,
+        "quantity": 17
+      },
+      {
+        "materialTypeID": 16638,
+        "quantity": 6
+      },
+      {
+        "materialTypeID": 16642,
+        "quantity": 23
+      },
+      {
+        "materialTypeID": 16649,
+        "quantity": 8
+      },
+      {
+        "materialTypeID": 16653,
+        "quantity": 24
+      },
+      {
+        "materialTypeID": 27274,
+        "quantity": 23
+      },
+      {
+        "materialTypeID": 30252,
+        "quantity": 10
+      }
+    ]
+  },
+  {
+    "id": 33338,
+    "zh": "粗糙的钷汞合金",
+    "en": "Unrefined Promethium Mercurite",
+    "materials": [
+      {
+        "materialTypeID": 16646,
+        "quantity": 173
+      },
+      {
+        "materialTypeID": 33337,
+        "quantity": 73
+      }
+    ]
+  },
+  {
+    "id": 33339,
+    "zh": "粗糙的铥铪合金",
+    "en": "Unrefined Thulium Hafnite",
+    "materials": [
+      {
+        "materialTypeID": 16648,
+        "quantity": 173
+      },
+      {
+        "materialTypeID": 33336,
+        "quantity": 73
+      }
+    ]
+  },
+  {
+    "id": 45490,
+    "zh": "沸石",
+    "en": "Zeolites",
+    "materials": [
+      {
+        "materialTypeID": 35,
+        "quantity": 8000
+      },
+      {
+        "materialTypeID": 36,
+        "quantity": 400
+      },
+      {
+        "materialTypeID": 16634,
+        "quantity": 65
+      }
+    ]
+  },
+  {
+    "id": 45491,
+    "zh": "钾盐",
+    "en": "Sylvite",
+    "materials": [
+      {
+        "materialTypeID": 35,
+        "quantity": 4000
+      },
+      {
+        "materialTypeID": 36,
+        "quantity": 400
+      },
+      {
+        "materialTypeID": 16635,
+        "quantity": 65
+      }
+    ]
+  },
+  {
+    "id": 45492,
+    "zh": "沥青",
+    "en": "Bitumens",
+    "materials": [
+      {
+        "materialTypeID": 35,
+        "quantity": 6000
+      },
+      {
+        "materialTypeID": 36,
+        "quantity": 400
+      },
+      {
+        "materialTypeID": 16633,
+        "quantity": 65
+      }
+    ]
+  },
+  {
+    "id": 45493,
+    "zh": "柯石英",
+    "en": "Coesite",
+    "materials": [
+      {
+        "materialTypeID": 35,
+        "quantity": 2000
+      },
+      {
+        "materialTypeID": 36,
+        "quantity": 400
+      },
+      {
+        "materialTypeID": 16636,
+        "quantity": 65
+      }
+    ]
+  },
+  {
+    "id": 45494,
+    "zh": "钴酸盐",
+    "en": "Cobaltite",
+    "materials": [
+      {
+        "materialTypeID": 16640,
+        "quantity": 40
+      }
+    ]
+  },
+  {
+    "id": 45495,
+    "zh": "黑稀金矿",
+    "en": "Euxenite",
+    "materials": [
+      {
+        "materialTypeID": 16639,
+        "quantity": 40
+      }
+    ]
+  },
+  {
+    "id": 45496,
+    "zh": "榍石",
+    "en": "Titanite",
+    "materials": [
+      {
+        "materialTypeID": 16638,
+        "quantity": 40
+      }
+    ]
+  },
+  {
+    "id": 45497,
+    "zh": "白钨矿",
+    "en": "Scheelite",
+    "materials": [
+      {
+        "materialTypeID": 16637,
+        "quantity": 40
+      }
+    ]
+  },
+  {
+    "id": 45498,
+    "zh": "菱镉矿",
+    "en": "Otavite",
+    "materials": [
+      {
+        "materialTypeID": 16634,
+        "quantity": 10
+      },
+      {
+        "materialTypeID": 16643,
+        "quantity": 40
+      }
+    ]
+  },
+  {
+    "id": 45499,
+    "zh": "砷铂矿",
+    "en": "Sperrylite",
+    "materials": [
+      {
+        "materialTypeID": 16635,
+        "quantity": 10
+      },
+      {
+        "materialTypeID": 16644,
+        "quantity": 40
+      }
+    ]
+  },
+  {
+    "id": 45500,
+    "zh": "钒铅矿",
+    "en": "Vanadinite",
+    "materials": [
+      {
+        "materialTypeID": 16636,
+        "quantity": 10
+      },
+      {
+        "materialTypeID": 16642,
+        "quantity": 40
+      }
+    ]
+  },
+  {
+    "id": 45501,
+    "zh": "铬铁矿",
+    "en": "Chromite",
+    "materials": [
+      {
+        "materialTypeID": 16633,
+        "quantity": 10
+      },
+      {
+        "materialTypeID": 16641,
+        "quantity": 40
+      }
+    ]
+  },
+  {
+    "id": 45502,
+    "zh": "钒钾铀矿",
+    "en": "Carnotite",
+    "materials": [
+      {
+        "materialTypeID": 16634,
+        "quantity": 15
+      },
+      {
+        "materialTypeID": 16640,
+        "quantity": 10
+      },
+      {
+        "materialTypeID": 16649,
+        "quantity": 50
+      }
+    ]
+  },
+  {
+    "id": 45503,
+    "zh": "锆石",
+    "en": "Zircon",
+    "materials": [
+      {
+        "materialTypeID": 16636,
+        "quantity": 15
+      },
+      {
+        "materialTypeID": 16638,
+        "quantity": 10
+      },
+      {
+        "materialTypeID": 16648,
+        "quantity": 50
+      }
+    ]
+  },
+  {
+    "id": 45504,
+    "zh": "铯榴石",
+    "en": "Pollucite",
+    "materials": [
+      {
+        "materialTypeID": 16633,
+        "quantity": 15
+      },
+      {
+        "materialTypeID": 16639,
+        "quantity": 10
+      },
+      {
+        "materialTypeID": 16647,
+        "quantity": 50
+      }
+    ]
+  },
+  {
+    "id": 45506,
+    "zh": "朱砂",
+    "en": "Cinnabar",
+    "materials": [
+      {
+        "materialTypeID": 16635,
+        "quantity": 15
+      },
+      {
+        "materialTypeID": 16637,
+        "quantity": 10
+      },
+      {
+        "materialTypeID": 16646,
+        "quantity": 50
+      }
+    ]
+  },
+  {
+    "id": 45510,
+    "zh": "磷钇矿",
+    "en": "Xenotime",
+    "materials": [
+      {
+        "materialTypeID": 16634,
+        "quantity": 20
+      },
+      {
+        "materialTypeID": 16640,
+        "quantity": 20
+      },
+      {
+        "materialTypeID": 16642,
+        "quantity": 10
+      },
+      {
+        "materialTypeID": 16650,
+        "quantity": 22
+      }
+    ]
+  },
+  {
+    "id": 45511,
+    "zh": "独居石",
+    "en": "Monazite",
+    "materials": [
+      {
+        "materialTypeID": 16635,
+        "quantity": 20
+      },
+      {
+        "materialTypeID": 16637,
+        "quantity": 20
+      },
+      {
+        "materialTypeID": 16641,
+        "quantity": 10
+      },
+      {
+        "materialTypeID": 16651,
+        "quantity": 22
+      }
+    ]
+  },
+  {
+    "id": 45512,
+    "zh": "铈铌钙钛矿",
+    "en": "Loparite",
+    "materials": [
+      {
+        "materialTypeID": 16633,
+        "quantity": 20
+      },
+      {
+        "materialTypeID": 16639,
+        "quantity": 20
+      },
+      {
+        "materialTypeID": 16644,
+        "quantity": 10
+      },
+      {
+        "materialTypeID": 16652,
+        "quantity": 22
+      }
+    ]
+  },
+  {
+    "id": 45513,
+    "zh": "硅铍钇矿",
+    "en": "Ytterbite",
+    "materials": [
+      {
+        "materialTypeID": 16636,
+        "quantity": 20
+      },
+      {
+        "materialTypeID": 16638,
+        "quantity": 20
+      },
+      {
+        "materialTypeID": 16643,
+        "quantity": 10
+      },
+      {
+        "materialTypeID": 16653,
+        "quantity": 22
+      }
+    ]
+  },
+  {
+    "id": 46280,
+    "zh": "富沸石",
+    "en": "Brimful Zeolites",
+    "materials": [
+      {
+        "materialTypeID": 35,
+        "quantity": 9200
+      },
+      {
+        "materialTypeID": 36,
+        "quantity": 460
+      },
+      {
+        "materialTypeID": 16634,
+        "quantity": 75
+      }
+    ]
+  },
+  {
+    "id": 46281,
+    "zh": "耀沸石",
+    "en": "Glistening Zeolites",
+    "materials": [
+      {
+        "materialTypeID": 35,
+        "quantity": 16000
+      },
+      {
+        "materialTypeID": 36,
+        "quantity": 800
+      },
+      {
+        "materialTypeID": 16634,
+        "quantity": 130
+      }
+    ]
+  },
+  {
+    "id": 46282,
+    "zh": "富钾盐",
+    "en": "Brimful Sylvite",
+    "materials": [
+      {
+        "materialTypeID": 35,
+        "quantity": 4600
+      },
+      {
+        "materialTypeID": 36,
+        "quantity": 460
+      },
+      {
+        "materialTypeID": 16635,
+        "quantity": 75
+      }
+    ]
+  },
+  {
+    "id": 46283,
+    "zh": "耀钾盐",
+    "en": "Glistening Sylvite",
+    "materials": [
+      {
+        "materialTypeID": 35,
+        "quantity": 8000
+      },
+      {
+        "materialTypeID": 36,
+        "quantity": 800
+      },
+      {
+        "materialTypeID": 16635,
+        "quantity": 130
+      }
+    ]
+  },
+  {
+    "id": 46284,
+    "zh": "富沥青",
+    "en": "Brimful Bitumens",
+    "materials": [
+      {
+        "materialTypeID": 35,
+        "quantity": 6900
+      },
+      {
+        "materialTypeID": 36,
+        "quantity": 460
+      },
+      {
+        "materialTypeID": 16633,
+        "quantity": 75
+      }
+    ]
+  },
+  {
+    "id": 46285,
+    "zh": "耀沥青",
+    "en": "Glistening Bitumens",
+    "materials": [
+      {
+        "materialTypeID": 35,
+        "quantity": 12000
+      },
+      {
+        "materialTypeID": 36,
+        "quantity": 800
+      },
+      {
+        "materialTypeID": 16633,
+        "quantity": 130
+      }
+    ]
+  },
+  {
+    "id": 46286,
+    "zh": "富柯石英",
+    "en": "Brimful Coesite",
+    "materials": [
+      {
+        "materialTypeID": 35,
+        "quantity": 2300
+      },
+      {
+        "materialTypeID": 36,
+        "quantity": 460
+      },
+      {
+        "materialTypeID": 16636,
+        "quantity": 75
+      }
+    ]
+  },
+  {
+    "id": 46287,
+    "zh": "耀柯石英",
+    "en": "Glistening Coesite",
+    "materials": [
+      {
+        "materialTypeID": 35,
+        "quantity": 4000
+      },
+      {
+        "materialTypeID": 36,
+        "quantity": 800
+      },
+      {
+        "materialTypeID": 16636,
+        "quantity": 130
+      }
+    ]
+  },
+  {
+    "id": 46288,
+    "zh": "多钴酸盐",
+    "en": "Copious Cobaltite",
+    "materials": [
+      {
+        "materialTypeID": 16640,
+        "quantity": 46
+      }
+    ]
+  },
+  {
+    "id": 46289,
+    "zh": "荧钴酸盐",
+    "en": "Twinkling Cobaltite",
+    "materials": [
+      {
+        "materialTypeID": 16640,
+        "quantity": 80
+      }
+    ]
+  },
+  {
+    "id": 46290,
+    "zh": "多黑稀金矿",
+    "en": "Copious Euxenite",
+    "materials": [
+      {
+        "materialTypeID": 16639,
+        "quantity": 46
+      }
+    ]
+  },
+  {
+    "id": 46291,
+    "zh": "荧黑稀金矿",
+    "en": "Twinkling Euxenite",
+    "materials": [
+      {
+        "materialTypeID": 16639,
+        "quantity": 80
+      }
+    ]
+  },
+  {
+    "id": 46292,
+    "zh": "多榍石",
+    "en": "Copious Titanite",
+    "materials": [
+      {
+        "materialTypeID": 16638,
+        "quantity": 46
+      }
+    ]
+  },
+  {
+    "id": 46293,
+    "zh": "荧榍石",
+    "en": "Twinkling Titanite",
+    "materials": [
+      {
+        "materialTypeID": 16638,
+        "quantity": 80
+      }
+    ]
+  },
+  {
+    "id": 46294,
+    "zh": "多白钨矿",
+    "en": "Copious Scheelite",
+    "materials": [
+      {
+        "materialTypeID": 16637,
+        "quantity": 46
+      }
+    ]
+  },
+  {
+    "id": 46295,
+    "zh": "荧白钨矿",
+    "en": "Twinkling Scheelite",
+    "materials": [
+      {
+        "materialTypeID": 16637,
+        "quantity": 80
+      }
+    ]
+  },
+  {
+    "id": 46296,
+    "zh": "丰菱镉矿",
+    "en": "Lavish Otavite",
+    "materials": [
+      {
+        "materialTypeID": 16634,
+        "quantity": 12
+      },
+      {
+        "materialTypeID": 16643,
+        "quantity": 46
+      }
+    ]
+  },
+  {
+    "id": 46297,
+    "zh": "闪菱镉矿",
+    "en": "Shimmering Otavite",
+    "materials": [
+      {
+        "materialTypeID": 16634,
+        "quantity": 20
+      },
+      {
+        "materialTypeID": 16643,
+        "quantity": 80
+      }
+    ]
+  },
+  {
+    "id": 46298,
+    "zh": "丰砷铂矿",
+    "en": "Lavish Sperrylite",
+    "materials": [
+      {
+        "materialTypeID": 16635,
+        "quantity": 12
+      },
+      {
+        "materialTypeID": 16644,
+        "quantity": 46
+      }
+    ]
+  },
+  {
+    "id": 46299,
+    "zh": "闪砷铂矿",
+    "en": "Shimmering Sperrylite",
+    "materials": [
+      {
+        "materialTypeID": 16635,
+        "quantity": 20
+      },
+      {
+        "materialTypeID": 16644,
+        "quantity": 80
+      }
+    ]
+  },
+  {
+    "id": 46300,
+    "zh": "丰钒铅矿",
+    "en": "Lavish Vanadinite",
+    "materials": [
+      {
+        "materialTypeID": 16636,
+        "quantity": 12
+      },
+      {
+        "materialTypeID": 16642,
+        "quantity": 46
+      }
+    ]
+  },
+  {
+    "id": 46301,
+    "zh": "闪钒铅矿",
+    "en": "Shimmering Vanadinite",
+    "materials": [
+      {
+        "materialTypeID": 16636,
+        "quantity": 20
+      },
+      {
+        "materialTypeID": 16642,
+        "quantity": 80
+      }
+    ]
+  },
+  {
+    "id": 46302,
+    "zh": "丰铬铁矿",
+    "en": "Lavish Chromite",
+    "materials": [
+      {
+        "materialTypeID": 16633,
+        "quantity": 12
+      },
+      {
+        "materialTypeID": 16641,
+        "quantity": 46
+      }
+    ]
+  },
+  {
+    "id": 46303,
+    "zh": "闪铬铁矿",
+    "en": "Shimmering Chromite",
+    "materials": [
+      {
+        "materialTypeID": 16633,
+        "quantity": 20
+      },
+      {
+        "materialTypeID": 16641,
+        "quantity": 80
+      }
+    ]
+  },
+  {
+    "id": 46304,
+    "zh": "盈钒钾铀矿",
+    "en": "Replete Carnotite",
+    "materials": [
+      {
+        "materialTypeID": 16634,
+        "quantity": 17
+      },
+      {
+        "materialTypeID": 16640,
+        "quantity": 12
+      },
+      {
+        "materialTypeID": 16649,
+        "quantity": 58
+      }
+    ]
+  },
+  {
+    "id": 46305,
+    "zh": "灼钒钾铀矿",
+    "en": "Glowing Carnotite",
+    "materials": [
+      {
+        "materialTypeID": 16634,
+        "quantity": 30
+      },
+      {
+        "materialTypeID": 16640,
+        "quantity": 20
+      },
+      {
+        "materialTypeID": 16649,
+        "quantity": 100
+      }
+    ]
+  },
+  {
+    "id": 46306,
+    "zh": "盈锆石",
+    "en": "Replete Zircon",
+    "materials": [
+      {
+        "materialTypeID": 16636,
+        "quantity": 17
+      },
+      {
+        "materialTypeID": 16638,
+        "quantity": 12
+      },
+      {
+        "materialTypeID": 16648,
+        "quantity": 58
+      }
+    ]
+  },
+  {
+    "id": 46307,
+    "zh": "灼锆石",
+    "en": "Glowing Zircon",
+    "materials": [
+      {
+        "materialTypeID": 16636,
+        "quantity": 30
+      },
+      {
+        "materialTypeID": 16638,
+        "quantity": 20
+      },
+      {
+        "materialTypeID": 16648,
+        "quantity": 100
+      }
+    ]
+  },
+  {
+    "id": 46308,
+    "zh": "盈铯榴石",
+    "en": "Replete Pollucite",
+    "materials": [
+      {
+        "materialTypeID": 16633,
+        "quantity": 17
+      },
+      {
+        "materialTypeID": 16639,
+        "quantity": 12
+      },
+      {
+        "materialTypeID": 16647,
+        "quantity": 58
+      }
+    ]
+  },
+  {
+    "id": 46309,
+    "zh": "灼铯榴石",
+    "en": "Glowing Pollucite",
+    "materials": [
+      {
+        "materialTypeID": 16633,
+        "quantity": 30
+      },
+      {
+        "materialTypeID": 16639,
+        "quantity": 20
+      },
+      {
+        "materialTypeID": 16647,
+        "quantity": 100
+      }
+    ]
+  },
+  {
+    "id": 46310,
+    "zh": "盈朱砂",
+    "en": "Replete Cinnabar",
+    "materials": [
+      {
+        "materialTypeID": 16635,
+        "quantity": 17
+      },
+      {
+        "materialTypeID": 16637,
+        "quantity": 12
+      },
+      {
+        "materialTypeID": 16646,
+        "quantity": 58
+      }
+    ]
+  },
+  {
+    "id": 46311,
+    "zh": "灼朱砂",
+    "en": "Glowing Cinnabar",
+    "materials": [
+      {
+        "materialTypeID": 16635,
+        "quantity": 30
+      },
+      {
+        "materialTypeID": 16637,
+        "quantity": 20
+      },
+      {
+        "materialTypeID": 16646,
+        "quantity": 100
+      }
+    ]
+  },
+  {
+    "id": 46312,
+    "zh": "裕磷钇矿",
+    "en": "Bountiful Xenotime",
+    "materials": [
+      {
+        "materialTypeID": 16634,
+        "quantity": 23
+      },
+      {
+        "materialTypeID": 16640,
+        "quantity": 23
+      },
+      {
+        "materialTypeID": 16642,
+        "quantity": 12
+      },
+      {
+        "materialTypeID": 16650,
+        "quantity": 25
+      }
+    ]
+  },
+  {
+    "id": 46313,
+    "zh": "辉磷钇矿",
+    "en": "Shining Xenotime",
+    "materials": [
+      {
+        "materialTypeID": 16634,
+        "quantity": 40
+      },
+      {
+        "materialTypeID": 16640,
+        "quantity": 40
+      },
+      {
+        "materialTypeID": 16642,
+        "quantity": 20
+      },
+      {
+        "materialTypeID": 16650,
+        "quantity": 44
+      }
+    ]
+  },
+  {
+    "id": 46314,
+    "zh": "裕独居石",
+    "en": "Bountiful Monazite",
+    "materials": [
+      {
+        "materialTypeID": 16635,
+        "quantity": 23
+      },
+      {
+        "materialTypeID": 16637,
+        "quantity": 23
+      },
+      {
+        "materialTypeID": 16641,
+        "quantity": 12
+      },
+      {
+        "materialTypeID": 16651,
+        "quantity": 25
+      }
+    ]
+  },
+  {
+    "id": 46315,
+    "zh": "辉独居石",
+    "en": "Shining Monazite",
+    "materials": [
+      {
+        "materialTypeID": 16635,
+        "quantity": 40
+      },
+      {
+        "materialTypeID": 16637,
+        "quantity": 40
+      },
+      {
+        "materialTypeID": 16641,
+        "quantity": 20
+      },
+      {
+        "materialTypeID": 16651,
+        "quantity": 44
+      }
+    ]
+  },
+  {
+    "id": 46316,
+    "zh": "裕铈铌钙钛矿",
+    "en": "Bountiful Loparite",
+    "materials": [
+      {
+        "materialTypeID": 16633,
+        "quantity": 23
+      },
+      {
+        "materialTypeID": 16639,
+        "quantity": 23
+      },
+      {
+        "materialTypeID": 16644,
+        "quantity": 12
+      },
+      {
+        "materialTypeID": 16652,
+        "quantity": 25
+      }
+    ]
+  },
+  {
+    "id": 46317,
+    "zh": "辉铈铌钙钛矿",
+    "en": "Shining Loparite",
+    "materials": [
+      {
+        "materialTypeID": 16633,
+        "quantity": 40
+      },
+      {
+        "materialTypeID": 16639,
+        "quantity": 40
+      },
+      {
+        "materialTypeID": 16644,
+        "quantity": 20
+      },
+      {
+        "materialTypeID": 16652,
+        "quantity": 44
+      }
+    ]
+  },
+  {
+    "id": 46318,
+    "zh": "裕硅铍钇矿",
+    "en": "Bountiful Ytterbite",
+    "materials": [
+      {
+        "materialTypeID": 16636,
+        "quantity": 23
+      },
+      {
+        "materialTypeID": 16638,
+        "quantity": 23
+      },
+      {
+        "materialTypeID": 16643,
+        "quantity": 12
+      },
+      {
+        "materialTypeID": 16653,
+        "quantity": 25
+      }
+    ]
+  },
+  {
+    "id": 46319,
+    "zh": "辉硅铍钇矿",
+    "en": "Shining Ytterbite",
+    "materials": [
+      {
+        "materialTypeID": 16636,
+        "quantity": 40
+      },
+      {
+        "materialTypeID": 16638,
+        "quantity": 40
+      },
+      {
+        "materialTypeID": 16643,
+        "quantity": 20
+      },
+      {
+        "materialTypeID": 16653,
+        "quantity": 44
+      }
+    ]
+  },
+  {
+    "id": 62454,
+    "zh": "高密度沥青",
+    "en": "Compressed Bitumens",
+    "materials": [
+      {
+        "materialTypeID": 35,
+        "quantity": 6000
+      },
+      {
+        "materialTypeID": 36,
+        "quantity": 400
+      },
+      {
+        "materialTypeID": 16633,
+        "quantity": 65
+      }
+    ]
+  },
+  {
+    "id": 62455,
+    "zh": "高密度富沥青",
+    "en": "Compressed Brimful Bitumens",
+    "materials": [
+      {
+        "materialTypeID": 35,
+        "quantity": 6900
+      },
+      {
+        "materialTypeID": 36,
+        "quantity": 460
+      },
+      {
+        "materialTypeID": 16633,
+        "quantity": 75
+      }
+    ]
+  },
+  {
+    "id": 62456,
+    "zh": "高密度耀沥青",
+    "en": "Compressed Glistening Bitumens",
+    "materials": [
+      {
+        "materialTypeID": 35,
+        "quantity": 12000
+      },
+      {
+        "materialTypeID": 36,
+        "quantity": 800
+      },
+      {
+        "materialTypeID": 16633,
+        "quantity": 130
+      }
+    ]
+  },
+  {
+    "id": 62457,
+    "zh": "高密度柯石英",
+    "en": "Compressed Coesite",
+    "materials": [
+      {
+        "materialTypeID": 35,
+        "quantity": 2000
+      },
+      {
+        "materialTypeID": 36,
+        "quantity": 400
+      },
+      {
+        "materialTypeID": 16636,
+        "quantity": 65
+      }
+    ]
+  },
+  {
+    "id": 62458,
+    "zh": "高密度富柯石英",
+    "en": "Compressed Brimful Coesite",
+    "materials": [
+      {
+        "materialTypeID": 35,
+        "quantity": 2300
+      },
+      {
+        "materialTypeID": 36,
+        "quantity": 460
+      },
+      {
+        "materialTypeID": 16636,
+        "quantity": 75
+      }
+    ]
+  },
+  {
+    "id": 62459,
+    "zh": "高密度耀柯石英",
+    "en": "Compressed Glistening Coesite",
+    "materials": [
+      {
+        "materialTypeID": 35,
+        "quantity": 4000
+      },
+      {
+        "materialTypeID": 36,
+        "quantity": 800
+      },
+      {
+        "materialTypeID": 16636,
+        "quantity": 130
+      }
+    ]
+  },
+  {
+    "id": 62460,
+    "zh": "高密度钾盐",
+    "en": "Compressed Sylvite",
+    "materials": [
+      {
+        "materialTypeID": 35,
+        "quantity": 4000
+      },
+      {
+        "materialTypeID": 36,
+        "quantity": 400
+      },
+      {
+        "materialTypeID": 16635,
+        "quantity": 65
+      }
+    ]
+  },
+  {
+    "id": 62461,
+    "zh": "高密度富钾盐",
+    "en": "Compressed Brimful Sylvite",
+    "materials": [
+      {
+        "materialTypeID": 35,
+        "quantity": 4600
+      },
+      {
+        "materialTypeID": 36,
+        "quantity": 460
+      },
+      {
+        "materialTypeID": 16635,
+        "quantity": 75
+      }
+    ]
+  },
+  {
+    "id": 62463,
+    "zh": "高密度沸石",
+    "en": "Compressed Zeolites",
+    "materials": [
+      {
+        "materialTypeID": 35,
+        "quantity": 8000
+      },
+      {
+        "materialTypeID": 36,
+        "quantity": 400
+      },
+      {
+        "materialTypeID": 16634,
+        "quantity": 65
+      }
+    ]
+  },
+  {
+    "id": 62464,
+    "zh": "高密度富沸石",
+    "en": "Compressed Brimful Zeolites",
+    "materials": [
+      {
+        "materialTypeID": 35,
+        "quantity": 9200
+      },
+      {
+        "materialTypeID": 36,
+        "quantity": 460
+      },
+      {
+        "materialTypeID": 16634,
+        "quantity": 75
+      }
+    ]
+  },
+  {
+    "id": 62466,
+    "zh": "高密度耀钾盐",
+    "en": "Compressed Glistening Sylvite",
+    "materials": [
+      {
+        "materialTypeID": 35,
+        "quantity": 8000
+      },
+      {
+        "materialTypeID": 36,
+        "quantity": 800
+      },
+      {
+        "materialTypeID": 16635,
+        "quantity": 130
+      }
+    ]
+  },
+  {
+    "id": 62467,
+    "zh": "高密度耀沸石",
+    "en": "Compressed Glistening Zeolites",
+    "materials": [
+      {
+        "materialTypeID": 35,
+        "quantity": 16000
+      },
+      {
+        "materialTypeID": 36,
+        "quantity": 800
+      },
+      {
+        "materialTypeID": 16634,
+        "quantity": 130
+      }
+    ]
+  },
+  {
+    "id": 62468,
+    "zh": "高密度白钨矿",
+    "en": "Compressed Scheelite",
+    "materials": [
+      {
+        "materialTypeID": 16637,
+        "quantity": 40
+      }
+    ]
+  },
+  {
+    "id": 62469,
+    "zh": "高密度多白钨矿",
+    "en": "Compressed Copious Scheelite",
+    "materials": [
+      {
+        "materialTypeID": 16637,
+        "quantity": 46
+      }
+    ]
+  },
+  {
+    "id": 62470,
+    "zh": "高密度荧白钨矿",
+    "en": "Compressed Twinkling Scheelite",
+    "materials": [
+      {
+        "materialTypeID": 16637,
+        "quantity": 80
+      }
+    ]
+  },
+  {
+    "id": 62471,
+    "zh": "高密度黑稀金矿",
+    "en": "Compressed Euxenite",
+    "materials": [
+      {
+        "materialTypeID": 16639,
+        "quantity": 40
+      }
+    ]
+  },
+  {
+    "id": 62472,
+    "zh": "高密度多黑稀金矿",
+    "en": "Compressed Copious Euxenite",
+    "materials": [
+      {
+        "materialTypeID": 16639,
+        "quantity": 46
+      }
+    ]
+  },
+  {
+    "id": 62473,
+    "zh": "高密度荧黑稀金矿",
+    "en": "Compressed Twinkling Euxenite",
+    "materials": [
+      {
+        "materialTypeID": 16639,
+        "quantity": 80
+      }
+    ]
+  },
+  {
+    "id": 62474,
+    "zh": "高密度钴酸盐",
+    "en": "Compressed Cobaltite",
+    "materials": [
+      {
+        "materialTypeID": 16640,
+        "quantity": 40
+      }
+    ]
+  },
+  {
+    "id": 62475,
+    "zh": "高密度多钴酸盐",
+    "en": "Compressed Copious Cobaltite",
+    "materials": [
+      {
+        "materialTypeID": 16640,
+        "quantity": 46
+      }
+    ]
+  },
+  {
+    "id": 62476,
+    "zh": "高密度荧钴酸盐",
+    "en": "Compressed Twinkling Cobaltite",
+    "materials": [
+      {
+        "materialTypeID": 16640,
+        "quantity": 80
+      }
+    ]
+  },
+  {
+    "id": 62477,
+    "zh": "高密度榍石",
+    "en": "Compressed Titanite",
+    "materials": [
+      {
+        "materialTypeID": 16638,
+        "quantity": 40
+      }
+    ]
+  },
+  {
+    "id": 62478,
+    "zh": "高密度多榍石",
+    "en": "Compressed Copious Titanite",
+    "materials": [
+      {
+        "materialTypeID": 16638,
+        "quantity": 46
+      }
+    ]
+  },
+  {
+    "id": 62479,
+    "zh": "高密度荧榍石",
+    "en": "Compressed Twinkling Titanite",
+    "materials": [
+      {
+        "materialTypeID": 16638,
+        "quantity": 80
+      }
+    ]
+  },
+  {
+    "id": 62480,
+    "zh": "高密度铬铁矿",
+    "en": "Compressed Chromite",
+    "materials": [
+      {
+        "materialTypeID": 16633,
+        "quantity": 10
+      },
+      {
+        "materialTypeID": 16641,
+        "quantity": 40
+      }
+    ]
+  },
+  {
+    "id": 62481,
+    "zh": "高密度丰铬铁矿",
+    "en": "Compressed Lavish Chromite",
+    "materials": [
+      {
+        "materialTypeID": 16633,
+        "quantity": 12
+      },
+      {
+        "materialTypeID": 16641,
+        "quantity": 46
+      }
+    ]
+  },
+  {
+    "id": 62482,
+    "zh": "高密度闪铬铁矿",
+    "en": "Compressed Shimmering Chromite",
+    "materials": [
+      {
+        "materialTypeID": 16633,
+        "quantity": 20
+      },
+      {
+        "materialTypeID": 16641,
+        "quantity": 80
+      }
+    ]
+  },
+  {
+    "id": 62483,
+    "zh": "高密度菱镉矿",
+    "en": "Compressed Otavite",
+    "materials": [
+      {
+        "materialTypeID": 16634,
+        "quantity": 10
+      },
+      {
+        "materialTypeID": 16643,
+        "quantity": 40
+      }
+    ]
+  },
+  {
+    "id": 62484,
+    "zh": "高密度丰菱镉矿",
+    "en": "Compressed Lavish Otavite",
+    "materials": [
+      {
+        "materialTypeID": 16634,
+        "quantity": 12
+      },
+      {
+        "materialTypeID": 16643,
+        "quantity": 46
+      }
+    ]
+  },
+  {
+    "id": 62485,
+    "zh": "高密度闪菱镉矿",
+    "en": "Compressed Shimmering Otavite",
+    "materials": [
+      {
+        "materialTypeID": 16634,
+        "quantity": 20
+      },
+      {
+        "materialTypeID": 16643,
+        "quantity": 80
+      }
+    ]
+  },
+  {
+    "id": 62486,
+    "zh": "高密度砷铂矿",
+    "en": "Compressed Sperrylite",
+    "materials": [
+      {
+        "materialTypeID": 16635,
+        "quantity": 10
+      },
+      {
+        "materialTypeID": 16644,
+        "quantity": 40
+      }
+    ]
+  },
+  {
+    "id": 62487,
+    "zh": "高密度丰砷铂矿",
+    "en": "Compressed Lavish Sperrylite",
+    "materials": [
+      {
+        "materialTypeID": 16635,
+        "quantity": 12
+      },
+      {
+        "materialTypeID": 16644,
+        "quantity": 46
+      }
+    ]
+  },
+  {
+    "id": 62488,
+    "zh": "高密度闪砷铂矿",
+    "en": "Compressed Shimmering Sperrylite",
+    "materials": [
+      {
+        "materialTypeID": 16635,
+        "quantity": 20
+      },
+      {
+        "materialTypeID": 16644,
+        "quantity": 80
+      }
+    ]
+  },
+  {
+    "id": 62489,
+    "zh": "高密度钒铅矿",
+    "en": "Compressed Vanadinite",
+    "materials": [
+      {
+        "materialTypeID": 16636,
+        "quantity": 10
+      },
+      {
+        "materialTypeID": 16642,
+        "quantity": 40
+      }
+    ]
+  },
+  {
+    "id": 62490,
+    "zh": "高密度丰钒铅矿",
+    "en": "Compressed Lavish Vanadinite",
+    "materials": [
+      {
+        "materialTypeID": 16636,
+        "quantity": 12
+      },
+      {
+        "materialTypeID": 16642,
+        "quantity": 46
+      }
+    ]
+  },
+  {
+    "id": 62491,
+    "zh": "高密度闪钒铅矿",
+    "en": "Compressed Shimmering Vanadinite",
+    "materials": [
+      {
+        "materialTypeID": 16636,
+        "quantity": 20
+      },
+      {
+        "materialTypeID": 16642,
+        "quantity": 80
+      }
+    ]
+  },
+  {
+    "id": 62492,
+    "zh": "高密度钒钾铀矿",
+    "en": "Compressed Carnotite",
+    "materials": [
+      {
+        "materialTypeID": 16634,
+        "quantity": 15
+      },
+      {
+        "materialTypeID": 16640,
+        "quantity": 10
+      },
+      {
+        "materialTypeID": 16649,
+        "quantity": 50
+      }
+    ]
+  },
+  {
+    "id": 62493,
+    "zh": "压缩盈钒钾铀矿",
+    "en": "Compressed Replete Carnotite",
+    "materials": [
+      {
+        "materialTypeID": 16634,
+        "quantity": 17
+      },
+      {
+        "materialTypeID": 16640,
+        "quantity": 12
+      },
+      {
+        "materialTypeID": 16649,
+        "quantity": 58
+      }
+    ]
+  },
+  {
+    "id": 62494,
+    "zh": "高密度灼钒钾铀矿",
+    "en": "Compressed Glowing Carnotite",
+    "materials": [
+      {
+        "materialTypeID": 16634,
+        "quantity": 30
+      },
+      {
+        "materialTypeID": 16640,
+        "quantity": 20
+      },
+      {
+        "materialTypeID": 16649,
+        "quantity": 100
+      }
+    ]
+  },
+  {
+    "id": 62495,
+    "zh": "高密度朱砂",
+    "en": "Compressed Cinnabar",
+    "materials": [
+      {
+        "materialTypeID": 16635,
+        "quantity": 15
+      },
+      {
+        "materialTypeID": 16637,
+        "quantity": 10
+      },
+      {
+        "materialTypeID": 16646,
+        "quantity": 50
+      }
+    ]
+  },
+  {
+    "id": 62496,
+    "zh": "高密度盈朱砂",
+    "en": "Compressed Replete Cinnabar",
+    "materials": [
+      {
+        "materialTypeID": 16635,
+        "quantity": 17
+      },
+      {
+        "materialTypeID": 16637,
+        "quantity": 12
+      },
+      {
+        "materialTypeID": 16646,
+        "quantity": 58
+      }
+    ]
+  },
+  {
+    "id": 62497,
+    "zh": "高密度灼朱砂",
+    "en": "Compressed Glowing Cinnabar",
+    "materials": [
+      {
+        "materialTypeID": 16635,
+        "quantity": 30
+      },
+      {
+        "materialTypeID": 16637,
+        "quantity": 20
+      },
+      {
+        "materialTypeID": 16646,
+        "quantity": 100
+      }
+    ]
+  },
+  {
+    "id": 62498,
+    "zh": "高密度铯榴石",
+    "en": "Compressed Pollucite",
+    "materials": [
+      {
+        "materialTypeID": 16633,
+        "quantity": 15
+      },
+      {
+        "materialTypeID": 16639,
+        "quantity": 10
+      },
+      {
+        "materialTypeID": 16647,
+        "quantity": 50
+      }
+    ]
+  },
+  {
+    "id": 62499,
+    "zh": "高密度盈铯榴石",
+    "en": "Compressed Replete Pollucite",
+    "materials": [
+      {
+        "materialTypeID": 16633,
+        "quantity": 17
+      },
+      {
+        "materialTypeID": 16639,
+        "quantity": 12
+      },
+      {
+        "materialTypeID": 16647,
+        "quantity": 58
+      }
+    ]
+  },
+  {
+    "id": 62500,
+    "zh": "高密度灼铯榴石",
+    "en": "Compressed Glowing Pollucite",
+    "materials": [
+      {
+        "materialTypeID": 16633,
+        "quantity": 30
+      },
+      {
+        "materialTypeID": 16639,
+        "quantity": 20
+      },
+      {
+        "materialTypeID": 16647,
+        "quantity": 100
+      }
+    ]
+  },
+  {
+    "id": 62501,
+    "zh": "高密度锆石",
+    "en": "Compressed Zircon",
+    "materials": [
+      {
+        "materialTypeID": 16636,
+        "quantity": 15
+      },
+      {
+        "materialTypeID": 16638,
+        "quantity": 10
+      },
+      {
+        "materialTypeID": 16648,
+        "quantity": 50
+      }
+    ]
+  },
+  {
+    "id": 62502,
+    "zh": "高密度盈锆石",
+    "en": "Compressed Replete Zircon",
+    "materials": [
+      {
+        "materialTypeID": 16636,
+        "quantity": 17
+      },
+      {
+        "materialTypeID": 16638,
+        "quantity": 12
+      },
+      {
+        "materialTypeID": 16648,
+        "quantity": 58
+      }
+    ]
+  },
+  {
+    "id": 62503,
+    "zh": "高密度灼锆石",
+    "en": "Compressed Glowing Zircon",
+    "materials": [
+      {
+        "materialTypeID": 16636,
+        "quantity": 30
+      },
+      {
+        "materialTypeID": 16638,
+        "quantity": 20
+      },
+      {
+        "materialTypeID": 16648,
+        "quantity": 100
+      }
+    ]
+  },
+  {
+    "id": 62504,
+    "zh": "高密度铈铌钙钛矿",
+    "en": "Compressed Loparite",
+    "materials": [
+      {
+        "materialTypeID": 16633,
+        "quantity": 20
+      },
+      {
+        "materialTypeID": 16639,
+        "quantity": 20
+      },
+      {
+        "materialTypeID": 16644,
+        "quantity": 10
+      },
+      {
+        "materialTypeID": 16652,
+        "quantity": 22
+      }
+    ]
+  },
+  {
+    "id": 62505,
+    "zh": "高密度裕铈铌钙钛矿",
+    "en": "Compressed Bountiful Loparite",
+    "materials": [
+      {
+        "materialTypeID": 16633,
+        "quantity": 23
+      },
+      {
+        "materialTypeID": 16639,
+        "quantity": 23
+      },
+      {
+        "materialTypeID": 16644,
+        "quantity": 12
+      },
+      {
+        "materialTypeID": 16652,
+        "quantity": 25
+      }
+    ]
+  },
+  {
+    "id": 62506,
+    "zh": "高密度辉铈铌钙钛矿",
+    "en": "Compressed Shining Loparite",
+    "materials": [
+      {
+        "materialTypeID": 16633,
+        "quantity": 40
+      },
+      {
+        "materialTypeID": 16639,
+        "quantity": 40
+      },
+      {
+        "materialTypeID": 16644,
+        "quantity": 20
+      },
+      {
+        "materialTypeID": 16652,
+        "quantity": 44
+      }
+    ]
+  },
+  {
+    "id": 62507,
+    "zh": "高密度独居石",
+    "en": "Compressed Monazite",
+    "materials": [
+      {
+        "materialTypeID": 16635,
+        "quantity": 20
+      },
+      {
+        "materialTypeID": 16637,
+        "quantity": 20
+      },
+      {
+        "materialTypeID": 16641,
+        "quantity": 10
+      },
+      {
+        "materialTypeID": 16651,
+        "quantity": 22
+      }
+    ]
+  },
+  {
+    "id": 62508,
+    "zh": "高密度裕独居石",
+    "en": "Compressed Bountiful Monazite",
+    "materials": [
+      {
+        "materialTypeID": 16635,
+        "quantity": 23
+      },
+      {
+        "materialTypeID": 16637,
+        "quantity": 23
+      },
+      {
+        "materialTypeID": 16641,
+        "quantity": 12
+      },
+      {
+        "materialTypeID": 16651,
+        "quantity": 25
+      }
+    ]
+  },
+  {
+    "id": 62509,
+    "zh": "高密度辉独居石",
+    "en": "Compressed Shining Monazite",
+    "materials": [
+      {
+        "materialTypeID": 16635,
+        "quantity": 40
+      },
+      {
+        "materialTypeID": 16637,
+        "quantity": 40
+      },
+      {
+        "materialTypeID": 16641,
+        "quantity": 20
+      },
+      {
+        "materialTypeID": 16651,
+        "quantity": 44
+      }
+    ]
+  },
+  {
+    "id": 62510,
+    "zh": "高密度磷钇矿",
+    "en": "Compressed Xenotime",
+    "materials": [
+      {
+        "materialTypeID": 16634,
+        "quantity": 20
+      },
+      {
+        "materialTypeID": 16640,
+        "quantity": 20
+      },
+      {
+        "materialTypeID": 16642,
+        "quantity": 10
+      },
+      {
+        "materialTypeID": 16650,
+        "quantity": 22
+      }
+    ]
+  },
+  {
+    "id": 62511,
+    "zh": "高密度裕磷钇矿",
+    "en": "Compressed Bountiful Xenotime",
+    "materials": [
+      {
+        "materialTypeID": 16634,
+        "quantity": 23
+      },
+      {
+        "materialTypeID": 16640,
+        "quantity": 23
+      },
+      {
+        "materialTypeID": 16642,
+        "quantity": 12
+      },
+      {
+        "materialTypeID": 16650,
+        "quantity": 25
+      }
+    ]
+  },
+  {
+    "id": 62512,
+    "zh": "高密度辉磷钇矿",
+    "en": "Compressed Shining Xenotime",
+    "materials": [
+      {
+        "materialTypeID": 16634,
+        "quantity": 40
+      },
+      {
+        "materialTypeID": 16640,
+        "quantity": 40
+      },
+      {
+        "materialTypeID": 16642,
+        "quantity": 20
+      },
+      {
+        "materialTypeID": 16650,
+        "quantity": 44
+      }
+    ]
+  },
+  {
+    "id": 62513,
+    "zh": "高密度硅铍钇矿",
+    "en": "Compressed Ytterbite",
+    "materials": [
+      {
+        "materialTypeID": 16636,
+        "quantity": 20
+      },
+      {
+        "materialTypeID": 16638,
+        "quantity": 20
+      },
+      {
+        "materialTypeID": 16643,
+        "quantity": 10
+      },
+      {
+        "materialTypeID": 16653,
+        "quantity": 22
+      }
+    ]
+  },
+  {
+    "id": 62514,
+    "zh": "高密度裕硅铍钇矿",
+    "en": "Compressed Bountiful Ytterbite",
+    "materials": [
+      {
+        "materialTypeID": 16636,
+        "quantity": 23
+      },
+      {
+        "materialTypeID": 16638,
+        "quantity": 23
+      },
+      {
+        "materialTypeID": 16643,
+        "quantity": 12
+      },
+      {
+        "materialTypeID": 16653,
+        "quantity": 25
+      }
+    ]
+  },
+  {
+    "id": 62515,
+    "zh": "高密度辉硅铍钇矿",
+    "en": "Compressed Shining Ytterbite",
+    "materials": [
+      {
+        "materialTypeID": 16636,
+        "quantity": 40
+      },
+      {
+        "materialTypeID": 16638,
+        "quantity": 40
+      },
+      {
+        "materialTypeID": 16643,
+        "quantity": 20
+      },
+      {
+        "materialTypeID": 16653,
+        "quantity": 44
       }
     ]
   }
