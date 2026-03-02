@@ -299,8 +299,8 @@ def invention_T2_runs(
     decryptor_modifier_csv_path=None,
     base_success_rate=0.34,
     base_runs=1,
-    base_me=0,
-    base_te=0,
+    base_me=2,
+    base_te=4,
     invention_skill_modifier=None,
 ):
     """
