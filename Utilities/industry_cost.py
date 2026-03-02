@@ -170,7 +170,7 @@ def get_activity_cost(blueprint_id, runs, activity, invention_product_id=None, b
     """
     计算活动总花费：
       EIV = get_base_cost(...)
-      JCB = 0.02 * EIV
+      JCB = EIV (manufacturing) 或 0.02 * EIV (其他活动)
       单流程费用 = JCB * system_modifier * (1 - facility_reduction) * (1 - rig_reduction) + 0.04 * JCB
       总费用 = 单流程费用 * runs
     """
@@ -186,7 +186,10 @@ def get_activity_cost(blueprint_id, runs, activity, invention_product_id=None, b
         t2_t1_json_path=t2_t1_json_path,
     )
 
-    jcb = 0.02 * eiv
+    if activity == "manufacturing":
+        jcb = eiv
+    else:
+        jcb = 0.02 * eiv
 
     config = _load_industry_cost_config()
     modifiers = _get_activity_modifiers(activity, config)
