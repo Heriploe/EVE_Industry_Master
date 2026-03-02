@@ -87,6 +87,30 @@ FINAL_INVENTORY_JSON = output_dir / "final_inventory.json"
 with open(INVENTORY_JSON, "r", encoding="utf-8") as f:
     raw_inventory = json.load(f)
 
+def _parse_inventory_entry(item):
+    if isinstance(item, dict):
+        tid = item.get("type_id")
+        if tid is None:
+            tid = item.get("typeID")
+        if tid is None:
+            tid = item.get("id")
+
+        qty = item.get("quantity")
+        if qty is None:
+            qty = item.get("qty")
+        if qty is None:
+            qty = item.get("count")
+
+        if tid is None or qty is None:
+            return None, None
+        return int(tid), qty
+
+    if isinstance(item, (list, tuple)) and len(item) >= 2:
+        return int(item[0]), item[1]
+
+    return None, None
+
+
 inventory = {}
 if isinstance(raw_inventory, dict):
     # 字典格式也可能有重复，需要累加
@@ -95,14 +119,10 @@ if isinstance(raw_inventory, dict):
         inventory[tid] = inventory.get(tid, 0) + v
 elif isinstance(raw_inventory, list):
     for item in raw_inventory:
-        if isinstance(item, dict):
-            tid = int(item["type_id"])
-            qty = item["quantity"]
-            inventory[tid] = inventory.get(tid, 0) + qty
-        else:
-            tid = int(item[0])
-            qty = item[1]
-            inventory[tid] = inventory.get(tid, 0) + qty
+        tid, qty = _parse_inventory_entry(item)
+        if tid is None:
+            continue
+        inventory[tid] = inventory.get(tid, 0) + qty
 
 blueprints = _merge_blueprints_by_preset(BLUEPRINTS_ALIAS_JSON, BLUEPRINTS_PRESET_JSON, BLUEPRINTS_PRESET)
 
