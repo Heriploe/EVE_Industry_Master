@@ -2,8 +2,6 @@ import configparser
 import json
 from pathlib import Path
 
-
-
 REPO_ROOT = next(
     (p for p in [Path(__file__).resolve().parent, *Path(__file__).resolve().parent.parents] if (p / "config.ini").exists()),
     Path(__file__).resolve().parent,
@@ -34,17 +32,30 @@ def _load_blueprints(blueprints_yaml_path=None):
     if path.suffix.lower() == ".json":
         with open(path, "r", encoding="utf-8") as f:
             blueprint_list = json.load(f)
-        return {int(item["blueprintTypeID"]): {"activities": {k: v for k, v in item.items() if k in {"manufacturing", "reaction", "copying", "invention"}}} for item in blueprint_list if "blueprintTypeID" in item}
+        return {
+            int(item["blueprintTypeID"]): {
+                "activities": {k: v for k, v in item.items() if k in {"manufacturing", "reaction", "copying", "invention"}}
+            }
+            for item in blueprint_list
+            if "blueprintTypeID" in item
+        }
 
     try:
         import yaml
+
         with open(path, "r", encoding="utf-8") as f:
             return yaml.safe_load(f)
     except ModuleNotFoundError:
         fallback_path = REPO_ROOT / "Optimized Calculator/Source/blueprints_merged.json"
         with open(fallback_path, "r", encoding="utf-8") as f:
             blueprint_list = json.load(f)
-        return {int(item["blueprintTypeID"]): {"activities": {k: v for k, v in item.items() if k in {"manufacturing", "reaction", "copying", "invention"}}} for item in blueprint_list if "blueprintTypeID" in item}
+        return {
+            int(item["blueprintTypeID"]): {
+                "activities": {k: v for k, v in item.items() if k in {"manufacturing", "reaction", "copying", "invention"}}
+            }
+            for item in blueprint_list
+            if "blueprintTypeID" in item
+        }
 
 
 def _load_t2_t1_pairs(t2_t1_json_path=None):
@@ -54,8 +65,16 @@ def _load_t2_t1_pairs(t2_t1_json_path=None):
     return [(int(pair[0]), int(pair[1])) for pair in pairs if isinstance(pair, list) and len(pair) >= 2]
 
 
-def get_T2_from_T1(t1_blueprint_id, t2_t1_json_path=None):
-    """通过 T2_T1.json 将 T1 蓝图ID映射到 T2 蓝图ID。"""
+def get_T1_from_T2(t2_blueprint_id, t2_t1_json_path=None):
+    """通过 T2_T1.json 将 T2 蓝图ID映射到 T1 蓝图ID。"""
+    t2_blueprint_id = int(t2_blueprint_id)
+    for t2_id, t1_blueprint_id in _load_t2_t1_pairs(t2_t1_json_path=t2_t1_json_path):
+        if t2_id == t2_blueprint_id:
+            return t1_blueprint_id
+    return None
+
+
+def _get_t2_from_t1(t1_blueprint_id, t2_t1_json_path=None):
     t1_blueprint_id = int(t1_blueprint_id)
     for t2_blueprint_id, t1_id in _load_t2_t1_pairs(t2_t1_json_path=t2_t1_json_path):
         if t1_id == t1_blueprint_id:
@@ -103,7 +122,7 @@ def get_base_cost(blueprint_id, activity, invention_product_id=None, blueprints_
             t2_blueprint_id = _find_blueprint_by_product_id(invention_product_id, blueprints)
 
         if t2_blueprint_id is None:
-            t2_blueprint_id = get_T2_from_T1(blueprint_id, t2_t1_json_path=t2_t1_json_path)
+            t2_blueprint_id = _get_t2_from_t1(blueprint_id, t2_t1_json_path=t2_t1_json_path)
 
         if t2_blueprint_id is None:
             raise ValueError(f"无法根据 invention_product_id={invention_product_id} 或 T2_T1 映射找到 T2 蓝图")
@@ -120,9 +139,9 @@ def get_base_cost(blueprint_id, activity, invention_product_id=None, blueprints_
         return 0.0
 
     eiv = 0.0
-    for m in materials:
-        type_id = int(m["typeID"])
-        quantity = float(m.get("quantity", 0))
+    for material in materials:
+        type_id = int(material["typeID"])
+        quantity = float(material.get("quantity", 0))
         base_price = types_map.get(type_id, {}).get("basePrice")
         base_price = float(base_price) if isinstance(base_price, (int, float)) else 0.0
         eiv += base_price * quantity
