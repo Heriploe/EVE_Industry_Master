@@ -42,7 +42,7 @@
     ]
   },
   {
-    "name": "moudles_all",
+    "name": "modules_all",
     "children": [
       "Modules.modules_T1_blueprints",
       "Modules.modules_T2_blueprints"
@@ -51,6 +51,15 @@
   {
     "name": "Rigs_all",
     "children": [
+      "Rigs.rigs_T1_blueprints",
+      "Rigs.rigs_T2_blueprints"
+    ]
+  },
+  {
+    "name": "items_to_sell",
+    "children": [
+      "Ships.ships_T2_blueprints",
+      "Modules.modules_T2_blueprints",
       "Rigs.rigs_T1_blueprints",
       "Rigs.rigs_T2_blueprints"
     ]

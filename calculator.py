@@ -99,16 +99,16 @@ TYPES_JSON = _resolve_path(config, "paths", "types_json", "Data/types.json")
 TYPES_VOLUME_JSON = _resolve_path(config, "calculator", "types_volume_json", str(TYPES_JSON))
 BLUEPRINTS_ALIAS_JSON = _resolve_path(config, "paths", "blueprints_alias_json", "Data/Blueprints/alias.json")
 BLUEPRINTS_PRESET_JSON = _resolve_path(config, "paths", "blueprints_preset_json", "Data/Blueprints/preset.json")
-BLUEPRINTS_PRESET = config.get("calculator", "blueprints_preset", fallback="all")
+BLUEPRINTS_PRESET = config.get("calculator", "blueprints_preset", fallback="items_to_sell")
 MATERIALS_ALIAS_JSON = _resolve_path(config, "paths", "materials_alias_json", "Data/Materials/alias.json")
 MATERIALS_PRESET_JSON = _resolve_path(config, "paths", "materials_preset_json", "Data/Materials/preset.json")
 
 SHIPS_PRESET = config.get("calculator", "ships_preset", fallback="ships_all")
-MOUDLES_PRESET = config.get("calculator", "moudles_preset", fallback="moudles_all")
+MODULES_PRESET = config.get("calculator", "modules_preset", fallback=config.get("calculator", "moudles_preset", fallback="modules_all"))
 RIGS_PRESET = config.get("calculator", "rigs_preset", fallback="Rigs_all")
 MATERIALS_PRESET = config.get("calculator", "materials_preset", fallback="basic")
 SHIP_PROFIT_FACTOR = config.getfloat("calculator", "ship_profit_factor", fallback=1.0)
-MOUDLE_PROFIT_FACTOR = config.getfloat("calculator", "moudle_profit_factor", fallback=1.0)
+MODULE_PROFIT_FACTOR = config.getfloat("calculator", "module_profit_factor", fallback=config.getfloat("calculator", "moudle_profit_factor", fallback=1.0))
 RIG_PROFIT_FACTOR = config.getfloat("calculator", "rig_profit_factor", fallback=1.0)
 MATERIAL_COST_FACTOR = config.getfloat("calculator", "material_cost_factor", fallback=1.0)
 
@@ -182,7 +182,7 @@ item_volumes = {int(item["id"]): (item.get("volume") or 0) for item in types_vol
 
 # ------------------ 读取各类 preset ------------------
 ship_ids = _load_ids_from_preset(BLUEPRINTS_ALIAS_JSON, BLUEPRINTS_PRESET_JSON, SHIPS_PRESET)
-moudle_product_ids = _load_ids_from_preset(BLUEPRINTS_ALIAS_JSON, BLUEPRINTS_PRESET_JSON, MOUDLES_PRESET)
+module_product_ids = _load_ids_from_preset(BLUEPRINTS_ALIAS_JSON, BLUEPRINTS_PRESET_JSON, MODULES_PRESET)
 rig_product_ids = _load_ids_from_preset(BLUEPRINTS_ALIAS_JSON, BLUEPRINTS_PRESET_JSON, RIGS_PRESET)
 basic_material_ids = _load_ids_from_preset(MATERIALS_ALIAS_JSON, MATERIALS_PRESET_JSON, MATERIALS_PRESET)
 
@@ -212,8 +212,8 @@ def get_product_profit_factor(product_type_id):
     tid = int(product_type_id)
     if tid in ship_ids:
         return SHIP_PROFIT_FACTOR
-    if tid in moudle_product_ids:
-        return MOUDLE_PROFIT_FACTOR
+    if tid in module_product_ids:
+        return MODULE_PROFIT_FACTOR
     if tid in rig_product_ids:
         return RIG_PROFIT_FACTOR
     return 1.0
