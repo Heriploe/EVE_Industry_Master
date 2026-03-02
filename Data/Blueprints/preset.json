@@ -1,0 +1,29 @@
+[
+  {
+    "name": "all",
+    "children": [
+      "Components.components_Capital_Advanced_blueprints",
+      "Components.components_Capital_blueprints",
+      "Components.components_T2_blueprints",
+      "Components.components_T3_blueprints",
+      "Modules.modules_T1_blueprints",
+      "Modules.modules_T2_blueprints",
+      "Reactions.complex_reaction_blueprints",
+      "Reactions.polymer_reaction_blueprints",
+      "Reactions.simple_reaction_blueprints",
+      "Rigs.rigs_T1_blueprints",
+      "Rigs.rigs_T2_blueprints",
+      "Ships.ships_Capital_T1_Navy_Issue_blueprints",
+      "Ships.ships_Capital_T1_Special_blueprints",
+      "Ships.ships_Capital_T1_blueprints",
+      "Ships.ships_Capital_T2_blueprints",
+      "Ships.ships_T1_Navy_Issue_blueprints",
+      "Ships.ships_T1_Special_blueprints",
+      "Ships.ships_T1_blueprints",
+      "Ships.ships_T2_Special_blueprints",
+      "Ships.ships_T2_blueprints",
+      "Ships.ships_T3_blueprints",
+      "Blueprints.fuel_blocks_blueprint"
+    ]
+  }
+]
