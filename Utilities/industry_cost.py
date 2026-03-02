@@ -258,3 +258,76 @@ def get_activity_cost(
         + 0.04 * jcb
     )
     return per_run_cost * runs
+
+
+def _load_decryptor_modifiers(decryptor_modifier_csv_path=None):
+    path = (
+        Path(decryptor_modifier_csv_path)
+        if decryptor_modifier_csv_path
+        else REPO_ROOT / "Data/decryptor_modifier.csv"
+    )
+
+    modifiers = {}
+    with open(path, "r", encoding="utf-8") as f:
+        header = f.readline()
+        for line in f:
+            line = line.strip()
+            if not line:
+                continue
+            cols = line.split()
+            if len(cols) < 5:
+                continue
+
+            decryptor_id = int(cols[0])
+            probability_multiplier = float(cols[1])
+            max_run_modifier = int(cols[2].replace("+", ""))
+            me_modifier = int(cols[3].replace("+", ""))
+            te_modifier = int(cols[4].replace("+", ""))
+
+            modifiers[decryptor_id] = {
+                "probability_multiplier": probability_multiplier,
+                "max_run_modifier": max_run_modifier,
+                "me_modifier": me_modifier,
+                "te_modifier": te_modifier,
+            }
+
+    return modifiers
+
+
+def invention_T2_runs(
+    decryptor_id=None,
+    decryptor_modifier_csv_path=None,
+    base_success_rate=0.34,
+    base_runs=1,
+    base_me=0,
+    base_te=0,
+):
+    """
+    计算产出 1 单位 T2 蓝图所需的平均发明流程数，以及产出蓝图的 ME/TE。
+
+    公式：
+      modified_success_rate = base_success_rate * probability_multiplier
+      modified_runs = base_runs + max_run_modifier
+      required_invention_runs = 1 / modified_success_rate / modified_runs
+
+    若 decryptor_id 为空或不在 decryptor_modifier.csv 中，则按无修正处理。
+    """
+    modifiers = _load_decryptor_modifiers(decryptor_modifier_csv_path=decryptor_modifier_csv_path)
+    decryptor = modifiers.get(int(decryptor_id), {}) if decryptor_id is not None else {}
+
+    probability_multiplier = float(decryptor.get("probability_multiplier", 1.0))
+    max_run_modifier = int(decryptor.get("max_run_modifier", 0))
+    me_modifier = int(decryptor.get("me_modifier", 0))
+    te_modifier = int(decryptor.get("te_modifier", 0))
+
+    modified_success_rate = float(base_success_rate) * probability_multiplier
+    modified_runs = float(base_runs) + max_run_modifier
+
+    if modified_success_rate <= 0 or modified_runs <= 0:
+        raise ValueError("修正后的成功率和流程数必须大于 0")
+
+    required_invention_runs = 1.0 / modified_success_rate / modified_runs
+    me = int(base_me) + me_modifier
+    te = int(base_te) + te_modifier
+
+    return required_invention_runs, me, te
