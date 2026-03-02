@@ -13,54 +13,75 @@ if str(REPO_ROOT) not in sys.path:
 from Utilities.name_mapping import get_name as resolve_name, load_types_map
 
 
-def _resolve_shared_path(config_key, default_rel_path):
-    current_dir = Path(__file__).resolve().parent
-    repo_root = next((p for p in [current_dir, *current_dir.parents] if (p / "config.ini").exists()), current_dir)
-
-    config = configparser.ConfigParser()
-    config.read(repo_root / "config.ini", encoding="utf-8")
-
-    path_value = config.get("paths", config_key, fallback=default_rel_path)
-    candidate = Path(path_value)
+def _resolve_path(config, section, key, fallback):
+    value = config.get(section, key, fallback=fallback)
+    candidate = Path(value)
     if not candidate.is_absolute():
-        candidate = repo_root / candidate
-    return str(candidate)
+        candidate = REPO_ROOT / candidate
+    return candidate
 
 
-# ================== 模式 ==================
-data_Dir = "Source"
-result_Dir = "Results"
+def _merge_blueprints_by_preset(alias_file: Path, preset_file: Path, preset_name: str):
+    with alias_file.open("r", encoding="utf-8") as f:
+        aliases = json.load(f).get("aliases", [])
+    with preset_file.open("r", encoding="utf-8") as f:
+        presets = json.load(f)
+
+    alias_map = {item["alias"]: item["path"] for item in aliases}
+    preset = next((item for item in presets if item.get("name") == preset_name), None)
+    if preset is None:
+        raise ValueError(f"未找到蓝图 preset: {preset_name}")
+
+    merged = []
+    for child_alias in preset.get("children", []):
+        rel = alias_map.get(child_alias)
+        if not rel:
+            raise ValueError(f"蓝图 alias 不存在: {child_alias}")
+        with (REPO_ROOT / rel).open("r", encoding="utf-8") as f:
+            child_data = json.load(f)
+            if isinstance(child_data, list):
+                merged.extend(child_data)
+    return merged
+
+
+config = configparser.ConfigParser()
+config.read(REPO_ROOT / "config.ini", encoding="utf-8")
+
+input_dir = _resolve_path(config, "calculator", "input_dir", "Cache/Input")
+output_dir = _resolve_path(config, "calculator", "output_dir", "Cache/Output")
+output_dir.mkdir(parents=True, exist_ok=True)
 
 # ================== 全局参数 ==================
 BUDGET = 200_000_000  # 可调整
 ALPHA = 1  # 流动性权重参数
 MAX_PROD_FACTOR = 1  # 单产物最大生产量占市场交易量比例
 ME = 0.125
-
-FARE_JITA = 500
-FARE_VOF = 150
-
-# 新增：最终产物种类惩罚系数（越大越倾向于减少产物种类）
-PRODUCT_DIVERSITY_PENALTY = 0 # 可根据实际利润规模调整
-
-# 新增：VOS蓝图过滤开关
-FILTER_VOS_BLUEPRINTS = True  # True=启用过滤，False=不过滤
+if config.has_section("calculator"):
+    BUDGET = config.getint("calculator", "budget", fallback=BUDGET)
+    ALPHA = config.getfloat("calculator", "alpha", fallback=ALPHA)
+    MAX_PROD_FACTOR = config.getfloat("calculator", "max_prod_factor", fallback=MAX_PROD_FACTOR)
+    ME = config.getfloat("calculator", "me", fallback=ME)
+    PRODUCT_DIVERSITY_PENALTY = config.getfloat("calculator", "product_diversity_penalty", fallback=0)
+    FARE_JITA = config.getfloat("calculator", "fare_jita", fallback=500)
+else:
+    PRODUCT_DIVERSITY_PENALTY = 0
+    FARE_JITA = 500
 
 # ================== 文件 ==================
-INVENTORY_JSON = f"Inventory/materials.json"
-INVENTORY_BLUEPRINTS_JSON = "Inventory/blueprints.json"
-BLUEPRINTS_JSON = f"{data_Dir}/blueprints_merged.json"
-JITA_PRICES_JSON = f"{data_Dir}/jita_prices.json"
-VOS_PRICES_JSON = f"{data_Dir}/vos_prices.json"
-TRADE_VOS_JSON = f"{data_Dir}/trade_vos.json"
-TYPES_JSON = _resolve_shared_path("types_json", "Data/types.json")
-TYPES_VOLUME_JSON = f"{data_Dir}/types_volume.json"
-SHIPS_JSON = f"{data_Dir}/ships.json"
-T2_JSON = f"{data_Dir}/T2.json"
+INVENTORY_JSON = _resolve_path(config, "calculator", "inventory_json", "Cache/Asset/Corp/final_non_blueprints.json")
+JITA_PRICES_JSON = _resolve_path(config, "calculator", "jita_prices_json", "Cache/Input/jita_prices.json")
+TYPES_JSON = _resolve_path(config, "paths", "types_json", "Data/types.json")
+TYPES_VOLUME_JSON = _resolve_path(config, "calculator", "types_volume_json", "Cache/Input/types_volume.json")
+SHIPS_JSON = _resolve_path(config, "calculator", "ships_json", "Cache/Input/ships.json")
+BLUEPRINTS_ALIAS_JSON = _resolve_path(config, "paths", "blueprints_alias_json", "Data/Blueprints/alias.json")
+BLUEPRINTS_PRESET_JSON = _resolve_path(config, "paths", "blueprints_preset_json", "Data/Blueprints/preset.json")
+BLUEPRINTS_PRESET = config.get("calculator", "blueprints_preset", fallback="all")
 
-PURCHASE_CSV = f"{result_Dir}/purchase_list.csv"
-EXECUTION_CSV = f"{result_Dir}/execution_list.csv"
-FINAL_PRODUCTS_CSV = f"{result_Dir}/final_products.csv"
+PURCHASE_CSV = output_dir / "purchase_list.csv"
+EXECUTION_CSV = output_dir / "execution_list.csv"
+FINAL_PRODUCTS_CSV = output_dir / "final_products.csv"
+INITIAL_INVENTORY_JSON = output_dir / "initial_inventory.json"
+FINAL_INVENTORY_JSON = output_dir / "final_inventory.json"
 
 # ------------------ 读取数据 ------------------
 with open(INVENTORY_JSON, "r", encoding="utf-8") as f:
@@ -83,10 +104,9 @@ elif isinstance(raw_inventory, list):
             qty = item[1]
             inventory[tid] = inventory.get(tid, 0) + qty
 
-with open(BLUEPRINTS_JSON, "r", encoding="utf-8") as f:
-    blueprints = json.load(f)
+blueprints = _merge_blueprints_by_preset(BLUEPRINTS_ALIAS_JSON, BLUEPRINTS_PRESET_JSON, BLUEPRINTS_PRESET)
 
-with open(JITA_PRICES_JSON, "r", encoding="utf-8") as f:
+with JITA_PRICES_JSON.open("r", encoding="utf-8") as f:
     jita_prices_raw = json.load(f)
 jita_prices = {}
 for k, v in jita_prices_raw.items():
@@ -95,62 +115,22 @@ for k, v in jita_prices_raw.items():
         "volume": v["jita"].get("volume", 0) if isinstance(v.get("volume", 0), (int, float)) else 0
     }
 
-with open(VOS_PRICES_JSON, "r", encoding="utf-8") as f:
-    vos_prices_raw = json.load(f)
-vos_prices = {}
-for k, v in vos_prices_raw.items():
-    vos_prices[int(k)] = {
-        "buy": v["vos"].get("buy") if isinstance(v["vos"].get("buy"), (int, float)) else 0,
-        "volume": v["vos"].get("volume", 0) if isinstance(v.get("volume", 0), (int, float)) else 0
-    }
-
-# ------------------ 读取 trade_vos.json ------------------
-with open(TRADE_VOS_JSON, "r", encoding="utf-8") as f:
-    trade_vos_list = json.load(f)
-
-# 创建VOS交易物品ID的集合（用于快速查找）
-vos_trade_ids = {int(item["id"]) for item in trade_vos_list}
-
 # ------------------ 读取 types.json ------------------
 types_map = load_types_map(TYPES_JSON)
 
 # ------------------ 读取 types_volume.json ------------------
-with open(TYPES_VOLUME_JSON, "r", encoding="utf-8") as f:
+with TYPES_VOLUME_JSON.open("r", encoding="utf-8") as f:
     types_volume_list = json.load(f)
 
 # 创建物品ID到体积的映射
 item_volumes = {int(item["id"]): item["volume"] for item in types_volume_list}
 
 # ------------------ 读取 ships.json ------------------
-with open(SHIPS_JSON, "r", encoding="utf-8") as f:
+with SHIPS_JSON.open("r", encoding="utf-8") as f:
     ships_list = json.load(f)
 
 # 创建船只ID的集合（用于体积除以10的判断）
 ship_ids = {int(item["id"]) for item in ships_list}
-
-# ------------------ 读取 T2.json ------------------
-with open(T2_JSON, "r", encoding="utf-8") as f:
-    t2_pairs = json.load(f)
-
-# 创建T1到T2的映射字典
-t2_to_t1 = {}
-for pair in t2_pairs:
-    if len(pair) == 2:
-        t1_bp_id = int(pair[0])
-        t2_bp_id = int(pair[1])
-        t2_to_t1[t1_bp_id] = t2_bp_id
-
-# ------------------ 读取 Inventory/blueprints.json ------------------
-with open(INVENTORY_BLUEPRINTS_JSON, "r", encoding="utf-8") as f:
-    inventory_blueprints_list = json.load(f)
-
-# 创建蓝图ID到is_blueprint_copy的映射
-blueprint_copy_status = {}
-for bp in inventory_blueprints_list:
-    bp_id = int(bp.get("type_id"))
-    is_copy = bp.get("is_blueprint_copy", False)
-    blueprint_copy_status[bp_id] = is_copy
-
 
 # ------------------ 工具函数 ------------------
 def get_activity(bp):
@@ -170,20 +150,8 @@ def get_jita_price(tid, field="buy"):
     return 0
 
 
-def get_vos_price(tid, field="buy"):
-    item = vos_prices.get(int(tid), {})
-    val = item.get(field)
-    if isinstance(val, (int, float)):
-        return val
-    return 0
-
-
 def get_price(tid, field="buy"):
-    """根据物品是否在VOS交易列表中选择合适的价格"""
-    if int(tid) in vos_trade_ids:
-        return get_vos_price(tid, field)
-    else:
-        return get_jita_price(tid, field)
+    return get_jita_price(tid, field)
 
 
 def get_volume(tid):
@@ -197,50 +165,7 @@ def get_volume(tid):
 def get_freight_cost(tid, quantity):
     """计算运费成本：单位运费 × 体积 × 数量"""
     volume = get_volume(tid)
-    # 根据是否在VOS交易列表选择运费
-    if int(tid) in vos_trade_ids:
-        unit_fare = FARE_VOF
-    else:
-        unit_fare = FARE_JITA
-    return unit_fare * volume * quantity
-
-
-def should_filter_blueprint(bp_id, bp):
-    """
-    判断蓝图是否应该被过滤掉
-
-    规则：
-    - 如果FILTER_VOS_BLUEPRINTS=False，不过滤
-    - 如果蓝图的产物不在trade_vos中，不过滤
-    - 如果蓝图的产物在trade_vos中：
-      - 如果is_blueprint_copy=False，保留（不过滤）
-      - 如果是对应的T2蓝图，保留（不过滤）
-      - 否则过滤掉
-
-    返回True表示应该过滤掉，False表示保留
-    """
-    if not FILTER_VOS_BLUEPRINTS:
-        return False  # 不启用过滤
-
-    # 获取产物
-    activity, _ = get_activity(bp)
-    products = activity.get("products", [])
-    # 检查所有产物是否在VOS交易列表中
-    all_products_in_vos = all(p["typeID"] in vos_trade_ids for p in products)
-
-    # 1. 检查是否是原本（非复制品）
-    is_copy = blueprint_copy_status.get(bp_id, True)  # 默认当作copy
-    if all_products_in_vos and not is_copy:
-        return False  # 是原本，保留
-    bp_id_t1=bp_id
-    if bp_id in t2_to_t1:
-        bp_id_t1 = t2_to_t1[bp_id]
-    is_t2_copy = blueprint_copy_status.get(bp_id_t1, True)
-    if all_products_in_vos and not is_t2_copy:
-        return False
-
-    # 是VOS产物的蓝图复制品，且不是T2蓝图，过滤掉
-    return True
+    return FARE_JITA * volume * quantity
 
 
 # 建立蓝图ID → 名称映射
@@ -303,22 +228,13 @@ M = 1e9  # 一个足够大的数
 total_market_value = 0
 for tid in all_items:
     sell = get_price(tid, "buy")
-    vol = vos_prices.get(tid, {}).get("volume", 0) if tid in vos_trade_ids else jita_prices.get(tid, {}).get("volume",
-                                                                                                             0)
+    vol = jita_prices.get(tid, {}).get("volume", 0)
     total_market_value += sell * vol
 
 # ------------------ 计算蓝图评分 ------------------
 bp_score = {}
 
 for i, bp in enumerate(blueprints):
-    # 获取蓝图ID
-    bp_id = bp.get("blueprintTypeID")
-
-    # 应用过滤
-    if should_filter_blueprint(bp_id, bp):
-        bp_score[i] = 0
-        continue
-
     activity, act_type = get_activity(bp)
     if not activity:
         bp_score[i] = 0
@@ -330,8 +246,6 @@ for i, bp in enumerate(blueprints):
         for m in activity.get("materials", [])
     )
     
-    # 分别计算Jita和VOS的利润
-    # Jita方案
     jita_products_value = sum(
         p.get("quantity", 0) * get_jita_price(p["typeID"], "buy")
         for p in activity.get("products", [])
@@ -340,27 +254,13 @@ for i, bp in enumerate(blueprints):
         FARE_JITA * get_volume(p["typeID"]) * p.get("quantity", 0)
         for p in activity.get("products", [])
     )
-    
-    # VOS方案
-    vos_products_value = sum(
-        p.get("quantity", 0) * get_vos_price(p["typeID"], "buy")
-        for p in activity.get("products", [])
-    )
-    vos_freight_cost = sum(
-        FARE_VOF * get_volume(p["typeID"]) * p.get("quantity", 0)
-        for p in activity.get("products", [])
-    )
-    
-    # 计算两种方案的利润
+
     if act_type == "manufacturing":
         jita_profit = jita_products_value - materials_cost * (1 - ME) - jita_freight_cost
-        vos_profit = vos_products_value - materials_cost * (1 - ME) - vos_freight_cost
     else:
         jita_profit = jita_products_value - materials_cost - jita_freight_cost
-        vos_profit = vos_products_value - materials_cost - vos_freight_cost
-    
-    # 取最大利润
-    profit = max(jita_profit, vos_profit)
+
+    profit = jita_profit
     
     # 流动性系数始终以Jita为准
     bp_market_value = sum(
@@ -515,8 +415,6 @@ if model.status == 1:  # Optimal
     print(f"完成：最终产物总量 → {FINAL_PRODUCTS_CSV}")
 
     # ------------------ 合并材料库存和采购清单为 initial_inventory.json ------------------
-    INITIAL_INVENTORY_JSON = "Inventory/initial_inventory.json"
-
     # 创建合并后的库存字典
     merged_inventory = {}
 
@@ -548,8 +446,6 @@ if model.status == 1:  # Optimal
     print(f"完成：初始库存 → {INITIAL_INVENTORY_JSON}")
 
     # ------------------ 输出最终库存为 final_inventory.json ------------------
-    FINAL_INVENTORY_JSON = "Inventory/final_inventory.json"
-
     # 转换为列表格式（与materials.json格式一致）
     final_inventory_list = []
     for tid, qty in sorted(final_inventory_dict.items()):
