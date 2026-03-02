@@ -43,6 +43,31 @@ def _merge_blueprints_by_preset(alias_file: Path, preset_file: Path, preset_name
                 merged.extend(child_data)
     return merged
 
+def _load_ids_from_preset(alias_file: Path, preset_file: Path, preset_name: str):
+    with alias_file.open("r", encoding="utf-8") as f:
+        aliases = json.load(f).get("aliases", [])
+    with preset_file.open("r", encoding="utf-8") as f:
+        presets = json.load(f)
+
+    alias_map = {item["alias"]: item["path"] for item in aliases}
+    preset = next((item for item in presets if item.get("name") == preset_name), None)
+    if preset is None:
+        raise ValueError(f"未找到 preset: {preset_name}")
+
+    result = set()
+    for child_alias in preset.get("children", []):
+        rel = alias_map.get(child_alias)
+        if not rel:
+            raise ValueError(f"alias 不存在: {child_alias}")
+        with (REPO_ROOT / rel).open("r", encoding="utf-8") as f:
+            child_data = json.load(f)
+            if isinstance(child_data, list):
+                for item in child_data:
+                    tid = item.get("id")
+                    if tid is not None:
+                        result.add(int(tid))
+    return result
+
 
 config = configparser.ConfigParser()
 config.read(REPO_ROOT / "config.ini", encoding="utf-8")
@@ -71,11 +96,21 @@ else:
 INVENTORY_JSON = _resolve_path(config, "calculator", "inventory_json", "Cache/Asset/Corp/final_non_blueprints.json")
 JITA_PRICES_JSON = _resolve_path(config, "calculator", "jita_prices_json", "Cache/Input/jita_prices.json")
 TYPES_JSON = _resolve_path(config, "paths", "types_json", "Data/types.json")
-TYPES_VOLUME_JSON = _resolve_path(config, "calculator", "types_volume_json", "Cache/Input/types_volume.json")
-SHIPS_JSON = _resolve_path(config, "calculator", "ships_json", "Cache/Input/ships.json")
+TYPES_VOLUME_JSON = _resolve_path(config, "calculator", "types_volume_json", str(TYPES_JSON))
 BLUEPRINTS_ALIAS_JSON = _resolve_path(config, "paths", "blueprints_alias_json", "Data/Blueprints/alias.json")
 BLUEPRINTS_PRESET_JSON = _resolve_path(config, "paths", "blueprints_preset_json", "Data/Blueprints/preset.json")
 BLUEPRINTS_PRESET = config.get("calculator", "blueprints_preset", fallback="all")
+MATERIALS_ALIAS_JSON = _resolve_path(config, "paths", "materials_alias_json", "Data/Materials/alias.json")
+MATERIALS_PRESET_JSON = _resolve_path(config, "paths", "materials_preset_json", "Data/Materials/preset.json")
+
+SHIPS_PRESET = config.get("calculator", "ships_preset", fallback="ships_all")
+MOUDLES_PRESET = config.get("calculator", "moudles_preset", fallback="moudles_all")
+RIGS_PRESET = config.get("calculator", "rigs_preset", fallback="Rigs_all")
+MATERIALS_PRESET = config.get("calculator", "materials_preset", fallback="basic")
+SHIP_PROFIT_FACTOR = config.getfloat("calculator", "ship_profit_factor", fallback=1.0)
+MOUDLE_PROFIT_FACTOR = config.getfloat("calculator", "moudle_profit_factor", fallback=1.0)
+RIG_PROFIT_FACTOR = config.getfloat("calculator", "rig_profit_factor", fallback=1.0)
+MATERIAL_COST_FACTOR = config.getfloat("calculator", "material_cost_factor", fallback=1.0)
 
 PURCHASE_CSV = output_dir / "purchase_list.csv"
 EXECUTION_CSV = output_dir / "execution_list.csv"
@@ -138,19 +173,18 @@ for k, v in jita_prices_raw.items():
 # ------------------ 读取 types.json ------------------
 types_map = load_types_map(TYPES_JSON)
 
-# ------------------ 读取 types_volume.json ------------------
+# ------------------ 读取 types.json 体积数据 ------------------
 with TYPES_VOLUME_JSON.open("r", encoding="utf-8") as f:
     types_volume_list = json.load(f)
 
 # 创建物品ID到体积的映射
-item_volumes = {int(item["id"]): item["volume"] for item in types_volume_list}
+item_volumes = {int(item["id"]): (item.get("volume") or 0) for item in types_volume_list}
 
-# ------------------ 读取 ships.json ------------------
-with SHIPS_JSON.open("r", encoding="utf-8") as f:
-    ships_list = json.load(f)
-
-# 创建船只ID的集合（用于体积除以10的判断）
-ship_ids = {int(item["id"]) for item in ships_list}
+# ------------------ 读取各类 preset ------------------
+ship_ids = _load_ids_from_preset(BLUEPRINTS_ALIAS_JSON, BLUEPRINTS_PRESET_JSON, SHIPS_PRESET)
+moudle_product_ids = _load_ids_from_preset(BLUEPRINTS_ALIAS_JSON, BLUEPRINTS_PRESET_JSON, MOUDLES_PRESET)
+rig_product_ids = _load_ids_from_preset(BLUEPRINTS_ALIAS_JSON, BLUEPRINTS_PRESET_JSON, RIGS_PRESET)
+basic_material_ids = _load_ids_from_preset(MATERIALS_ALIAS_JSON, MATERIALS_PRESET_JSON, MATERIALS_PRESET)
 
 # ------------------ 工具函数 ------------------
 def get_activity(bp):
@@ -172,6 +206,21 @@ def get_jita_price(tid, field="buy"):
 
 def get_price(tid, field="buy"):
     return get_jita_price(tid, field)
+
+
+def get_product_profit_factor(product_type_id):
+    tid = int(product_type_id)
+    if tid in ship_ids:
+        return SHIP_PROFIT_FACTOR
+    if tid in moudle_product_ids:
+        return MOUDLE_PROFIT_FACTOR
+    if tid in rig_product_ids:
+        return RIG_PROFIT_FACTOR
+    return 1.0
+
+
+def get_material_cost_factor(material_type_id):
+    return MATERIAL_COST_FACTOR if int(material_type_id) in basic_material_ids else 1.0
 
 
 def get_volume(tid):
@@ -262,7 +311,7 @@ for i, bp in enumerate(blueprints):
 
     # 材料成本（统一从Jita购买）
     materials_cost = sum(
-        m.get("quantity", 0) * get_jita_price(m["typeID"], "buy")
+        m.get("quantity", 0) * get_jita_price(m["typeID"], "buy") * get_material_cost_factor(m["typeID"])
         for m in activity.get("materials", [])
     )
     
@@ -280,7 +329,11 @@ for i, bp in enumerate(blueprints):
     else:
         jita_profit = jita_products_value - materials_cost - jita_freight_cost
 
-    profit = jita_profit
+    product_factor = 1.0
+    products = activity.get("products", [])
+    if products:
+        product_factor = get_product_profit_factor(products[0]["typeID"])
+    profit = jita_profit * product_factor
     
     # 流动性系数始终以Jita为准
     bp_market_value = sum(

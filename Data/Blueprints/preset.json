@@ -25,5 +25,34 @@
       "Ships.ships_T3_blueprints",
       "Blueprints.fuel_blocks_blueprint"
     ]
+  },
+  {
+    "name": "ships_all",
+    "children": [
+      "Ships.ships_Capital_T1_Navy_Issue_blueprints",
+      "Ships.ships_Capital_T1_Special_blueprints",
+      "Ships.ships_Capital_T1_blueprints",
+      "Ships.ships_Capital_T2_blueprints",
+      "Ships.ships_T1_Navy_Issue_blueprints",
+      "Ships.ships_T1_Special_blueprints",
+      "Ships.ships_T1_blueprints",
+      "Ships.ships_T2_Special_blueprints",
+      "Ships.ships_T2_blueprints",
+      "Ships.ships_T3_blueprints"
+    ]
+  },
+  {
+    "name": "moudles_all",
+    "children": [
+      "Modules.modules_T1_blueprints",
+      "Modules.modules_T2_blueprints"
+    ]
+  },
+  {
+    "name": "Rigs_all",
+    "children": [
+      "Rigs.rigs_T1_blueprints",
+      "Rigs.rigs_T2_blueprints"
+    ]
   }
 ]
