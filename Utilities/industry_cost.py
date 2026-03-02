@@ -65,6 +65,27 @@ def _load_t2_t1_pairs(t2_t1_json_path=None):
     return [(int(pair[0]), int(pair[1])) for pair in pairs if isinstance(pair, list) and len(pair) >= 2]
 
 
+def _load_price_adjusted_map(price_adjusted_json_path=None):
+    path = Path(price_adjusted_json_path) if price_adjusted_json_path else _resolve_shared_path("price_adjusted_json", "Data/price_adjusted.json")
+    with open(path, "r", encoding="utf-8") as f:
+        rows = json.load(f)
+    return {int(item["type_id"]): item for item in rows if "type_id" in item}
+
+
+def _get_material_unit_price(type_id, *, source, types_map, price_adjusted_map=None):
+    source = source.lower()
+    if source == "types_base":
+        value = types_map.get(type_id, {}).get("basePrice")
+    elif source == "adjusted_price":
+        value = (price_adjusted_map or {}).get(type_id, {}).get("adjusted_price")
+    elif source == "average_price":
+        value = (price_adjusted_map or {}).get(type_id, {}).get("average_price")
+    else:
+        raise ValueError("base_price_source 必须是 adjusted_price、average_price 或 types_base")
+
+    return float(value) if isinstance(value, (int, float)) else 0.0
+
+
 def get_T1_from_T2(t2_blueprint_id, t2_t1_json_path=None):
     """通过 T2_T1.json 将 T2 蓝图ID映射到 T1 蓝图ID。"""
     t2_blueprint_id = int(t2_blueprint_id)
@@ -93,18 +114,37 @@ def _find_blueprint_by_product_id(product_id, blueprints):
     return None
 
 
-def get_base_cost(blueprint_id, activity, invention_product_id=None, blueprints_yaml_path=None, types_json_path=None, t2_t1_json_path=None):
+def get_base_cost(
+    blueprint_id,
+    activity,
+    invention_product_id=None,
+    blueprints_yaml_path=None,
+    types_json_path=None,
+    t2_t1_json_path=None,
+    base_price_source=None,
+    price_adjusted_json_path=None,
+):
     """
     计算 EIV（materials 的 basePrice * quantity 之和）。
 
     - activity == "copy": 使用 manufacturing 活动材料
     - activity == "invention": 需传入 invention_product_id，按对应 T2 蓝图的 manufacturing 活动计算
+    - base_price_source:
+      - "types_base"：使用 types.json 的 basePrice
+      - "adjusted_price"：使用 price_adjusted.json 的 adjusted_price
+      - "average_price"：使用 price_adjusted.json 的 average_price
     """
     blueprint_id = int(blueprint_id)
     activity = activity.lower()
 
+    config = _load_industry_cost_config()
+    base_price_source = (base_price_source or config.get("industry_cost", "base_price_source", fallback="types_base")).lower()
+
     blueprints = _load_blueprints(blueprints_yaml_path=blueprints_yaml_path)
     types_map = _load_types_map(types_json_path=types_json_path)
+    price_adjusted_map = None
+    if base_price_source in {"adjusted_price", "average_price"}:
+        price_adjusted_map = _load_price_adjusted_map(price_adjusted_json_path=price_adjusted_json_path)
 
     target_blueprint_id = blueprint_id
     target_activity = activity
@@ -142,8 +182,12 @@ def get_base_cost(blueprint_id, activity, invention_product_id=None, blueprints_
     for material in materials:
         type_id = int(material["typeID"])
         quantity = float(material.get("quantity", 0))
-        base_price = types_map.get(type_id, {}).get("basePrice")
-        base_price = float(base_price) if isinstance(base_price, (int, float)) else 0.0
+        base_price = _get_material_unit_price(
+            type_id,
+            source=base_price_source,
+            types_map=types_map,
+            price_adjusted_map=price_adjusted_map,
+        )
         eiv += base_price * quantity
 
     return eiv
@@ -166,7 +210,17 @@ def _get_activity_modifiers(activity, config):
     }
 
 
-def get_activity_cost(blueprint_id, runs, activity, invention_product_id=None, blueprints_yaml_path=None, types_json_path=None, t2_t1_json_path=None):
+def get_activity_cost(
+    blueprint_id,
+    runs,
+    activity,
+    invention_product_id=None,
+    blueprints_yaml_path=None,
+    types_json_path=None,
+    t2_t1_json_path=None,
+    base_price_source=None,
+    price_adjusted_json_path=None,
+):
     """
     计算活动总花费：
       EIV = get_base_cost(...)
@@ -184,6 +238,8 @@ def get_activity_cost(blueprint_id, runs, activity, invention_product_id=None, b
         blueprints_yaml_path=blueprints_yaml_path,
         types_json_path=types_json_path,
         t2_t1_json_path=t2_t1_json_path,
+        base_price_source=base_price_source,
+        price_adjusted_json_path=price_adjusted_json_path,
     )
 
     if activity == "manufacturing":
