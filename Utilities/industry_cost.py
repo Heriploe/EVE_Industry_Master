@@ -242,7 +242,7 @@ def get_activity_cost(
         price_adjusted_json_path=price_adjusted_json_path,
     )
 
-    if activity == "manufacturing":
+    if activity == "manufacturing" or activity == "reaction":
         jcb = eiv
     else:
         jcb = 0.02 * eiv
