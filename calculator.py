@@ -535,55 +535,7 @@ if model.status == 1:  # Optimal
         json.dump(final_inventory_list, f, ensure_ascii=False, indent=2)
 
     print(f"完成：最终库存 → {FINAL_INVENTORY_JSON}")
-    # 验证利润计算
-    print("\n" + "=" * 60)
-    print("利润验证")
-    print("=" * 60)
 
-    # 方法1：从蓝图评分
-    profit_from_blueprints = total_profit
-
-    # 方法2：从最终产物
-    final_revenue = sum(final_inventory_dict[tid] * get_price(tid, "buy") for tid in final_products)
-    purchase_cost = sum(
-        (int(purchase[tid].value()) if purchase[tid].value() else 0) * get_jita_price(tid, "buy")
-        for tid in all_items
-    )
-
-    # 计算使用的库存价值
-    inventory_value = 0
-    for tid in all_items:
-        inv_qty = inventory.get(tid, 0)
-        if inv_qty > 0:
-            total_needed = sum(
-                (int(x[i].value()) if x[i].value() else 0) *
-                next((m["quantity"] for m in get_activity(bp)[0].get("materials", [])
-                      if m["typeID"] == tid), 0)
-                for i, bp in enumerate(blueprints)
-                if get_activity(bp)[0] is not None
-            )
-
-            total_produced = sum(
-                (int(x[i].value()) if x[i].value() else 0) *
-                next((p["quantity"] for p in get_activity(bp)[0].get("products", [])
-                      if p["typeID"] == tid), 0)
-                for i, bp in enumerate(blueprints)
-                if get_activity(bp)[0] is not None
-            )
-
-            purchased_qty = int(purchase[tid].value()) if purchase[tid].value() else 0
-            used = max(0, total_needed - total_produced - purchased_qty)
-            used = min(used, inv_qty)
-
-            if used > 0:
-                price = get_jita_price(tid, "buy")
-                inventory_value += used * price
-
-    profit_from_final = final_revenue - purchase_cost - inventory_value
-
-    print(f"方法1（蓝图评分）: {profit_from_blueprints:15,.0f}")
-    print(f"方法2（产出-成本）: {profit_from_final:15,.0f}")
-    print(f"差异:              {abs(profit_from_blueprints - profit_from_final):15,.2f}")
 
 else:
     print("求解失败或无可行解")
