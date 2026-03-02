@@ -104,7 +104,6 @@ def _expand_node(blueprint_id, activity, required_runs, blueprints, product_inde
         "runs": float(required_runs),
         "products": _get_products(blueprints, blueprint_id, activity),
         "materials": [],
-        "children": [],
     }
 
     expanded_steps = 0
@@ -150,8 +149,8 @@ def _expand_node(blueprint_id, activity, required_runs, blueprints, product_inde
             "runs": child_runs,
         }
 
+        material_entry["child_blueprint"] = child_node
         node["materials"].append(material_entry)
-        node["children"].append(child_node)
 
     return node, expanded_steps
 
@@ -186,7 +185,7 @@ def expand_blueprint(blueprint_id, activity="manufacturing", blueprints_yaml_pat
 
 
 def main():
-    parser = argparse.ArgumentParser(description="展开蓝图为嵌套结构，children 为可制造的下游蓝图")
+    parser = argparse.ArgumentParser(description="展开蓝图为嵌套结构，可制造材料直接嵌入 materials")
     parser.add_argument("blueprint_id", type=int, help="蓝图ID")
     parser.add_argument("--activity", default="manufacturing", help="活动类型，默认 manufacturing")
     parser.add_argument("--blueprints-path", help="可选蓝图文件路径（yaml/json）")
