@@ -301,12 +301,13 @@ def invention_T2_runs(
     base_runs=1,
     base_me=0,
     base_te=0,
+    invention_skill_modifier=None,
 ):
     """
     计算产出 1 单位 T2 蓝图所需的平均发明流程数，以及产出蓝图的 ME/TE。
 
     公式：
-      modified_success_rate = base_success_rate * probability_multiplier
+      modified_success_rate = base_success_rate * probability_multiplier * invention_skill_modifier
       modified_runs = base_runs + max_run_modifier
       required_invention_runs = 1 / modified_success_rate / modified_runs
 
@@ -315,12 +316,16 @@ def invention_T2_runs(
     modifiers = _load_decryptor_modifiers(decryptor_modifier_csv_path=decryptor_modifier_csv_path)
     decryptor = modifiers.get(int(decryptor_id), {}) if decryptor_id is not None else {}
 
+    if invention_skill_modifier is None:
+        config = _load_industry_cost_config()
+        invention_skill_modifier = config.getfloat("industry_cost", "invention_skill_modifier", fallback=1.0)
+
     probability_multiplier = float(decryptor.get("probability_multiplier", 1.0))
     max_run_modifier = int(decryptor.get("max_run_modifier", 0))
     me_modifier = int(decryptor.get("me_modifier", 0))
     te_modifier = int(decryptor.get("te_modifier", 0))
 
-    modified_success_rate = float(base_success_rate) * probability_multiplier
+    modified_success_rate = float(base_success_rate) * probability_multiplier * float(invention_skill_modifier)
     modified_runs = float(base_runs) + max_run_modifier
 
     if modified_success_rate <= 0 or modified_runs <= 0:
