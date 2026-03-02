@@ -1,0 +1,854 @@
+[
+  {
+    "type_id": 380,
+    "zh": "小型护盾扩展装置 II",
+    "en": "Small Shield Extender II",
+    "quantity": 1
+  },
+  {
+    "type_id": 582,
+    "zh": "矮脚鸡级",
+    "en": "Bantam",
+    "quantity": 1
+  },
+  {
+    "type_id": 585,
+    "zh": "伐木者级",
+    "en": "Slasher",
+    "quantity": 62
+  },
+  {
+    "type_id": 587,
+    "zh": "裂谷级",
+    "en": "Rifter",
+    "quantity": 2
+  },
+  {
+    "type_id": 592,
+    "zh": "纳维达斯级",
+    "en": "Navitas",
+    "quantity": 1
+  },
+  {
+    "type_id": 593,
+    "zh": "特里斯坦级",
+    "en": "Tristan",
+    "quantity": 2
+  },
+  {
+    "type_id": 594,
+    "zh": "因卡萨斯级",
+    "en": "Incursus",
+    "quantity": 7
+  },
+  {
+    "type_id": 597,
+    "zh": "惩罚者级",
+    "en": "Punisher",
+    "quantity": 1
+  },
+  {
+    "type_id": 598,
+    "zh": "分裂者级",
+    "en": "Breacher",
+    "quantity": 2
+  },
+  {
+    "type_id": 602,
+    "zh": "茶隼级",
+    "en": "Kestrel",
+    "quantity": 2
+  },
+  {
+    "type_id": 603,
+    "zh": "小鹰级",
+    "en": "Merlin",
+    "quantity": 8
+  },
+  {
+    "type_id": 622,
+    "zh": "刺客级",
+    "en": "Stabber",
+    "quantity": 6
+  },
+  {
+    "type_id": 626,
+    "zh": "狂怒者级",
+    "en": "Vexor",
+    "quantity": 10
+  },
+  {
+    "type_id": 627,
+    "zh": "托勒克斯级",
+    "en": "Thorax",
+    "quantity": 2
+  },
+  {
+    "type_id": 2006,
+    "zh": "启示级",
+    "en": "Omen",
+    "quantity": 4
+  },
+  {
+    "type_id": 2603,
+    "zh": "纳米纤维内部构架 I",
+    "en": "Nanofiber Internal Structure I",
+    "quantity": 1
+  },
+  {
+    "type_id": 2605,
+    "zh": "纳米纤维内部构架 II",
+    "en": "Nanofiber Internal Structure II",
+    "quantity": 387
+  },
+  {
+    "type_id": 3687,
+    "zh": "电子元件",
+    "en": "Electronic Parts",
+    "quantity": 7
+  },
+  {
+    "type_id": 3689,
+    "zh": "机械元件",
+    "en": "Mechanical Parts",
+    "quantity": 724
+  },
+  {
+    "type_id": 3828,
+    "zh": "建筑模块",
+    "en": "Construction Blocks",
+    "quantity": 4
+  },
+  {
+    "type_id": 11399,
+    "zh": "莫尔石",
+    "en": "Morphite",
+    "quantity": 30017
+  },
+  {
+    "type_id": 11478,
+    "zh": "R.A.M. - 星舰科技",
+    "en": "R.A.M.- Starship Tech",
+    "quantity": 6
+  },
+  {
+    "type_id": 11532,
+    "zh": "聚变推进器",
+    "en": "Fusion Thruster",
+    "quantity": 22
+  },
+  {
+    "type_id": 11537,
+    "zh": "雷达感应器组",
+    "en": "Radar Sensor Cluster",
+    "quantity": 29
+  },
+  {
+    "type_id": 11539,
+    "zh": "纳米电子微处理器",
+    "en": "Nanoelectrical Microprocessor",
+    "quantity": 1
+  },
+  {
+    "type_id": 11543,
+    "zh": "碳化钨附甲",
+    "en": "Tungsten Carbide Armor Plate",
+    "quantity": 2
+  },
+  {
+    "type_id": 11549,
+    "zh": "反物质反应堆组件",
+    "en": "Antimatter Reactor Unit",
+    "quantity": 8
+  },
+  {
+    "type_id": 11554,
+    "zh": "超立方电容器单元",
+    "en": "Tesseract Capacitor Unit",
+    "quantity": 105
+  },
+  {
+    "type_id": 11557,
+    "zh": "线性护盾能量发射器",
+    "en": "Linear Shield Emitter",
+    "quantity": 29
+  },
+  {
+    "type_id": 11690,
+    "zh": "超导体轨道",
+    "en": "Superconductor Rails",
+    "quantity": 55
+  },
+  {
+    "type_id": 12565,
+    "zh": "爆燃 S",
+    "en": "Conflagration S",
+    "quantity": 2068
+  },
+  {
+    "type_id": 16238,
+    "zh": "海燕级",
+    "en": "Cormorant",
+    "quantity": 1
+  },
+  {
+    "type_id": 16671,
+    "zh": "碳化钛",
+    "en": "Titanium Carbide",
+    "quantity": 4080000
+  },
+  {
+    "type_id": 17476,
+    "zh": "妄想级",
+    "en": "Covetor",
+    "quantity": 1
+  },
+  {
+    "type_id": 17478,
+    "zh": "回旋者级",
+    "en": "Retriever",
+    "quantity": 5
+  },
+  {
+    "type_id": 19744,
+    "zh": "魔符级",
+    "en": "Sigil",
+    "quantity": 1
+  },
+  {
+    "type_id": 20347,
+    "zh": "200mm钢附甲板 II",
+    "en": "200mm Steel Plates II",
+    "quantity": 81
+  },
+  {
+    "type_id": 24348,
+    "zh": "小型牵引光束 I",
+    "en": "Small Tractor Beam I",
+    "quantity": 20
+  },
+  {
+    "type_id": 25588,
+    "zh": "烧毁的遥感探测处理器",
+    "en": "Scorched Telemetry Processor",
+    "quantity": 8731
+  },
+  {
+    "type_id": 25589,
+    "zh": "出故障的护盾发射器",
+    "en": "Malfunctioning Shield Emitter",
+    "quantity": 3714
+  },
+  {
+    "type_id": 25590,
+    "zh": "受污染的纳米聚合体",
+    "en": "Contaminated Nanite Compound",
+    "quantity": 3
+  },
+  {
+    "type_id": 25593,
+    "zh": "损毁的触发机关",
+    "en": "Smashed Trigger Unit",
+    "quantity": 6
+  },
+  {
+    "type_id": 25594,
+    "zh": "缠绕的能量管道",
+    "en": "Tangled Power Conduit",
+    "quantity": 205
+  },
+  {
+    "type_id": 25596,
+    "zh": "损坏的无人机调制器",
+    "en": "Broken Drone Transceiver",
+    "quantity": 48
+  },
+  {
+    "type_id": 25598,
+    "zh": "堆砌的能源电路",
+    "en": "Tripped Power Circuit",
+    "quantity": 1060
+  },
+  {
+    "type_id": 25599,
+    "zh": "烧焦的微电路",
+    "en": "Charred Micro Circuit",
+    "quantity": 1
+  },
+  {
+    "type_id": 25600,
+    "zh": "烧毁的逻辑电路",
+    "en": "Burned Logic Circuit",
+    "quantity": 1
+  },
+  {
+    "type_id": 25601,
+    "zh": "烧焦的接口电路",
+    "en": "Fried Interface Circuit",
+    "quantity": 2
+  },
+  {
+    "type_id": 25603,
+    "zh": "短路的电容器控制台",
+    "en": "Melted Capacitor Console",
+    "quantity": 1080
+  },
+  {
+    "type_id": 25606,
+    "zh": "防御控制台",
+    "en": "Ward Console",
+    "quantity": 12066
+  },
+  {
+    "type_id": 25607,
+    "zh": "遥感探测处理器",
+    "en": "Telemetry Processor",
+    "quantity": 88
+  },
+  {
+    "type_id": 25613,
+    "zh": "能源管道",
+    "en": "Power Conduit",
+    "quantity": 13
+  },
+  {
+    "type_id": 25615,
+    "zh": "无人机调制器",
+    "en": "Drone Transceiver",
+    "quantity": 24
+  },
+  {
+    "type_id": 25616,
+    "zh": "人工神经网络",
+    "en": "Artificial Neural Network",
+    "quantity": 57
+  },
+  {
+    "type_id": 25622,
+    "zh": "电容器控制台",
+    "en": "Capacitor Console",
+    "quantity": 4
+  },
+  {
+    "type_id": 25623,
+    "zh": "传导性热塑塑料",
+    "en": "Conductive Thermoplastic",
+    "quantity": 5
+  },
+  {
+    "type_id": 25920,
+    "zh": "大型岗哨炮伤害增强设备 I",
+    "en": "Large Sentry Damage Augmentor I",
+    "quantity": 3
+  },
+  {
+    "type_id": 25950,
+    "zh": "大型出口端口放大器 I",
+    "en": "Large Egress Port Maximizer I",
+    "quantity": 6
+  },
+  {
+    "type_id": 25968,
+    "zh": "大型能量武器释放过滤器 I",
+    "en": "Large Energy Discharge Elutriation I",
+    "quantity": 3
+  },
+  {
+    "type_id": 26378,
+    "zh": "大型能量武器释放过滤器 II",
+    "en": "Large Energy Discharge Elutriation II",
+    "quantity": 4
+  },
+  {
+    "type_id": 26929,
+    "zh": "小型处理器超频组件 I",
+    "en": "Small Processor Overclocking Unit I",
+    "quantity": 614
+  },
+  {
+    "type_id": 27068,
+    "zh": "小型远程维修增效器 I",
+    "en": "Small Remote Repair Augmentor I",
+    "quantity": 3
+  },
+  {
+    "type_id": 30987,
+    "zh": "小型三角装甲聚合器 I",
+    "en": "Small Trimark Armor Pump I",
+    "quantity": 1
+  },
+  {
+    "type_id": 31011,
+    "zh": "中型爆炸装甲强化装置 I",
+    "en": "Medium Explosive Armor Reinforcer I",
+    "quantity": 1
+  },
+  {
+    "type_id": 31025,
+    "zh": "旗舰级动能装甲强化装置 I",
+    "en": "Capital Kinetic Armor Reinforcer I",
+    "quantity": 2
+  },
+  {
+    "type_id": 31037,
+    "zh": "旗舰级热能装甲强化装置 I",
+    "en": "Capital Thermal Armor Reinforcer I",
+    "quantity": 1
+  },
+  {
+    "type_id": 31077,
+    "zh": "小型远程维修增效器 II",
+    "en": "Small Remote Repair Augmentor II",
+    "quantity": 9
+  },
+  {
+    "type_id": 31083,
+    "zh": "小型打捞回收工具 I",
+    "en": "Small Salvage Tackle I",
+    "quantity": 21
+  },
+  {
+    "type_id": 31087,
+    "zh": "旗舰级打捞回收工具 I",
+    "en": "Capital Salvage Tackle I",
+    "quantity": 2
+  },
+  {
+    "type_id": 31105,
+    "zh": "小型辅助推进器 I",
+    "en": "Small Auxiliary Thrusters I",
+    "quantity": 19
+  },
+  {
+    "type_id": 31129,
+    "zh": "小型动态燃料控制阀 I",
+    "en": "Small Dynamic Fuel Valve I",
+    "quantity": 2
+  },
+  {
+    "type_id": 31145,
+    "zh": "旗舰级引擎热能防护装置 I",
+    "en": "Capital Engine Thermal Shielding I",
+    "quantity": 1
+  },
+  {
+    "type_id": 31181,
+    "zh": "旗舰级复合碳素引擎舱 I",
+    "en": "Capital Polycarbon Engine Housing I",
+    "quantity": 1
+  },
+  {
+    "type_id": 31217,
+    "zh": "旗舰级引力电容器升级 I",
+    "en": "Capital Gravity Capacitor Upgrade I",
+    "quantity": 1
+  },
+  {
+    "type_id": 31230,
+    "zh": "旗舰级水冷电子设备 I",
+    "en": "Capital Liquid Cooled Electronics I",
+    "quantity": 1
+  },
+  {
+    "type_id": 31242,
+    "zh": "旗舰级弥集进化演算法数据库 I",
+    "en": "Capital Memetic Algorithm Bank I",
+    "quantity": 1
+  },
+  {
+    "type_id": 31250,
+    "zh": "小型信号干扰增效装置 I",
+    "en": "Small Signal Disruption Amplifier I",
+    "quantity": 1
+  },
+  {
+    "type_id": 31252,
+    "zh": "中型信号干扰增效装置 I",
+    "en": "Medium Signal Disruption Amplifier I",
+    "quantity": 22
+  },
+  {
+    "type_id": 31280,
+    "zh": "小型离子力场投射器 II",
+    "en": "Small Ionic Field Projector II",
+    "quantity": 88
+  },
+  {
+    "type_id": 31302,
+    "zh": "旗舰级粒子散布投放器 I",
+    "en": "Capital Particle Dispersion Projector I",
+    "quantity": 1
+  },
+  {
+    "type_id": 31312,
+    "zh": "中型信号集中设备 I",
+    "en": "Medium Signal Focusing Kit I",
+    "quantity": 31
+  },
+  {
+    "type_id": 31326,
+    "zh": "旗舰级锁定系统辅助控制器 I",
+    "en": "Capital Targeting System Subcontroller I",
+    "quantity": 1
+  },
+  {
+    "type_id": 31340,
+    "zh": "小型锁定系统稳定器 II",
+    "en": "Small Targeting Systems Stabilizer II",
+    "quantity": 13
+  },
+  {
+    "type_id": 31354,
+    "zh": "中型跟踪诊断子程序 II",
+    "en": "Medium Tracking Diagnostic Subroutines II",
+    "quantity": 2
+  },
+  {
+    "type_id": 31360,
+    "zh": "中型辅助电源路由器 I",
+    "en": "Medium Ancillary Current Router I",
+    "quantity": 7
+  },
+  {
+    "type_id": 31382,
+    "zh": "小型出口端口放大器 I",
+    "en": "Small Egress Port Maximizer I",
+    "quantity": 13
+  },
+  {
+    "type_id": 31386,
+    "zh": "旗舰级出口端口放大器 I",
+    "en": "Capital Egress Port Maximizer I",
+    "quantity": 1
+  },
+  {
+    "type_id": 31418,
+    "zh": "小型冷凝能量管理单元 I",
+    "en": "Small Algid Energy Administrations Unit I",
+    "quantity": 47
+  },
+  {
+    "type_id": 31424,
+    "zh": "小型冷凝能量管理单元 II",
+    "en": "Small Algid Energy Administrations Unit II",
+    "quantity": 3
+  },
+  {
+    "type_id": 31428,
+    "zh": "旗舰级冷凝能量管理单元 II",
+    "en": "Capital Algid Energy Administrations Unit II",
+    "quantity": 1
+  },
+  {
+    "type_id": 31436,
+    "zh": "小型能量武器范围扩大设备 II",
+    "en": "Small Energy Ambit Extension II",
+    "quantity": 7
+  },
+  {
+    "type_id": 31438,
+    "zh": "中型能量武器范围扩大设备 II",
+    "en": "Medium Energy Ambit Extension II",
+    "quantity": 1
+  },
+  {
+    "type_id": 31446,
+    "zh": "旗舰级能量武器发散调节装置 I",
+    "en": "Capital Energy Burst Aerator I",
+    "quantity": 1
+  },
+  {
+    "type_id": 31448,
+    "zh": "小型能量武器发散调节装置 II",
+    "en": "Small Energy Burst Aerator II",
+    "quantity": 223
+  },
+  {
+    "type_id": 31458,
+    "zh": "旗舰级能量武器冲击加速器 I",
+    "en": "Capital Energy Collision Accelerator I",
+    "quantity": 1
+  },
+  {
+    "type_id": 31460,
+    "zh": "小型能量武器冲击加速器 II",
+    "en": "Small Energy Collision Accelerator II",
+    "quantity": 106
+  },
+  {
+    "type_id": 31466,
+    "zh": "小型能量武器释放过滤器 I",
+    "en": "Small Energy Discharge Elutriation I",
+    "quantity": 1
+  },
+  {
+    "type_id": 31470,
+    "zh": "旗舰级能量武器释放过滤器 I",
+    "en": "Capital Energy Discharge Elutriation I",
+    "quantity": 2
+  },
+  {
+    "type_id": 31472,
+    "zh": "小型能量武器释放过滤器 II",
+    "en": "Small Energy Discharge Elutriation II",
+    "quantity": 2
+  },
+  {
+    "type_id": 31474,
+    "zh": "中型能量武器释放过滤器 II",
+    "en": "Medium Energy Discharge Elutriation II",
+    "quantity": 2
+  },
+  {
+    "type_id": 31484,
+    "zh": "小型能量武器轨迹校准设备 II",
+    "en": "Small Energy Locus Coordinator II",
+    "quantity": 280
+  },
+  {
+    "type_id": 31486,
+    "zh": "中型能量武器轨迹校准设备 II",
+    "en": "Medium Energy Locus Coordinator II",
+    "quantity": 169
+  },
+  {
+    "type_id": 31494,
+    "zh": "旗舰级能量武器急转控制器 I",
+    "en": "Capital Energy Metastasis Adjuster I",
+    "quantity": 1
+  },
+  {
+    "type_id": 31496,
+    "zh": "小型能量武器急转控制器 II",
+    "en": "Small Energy Metastasis Adjuster II",
+    "quantity": 16
+  },
+  {
+    "type_id": 31498,
+    "zh": "中型能量武器急转控制器 II",
+    "en": "Medium Energy Metastasis Adjuster II",
+    "quantity": 6
+  },
+  {
+    "type_id": 31500,
+    "zh": "旗舰级能量武器急转控制器 II",
+    "en": "Capital Energy Metastasis Adjuster II",
+    "quantity": 1
+  },
+  {
+    "type_id": 31502,
+    "zh": "小型冷凝混合管理单元 I",
+    "en": "Small Algid Hybrid Administrations Unit I",
+    "quantity": 71
+  },
+  {
+    "type_id": 31508,
+    "zh": "小型冷凝混合管理单元 II",
+    "en": "Small Algid Hybrid Administrations Unit II",
+    "quantity": 7
+  },
+  {
+    "type_id": 31518,
+    "zh": "旗舰级混合武器范围扩大装置 I",
+    "en": "Capital Hybrid Ambit Extension I",
+    "quantity": 1
+  },
+  {
+    "type_id": 31530,
+    "zh": "旗舰级混合武器射速调节装置 I",
+    "en": "Capital Hybrid Burst Aerator I",
+    "quantity": 1
+  },
+  {
+    "type_id": 31532,
+    "zh": "小型混合武器射速调节装置 II",
+    "en": "Small Hybrid Burst Aerator II",
+    "quantity": 5
+  },
+  {
+    "type_id": 31554,
+    "zh": "旗舰级混合武器节能设备 I",
+    "en": "Capital Hybrid Discharge Elutriation I",
+    "quantity": 1
+  },
+  {
+    "type_id": 31566,
+    "zh": "旗舰级混合武器轨迹校准设备 I",
+    "en": "Capital Hybrid Locus Coordinator I",
+    "quantity": 1
+  },
+  {
+    "type_id": 31590,
+    "zh": "旗舰级装卸加速装置 I",
+    "en": "Capital Bay Loading Accelerator I",
+    "quantity": 1
+  },
+  {
+    "type_id": 31602,
+    "zh": "旗舰级液压舱推进器 I",
+    "en": "Capital Hydraulic Bay Thrusters I",
+    "quantity": 1
+  },
+  {
+    "type_id": 31612,
+    "zh": "旗舰级火箭燃料缓冲隔离装置 I",
+    "en": "Capital Rocket Fuel Cache Partition I",
+    "quantity": 1
+  },
+  {
+    "type_id": 31620,
+    "zh": "小型弹头加热辅助系统 I",
+    "en": "Small Warhead Calefaction Catalyst I",
+    "quantity": 252
+  },
+  {
+    "type_id": 31648,
+    "zh": "旗舰级弹头强化辅助系统 I",
+    "en": "Capital Warhead Rigor Catalyst I",
+    "quantity": 1
+  },
+  {
+    "type_id": 31658,
+    "zh": "中型射弹武器范围扩大装置 I",
+    "en": "Medium Projectile Ambit Extension I",
+    "quantity": 3
+  },
+  {
+    "type_id": 31674,
+    "zh": "小型射弹武器射速调节装置 II",
+    "en": "Small Projectile Burst Aerator II",
+    "quantity": 1
+  },
+  {
+    "type_id": 31710,
+    "zh": "小型射弹武器急转控制器 II",
+    "en": "Small Projectile Metastasis Adjuster II",
+    "quantity": 3
+  },
+  {
+    "type_id": 31730,
+    "zh": "中型爆炸护盾强化装置 I",
+    "en": "Medium Explosive Shield Reinforcer I",
+    "quantity": 104
+  },
+  {
+    "type_id": 31732,
+    "zh": "旗舰级爆炸护盾强化装置 I",
+    "en": "Capital Explosive Shield Reinforcer I",
+    "quantity": 2
+  },
+  {
+    "type_id": 31758,
+    "zh": "小型热能护盾强化装置 II",
+    "en": "Small Thermal Shield Reinforcer II",
+    "quantity": 83
+  },
+  {
+    "type_id": 31770,
+    "zh": "小型核心防御电容器安全管理装置 II",
+    "en": "Small Core Defense Capacitor Safeguard II",
+    "quantity": 4
+  },
+  {
+    "type_id": 31780,
+    "zh": "旗舰级核心防御节能装置 I",
+    "en": "Capital Core Defense Charge Economizer I",
+    "quantity": 3
+  },
+  {
+    "type_id": 31784,
+    "zh": "中型核心防御节能装置 II",
+    "en": "Medium Core Defense Charge Economizer II",
+    "quantity": 3
+  },
+  {
+    "type_id": 31794,
+    "zh": "小型核心防御力场扩张装置 II",
+    "en": "Small Core Defense Field Extender II",
+    "quantity": 145
+  },
+  {
+    "type_id": 31800,
+    "zh": "小型核心防御力场稳固装置 I",
+    "en": "Small Core Defense Field Purger I",
+    "quantity": 81
+  },
+  {
+    "type_id": 31802,
+    "zh": "中型核心防御力场稳固装置 I",
+    "en": "Medium Core Defense Field Purger I",
+    "quantity": 3
+  },
+  {
+    "type_id": 31804,
+    "zh": "旗舰级核心防御力场稳固装置 I",
+    "en": "Capital Core Defense Field Purger I",
+    "quantity": 1
+  },
+  {
+    "type_id": 32880,
+    "zh": "冲锋者级",
+    "en": "Venture",
+    "quantity": 12
+  },
+  {
+    "type_id": 33195,
+    "zh": "空间协调装置",
+    "en": "Spatial Attunement Unit",
+    "quantity": 22
+  },
+  {
+    "type_id": 33293,
+    "zh": "旗舰级无人机射距芯片 I",
+    "en": "Capital Drone Scope Chip I",
+    "quantity": 1
+  },
+  {
+    "type_id": 33303,
+    "zh": "旗舰级处理器超频组件 I",
+    "en": "Capital Processor Overclocking Unit I",
+    "quantity": 3
+  },
+  {
+    "type_id": 33824,
+    "zh": "全方位索敌增强器 II",
+    "en": "Omnidirectional Tracking Enhancer II",
+    "quantity": 17
+  },
+  {
+    "type_id": 33890,
+    "zh": "小型横贯舱壁 I",
+    "en": "Small Transverse Bulkhead I",
+    "quantity": 261
+  },
+  {
+    "type_id": 33892,
+    "zh": "小型横贯舱壁 II",
+    "en": "Small Transverse Bulkhead II",
+    "quantity": 16
+  },
+  {
+    "type_id": 43700,
+    "zh": "冰矿采集无人机 II",
+    "en": "Ice Harvesting Drone II",
+    "quantity": 8
+  },
+  {
+    "type_id": 43900,
+    "zh": "旗舰级指挥处理器 I",
+    "en": "Capital Command Processor I",
+    "quantity": 2
+  },
+  {
+    "type_id": 57457,
+    "zh": "强化碳纤维",
+    "en": "Reinforced Carbon Fiber",
+    "quantity": 2902
+  },
+  {
+    "type_id": 58945,
+    "zh": "大型工业核心 I",
+    "en": "Large Industrial Core I",
+    "quantity": 1
+  }
+]

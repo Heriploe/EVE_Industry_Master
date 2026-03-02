@@ -5,5 +5,23 @@
       "Basic_Materials.mineral",
       "Basic_Materials.moon_materials"
     ]
+  },
+  {
+    "name": "basic",
+    "children": [
+      "Basic_Materials.cloud",
+      "Basic_Materials.datacore",
+      "Basic_Materials.drone_components",
+      "Basic_Materials.fuel_blocks",
+      "Basic_Materials.ice_product",
+      "Basic_Materials.mineral",
+      "Basic_Materials.moon_materials",
+      "Basic_Materials.moon_ore",
+      "Basic_Materials.net",
+      "Basic_Materials.ores",
+      "Basic_Materials.products_planet_industry",
+      "Basic_Materials.ram",
+      "Basic_Materials.salvaged_materials"
+    ]
   }
 ]
