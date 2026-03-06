@@ -1,0 +1,41 @@
+[
+  {
+    "item_id": 1049040931551,
+    "id": 46208,
+    "zh": "多晶碳化硅纤维反应配方",
+    "en": "Sylramic Fibers Reaction Formula",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "quantity": 4,
+    "location_id": 1052344995700,
+    "location_flag": "CorpSAG1",
+    "container_name": "F-多晶碳化硅纤维"
+  },
+  {
+    "item_id": 1051200977930,
+    "id": 46168,
+    "zh": "陶瓷粉末反应配方",
+    "en": "Ceramic Powder Reaction Formula",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "quantity": 2,
+    "location_id": 1052344995700,
+    "location_flag": "CorpSAG1",
+    "container_name": "F-多晶碳化硅纤维"
+  },
+  {
+    "item_id": 1052345006615,
+    "id": 46174,
+    "zh": "六元复合物反应配方",
+    "en": "Hexite Reaction Formula",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "quantity": 2,
+    "location_id": 1052344995700,
+    "location_flag": "CorpSAG1",
+    "container_name": "F-多晶碳化硅纤维"
+  }
+]

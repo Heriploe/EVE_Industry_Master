@@ -1,0 +1,54 @@
+[
+  {
+    "item_id": 1037353499362,
+    "id": 31235,
+    "zh": "中型水冷电子设备蓝图 II",
+    "en": "Medium Liquid Cooled Electronics II Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": 2,
+    "quantity": -2,
+    "location_id": 1052370525103,
+    "location_flag": "CorpSAG1",
+    "container_name": "F-改装件蓝图-T2"
+  },
+  {
+    "item_id": 1046242674077,
+    "id": 31663,
+    "zh": "小型射弹武器范围扩大装置蓝图 II",
+    "en": "Small Projectile Ambit Extension II Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": 2,
+    "quantity": -2,
+    "location_id": 1052370525103,
+    "location_flag": "CorpSAG1",
+    "container_name": "F-改装件蓝图-T2"
+  },
+  {
+    "item_id": 1050212751287,
+    "id": 31044,
+    "zh": "旗舰级热能装甲强化装置蓝图 II",
+    "en": "Capital Thermal Armor Reinforcer II Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": 2,
+    "quantity": -2,
+    "location_id": 1052370525103,
+    "location_flag": "CorpSAG1",
+    "container_name": "F-改装件蓝图-T2"
+  },
+  {
+    "item_id": 1050243847217,
+    "id": 31072,
+    "zh": "中型纳米机器人加速器蓝图 II",
+    "en": "Medium Nanobot Accelerator II Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": 2,
+    "quantity": -2,
+    "location_id": 1052370525103,
+    "location_flag": "CorpSAG1",
+    "container_name": "F-改装件蓝图-T2"
+  }
+]

@@ -1,0 +1,54 @@
+[
+  {
+    "item_id": 1052345610920,
+    "id": 57492,
+    "zh": "增压氧化剂反应配方",
+    "en": "Pressurized Oxidizers Reaction Formula",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "quantity": 1,
+    "location_id": 1052346785547,
+    "location_flag": "CorpSAG1",
+    "container_name": "R-增压氧化剂"
+  },
+  {
+    "item_id": 1052346765412,
+    "id": 57491,
+    "zh": "富氧有机溶剂反应配方",
+    "en": "Oxy-Organic Solvents Reaction Formula",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "quantity": 1,
+    "location_id": 1052346785547,
+    "location_flag": "CorpSAG1",
+    "container_name": "R-增压氧化剂"
+  },
+  {
+    "item_id": 1052346793496,
+    "id": 46181,
+    "zh": "硫酸反应配方",
+    "en": "Sulfuric Acid Reaction Formula",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "quantity": 1,
+    "location_id": 1052346785547,
+    "location_flag": "CorpSAG1",
+    "container_name": "R-增压氧化剂"
+  },
+  {
+    "item_id": 1052346794678,
+    "id": 46167,
+    "zh": "碳聚合物反应配方",
+    "en": "Carbon Polymers Reaction Formula",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "quantity": 1,
+    "location_id": 1052346785547,
+    "location_flag": "CorpSAG1",
+    "container_name": "R-增压氧化剂"
+  }
+]

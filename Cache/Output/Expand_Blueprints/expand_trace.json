@@ -1,0 +1,884 @@
+[
+  {
+    "depth": 0,
+    "blueprint_id": 31759,
+    "activity": "manufacturing",
+    "material_type_id": 25608,
+    "required": 2.0,
+    "used_from_inventory": 2.0,
+    "remaining_after_inventory": 0.0
+  },
+  {
+    "depth": 0,
+    "blueprint_id": 31759,
+    "activity": "manufacturing",
+    "material_type_id": 25620,
+    "required": 2.0,
+    "used_from_inventory": 2.0,
+    "remaining_after_inventory": 0.0
+  },
+  {
+    "depth": 0,
+    "blueprint_id": 31759,
+    "activity": "manufacturing",
+    "material_type_id": 25618,
+    "required": 2.0,
+    "used_from_inventory": 2.0,
+    "remaining_after_inventory": 0.0
+  },
+  {
+    "depth": 0,
+    "blueprint_id": 31759,
+    "activity": "manufacturing",
+    "material_type_id": 11484,
+    "required": 2.0,
+    "used_from_inventory": 2.0,
+    "remaining_after_inventory": 0.0
+  },
+  {
+    "depth": 0,
+    "blueprint_id": 31605,
+    "activity": "manufacturing",
+    "material_type_id": 25617,
+    "required": 2.0,
+    "used_from_inventory": 2.0,
+    "remaining_after_inventory": 0.0
+  },
+  {
+    "depth": 0,
+    "blueprint_id": 31605,
+    "activity": "manufacturing",
+    "material_type_id": 25619,
+    "required": 2.0,
+    "used_from_inventory": 2.0,
+    "remaining_after_inventory": 0.0
+  },
+  {
+    "depth": 0,
+    "blueprint_id": 31605,
+    "activity": "manufacturing",
+    "material_type_id": 11486,
+    "required": 2.0,
+    "used_from_inventory": 2.0,
+    "remaining_after_inventory": 0.0
+  },
+  {
+    "depth": 0,
+    "blueprint_id": 31605,
+    "activity": "manufacturing",
+    "material_type_id": 25607,
+    "required": 2.0,
+    "used_from_inventory": 2.0,
+    "remaining_after_inventory": 0.0
+  },
+  {
+    "depth": 0,
+    "blueprint_id": 49714,
+    "activity": "manufacturing",
+    "material_type_id": 34,
+    "required": 80000.0,
+    "used_from_inventory": 80000.0,
+    "remaining_after_inventory": 0.0
+  },
+  {
+    "depth": 0,
+    "blueprint_id": 49714,
+    "activity": "manufacturing",
+    "material_type_id": 35,
+    "required": 15000.0,
+    "used_from_inventory": 15000.0,
+    "remaining_after_inventory": 0.0
+  },
+  {
+    "depth": 0,
+    "blueprint_id": 49714,
+    "activity": "manufacturing",
+    "material_type_id": 36,
+    "required": 5000.0,
+    "used_from_inventory": 5000.0,
+    "remaining_after_inventory": 0.0
+  },
+  {
+    "depth": 0,
+    "blueprint_id": 49714,
+    "activity": "manufacturing",
+    "material_type_id": 37,
+    "required": 1000.0,
+    "used_from_inventory": 1000.0,
+    "remaining_after_inventory": 0.0
+  },
+  {
+    "depth": 0,
+    "blueprint_id": 49714,
+    "activity": "manufacturing",
+    "material_type_id": 38,
+    "required": 120.0,
+    "used_from_inventory": 120.0,
+    "remaining_after_inventory": 0.0
+  },
+  {
+    "depth": 0,
+    "blueprint_id": 49714,
+    "activity": "manufacturing",
+    "material_type_id": 39,
+    "required": 80.0,
+    "used_from_inventory": 80.0,
+    "remaining_after_inventory": 0.0
+  },
+  {
+    "depth": 0,
+    "blueprint_id": 49714,
+    "activity": "manufacturing",
+    "material_type_id": 40,
+    "required": 40.0,
+    "used_from_inventory": 40.0,
+    "remaining_after_inventory": 0.0
+  },
+  {
+    "depth": 0,
+    "blueprint_id": 49714,
+    "activity": "manufacturing",
+    "material_type_id": 47975,
+    "required": 230.0,
+    "used_from_inventory": 42.0,
+    "remaining_after_inventory": 188.0
+  },
+  {
+    "depth": 0,
+    "blueprint_id": 49714,
+    "activity": "manufacturing",
+    "material_type_id": 48112,
+    "required": 180.0,
+    "used_from_inventory": 180.0,
+    "remaining_after_inventory": 0.0
+  },
+  {
+    "depth": 0,
+    "blueprint_id": 49714,
+    "activity": "manufacturing",
+    "material_type_id": 57478,
+    "required": 20.0,
+    "used_from_inventory": 20.0,
+    "remaining_after_inventory": 0.0
+  },
+  {
+    "depth": 0,
+    "blueprint_id": 49714,
+    "activity": "manufacturing",
+    "material_type_id": 57486,
+    "required": 10.0,
+    "used_from_inventory": 10.0,
+    "remaining_after_inventory": 0.0
+  },
+  {
+    "depth": 0,
+    "blueprint_id": 31787,
+    "activity": "manufacturing",
+    "material_type_id": 25608,
+    "required": 90.0,
+    "used_from_inventory": 88.0,
+    "remaining_after_inventory": 2.0
+  },
+  {
+    "depth": 0,
+    "blueprint_id": 31787,
+    "activity": "manufacturing",
+    "material_type_id": 25620,
+    "required": 196.0,
+    "used_from_inventory": 172.0,
+    "remaining_after_inventory": 24.0
+  },
+  {
+    "depth": 0,
+    "blueprint_id": 31787,
+    "activity": "manufacturing",
+    "material_type_id": 25618,
+    "required": 210.0,
+    "used_from_inventory": 198.0,
+    "remaining_after_inventory": 12.0
+  },
+  {
+    "depth": 0,
+    "blueprint_id": 31787,
+    "activity": "manufacturing",
+    "material_type_id": 11484,
+    "required": 2.0,
+    "used_from_inventory": 2.0,
+    "remaining_after_inventory": 0.0
+  },
+  {
+    "depth": 0,
+    "blueprint_id": 34279,
+    "activity": "manufacturing",
+    "material_type_id": 11399,
+    "required": 3.0,
+    "used_from_inventory": 3.0,
+    "remaining_after_inventory": 0.0
+  },
+  {
+    "depth": 0,
+    "blueprint_id": 34279,
+    "activity": "manufacturing",
+    "material_type_id": 11688,
+    "required": 4.0,
+    "used_from_inventory": 0.0,
+    "remaining_after_inventory": 4.0
+  },
+  {
+    "depth": 0,
+    "blueprint_id": 34279,
+    "activity": "manufacturing",
+    "material_type_id": 3178,
+    "required": 1.0,
+    "used_from_inventory": 0.0,
+    "remaining_after_inventory": 1.0
+  },
+  {
+    "depth": 0,
+    "blueprint_id": 34279,
+    "activity": "manufacturing",
+    "material_type_id": 9848,
+    "required": 1.0,
+    "used_from_inventory": 0.0,
+    "remaining_after_inventory": 1.0
+  },
+  {
+    "depth": 0,
+    "blueprint_id": 34279,
+    "activity": "manufacturing",
+    "material_type_id": 11486,
+    "required": 1.0,
+    "used_from_inventory": 1.0,
+    "remaining_after_inventory": 0.0
+  },
+  {
+    "depth": 0,
+    "blueprint_id": 34273,
+    "activity": "manufacturing",
+    "material_type_id": 3041,
+    "required": 1.0,
+    "used_from_inventory": 0.0,
+    "remaining_after_inventory": 1.0
+  },
+  {
+    "depth": 0,
+    "blueprint_id": 34273,
+    "activity": "manufacturing",
+    "material_type_id": 11399,
+    "required": 3.0,
+    "used_from_inventory": 3.0,
+    "remaining_after_inventory": 0.0
+  },
+  {
+    "depth": 0,
+    "blueprint_id": 34273,
+    "activity": "manufacturing",
+    "material_type_id": 11689,
+    "required": 4.0,
+    "used_from_inventory": 0.0,
+    "remaining_after_inventory": 4.0
+  },
+  {
+    "depth": 0,
+    "blueprint_id": 34273,
+    "activity": "manufacturing",
+    "material_type_id": 9848,
+    "required": 1.0,
+    "used_from_inventory": 0.0,
+    "remaining_after_inventory": 1.0
+  },
+  {
+    "depth": 0,
+    "blueprint_id": 34273,
+    "activity": "manufacturing",
+    "material_type_id": 11486,
+    "required": 1.0,
+    "used_from_inventory": 1.0,
+    "remaining_after_inventory": 0.0
+  },
+  {
+    "depth": 0,
+    "blueprint_id": 34293,
+    "activity": "manufacturing",
+    "material_type_id": 25715,
+    "required": 1.0,
+    "used_from_inventory": 0.0,
+    "remaining_after_inventory": 1.0
+  },
+  {
+    "depth": 0,
+    "blueprint_id": 34293,
+    "activity": "manufacturing",
+    "material_type_id": 11399,
+    "required": 3.0,
+    "used_from_inventory": 3.0,
+    "remaining_after_inventory": 0.0
+  },
+  {
+    "depth": 0,
+    "blueprint_id": 34293,
+    "activity": "manufacturing",
+    "material_type_id": 11540,
+    "required": 1.0,
+    "used_from_inventory": 0.0,
+    "remaining_after_inventory": 1.0
+  },
+  {
+    "depth": 0,
+    "blueprint_id": 34293,
+    "activity": "manufacturing",
+    "material_type_id": 9848,
+    "required": 3.0,
+    "used_from_inventory": 0.0,
+    "remaining_after_inventory": 3.0
+  },
+  {
+    "depth": 0,
+    "blueprint_id": 34293,
+    "activity": "manufacturing",
+    "material_type_id": 11486,
+    "required": 1.0,
+    "used_from_inventory": 1.0,
+    "remaining_after_inventory": 0.0
+  },
+  {
+    "depth": 0,
+    "blueprint_id": 34291,
+    "activity": "manufacturing",
+    "material_type_id": 10631,
+    "required": 1.0,
+    "used_from_inventory": 0.0,
+    "remaining_after_inventory": 1.0
+  },
+  {
+    "depth": 0,
+    "blueprint_id": 34291,
+    "activity": "manufacturing",
+    "material_type_id": 11399,
+    "required": 1.0,
+    "used_from_inventory": 1.0,
+    "remaining_after_inventory": 0.0
+  },
+  {
+    "depth": 0,
+    "blueprint_id": 34291,
+    "activity": "manufacturing",
+    "material_type_id": 9848,
+    "required": 1.0,
+    "used_from_inventory": 0.0,
+    "remaining_after_inventory": 1.0
+  },
+  {
+    "depth": 0,
+    "blueprint_id": 34291,
+    "activity": "manufacturing",
+    "material_type_id": 11486,
+    "required": 1.0,
+    "used_from_inventory": 1.0,
+    "remaining_after_inventory": 0.0
+  },
+  {
+    "depth": 0,
+    "blueprint_id": 34295,
+    "activity": "manufacturing",
+    "material_type_id": 11399,
+    "required": 36.0,
+    "used_from_inventory": 36.0,
+    "remaining_after_inventory": 0.0
+  },
+  {
+    "depth": 0,
+    "blueprint_id": 34295,
+    "activity": "manufacturing",
+    "material_type_id": 11540,
+    "required": 36.0,
+    "used_from_inventory": 0.0,
+    "remaining_after_inventory": 36.0
+  },
+  {
+    "depth": 0,
+    "blueprint_id": 34295,
+    "activity": "manufacturing",
+    "material_type_id": 2420,
+    "required": 3.0,
+    "used_from_inventory": 0.0,
+    "remaining_after_inventory": 3.0
+  },
+  {
+    "depth": 0,
+    "blueprint_id": 34295,
+    "activity": "manufacturing",
+    "material_type_id": 9848,
+    "required": 36.0,
+    "used_from_inventory": 0.0,
+    "remaining_after_inventory": 36.0
+  },
+  {
+    "depth": 0,
+    "blueprint_id": 34295,
+    "activity": "manufacturing",
+    "material_type_id": 11486,
+    "required": 3.0,
+    "used_from_inventory": 3.0,
+    "remaining_after_inventory": 0.0
+  },
+  {
+    "depth": 0,
+    "blueprint_id": 47968,
+    "activity": "manufacturing",
+    "material_type_id": 57479,
+    "required": 2.0,
+    "used_from_inventory": 2.0,
+    "remaining_after_inventory": 0.0
+  },
+  {
+    "depth": 0,
+    "blueprint_id": 47968,
+    "activity": "manufacturing",
+    "material_type_id": 57486,
+    "required": 110.0,
+    "used_from_inventory": 110.0,
+    "remaining_after_inventory": 0.0
+  },
+  {
+    "depth": 0,
+    "blueprint_id": 47968,
+    "activity": "manufacturing",
+    "material_type_id": 57478,
+    "required": 220.0,
+    "used_from_inventory": 220.0,
+    "remaining_after_inventory": 0.0
+  },
+  {
+    "depth": 0,
+    "blueprint_id": 47968,
+    "activity": "manufacturing",
+    "material_type_id": 47975,
+    "required": 845.0,
+    "used_from_inventory": 0.0,
+    "remaining_after_inventory": 845.0
+  },
+  {
+    "depth": 0,
+    "blueprint_id": 47968,
+    "activity": "manufacturing",
+    "material_type_id": 48112,
+    "required": 850.0,
+    "used_from_inventory": 379.0,
+    "remaining_after_inventory": 471.0
+  },
+  {
+    "depth": 0,
+    "blueprint_id": 47968,
+    "activity": "manufacturing",
+    "material_type_id": 40,
+    "required": 7700.0,
+    "used_from_inventory": 7700.0,
+    "remaining_after_inventory": 0.0
+  },
+  {
+    "depth": 0,
+    "blueprint_id": 47968,
+    "activity": "manufacturing",
+    "material_type_id": 39,
+    "required": 15400.0,
+    "used_from_inventory": 15400.0,
+    "remaining_after_inventory": 0.0
+  },
+  {
+    "depth": 0,
+    "blueprint_id": 47968,
+    "activity": "manufacturing",
+    "material_type_id": 38,
+    "required": 46200.0,
+    "used_from_inventory": 46200.0,
+    "remaining_after_inventory": 0.0
+  },
+  {
+    "depth": 0,
+    "blueprint_id": 47968,
+    "activity": "manufacturing",
+    "material_type_id": 37,
+    "required": 440000.0,
+    "used_from_inventory": 440000.0,
+    "remaining_after_inventory": 0.0
+  },
+  {
+    "depth": 0,
+    "blueprint_id": 47968,
+    "activity": "manufacturing",
+    "material_type_id": 36,
+    "required": 660000.0,
+    "used_from_inventory": 660000.0,
+    "remaining_after_inventory": 0.0
+  },
+  {
+    "depth": 0,
+    "blueprint_id": 47968,
+    "activity": "manufacturing",
+    "material_type_id": 35,
+    "required": 4400000.0,
+    "used_from_inventory": 4400000.0,
+    "remaining_after_inventory": 0.0
+  },
+  {
+    "depth": 0,
+    "blueprint_id": 47968,
+    "activity": "manufacturing",
+    "material_type_id": 34,
+    "required": 8800000.0,
+    "used_from_inventory": 8800000.0,
+    "remaining_after_inventory": 0.0
+  },
+  {
+    "depth": 0,
+    "blueprint_id": 17741,
+    "activity": "manufacturing",
+    "material_type_id": 57479,
+    "required": 1.0,
+    "used_from_inventory": 0.0,
+    "remaining_after_inventory": 1.0
+  },
+  {
+    "depth": 0,
+    "blueprint_id": 17741,
+    "activity": "manufacturing",
+    "material_type_id": 57486,
+    "required": 120.0,
+    "used_from_inventory": 120.0,
+    "remaining_after_inventory": 0.0
+  },
+  {
+    "depth": 0,
+    "blueprint_id": 17741,
+    "activity": "manufacturing",
+    "material_type_id": 83472,
+    "required": 160.0,
+    "used_from_inventory": 0.0,
+    "remaining_after_inventory": 160.0
+  },
+  {
+    "depth": 0,
+    "blueprint_id": 17741,
+    "activity": "manufacturing",
+    "material_type_id": 57478,
+    "required": 240.0,
+    "used_from_inventory": 240.0,
+    "remaining_after_inventory": 0.0
+  },
+  {
+    "depth": 0,
+    "blueprint_id": 17741,
+    "activity": "manufacturing",
+    "material_type_id": 40,
+    "required": 4800.0,
+    "used_from_inventory": 4800.0,
+    "remaining_after_inventory": 0.0
+  },
+  {
+    "depth": 0,
+    "blueprint_id": 17741,
+    "activity": "manufacturing",
+    "material_type_id": 39,
+    "required": 9600.0,
+    "used_from_inventory": 9600.0,
+    "remaining_after_inventory": 0.0
+  },
+  {
+    "depth": 0,
+    "blueprint_id": 17741,
+    "activity": "manufacturing",
+    "material_type_id": 38,
+    "required": 36000.0,
+    "used_from_inventory": 36000.0,
+    "remaining_after_inventory": 0.0
+  },
+  {
+    "depth": 0,
+    "blueprint_id": 17741,
+    "activity": "manufacturing",
+    "material_type_id": 37,
+    "required": 480000.0,
+    "used_from_inventory": 480000.0,
+    "remaining_after_inventory": 0.0
+  },
+  {
+    "depth": 0,
+    "blueprint_id": 17741,
+    "activity": "manufacturing",
+    "material_type_id": 36,
+    "required": 720000.0,
+    "used_from_inventory": 720000.0,
+    "remaining_after_inventory": 0.0
+  },
+  {
+    "depth": 0,
+    "blueprint_id": 17741,
+    "activity": "manufacturing",
+    "material_type_id": 35,
+    "required": 4800000.0,
+    "used_from_inventory": 4800000.0,
+    "remaining_after_inventory": 0.0
+  },
+  {
+    "depth": 0,
+    "blueprint_id": 17741,
+    "activity": "manufacturing",
+    "material_type_id": 34,
+    "required": 9600000.0,
+    "used_from_inventory": 9600000.0,
+    "remaining_after_inventory": 0.0
+  },
+  {
+    "depth": 0,
+    "blueprint_id": 52349,
+    "activity": "manufacturing",
+    "material_type_id": 47918,
+    "required": 1.0,
+    "used_from_inventory": 0.0,
+    "remaining_after_inventory": 1.0
+  },
+  {
+    "depth": 0,
+    "blueprint_id": 52349,
+    "activity": "manufacturing",
+    "material_type_id": 47975,
+    "required": 14.0,
+    "used_from_inventory": 0.0,
+    "remaining_after_inventory": 14.0
+  },
+  {
+    "depth": 0,
+    "blueprint_id": 52349,
+    "activity": "manufacturing",
+    "material_type_id": 48112,
+    "required": 52.0,
+    "used_from_inventory": 0.0,
+    "remaining_after_inventory": 52.0
+  },
+  {
+    "depth": 0,
+    "blueprint_id": 47968,
+    "activity": "manufacturing",
+    "material_type_id": 57479,
+    "required": 2.0,
+    "used_from_inventory": 0.0,
+    "remaining_after_inventory": 2.0
+  },
+  {
+    "depth": 0,
+    "blueprint_id": 47968,
+    "activity": "manufacturing",
+    "material_type_id": 57486,
+    "required": 110.0,
+    "used_from_inventory": 110.0,
+    "remaining_after_inventory": 0.0
+  },
+  {
+    "depth": 0,
+    "blueprint_id": 47968,
+    "activity": "manufacturing",
+    "material_type_id": 57478,
+    "required": 220.0,
+    "used_from_inventory": 220.0,
+    "remaining_after_inventory": 0.0
+  },
+  {
+    "depth": 0,
+    "blueprint_id": 47968,
+    "activity": "manufacturing",
+    "material_type_id": 47975,
+    "required": 845.0,
+    "used_from_inventory": 0.0,
+    "remaining_after_inventory": 845.0
+  },
+  {
+    "depth": 0,
+    "blueprint_id": 47968,
+    "activity": "manufacturing",
+    "material_type_id": 48112,
+    "required": 850.0,
+    "used_from_inventory": 0.0,
+    "remaining_after_inventory": 850.0
+  },
+  {
+    "depth": 0,
+    "blueprint_id": 47968,
+    "activity": "manufacturing",
+    "material_type_id": 40,
+    "required": 7700.0,
+    "used_from_inventory": 7700.0,
+    "remaining_after_inventory": 0.0
+  },
+  {
+    "depth": 0,
+    "blueprint_id": 47968,
+    "activity": "manufacturing",
+    "material_type_id": 39,
+    "required": 15400.0,
+    "used_from_inventory": 15400.0,
+    "remaining_after_inventory": 0.0
+  },
+  {
+    "depth": 0,
+    "blueprint_id": 47968,
+    "activity": "manufacturing",
+    "material_type_id": 38,
+    "required": 46200.0,
+    "used_from_inventory": 46200.0,
+    "remaining_after_inventory": 0.0
+  },
+  {
+    "depth": 0,
+    "blueprint_id": 47968,
+    "activity": "manufacturing",
+    "material_type_id": 37,
+    "required": 440000.0,
+    "used_from_inventory": 440000.0,
+    "remaining_after_inventory": 0.0
+  },
+  {
+    "depth": 0,
+    "blueprint_id": 47968,
+    "activity": "manufacturing",
+    "material_type_id": 36,
+    "required": 660000.0,
+    "used_from_inventory": 660000.0,
+    "remaining_after_inventory": 0.0
+  },
+  {
+    "depth": 0,
+    "blueprint_id": 47968,
+    "activity": "manufacturing",
+    "material_type_id": 35,
+    "required": 4400000.0,
+    "used_from_inventory": 4400000.0,
+    "remaining_after_inventory": 0.0
+  },
+  {
+    "depth": 0,
+    "blueprint_id": 47968,
+    "activity": "manufacturing",
+    "material_type_id": 34,
+    "required": 8800000.0,
+    "used_from_inventory": 8800000.0,
+    "remaining_after_inventory": 0.0
+  },
+  {
+    "depth": 0,
+    "blueprint_id": 52350,
+    "activity": "manufacturing",
+    "material_type_id": 47922,
+    "required": 1.0,
+    "used_from_inventory": 0.0,
+    "remaining_after_inventory": 1.0
+  },
+  {
+    "depth": 0,
+    "blueprint_id": 52350,
+    "activity": "manufacturing",
+    "material_type_id": 47975,
+    "required": 22.0,
+    "used_from_inventory": 0.0,
+    "remaining_after_inventory": 22.0
+  },
+  {
+    "depth": 0,
+    "blueprint_id": 52350,
+    "activity": "manufacturing",
+    "material_type_id": 48112,
+    "required": 64.0,
+    "used_from_inventory": 0.0,
+    "remaining_after_inventory": 64.0
+  },
+  {
+    "depth": 0,
+    "blueprint_id": 17716,
+    "activity": "manufacturing",
+    "material_type_id": 57486,
+    "required": 30.0,
+    "used_from_inventory": 30.0,
+    "remaining_after_inventory": 0.0
+  },
+  {
+    "depth": 0,
+    "blueprint_id": 17716,
+    "activity": "manufacturing",
+    "material_type_id": 57478,
+    "required": 60.0,
+    "used_from_inventory": 60.0,
+    "remaining_after_inventory": 0.0
+  },
+  {
+    "depth": 0,
+    "blueprint_id": 17716,
+    "activity": "manufacturing",
+    "material_type_id": 83469,
+    "required": 60.0,
+    "used_from_inventory": 11.0,
+    "remaining_after_inventory": 49.0
+  },
+  {
+    "depth": 0,
+    "blueprint_id": 17716,
+    "activity": "manufacturing",
+    "material_type_id": 40,
+    "required": 600.0,
+    "used_from_inventory": 600.0,
+    "remaining_after_inventory": 0.0
+  },
+  {
+    "depth": 0,
+    "blueprint_id": 17716,
+    "activity": "manufacturing",
+    "material_type_id": 39,
+    "required": 1200.0,
+    "used_from_inventory": 1200.0,
+    "remaining_after_inventory": 0.0
+  },
+  {
+    "depth": 0,
+    "blueprint_id": 17716,
+    "activity": "manufacturing",
+    "material_type_id": 38,
+    "required": 1800.0,
+    "used_from_inventory": 1800.0,
+    "remaining_after_inventory": 0.0
+  },
+  {
+    "depth": 0,
+    "blueprint_id": 17716,
+    "activity": "manufacturing",
+    "material_type_id": 37,
+    "required": 12000.0,
+    "used_from_inventory": 12000.0,
+    "remaining_after_inventory": 0.0
+  },
+  {
+    "depth": 0,
+    "blueprint_id": 17716,
+    "activity": "manufacturing",
+    "material_type_id": 36,
+    "required": 43200.0,
+    "used_from_inventory": 43200.0,
+    "remaining_after_inventory": 0.0
+  },
+  {
+    "depth": 0,
+    "blueprint_id": 17716,
+    "activity": "manufacturing",
+    "material_type_id": 35,
+    "required": 216000.0,
+    "used_from_inventory": 216000.0,
+    "remaining_after_inventory": 0.0
+  },
+  {
+    "depth": 0,
+    "blueprint_id": 17716,
+    "activity": "manufacturing",
+    "material_type_id": 34,
+    "required": 648000.0,
+    "used_from_inventory": 648000.0,
+    "remaining_after_inventory": 0.0
+  }
+]

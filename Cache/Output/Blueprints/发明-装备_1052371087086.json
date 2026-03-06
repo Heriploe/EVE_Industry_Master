@@ -1,0 +1,28 @@
+[
+  {
+    "item_id": 1050166354584,
+    "id": 47973,
+    "zh": "潮上熵能分解者蓝图 I",
+    "en": "Supratidal Entropic Disintegrator I Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": 5,
+    "quantity": -2,
+    "location_id": 1052371087086,
+    "location_flag": "CorpSAG1",
+    "container_name": "发明-装备"
+  },
+  {
+    "item_id": 1051408742607,
+    "id": 47969,
+    "zh": "轻型熵能分解者蓝图 I",
+    "en": "Light Entropic Disintegrator I Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": 5,
+    "quantity": -2,
+    "location_id": 1052371087086,
+    "location_flag": "CorpSAG1",
+    "container_name": "发明-装备"
+  }
+]

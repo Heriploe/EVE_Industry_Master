@@ -1,0 +1,41 @@
+[
+  {
+    "item_id": 1051638466263,
+    "id": 46218,
+    "zh": "非线性超材料反应配方",
+    "en": "Nonlinear Metamaterials Reaction Formula",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "quantity": 4,
+    "location_id": 1052345106665,
+    "location_flag": "CorpSAG1",
+    "container_name": "M-非线性超材料"
+  },
+  {
+    "item_id": 1051638466312,
+    "id": 46182,
+    "zh": "铬化钛反应配方",
+    "en": "Titanium Chromide Reaction Formula",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "quantity": 2,
+    "location_id": 1052345106665,
+    "location_flag": "CorpSAG1",
+    "container_name": "M-非线性超材料"
+  },
+  {
+    "item_id": 1052345610933,
+    "id": 46172,
+    "zh": "铁磁流体反应配方",
+    "en": "Ferrofluid Reaction Formula",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "quantity": 2,
+    "location_id": 1052345106665,
+    "location_flag": "CorpSAG1",
+    "container_name": "M-非线性超材料"
+  }
+]

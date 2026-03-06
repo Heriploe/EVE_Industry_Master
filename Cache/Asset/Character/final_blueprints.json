@@ -6,6 +6,8 @@
     "material_efficiency": 0,
     "time_efficiency": 0,
     "runs": 2,
-    "is_blueprint_copy": true
+    "is_blueprint_copy": true,
+    "location_flag": "Hangar",
+    "container_name": null
   }
 ]

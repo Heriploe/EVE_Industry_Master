@@ -1,0 +1,54 @@
+[
+  {
+    "item_id": 1051201046273,
+    "id": 46212,
+    "zh": "超级突触纤维反应配方",
+    "en": "Hypersynaptic Fibers Reaction Formula",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "quantity": 4,
+    "location_id": 1052344995898,
+    "location_flag": "CorpSAG1",
+    "container_name": "D-超级突触纤维"
+  },
+  {
+    "item_id": 1051201049255,
+    "id": 46180,
+    "zh": "铯铬合金反应配方",
+    "en": "Solerium Reaction Formula",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "quantity": 2,
+    "location_id": 1052344995898,
+    "location_flag": "CorpSAG1",
+    "container_name": "D-超级突触纤维"
+  },
+  {
+    "item_id": 1052345010717,
+    "id": 46170,
+    "zh": "镝汞合金反应配方",
+    "en": "Dysporite Reaction Formula",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "quantity": 2,
+    "location_id": 1052344995898,
+    "location_flag": "CorpSAG1",
+    "container_name": "D-超级突触纤维"
+  },
+  {
+    "item_id": 1052345051868,
+    "id": 46183,
+    "zh": "铪化钒反应配方",
+    "en": "Vanadium Hafnite Reaction Formula",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "quantity": 2,
+    "location_id": 1052344995898,
+    "location_flag": "CorpSAG1",
+    "container_name": "D-超级突触纤维"
+  }
+]

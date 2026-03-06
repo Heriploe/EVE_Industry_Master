@@ -1,0 +1,67 @@
+[
+  {
+    "item_id": 1049008887144,
+    "id": 46170,
+    "zh": "镝汞合金反应配方",
+    "en": "Dysporite Reaction Formula",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "quantity": 2,
+    "location_id": 1052267802699,
+    "location_flag": "CorpSAG1",
+    "container_name": "C-费米子冷凝物"
+  },
+  {
+    "item_id": 1049149100664,
+    "id": 46214,
+    "zh": "费米子冷凝物反应配方",
+    "en": "Fermionic Condensates Reaction Formula",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "quantity": 4,
+    "location_id": 1052267802699,
+    "location_flag": "CorpSAG1",
+    "container_name": "C-费米子冷凝物"
+  },
+  {
+    "item_id": 1049149103115,
+    "id": 46173,
+    "zh": "熔融冷凝物反应配方",
+    "en": "Fluxed Condensates Reaction Formula",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "quantity": 2,
+    "location_id": 1052267802699,
+    "location_flag": "CorpSAG1",
+    "container_name": "C-费米子冷凝物"
+  },
+  {
+    "item_id": 1052344688790,
+    "id": 46184,
+    "zh": "稀土钷反应配方",
+    "en": "Prometium Reaction Formula",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "quantity": 2,
+    "location_id": 1052267802699,
+    "location_flag": "CorpSAG1",
+    "container_name": "C-费米子冷凝物"
+  },
+  {
+    "item_id": 1052345014517,
+    "id": 46166,
+    "zh": "镉化铯反应配方",
+    "en": "Caesarium Cadmide Reaction Formula",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "quantity": 2,
+    "location_id": 1052267802699,
+    "location_flag": "CorpSAG1",
+    "container_name": "C-费米子冷凝物"
+  }
+]

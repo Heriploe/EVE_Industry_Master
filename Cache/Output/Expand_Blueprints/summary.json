@@ -1,0 +1,14 @@
+{
+  "input_blueprints": "C:\\Users\\zhout\\Documents\\GitHub\\EVE_Industry_Master\\Cache\\Output\\Blueprints\\A-优先_1051326279872.json",
+  "inventory_json": "C:\\Users\\zhout\\Documents\\GitHub\\EVE_Industry_Master\\Cache\\Asset\\Corp\\final_non_blueprints.json",
+  "max_depth": 0,
+  "root_runs": 1.0,
+  "root_blueprints": 15,
+  "child_blueprints_executed": 0,
+  "missing_material_types": 19,
+  "outputs": {
+    "missing_materials_csv": "C:\\Users\\zhout\\Documents\\GitHub\\EVE_Industry_Master\\Cache\\Output\\Expand_Blueprints\\missing_materials.csv",
+    "expanded_blueprint_runs_csv": "C:\\Users\\zhout\\Documents\\GitHub\\EVE_Industry_Master\\Cache\\Output\\Expand_Blueprints\\expanded_blueprint_runs.csv",
+    "expand_trace_json": "C:\\Users\\zhout\\Documents\\GitHub\\EVE_Industry_Master\\Cache\\Output\\Expand_Blueprints\\expand_trace.json"
+  }
+}
