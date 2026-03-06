@@ -1,6 +1,7 @@
 import argparse
 import configparser
 import json
+import math
 from collections import Counter, defaultdict
 from pathlib import Path
 from typing import Dict, List, Set, Tuple
@@ -118,7 +119,8 @@ def format_quantity(value: float) -> str:
 def write_space_csv(path: Path, rows: List[Tuple[str, float]]):
     with path.open("w", encoding="utf-8-sig") as f:
         for name, qty in rows:
-            f.write(f"{name} {format_quantity(float(qty))}\n")
+            rounded_up_qty = math.ceil(float(qty))
+            f.write(f"{name} {format_quantity(float(rounded_up_qty))}\n")
 
 
 def consume_inventory(type_id: int, quantity: float, inventory: Dict[int, float]) -> float:
@@ -218,7 +220,9 @@ def main():
         if depth > 0:
             child_execution[(bp_id, activity)] += runs
 
-        if depth > 0 and bp_id in t2_to_t1:
+        # 只要目标产物对应 T2 蓝图，就需要计入其发明流程与发明材料。
+        # 发明材料来自 blueprints.yaml 中 T1 蓝图 activities.invention.materials。
+        if bp_id in t2_to_t1:
             t1_bp_id = t2_to_t1[bp_id]
             invention_runs_per_unit, _, _ = invention_T2_runs(decryptor_id=decryptor_id)
             required_invention_runs = runs * float(invention_runs_per_unit)
