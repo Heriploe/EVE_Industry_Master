@@ -222,7 +222,7 @@ def get_all_pages(url, access_token, user_agent):
 
 def get_asset_names(corp_id, item_ids, access_token, user_agent):
     if not item_ids:
-        return {}
+        return []
 
     headers = {
         "Authorization": f"Bearer {access_token}",
@@ -230,7 +230,7 @@ def get_asset_names(corp_id, item_ids, access_token, user_agent):
         "Content-Type": "application/json",
     }
     url = f"{ESI_BASE}/corporations/{corp_id}/assets/names/"
-    item_name_map = {}
+    names_raw = []
 
     ids_list = list(item_ids)
     for idx in range(0, len(ids_list), 1000):
@@ -243,14 +243,20 @@ def get_asset_names(corp_id, item_ids, access_token, user_agent):
         if r.status_code != 200:
             raise RuntimeError(f"获取资产名称失败: {r.status_code} {r.text}")
 
-        for row in r.json():
-            item_id = row.get("item_id")
-            if item_id is not None:
-                item_name_map[item_id] = row.get("name")
+        names_raw.extend(r.json())
 
         time.sleep(0.05)
 
-    return item_name_map
+    return names_raw
+
+
+def build_asset_name_map(names_raw):
+    location_name_map = {}
+    for row in names_raw or []:
+        item_id = row.get("item_id")
+        if item_id is not None:
+            location_name_map[item_id] = row.get("name")
+    return location_name_map
 
 
 def split_assets_with_blueprints(assets, blueprints, types_file, location_name_map=None):
@@ -322,9 +328,9 @@ def fetch_all_data(access_token, settings, char_id):
     corp_container_ids = {
         bp.get("location_id") for bp in corp_blueprints if bp.get("location_id") is not None
     }
-    corp_asset_names = get_asset_names(corp_id, corp_container_ids, access_token, settings["user_agent"])
+    corp_names_raw = get_asset_names(corp_id, corp_container_ids, access_token, settings["user_agent"])
 
-    return char_assets, char_blueprints, corp_assets, corp_blueprints, corp_jobs, corp_asset_names
+    return char_assets, char_blueprints, corp_assets, corp_blueprints, corp_jobs, corp_names_raw
 
 
 def save_assets_bundle(base_dir, assets, blueprints, types_file, location_name_map=None):
@@ -388,7 +394,7 @@ def main():
         char_id, char_name = get_character_id(access_token, settings["user_agent"])
         cache_tokens(char_id, char_name)
         print(f"Character: {char_name} ({char_id})")
-        char_assets, char_blueprints, corp_assets, corp_blueprints, corp_jobs, corp_asset_names = fetch_all_data(
+        char_assets, char_blueprints, corp_assets, corp_blueprints, corp_jobs, corp_names_raw = fetch_all_data(
             access_token, settings, char_id
         )
     except Exception as first_exc:  # noqa: BLE001
@@ -405,7 +411,7 @@ def main():
                 char_id, char_name = get_character_id(access_token, settings["user_agent"])
                 cache_tokens(char_id, char_name)
                 print(f"Character: {char_name} ({char_id})")
-                char_assets, char_blueprints, corp_assets, corp_blueprints, corp_jobs, corp_asset_names = fetch_all_data(
+                char_assets, char_blueprints, corp_assets, corp_blueprints, corp_jobs, corp_names_raw = fetch_all_data(
                     access_token, settings, char_id
                 )
                 recovered = True
@@ -428,14 +434,21 @@ def main():
             char_id, char_name = get_character_id(access_token, settings["user_agent"])
             cache_tokens(char_id, char_name)
             print(f"Character: {char_name} ({char_id})")
-            char_assets, char_blueprints, corp_assets, corp_blueprints, corp_jobs, corp_asset_names = fetch_all_data(
+            char_assets, char_blueprints, corp_assets, corp_blueprints, corp_jobs, corp_names_raw = fetch_all_data(
                 access_token, settings, char_id
             )
 
     output_root = settings["output_dir"]
     save_assets_bundle(output_root / "Character", char_assets, char_blueprints, settings["types_file"])
+
+    save_json(output_root / "Corp" / "names_raw.json", corp_names_raw)
+    corp_location_name_map = build_asset_name_map(corp_names_raw)
     save_assets_bundle(
-        output_root / "Corp", corp_assets, corp_blueprints, settings["types_file"], location_name_map=corp_asset_names
+        output_root / "Corp",
+        corp_assets,
+        corp_blueprints,
+        settings["types_file"],
+        location_name_map=corp_location_name_map,
     )
     save_json(output_root / "Corp" / "industry_jobs_raw.json", corp_jobs)
 
