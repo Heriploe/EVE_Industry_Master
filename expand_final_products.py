@@ -1,6 +1,7 @@
 import argparse
 import configparser
 import json
+import math
 from collections import Counter, defaultdict
 from pathlib import Path
 from typing import Dict, List, Set, Tuple
@@ -118,7 +119,8 @@ def format_quantity(value: float) -> str:
 def write_space_csv(path: Path, rows: List[Tuple[str, float]]):
     with path.open("w", encoding="utf-8-sig") as f:
         for name, qty in rows:
-            f.write(f"{name} {format_quantity(float(qty))}\n")
+            rounded_up_qty = math.ceil(float(qty))
+            f.write(f"{name} {format_quantity(float(rounded_up_qty))}\n")
 
 
 def consume_inventory(type_id: int, quantity: float, inventory: Dict[int, float]) -> float:
