@@ -218,7 +218,9 @@ def main():
         if depth > 0:
             child_execution[(bp_id, activity)] += runs
 
-        if depth > 0 and bp_id in t2_to_t1:
+        # 只要目标产物对应 T2 蓝图，就需要计入其发明流程与发明材料。
+        # 发明材料来自 blueprints.yaml 中 T1 蓝图 activities.invention.materials。
+        if bp_id in t2_to_t1:
             t1_bp_id = t2_to_t1[bp_id]
             invention_runs_per_unit, _, _ = invention_T2_runs(decryptor_id=decryptor_id)
             required_invention_runs = runs * float(invention_runs_per_unit)
