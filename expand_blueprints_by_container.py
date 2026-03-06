@@ -1,6 +1,5 @@
 import argparse
 import configparser
-import csv
 import json
 from collections import Counter, defaultdict
 from pathlib import Path
@@ -174,43 +173,32 @@ def expand_requirements(
         missing[mat_tid] += remaining
 
 
+def format_quantity(value: float) -> str:
+    if abs(value - round(value)) < 1e-9:
+        return str(int(round(value)))
+    return f"{value:.6f}".rstrip("0").rstrip(".")
+
+
+def write_space_separated_pairs(path: Path, rows):
+    with path.open("w", encoding="utf-8-sig") as f:
+        for name, qty in rows:
+            f.write(f"{name} {format_quantity(float(qty))}\n")
+
+
 def write_missing_csv(path: Path, missing: Counter, type_map: dict):
     rows = []
     for tid, qty in sorted(missing.items(), key=lambda x: x[0]):
-        zh, en = build_type_name(type_map, tid)
-        rows.append(
-            {
-                "type_id": tid,
-                "zh": zh,
-                "en": en,
-                "missing_quantity": round(float(qty), 6),
-            }
-        )
-
-    with path.open("w", encoding="utf-8-sig", newline="") as f:
-        writer = csv.DictWriter(f, fieldnames=["type_id", "zh", "en", "missing_quantity"])
-        writer.writeheader()
-        writer.writerows(rows)
+        zh, _ = build_type_name(type_map, tid)
+        rows.append((zh or str(tid), float(qty)))
+    write_space_separated_pairs(path, rows)
 
 
 def write_execution_csv(path: Path, execution: Counter, type_map: dict):
     rows = []
-    for (bp_id, activity), runs in sorted(execution.items(), key=lambda x: (x[0][0], x[0][1])):
-        zh, en = build_type_name(type_map, bp_id)
-        rows.append(
-            {
-                "blueprint_id": bp_id,
-                "zh": zh,
-                "en": en,
-                "activity": activity,
-                "runs": round(float(runs), 6),
-            }
-        )
-
-    with path.open("w", encoding="utf-8-sig", newline="") as f:
-        writer = csv.DictWriter(f, fieldnames=["blueprint_id", "zh", "en", "activity", "runs"])
-        writer.writeheader()
-        writer.writerows(rows)
+    for (bp_id, _activity), runs in sorted(execution.items(), key=lambda x: (x[0][0], x[0][1])):
+        zh, _ = build_type_name(type_map, bp_id)
+        rows.append((zh or str(bp_id), float(runs)))
+    write_space_separated_pairs(path, rows)
 
 
 def main():
