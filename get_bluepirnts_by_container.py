@@ -7,7 +7,7 @@ from Utilities.name_mapping import load_types_map
 
 REPO_ROOT = Path(__file__).resolve().parent
 DEFAULT_CORP_DIR = REPO_ROOT / "Cache" / "Asset" / "Corp"
-DEFAULT_OUTPUT_DIR = REPO_ROOT / "Cache_output"
+DEFAULT_OUTPUT_DIR = REPO_ROOT / "Cache" / "Output" / "Blueprints"
 DEFAULT_TYPES_FILE = REPO_ROOT / "Data" / "types.json"
 
 
@@ -65,7 +65,7 @@ def export_for_container(container_name, container_id, blueprints, type_map, out
 
 
 def main():
-    parser = argparse.ArgumentParser(description="按容器名称导出对应蓝图到 Cache_output")
+    parser = argparse.ArgumentParser(description="按容器名称导出对应蓝图到 Cache/Output/Blueprints")
     parser.add_argument("--name", help="容器名称（精确匹配）。不传则导出所有容器。")
     parser.add_argument("--corp-dir", type=Path, default=DEFAULT_CORP_DIR, help="Corp 资产目录")
     parser.add_argument("--output-dir", type=Path, default=DEFAULT_OUTPUT_DIR, help="导出目录")
