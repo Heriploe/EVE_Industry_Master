@@ -232,19 +232,33 @@ def get_asset_names(corp_id, item_ids, access_token, user_agent):
     url = f"{ESI_BASE}/corporations/{corp_id}/assets/names/"
     names_raw = []
 
+    def fetch_batch(batch):
+        r = requests.post(url, headers=headers, json=batch, timeout=20)
+        if r.status_code == 200:
+            return r.json()
+
+        if r.status_code == 404:
+            # ESI 在批量请求里只要混入一个无效 ID，整批都会 404。
+            # 为避免丢掉同批中的有效 ID，这里降级为逐个查询。
+            if len(batch) == 1:
+                return []
+
+            rows = []
+            for item_id in batch:
+                single = requests.post(url, headers=headers, json=[item_id], timeout=20)
+                if single.status_code == 200:
+                    rows.extend(single.json())
+                elif single.status_code != 404:
+                    raise RuntimeError(f"获取资产名称失败: {single.status_code} {single.text}")
+                time.sleep(0.05)
+            return rows
+
+        raise RuntimeError(f"获取资产名称失败: {r.status_code} {r.text}")
+
     ids_list = list(item_ids)
     for idx in range(0, len(ids_list), 1000):
         chunk = ids_list[idx : idx + 1000]
-        r = requests.post(url, headers=headers, json=chunk, timeout=20)
-        if r.status_code == 404:
-            # 一批中包含无效 ID（Invalid IDs in the request）时跳过该批
-            time.sleep(0.05)
-            continue
-        if r.status_code != 200:
-            raise RuntimeError(f"获取资产名称失败: {r.status_code} {r.text}")
-
-        names_raw.extend(r.json())
-
+        names_raw.extend(fetch_batch(chunk))
         time.sleep(0.05)
 
     return names_raw
