@@ -153,6 +153,7 @@ def get_authorization_code(redirect_uri, client_id, scope):
         f"redirect_uri={redirect_uri}",
         f"scope={urllib.parse.quote(scope, safe='')}",
         f"state={urllib.parse.quote(state, safe='')}",
+        "prompt=login",
     ]
     auth_url = f"{LOGIN_BASE}/v2/oauth/authorize?{'&'.join(query_parts)}"
 
@@ -235,6 +236,10 @@ def get_asset_names(corp_id, item_ids, access_token, user_agent):
     for idx in range(0, len(ids_list), 1000):
         chunk = ids_list[idx : idx + 1000]
         r = requests.post(url, headers=headers, json=chunk, timeout=20)
+        if r.status_code == 404:
+            # 一批中包含无效 ID（Invalid IDs in the request）时跳过该批
+            time.sleep(0.05)
+            continue
         if r.status_code != 200:
             raise RuntimeError(f"获取资产名称失败: {r.status_code} {r.text}")
 
@@ -342,15 +347,17 @@ def main():
     access_token = tokens.get("access_token")
     refresh_token = tokens.get("refresh_token")
 
-    def cache_tokens():
-        save_json(
-            settings["cache_file"],
-            {
-                "access_token": access_token,
-                "refresh_token": refresh_token,
-                "updated_at": int(time.time()),
-            },
-        )
+    def cache_tokens(character_id=None, character_name=None):
+        payload = {
+            "access_token": access_token,
+            "refresh_token": refresh_token,
+            "updated_at": int(time.time()),
+        }
+        if character_id is not None:
+            payload["character_id"] = character_id
+        if character_name is not None:
+            payload["character_name"] = character_name
+        save_json(settings["cache_file"], payload)
 
     if not access_token and refresh_token:
         print("未找到缓存 access_token，尝试使用 refresh_token 获取...")
@@ -379,6 +386,7 @@ def main():
 
     try:
         char_id, char_name = get_character_id(access_token, settings["user_agent"])
+        cache_tokens(char_id, char_name)
         print(f"Character: {char_name} ({char_id})")
         char_assets, char_blueprints, corp_assets, corp_blueprints, corp_jobs, corp_asset_names = fetch_all_data(
             access_token, settings, char_id
@@ -395,6 +403,7 @@ def main():
                 )
                 cache_tokens()
                 char_id, char_name = get_character_id(access_token, settings["user_agent"])
+                cache_tokens(char_id, char_name)
                 print(f"Character: {char_name} ({char_id})")
                 char_assets, char_blueprints, corp_assets, corp_blueprints, corp_jobs, corp_asset_names = fetch_all_data(
                     access_token, settings, char_id
@@ -417,6 +426,7 @@ def main():
             refresh_token = token_data.get("refresh_token")
             cache_tokens()
             char_id, char_name = get_character_id(access_token, settings["user_agent"])
+            cache_tokens(char_id, char_name)
             print(f"Character: {char_name} ({char_id})")
             char_assets, char_blueprints, corp_assets, corp_blueprints, corp_jobs, corp_asset_names = fetch_all_data(
                 access_token, settings, char_id
