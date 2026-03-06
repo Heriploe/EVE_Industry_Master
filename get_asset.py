@@ -219,8 +219,8 @@ def get_all_pages(url, access_token, user_agent):
     return results
 
 
-def get_asset_names(corp_id, location_ids, access_token, user_agent):
-    if not location_ids:
+def get_asset_names(corp_id, item_ids, access_token, user_agent):
+    if not item_ids:
         return {}
 
     headers = {
@@ -229,21 +229,23 @@ def get_asset_names(corp_id, location_ids, access_token, user_agent):
         "Content-Type": "application/json",
     }
     url = f"{ESI_BASE}/corporations/{corp_id}/assets/names/"
-    location_name_map = {}
+    item_name_map = {}
 
-    ids_list = list(location_ids)
+    ids_list = list(item_ids)
     for idx in range(0, len(ids_list), 1000):
         chunk = ids_list[idx : idx + 1000]
         r = requests.post(url, headers=headers, json=chunk, timeout=20)
-        if r.status_code == 404:
-            continue
-        r.raise_for_status()
+        if r.status_code != 200:
+            raise RuntimeError(f"获取资产名称失败: {r.status_code} {r.text}")
+
         for row in r.json():
             item_id = row.get("item_id")
             if item_id is not None:
-                location_name_map[item_id] = row.get("name")
+                item_name_map[item_id] = row.get("name")
 
-    return location_name_map
+        time.sleep(0.05)
+
+    return item_name_map
 
 
 def split_assets_with_blueprints(assets, blueprints, types_file, location_name_map=None):
@@ -273,7 +275,7 @@ def split_assets_with_blueprints(assets, blueprints, types_file, location_name_m
                     "time_efficiency": bp.get("time_efficiency", 0),
                     "runs": bp.get("runs", -1),
                     "is_blueprint_copy": is_blueprint_copy,
-                    "location_flag": asset.get("location_flag"),
+                    "location_flag": bp.get("location_flag"),
                     "container_name": location_name_map.get(location_id),
                 }
             )
@@ -312,8 +314,10 @@ def fetch_all_data(access_token, settings, char_id):
         settings["user_agent"],
     )
 
-    corp_location_ids = {asset.get("location_id") for asset in corp_assets if asset.get("location_id") is not None}
-    corp_asset_names = get_asset_names(corp_id, corp_location_ids, access_token, settings["user_agent"])
+    corp_container_ids = {
+        bp.get("location_id") for bp in corp_blueprints if bp.get("location_id") is not None
+    }
+    corp_asset_names = get_asset_names(corp_id, corp_container_ids, access_token, settings["user_agent"])
 
     return char_assets, char_blueprints, corp_assets, corp_blueprints, corp_jobs, corp_asset_names
 
