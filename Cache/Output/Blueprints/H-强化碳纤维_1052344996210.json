@@ -1,0 +1,93 @@
+[
+  {
+    "item_id": 1051638466351,
+    "id": 57494,
+    "zh": "热固性聚合物反应配方",
+    "en": "Thermosetting Polymer Reaction Formula",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "quantity": -1,
+    "location_id": 1052344996210,
+    "location_flag": "CorpSAG1",
+    "container_name": "H-强化碳纤维"
+  },
+  {
+    "item_id": 1052361376397,
+    "id": 57494,
+    "zh": "热固性聚合物反应配方",
+    "en": "Thermosetting Polymer Reaction Formula",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "quantity": -1,
+    "location_id": 1052344996210,
+    "location_flag": "CorpSAG1",
+    "container_name": "H-强化碳纤维"
+  },
+  {
+    "item_id": 1052361377066,
+    "id": 57494,
+    "zh": "热固性聚合物反应配方",
+    "en": "Thermosetting Polymer Reaction Formula",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "quantity": -1,
+    "location_id": 1052344996210,
+    "location_flag": "CorpSAG1",
+    "container_name": "H-强化碳纤维"
+  },
+  {
+    "item_id": 1052361377400,
+    "id": 57494,
+    "zh": "热固性聚合物反应配方",
+    "en": "Thermosetting Polymer Reaction Formula",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "quantity": -1,
+    "location_id": 1052344996210,
+    "location_flag": "CorpSAG1",
+    "container_name": "H-强化碳纤维"
+  },
+  {
+    "item_id": 1051638466297,
+    "id": 57491,
+    "zh": "富氧有机溶剂反应配方",
+    "en": "Oxy-Organic Solvents Reaction Formula",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "quantity": 1,
+    "location_id": 1052344996210,
+    "location_flag": "CorpSAG1",
+    "container_name": "H-强化碳纤维"
+  },
+  {
+    "item_id": 1051638466344,
+    "id": 57493,
+    "zh": "强化碳纤维反应配方",
+    "en": "Reinforced Carbon Fiber Reaction Formula",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "quantity": 4,
+    "location_id": 1052344996210,
+    "location_flag": "CorpSAG1",
+    "container_name": "H-强化碳纤维"
+  },
+  {
+    "item_id": 1051638466377,
+    "id": 57490,
+    "zh": "碳纤维反应配方",
+    "en": "Carbon Fiber Reaction Formula",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "quantity": 4,
+    "location_id": 1052344996210,
+    "location_flag": "CorpSAG1",
+    "container_name": "H-强化碳纤维"
+  }
+]

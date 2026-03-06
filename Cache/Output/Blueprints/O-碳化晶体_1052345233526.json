@@ -1,0 +1,41 @@
+[
+  {
+    "item_id": 1051638466358,
+    "id": 46205,
+    "zh": "碳化晶体反应配方",
+    "en": "Crystalline Carbonide Reaction Formula",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "quantity": 4,
+    "location_id": 1052345233526,
+    "location_flag": "CorpSAG1",
+    "container_name": "O-碳化晶体"
+  },
+  {
+    "item_id": 1052345610943,
+    "id": 46167,
+    "zh": "碳聚合物反应配方",
+    "en": "Carbon Polymers Reaction Formula",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "quantity": 2,
+    "location_id": 1052345233526,
+    "location_flag": "CorpSAG1",
+    "container_name": "O-碳化晶体"
+  },
+  {
+    "item_id": 1052345610947,
+    "id": 46169,
+    "zh": "微晶合金反应配方",
+    "en": "Crystallite Alloy Reaction Formula",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "quantity": 2,
+    "location_id": 1052345233526,
+    "location_flag": "CorpSAG1",
+    "container_name": "O-碳化晶体"
+  }
+]

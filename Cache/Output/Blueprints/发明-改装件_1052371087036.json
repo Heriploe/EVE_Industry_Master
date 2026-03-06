@@ -1,0 +1,28 @@
+[
+  {
+    "item_id": 1052414768947,
+    "id": 31373,
+    "zh": "中型电容器控制电路蓝图 I",
+    "en": "Medium Capacitor Control Circuit I Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": 60,
+    "quantity": -2,
+    "location_id": 1052371087036,
+    "location_flag": "CorpSAG1",
+    "container_name": "发明-改装件"
+  },
+  {
+    "item_id": 1052414768950,
+    "id": 31361,
+    "zh": "中型辅助电源路由器蓝图 I",
+    "en": "Medium Ancillary Current Router I Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": 60,
+    "quantity": -2,
+    "location_id": 1052371087036,
+    "location_flag": "CorpSAG1",
+    "container_name": "发明-改装件"
+  }
+]

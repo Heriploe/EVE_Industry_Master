@@ -1,0 +1,67 @@
+[
+  {
+    "item_id": 1044830053128,
+    "id": 46213,
+    "zh": "铁磁胶体反应配方",
+    "en": "Ferrogel Reaction Formula",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "quantity": 4,
+    "location_id": 1052267809216,
+    "location_flag": "CorpSAG1",
+    "container_name": "B-铁磁胶体"
+  },
+  {
+    "item_id": 1044830061477,
+    "id": 46175,
+    "zh": "超氟化物反应配方",
+    "en": "Hyperflurite Reaction Formula",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "quantity": 2,
+    "location_id": 1052267809216,
+    "location_flag": "CorpSAG1",
+    "container_name": "B-铁磁胶体"
+  },
+  {
+    "item_id": 1044830063921,
+    "id": 46184,
+    "zh": "稀土钷反应配方",
+    "en": "Prometium Reaction Formula",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "quantity": 2,
+    "location_id": 1052267809216,
+    "location_flag": "CorpSAG1",
+    "container_name": "B-铁磁胶体"
+  },
+  {
+    "item_id": 1051200976547,
+    "id": 46174,
+    "zh": "六元复合物反应配方",
+    "en": "Hexite Reaction Formula",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "quantity": 2,
+    "location_id": 1052267809216,
+    "location_flag": "CorpSAG1",
+    "container_name": "B-铁磁胶体"
+  },
+  {
+    "item_id": 1051201039648,
+    "id": 46172,
+    "zh": "铁磁流体反应配方",
+    "en": "Ferrofluid Reaction Formula",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "quantity": 2,
+    "location_id": 1052267809216,
+    "location_flag": "CorpSAG1",
+    "container_name": "B-铁磁胶体"
+  }
+]

@@ -1,0 +1,93 @@
+[
+  {
+    "item_id": 1052345439747,
+    "id": 46176,
+    "zh": "新汞合金反应配方",
+    "en": "Neo Mercurite Reaction Formula",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "quantity": -1,
+    "location_id": 1052345495249,
+    "location_flag": "CorpSAG1",
+    "container_name": "I-等离子体超材料"
+  },
+  {
+    "item_id": 1052453473058,
+    "id": 46176,
+    "zh": "新汞合金反应配方",
+    "en": "Neo Mercurite Reaction Formula",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "quantity": -1,
+    "location_id": 1052345495249,
+    "location_flag": "CorpSAG1",
+    "container_name": "I-等离子体超材料"
+  },
+  {
+    "item_id": 1052453476625,
+    "id": 46171,
+    "zh": "菲尔合金反应配方",
+    "en": "Fernite Alloy Reaction Formula",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "quantity": -1,
+    "location_id": 1052345495249,
+    "location_flag": "CorpSAG1",
+    "container_name": "I-等离子体超材料"
+  },
+  {
+    "item_id": 1052492194386,
+    "id": 46215,
+    "zh": "等离子体超材料反应配方",
+    "en": "Plasmonic Metamaterials Reaction Formula",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "quantity": -1,
+    "location_id": 1052345495249,
+    "location_flag": "CorpSAG1",
+    "container_name": "I-等离子体超材料"
+  },
+  {
+    "item_id": 1052492195461,
+    "id": 46215,
+    "zh": "等离子体超材料反应配方",
+    "en": "Plasmonic Metamaterials Reaction Formula",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "quantity": -1,
+    "location_id": 1052345495249,
+    "location_flag": "CorpSAG1",
+    "container_name": "I-等离子体超材料"
+  },
+  {
+    "item_id": 1052345610926,
+    "id": 46215,
+    "zh": "等离子体超材料反应配方",
+    "en": "Plasmonic Metamaterials Reaction Formula",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "quantity": 2,
+    "location_id": 1052345495249,
+    "location_flag": "CorpSAG1",
+    "container_name": "I-等离子体超材料"
+  },
+  {
+    "item_id": 1052346834148,
+    "id": 46171,
+    "zh": "菲尔合金反应配方",
+    "en": "Fernite Alloy Reaction Formula",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "quantity": 1,
+    "location_id": 1052345495249,
+    "location_flag": "CorpSAG1",
+    "container_name": "I-等离子体超材料"
+  }
+]

@@ -1,0 +1,41 @@
+[
+  {
+    "item_id": 1051119401492,
+    "id": 46209,
+    "zh": "富勒化合物反应配方",
+    "en": "Fullerides Reaction Formula",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "quantity": 4,
+    "location_id": 1052345067770,
+    "location_flag": "CorpSAG1",
+    "container_name": "N-富勒化合物"
+  },
+  {
+    "item_id": 1051638466375,
+    "id": 46167,
+    "zh": "碳聚合物反应配方",
+    "en": "Carbon Polymers Reaction Formula",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "quantity": 2,
+    "location_id": 1052345067770,
+    "location_flag": "CorpSAG1",
+    "container_name": "N-富勒化合物"
+  },
+  {
+    "item_id": 1052345396997,
+    "id": 46177,
+    "zh": "铂锝合金反应配方",
+    "en": "Platinum Technite Reaction Formula",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "quantity": 2,
+    "location_id": 1052345067770,
+    "location_flag": "CorpSAG1",
+    "container_name": "N-富勒化合物"
+  }
+]

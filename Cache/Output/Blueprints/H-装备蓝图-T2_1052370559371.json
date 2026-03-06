@@ -1,0 +1,28 @@
+[
+  {
+    "item_id": 1051019116432,
+    "id": 43913,
+    "zh": "强化冰矿采集无人机蓝图",
+    "en": "'Augmented' Ice Harvesting Drone Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": 60,
+    "quantity": -2,
+    "location_id": 1052370559371,
+    "location_flag": "CorpSAG1",
+    "container_name": "H-装备蓝图-T2"
+  },
+  {
+    "item_id": 1051233443390,
+    "id": 34285,
+    "zh": "偏振式200mm自动加农炮蓝图",
+    "en": "Polarized 200mm AutoCannon Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": 1,
+    "quantity": -2,
+    "location_id": 1052370559371,
+    "location_flag": "CorpSAG1",
+    "container_name": "H-装备蓝图-T2"
+  }
+]

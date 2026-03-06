@@ -332,7 +332,7 @@
   {
     "item_id": 1050069632421,
     "location_flag": "CorpSAG1",
-    "location_id": 1052370806702,
+    "location_id": 1052370808852,
     "material_efficiency": 0,
     "quantity": -1,
     "runs": -1,
@@ -882,7 +882,7 @@
   {
     "item_id": 1051203473215,
     "location_flag": "CorpSAG1",
-    "location_id": 1052251220582,
+    "location_id": 1052370808852,
     "material_efficiency": 0,
     "quantity": -1,
     "runs": -1,
@@ -942,7 +942,7 @@
   {
     "item_id": 1051203586957,
     "location_flag": "CorpSAG1",
-    "location_id": 1052251220582,
+    "location_id": 1052370808852,
     "material_efficiency": 10,
     "quantity": -1,
     "runs": -1,
@@ -956,7 +956,7 @@
     "material_efficiency": 0,
     "quantity": -1,
     "runs": -1,
-    "time_efficiency": 0,
+    "time_efficiency": 20,
     "type_id": 31371
   },
   {
@@ -976,13 +976,23 @@
     "material_efficiency": 0,
     "quantity": -1,
     "runs": -1,
-    "time_efficiency": 0,
+    "time_efficiency": 20,
     "type_id": 31010
+  },
+  {
+    "item_id": 1051203634054,
+    "location_flag": "CorpSAG1",
+    "location_id": 1052370792825,
+    "material_efficiency": 0,
+    "quantity": -1,
+    "runs": -1,
+    "time_efficiency": 0,
+    "type_id": 31024
   },
   {
     "item_id": 1051203641047,
     "location_flag": "CorpSAG1",
-    "location_id": 1052251220582,
+    "location_id": 1052370808852,
     "material_efficiency": 10,
     "quantity": -1,
     "runs": -1,
@@ -1023,7 +1033,7 @@
     "item_id": 1051203703868,
     "location_flag": "CorpSAG1",
     "location_id": 1052370808852,
-    "material_efficiency": 0,
+    "material_efficiency": 10,
     "quantity": -1,
     "runs": -1,
     "time_efficiency": 0,
@@ -1033,11 +1043,61 @@
     "item_id": 1051203711659,
     "location_flag": "CorpSAG1",
     "location_id": 1052370808852,
-    "material_efficiency": 0,
+    "material_efficiency": 10,
     "quantity": -1,
     "runs": -1,
     "time_efficiency": 0,
     "type_id": 31789
+  },
+  {
+    "item_id": 1051203732532,
+    "location_flag": "CorpSAG1",
+    "location_id": 1052370808852,
+    "material_efficiency": 0,
+    "quantity": -1,
+    "runs": -1,
+    "time_efficiency": 0,
+    "type_id": 31589
+  },
+  {
+    "item_id": 1051203734013,
+    "location_flag": "CorpSAG1",
+    "location_id": 1052370808852,
+    "material_efficiency": 0,
+    "quantity": -1,
+    "runs": -1,
+    "time_efficiency": 0,
+    "type_id": 26029
+  },
+  {
+    "item_id": 1051203734606,
+    "location_flag": "CorpSAG1",
+    "location_id": 1052370808852,
+    "material_efficiency": 0,
+    "quantity": -1,
+    "runs": -1,
+    "time_efficiency": 0,
+    "type_id": 26031
+  },
+  {
+    "item_id": 1051203735213,
+    "location_flag": "CorpSAG1",
+    "location_id": 1052370808852,
+    "material_efficiency": 0,
+    "quantity": -1,
+    "runs": -1,
+    "time_efficiency": 0,
+    "type_id": 26021
+  },
+  {
+    "item_id": 1051203737386,
+    "location_flag": "CorpSAG1",
+    "location_id": 1052370808852,
+    "material_efficiency": 0,
+    "quantity": -1,
+    "runs": -1,
+    "time_efficiency": 0,
+    "type_id": 26027
   },
   {
     "item_id": 1051203792470,
@@ -1062,7 +1122,7 @@
   {
     "item_id": 1051203799621,
     "location_flag": "CorpSAG1",
-    "location_id": 1052370808852,
+    "location_id": 1052371087338,
     "material_efficiency": 10,
     "quantity": -1,
     "runs": -1,
@@ -1092,11 +1152,11 @@
   {
     "item_id": 1051203820095,
     "location_flag": "CorpSAG1",
-    "location_id": 1052370808852,
+    "location_id": 1052371087338,
     "material_efficiency": 10,
     "quantity": -1,
     "runs": -1,
-    "time_efficiency": 0,
+    "time_efficiency": 20,
     "type_id": 3597
   },
   {
@@ -1126,7 +1186,7 @@
     "material_efficiency": 0,
     "quantity": -1,
     "runs": -1,
-    "time_efficiency": 0,
+    "time_efficiency": 20,
     "type_id": 12226
   },
   {
@@ -1222,11 +1282,11 @@
   {
     "item_id": 1051203858174,
     "location_flag": "CorpSAG1",
-    "location_id": 1052370808852,
+    "location_id": 1052371087338,
     "material_efficiency": 10,
     "quantity": -1,
     "runs": -1,
-    "time_efficiency": 0,
+    "time_efficiency": 20,
     "type_id": 12710
   },
   {
@@ -1262,17 +1322,17 @@
   {
     "item_id": 1051203862591,
     "location_flag": "CorpSAG1",
-    "location_id": 1052370808852,
+    "location_id": 1052371087338,
     "material_efficiency": 10,
     "quantity": -1,
     "runs": -1,
-    "time_efficiency": 0,
+    "time_efficiency": 20,
     "type_id": 11803
   },
   {
     "item_id": 1051203869264,
     "location_flag": "CorpSAG1",
-    "location_id": 1052370808852,
+    "location_id": 1052371087338,
     "material_efficiency": 10,
     "quantity": -1,
     "runs": -1,
@@ -1282,21 +1342,21 @@
   {
     "item_id": 1051203904197,
     "location_flag": "CorpSAG1",
-    "location_id": 1052370808852,
+    "location_id": 1052371087338,
     "material_efficiency": 10,
     "quantity": -1,
     "runs": -1,
-    "time_efficiency": 0,
+    "time_efficiency": 20,
     "type_id": 1128
   },
   {
     "item_id": 1051203904587,
     "location_flag": "CorpSAG1",
-    "location_id": 1052370808852,
+    "location_id": 1052371087338,
     "material_efficiency": 10,
     "quantity": -1,
     "runs": -1,
-    "time_efficiency": 0,
+    "time_efficiency": 20,
     "type_id": 3577
   },
   {
@@ -1352,11 +1412,11 @@
   {
     "item_id": 1051203914960,
     "location_flag": "CorpSAG1",
-    "location_id": 1052370808852,
+    "location_id": 1052371087338,
     "material_efficiency": 10,
     "quantity": -1,
     "runs": -1,
-    "time_efficiency": 0,
+    "time_efficiency": 20,
     "type_id": 11300
   },
   {
@@ -1383,7 +1443,7 @@
     "item_id": 1051204007785,
     "location_flag": "CorpSAG1",
     "location_id": 1052370808852,
-    "material_efficiency": 0,
+    "material_efficiency": 10,
     "quantity": -1,
     "runs": -1,
     "time_efficiency": 0,
@@ -1402,7 +1462,7 @@
   {
     "item_id": 1051204008744,
     "location_flag": "CorpSAG1",
-    "location_id": 1052370808852,
+    "location_id": 1052371087338,
     "material_efficiency": 10,
     "quantity": -1,
     "runs": -1,
@@ -1413,7 +1473,7 @@
     "item_id": 1051204009835,
     "location_flag": "CorpSAG1",
     "location_id": 1052370808852,
-    "material_efficiency": 0,
+    "material_efficiency": 10,
     "quantity": -1,
     "runs": -1,
     "time_efficiency": 20,
@@ -1422,7 +1482,7 @@
   {
     "item_id": 1051204010414,
     "location_flag": "CorpSAG1",
-    "location_id": 1052370808852,
+    "location_id": 1052371087338,
     "material_efficiency": 10,
     "quantity": -1,
     "runs": -1,
@@ -1433,7 +1493,7 @@
     "item_id": 1051204010937,
     "location_flag": "CorpSAG1",
     "location_id": 1052370808852,
-    "material_efficiency": 0,
+    "material_efficiency": 10,
     "quantity": -1,
     "runs": -1,
     "time_efficiency": 0,
@@ -1472,12 +1532,22 @@
   {
     "item_id": 1051204139965,
     "location_flag": "CorpSAG1",
-    "location_id": 1052370808852,
+    "location_id": 1052371087338,
     "material_efficiency": 10,
     "quantity": -1,
     "runs": -1,
-    "time_efficiency": 0,
+    "time_efficiency": 20,
     "type_id": 12218
+  },
+  {
+    "item_id": 1051204141676,
+    "location_flag": "CorpSAG1",
+    "location_id": 1052370808852,
+    "material_efficiency": 0,
+    "quantity": -1,
+    "runs": -1,
+    "time_efficiency": 0,
+    "type_id": 2021
   },
   {
     "item_id": 1051204143944,
@@ -1492,31 +1562,31 @@
   {
     "item_id": 1051204258995,
     "location_flag": "CorpSAG1",
-    "location_id": 1052370808852,
+    "location_id": 1052371087338,
     "material_efficiency": 10,
     "quantity": -1,
     "runs": -1,
-    "time_efficiency": 0,
+    "time_efficiency": 20,
     "type_id": 1117
   },
   {
     "item_id": 1051204259786,
     "location_flag": "CorpSAG1",
-    "location_id": 1052370808852,
+    "location_id": 1052371087338,
     "material_efficiency": 10,
     "quantity": -1,
     "runs": -1,
-    "time_efficiency": 0,
+    "time_efficiency": 20,
     "type_id": 1120
   },
   {
     "item_id": 1051204260325,
     "location_flag": "CorpSAG1",
-    "location_id": 1052370808852,
+    "location_id": 1052371087338,
     "material_efficiency": 10,
     "quantity": -1,
     "runs": -1,
-    "time_efficiency": 0,
+    "time_efficiency": 20,
     "type_id": 1119
   },
   {
@@ -1532,8 +1602,8 @@
   {
     "item_id": 1051204267908,
     "location_flag": "CorpSAG1",
-    "location_id": 1052370806702,
-    "material_efficiency": 0,
+    "location_id": 1052370808852,
+    "material_efficiency": 10,
     "quantity": -1,
     "runs": -1,
     "time_efficiency": 0,
@@ -1562,11 +1632,11 @@
   {
     "item_id": 1051204300164,
     "location_flag": "CorpSAG1",
-    "location_id": 1052370808852,
+    "location_id": 1052371087338,
     "material_efficiency": 10,
     "quantity": -1,
     "runs": -1,
-    "time_efficiency": 0,
+    "time_efficiency": 20,
     "type_id": 790
   },
   {
@@ -1588,6 +1658,16 @@
     "runs": -1,
     "time_efficiency": 0,
     "type_id": 11133
+  },
+  {
+    "item_id": 1051204370071,
+    "location_flag": "CorpSAG1",
+    "location_id": 1052370808852,
+    "material_efficiency": 0,
+    "quantity": -1,
+    "runs": -1,
+    "time_efficiency": 0,
+    "type_id": 26047
   },
   {
     "item_id": 1051204378041,
@@ -1612,12 +1692,22 @@
   {
     "item_id": 1051204381262,
     "location_flag": "CorpSAG1",
-    "location_id": 1052370808852,
+    "location_id": 1052371087338,
     "material_efficiency": 10,
     "quantity": -1,
     "runs": -1,
     "time_efficiency": 20,
     "type_id": 12258
+  },
+  {
+    "item_id": 1051204381706,
+    "location_flag": "CorpSAG1",
+    "location_id": 1052370808852,
+    "material_efficiency": 0,
+    "quantity": -1,
+    "runs": -1,
+    "time_efficiency": 0,
+    "type_id": 12262
   },
   {
     "item_id": 1051204382187,
@@ -1632,7 +1722,7 @@
   {
     "item_id": 1051204382649,
     "location_flag": "CorpSAG1",
-    "location_id": 1052370808852,
+    "location_id": 1052371087338,
     "material_efficiency": 10,
     "quantity": -1,
     "runs": -1,
@@ -1652,11 +1742,11 @@
   {
     "item_id": 1051204386062,
     "location_flag": "CorpSAG1",
-    "location_id": 1052370808852,
+    "location_id": 1052371087338,
     "material_efficiency": 10,
     "quantity": -1,
     "runs": -1,
-    "time_efficiency": 0,
+    "time_efficiency": 20,
     "type_id": 825
   },
   {
@@ -1690,6 +1780,36 @@
     "type_id": 22779
   },
   {
+    "item_id": 1051204655778,
+    "location_flag": "CorpSAG1",
+    "location_id": 1052370808852,
+    "material_efficiency": 0,
+    "quantity": -1,
+    "runs": -1,
+    "time_efficiency": 0,
+    "type_id": 12270
+  },
+  {
+    "item_id": 1051204668675,
+    "location_flag": "CorpSAG1",
+    "location_id": 1052370808852,
+    "material_efficiency": 0,
+    "quantity": -1,
+    "runs": -1,
+    "time_efficiency": 20,
+    "type_id": 11634
+  },
+  {
+    "item_id": 1051204709928,
+    "location_flag": "CorpSAG1",
+    "location_id": 1052370808852,
+    "material_efficiency": 0,
+    "quantity": -1,
+    "runs": -1,
+    "time_efficiency": 0,
+    "type_id": 10679
+  },
+  {
     "item_id": 1051204711721,
     "location_flag": "CorpSAG1",
     "location_id": 1052371087338,
@@ -1703,7 +1823,7 @@
     "item_id": 1051204712775,
     "location_flag": "CorpSAG1",
     "location_id": 1052370806702,
-    "material_efficiency": 0,
+    "material_efficiency": 10,
     "quantity": -1,
     "runs": -1,
     "time_efficiency": 0,
@@ -1712,11 +1832,11 @@
   {
     "item_id": 1051204722183,
     "location_flag": "CorpSAG1",
-    "location_id": 1052370808852,
+    "location_id": 1052371087338,
     "material_efficiency": 10,
     "quantity": -1,
     "runs": -1,
-    "time_efficiency": 0,
+    "time_efficiency": 20,
     "type_id": 13321
   },
   {
@@ -1820,6 +1940,26 @@
     "type_id": 11617
   },
   {
+    "item_id": 1051204820563,
+    "location_flag": "CorpSAG1",
+    "location_id": 1052370808852,
+    "material_efficiency": 0,
+    "quantity": -1,
+    "runs": -1,
+    "time_efficiency": 0,
+    "type_id": 26009
+  },
+  {
+    "item_id": 1051204830610,
+    "location_flag": "CorpSAG1",
+    "location_id": 1052370808852,
+    "material_efficiency": 0,
+    "quantity": -1,
+    "runs": -1,
+    "time_efficiency": 0,
+    "type_id": 26007
+  },
+  {
     "item_id": 1051204848333,
     "location_flag": "CorpSAG1",
     "location_id": 1052371087338,
@@ -1893,7 +2033,7 @@
     "item_id": 1051205721328,
     "location_flag": "CorpSAG1",
     "location_id": 1052370808852,
-    "material_efficiency": 0,
+    "material_efficiency": 10,
     "quantity": -1,
     "runs": -1,
     "time_efficiency": 0,
@@ -1903,7 +2043,7 @@
     "item_id": 1051205721802,
     "location_flag": "CorpSAG1",
     "location_id": 1052370808852,
-    "material_efficiency": 0,
+    "material_efficiency": 10,
     "quantity": -1,
     "runs": -1,
     "time_efficiency": 0,
@@ -1912,7 +2052,7 @@
   {
     "item_id": 1051205724271,
     "location_flag": "CorpSAG1",
-    "location_id": 1052370806702,
+    "location_id": 1052370808852,
     "material_efficiency": 10,
     "quantity": -1,
     "runs": -1,
@@ -1932,8 +2072,8 @@
   {
     "item_id": 1051205725993,
     "location_flag": "CorpSAG1",
-    "location_id": 1052370806702,
-    "material_efficiency": 0,
+    "location_id": 1052370808852,
+    "material_efficiency": 10,
     "quantity": -1,
     "runs": -1,
     "time_efficiency": 0,
@@ -1948,6 +2088,46 @@
     "runs": -1,
     "time_efficiency": 20,
     "type_id": 828
+  },
+  {
+    "item_id": 1051205727481,
+    "location_flag": "CorpSAG1",
+    "location_id": 1052370808852,
+    "material_efficiency": 0,
+    "quantity": -1,
+    "runs": -1,
+    "time_efficiency": 0,
+    "type_id": 824
+  },
+  {
+    "item_id": 1051205933540,
+    "location_flag": "CorpSAG1",
+    "location_id": 1052370808852,
+    "material_efficiency": 0,
+    "quantity": -1,
+    "runs": -1,
+    "time_efficiency": 0,
+    "type_id": 25889
+  },
+  {
+    "item_id": 1051205934720,
+    "location_flag": "CorpSAG1",
+    "location_id": 1052370792825,
+    "material_efficiency": 0,
+    "quantity": -1,
+    "runs": -1,
+    "time_efficiency": 0,
+    "type_id": 25891
+  },
+  {
+    "item_id": 1051206024897,
+    "location_flag": "CorpSAG1",
+    "location_id": 1052370808852,
+    "material_efficiency": 0,
+    "quantity": -1,
+    "runs": -1,
+    "time_efficiency": 0,
+    "type_id": 11130
   },
   {
     "item_id": 1051388689378,
@@ -2360,10 +2540,20 @@
     "type_id": 46204
   },
   {
-    "item_id": 1052568092652,
+    "item_id": 1052568044849,
     "location_flag": "CorpSAG1",
     "location_id": 1052370808852,
     "material_efficiency": 0,
+    "quantity": -1,
+    "runs": -1,
+    "time_efficiency": 0,
+    "type_id": 26003
+  },
+  {
+    "item_id": 1052568092652,
+    "location_flag": "CorpSAG1",
+    "location_id": 1052371087338,
+    "material_efficiency": 10,
     "quantity": -1,
     "runs": -1,
     "time_efficiency": 20,
@@ -2376,7 +2566,7 @@
     "material_efficiency": 10,
     "quantity": -1,
     "runs": -1,
-    "time_efficiency": 0,
+    "time_efficiency": 20,
     "type_id": 820
   },
   {
@@ -2720,16 +2910,6 @@
     "type_id": 4311
   },
   {
-    "item_id": 1047858293418,
-    "location_flag": "CorpSAG1",
-    "location_id": 1051326280285,
-    "material_efficiency": 10,
-    "quantity": -2,
-    "runs": 10,
-    "time_efficiency": 20,
-    "type_id": 688
-  },
-  {
     "item_id": 1048256059776,
     "location_flag": "CorpSAG1",
     "location_id": 1051326280285,
@@ -2788,16 +2968,6 @@
     "runs": 1,
     "time_efficiency": 4,
     "type_id": 12014
-  },
-  {
-    "item_id": 1049782134117,
-    "location_flag": "CorpSAG1",
-    "location_id": 1051326280285,
-    "material_efficiency": 10,
-    "quantity": -2,
-    "runs": 10,
-    "time_efficiency": 20,
-    "type_id": 688
   },
   {
     "item_id": 1049883799095,
@@ -4190,16 +4360,6 @@
     "type_id": 28673
   },
   {
-    "item_id": 1052267248495,
-    "location_flag": "CorpSAG1",
-    "location_id": 1052283346991,
-    "material_efficiency": 10,
-    "quantity": -2,
-    "runs": 50,
-    "time_efficiency": 20,
-    "type_id": 4394
-  },
-  {
     "item_id": 1052267248496,
     "location_flag": "CorpSAG1",
     "location_id": 1052283346991,
@@ -4908,26 +5068,6 @@
     "runs": 60,
     "time_efficiency": 20,
     "type_id": 31373
-  },
-  {
-    "item_id": 1052414768948,
-    "location_flag": "CorpSAG1",
-    "location_id": 1051326279872,
-    "material_efficiency": 10,
-    "quantity": -2,
-    "runs": 60,
-    "time_efficiency": 20,
-    "type_id": 31373
-  },
-  {
-    "item_id": 1052414768949,
-    "location_flag": "CorpSAG1",
-    "location_id": 1051326279872,
-    "material_efficiency": 10,
-    "quantity": -2,
-    "runs": 60,
-    "time_efficiency": 20,
-    "type_id": 31361
   },
   {
     "item_id": 1052414768950,
@@ -6540,16 +6680,6 @@
     "type_id": 31000
   },
   {
-    "item_id": 1051203634054,
-    "location_flag": "CorpSAG1",
-    "location_id": 1052370792825,
-    "material_efficiency": 0,
-    "quantity": 1,
-    "runs": -1,
-    "time_efficiency": 0,
-    "type_id": 31024
-  },
-  {
     "item_id": 1051203636207,
     "location_flag": "CorpSAG3",
     "location_id": 1052284497613,
@@ -6860,46 +6990,6 @@
     "type_id": 31601
   },
   {
-    "item_id": 1051203732532,
-    "location_flag": "CorpSAG1",
-    "location_id": 1052370808852,
-    "material_efficiency": 0,
-    "quantity": 1,
-    "runs": -1,
-    "time_efficiency": 0,
-    "type_id": 31589
-  },
-  {
-    "item_id": 1051203734013,
-    "location_flag": "CorpSAG1",
-    "location_id": 1052370808852,
-    "material_efficiency": 0,
-    "quantity": 1,
-    "runs": -1,
-    "time_efficiency": 0,
-    "type_id": 26029
-  },
-  {
-    "item_id": 1051203734606,
-    "location_flag": "CorpSAG1",
-    "location_id": 1052370808852,
-    "material_efficiency": 0,
-    "quantity": 1,
-    "runs": -1,
-    "time_efficiency": 0,
-    "type_id": 26031
-  },
-  {
-    "item_id": 1051203735213,
-    "location_flag": "CorpSAG1",
-    "location_id": 1052370808852,
-    "material_efficiency": 0,
-    "quantity": 1,
-    "runs": -1,
-    "time_efficiency": 0,
-    "type_id": 26021
-  },
-  {
     "item_id": 1051203736189,
     "location_flag": "CorpSAG1",
     "location_id": 1052370792825,
@@ -6920,19 +7010,9 @@
     "type_id": 26017
   },
   {
-    "item_id": 1051203737386,
-    "location_flag": "CorpSAG1",
-    "location_id": 1052370808852,
-    "material_efficiency": 0,
-    "quantity": 1,
-    "runs": -1,
-    "time_efficiency": 0,
-    "type_id": 26027
-  },
-  {
     "item_id": 1051203915692,
     "location_flag": "CorpSAG1",
-    "location_id": 1052370806702,
+    "location_id": 1052370808852,
     "material_efficiency": 0,
     "quantity": 1,
     "runs": -1,
@@ -7120,19 +7200,9 @@
     "type_id": 25903
   },
   {
-    "item_id": 1051204141676,
-    "location_flag": "CorpSAG1",
-    "location_id": 1052370806702,
-    "material_efficiency": 0,
-    "quantity": 1,
-    "runs": -1,
-    "time_efficiency": 0,
-    "type_id": 2021
-  },
-  {
     "item_id": 1051204188669,
     "location_flag": "CorpSAG1",
-    "location_id": 1052370806702,
+    "location_id": 1052370808852,
     "material_efficiency": 0,
     "quantity": 1,
     "runs": -1,
@@ -7142,7 +7212,7 @@
   {
     "item_id": 1051204189565,
     "location_flag": "CorpSAG1",
-    "location_id": 1052370806702,
+    "location_id": 1052370808852,
     "material_efficiency": 0,
     "quantity": 1,
     "runs": -1,
@@ -7152,7 +7222,7 @@
   {
     "item_id": 1051204264900,
     "location_flag": "CorpSAG1",
-    "location_id": 1052370806702,
+    "location_id": 1052370808852,
     "material_efficiency": 0,
     "quantity": 1,
     "runs": -1,
@@ -7162,7 +7232,7 @@
   {
     "item_id": 1051204265355,
     "location_flag": "CorpSAG1",
-    "location_id": 1052370806702,
+    "location_id": 1052370808852,
     "material_efficiency": 0,
     "quantity": 1,
     "runs": -1,
@@ -7172,7 +7242,7 @@
   {
     "item_id": 1051204265775,
     "location_flag": "CorpSAG1",
-    "location_id": 1052370806702,
+    "location_id": 1052370808852,
     "material_efficiency": 0,
     "quantity": 1,
     "runs": -1,
@@ -7182,7 +7252,7 @@
   {
     "item_id": 1051204268612,
     "location_flag": "CorpSAG1",
-    "location_id": 1052370806702,
+    "location_id": 1052370808852,
     "material_efficiency": 0,
     "quantity": 1,
     "runs": -1,
@@ -7192,7 +7262,7 @@
   {
     "item_id": 1051204271275,
     "location_flag": "CorpSAG1",
-    "location_id": 1052370806702,
+    "location_id": 1052370808852,
     "material_efficiency": 0,
     "quantity": 1,
     "runs": -1,
@@ -7202,7 +7272,7 @@
   {
     "item_id": 1051204274880,
     "location_flag": "CorpSAG1",
-    "location_id": 1052370806702,
+    "location_id": 1052370808852,
     "material_efficiency": 0,
     "quantity": 1,
     "runs": -1,
@@ -7212,7 +7282,7 @@
   {
     "item_id": 1051204275266,
     "location_flag": "CorpSAG1",
-    "location_id": 1052370806702,
+    "location_id": 1052370808852,
     "material_efficiency": 0,
     "quantity": 1,
     "runs": -1,
@@ -7222,7 +7292,7 @@
   {
     "item_id": 1051204275814,
     "location_flag": "CorpSAG1",
-    "location_id": 1052370806702,
+    "location_id": 1052370808852,
     "material_efficiency": 0,
     "quantity": 1,
     "runs": -1,
@@ -7278,16 +7348,6 @@
     "runs": -1,
     "time_efficiency": 0,
     "type_id": 26043
-  },
-  {
-    "item_id": 1051204370071,
-    "location_flag": "CorpSAG1",
-    "location_id": 1052370808852,
-    "material_efficiency": 0,
-    "quantity": 1,
-    "runs": -1,
-    "time_efficiency": 0,
-    "type_id": 26047
   },
   {
     "item_id": 1051204370494,
@@ -7380,19 +7440,9 @@
     "type_id": 31671
   },
   {
-    "item_id": 1051204381706,
-    "location_flag": "CorpSAG1",
-    "location_id": 1052370808852,
-    "material_efficiency": 0,
-    "quantity": 1,
-    "runs": -1,
-    "time_efficiency": 0,
-    "type_id": 12262
-  },
-  {
     "item_id": 1051204384406,
     "location_flag": "CorpSAG1",
-    "location_id": 1052370806702,
+    "location_id": 1052370808852,
     "material_efficiency": 0,
     "quantity": 1,
     "runs": -1,
@@ -7402,7 +7452,7 @@
   {
     "item_id": 1051204384763,
     "location_flag": "CorpSAG1",
-    "location_id": 1052370806702,
+    "location_id": 1052370808852,
     "material_efficiency": 0,
     "quantity": 1,
     "runs": -1,
@@ -7412,7 +7462,7 @@
   {
     "item_id": 1051204387102,
     "location_flag": "CorpSAG1",
-    "location_id": 1052370806702,
+    "location_id": 1052370808852,
     "material_efficiency": 0,
     "quantity": 1,
     "runs": -1,
@@ -7422,7 +7472,7 @@
   {
     "item_id": 1051204387770,
     "location_flag": "CorpSAG1",
-    "location_id": 1052370806702,
+    "location_id": 1052370808852,
     "material_efficiency": 0,
     "quantity": 1,
     "runs": -1,
@@ -7432,7 +7482,7 @@
   {
     "item_id": 1051204388273,
     "location_flag": "CorpSAG1",
-    "location_id": 1052370806702,
+    "location_id": 1052370808852,
     "material_efficiency": 0,
     "quantity": 1,
     "runs": -1,
@@ -7600,26 +7650,6 @@
     "type_id": 31707
   },
   {
-    "item_id": 1051204655778,
-    "location_flag": "CorpSAG1",
-    "location_id": 1052370808852,
-    "material_efficiency": 0,
-    "quantity": 1,
-    "runs": -1,
-    "time_efficiency": 0,
-    "type_id": 12270
-  },
-  {
-    "item_id": 1051204668675,
-    "location_flag": "CorpSAG1",
-    "location_id": 1052370808852,
-    "material_efficiency": 0,
-    "quantity": 1,
-    "runs": -1,
-    "time_efficiency": 0,
-    "type_id": 11634
-  },
-  {
     "item_id": 1051204675087,
     "location_flag": "CorpSAG1",
     "location_id": 1052370806702,
@@ -7660,34 +7690,14 @@
     "type_id": 10841
   },
   {
-    "item_id": 1051204709928,
-    "location_flag": "CorpSAG1",
-    "location_id": 1052370806702,
-    "material_efficiency": 0,
-    "quantity": 1,
-    "runs": -1,
-    "time_efficiency": 0,
-    "type_id": 10679
-  },
-  {
     "item_id": 1051204714292,
-    "location_flag": "CorpSAG1",
-    "location_id": 1052370806702,
-    "material_efficiency": 0,
-    "quantity": 1,
-    "runs": -1,
-    "time_efficiency": 0,
-    "type_id": 1124
-  },
-  {
-    "item_id": 1051204820563,
     "location_flag": "CorpSAG1",
     "location_id": 1052370808852,
     "material_efficiency": 0,
     "quantity": 1,
     "runs": -1,
     "time_efficiency": 0,
-    "type_id": 26009
+    "type_id": 1124
   },
   {
     "item_id": 1051204820998,
@@ -7718,16 +7728,6 @@
     "runs": -1,
     "time_efficiency": 0,
     "type_id": 26003
-  },
-  {
-    "item_id": 1051204830610,
-    "location_flag": "CorpSAG1",
-    "location_id": 1052370808852,
-    "material_efficiency": 0,
-    "quantity": 1,
-    "runs": -1,
-    "time_efficiency": 0,
-    "type_id": 26007
   },
   {
     "item_id": 1051204835006,
@@ -8312,7 +8312,7 @@
   {
     "item_id": 1051205473675,
     "location_flag": "CorpSAG1",
-    "location_id": 1052370806702,
+    "location_id": 1052370808852,
     "material_efficiency": 0,
     "quantity": 1,
     "runs": -1,
@@ -8322,7 +8322,7 @@
   {
     "item_id": 1051205474053,
     "location_flag": "CorpSAG1",
-    "location_id": 1052370806702,
+    "location_id": 1052370808852,
     "material_efficiency": 0,
     "quantity": 1,
     "runs": -1,
@@ -8332,7 +8332,7 @@
   {
     "item_id": 1051205474522,
     "location_flag": "CorpSAG1",
-    "location_id": 1052370806702,
+    "location_id": 1052370808852,
     "material_efficiency": 0,
     "quantity": 1,
     "runs": -1,
@@ -8342,7 +8342,7 @@
   {
     "item_id": 1051205475280,
     "location_flag": "CorpSAG1",
-    "location_id": 1052370806702,
+    "location_id": 1052370808852,
     "material_efficiency": 0,
     "quantity": 1,
     "runs": -1,
@@ -8352,7 +8352,7 @@
   {
     "item_id": 1051205475504,
     "location_flag": "CorpSAG1",
-    "location_id": 1052370806702,
+    "location_id": 1052370808852,
     "material_efficiency": 0,
     "quantity": 1,
     "runs": -1,
@@ -8362,7 +8362,7 @@
   {
     "item_id": 1051205476417,
     "location_flag": "CorpSAG1",
-    "location_id": 1052370806702,
+    "location_id": 1052370808852,
     "material_efficiency": 0,
     "quantity": 1,
     "runs": -1,
@@ -8372,7 +8372,7 @@
   {
     "item_id": 1051205477041,
     "location_flag": "CorpSAG1",
-    "location_id": 1052370806702,
+    "location_id": 1052370808852,
     "material_efficiency": 0,
     "quantity": 1,
     "runs": -1,
@@ -8382,7 +8382,7 @@
   {
     "item_id": 1051205477988,
     "location_flag": "CorpSAG1",
-    "location_id": 1052370806702,
+    "location_id": 1052370808852,
     "material_efficiency": 0,
     "quantity": 1,
     "runs": -1,
@@ -8392,7 +8392,7 @@
   {
     "item_id": 1051205479571,
     "location_flag": "CorpSAG1",
-    "location_id": 1052370806702,
+    "location_id": 1052370808852,
     "material_efficiency": 0,
     "quantity": 1,
     "runs": -1,
@@ -8402,7 +8402,7 @@
   {
     "item_id": 1051205480074,
     "location_flag": "CorpSAG1",
-    "location_id": 1052370806702,
+    "location_id": 1052370808852,
     "material_efficiency": 0,
     "quantity": 1,
     "runs": -1,
@@ -8412,7 +8412,7 @@
   {
     "item_id": 1051205480495,
     "location_flag": "CorpSAG1",
-    "location_id": 1052370806702,
+    "location_id": 1052370808852,
     "material_efficiency": 0,
     "quantity": 1,
     "runs": -1,
@@ -8422,7 +8422,7 @@
   {
     "item_id": 1051205481772,
     "location_flag": "CorpSAG1",
-    "location_id": 1052370806702,
+    "location_id": 1052370808852,
     "material_efficiency": 0,
     "quantity": 1,
     "runs": -1,
@@ -8432,7 +8432,7 @@
   {
     "item_id": 1051205482308,
     "location_flag": "CorpSAG1",
-    "location_id": 1052370806702,
+    "location_id": 1052370808852,
     "material_efficiency": 0,
     "quantity": 1,
     "runs": -1,
@@ -8682,7 +8682,7 @@
   {
     "item_id": 1051205720239,
     "location_flag": "CorpSAG1",
-    "location_id": 1052370806702,
+    "location_id": 1052370808852,
     "material_efficiency": 0,
     "quantity": 1,
     "runs": -1,
@@ -8692,7 +8692,7 @@
   {
     "item_id": 1051205722302,
     "location_flag": "CorpSAG1",
-    "location_id": 1052370806702,
+    "location_id": 1052370808852,
     "material_efficiency": 0,
     "quantity": 1,
     "runs": -1,
@@ -8702,32 +8702,12 @@
   {
     "item_id": 1051205726445,
     "location_flag": "CorpSAG1",
-    "location_id": 1052370806702,
-    "material_efficiency": 0,
-    "quantity": 1,
-    "runs": -1,
-    "time_efficiency": 0,
-    "type_id": 827
-  },
-  {
-    "item_id": 1051205727481,
-    "location_flag": "CorpSAG1",
-    "location_id": 1052370806702,
-    "material_efficiency": 0,
-    "quantity": 1,
-    "runs": -1,
-    "time_efficiency": 0,
-    "type_id": 824
-  },
-  {
-    "item_id": 1051205933540,
-    "location_flag": "CorpSAG1",
     "location_id": 1052370808852,
     "material_efficiency": 0,
     "quantity": 1,
     "runs": -1,
     "time_efficiency": 0,
-    "type_id": 25889
+    "type_id": 827
   },
   {
     "item_id": 1051205934202,
@@ -8738,16 +8718,6 @@
     "runs": -1,
     "time_efficiency": 0,
     "type_id": 25737
-  },
-  {
-    "item_id": 1051205934720,
-    "location_flag": "CorpSAG1",
-    "location_id": 1052370792825,
-    "material_efficiency": 0,
-    "quantity": 1,
-    "runs": -1,
-    "time_efficiency": 0,
-    "type_id": 25891
   },
   {
     "item_id": 1051205935363,
@@ -8848,16 +8818,6 @@
     "runs": -1,
     "time_efficiency": 0,
     "type_id": 31180
-  },
-  {
-    "item_id": 1051206024897,
-    "location_flag": "CorpSAG1",
-    "location_id": 1052370808852,
-    "material_efficiency": 0,
-    "quantity": 1,
-    "runs": -1,
-    "time_efficiency": 0,
-    "type_id": 11130
   },
   {
     "item_id": 1051206026028,
@@ -9308,16 +9268,6 @@
     "runs": -1,
     "time_efficiency": 0,
     "type_id": 807
-  },
-  {
-    "item_id": 1052568044849,
-    "location_flag": "CorpSAG1",
-    "location_id": 1052370808852,
-    "material_efficiency": 0,
-    "quantity": 1,
-    "runs": -1,
-    "time_efficiency": 0,
-    "type_id": 26003
   },
   {
     "item_id": 1052568050215,

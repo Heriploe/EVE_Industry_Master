@@ -1,0 +1,67 @@
+[
+  {
+    "item_id": 1050166354585,
+    "id": 48104,
+    "zh": "介子异种等离子弹蓝图 M",
+    "en": "Meson Exotic Plasma M Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": 5,
+    "quantity": -2,
+    "location_id": 1051971434000,
+    "location_flag": "CorpSAG1",
+    "container_name": "发明-弹药"
+  },
+  {
+    "item_id": 1050180604823,
+    "id": 48098,
+    "zh": "重子异种等离子弹蓝图 S",
+    "en": "Baryon Exotic Plasma S Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": 5,
+    "quantity": -2,
+    "location_id": 1051971434000,
+    "location_flag": "CorpSAG1",
+    "container_name": "发明-弹药"
+  },
+  {
+    "item_id": 1051416284695,
+    "id": 48104,
+    "zh": "介子异种等离子弹蓝图 M",
+    "en": "Meson Exotic Plasma M Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": 5,
+    "quantity": -2,
+    "location_id": 1051971434000,
+    "location_flag": "CorpSAG1",
+    "container_name": "发明-弹药"
+  },
+  {
+    "item_id": 1051416517214,
+    "id": 48098,
+    "zh": "重子异种等离子弹蓝图 S",
+    "en": "Baryon Exotic Plasma S Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": 5,
+    "quantity": -2,
+    "location_id": 1051971434000,
+    "location_flag": "CorpSAG1",
+    "container_name": "发明-弹药"
+  },
+  {
+    "item_id": 1051416737974,
+    "id": 48107,
+    "zh": "四重子异种等离子弹蓝图 L",
+    "en": "Tetryon Exotic Plasma L Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": 5,
+    "quantity": -2,
+    "location_id": 1051971434000,
+    "location_flag": "CorpSAG1",
+    "container_name": "发明-弹药"
+  }
+]

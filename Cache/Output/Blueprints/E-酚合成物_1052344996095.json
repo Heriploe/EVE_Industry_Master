@@ -1,0 +1,54 @@
+[
+  {
+    "item_id": 1051200909901,
+    "id": 46210,
+    "zh": "酚合成物反应配方",
+    "en": "Phenolic Composites Reaction Formula",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "quantity": 4,
+    "location_id": 1052344996095,
+    "location_flag": "CorpSAG1",
+    "container_name": "E-酚合成物"
+  },
+  {
+    "item_id": 1051200980613,
+    "id": 46166,
+    "zh": "镉化铯反应配方",
+    "en": "Caesarium Cadmide Reaction Formula",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "quantity": 2,
+    "location_id": 1052344996095,
+    "location_flag": "CorpSAG1",
+    "container_name": "E-酚合成物"
+  },
+  {
+    "item_id": 1051200994560,
+    "id": 46179,
+    "zh": "二硼硅反应配方",
+    "en": "Silicon Diborite Reaction Formula",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "quantity": 2,
+    "location_id": 1052344996095,
+    "location_flag": "CorpSAG1",
+    "container_name": "E-酚合成物"
+  },
+  {
+    "item_id": 1051200997731,
+    "id": 46183,
+    "zh": "铪化钒反应配方",
+    "en": "Vanadium Hafnite Reaction Formula",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "quantity": 2,
+    "location_id": 1052344996095,
+    "location_flag": "CorpSAG1",
+    "container_name": "E-酚合成物"
+  }
+]

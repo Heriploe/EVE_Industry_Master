@@ -1,0 +1,15 @@
+{
+  "final_products": "C:\\Users\\zhout\\Documents\\GitHub\\EVE_Industry_Master\\Cache\\Output\\final_products.csv",
+  "inventory_json": "C:\\Users\\zhout\\Documents\\GitHub\\EVE_Industry_Master\\Cache\\Asset\\Corp\\final_non_blueprints.json",
+  "max_depth": 0,
+  "decryptor_name": "",
+  "decryptor_id": null,
+  "missing_material_types": 44,
+  "child_blueprints": 0,
+  "invention_entries": 0,
+  "unresolved_product_names": [],
+  "outputs": {
+    "missing_materials_csv": "C:\\Users\\zhout\\Documents\\GitHub\\EVE_Industry_Master\\Cache\\Output\\Expand_Final_Products\\missing_materials.csv",
+    "expanded_blueprint_runs_csv": "C:\\Users\\zhout\\Documents\\GitHub\\EVE_Industry_Master\\Cache\\Output\\Expand_Final_Products\\expanded_blueprint_runs.csv"
+  }
+}

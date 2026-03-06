@@ -1,0 +1,54 @@
+[
+  {
+    "item_id": 1048775608412,
+    "id": 46176,
+    "zh": "新汞合金反应配方",
+    "en": "Neo Mercurite Reaction Formula",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "quantity": 2,
+    "location_id": 1052344972144,
+    "location_flag": "CorpSAG1",
+    "container_name": "K-纳米晶体管"
+  },
+  {
+    "item_id": 1051200915728,
+    "id": 46211,
+    "zh": "纳米晶体管反应配方",
+    "en": "Nanotransistors Reaction Formula",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "quantity": 4,
+    "location_id": 1052344972144,
+    "location_flag": "CorpSAG1",
+    "container_name": "K-纳米晶体管"
+  },
+  {
+    "item_id": 1052345399272,
+    "id": 46177,
+    "zh": "铂锝合金反应配方",
+    "en": "Platinum Technite Reaction Formula",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "quantity": 2,
+    "location_id": 1052344972144,
+    "location_flag": "CorpSAG1",
+    "container_name": "K-纳米晶体管"
+  },
+  {
+    "item_id": 1052345417050,
+    "id": 46181,
+    "zh": "硫酸反应配方",
+    "en": "Sulfuric Acid Reaction Formula",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "quantity": 2,
+    "location_id": 1052344972144,
+    "location_flag": "CorpSAG1",
+    "container_name": "K-纳米晶体管"
+  }
+]
