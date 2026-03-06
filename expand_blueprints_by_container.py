@@ -278,10 +278,20 @@ def main():
         if not activity:
             continue
 
+        row_runs = row.get("runs", 1)
+        try:
+            row_runs = float(row_runs)
+        except (TypeError, ValueError):
+            row_runs = 1.0
+        if row_runs <= 0:
+            row_runs = 1.0
+
+        effective_runs = float(args.root_runs) * row_runs
+
         expand_requirements(
             blueprint_id=bp_id,
             activity=activity,
-            runs=float(args.root_runs),
+            runs=effective_runs,
             depth=0,
             max_depth=args.max_depth,
             blueprints=blueprints,
