@@ -9,7 +9,7 @@ REPO_ROOT = Path(__file__).resolve().parent
 DEFAULT_JITA_PRICES = "Cache/Input/jita_prices.json"
 DEFAULT_FINAL_PRODUCTS = "Cache/Output/final_products.csv"
 DEFAULT_EXECUTION_LIST = "Cache/Output/execution_list.csv"
-DEFAULT_OUTPUT = "Cache/Output/execution_list_filtered.csv"
+DEFAULT_OUTPUT = "Cache/Output/final_products_filtered.csv"
 DEFAULT_MIN_VALUE = 25_000_000
 
 
@@ -79,7 +79,7 @@ def main():
     parser.add_argument("--jita-prices", default=default_jita, help="jita_prices.json 路径")
     parser.add_argument("--final-products", default=default_final, help="final_products.csv 路径")
     parser.add_argument("--execution-list", default=default_exec, help="execution_list.csv 路径")
-    parser.add_argument("--output", default=DEFAULT_OUTPUT, help="过滤后 execution_list 输出路径")
+    parser.add_argument("--output", default=DEFAULT_OUTPUT, help="过滤后输出路径（默认 final_products_filtered.csv）")
     parser.add_argument("--min-total-value", type=float, default=DEFAULT_MIN_VALUE, help="最小总价值阈值，默认 25000000")
     args = parser.parse_args()
 
