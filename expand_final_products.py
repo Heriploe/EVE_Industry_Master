@@ -10,7 +10,7 @@ from Utilities.industry_cost import invention_T2_runs
 from Utilities.name_mapping import load_types_map, name_to_id
 
 REPO_ROOT = Path(__file__).resolve().parent
-DEFAULT_FINAL_PRODUCTS = "Cache/Output/final_products.csv"
+DEFAULT_FINAL_PRODUCTS = "Cache/Input/final_products.csv"
 DEFAULT_INVENTORY_JSON = "Cache/Asset/Corp/final_non_blueprints.json"
 DEFAULT_OUTPUT_DIR = "Cache/Output/Expand_Final_Products"
 
