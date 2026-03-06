@@ -219,9 +219,37 @@ def get_all_pages(url, access_token, user_agent):
     return results
 
 
-def split_assets_with_blueprints(assets, blueprints, types_file):
+def get_asset_names(corp_id, location_ids, access_token, user_agent):
+    if not location_ids:
+        return {}
+
+    headers = {
+        "Authorization": f"Bearer {access_token}",
+        "User-Agent": user_agent,
+        "Content-Type": "application/json",
+    }
+    url = f"{ESI_BASE}/corporations/{corp_id}/assets/names/"
+    location_name_map = {}
+
+    ids_list = list(location_ids)
+    for idx in range(0, len(ids_list), 1000):
+        chunk = ids_list[idx : idx + 1000]
+        r = requests.post(url, headers=headers, json=chunk, timeout=20)
+        if r.status_code == 404:
+            continue
+        r.raise_for_status()
+        for row in r.json():
+            item_id = row.get("item_id")
+            if item_id is not None:
+                location_name_map[item_id] = row.get("name")
+
+    return location_name_map
+
+
+def split_assets_with_blueprints(assets, blueprints, types_file, location_name_map=None):
     type_dict = load_types_map(str(types_file))
     blueprint_lookup = {bp["item_id"]: bp for bp in blueprints}
+    location_name_map = location_name_map or {}
 
     non_blueprint_assets = []
     blueprint_assets = []
@@ -235,6 +263,7 @@ def split_assets_with_blueprints(assets, blueprints, types_file):
 
         if item_id in blueprint_lookup:
             bp = blueprint_lookup[item_id]
+            location_id = asset.get("location_id")
             blueprint_assets.append(
                 {
                     "id": type_id,
@@ -244,6 +273,8 @@ def split_assets_with_blueprints(assets, blueprints, types_file):
                     "time_efficiency": bp.get("time_efficiency", 0),
                     "runs": bp.get("runs", -1),
                     "is_blueprint_copy": is_blueprint_copy,
+                    "location_flag": asset.get("location_flag"),
+                    "container_name": location_name_map.get(location_id),
                 }
             )
         else:
@@ -281,11 +312,16 @@ def fetch_all_data(access_token, settings, char_id):
         settings["user_agent"],
     )
 
-    return char_assets, char_blueprints, corp_assets, corp_blueprints, corp_jobs
+    corp_location_ids = {asset.get("location_id") for asset in corp_assets if asset.get("location_id") is not None}
+    corp_asset_names = get_asset_names(corp_id, corp_location_ids, access_token, settings["user_agent"])
+
+    return char_assets, char_blueprints, corp_assets, corp_blueprints, corp_jobs, corp_asset_names
 
 
-def save_assets_bundle(base_dir, assets, blueprints, types_file):
-    non_blueprints, blueprint_assets = split_assets_with_blueprints(assets, blueprints, types_file)
+def save_assets_bundle(base_dir, assets, blueprints, types_file, location_name_map=None):
+    non_blueprints, blueprint_assets = split_assets_with_blueprints(
+        assets, blueprints, types_file, location_name_map=location_name_map
+    )
     save_json(base_dir / "assets_raw.json", assets)
     save_json(base_dir / "blueprints_raw.json", blueprints)
     save_json(base_dir / "final_non_blueprints.json", non_blueprints)
@@ -340,7 +376,7 @@ def main():
     try:
         char_id, char_name = get_character_id(access_token, settings["user_agent"])
         print(f"Character: {char_name} ({char_id})")
-        char_assets, char_blueprints, corp_assets, corp_blueprints, corp_jobs = fetch_all_data(
+        char_assets, char_blueprints, corp_assets, corp_blueprints, corp_jobs, corp_asset_names = fetch_all_data(
             access_token, settings, char_id
         )
     except Exception as first_exc:  # noqa: BLE001
@@ -356,7 +392,7 @@ def main():
                 cache_tokens()
                 char_id, char_name = get_character_id(access_token, settings["user_agent"])
                 print(f"Character: {char_name} ({char_id})")
-                char_assets, char_blueprints, corp_assets, corp_blueprints, corp_jobs = fetch_all_data(
+                char_assets, char_blueprints, corp_assets, corp_blueprints, corp_jobs, corp_asset_names = fetch_all_data(
                     access_token, settings, char_id
                 )
                 recovered = True
@@ -378,13 +414,15 @@ def main():
             cache_tokens()
             char_id, char_name = get_character_id(access_token, settings["user_agent"])
             print(f"Character: {char_name} ({char_id})")
-            char_assets, char_blueprints, corp_assets, corp_blueprints, corp_jobs = fetch_all_data(
+            char_assets, char_blueprints, corp_assets, corp_blueprints, corp_jobs, corp_asset_names = fetch_all_data(
                 access_token, settings, char_id
             )
 
     output_root = settings["output_dir"]
     save_assets_bundle(output_root / "Character", char_assets, char_blueprints, settings["types_file"])
-    save_assets_bundle(output_root / "Corp", corp_assets, corp_blueprints, settings["types_file"])
+    save_assets_bundle(
+        output_root / "Corp", corp_assets, corp_blueprints, settings["types_file"], location_name_map=corp_asset_names
+    )
     save_json(output_root / "Corp" / "industry_jobs_raw.json", corp_jobs)
 
     print(f"Token 缓存: {settings['cache_file']}")
