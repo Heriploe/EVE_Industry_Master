@@ -8,6 +8,7 @@ DEFAULT_ALL_BLUEPRINTS = REPO_ROOT / "Cache/Input/blueprints_merged.json"
 DEFAULT_OWNED_BLUEPRINT_MAP = REPO_ROOT / "Cache/Asset/Corp/blueprint_id_name_map.json"
 DEFAULT_T2_BLUEPRINTS = REPO_ROOT / "Cache/Input/T2.json"
 DEFAULT_OUTPUT = REPO_ROOT / "Cache/Asset/Corp/Lacked_blueprints.json"
+DEFAULT_NAMES_CSV_OUTPUT = REPO_ROOT / "Cache/Asset/Corp/Lacked_blueprints_names.csv"
 
 
 def load_json(path):
@@ -47,12 +48,25 @@ def build_lacked_blueprints(all_blueprints, owned_blueprint_map, t2_pairs):
     return lacked
 
 
+def export_blueprint_names_csv(lacked_blueprints, output_path):
+    output_path = Path(output_path)
+    output_path.parent.mkdir(parents=True, exist_ok=True)
+    with output_path.open("w", encoding="utf-8", newline="") as f:
+        for blueprint in lacked_blueprints:
+            f.write(f"{blueprint['name']}\n")
+
+
 def main():
     parser = argparse.ArgumentParser(description="导出缺失蓝图列表（排除已有蓝图与 T2 蓝图）")
     parser.add_argument("--all-blueprints", default=str(DEFAULT_ALL_BLUEPRINTS), help="全量蓝图 JSON 路径")
     parser.add_argument("--owned-map", default=str(DEFAULT_OWNED_BLUEPRINT_MAP), help="已拥有蓝图映射 JSON 路径")
     parser.add_argument("--t2-blueprints", default=str(DEFAULT_T2_BLUEPRINTS), help="T2 蓝图对照 JSON 路径")
     parser.add_argument("--output", default=str(DEFAULT_OUTPUT), help="输出 JSON 路径")
+    parser.add_argument(
+        "--names-csv-output",
+        default=str(DEFAULT_NAMES_CSV_OUTPUT),
+        help="仅包含蓝图名的 CSV 输出路径",
+    )
     args = parser.parse_args()
 
     all_blueprints = load_json(args.all_blueprints)
@@ -65,8 +79,10 @@ def main():
     output_path.parent.mkdir(parents=True, exist_ok=True)
     with output_path.open("w", encoding="utf-8") as f:
         json.dump(lacked_blueprints, f, ensure_ascii=False, indent=2)
+    export_blueprint_names_csv(lacked_blueprints, args.names_csv_output)
 
     print(f"导出完成: {output_path} (共 {len(lacked_blueprints)} 条)")
+    print(f"蓝图名 CSV: {args.names_csv_output}")
 
 
 if __name__ == "__main__":
