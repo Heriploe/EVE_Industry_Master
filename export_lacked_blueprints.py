@@ -12,6 +12,7 @@ DEFAULT_T2_BLUEPRINTS = REPO_ROOT / "Cache/Input/T2.json"
 DEFAULT_OUTPUT = REPO_ROOT / "Cache/Asset/Corp/Lacked_blueprints.json"
 DEFAULT_NAMES_CSV_OUTPUT = REPO_ROOT / "Cache/Asset/Corp/Lacked_blueprints_names.csv"
 DEFAULT_BROUGHT_BLUEPRINTS_CSV = REPO_ROOT / "Cache/Asset/Corp/brought_blueprints.csv"
+DEFAULT_EXCLUDED_BLUEPRINTS_CSV = REPO_ROOT / "Cache/Asset/Corp/excluded_blueprints.csv"
 DEFAULT_TYPES_JSON = REPO_ROOT / "Data/types.json"
 CSV_EXCLUDED_KEYWORDS = ("屹立", "压缩", "末日", "旗舰", "长枪", "工业", "核心", "收割者", "力场", "投射", "抗性脚本", "现象")
 
@@ -40,7 +41,7 @@ def extract_t2_blueprint_ids(t2_pairs):
     return t2_ids
 
 
-def load_brought_blueprint_names(csv_path):
+def load_blueprint_names(csv_path):
     csv_path = Path(csv_path)
     if not csv_path.exists():
         return set()
@@ -106,13 +107,20 @@ def main():
         default=str(DEFAULT_BROUGHT_BLUEPRINTS_CSV),
         help="已购买蓝图 CSV 路径（CSV 输出会排除这些蓝图）",
     )
+    parser.add_argument(
+        "--excluded-blueprints-csv",
+        default=str(DEFAULT_EXCLUDED_BLUEPRINTS_CSV),
+        help="额外排除蓝图 CSV 路径（与 Lacked_blueprints_names.csv 同格式）",
+    )
     args = parser.parse_args()
 
     all_blueprints = load_json(args.all_blueprints)
     owned_blueprint_map = load_json(args.owned_map)
     t2_pairs = load_json(args.t2_blueprints)
     types_map = load_types_map(args.types_json)
-    brought_blueprint_names = load_brought_blueprint_names(args.brought_blueprints_csv)
+    brought_blueprint_names = load_blueprint_names(args.brought_blueprints_csv)
+    excluded_blueprint_names = load_blueprint_names(args.excluded_blueprints_csv)
+    filtered_blueprint_names = brought_blueprint_names | excluded_blueprint_names
 
     lacked_blueprints = build_lacked_blueprints(all_blueprints, owned_blueprint_map, t2_pairs, types_map)
 
@@ -123,7 +131,7 @@ def main():
     export_blueprint_names_csv(
         lacked_blueprints,
         args.names_csv_output,
-        brought_blueprint_names=brought_blueprint_names,
+        brought_blueprint_names=filtered_blueprint_names,
     )
 
     print(f"导出完成: {output_path} (共 {len(lacked_blueprints)} 条)")
