@@ -11,6 +11,7 @@ DEFAULT_OWNED_BLUEPRINT_MAP = REPO_ROOT / "Cache/Asset/Corp/blueprint_id_name_ma
 DEFAULT_T2_BLUEPRINTS = REPO_ROOT / "Cache/Input/T2.json"
 DEFAULT_OUTPUT = REPO_ROOT / "Cache/Asset/Corp/Lacked_blueprints.json"
 DEFAULT_NAMES_CSV_OUTPUT = REPO_ROOT / "Cache/Asset/Corp/Lacked_blueprints_names.csv"
+DEFAULT_BROUGHT_BLUEPRINTS_CSV = REPO_ROOT / "Cache/Asset/Corp/brought_blueprints.csv"
 DEFAULT_TYPES_JSON = REPO_ROOT / "Data/types.json"
 CSV_EXCLUDED_KEYWORDS = ("屹立", "压缩", "末日", "旗舰", "长枪", "工业", "核心", "收割者", "力场", "投射", "抗性脚本", "现象")
 
@@ -39,6 +40,24 @@ def extract_t2_blueprint_ids(t2_pairs):
     return t2_ids
 
 
+def load_brought_blueprint_names(csv_path):
+    csv_path = Path(csv_path)
+    if not csv_path.exists():
+        return set()
+
+    names = set()
+    with csv_path.open("r", encoding="utf-8-sig") as f:
+        for raw_line in f:
+            line = raw_line.strip()
+            if not line:
+                continue
+            name_part = line.split(",", 1)[0].split("\t", 1)[0].strip()
+            name_part = name_part.rstrip("*").strip()
+            if name_part:
+                names.add(name_part)
+    return names
+
+
 def build_lacked_blueprints(all_blueprints, owned_blueprint_map, t2_pairs, types_map):
     owned_ids = {int(blueprint_id) for blueprint_id in owned_blueprint_map.keys()}
     t2_ids = extract_t2_blueprint_ids(t2_pairs)
@@ -56,13 +75,16 @@ def build_lacked_blueprints(all_blueprints, owned_blueprint_map, t2_pairs, types
     return lacked
 
 
-def export_blueprint_names_csv(lacked_blueprints, output_path):
+def export_blueprint_names_csv(lacked_blueprints, output_path, brought_blueprint_names=None):
     output_path = Path(output_path)
     output_path.parent.mkdir(parents=True, exist_ok=True)
+    brought_blueprint_names = brought_blueprint_names or set()
     with output_path.open("w", encoding="utf-8", newline="") as f:
         for blueprint in lacked_blueprints:
             name = blueprint["name"]
             if any(keyword in name for keyword in CSV_EXCLUDED_KEYWORDS):
+                continue
+            if name in brought_blueprint_names:
                 continue
             f.write(f"{name}\n")
 
@@ -79,12 +101,18 @@ def main():
         default=str(DEFAULT_NAMES_CSV_OUTPUT),
         help="仅包含蓝图名的 CSV 输出路径",
     )
+    parser.add_argument(
+        "--brought-blueprints-csv",
+        default=str(DEFAULT_BROUGHT_BLUEPRINTS_CSV),
+        help="已购买蓝图 CSV 路径（CSV 输出会排除这些蓝图）",
+    )
     args = parser.parse_args()
 
     all_blueprints = load_json(args.all_blueprints)
     owned_blueprint_map = load_json(args.owned_map)
     t2_pairs = load_json(args.t2_blueprints)
     types_map = load_types_map(args.types_json)
+    brought_blueprint_names = load_brought_blueprint_names(args.brought_blueprints_csv)
 
     lacked_blueprints = build_lacked_blueprints(all_blueprints, owned_blueprint_map, t2_pairs, types_map)
 
@@ -92,7 +120,11 @@ def main():
     output_path.parent.mkdir(parents=True, exist_ok=True)
     with output_path.open("w", encoding="utf-8") as f:
         json.dump(lacked_blueprints, f, ensure_ascii=False, indent=2)
-    export_blueprint_names_csv(lacked_blueprints, args.names_csv_output)
+    export_blueprint_names_csv(
+        lacked_blueprints,
+        args.names_csv_output,
+        brought_blueprint_names=brought_blueprint_names,
+    )
 
     print(f"导出完成: {output_path} (共 {len(lacked_blueprints)} 条)")
     print(f"蓝图名 CSV: {args.names_csv_output}")
