@@ -2,6 +2,8 @@ import argparse
 import json
 from pathlib import Path
 
+from Utilities.name_mapping import load_types_map
+
 
 REPO_ROOT = Path(__file__).resolve().parent
 DEFAULT_ALL_BLUEPRINTS = REPO_ROOT / "Cache/Input/blueprints_merged.json"
@@ -9,7 +11,8 @@ DEFAULT_OWNED_BLUEPRINT_MAP = REPO_ROOT / "Cache/Asset/Corp/blueprint_id_name_ma
 DEFAULT_T2_BLUEPRINTS = REPO_ROOT / "Cache/Input/T2.json"
 DEFAULT_OUTPUT = REPO_ROOT / "Cache/Asset/Corp/Lacked_blueprints.json"
 DEFAULT_NAMES_CSV_OUTPUT = REPO_ROOT / "Cache/Asset/Corp/Lacked_blueprints_names.csv"
-CSV_EXCLUDED_KEYWORDS = ("屹立", "压缩", "末日")
+DEFAULT_TYPES_JSON = REPO_ROOT / "Data/types.json"
+CSV_EXCLUDED_KEYWORDS = ("屹立", "压缩", "末日", "旗舰", "长枪", "工业", "核心", "收割者", "力场", "投射", "抗性脚本", "现象")
 
 
 def load_json(path):
@@ -17,11 +20,15 @@ def load_json(path):
         return json.load(f)
 
 
-def pick_name(entry):
+def pick_name(entry, types_map):
+    blueprint_type_id = entry.get("blueprintTypeID")
+    if blueprint_type_id is not None:
+        names = types_map.get(int(blueprint_type_id), {"zh": "", "en": ""})
+        if names.get("zh") or names.get("en"):
+            return names.get("zh") or names.get("en")
+
     name_obj = entry.get("name") or {}
-    zh_name = name_obj.get("zh")
-    en_name = name_obj.get("en")
-    return zh_name or en_name or str(entry.get("blueprintTypeID"))
+    return name_obj.get("zh") or name_obj.get("en") or str(blueprint_type_id)
 
 
 def extract_t2_blueprint_ids(t2_pairs):
@@ -32,7 +39,7 @@ def extract_t2_blueprint_ids(t2_pairs):
     return t2_ids
 
 
-def build_lacked_blueprints(all_blueprints, owned_blueprint_map, t2_pairs):
+def build_lacked_blueprints(all_blueprints, owned_blueprint_map, t2_pairs, types_map):
     owned_ids = {int(blueprint_id) for blueprint_id in owned_blueprint_map.keys()}
     t2_ids = extract_t2_blueprint_ids(t2_pairs)
 
@@ -43,7 +50,7 @@ def build_lacked_blueprints(all_blueprints, owned_blueprint_map, t2_pairs):
             continue
         if blueprint_id in owned_ids or blueprint_id in t2_ids:
             continue
-        lacked.append({"id": blueprint_id, "name": pick_name(blueprint)})
+        lacked.append({"id": blueprint_id, "name": pick_name(blueprint, types_map)})
 
     lacked.sort(key=lambda row: row["id"])
     return lacked
@@ -66,6 +73,7 @@ def main():
     parser.add_argument("--owned-map", default=str(DEFAULT_OWNED_BLUEPRINT_MAP), help="已拥有蓝图映射 JSON 路径")
     parser.add_argument("--t2-blueprints", default=str(DEFAULT_T2_BLUEPRINTS), help="T2 蓝图对照 JSON 路径")
     parser.add_argument("--output", default=str(DEFAULT_OUTPUT), help="输出 JSON 路径")
+    parser.add_argument("--types-json", default=str(DEFAULT_TYPES_JSON), help="类型名映射 JSON 路径")
     parser.add_argument(
         "--names-csv-output",
         default=str(DEFAULT_NAMES_CSV_OUTPUT),
@@ -76,8 +84,9 @@ def main():
     all_blueprints = load_json(args.all_blueprints)
     owned_blueprint_map = load_json(args.owned_map)
     t2_pairs = load_json(args.t2_blueprints)
+    types_map = load_types_map(args.types_json)
 
-    lacked_blueprints = build_lacked_blueprints(all_blueprints, owned_blueprint_map, t2_pairs)
+    lacked_blueprints = build_lacked_blueprints(all_blueprints, owned_blueprint_map, t2_pairs, types_map)
 
     output_path = Path(args.output)
     output_path.parent.mkdir(parents=True, exist_ok=True)
