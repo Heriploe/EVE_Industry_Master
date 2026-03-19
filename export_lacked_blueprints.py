@@ -9,6 +9,7 @@ DEFAULT_OWNED_BLUEPRINT_MAP = REPO_ROOT / "Cache/Asset/Corp/blueprint_id_name_ma
 DEFAULT_T2_BLUEPRINTS = REPO_ROOT / "Cache/Input/T2.json"
 DEFAULT_OUTPUT = REPO_ROOT / "Cache/Asset/Corp/Lacked_blueprints.json"
 DEFAULT_NAMES_CSV_OUTPUT = REPO_ROOT / "Cache/Asset/Corp/Lacked_blueprints_names.csv"
+CSV_EXCLUDED_KEYWORDS = ("屹立", "压缩", "末日")
 
 
 def load_json(path):
@@ -53,7 +54,10 @@ def export_blueprint_names_csv(lacked_blueprints, output_path):
     output_path.parent.mkdir(parents=True, exist_ok=True)
     with output_path.open("w", encoding="utf-8", newline="") as f:
         for blueprint in lacked_blueprints:
-            f.write(f"{blueprint['name']}\n")
+            name = blueprint["name"]
+            if any(keyword in name for keyword in CSV_EXCLUDED_KEYWORDS):
+                continue
+            f.write(f"{name}\n")
 
 
 def main():
