@@ -357,6 +357,44 @@ def save_assets_bundle(base_dir, assets, blueprints, types_file, location_name_m
     save_json(base_dir / "final_blueprints.json", blueprint_assets)
 
 
+def export_corp_blueprint_name_map(final_blueprints, industry_jobs, types_file, output_path):
+    type_dict = load_types_map(str(types_file))
+    blueprint_name_map = {}
+
+    # 1) corp final_blueprints 中所有原图(BPO)
+    for blueprint in final_blueprints:
+        if blueprint.get("is_blueprint_copy", False):
+            continue
+
+        blueprint_type_id = blueprint.get("id")
+        if blueprint_type_id is None:
+            continue
+
+        name = blueprint.get("zh") or blueprint.get("en")
+        if not name:
+            names = type_dict.get(blueprint_type_id, {"zh": "", "en": ""})
+            name = names["zh"] or names["en"] or str(blueprint_type_id)
+        blueprint_name_map[blueprint_type_id] = name
+
+    # 2) industry_jobs_raw 中 activity_id 为 3 或 4 的蓝图
+    for job in industry_jobs:
+        if job.get("activity_id") not in {3, 4}:
+            continue
+
+        blueprint_type_id = job.get("blueprint_type_id")
+        if blueprint_type_id is None:
+            continue
+
+        names = type_dict.get(blueprint_type_id, {"zh": "", "en": ""})
+        name = names["zh"] or names["en"] or str(blueprint_type_id)
+        blueprint_name_map[blueprint_type_id] = name
+
+    sorted_blueprint_name_map = {
+        str(type_id): blueprint_name_map[type_id] for type_id in sorted(blueprint_name_map)
+    }
+    save_json(output_path, sorted_blueprint_name_map)
+
+
 def main():
     settings = load_settings()
     if not settings["client_id"] or not settings["client_secret"]:
@@ -465,6 +503,18 @@ def main():
         location_name_map=corp_location_name_map,
     )
     save_json(output_root / "Corp" / "industry_jobs_raw.json", corp_jobs)
+    _, corp_final_blueprints = split_assets_with_blueprints(
+        corp_assets,
+        corp_blueprints,
+        settings["types_file"],
+        location_name_map=corp_location_name_map,
+    )
+    export_corp_blueprint_name_map(
+        corp_final_blueprints,
+        corp_jobs,
+        settings["types_file"],
+        output_root / "Corp" / "blueprint_id_name_map.json",
+    )
 
     print(f"Token 缓存: {settings['cache_file']}")
     print(f"Character 资产输出目录: {output_root / 'Character'}")
