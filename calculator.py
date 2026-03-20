@@ -6,7 +6,8 @@ import configparser
 from pathlib import Path
 import sys
 
-REPO_ROOT = next((p for p in [Path(__file__).resolve().parent, *Path(__file__).resolve().parent.parents] if (p / "config.ini").exists()), Path(__file__).resolve().parent)
+REPO_ROOT = next((p for p in [Path(__file__).resolve().parent, *Path(__file__).resolve().parent.parents] if
+                  (p / "config.ini").exists()), Path(__file__).resolve().parent)
 if str(REPO_ROOT) not in sys.path:
     sys.path.append(str(REPO_ROOT))
 
@@ -42,6 +43,7 @@ def _merge_blueprints_by_preset(alias_file: Path, preset_file: Path, preset_name
             if isinstance(child_data, list):
                 merged.extend(child_data)
     return merged
+
 
 def _load_ids_from_preset(alias_file: Path, preset_file: Path, preset_name: str):
     with alias_file.open("r", encoding="utf-8") as f:
@@ -106,11 +108,13 @@ MATERIALS_ALIAS_JSON = _resolve_path(config, "paths", "materials_alias_json", "D
 MATERIALS_PRESET_JSON = _resolve_path(config, "paths", "materials_preset_json", "Data/Materials/preset.json")
 
 SHIPS_PRESET = config.get("calculator", "ships_preset", fallback="ships_all")
-MODULES_PRESET = config.get("calculator", "modules_preset", fallback=config.get("calculator", "moudles_preset", fallback="modules_all"))
+MODULES_PRESET = config.get("calculator", "modules_preset",
+                            fallback=config.get("calculator", "moudles_preset", fallback="modules_all"))
 RIGS_PRESET = config.get("calculator", "rigs_preset", fallback="Rigs_all")
 MATERIALS_PRESET = config.get("calculator", "materials_preset", fallback="basic")
 SHIP_PROFIT_FACTOR = config.getfloat("calculator", "ship_profit_factor", fallback=1.0)
-MODULE_PROFIT_FACTOR = config.getfloat("calculator", "module_profit_factor", fallback=config.getfloat("calculator", "moudle_profit_factor", fallback=1.0))
+MODULE_PROFIT_FACTOR = config.getfloat("calculator", "module_profit_factor",
+                                       fallback=config.getfloat("calculator", "moudle_profit_factor", fallback=1.0))
 RIG_PROFIT_FACTOR = config.getfloat("calculator", "rig_profit_factor", fallback=1.0)
 MATERIAL_COST_FACTOR = config.getfloat("calculator", "material_cost_factor", fallback=1.0)
 
@@ -123,6 +127,7 @@ FINAL_INVENTORY_JSON = output_dir / "final_inventory.json"
 # ------------------ 读取数据 ------------------
 with open(INVENTORY_JSON, "r", encoding="utf-8") as f:
     raw_inventory = json.load(f)
+
 
 def _parse_inventory_entry(item):
     if isinstance(item, dict):
@@ -188,6 +193,7 @@ module_product_ids = _load_ids_from_preset(BLUEPRINTS_ALIAS_JSON, BLUEPRINTS_PRE
 rig_product_ids = _load_ids_from_preset(BLUEPRINTS_ALIAS_JSON, BLUEPRINTS_PRESET_JSON, RIGS_PRESET)
 basic_material_ids = _load_ids_from_preset(MATERIALS_ALIAS_JSON, MATERIALS_PRESET_JSON, MATERIALS_PRESET)
 
+
 # ------------------ 工具函数 ------------------
 def get_activity(bp):
     if "manufacturing" in bp:
@@ -195,7 +201,6 @@ def get_activity(bp):
     if "reaction" in bp:
         return bp["reaction"], "reaction"
     return None, None
-
 
 
 def get_jita_price(tid, field="buy"):
@@ -246,7 +251,8 @@ bp_names = {}
 for bp in blueprints:
     bp_id = bp.get("blueprintTypeID")
     if bp_id:
-        bp_names[bp_id] = resolve_name(bp_id, types_map) if bp_id in types_map else {"zh": f"蓝图_{bp_id}", "en": f"BP_{bp_id}"}
+        bp_names[bp_id] = resolve_name(bp_id, types_map) if bp_id in types_map else {"zh": f"蓝图_{bp_id}",
+                                                                                     "en": f"BP_{bp_id}"}
 
 # ------------------ 建立 ILP ------------------
 model = LpProblem("Max_Profit_Min_Products", LpMaximize)
@@ -318,7 +324,7 @@ for i, bp in enumerate(blueprints):
         m.get("quantity", 0) * get_jita_price(m["typeID"], "buy") * get_material_cost_factor(m["typeID"])
         for m in activity.get("materials", [])
     )
-    
+
     jita_products_value = sum(
         p.get("quantity", 0) * get_jita_price(p["typeID"], "buy")
         for p in activity.get("products", [])
@@ -328,17 +334,18 @@ for i, bp in enumerate(blueprints):
         for p in activity.get("products", [])
     )
 
-    if act_type == "manufacturing":
-        jita_profit = jita_products_value - materials_cost * (1 - ME) - jita_freight_cost
-    else:
-        jita_profit = jita_products_value - materials_cost - jita_freight_cost
-
     product_factor = 1.0
     products = activity.get("products", [])
     if products:
         product_factor = get_product_profit_factor(products[0]["typeID"])
-    profit = jita_profit * product_factor
-    
+
+    if act_type == "manufacturing":
+        jita_profit = jita_products_value * product_factor - materials_cost * (1 - ME) - jita_freight_cost
+    else:
+        jita_profit = jita_products_value * product_factor - materials_cost - jita_freight_cost
+
+    profit = jita_profit
+
     # 流动性系数始终以Jita为准
     bp_market_value = sum(
         p.get("quantity", 0) * get_jita_price(p["typeID"], "buy") *
