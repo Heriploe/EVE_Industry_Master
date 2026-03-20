@@ -1,5 +1,6 @@
 import json
 import csv
+import re
 from pulp import LpMaximize, LpProblem, LpVariable, lpSum, LpInteger, LpBinary
 
 import configparser
@@ -22,34 +23,48 @@ def _resolve_path(config, section, key, fallback):
     return candidate
 
 
+def _load_json_with_fallback(path: Path):
+    """优先按标准 JSON 读取；失败时兼容注释和尾随逗号。"""
+    try:
+        with path.open("r", encoding="utf-8") as f:
+            return json.load(f)
+    except json.JSONDecodeError:
+        text = path.read_text(encoding="utf-8")
+        # 去掉 UTF-8 BOM
+        text = text.lstrip("\ufeff")
+        # 去掉 // 和 /* */ 注释
+        text = re.sub(r"/\*.*?\*/", "", text, flags=re.S)
+        text = re.sub(r"^\s*//.*$", "", text, flags=re.M)
+        # 去掉对象/数组中的尾随逗号
+        text = re.sub(r",\s*([}\]])", r"\1", text)
+        return json.loads(text)
+
+
 def _merge_blueprints_by_preset(alias_file: Path, preset_file: Path, preset_name: str):
     all_blueprints, selected_blueprints = _load_blueprints_by_preset(alias_file, preset_file, preset_name)
     return _expand_blueprints_with_recursive_dependencies(selected_blueprints, all_blueprints)
 
 
 def _load_blueprints_by_preset(alias_file: Path, preset_file: Path, preset_name: str):
-    with alias_file.open("r", encoding="utf-8") as f:
-        aliases = json.load(f).get("aliases", [])
-    with preset_file.open("r", encoding="utf-8") as f:
-        presets = json.load(f)
+    aliases = _load_json_with_fallback(alias_file).get("aliases", [])
+    presets = _load_json_with_fallback(preset_file)
 
     alias_map = {item["alias"]: item["path"] for item in aliases}
     all_blueprints = []
     seen_blueprint_ids = set()
 
     for rel in alias_map.values():
-        with (REPO_ROOT / rel).open("r", encoding="utf-8") as f:
-            child_data = json.load(f)
-            if isinstance(child_data, list):
-                for bp in child_data:
-                    bp_id = bp.get("blueprintTypeID")
-                    if bp_id is None:
-                        continue
-                    bp_id = int(bp_id)
-                    if bp_id in seen_blueprint_ids:
-                        continue
-                    seen_blueprint_ids.add(bp_id)
-                    all_blueprints.append(bp)
+        child_data = _load_json_with_fallback(REPO_ROOT / rel)
+        if isinstance(child_data, list):
+            for bp in child_data:
+                bp_id = bp.get("blueprintTypeID")
+                if bp_id is None:
+                    continue
+                bp_id = int(bp_id)
+                if bp_id in seen_blueprint_ids:
+                    continue
+                seen_blueprint_ids.add(bp_id)
+                all_blueprints.append(bp)
 
     preset = next((item for item in presets if item.get("name") == preset_name), None)
     if preset is None:
@@ -61,18 +76,17 @@ def _load_blueprints_by_preset(alias_file: Path, preset_file: Path, preset_name:
         rel = alias_map.get(child_alias)
         if not rel:
             raise ValueError(f"蓝图 alias 不存在: {child_alias}")
-        with (REPO_ROOT / rel).open("r", encoding="utf-8") as f:
-            child_data = json.load(f)
-            if isinstance(child_data, list):
-                for bp in child_data:
-                    bp_id = bp.get("blueprintTypeID")
-                    if bp_id is None:
-                        continue
-                    bp_id = int(bp_id)
-                    if bp_id in merged_ids:
-                        continue
-                    merged_ids.add(bp_id)
-                    merged.append(bp)
+        child_data = _load_json_with_fallback(REPO_ROOT / rel)
+        if isinstance(child_data, list):
+            for bp in child_data:
+                bp_id = bp.get("blueprintTypeID")
+                if bp_id is None:
+                    continue
+                bp_id = int(bp_id)
+                if bp_id in merged_ids:
+                    continue
+                merged_ids.add(bp_id)
+                merged.append(bp)
     return all_blueprints, merged
 
 
@@ -141,10 +155,8 @@ def _expand_blueprints_with_recursive_dependencies(selected_blueprints, all_blue
 
 
 def _load_ids_from_preset(alias_file: Path, preset_file: Path, preset_name: str):
-    with alias_file.open("r", encoding="utf-8") as f:
-        aliases = json.load(f).get("aliases", [])
-    with preset_file.open("r", encoding="utf-8") as f:
-        presets = json.load(f)
+    aliases = _load_json_with_fallback(alias_file).get("aliases", [])
+    presets = _load_json_with_fallback(preset_file)
 
     alias_map = {item["alias"]: item["path"] for item in aliases}
     preset = next((item for item in presets if item.get("name") == preset_name), None)
@@ -156,13 +168,12 @@ def _load_ids_from_preset(alias_file: Path, preset_file: Path, preset_name: str)
         rel = alias_map.get(child_alias)
         if not rel:
             raise ValueError(f"alias 不存在: {child_alias}")
-        with (REPO_ROOT / rel).open("r", encoding="utf-8") as f:
-            child_data = json.load(f)
-            if isinstance(child_data, list):
-                for item in child_data:
-                    tid = item.get("id")
-                    if tid is not None:
-                        result.add(int(tid))
+        child_data = _load_json_with_fallback(REPO_ROOT / rel)
+        if isinstance(child_data, list):
+            for item in child_data:
+                tid = item.get("id")
+                if tid is not None:
+                    result.add(int(tid))
     return result
 
 
