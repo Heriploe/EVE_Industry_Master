@@ -9,43 +9,43 @@
     "type_id": 34,
     "zh": "三钛合金",
     "en": "Tritanium",
-    "quantity": 131442012
+    "quantity": 165729699
   },
   {
     "type_id": 35,
     "zh": "类晶体胶矿",
     "en": "Pyerite",
-    "quantity": 71895997
+    "quantity": 62006382
   },
   {
     "type_id": 36,
     "zh": "类银超金属",
     "en": "Mexallon",
-    "quantity": 3836159
+    "quantity": 2479500
   },
   {
     "type_id": 37,
     "zh": "同位聚合体",
     "en": "Isogen",
-    "quantity": 13518198
+    "quantity": 12365648
   },
   {
     "type_id": 38,
     "zh": "超新星诺克石",
     "en": "Nocxium",
-    "quantity": 1890967
+    "quantity": 1807647
   },
   {
     "type_id": 39,
     "zh": "晶状石英核岩",
     "en": "Zydrine",
-    "quantity": 877872
+    "quantity": 854852
   },
   {
     "type_id": 40,
     "zh": "超噬矿",
     "en": "Megacyte",
-    "quantity": 622868
+    "quantity": 610302
   },
   {
     "type_id": 44,
@@ -135,7 +135,7 @@
     "type_id": 622,
     "zh": "刺客级",
     "en": "Stabber",
-    "quantity": 6
+    "quantity": 5
   },
   {
     "type_id": 626,
@@ -153,19 +153,19 @@
     "type_id": 638,
     "zh": "乌鸦级",
     "en": "Raven",
-    "quantity": 20
+    "quantity": 11
   },
   {
     "type_id": 1195,
     "zh": "电容回充器 I",
     "en": "Cap Recharger I",
-    "quantity": 84
+    "quantity": 8
   },
   {
     "type_id": 1246,
     "zh": "电容通量线圈 I",
     "en": "Capacitor Flux Coil I",
-    "quantity": 4
+    "quantity": 3
   },
   {
     "type_id": 1304,
@@ -190,6 +190,12 @@
     "zh": "启示级",
     "en": "Omen",
     "quantity": 4
+  },
+  {
+    "type_id": 2032,
+    "zh": "电容回充器 II",
+    "en": "Cap Recharger II",
+    "quantity": 76
   },
   {
     "type_id": 2312,
@@ -225,7 +231,13 @@
     "type_id": 2603,
     "zh": "纳米纤维内部构架 I",
     "en": "Nanofiber Internal Structure I",
-    "quantity": 242
+    "quantity": 147
+  },
+  {
+    "type_id": 2605,
+    "zh": "纳米纤维内部构架 II",
+    "en": "Nanofiber Internal Structure II",
+    "quantity": 95
   },
   {
     "type_id": 2867,
@@ -297,7 +309,7 @@
     "type_id": 3828,
     "zh": "建筑模块",
     "en": "Construction Blocks",
-    "quantity": 3100
+    "quantity": 2345
   },
   {
     "type_id": 3941,
@@ -363,19 +375,25 @@
     "type_id": 9838,
     "zh": "超导体",
     "en": "Superconductors",
-    "quantity": 458
+    "quantity": 76
   },
   {
     "type_id": 9840,
     "zh": "传信器",
     "en": "Transmitter",
-    "quantity": 60
+    "quantity": 54
   },
   {
     "type_id": 9842,
     "zh": "微型电子元件",
     "en": "Miniature Electronics",
     "quantity": 164
+  },
+  {
+    "type_id": 9848,
+    "zh": "机器人技术",
+    "en": "Robotics",
+    "quantity": 1
   },
   {
     "type_id": 11132,
@@ -393,19 +411,19 @@
     "type_id": 11399,
     "zh": "莫尔石",
     "en": "Morphite",
-    "quantity": 31493
+    "quantity": 30859
   },
   {
     "type_id": 11475,
     "zh": "R.A.M. - 装甲/船体科技",
     "en": "R.A.M.- Armor/Hull Tech",
-    "quantity": 610
+    "quantity": 905
   },
   {
     "type_id": 11476,
     "zh": "R.A.M. - 弹药科技",
     "en": "R.A.M.- Ammunition Tech",
-    "quantity": 277
+    "quantity": 735
   },
   {
     "type_id": 11478,
@@ -417,31 +435,31 @@
     "type_id": 11482,
     "zh": "R.A.M. - 能源科技",
     "en": "R.A.M.- Energy Tech",
-    "quantity": 105
+    "quantity": 920
   },
   {
     "type_id": 11483,
     "zh": "R.A.M. - 电子元件",
     "en": "R.A.M.- Electronics",
-    "quantity": 60
+    "quantity": 1000
   },
   {
     "type_id": 11484,
     "zh": "R.A.M. - 护盾科技",
     "en": "R.A.M.- Shield Tech",
-    "quantity": 127
+    "quantity": 1096
   },
   {
     "type_id": 11486,
     "zh": "R.A.M. - 武器科技",
     "en": "R.A.M.- Weapon Tech",
-    "quantity": 100
+    "quantity": 91
   },
   {
     "type_id": 11532,
     "zh": "聚变推进器",
     "en": "Fusion Thruster",
-    "quantity": 22
+    "quantity": 23
   },
   {
     "type_id": 11537,
@@ -459,7 +477,7 @@
     "type_id": 11539,
     "zh": "纳米电子微处理器",
     "en": "Nanoelectrical Microprocessor",
-    "quantity": 137
+    "quantity": 61
   },
   {
     "type_id": 11542,
@@ -495,7 +513,7 @@
     "type_id": 11554,
     "zh": "超立方电容器单元",
     "en": "Tesseract Capacitor Unit",
-    "quantity": 105
+    "quantity": 29
   },
   {
     "type_id": 11557,
@@ -526,6 +544,18 @@
     "zh": "电磁发生器",
     "en": "EM Pulse Generator",
     "quantity": 60
+  },
+  {
+    "type_id": 12563,
+    "zh": "灼烧 S",
+    "en": "Scorch S",
+    "quantity": 532
+  },
+  {
+    "type_id": 12612,
+    "zh": "涅槃 S",
+    "en": "Void S",
+    "quantity": 380000
   },
   {
     "type_id": 16238,
@@ -561,7 +591,7 @@
     "type_id": 16633,
     "zh": "烃类",
     "en": "Hydrocarbons",
-    "quantity": 26229
+    "quantity": 26300
   },
   {
     "type_id": 16634,
@@ -585,7 +615,7 @@
     "type_id": 16637,
     "zh": "钨",
     "en": "Tungsten",
-    "quantity": 169
+    "quantity": 6000
   },
   {
     "type_id": 16638,
@@ -597,7 +627,7 @@
     "type_id": 16639,
     "zh": "钪",
     "en": "Scandium",
-    "quantity": 16675
+    "quantity": 39900
   },
   {
     "type_id": 16640,
@@ -615,7 +645,7 @@
     "type_id": 16642,
     "zh": "钒",
     "en": "Vanadium",
-    "quantity": 5846
+    "quantity": 39900
   },
   {
     "type_id": 16643,
@@ -681,7 +711,7 @@
     "type_id": 16656,
     "zh": "菲尔合金",
     "en": "Fernite Alloy",
-    "quantity": 458
+    "quantity": 600
   },
   {
     "type_id": 16657,
@@ -699,7 +729,7 @@
     "type_id": 16660,
     "zh": "陶瓷粉末",
     "en": "Ceramic Powder",
-    "quantity": 376
+    "quantity": 4600
   },
   {
     "type_id": 16661,
@@ -711,7 +741,7 @@
     "type_id": 16662,
     "zh": "铂锝合金",
     "en": "Platinum Technite",
-    "quantity": 15000
+    "quantity": 45000
   },
   {
     "type_id": 16667,
@@ -723,7 +753,7 @@
     "type_id": 16670,
     "zh": "碳化晶体",
     "en": "Crystalline Carbonide",
-    "quantity": 4740
+    "quantity": 224
   },
   {
     "type_id": 16671,
@@ -735,7 +765,7 @@
     "type_id": 16672,
     "zh": "碳化钨",
     "en": "Tungsten Carbide",
-    "quantity": 25110
+    "quantity": 4897
   },
   {
     "type_id": 16673,
@@ -744,22 +774,40 @@
     "quantity": 14440000
   },
   {
+    "type_id": 16678,
+    "zh": "多晶碳化硅纤维",
+    "en": "Sylramic Fibers",
+    "quantity": 99
+  },
+  {
     "type_id": 16679,
     "zh": "富勒化合物",
     "en": "Fullerides",
-    "quantity": 12975
+    "quantity": 34
   },
   {
     "type_id": 16680,
     "zh": "酚合成物",
     "en": "Phenolic Composites",
-    "quantity": 349
+    "quantity": 444
+  },
+  {
+    "type_id": 16681,
+    "zh": "纳米晶体管",
+    "en": "Nanotransistors",
+    "quantity": 210
   },
   {
     "type_id": 16682,
     "zh": "超级突触纤维",
     "en": "Hypersynaptic Fibers",
     "quantity": 132
+  },
+  {
+    "type_id": 16683,
+    "zh": "铁磁胶体",
+    "en": "Ferrogel",
+    "quantity": 1
   },
   {
     "type_id": 17136,
@@ -795,7 +843,7 @@
     "type_id": 17703,
     "zh": "帝国海军切割机级",
     "en": "Imperial Navy Slicer",
-    "quantity": 10
+    "quantity": 5
   },
   {
     "type_id": 17812,
@@ -807,19 +855,13 @@
     "type_id": 17841,
     "zh": "联邦海军彗星级",
     "en": "Federation Navy Comet",
-    "quantity": 30
+    "quantity": 10
   },
   {
     "type_id": 17887,
     "zh": "氧同位素",
     "en": "Oxygen Isotopes",
     "quantity": 214130
-  },
-  {
-    "type_id": 17888,
-    "zh": "氮同位素",
-    "en": "Nitrogen Isotopes",
-    "quantity": 147538
   },
   {
     "type_id": 17889,
@@ -837,49 +879,55 @@
     "type_id": 20171,
     "zh": "数据核心 - 磁流体物理",
     "en": "Datacore - Hydromagnetic Physics",
-    "quantity": 36
+    "quantity": 117
   },
   {
     "type_id": 20411,
     "zh": "数据核心 - 高能物理",
     "en": "Datacore - High Energy Physics",
-    "quantity": 19
+    "quantity": 3
+  },
+  {
+    "type_id": 20412,
+    "zh": "数据核心 - 等离子物理",
+    "en": "Datacore - Plasma Physics",
+    "quantity": 10
   },
   {
     "type_id": 20413,
     "zh": "数据核心 - 激光物理",
     "en": "Datacore - Laser Physics",
-    "quantity": 14
+    "quantity": 71
   },
   {
     "type_id": 20414,
     "zh": "数据核心 - 量子物理",
     "en": "Datacore - Quantum Physics",
-    "quantity": 54
+    "quantity": 15
   },
   {
     "type_id": 20415,
     "zh": "数据核心 - 分子工程",
     "en": "Datacore - Molecular Engineering",
-    "quantity": 8
+    "quantity": 293
   },
   {
     "type_id": 20416,
     "zh": "数据核心 - 纳米工程",
     "en": "Datacore - Nanite Engineering",
-    "quantity": 3
+    "quantity": 285
   },
   {
     "type_id": 20417,
     "zh": "数据核心 - 电磁物理",
     "en": "Datacore - Electromagnetic Physics",
-    "quantity": 34
+    "quantity": 36
   },
   {
     "type_id": 20418,
     "zh": "数据核心 - 电子工程",
     "en": "Datacore - Electronic Engineering",
-    "quantity": 30
+    "quantity": 40
   },
   {
     "type_id": 20419,
@@ -898,6 +946,12 @@
     "zh": "数据核心 - 艾玛星舰工程",
     "en": "Datacore - Amarrian Starship Engineering",
     "quantity": 98
+  },
+  {
+    "type_id": 20423,
+    "zh": "数据核心 - 核芯物理",
+    "en": "Datacore - Nuclear Physics",
+    "quantity": 3
   },
   {
     "type_id": 20424,
@@ -1035,13 +1089,7 @@
     "type_id": 25607,
     "zh": "遥感探测处理器",
     "en": "Telemetry Processor",
-    "quantity": 88
-  },
-  {
-    "type_id": 25608,
-    "zh": "完好的护盾发生器",
-    "en": "Intact Shield Emitter",
-    "quantity": 90
+    "quantity": 86
   },
   {
     "type_id": 25609,
@@ -1095,37 +1143,31 @@
     "type_id": 25617,
     "zh": "能源电路",
     "en": "Power Circuit",
-    "quantity": 143
+    "quantity": 121
   },
   {
     "type_id": 25618,
     "zh": "微电路",
     "en": "Micro Circuit",
-    "quantity": 360
+    "quantity": 162
   },
   {
     "type_id": 25619,
     "zh": "逻辑电路",
     "en": "Logic Circuit",
-    "quantity": 258
+    "quantity": 236
   },
   {
     "type_id": 25620,
     "zh": "接口电路",
     "en": "Interface Circuit",
-    "quantity": 263
+    "quantity": 90
   },
   {
     "type_id": 25621,
     "zh": "推进器控制台",
     "en": "Impetus Console",
     "quantity": 110
-  },
-  {
-    "type_id": 25622,
-    "zh": "电容器控制台",
-    "en": "Capacitor Console",
-    "quantity": 4
   },
   {
     "type_id": 25623,
@@ -1206,18 +1248,6 @@
     "quantity": 234
   },
   {
-    "type_id": 31360,
-    "zh": "中型辅助电源路由器 I",
-    "en": "Medium Ancillary Current Router I",
-    "quantity": 60
-  },
-  {
-    "type_id": 31372,
-    "zh": "中型电容器控制电路 I",
-    "en": "Medium Capacitor Control Circuit I",
-    "quantity": 60
-  },
-  {
     "type_id": 31802,
     "zh": "中型核心防御力场稳固装置 I",
     "en": "Medium Core Defense Field Purger I",
@@ -1287,7 +1317,7 @@
     "type_id": 34203,
     "zh": "放大装置解码器",
     "en": "Augmentation Decryptor",
-    "quantity": 10
+    "quantity": 385
   },
   {
     "type_id": 34204,
@@ -1353,13 +1383,13 @@
     "type_id": 47975,
     "zh": "晶体同位聚合体-10",
     "en": "Crystalline Isogen-10",
-    "quantity": 42
+    "quantity": 88
   },
   {
     "type_id": 48112,
     "zh": "零度凝缩液",
     "en": "Zero-Point Condensate",
-    "quantity": 559
+    "quantity": 87
   },
   {
     "type_id": 52694,
@@ -1413,19 +1443,13 @@
     "type_id": 57478,
     "zh": "自动修复储藏装置密封",
     "en": "Auto-Integrity Preservation Seal",
-    "quantity": 2596
-  },
-  {
-    "type_id": 57479,
-    "zh": "核心温度调节器",
-    "en": "Core Temperature Regulator",
-    "quantity": 2
+    "quantity": 1930
   },
   {
     "type_id": 57486,
     "zh": "生命保障备份装置",
     "en": "Life Support Backup Unit",
-    "quantity": 1295
+    "quantity": 961
   },
   {
     "type_id": 58945,

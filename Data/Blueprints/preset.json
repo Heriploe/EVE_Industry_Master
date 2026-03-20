@@ -77,5 +77,11 @@
       "Rigs.rigs_T1_blueprints",
       "Rigs.rigs_T2_blueprints"
     ]
+  },
+  {
+    "name": "ships_to_sell",
+    "children": [
+      "Ships.ships_T2_blueprints"
+    ]
   }
 ]
