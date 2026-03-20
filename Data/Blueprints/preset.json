@@ -56,6 +56,20 @@
     ]
   },
   {
+    "name": "intermediate_materials",
+    "children": [
+      "Components.components_Capital_Advanced_blueprints",
+      "Components.components_Capital_blueprints",
+      "Components.components_T2_blueprints",
+      "Components.components_T3_blueprints",
+      "Reactions.complex_reaction_blueprints",
+      "Reactions.polymer_reaction_blueprints",
+      "Reactions.simple_reaction_blueprints",
+      "Ships.ships_T1_blueprints",
+      "Modules.modules_T1_blueprints"
+    ]
+  },
+  {
     "name": "items_to_sell",
     "children": [
       "Ships.ships_T2_blueprints",
