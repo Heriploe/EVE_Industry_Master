@@ -26,12 +26,30 @@ def load_json(path):
 def load_all_blueprint_ids_from_yaml(path):
     blueprint_id_pattern = re.compile(r"^(\d+):\s*$")
     blueprint_ids = []
+    current_blueprint_id = None
+    current_market_group_id = None
+
+    def flush_current_blueprint():
+        if current_blueprint_id is None:
+            return
+        if current_market_group_id == "null":
+            return
+        blueprint_ids.append(current_blueprint_id)
+
     with Path(path).open("r", encoding="utf-8") as f:
         for line in f:
             match = blueprint_id_pattern.match(line)
-            if not match:
+            if match:
+                flush_current_blueprint()
+                current_blueprint_id = int(match.group(1))
+                current_market_group_id = None
                 continue
-            blueprint_ids.append(int(match.group(1)))
+            if current_blueprint_id is None:
+                continue
+            stripped = line.strip()
+            if stripped.startswith("marketGroupID:"):
+                current_market_group_id = stripped.split(":", 1)[1].strip()
+    flush_current_blueprint()
     return blueprint_ids
 
 
