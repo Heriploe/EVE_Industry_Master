@@ -1,5 +1,6 @@
 import json
 import csv
+import re
 from pulp import LpMaximize, LpProblem, LpVariable, lpSum, LpInteger, LpBinary
 
 import configparser
@@ -22,34 +23,148 @@ def _resolve_path(config, section, key, fallback):
     return candidate
 
 
+def _load_json_with_fallback(path: Path):
+    """优先按标准 JSON 读取；失败时兼容注释和尾随逗号。"""
+    try:
+        with path.open("r", encoding="utf-8") as f:
+            return json.load(f)
+    except json.JSONDecodeError:
+        text = path.read_text(encoding="utf-8")
+        # 去掉 UTF-8 BOM
+        text = text.lstrip("\ufeff")
+        # 去掉 // 和 /* */ 注释
+        text = re.sub(r"/\*.*?\*/", "", text, flags=re.S)
+        text = re.sub(r"^\s*//.*$", "", text, flags=re.M)
+        # 去掉对象/数组中的尾随逗号
+        text = re.sub(r",\s*([}\]])", r"\1", text)
+        return json.loads(text)
+
+
+def get_activity(bp):
+    if "manufacturing" in bp:
+        return bp["manufacturing"], "manufacturing"
+    if "reaction" in bp:
+        return bp["reaction"], "reaction"
+    return None, None
+
+
 def _merge_blueprints_by_preset(alias_file: Path, preset_file: Path, preset_name: str):
-    with alias_file.open("r", encoding="utf-8") as f:
-        aliases = json.load(f).get("aliases", [])
-    with preset_file.open("r", encoding="utf-8") as f:
-        presets = json.load(f)
+    all_blueprints, selected_blueprints = _load_blueprints_by_preset(alias_file, preset_file, preset_name)
+    return _expand_blueprints_with_recursive_dependencies(selected_blueprints, all_blueprints)
+
+
+def _load_blueprints_by_preset(alias_file: Path, preset_file: Path, preset_name: str):
+    aliases = _load_json_with_fallback(alias_file).get("aliases", [])
+    presets = _load_json_with_fallback(preset_file)
 
     alias_map = {item["alias"]: item["path"] for item in aliases}
+    all_blueprints = []
+    seen_blueprint_ids = set()
+
+    for rel in alias_map.values():
+        child_data = _load_json_with_fallback(REPO_ROOT / rel)
+        if isinstance(child_data, list):
+            for bp in child_data:
+                bp_id = bp.get("blueprintTypeID")
+                if bp_id is None:
+                    continue
+                bp_id = int(bp_id)
+                if bp_id in seen_blueprint_ids:
+                    continue
+                seen_blueprint_ids.add(bp_id)
+                all_blueprints.append(bp)
+
     preset = next((item for item in presets if item.get("name") == preset_name), None)
     if preset is None:
         raise ValueError(f"未找到蓝图 preset: {preset_name}")
 
     merged = []
+    merged_ids = set()
     for child_alias in preset.get("children", []):
         rel = alias_map.get(child_alias)
         if not rel:
             raise ValueError(f"蓝图 alias 不存在: {child_alias}")
-        with (REPO_ROOT / rel).open("r", encoding="utf-8") as f:
-            child_data = json.load(f)
-            if isinstance(child_data, list):
-                merged.extend(child_data)
-    return merged
+        child_data = _load_json_with_fallback(REPO_ROOT / rel)
+        if isinstance(child_data, list):
+            for bp in child_data:
+                bp_id = bp.get("blueprintTypeID")
+                if bp_id is None:
+                    continue
+                bp_id = int(bp_id)
+                if bp_id in merged_ids:
+                    continue
+                merged_ids.add(bp_id)
+                merged.append(bp)
+    return all_blueprints, merged
+
+
+def _expand_blueprints_with_recursive_dependencies(selected_blueprints, all_blueprints):
+    """将 preset 蓝图按其材料递归扩展到可生产的子蓝图。"""
+    product_to_blueprints = {}
+    blueprint_by_id = {}
+
+    for bp in all_blueprints:
+        bp_id = bp.get("blueprintTypeID")
+        if bp_id is None:
+            continue
+        bp_id = int(bp_id)
+        blueprint_by_id[bp_id] = bp
+        activity, _ = get_activity(bp)
+        if not activity:
+            continue
+        for product in activity.get("products", []):
+            product_tid = product.get("typeID")
+            if product_tid is None:
+                continue
+            product_tid = int(product_tid)
+            product_to_blueprints.setdefault(product_tid, []).append(bp_id)
+
+    expanded = []
+    visited_bp_ids = set()
+    queue = []
+
+    for bp in selected_blueprints:
+        bp_id = bp.get("blueprintTypeID")
+        if bp_id is None:
+            continue
+        bp_id = int(bp_id)
+        if bp_id in visited_bp_ids:
+            continue
+        visited_bp_ids.add(bp_id)
+        expanded.append(bp)
+        queue.append(bp_id)
+
+    while queue:
+        current_bp_id = queue.pop(0)
+        current_bp = blueprint_by_id.get(current_bp_id)
+        if not current_bp:
+            continue
+        activity, _ = get_activity(current_bp)
+        if not activity:
+            continue
+
+        for material in activity.get("materials", []):
+            material_tid = material.get("typeID")
+            if material_tid is None:
+                continue
+            material_tid = int(material_tid)
+            candidate_bp_ids = product_to_blueprints.get(material_tid, [])
+            for candidate_bp_id in candidate_bp_ids:
+                if candidate_bp_id in visited_bp_ids:
+                    continue
+                candidate_bp = blueprint_by_id.get(candidate_bp_id)
+                if not candidate_bp:
+                    continue
+                visited_bp_ids.add(candidate_bp_id)
+                expanded.append(candidate_bp)
+                queue.append(candidate_bp_id)
+
+    return expanded
 
 
 def _load_ids_from_preset(alias_file: Path, preset_file: Path, preset_name: str):
-    with alias_file.open("r", encoding="utf-8") as f:
-        aliases = json.load(f).get("aliases", [])
-    with preset_file.open("r", encoding="utf-8") as f:
-        presets = json.load(f)
+    aliases = _load_json_with_fallback(alias_file).get("aliases", [])
+    presets = _load_json_with_fallback(preset_file)
 
     alias_map = {item["alias"]: item["path"] for item in aliases}
     preset = next((item for item in presets if item.get("name") == preset_name), None)
@@ -61,13 +176,12 @@ def _load_ids_from_preset(alias_file: Path, preset_file: Path, preset_name: str)
         rel = alias_map.get(child_alias)
         if not rel:
             raise ValueError(f"alias 不存在: {child_alias}")
-        with (REPO_ROOT / rel).open("r", encoding="utf-8") as f:
-            child_data = json.load(f)
-            if isinstance(child_data, list):
-                for item in child_data:
-                    tid = item.get("id")
-                    if tid is not None:
-                        result.add(int(tid))
+        child_data = _load_json_with_fallback(REPO_ROOT / rel)
+        if isinstance(child_data, list):
+            for item in child_data:
+                tid = item.get("id")
+                if tid is not None:
+                    result.add(int(tid))
     return result
 
 
@@ -195,14 +309,6 @@ basic_material_ids = _load_ids_from_preset(MATERIALS_ALIAS_JSON, MATERIALS_PRESE
 
 
 # ------------------ 工具函数 ------------------
-def get_activity(bp):
-    if "manufacturing" in bp:
-        return bp["manufacturing"], "manufacturing"
-    if "reaction" in bp:
-        return bp["reaction"], "reaction"
-    return None, None
-
-
 def get_jita_price(tid, field="buy"):
     item = jita_prices.get(int(tid), {})
     val = item.get(field)
