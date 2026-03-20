@@ -53,6 +53,19 @@ def _merge_blueprints_by_preset(alias_file: Path, preset_file: Path, preset_name
     return _expand_blueprints_with_recursive_dependencies(selected_blueprints, all_blueprints)
 
 
+def _collect_product_type_ids(blueprint_list):
+    product_ids = set()
+    for bp in blueprint_list:
+        activity, _ = get_activity(bp)
+        if not activity:
+            continue
+        for p in activity.get("products", []):
+            tid = p.get("typeID")
+            if tid is not None:
+                product_ids.add(int(tid))
+    return product_ids
+
+
 def _load_blueprints_by_preset(alias_file: Path, preset_file: Path, preset_name: str):
     aliases = _load_json_with_fallback(alias_file).get("aliases", [])
     presets = _load_json_with_fallback(preset_file)
@@ -205,10 +218,14 @@ if config.has_section("calculator"):
     PRODUCT_DIVERSITY_PENALTY = config.getfloat("calculator", "product_diversity_penalty", fallback=0)
     FARE_JITA = config.getfloat("calculator", "fare_jita", fallback=500)
     ENABLE_FREIGHT = config.getboolean("calculator", "enable_freight", fallback=True)
+    INCLUDE_INTERMEDIATE_IN_PROFIT = config.getboolean(
+        "calculator", "include_intermediate_in_profit", fallback=True
+    )
 else:
     PRODUCT_DIVERSITY_PENALTY = 0
     FARE_JITA = 500
     ENABLE_FREIGHT = True
+    INCLUDE_INTERMEDIATE_IN_PROFIT = True
 
 # ================== 文件 ==================
 INVENTORY_JSON = _resolve_path(config, "calculator", "inventory_json", "Cache/Asset/Corp/final_non_blueprints.json")
@@ -280,7 +297,11 @@ elif isinstance(raw_inventory, list):
             continue
         inventory[tid] = inventory.get(tid, 0) + qty
 
-blueprints = _merge_blueprints_by_preset(BLUEPRINTS_ALIAS_JSON, BLUEPRINTS_PRESET_JSON, BLUEPRINTS_PRESET)
+all_blueprints, selected_blueprints = _load_blueprints_by_preset(
+    BLUEPRINTS_ALIAS_JSON, BLUEPRINTS_PRESET_JSON, BLUEPRINTS_PRESET
+)
+blueprints = _expand_blueprints_with_recursive_dependencies(selected_blueprints, all_blueprints)
+final_product_ids = _collect_product_type_ids(selected_blueprints)
 
 with JITA_PRICES_JSON.open("r", encoding="utf-8") as f:
     jita_prices_raw = json.load(f)
@@ -434,10 +455,12 @@ for i, bp in enumerate(blueprints):
     jita_products_value = sum(
         p.get("quantity", 0) * get_jita_price(p["typeID"], "buy")
         for p in activity.get("products", [])
+        if INCLUDE_INTERMEDIATE_IN_PROFIT or int(p["typeID"]) in final_product_ids
     )
     jita_freight_cost = sum(
         get_freight_cost(p["typeID"], p.get("quantity", 0))
         for p in activity.get("products", [])
+        if INCLUDE_INTERMEDIATE_IN_PROFIT or int(p["typeID"]) in final_product_ids
     )
 
     product_factor = 1.0
@@ -661,7 +684,11 @@ if model.status == 1:  # Optimal
     profit_from_blueprints = total_profit
 
     # 方法2：从最终产物
-    final_revenue = sum(final_inventory_dict[tid] * get_price(tid, "buy") for tid in final_products)
+    final_revenue = sum(
+        final_inventory_dict[tid] * get_price(tid, "buy")
+        for tid in final_inventory_dict
+        if INCLUDE_INTERMEDIATE_IN_PROFIT or int(tid) in final_product_ids
+    )
     purchase_cost = sum(
         (int(purchase[tid].value()) if purchase[tid].value() else 0) * get_jita_price(tid, "buy")
         for tid in all_items
