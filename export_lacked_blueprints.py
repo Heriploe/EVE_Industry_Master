@@ -1,12 +1,13 @@
 import argparse
 import json
+import re
 from pathlib import Path
 
 from Utilities.name_mapping import load_types_map
 
 
 REPO_ROOT = Path(__file__).resolve().parent
-DEFAULT_ALL_BLUEPRINTS = REPO_ROOT / "Cache/Input/blueprints_merged.json"
+DEFAULT_ALL_BLUEPRINTS_YAML = REPO_ROOT / "Cache/Input/blueprints.yaml"
 DEFAULT_OWNED_BLUEPRINT_MAP = REPO_ROOT / "Cache/Asset/Corp/blueprint_id_name_map.json"
 DEFAULT_T2_BLUEPRINTS = REPO_ROOT / "Cache/Input/T2.json"
 DEFAULT_OUTPUT = REPO_ROOT / "Cache/Asset/Corp/Lacked_blueprints.json"
@@ -22,15 +23,23 @@ def load_json(path):
         return json.load(f)
 
 
-def pick_name(entry, types_map):
-    blueprint_type_id = entry.get("blueprintTypeID")
-    if blueprint_type_id is not None:
-        names = types_map.get(int(blueprint_type_id), {"zh": "", "en": ""})
-        if names.get("zh") or names.get("en"):
-            return names.get("zh") or names.get("en")
+def load_all_blueprint_ids_from_yaml(path):
+    blueprint_id_pattern = re.compile(r"^(\d+):\s*$")
+    blueprint_ids = []
+    with Path(path).open("r", encoding="utf-8") as f:
+        for line in f:
+            match = blueprint_id_pattern.match(line)
+            if not match:
+                continue
+            blueprint_ids.append(int(match.group(1)))
+    return blueprint_ids
 
-    name_obj = entry.get("name") or {}
-    return name_obj.get("zh") or name_obj.get("en") or str(blueprint_type_id)
+
+def pick_name(blueprint_type_id, types_map):
+    names = types_map.get(int(blueprint_type_id), {"zh": "", "en": ""})
+    if names.get("zh") or names.get("en"):
+        return names.get("zh") or names.get("en")
+    return str(blueprint_type_id)
 
 
 def extract_t2_blueprint_ids(t2_pairs):
@@ -59,18 +68,15 @@ def load_blueprint_names(csv_path):
     return names
 
 
-def build_lacked_blueprints(all_blueprints, owned_blueprint_map, t2_pairs, types_map):
+def build_lacked_blueprints(all_blueprint_ids, owned_blueprint_map, t2_pairs, types_map):
     owned_ids = {int(blueprint_id) for blueprint_id in owned_blueprint_map.keys()}
     t2_ids = extract_t2_blueprint_ids(t2_pairs)
 
     lacked = []
-    for blueprint in all_blueprints:
-        blueprint_id = blueprint.get("blueprintTypeID")
-        if blueprint_id is None:
-            continue
+    for blueprint_id in all_blueprint_ids:
         if blueprint_id in owned_ids or blueprint_id in t2_ids:
             continue
-        lacked.append({"id": blueprint_id, "name": pick_name(blueprint, types_map)})
+        lacked.append({"id": blueprint_id, "name": pick_name(blueprint_id, types_map)})
 
     lacked.sort(key=lambda row: row["id"])
     return lacked
@@ -92,7 +98,7 @@ def export_blueprint_names_csv(lacked_blueprints, output_path, brought_blueprint
 
 def main():
     parser = argparse.ArgumentParser(description="导出缺失蓝图列表（排除已有蓝图与 T2 蓝图）")
-    parser.add_argument("--all-blueprints", default=str(DEFAULT_ALL_BLUEPRINTS), help="全量蓝图 JSON 路径")
+    parser.add_argument("--all-blueprints", default=str(DEFAULT_ALL_BLUEPRINTS_YAML), help="全量蓝图 YAML 路径")
     parser.add_argument("--owned-map", default=str(DEFAULT_OWNED_BLUEPRINT_MAP), help="已拥有蓝图映射 JSON 路径")
     parser.add_argument("--t2-blueprints", default=str(DEFAULT_T2_BLUEPRINTS), help="T2 蓝图对照 JSON 路径")
     parser.add_argument("--output", default=str(DEFAULT_OUTPUT), help="输出 JSON 路径")
@@ -114,7 +120,7 @@ def main():
     )
     args = parser.parse_args()
 
-    all_blueprints = load_json(args.all_blueprints)
+    all_blueprint_ids = load_all_blueprint_ids_from_yaml(args.all_blueprints)
     owned_blueprint_map = load_json(args.owned_map)
     t2_pairs = load_json(args.t2_blueprints)
     types_map = load_types_map(args.types_json)
@@ -122,7 +128,7 @@ def main():
     excluded_blueprint_names = load_blueprint_names(args.excluded_blueprints_csv)
     filtered_blueprint_names = brought_blueprint_names | excluded_blueprint_names
 
-    lacked_blueprints = build_lacked_blueprints(all_blueprints, owned_blueprint_map, t2_pairs, types_map)
+    lacked_blueprints = build_lacked_blueprints(all_blueprint_ids, owned_blueprint_map, t2_pairs, types_map)
 
     output_path = Path(args.output)
     output_path.parent.mkdir(parents=True, exist_ok=True)
