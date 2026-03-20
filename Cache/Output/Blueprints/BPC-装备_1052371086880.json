@@ -1,0 +1,54 @@
+[
+  {
+    "item_id": 1051204007785,
+    "id": 11360,
+    "zh": "大型远程装甲维修器蓝图 I",
+    "en": "Large Remote Armor Repairer I Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": -1,
+    "quantity": -1,
+    "location_id": 1052371086880,
+    "location_flag": "CorpSAG1",
+    "container_name": "BPC-装备"
+  },
+  {
+    "item_id": 1051204709928,
+    "id": 10679,
+    "zh": "125mm磁轨炮蓝图 I",
+    "en": "125mm Railgun I Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": -1,
+    "quantity": -1,
+    "location_id": 1052371086880,
+    "location_flag": "CorpSAG1",
+    "container_name": "BPC-装备"
+  },
+  {
+    "item_id": 1051205721328,
+    "id": 831,
+    "zh": "800mm频射加农炮蓝图 I",
+    "en": "800mm Repeating Cannon I Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": -1,
+    "quantity": -1,
+    "location_id": 1052371086880,
+    "location_flag": "CorpSAG1",
+    "container_name": "BPC-装备"
+  },
+  {
+    "item_id": 1051205721802,
+    "id": 829,
+    "zh": "双联425mm自动加农炮蓝图 I",
+    "en": "Dual 425mm AutoCannon I Blueprint",
+    "material_efficiency": 10,
+    "time_efficiency": 20,
+    "runs": -1,
+    "quantity": -1,
+    "location_id": 1052371086880,
+    "location_flag": "CorpSAG1",
+    "container_name": "BPC-装备"
+  }
+]

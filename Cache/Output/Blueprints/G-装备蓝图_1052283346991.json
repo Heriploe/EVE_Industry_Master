@@ -247,19 +247,6 @@
     "container_name": "G-装备蓝图"
   },
   {
-    "item_id": 1052326119671,
-    "id": 47971,
-    "zh": "重型熵能分解者蓝图 I",
-    "en": "Heavy Entropic Disintegrator I Blueprint",
-    "material_efficiency": 0,
-    "time_efficiency": 0,
-    "runs": 5,
-    "quantity": -2,
-    "location_id": 1052283346991,
-    "location_flag": "CorpSAG1",
-    "container_name": "G-装备蓝图"
-  },
-  {
     "item_id": 1052370190979,
     "id": 24349,
     "zh": "小型牵引光束器蓝图 I",

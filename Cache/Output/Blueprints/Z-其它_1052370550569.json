@@ -117,6 +117,19 @@
     "container_name": "Z-其它"
   },
   {
+    "item_id": 1050180604823,
+    "id": 48098,
+    "zh": "重子异种等离子弹蓝图 S",
+    "en": "Baryon Exotic Plasma S Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": 5,
+    "quantity": -2,
+    "location_id": 1052370550569,
+    "location_flag": "CorpSAG1",
+    "container_name": "Z-其它"
+  },
+  {
     "item_id": 1050259800138,
     "id": 48470,
     "zh": "轻型视野型熵能分解者蓝图",
@@ -195,19 +208,6 @@
     "container_name": "Z-其它"
   },
   {
-    "item_id": 1050987308492,
-    "id": 52349,
-    "zh": "暗泽裔重型熵能分解者蓝图",
-    "en": "Veles Heavy Entropic Disintegrator Blueprint",
-    "material_efficiency": 0,
-    "time_efficiency": 0,
-    "runs": 1,
-    "quantity": -2,
-    "location_id": 1052370550569,
-    "location_flag": "CorpSAG1",
-    "container_name": "Z-其它"
-  },
-  {
     "item_id": 1050987447479,
     "id": 49777,
     "zh": "重型突变适应紧凑型远程装甲维修器蓝图",
@@ -273,19 +273,6 @@
     "container_name": "Z-其它"
   },
   {
-    "item_id": 1051145138160,
-    "id": 49775,
-    "zh": "重型突变适应远程装甲维修器蓝图 I",
-    "en": "Heavy Mutadaptive Remote Armor Repairer I Blueprint",
-    "material_efficiency": 0,
-    "time_efficiency": 0,
-    "runs": 5,
-    "quantity": -2,
-    "location_id": 1052370550569,
-    "location_flag": "CorpSAG1",
-    "container_name": "Z-其它"
-  },
-  {
     "item_id": 1051145168700,
     "id": 86050,
     "zh": "荣耀级怀璧型跃迁扰频器突变质体蓝图",
@@ -332,6 +319,19 @@
     "material_efficiency": 0,
     "time_efficiency": 0,
     "runs": 1,
+    "quantity": -2,
+    "location_id": 1052370550569,
+    "location_flag": "CorpSAG1",
+    "container_name": "Z-其它"
+  },
+  {
+    "item_id": 1051416517214,
+    "id": 48098,
+    "zh": "重子异种等离子弹蓝图 S",
+    "en": "Baryon Exotic Plasma S Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": 5,
     "quantity": -2,
     "location_id": 1052370550569,
     "location_flag": "CorpSAG1",

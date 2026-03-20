@@ -13,6 +13,19 @@
     "container_name": "舰船"
   },
   {
+    "item_id": 1051203350379,
+    "id": 16237,
+    "zh": "强制者级蓝图",
+    "en": "Coercer Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "quantity": -1,
+    "location_id": 1052370796420,
+    "location_flag": "CorpSAG1",
+    "container_name": "舰船"
+  },
+  {
     "item_id": 1051203273146,
     "id": 949,
     "zh": "茶隼级蓝图",
@@ -56,19 +69,6 @@
     "id": 2162,
     "zh": "磨难级蓝图",
     "en": "Crucifier Blueprint",
-    "material_efficiency": 0,
-    "time_efficiency": 0,
-    "runs": -1,
-    "quantity": 1,
-    "location_id": 1052370796420,
-    "location_flag": "CorpSAG1",
-    "container_name": "舰船"
-  },
-  {
-    "item_id": 1051203350379,
-    "id": 16237,
-    "zh": "强制者级蓝图",
-    "en": "Coercer Blueprint",
     "material_efficiency": 0,
     "time_efficiency": 0,
     "runs": -1,

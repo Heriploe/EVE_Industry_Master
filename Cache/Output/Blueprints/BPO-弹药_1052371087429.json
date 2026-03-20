@@ -26,6 +26,45 @@
     "container_name": "BPO-弹药"
   },
   {
+    "item_id": 1051205093077,
+    "id": 1137,
+    "zh": "反物质轨道弹蓝图 S",
+    "en": "Antimatter Charge S Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "quantity": -1,
+    "location_id": 1052371087429,
+    "location_flag": "CorpSAG1",
+    "container_name": "BPO-弹药"
+  },
+  {
+    "item_id": 1051205489259,
+    "id": 1159,
+    "zh": "X射线晶体蓝图 S",
+    "en": "Xray S Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "quantity": -1,
+    "location_id": 1052371087429,
+    "location_flag": "CorpSAG1",
+    "container_name": "BPO-弹药"
+  },
+  {
+    "item_id": 1051205494739,
+    "id": 1158,
+    "zh": "紫外晶体蓝图 S",
+    "en": "Ultraviolet S Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": -1,
+    "quantity": -1,
+    "location_id": 1052371087429,
+    "location_flag": "CorpSAG1",
+    "container_name": "BPO-弹药"
+  },
+  {
     "item_id": 1051204393514,
     "id": 812,
     "zh": "炼狱轻型导弹蓝图",
@@ -286,19 +325,6 @@
     "container_name": "BPO-弹药"
   },
   {
-    "item_id": 1051205093077,
-    "id": 1137,
-    "zh": "反物质轨道弹蓝图 S",
-    "en": "Antimatter Charge S Blueprint",
-    "material_efficiency": 0,
-    "time_efficiency": 0,
-    "runs": -1,
-    "quantity": 1,
-    "location_id": 1052371087429,
-    "location_flag": "CorpSAG1",
-    "container_name": "BPO-弹药"
-  },
-  {
     "item_id": 1051205093412,
     "id": 1136,
     "zh": "锰质轨道弹蓝图 S",
@@ -533,19 +559,6 @@
     "container_name": "BPO-弹药"
   },
   {
-    "item_id": 1051205489259,
-    "id": 1159,
-    "zh": "X射线晶体蓝图 S",
-    "en": "Xray S Blueprint",
-    "material_efficiency": 0,
-    "time_efficiency": 0,
-    "runs": -1,
-    "quantity": 1,
-    "location_id": 1052371087429,
-    "location_flag": "CorpSAG1",
-    "container_name": "BPO-弹药"
-  },
-  {
     "item_id": 1051205490542,
     "id": 1161,
     "zh": "多频晶体蓝图 S",
@@ -563,19 +576,6 @@
     "id": 1154,
     "zh": "射频晶体蓝图 S",
     "en": "Radio S Blueprint",
-    "material_efficiency": 0,
-    "time_efficiency": 0,
-    "runs": -1,
-    "quantity": 1,
-    "location_id": 1052371087429,
-    "location_flag": "CorpSAG1",
-    "container_name": "BPO-弹药"
-  },
-  {
-    "item_id": 1051205494739,
-    "id": 1158,
-    "zh": "紫外晶体蓝图 S",
-    "en": "Ultraviolet S Blueprint",
     "material_efficiency": 0,
     "time_efficiency": 0,
     "runs": -1,
