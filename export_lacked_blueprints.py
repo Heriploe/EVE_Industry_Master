@@ -15,7 +15,15 @@ DEFAULT_NAMES_CSV_OUTPUT = REPO_ROOT / "Cache/Asset/Corp/Lacked_blueprints_names
 DEFAULT_BROUGHT_BLUEPRINTS_CSV = REPO_ROOT / "Cache/Asset/Corp/brought_blueprints.csv"
 DEFAULT_EXCLUDED_BLUEPRINTS_CSV = REPO_ROOT / "Cache/Asset/Corp/excluded_blueprints.csv"
 DEFAULT_TYPES_JSON = REPO_ROOT / "Data/types.json"
-CSV_EXCLUDED_KEYWORDS = ("屹立", "压缩", "末日", "旗舰", "长枪", "工业", "核心", "收割者", "力场", "投射", "抗性脚本", "现象")
+CSV_EXCLUDED_KEYWORDS = (
+    "屹立", "压缩", "末日", "长枪", "工业", "收割者", "投射", "抗性脚本", "现象", "海军", "控制塔", "组装阵列", "塔台",
+    "炮台", "共和舰队", "集群", "空间站", "低级", "中级", "高级", "过期", "纤维", "阵列", "古斯塔斯", "主天使",
+    "荣耀级", "扎拉希", "粗糙", "统合部", "酷菲", "基础型", "舰队", "模拟助推", "增效", "无人机", "岗哨", "发射台",
+    "集成型", "加强型", "高密度", "莫德团", "图克尔", "联合矿业", "姐妹会", "辛迪加", "紧凑型", "视野型",
+    "萨沙爱国者", "黑暗血袭者", "暗影天蛇", "充裕型", "缚魂", "熵", "发生器", "放大器", "限制器", "民用", "旧",
+    "毁坏", "失灵", "完整", "版", "偏振", "精准", "持久", "辅助", "级蓝图", "制造蓝图", "研究蓝图", "脚本蓝图",
+    "抑制型", "标准", "延展型", "电容包", "座舱", "1蓝图", "2蓝图", "3蓝图", "4蓝图", "穿梭机", "昇威", "立体炸弹",
+    "财团", "霜线", "裔", "突变","平台","数据","室","型蓝图","R.Db")
 
 
 def load_json(path):
