@@ -286,7 +286,21 @@ elif isinstance(raw_inventory, list):
             continue
         inventory[tid] = inventory.get(tid, 0) + qty
 
-blueprints = _merge_blueprints_by_preset(BLUEPRINTS_ALIAS_JSON, BLUEPRINTS_PRESET_JSON, BLUEPRINTS_PRESET)
+all_blueprints, selected_blueprints = _load_blueprints_by_preset(
+    BLUEPRINTS_ALIAS_JSON, BLUEPRINTS_PRESET_JSON, BLUEPRINTS_PRESET
+)
+blueprints = _expand_blueprints_with_recursive_dependencies(selected_blueprints, all_blueprints)
+
+# 仅将 preset 中直接考察的产物视为“最终产物”
+final_product_ids = set()
+for bp in selected_blueprints:
+    activity, _ = get_activity(bp)
+    if not activity:
+        continue
+    for p in activity.get("products", []):
+        tid = p.get("typeID")
+        if tid is not None:
+            final_product_ids.add(int(tid))
 
 with JITA_PRICES_JSON.open("r", encoding="utf-8") as f:
     jita_prices_raw = json.load(f)
@@ -390,6 +404,7 @@ for bp in blueprints:
 print(f"总物品数: {len(all_items)}")
 print(f"材料物品数: {len(material_items)}")
 print(f"产物物品数: {len(product_items)}")
+print(f"考察最终产物数: {len(final_product_ids)}")
 
 purchase_cat = LpInteger if PURCHASE_INTEGER else "Continuous"
 purchase = {tid: LpVariable(f"buy_{tid}", lowBound=0, cat=purchase_cat) for tid in material_items}
@@ -416,14 +431,14 @@ for i, bp in enumerate(blueprints):
 x = {i: LpVariable(f"bp_{i}", lowBound=0, upBound=bp_max_runs[i], cat=LpInteger)
      for i in range(len(blueprints))}
 
-# ------------------ 计算总权重（Jita销量 * Jita价格） ------------------
+# ------------------ 计算最终产物总权重（Jita销量 * Jita价格） ------------------
 total_market_weight = 0
-for tid in all_items:
+for tid in final_product_ids:
     price = get_price(tid, "buy")
     volume = jita_prices.get(tid, {}).get("volume", 0)
     total_market_weight += max(price * volume, 0)
 
-# ------------------ 计算蓝图评分：最大化库存消耗价值（考虑权重） ------------------
+# ------------------ 计算蓝图评分：仅最终产物计入利用价值（考虑权重） ------------------
 bp_score = {}
 
 for i, bp in enumerate(blueprints):
@@ -432,21 +447,23 @@ for i, bp in enumerate(blueprints):
         bp_score[i] = 0
         continue
 
-    # 库存利用价值：材料消耗量 * Jita价格
-    materials_usage_value = sum(
-        m.get("quantity", 0) * get_jita_price(m["typeID"], "buy")
-        for m in activity.get("materials", [])
+    # 仅最终产物价值计入目标，中间产物不计入
+    final_products_value = sum(
+        p.get("quantity", 0) * get_jita_price(p["typeID"], "buy")
+        for p in activity.get("products", [])
+        if int(p.get("typeID", -1)) in final_product_ids
     )
 
-    # 权重：Jita销量 * Jita价格，按材料聚合并标准化
-    material_weight = sum(
-        m.get("quantity", 0)
-        * get_jita_price(m["typeID"], "buy")
-        * jita_prices.get(m["typeID"], {}).get("volume", 0)
-        for m in activity.get("materials", [])
+    # 权重：Jita销量 * Jita价格（仅最终产物）
+    final_product_weight = sum(
+        p.get("quantity", 0)
+        * get_jita_price(p["typeID"], "buy")
+        * jita_prices.get(p["typeID"], {}).get("volume", 0)
+        for p in activity.get("products", [])
+        if int(p.get("typeID", -1)) in final_product_ids
     )
-    normalized_weight = material_weight / total_market_weight if total_market_weight > 0 else 0
-    bp_score[i] = materials_usage_value * (1 + ALPHA * normalized_weight)
+    normalized_weight = final_product_weight / total_market_weight if total_market_weight > 0 else 0
+    bp_score[i] = final_products_value * (1 + ALPHA * normalized_weight)
 
 # ------------------ 预计算系数（减少重复表达式构造） ------------------
 mat_coef = {tid: {} for tid in all_items}
