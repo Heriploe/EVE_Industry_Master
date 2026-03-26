@@ -1,7 +1,7 @@
 import json
 import csv
 import re
-from pulp import LpMaximize, LpProblem, LpVariable, lpSum, LpInteger, LpBinary
+from pulp import LpMaximize, LpProblem, LpVariable, lpSum, LpInteger, PULP_CBC_CMD
 
 import configparser
 from pathlib import Path
@@ -204,13 +204,17 @@ if config.has_section(CALC_SECTION):
     ALPHA = config.getfloat(CALC_SECTION, "alpha", fallback=ALPHA)
     MAX_PROD_FACTOR = config.getfloat(CALC_SECTION, "max_prod_factor", fallback=MAX_PROD_FACTOR)
     ME = config.getfloat(CALC_SECTION, "me", fallback=ME)
-    PRODUCT_DIVERSITY_PENALTY = config.getfloat(CALC_SECTION, "product_diversity_penalty", fallback=0)
     FARE_JITA = config.getfloat(CALC_SECTION, "fare_jita", fallback=500)
     ENABLE_FREIGHT = config.getboolean(CALC_SECTION, "enable_freight", fallback=True)
+    PURCHASE_INTEGER = config.getboolean(CALC_SECTION, "purchase_integer", fallback=False)
+    SOLVER_TIME_LIMIT = config.getint(CALC_SECTION, "solver_time_limit_seconds", fallback=180)
+    SOLVER_GAP_REL = config.getfloat(CALC_SECTION, "solver_gap_rel", fallback=0.005)
 else:
-    PRODUCT_DIVERSITY_PENALTY = 0
     FARE_JITA = 500
     ENABLE_FREIGHT = True
+    PURCHASE_INTEGER = False
+    SOLVER_TIME_LIMIT = 180
+    SOLVER_GAP_REL = 0.005
 
 # ================== 文件 ==================
 INVENTORY_JSON = _resolve_path(config, CALC_SECTION, "inventory_json", "Cache/Asset/Corp/final_non_blueprints.json")
@@ -367,19 +371,28 @@ model = LpProblem("Max_Inventory_Usage_Value", LpMaximize)
 
 # ------------------ 物料集合 ------------------
 all_items = set()
+material_items = set()
+product_items = set()
 
 for bp in blueprints:
     activity, _ = get_activity(bp)
     if not activity:
         continue
     for m in activity.get("materials", []):
-        all_items.add(m["typeID"])
+        tid = m["typeID"]
+        all_items.add(tid)
+        material_items.add(tid)
     for p in activity.get("products", []):
-        all_items.add(p["typeID"])
+        tid = p["typeID"]
+        all_items.add(tid)
+        product_items.add(tid)
 
 print(f"总物品数: {len(all_items)}")
+print(f"材料物品数: {len(material_items)}")
+print(f"产物物品数: {len(product_items)}")
 
-purchase = {tid: LpVariable(f"buy_{tid}", lowBound=0, cat=LpInteger) for tid in all_items}
+purchase_cat = LpInteger if PURCHASE_INTEGER else "Continuous"
+purchase = {tid: LpVariable(f"buy_{tid}", lowBound=0, cat=purchase_cat) for tid in material_items}
 
 # ------------------ 计算蓝图最大可生产次数 ------------------
 bp_max_runs = []
@@ -402,14 +415,6 @@ for i, bp in enumerate(blueprints):
 
 x = {i: LpVariable(f"bp_{i}", lowBound=0, upBound=bp_max_runs[i], cat=LpInteger)
      for i in range(len(blueprints))}
-
-# ------------------ 引入二元变量：物品是否有净产出 ------------------
-# 关键修复：y[tid] = 1 表示该物品有净产出（可以出售）
-# 不再预先排除任何物品，而是在求解后根据净产出判断
-y = {tid: LpVariable(f"has_output_{tid}", cat=LpBinary) for tid in all_items}
-
-# 大M法：如果某个物品的净产出 > 0，则 y[tid] = 1
-M = 1e9  # 一个足够大的数
 
 # ------------------ 计算总权重（Jita销量 * Jita价格） ------------------
 total_market_weight = 0
@@ -443,58 +448,39 @@ for i, bp in enumerate(blueprints):
     normalized_weight = material_weight / total_market_weight if total_market_weight > 0 else 0
     bp_score[i] = materials_usage_value * (1 + ALPHA * normalized_weight)
 
+# ------------------ 预计算系数（减少重复表达式构造） ------------------
+mat_coef = {tid: {} for tid in all_items}
+prod_coef = {tid: {} for tid in all_items}
+for i, bp in enumerate(blueprints):
+    activity, _ = get_activity(bp)
+    if not activity:
+        continue
+    for m in activity.get("materials", []):
+        mat_coef[m["typeID"]][i] = m.get("quantity", 0)
+    for p in activity.get("products", []):
+        prod_coef[p["typeID"]][i] = p.get("quantity", 0)
+
 # ------------------ 目标函数 ------------------
-# 修复：最终产物种类数 = 所有有净产出的物品数量
-model += (
-        lpSum(bp_score[i] * x[i] for i in range(len(blueprints)))
-        - PRODUCT_DIVERSITY_PENALTY * lpSum(y[tid] for tid in all_items)
-)
+model += lpSum(bp_score[i] * x[i] for i in range(len(blueprints)))
 
 # ------------------ 物料约束（递归利用产物） ------------------
 for tid in all_items:
     total_needed = lpSum(
-        x[i] * next((m["quantity"] for m in get_activity(bp)[0].get("materials", [])
-                     if m["typeID"] == tid), 0)
-        for i, bp in enumerate(blueprints)
-        if get_activity(bp)[0] is not None
+        x[i] * qty for i, qty in mat_coef[tid].items()
     )
     total_produced = lpSum(
-        x[i] * next((p["quantity"] for p in get_activity(bp)[0].get("products", [])
-                     if p["typeID"] == tid), 0)
-        for i, bp in enumerate(blueprints)
-        if get_activity(bp)[0] is not None
+        x[i] * qty for i, qty in prod_coef[tid].items()
     )
-    model += (inventory.get(tid, 0) + purchase[tid] + total_produced >= total_needed)
-
-# ------------------ 最终产物约束（修复）------------------
-# 关键修复：对所有物品，如果净产出 > 0，则 y[tid] = 1
-for tid in all_items:
-    total_produced = lpSum(
-        x[i] * next((p["quantity"] for p in get_activity(bp)[0].get("products", [])
-                     if p["typeID"] == tid), 0)
-        for i, bp in enumerate(blueprints)
-        if get_activity(bp)[0] is not None
-    )
-    total_consumed = lpSum(
-        x[i] * next((m["quantity"] for m in get_activity(bp)[0].get("materials", [])
-                     if m["typeID"] == tid), 0)
-        for i, bp in enumerate(blueprints)
-        if get_activity(bp)[0] is not None
-    )
-    purchased = purchase[tid]
-
-    # 净产出 = 库存 + 生产 - 消耗 + 采购
-    net_output = inventory.get(tid, 0) + total_produced - total_consumed + purchased
-
-    # 如果 net_output > 0，则强制 y[tid] = 1
-    model += (net_output <= M * y[tid])
+    purchased = purchase.get(tid, 0)
+    model += (inventory.get(tid, 0) + purchased + total_produced >= total_needed)
 
 # ------------------ 预算约束 ------------------
-model += lpSum(purchase[tid] * get_jita_price(tid, "buy") for tid in all_items) <= BUDGET
+model += lpSum(purchase[tid] * get_jita_price(tid, "buy") for tid in material_items) <= BUDGET
 
 # ------------------ 求解 ------------------
 print("开始求解...")
-model.solve()
+solver = PULP_CBC_CMD(msg=True, timeLimit=SOLVER_TIME_LIMIT, gapRel=SOLVER_GAP_REL)
+model.solve(solver)
 print(f"求解状态: {model.status}")
 
 if model.status == 1:  # Optimal
@@ -519,7 +505,8 @@ if model.status == 1:  # Optimal
             for i, bp in enumerate(blueprints)
             if get_activity(bp)[0] is not None
         )
-        purchased = int(purchase[tid].value()) if purchase[tid].value() else 0
+        purchased_var = purchase.get(tid)
+        purchased = int(purchased_var.value()) if purchased_var is not None and purchased_var.value() else 0
 
         # 最终库存 = 初始库存 + 生产 - 消耗 + 采购
         final_qty = inventory.get(tid, 0) + total_produced - total_consumed + purchased
@@ -540,7 +527,7 @@ if model.status == 1:  # Optimal
         writer = csv.writer(f, delimiter="\t")
         total_purchase_cost = 0
         for tid, var in purchase.items():
-            qty = int(var.value()) if var.value() else 0
+            qty = int(round(var.value())) if var.value() else 0
             if qty > 0:
                 price = get_jita_price(tid, "buy")
                 total_cost = qty * price
@@ -595,7 +582,7 @@ if model.status == 1:  # Optimal
 
     # 添加采购清单
     for tid, var in purchase.items():
-        qty = int(var.value()) if var.value() else 0
+        qty = int(round(var.value())) if var.value() else 0
         if qty > 0:
             merged_inventory[tid] = merged_inventory.get(tid, 0) + qty
 
