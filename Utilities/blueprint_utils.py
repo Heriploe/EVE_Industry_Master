@@ -208,6 +208,30 @@ def load_ids_from_preset(alias_file, preset_file, preset_name, repo_root):
     return result
 
 
+def load_blueprint_type_ids_from_preset(alias_file, preset_file, preset_name, repo_root):
+    # type: (Path, Path, str, Path) -> Set[int]
+    """从 Blueprints preset 中读取 blueprintTypeID 集合。"""
+    aliases = load_json_with_fallback(alias_file).get("aliases", [])
+    presets = load_json_with_fallback(preset_file)
+    alias_map = {item["alias"]: item["path"] for item in aliases}
+    preset = next((item for item in presets if item.get("name") == preset_name), None)
+    if preset is None:
+        raise ValueError("未找到蓝图 preset: {}".format(preset_name))
+
+    result = set()  # type: Set[int]
+    for child_alias in preset.get("children", []):
+        rel = alias_map.get(child_alias)
+        if not rel:
+            raise ValueError("alias 不存在: {}".format(child_alias))
+        child_data = load_json_with_fallback(repo_root / rel)
+        if isinstance(child_data, list):
+            for item in child_data:
+                bp_id = item.get("blueprintTypeID")
+                if bp_id is not None:
+                    result.add(int(bp_id))
+    return result
+
+
 # ---------------------------------------------------------------------------
 # 库存解析
 # ---------------------------------------------------------------------------
@@ -357,6 +381,26 @@ def write_execution_csv(path, blueprints, x_vals, bp_score, types_map):
             if not activity:
                 continue
             bp_id = bp.get("blueprintTypeID")
+            bp_name = resolve_name(bp_id, types_map)["zh"] if bp_id in types_map else "蓝图_{}".format(bp_id)
+            writer.writerow([bp_name, runs])
+
+
+def write_execution_csv_filtered(path, blueprints, x_vals, types_map, include_blueprint_ids):
+    # type: (Path, List[dict], Dict[int,int], dict, Set[int]) -> None
+    """按蓝图 ID 过滤写入执行清单 CSV。"""
+    include_ids = {int(x) for x in include_blueprint_ids}
+    with path.open("w", newline="", encoding="utf-8") as f:
+        writer = csv.writer(f, delimiter="\t")
+        for i, bp in enumerate(blueprints):
+            bp_id = bp.get("blueprintTypeID")
+            if bp_id is None or int(bp_id) not in include_ids:
+                continue
+            runs = int(round(x_vals.get(i, 0)))
+            if runs <= 0:
+                continue
+            activity, _ = get_activity(bp)
+            if not activity:
+                continue
             bp_name = resolve_name(bp_id, types_map)["zh"] if bp_id in types_map else "蓝图_{}".format(bp_id)
             writer.writerow([bp_name, runs])
 
