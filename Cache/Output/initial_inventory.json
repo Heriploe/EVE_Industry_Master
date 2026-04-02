@@ -168,6 +168,12 @@
     "quantity": 3
   },
   {
+    "type_id": 1294,
+    "zh": "热能涂层 I",
+    "en": "Thermal Coating I",
+    "quantity": 4
+  },
+  {
     "type_id": 1304,
     "zh": "多谱式涂层 I",
     "en": "Multispectrum Coating I",
@@ -363,13 +369,19 @@
     "type_id": 9830,
     "zh": "火箭燃料",
     "en": "Rocket Fuel",
-    "quantity": 976
+    "quantity": 12236
   },
   {
     "type_id": 9832,
     "zh": "冷却剂",
     "en": "Coolant",
     "quantity": 1959
+  },
+  {
+    "type_id": 9834,
+    "zh": "制导系统",
+    "en": "Guidance Systems",
+    "quantity": 32
   },
   {
     "type_id": 9838,
@@ -387,7 +399,7 @@
     "type_id": 9842,
     "zh": "微型电子元件",
     "en": "Miniature Electronics",
-    "quantity": 164
+    "quantity": 486
   },
   {
     "type_id": 11132,
@@ -417,13 +429,13 @@
     "type_id": 11476,
     "zh": "R.A.M. - 弹药科技",
     "en": "R.A.M.- Ammunition Tech",
-    "quantity": 735
+    "quantity": 5407
   },
   {
     "type_id": 11478,
     "zh": "R.A.M. - 星舰科技",
     "en": "R.A.M.- Starship Tech",
-    "quantity": 6
+    "quantity": 66
   },
   {
     "type_id": 11482,
@@ -453,7 +465,7 @@
     "type_id": 11532,
     "zh": "聚变推进器",
     "en": "Fusion Thruster",
-    "quantity": 22
+    "quantity": 27
   },
   {
     "type_id": 11537,
@@ -496,6 +508,12 @@
     "zh": "碳化晶体附甲",
     "en": "Crystalline Carbonide Armor Plate",
     "quantity": 143
+  },
+  {
+    "type_id": 11547,
+    "zh": "聚变反应堆机组",
+    "en": "Fusion Reactor Unit",
+    "quantity": 2
   },
   {
     "type_id": 11549,
@@ -609,13 +627,13 @@
     "type_id": 16637,
     "zh": "钨",
     "en": "Tungsten",
-    "quantity": 3500
+    "quantity": 5700
   },
   {
     "type_id": 16638,
     "zh": "钛",
     "en": "Titanium",
-    "quantity": 4300
+    "quantity": 540
   },
   {
     "type_id": 16639,
@@ -627,25 +645,25 @@
     "type_id": 16640,
     "zh": "钴",
     "en": "Cobalt",
-    "quantity": 1300
+    "quantity": 1900
   },
   {
     "type_id": 16641,
     "zh": "铬",
     "en": "Chromium",
-    "quantity": 6800
+    "quantity": 540
   },
   {
     "type_id": 16642,
     "zh": "钒",
     "en": "Vanadium",
-    "quantity": 7900
+    "quantity": 5846
   },
   {
     "type_id": 16643,
     "zh": "镉",
     "en": "Cadmium",
-    "quantity": 1300
+    "quantity": 2900
   },
   {
     "type_id": 16644,
@@ -660,16 +678,28 @@
     "quantity": 4210
   },
   {
+    "type_id": 16647,
+    "zh": "铯",
+    "en": "Caesium",
+    "quantity": 900
+  },
+  {
     "type_id": 16648,
     "zh": "铪",
     "en": "Hafnium",
-    "quantity": 51
+    "quantity": 800
   },
   {
     "type_id": 16649,
     "zh": "锝",
     "en": "Technetium",
     "quantity": 559
+  },
+  {
+    "type_id": 16650,
+    "zh": "镝",
+    "en": "Dysprosium",
+    "quantity": 100
   },
   {
     "type_id": 16651,
@@ -687,13 +717,13 @@
     "type_id": 16653,
     "zh": "铥",
     "en": "Thulium",
-    "quantity": 51
+    "quantity": 100
   },
   {
     "type_id": 16654,
     "zh": "铬化钛",
     "en": "Titanium Chromide",
-    "quantity": 100
+    "quantity": 97
   },
   {
     "type_id": 16655,
@@ -705,13 +735,13 @@
     "type_id": 16656,
     "zh": "菲尔合金",
     "en": "Fernite Alloy",
-    "quantity": 2900
+    "quantity": 458
   },
   {
     "type_id": 16657,
     "zh": "轧制钨合金",
     "en": "Rolled Tungsten Alloy",
-    "quantity": 4200
+    "quantity": 932
   },
   {
     "type_id": 16658,
@@ -720,16 +750,10 @@
     "quantity": 97
   },
   {
-    "type_id": 16659,
-    "zh": "碳聚合物",
-    "en": "Carbon Polymers",
-    "quantity": 4401
-  },
-  {
     "type_id": 16660,
     "zh": "陶瓷粉末",
     "en": "Ceramic Powder",
-    "quantity": 8700
+    "quantity": 376
   },
   {
     "type_id": 16661,
@@ -750,10 +774,22 @@
     "quantity": 82
   },
   {
+    "type_id": 16668,
+    "zh": "镝汞合金",
+    "en": "Dysporite",
+    "quantity": 200
+  },
+  {
+    "type_id": 16669,
+    "zh": "铁磁流体",
+    "en": "Ferrofluid",
+    "quantity": 100
+  },
+  {
     "type_id": 16670,
     "zh": "碳化晶体",
     "en": "Crystalline Carbonide",
-    "quantity": 227
+    "quantity": 224
   },
   {
     "type_id": 16671,
@@ -774,12 +810,6 @@
     "quantity": 14440000
   },
   {
-    "type_id": 16678,
-    "zh": "多晶碳化硅纤维",
-    "en": "Sylramic Fibers",
-    "quantity": 1
-  },
-  {
     "type_id": 16679,
     "zh": "富勒化合物",
     "en": "Fullerides",
@@ -789,19 +819,13 @@
     "type_id": 16680,
     "zh": "酚合成物",
     "en": "Phenolic Composites",
-    "quantity": 447
+    "quantity": 354
   },
   {
     "type_id": 16682,
     "zh": "超级突触纤维",
     "en": "Hypersynaptic Fibers",
     "quantity": 132
-  },
-  {
-    "type_id": 16683,
-    "zh": "铁磁胶体",
-    "en": "Ferrogel",
-    "quantity": 2
   },
   {
     "type_id": 17136,
@@ -832,6 +856,12 @@
     "zh": "回旋者级",
     "en": "Retriever",
     "quantity": 5
+  },
+  {
+    "type_id": 17648,
+    "zh": "反物质轨道弹 XL",
+    "en": "Antimatter Charge XL",
+    "quantity": 700
   },
   {
     "type_id": 17703,

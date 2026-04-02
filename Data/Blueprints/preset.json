@@ -69,5 +69,12 @@
     "children": [
       "Ships.ships_T2_blueprints"
     ]
+  },
+  {
+    "name": "T2_ship_and_module",
+    "children": [
+      "Ships.ships_T2_blueprints",
+	  "Modules.modules_T2_blueprints"
+    ]
   }
 ]

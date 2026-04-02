@@ -3,49 +3,73 @@
     "type_id": 34,
     "zh": "三钛合金",
     "en": "Tritanium",
-    "quantity": 125334699
+    "quantity": 149459205
   },
   {
     "type_id": 35,
     "zh": "类晶体胶矿",
     "en": "Pyerite",
-    "quantity": 48860382
+    "quantity": 55401452
   },
   {
     "type_id": 36,
     "zh": "类银超金属",
     "en": "Mexallon",
-    "quantity": 424
+    "quantity": 1141233
   },
   {
     "type_id": 37,
     "zh": "同位聚合体",
     "en": "Isogen",
-    "quantity": 11375273
+    "quantity": 11978152
   },
   {
     "type_id": 38,
     "zh": "超新星诺克石",
     "en": "Nocxium",
-    "quantity": 1560034
+    "quantity": 1743540
   },
   {
     "type_id": 39,
     "zh": "晶状石英核岩",
     "en": "Zydrine",
-    "quantity": 808436
+    "quantity": 833020
   },
   {
     "type_id": 40,
     "zh": "超噬矿",
     "en": "Megacyte",
-    "quantity": 585447
+    "quantity": 577592
   },
   {
     "type_id": 44,
     "zh": "核能燃料",
     "en": "Enriched Uranium",
     "quantity": 9925
+  },
+  {
+    "type_id": 377,
+    "zh": "小型护盾扩展装置 I",
+    "en": "Small Shield Extender I",
+    "quantity": 1
+  },
+  {
+    "type_id": 393,
+    "zh": "护盾回充器 I",
+    "en": "Shield Recharger I",
+    "quantity": 6
+  },
+  {
+    "type_id": 394,
+    "zh": "护盾回充器 II",
+    "en": "Shield Recharger II",
+    "quantity": 1
+  },
+  {
+    "type_id": 444,
+    "zh": "采矿调查芯片组 I",
+    "en": "Mining Survey Chipset I",
+    "quantity": 10
   },
   {
     "type_id": 582,
@@ -87,7 +111,7 @@
     "type_id": 597,
     "zh": "惩罚者级",
     "en": "Punisher",
-    "quantity": 10
+    "quantity": 1
   },
   {
     "type_id": 598,
@@ -108,12 +132,6 @@
     "quantity": 8
   },
   {
-    "type_id": 620,
-    "zh": "鱼鹰级",
-    "en": "Osprey",
-    "quantity": 4
-  },
-  {
     "type_id": 622,
     "zh": "刺客级",
     "en": "Stabber",
@@ -123,7 +141,7 @@
     "type_id": 626,
     "zh": "狂怒者级",
     "en": "Vexor",
-    "quantity": 11
+    "quantity": 10
   },
   {
     "type_id": 627,
@@ -132,34 +150,52 @@
     "quantity": 2
   },
   {
-    "type_id": 631,
-    "zh": "镰刀级",
-    "en": "Scythe",
-    "quantity": 3
-  },
-  {
     "type_id": 638,
     "zh": "乌鸦级",
     "en": "Raven",
-    "quantity": 14
+    "quantity": 11
   },
   {
-    "type_id": 649,
-    "zh": "狐鼬级",
-    "en": "Tayra",
-    "quantity": 3
-  },
-  {
-    "type_id": 652,
-    "zh": "猛犸级",
-    "en": "Mammoth",
+    "type_id": 1195,
+    "zh": "电容回充器 I",
+    "en": "Cap Recharger I",
     "quantity": 1
   },
   {
-    "type_id": 655,
-    "zh": "埃比斯级",
-    "en": "Epithal",
-    "quantity": 5
+    "type_id": 1246,
+    "zh": "电容通量线圈 I",
+    "en": "Capacitor Flux Coil I",
+    "quantity": 3
+  },
+  {
+    "type_id": 1276,
+    "zh": "覆层式涂层 II",
+    "en": "Layered Coating II",
+    "quantity": 16
+  },
+  {
+    "type_id": 1296,
+    "zh": "热能涂层 II",
+    "en": "Thermal Coating II",
+    "quantity": 17
+  },
+  {
+    "type_id": 1306,
+    "zh": "多谱式涂层 II",
+    "en": "Multispectrum Coating II",
+    "quantity": 135
+  },
+  {
+    "type_id": 1317,
+    "zh": "扩充货柜舱 I",
+    "en": "Expanded Cargohold I",
+    "quantity": 91
+  },
+  {
+    "type_id": 1335,
+    "zh": "强化舱隔壁 II",
+    "en": "Reinforced Bulkheads II",
+    "quantity": 167
   },
   {
     "type_id": 2006,
@@ -168,34 +204,64 @@
     "quantity": 4
   },
   {
+    "type_id": 2032,
+    "zh": "电容回充器 II",
+    "en": "Cap Recharger II",
+    "quantity": 83
+  },
+  {
     "type_id": 2312,
     "zh": "超张力塑料",
     "en": "Supertensile Plastics",
-    "quantity": 2
+    "quantity": 342
   },
   {
     "type_id": 2319,
     "zh": "培养基",
     "en": "Test Cultures",
-    "quantity": 3
+    "quantity": 339
   },
   {
     "type_id": 2401,
     "zh": "手性结构",
     "en": "Chiral Structures",
-    "quantity": 48
+    "quantity": 348
   },
   {
     "type_id": 2463,
     "zh": "纳米体",
     "en": "Nanites",
-    "quantity": 2
+    "quantity": 342
+  },
+  {
+    "type_id": 2603,
+    "zh": "纳米纤维内部构架 I",
+    "en": "Nanofiber Internal Structure I",
+    "quantity": 21
+  },
+  {
+    "type_id": 2605,
+    "zh": "纳米纤维内部构架 II",
+    "en": "Nanofiber Internal Structure II",
+    "quantity": 221
+  },
+  {
+    "type_id": 2876,
+    "zh": "湿件主机",
+    "en": "Wetware Mainframe",
+    "quantity": 1
+  },
+  {
+    "type_id": 3596,
+    "zh": "中型远程护盾回充增量器 I",
+    "en": "Medium Remote Shield Booster I",
+    "quantity": 4
   },
   {
     "type_id": 3645,
     "zh": "水",
     "en": "Water",
-    "quantity": 48
+    "quantity": 348
   },
   {
     "type_id": 3683,
@@ -204,46 +270,94 @@
     "quantity": 4779
   },
   {
+    "type_id": 3685,
+    "zh": "氢电池",
+    "en": "Hydrogen Batteries",
+    "quantity": 9
+  },
+  {
+    "type_id": 3687,
+    "zh": "电子元件",
+    "en": "Electronic Parts",
+    "quantity": 7
+  },
+  {
     "type_id": 3689,
     "zh": "机械元件",
     "en": "Mechanical Parts",
-    "quantity": 860
+    "quantity": 4
   },
   {
     "type_id": 3775,
     "zh": "病原体",
     "en": "Viral Agent",
-    "quantity": 3
+    "quantity": 339
   },
   {
     "type_id": 3828,
     "zh": "建筑模块",
     "en": "Construction Blocks",
-    "quantity": 2307
+    "quantity": 1
+  },
+  {
+    "type_id": 3943,
+    "zh": "中型引力子立体炸弹 II",
+    "en": "Medium Graviton Smartbomb II",
+    "quantity": 3
+  },
+  {
+    "type_id": 3979,
+    "zh": "大型质子立体炸弹 II",
+    "en": "Large Proton Smartbomb II",
+    "quantity": 38
+  },
+  {
+    "type_id": 3983,
+    "zh": "大型引力子立体炸弹 II",
+    "en": "Large Graviton Smartbomb II",
+    "quantity": 37
   },
   {
     "type_id": 4051,
     "zh": "氮燃料块",
     "en": "Nitrogen Fuel Block",
-    "quantity": 5512
+    "quantity": 4662
   },
   {
     "type_id": 4246,
     "zh": "氢燃料块",
     "en": "Hydrogen Fuel Block",
-    "quantity": 11086
+    "quantity": 13016
   },
   {
     "type_id": 4247,
     "zh": "氦燃料块",
     "en": "Helium Fuel Block",
-    "quantity": 19045
+    "quantity": 18680
+  },
+  {
+    "type_id": 4250,
+    "zh": "小型牵引光束 II",
+    "en": "Small Tractor Beam II",
+    "quantity": 4
+  },
+  {
+    "type_id": 4292,
+    "zh": "会战装备 II",
+    "en": "Siege Module II",
+    "quantity": 1
   },
   {
     "type_id": 4312,
     "zh": "氧燃料块",
     "en": "Oxygen Fuel Block",
-    "quantity": 7154
+    "quantity": 8329
+  },
+  {
+    "type_id": 4393,
+    "zh": "无人机伤害增效装置 I",
+    "en": "Drone Damage Amplifier I",
+    "quantity": 50
   },
   {
     "type_id": 9832,
@@ -252,82 +366,214 @@
     "quantity": 1959
   },
   {
-    "type_id": 11393,
-    "zh": "审判者级",
-    "en": "Retribution",
-    "quantity": 1
+    "type_id": 9840,
+    "zh": "传信器",
+    "en": "Transmitter",
+    "quantity": 6
+  },
+  {
+    "type_id": 11249,
+    "zh": "动能电压薄膜 II",
+    "en": "Kinetic Energized Membrane II",
+    "quantity": 6
+  },
+  {
+    "type_id": 11269,
+    "zh": "多谱式电压薄膜 II",
+    "en": "Multispectrum Energized Membrane II",
+    "quantity": 107
   },
   {
     "type_id": 11399,
     "zh": "莫尔石",
     "en": "Morphite",
-    "quantity": 30814
+    "quantity": 23
   },
   {
-    "type_id": 11537,
-    "zh": "雷达感应器组",
-    "en": "Radar Sensor Cluster",
-    "quantity": 27
+    "type_id": 11475,
+    "zh": "R.A.M. - 装甲/船体科技",
+    "en": "R.A.M.- Armor/Hull Tech",
+    "quantity": 271
   },
   {
-    "type_id": 11538,
-    "zh": "纳米机械微处理器",
-    "en": "Nanomechanical Microprocessor",
+    "type_id": 11482,
+    "zh": "R.A.M. - 能源科技",
+    "en": "R.A.M.- Energy Tech",
+    "quantity": 828
+  },
+  {
+    "type_id": 11483,
+    "zh": "R.A.M. - 电子元件",
+    "en": "R.A.M.- Electronics",
+    "quantity": 837
+  },
+  {
+    "type_id": 11484,
+    "zh": "R.A.M. - 护盾科技",
+    "en": "R.A.M.- Shield Tech",
+    "quantity": 1095
+  },
+  {
+    "type_id": 11486,
+    "zh": "R.A.M. - 武器科技",
+    "en": "R.A.M.- Weapon Tech",
     "quantity": 91
   },
   {
-    "type_id": 11542,
-    "zh": "碳化菲尔金属合成物附甲",
-    "en": "Fernite Carbide Composite Armor Plate",
-    "quantity": 859
+    "type_id": 11690,
+    "zh": "超导体轨道",
+    "en": "Superconductor Rails",
+    "quantity": 55
   },
   {
-    "type_id": 11543,
-    "zh": "碳化钨附甲",
-    "en": "Tungsten Carbide Armor Plate",
-    "quantity": 11429
+    "type_id": 12223,
+    "zh": "旗舰级远程电容传输装置 II",
+    "en": "Capital Remote Capacitor Transmitter II",
+    "quantity": 1
   },
   {
-    "type_id": 11544,
-    "zh": "迪波特钛合金附甲",
-    "en": "Titanium Diborite Armor Plate",
-    "quantity": 5724
+    "type_id": 12557,
+    "zh": "微光 S",
+    "en": "Gleam S",
+    "quantity": 752
   },
   {
-    "type_id": 11545,
-    "zh": "碳化晶体附甲",
-    "en": "Crystalline Carbonide Armor Plate",
-    "quantity": 4041
+    "type_id": 12559,
+    "zh": "极光 S",
+    "en": "Aurora S",
+    "quantity": 964
   },
   {
-    "type_id": 11551,
-    "zh": "电解电容器单元",
-    "en": "Electrolytic Capacitor Unit",
-    "quantity": 663
+    "type_id": 12563,
+    "zh": "灼烧 S",
+    "en": "Scorch S",
+    "quantity": 2604
   },
   {
-    "type_id": 11552,
-    "zh": "标量电容器单元",
-    "en": "Scalar Capacitor Unit",
-    "quantity": 214
+    "type_id": 12565,
+    "zh": "爆燃 S",
+    "en": "Conflagration S",
+    "quantity": 3212
   },
   {
-    "type_id": 11553,
-    "zh": "震荡电容器单元",
-    "en": "Oscillator Capacitor Unit",
-    "quantity": 1408
+    "type_id": 12608,
+    "zh": "冰雹 S",
+    "en": "Hail S",
+    "quantity": 1315000
   },
   {
-    "type_id": 11554,
-    "zh": "超立方电容器单元",
-    "en": "Tesseract Capacitor Unit",
-    "quantity": 1834
+    "type_id": 12612,
+    "zh": "涅槃 S",
+    "en": "Void S",
+    "quantity": 3535000
   },
   {
-    "type_id": 11558,
-    "zh": "恒定护盾发射器",
-    "en": "Sustained Shield Emitter",
-    "quantity": 3
+    "type_id": 12614,
+    "zh": "虚空 S",
+    "en": "Null S",
+    "quantity": 890000
+  },
+  {
+    "type_id": 12618,
+    "zh": "钉刺 S",
+    "en": "Spike S",
+    "quantity": 345000
+  },
+  {
+    "type_id": 12620,
+    "zh": "标枪 S",
+    "en": "Javelin S",
+    "quantity": 240000
+  },
+  {
+    "type_id": 12625,
+    "zh": "雷暴 S",
+    "en": "Barrage S",
+    "quantity": 940000
+  },
+  {
+    "type_id": 12633,
+    "zh": "战栗 S",
+    "en": "Tremor S",
+    "quantity": 5000
+  },
+  {
+    "type_id": 12773,
+    "zh": "雷暴 M",
+    "en": "Barrage M",
+    "quantity": 645000
+  },
+  {
+    "type_id": 12775,
+    "zh": "雷暴 L",
+    "en": "Barrage L",
+    "quantity": 685000
+  },
+  {
+    "type_id": 12777,
+    "zh": "冰雹 M",
+    "en": "Hail M",
+    "quantity": 1185000
+  },
+  {
+    "type_id": 12779,
+    "zh": "冰雹 L",
+    "en": "Hail L",
+    "quantity": 1130000
+  },
+  {
+    "type_id": 12785,
+    "zh": "虚空 M",
+    "en": "Null M",
+    "quantity": 270000
+  },
+  {
+    "type_id": 12787,
+    "zh": "虚空 L",
+    "en": "Null L",
+    "quantity": 575000
+  },
+  {
+    "type_id": 12789,
+    "zh": "涅槃 M",
+    "en": "Void M",
+    "quantity": 1335000
+  },
+  {
+    "type_id": 12791,
+    "zh": "涅槃 L",
+    "en": "Void L",
+    "quantity": 1415000
+  },
+  {
+    "type_id": 12814,
+    "zh": "爆燃 M",
+    "en": "Conflagration M",
+    "quantity": 708
+  },
+  {
+    "type_id": 12820,
+    "zh": "灼烧 L",
+    "en": "Scorch L",
+    "quantity": 340
+  },
+  {
+    "type_id": 12822,
+    "zh": "极光 M",
+    "en": "Aurora M",
+    "quantity": 1068
+  },
+  {
+    "type_id": 12824,
+    "zh": "极光 L",
+    "en": "Aurora L",
+    "quantity": 400
+  },
+  {
+    "type_id": 12826,
+    "zh": "微光 M",
+    "en": "Gleam M",
+    "quantity": 620
   },
   {
     "type_id": 16238,
@@ -363,31 +609,49 @@
     "type_id": 16633,
     "zh": "烃类",
     "en": "Hydrocarbons",
-    "quantity": 29
+    "quantity": 1929
   },
   {
     "type_id": 16634,
     "zh": "标准大气",
     "en": "Atmospheric Gases",
-    "quantity": 631015
+    "quantity": 644315
   },
   {
     "type_id": 16635,
     "zh": "蒸发岩沉积物",
     "en": "Evaporite Deposits",
-    "quantity": 186157
+    "quantity": 206857
   },
   {
     "type_id": 16636,
     "zh": "硅酸盐",
     "en": "Silicates",
-    "quantity": 730520
+    "quantity": 739420
+  },
+  {
+    "type_id": 16638,
+    "zh": "钛",
+    "en": "Titanium",
+    "quantity": 540
   },
   {
     "type_id": 16639,
     "zh": "钪",
     "en": "Scandium",
-    "quantity": 8775
+    "quantity": 16675
+  },
+  {
+    "type_id": 16641,
+    "zh": "铬",
+    "en": "Chromium",
+    "quantity": 240
+  },
+  {
+    "type_id": 16642,
+    "zh": "钒",
+    "en": "Vanadium",
+    "quantity": 4946
   },
   {
     "type_id": 16644,
@@ -399,37 +663,31 @@
     "type_id": 16646,
     "zh": "汞",
     "en": "Mercury",
-    "quantity": 2310
-  },
-  {
-    "type_id": 16648,
-    "zh": "铪",
-    "en": "Hafnium",
-    "quantity": 51
+    "quantity": 3810
   },
   {
     "type_id": 16649,
     "zh": "锝",
     "en": "Technetium",
-    "quantity": 559
+    "quantity": 459
   },
   {
     "type_id": 16651,
     "zh": "钕",
     "en": "Neodymium",
-    "quantity": 3208
+    "quantity": 3808
   },
   {
     "type_id": 16652,
     "zh": "钷",
     "en": "Promethium",
-    "quantity": 10995
+    "quantity": 11595
   },
   {
-    "type_id": 16653,
-    "zh": "铥",
-    "en": "Thulium",
-    "quantity": 51
+    "type_id": 16654,
+    "zh": "铬化钛",
+    "en": "Titanium Chromide",
+    "quantity": 97
   },
   {
     "type_id": 16655,
@@ -438,28 +696,46 @@
     "quantity": 8
   },
   {
+    "type_id": 16656,
+    "zh": "菲尔合金",
+    "en": "Fernite Alloy",
+    "quantity": 458
+  },
+  {
+    "type_id": 16657,
+    "zh": "轧制钨合金",
+    "en": "Rolled Tungsten Alloy",
+    "quantity": 32
+  },
+  {
     "type_id": 16658,
     "zh": "二硼硅",
     "en": "Silicon Diborite",
-    "quantity": 8197
+    "quantity": 97
   },
   {
     "type_id": 16659,
     "zh": "碳聚合物",
     "en": "Carbon Polymers",
-    "quantity": 1
+    "quantity": 100
+  },
+  {
+    "type_id": 16660,
+    "zh": "陶瓷粉末",
+    "en": "Ceramic Powder",
+    "quantity": 76
   },
   {
     "type_id": 16661,
     "zh": "硫酸",
     "en": "Sulfuric Acid",
-    "quantity": 92
+    "quantity": 192
   },
   {
-    "type_id": 16662,
-    "zh": "铂锝合金",
-    "en": "Platinum Technite",
-    "quantity": 15700
+    "type_id": 16666,
+    "zh": "超氟化物",
+    "en": "Hyperflurite",
+    "quantity": 100
   },
   {
     "type_id": 16667,
@@ -471,55 +747,61 @@
     "type_id": 16670,
     "zh": "碳化晶体",
     "en": "Crystalline Carbonide",
-    "quantity": 4
+    "quantity": 302
   },
   {
     "type_id": 16671,
     "zh": "碳化钛",
     "en": "Titanium Carbide",
-    "quantity": 4633959
+    "quantity": 4024753
   },
   {
     "type_id": 16672,
     "zh": "碳化钨",
     "en": "Tungsten Carbide",
-    "quantity": 507944
+    "quantity": 1936
   },
   {
     "type_id": 16673,
     "zh": "菲尔合金碳化物",
     "en": "Fernite Carbide",
-    "quantity": 16195896
+    "quantity": 12725123
+  },
+  {
+    "type_id": 16678,
+    "zh": "多晶碳化硅纤维",
+    "en": "Sylramic Fibers",
+    "quantity": 6845
   },
   {
     "type_id": 16679,
     "zh": "富勒化合物",
     "en": "Fullerides",
-    "quantity": 772218
+    "quantity": 462
   },
   {
     "type_id": 16681,
     "zh": "纳米晶体管",
     "en": "Nanotransistors",
-    "quantity": 25530
+    "quantity": 28
   },
   {
-    "type_id": 17317,
-    "zh": "费米子冷凝物",
-    "en": "Fermionic Condensates",
-    "quantity": 36
+    "type_id": 16682,
+    "zh": "超级突触纤维",
+    "en": "Hypersynaptic Fibers",
+    "quantity": 8
   },
   {
     "type_id": 17476,
     "zh": "妄想级",
     "en": "Covetor",
-    "quantity": 6
+    "quantity": 1
   },
   {
     "type_id": 17478,
     "zh": "回旋者级",
     "en": "Retriever",
-    "quantity": 12
+    "quantity": 5
   },
   {
     "type_id": 17887,
@@ -534,28 +816,52 @@
     "quantity": 394034
   },
   {
+    "type_id": 17960,
+    "zh": "稀土钷",
+    "en": "Prometium",
+    "quantity": 100
+  },
+  {
     "type_id": 19744,
     "zh": "魔符级",
     "en": "Sigil",
-    "quantity": 5
-  },
-  {
-    "type_id": 21025,
-    "zh": "旗舰跳跃引擎",
-    "en": "Capital Jump Drive",
     "quantity": 1
   },
   {
-    "type_id": 32872,
-    "zh": "阿尔格斯级",
-    "en": "Algos",
-    "quantity": 10
+    "type_id": 20347,
+    "zh": "200mm钢附甲板 II",
+    "en": "200mm Steel Plates II",
+    "quantity": 49
+  },
+  {
+    "type_id": 20351,
+    "zh": "800mm钢附甲板 II",
+    "en": "800mm Steel Plates II",
+    "quantity": 11
+  },
+  {
+    "type_id": 24348,
+    "zh": "小型牵引光束 I",
+    "en": "Small Tractor Beam I",
+    "quantity": 16
+  },
+  {
+    "type_id": 24523,
+    "zh": "雷神狂乱鱼雷",
+    "en": "Mjolnir Rage Torpedo",
+    "quantity": 140000
   },
   {
     "type_id": 32880,
     "zh": "冲锋者级",
     "en": "Venture",
     "quantity": 12
+  },
+  {
+    "type_id": 33195,
+    "zh": "空间协调装置",
+    "en": "Spatial Attunement Unit",
+    "quantity": 22
   },
   {
     "type_id": 33336,
@@ -567,78 +873,168 @@
     "type_id": 33337,
     "zh": "钷汞合金",
     "en": "Promethium Mercurite",
-    "quantity": 2240
+    "quantity": 440
   },
   {
     "type_id": 33359,
     "zh": "光子超材料",
     "en": "Photonic Metamaterials",
-    "quantity": 39108
+    "quantity": 41376
   },
   {
     "type_id": 33360,
     "zh": "太赫兹超材料",
     "en": "Terahertz Metamaterials",
-    "quantity": 55986
+    "quantity": 57182
   },
   {
     "type_id": 33361,
     "zh": "等离子体超材料",
     "en": "Plasmonic Metamaterials",
-    "quantity": 23498
+    "quantity": 24658
   },
   {
-    "type_id": 57453,
-    "zh": "碳纤维",
-    "en": "Carbon Fiber",
-    "quantity": 2800
+    "type_id": 33362,
+    "zh": "非线性超材料",
+    "en": "Nonlinear Metamaterials",
+    "quantity": 174
+  },
+  {
+    "type_id": 41314,
+    "zh": "冰雹 XL",
+    "en": "Hail XL",
+    "quantity": 10000
+  },
+  {
+    "type_id": 41322,
+    "zh": "涅槃 XL",
+    "en": "Void XL",
+    "quantity": 5000
+  },
+  {
+    "type_id": 41324,
+    "zh": "虚空 XL",
+    "en": "Null XL",
+    "quantity": 20000
+  },
+  {
+    "type_id": 41330,
+    "zh": "灼烧 XL",
+    "en": "Scorch XL",
+    "quantity": 12
+  },
+  {
+    "type_id": 41332,
+    "zh": "爆燃 XL",
+    "en": "Conflagration XL",
+    "quantity": 8
+  },
+  {
+    "type_id": 41334,
+    "zh": "微光 XL",
+    "en": "Gleam XL",
+    "quantity": 24
+  },
+  {
+    "type_id": 41336,
+    "zh": "极光 XL",
+    "en": "Aurora XL",
+    "quantity": 4
+  },
+  {
+    "type_id": 43700,
+    "zh": "冰矿采集无人机 II",
+    "en": "Ice Harvesting Drone II",
+    "quantity": 8
+  },
+  {
+    "type_id": 47134,
+    "zh": "屹立修道士 II",
+    "en": "Standup Cenobite II",
+    "quantity": 2
+  },
+  {
+    "type_id": 47136,
+    "zh": "屹立塞壬 II",
+    "en": "Standup Siren II",
+    "quantity": 3
+  },
+  {
+    "type_id": 47137,
+    "zh": "屹立德洛米 II",
+    "en": "Standup Dromi II",
+    "quantity": 2
+  },
+  {
+    "type_id": 47149,
+    "zh": "屹立蚱蜢 II",
+    "en": "Standup Locust II",
+    "quantity": 4
+  },
+  {
+    "type_id": 47911,
+    "zh": "熵辐射槽 II",
+    "en": "Entropic Radiation Sink II",
+    "quantity": 107
   },
   {
     "type_id": 57455,
     "zh": "热固性聚合物",
     "en": "Thermosetting Polymer",
-    "quantity": 446400
+    "quantity": 444000
   },
   {
     "type_id": 57456,
     "zh": "增压氧化剂",
     "en": "Pressurized Oxidizers",
-    "quantity": 245
+    "quantity": 1745
   },
   {
     "type_id": 57457,
     "zh": "强化碳纤维",
     "en": "Reinforced Carbon Fiber",
-    "quantity": 8032
+    "quantity": 2902
   },
   {
     "type_id": 57478,
     "zh": "自动修复储藏装置密封",
     "en": "Auto-Integrity Preservation Seal",
-    "quantity": 1735
+    "quantity": 1930
   },
   {
     "type_id": 57486,
     "zh": "生命保障备份装置",
     "en": "Life Support Backup Unit",
-    "quantity": 862
+    "quantity": 961
   },
   {
-    "type_id": 81064,
-    "zh": "超导引力传感器集群",
-    "en": "Hyperconductive Gravimetric Sensor Cluster",
-    "quantity": 38
+    "type_id": 58945,
+    "zh": "大型工业核心 I",
+    "en": "Large Industrial Core I",
+    "quantity": 1
   },
   {
-    "type_id": 81066,
-    "zh": "多彩装甲附甲板",
-    "en": "Metaprismatic Armor Plate",
-    "quantity": 5459
+    "type_id": 60283,
+    "zh": "普通小行星采集晶体B型 II",
+    "en": "Simple Asteroid Mining Crystal Type B II",
+    "quantity": 10
   },
   {
-    "type_id": 81069,
-    "zh": "五面体电容器处理器",
-    "en": "Pentachoron Capacitor Unit",
-    "quantity": 76
+    "type_id": 60284,
+    "zh": "普通小行星采集晶体C型 II",
+    "en": "Simple Asteroid Mining Crystal Type C II",
+    "quantity": 39
+  },
+  {
+    "type_id": 60290,
+    "zh": "聚合小行星采集晶体C型 II",
+    "en": "Coherent Asteroid Mining Crystal Type C II",
+    "quantity": 4
+  },
+  {
+    "type_id": 60308,
+    "zh": "深渊小行星采集晶体C型 II",
+    "en": "Abyssal Asteroid Mining Crystal Type C II",
+    "quantity": 2
   }
 ]

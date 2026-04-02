@@ -1,706 +1,407 @@
-import json
-import csv
-import re
-from pulp import LpMaximize, LpProblem, LpVariable, lpSum, LpInteger, LpBinary
+"""
+calculator.py
+=============
+双目标整数规划计算器：
+
+  目标 = W_INVENTORY * 库存利用得分
+       + W_VALUE     * preset 最终产物价值得分
+
+- 库存利用得分：仅 preset 中直接考察的产物按市场权重（价格 × 市场量）计分，
+  反映"把仓库里的材料最大化变现"的意图。
+- 最终产物价值得分：preset 最终产物的利润（扣材料成本 + 运费），
+  反映"尽量产出高价值物品"的意图。
+- 两个权重均可在 config.ini [calculator] 中用 w_inventory / w_value 调整。
+- 可用 budget 购买所缺材料（设为 0 则禁止采购）。
+
+兼容 Python 3.8+。
+"""
 
 import configparser
-from pathlib import Path
+import json
 import sys
+from pathlib import Path
 
-REPO_ROOT = next((p for p in [Path(__file__).resolve().parent, *Path(__file__).resolve().parent.parents] if
-                  (p / "config.ini").exists()), Path(__file__).resolve().parent)
+from pulp import (
+    LpInteger,
+    LpMaximize,
+    LpProblem,
+    LpVariable,
+    lpSum,
+    PULP_CBC_CMD,
+)
+
+# --------------------------------------------------------------------------
+# 仓库根目录 & sys.path
+# --------------------------------------------------------------------------
+REPO_ROOT = next(
+    (p for p in [Path(__file__).resolve().parent] + list(Path(__file__).resolve().parent.parents)
+     if (p / "config.ini").exists()),
+    Path(__file__).resolve().parent,
+)
 if str(REPO_ROOT) not in sys.path:
     sys.path.append(str(REPO_ROOT))
 
-from Utilities.name_mapping import get_name as resolve_name, load_types_map
+from Utilities.name_mapping import load_types_map
+from Utilities.blueprint_utils import (
+    resolve_path,
+    get_activity,
+    load_blueprints_for_preset,
+    load_ids_from_preset,
+    parse_inventory,
+    build_jita_prices,
+    get_jita_price,
+    build_item_volumes,
+    get_freight_cost,
+    get_product_profit_factor,
+    compute_flow,
+    write_purchase_csv,
+    write_execution_csv,
+    write_final_products_csv,
+    write_inventory_json,
+)
 
-
-def _resolve_path(config, section, key, fallback):
-    value = config.get(section, key, fallback=fallback)
-    candidate = Path(value)
-    if not candidate.is_absolute():
-        candidate = REPO_ROOT / candidate
-    return candidate
-
-
-def _load_json_with_fallback(path: Path):
-    """优先按标准 JSON 读取；失败时兼容注释和尾随逗号。"""
-    try:
-        with path.open("r", encoding="utf-8") as f:
-            return json.load(f)
-    except json.JSONDecodeError:
-        text = path.read_text(encoding="utf-8")
-        # 去掉 UTF-8 BOM
-        text = text.lstrip("\ufeff")
-        # 去掉 // 和 /* */ 注释
-        text = re.sub(r"/\*.*?\*/", "", text, flags=re.S)
-        text = re.sub(r"^\s*//.*$", "", text, flags=re.M)
-        # 去掉对象/数组中的尾随逗号
-        text = re.sub(r",\s*([}\]])", r"\1", text)
-        return json.loads(text)
-
-
-def get_activity(bp):
-    if "manufacturing" in bp:
-        return bp["manufacturing"], "manufacturing"
-    if "reaction" in bp:
-        return bp["reaction"], "reaction"
-    return None, None
-
-
-def _merge_blueprints_by_preset(alias_file: Path, preset_file: Path, preset_name: str):
-    all_blueprints, selected_blueprints = _load_blueprints_by_preset(alias_file, preset_file, preset_name)
-    return _expand_blueprints_with_recursive_dependencies(selected_blueprints, all_blueprints)
-
-
-def _load_blueprints_by_preset(alias_file: Path, preset_file: Path, preset_name: str):
-    aliases = _load_json_with_fallback(alias_file).get("aliases", [])
-    presets = _load_json_with_fallback(preset_file)
-
-    alias_map = {item["alias"]: item["path"] for item in aliases}
-    all_blueprints = []
-    seen_blueprint_ids = set()
-
-    for rel in alias_map.values():
-        child_data = _load_json_with_fallback(REPO_ROOT / rel)
-        if isinstance(child_data, list):
-            for bp in child_data:
-                bp_id = bp.get("blueprintTypeID")
-                if bp_id is None:
-                    continue
-                bp_id = int(bp_id)
-                if bp_id in seen_blueprint_ids:
-                    continue
-                seen_blueprint_ids.add(bp_id)
-                all_blueprints.append(bp)
-
-    preset = next((item for item in presets if item.get("name") == preset_name), None)
-    if preset is None:
-        raise ValueError(f"未找到蓝图 preset: {preset_name}")
-
-    merged = []
-    merged_ids = set()
-    for child_alias in preset.get("children", []):
-        rel = alias_map.get(child_alias)
-        if not rel:
-            raise ValueError(f"蓝图 alias 不存在: {child_alias}")
-        child_data = _load_json_with_fallback(REPO_ROOT / rel)
-        if isinstance(child_data, list):
-            for bp in child_data:
-                bp_id = bp.get("blueprintTypeID")
-                if bp_id is None:
-                    continue
-                bp_id = int(bp_id)
-                if bp_id in merged_ids:
-                    continue
-                merged_ids.add(bp_id)
-                merged.append(bp)
-    return all_blueprints, merged
-
-
-def _expand_blueprints_with_recursive_dependencies(selected_blueprints, all_blueprints):
-    """将 preset 蓝图按其材料递归扩展到可生产的子蓝图。"""
-    product_to_blueprints = {}
-    blueprint_by_id = {}
-
-    for bp in all_blueprints:
-        bp_id = bp.get("blueprintTypeID")
-        if bp_id is None:
-            continue
-        bp_id = int(bp_id)
-        blueprint_by_id[bp_id] = bp
-        activity, _ = get_activity(bp)
-        if not activity:
-            continue
-        for product in activity.get("products", []):
-            product_tid = product.get("typeID")
-            if product_tid is None:
-                continue
-            product_tid = int(product_tid)
-            product_to_blueprints.setdefault(product_tid, []).append(bp_id)
-
-    expanded = []
-    visited_bp_ids = set()
-    queue = []
-
-    for bp in selected_blueprints:
-        bp_id = bp.get("blueprintTypeID")
-        if bp_id is None:
-            continue
-        bp_id = int(bp_id)
-        if bp_id in visited_bp_ids:
-            continue
-        visited_bp_ids.add(bp_id)
-        expanded.append(bp)
-        queue.append(bp_id)
-
-    while queue:
-        current_bp_id = queue.pop(0)
-        current_bp = blueprint_by_id.get(current_bp_id)
-        if not current_bp:
-            continue
-        activity, _ = get_activity(current_bp)
-        if not activity:
-            continue
-
-        for material in activity.get("materials", []):
-            material_tid = material.get("typeID")
-            if material_tid is None:
-                continue
-            material_tid = int(material_tid)
-            candidate_bp_ids = product_to_blueprints.get(material_tid, [])
-            for candidate_bp_id in candidate_bp_ids:
-                if candidate_bp_id in visited_bp_ids:
-                    continue
-                candidate_bp = blueprint_by_id.get(candidate_bp_id)
-                if not candidate_bp:
-                    continue
-                visited_bp_ids.add(candidate_bp_id)
-                expanded.append(candidate_bp)
-                queue.append(candidate_bp_id)
-
-    return expanded
-
-
-def _load_ids_from_preset(alias_file: Path, preset_file: Path, preset_name: str):
-    aliases = _load_json_with_fallback(alias_file).get("aliases", [])
-    presets = _load_json_with_fallback(preset_file)
-
-    alias_map = {item["alias"]: item["path"] for item in aliases}
-    preset = next((item for item in presets if item.get("name") == preset_name), None)
-    if preset is None:
-        raise ValueError(f"未找到 preset: {preset_name}")
-
-    result = set()
-    for child_alias in preset.get("children", []):
-        rel = alias_map.get(child_alias)
-        if not rel:
-            raise ValueError(f"alias 不存在: {child_alias}")
-        child_data = _load_json_with_fallback(REPO_ROOT / rel)
-        if isinstance(child_data, list):
-            for item in child_data:
-                tid = item.get("id")
-                if tid is not None:
-                    result.add(int(tid))
-    return result
-
-
+# ==========================================================================
+# 配置读取
+# ==========================================================================
 config = configparser.ConfigParser()
-config.read(REPO_ROOT / "config.ini", encoding="utf-8")
+config.read(str(REPO_ROOT / "config.ini"), encoding="utf-8")
+SEC = "calculator"
 
-input_dir = _resolve_path(config, "calculator", "input_dir", "Cache/Input")
-output_dir = _resolve_path(config, "calculator", "output_dir", "Cache/Output")
+
+def _cfg(key, fallback, cast=str):
+    if config.has_option(SEC, key):
+        return cast(config.get(SEC, key))
+    return fallback
+
+
+def _rpath(key, fallback):
+    return resolve_path(config, SEC, key, fallback, REPO_ROOT)
+
+
+def _rpath_paths(key, fallback):
+    return resolve_path(config, "paths", key, fallback, REPO_ROOT)
+
+
+# 数值参数
+BUDGET            = _cfg("budget",                    200_000_000, int)
+ME                = _cfg("me",                        0.125,       float)
+MAX_PROD_FACTOR   = _cfg("max_prod_factor",           1.0,         float)
+W_INVENTORY       = _cfg("w_inventory",               1.0,         float)
+W_VALUE           = _cfg("w_value",                   1.0,         float)
+ALPHA             = _cfg("alpha",                     1.0,         float)
+FARE_JITA         = _cfg("fare_jita",                 500.0,       float)
+ENABLE_FREIGHT    = config.getboolean(SEC, "enable_freight",   fallback=True)
+PURCHASE_INTEGER  = config.getboolean(SEC, "purchase_integer", fallback=False)
+SOLVER_TIME_LIMIT = _cfg("solver_time_limit_seconds", 180,         int)
+SOLVER_GAP_REL    = _cfg("solver_gap_rel",            0.005,       float)
+
+# 产物利润因子
+SHIP_PROFIT_FACTOR   = _cfg("ship_profit_factor",   1.0, float)
+MODULE_PROFIT_FACTOR = _cfg("module_profit_factor",
+                       _cfg("moudle_profit_factor", 1.0, float), float)
+RIG_PROFIT_FACTOR    = _cfg("rig_profit_factor",    1.0, float)
+MATERIAL_COST_FACTOR = _cfg("material_cost_factor", 1.0, float)
+
+# preset 名称
+BLUEPRINTS_PRESET = _cfg("blueprints_preset", "items_to_sell")
+SHIPS_PRESET      = _cfg("ships_preset",      "ships_all")
+MODULES_PRESET    = _cfg("modules_preset", _cfg("moudles_preset", "modules_all"))
+RIGS_PRESET       = _cfg("rigs_preset",       "Rigs_all")
+MATERIALS_PRESET  = _cfg("materials_preset",  "basic")
+
+# 文件路径
+output_dir             = _rpath("output_dir",         "Cache/Output")
+INVENTORY_JSON         = _rpath("inventory_json",     "Cache/Asset/Corp/final_non_blueprints.json")
+JITA_PRICES_JSON       = _rpath("jita_prices_json",   "Cache/Input/jita_prices.json")
+TYPES_JSON             = _rpath_paths("types_json",   "Data/types.json")
+TYPES_VOLUME_JSON      = _rpath("types_volume_json",  str(TYPES_JSON))
+BLUEPRINTS_ALIAS_JSON  = _rpath_paths("blueprints_alias_json",  "Data/Blueprints/alias.json")
+BLUEPRINTS_PRESET_JSON = _rpath_paths("blueprints_preset_json", "Data/Blueprints/preset.json")
+MATERIALS_ALIAS_JSON   = _rpath_paths("materials_alias_json",   "Data/Materials/alias.json")
+MATERIALS_PRESET_JSON  = _rpath_paths("materials_preset_json",  "Data/Materials/preset.json")
+
 output_dir.mkdir(parents=True, exist_ok=True)
-
-# ================== 全局参数 ==================
-BUDGET = 200_000_000  # 可调整
-ALPHA = 1  # 流动性权重参数
-MAX_PROD_FACTOR = 1  # 单产物最大生产量占市场交易量比例
-ME = 0.125
-if config.has_section("calculator"):
-    BUDGET = config.getint("calculator", "budget", fallback=BUDGET)
-    ALPHA = config.getfloat("calculator", "alpha", fallback=ALPHA)
-    MAX_PROD_FACTOR = config.getfloat("calculator", "max_prod_factor", fallback=MAX_PROD_FACTOR)
-    ME = config.getfloat("calculator", "me", fallback=ME)
-    PRODUCT_DIVERSITY_PENALTY = config.getfloat("calculator", "product_diversity_penalty", fallback=0)
-    FARE_JITA = config.getfloat("calculator", "fare_jita", fallback=500)
-    ENABLE_FREIGHT = config.getboolean("calculator", "enable_freight", fallback=True)
-else:
-    PRODUCT_DIVERSITY_PENALTY = 0
-    FARE_JITA = 500
-    ENABLE_FREIGHT = True
-
-# ================== 文件 ==================
-INVENTORY_JSON = _resolve_path(config, "calculator", "inventory_json", "Cache/Asset/Corp/final_non_blueprints.json")
-JITA_PRICES_JSON = _resolve_path(config, "calculator", "jita_prices_json", "Cache/Input/jita_prices.json")
-TYPES_JSON = _resolve_path(config, "paths", "types_json", "Data/types.json")
-TYPES_VOLUME_JSON = _resolve_path(config, "calculator", "types_volume_json", str(TYPES_JSON))
-BLUEPRINTS_ALIAS_JSON = _resolve_path(config, "paths", "blueprints_alias_json", "Data/Blueprints/alias.json")
-BLUEPRINTS_PRESET_JSON = _resolve_path(config, "paths", "blueprints_preset_json", "Data/Blueprints/preset.json")
-BLUEPRINTS_PRESET = config.get("calculator", "blueprints_preset", fallback="items_to_sell")
-MATERIALS_ALIAS_JSON = _resolve_path(config, "paths", "materials_alias_json", "Data/Materials/alias.json")
-MATERIALS_PRESET_JSON = _resolve_path(config, "paths", "materials_preset_json", "Data/Materials/preset.json")
-
-SHIPS_PRESET = config.get("calculator", "ships_preset", fallback="ships_all")
-MODULES_PRESET = config.get("calculator", "modules_preset",
-                            fallback=config.get("calculator", "moudles_preset", fallback="modules_all"))
-RIGS_PRESET = config.get("calculator", "rigs_preset", fallback="Rigs_all")
-MATERIALS_PRESET = config.get("calculator", "materials_preset", fallback="basic")
-SHIP_PROFIT_FACTOR = config.getfloat("calculator", "ship_profit_factor", fallback=1.0)
-MODULE_PROFIT_FACTOR = config.getfloat("calculator", "module_profit_factor",
-                                       fallback=config.getfloat("calculator", "moudle_profit_factor", fallback=1.0))
-RIG_PROFIT_FACTOR = config.getfloat("calculator", "rig_profit_factor", fallback=1.0)
-MATERIAL_COST_FACTOR = config.getfloat("calculator", "material_cost_factor", fallback=1.0)
-
-PURCHASE_CSV = output_dir / "purchase_list.csv"
-EXECUTION_CSV = output_dir / "execution_list.csv"
-FINAL_PRODUCTS_CSV = output_dir / "final_products.csv"
+PURCHASE_CSV           = output_dir / "purchase_list.csv"
+EXECUTION_CSV          = output_dir / "execution_list.csv"
+FINAL_PRODUCTS_CSV     = output_dir / "final_products.csv"
 INITIAL_INVENTORY_JSON = output_dir / "initial_inventory.json"
-FINAL_INVENTORY_JSON = output_dir / "final_inventory.json"
+FINAL_INVENTORY_JSON   = output_dir / "final_inventory.json"
 
-# ------------------ 读取数据 ------------------
-with open(INVENTORY_JSON, "r", encoding="utf-8") as f:
-    raw_inventory = json.load(f)
+# ==========================================================================
+# 加载数据
+# ==========================================================================
+print("正在加载数据...")
 
+with INVENTORY_JSON.open("r", encoding="utf-8") as f:
+    inventory = parse_inventory(json.load(f))
 
-def _parse_inventory_entry(item):
-    if isinstance(item, dict):
-        tid = item.get("type_id")
-        if tid is None:
-            tid = item.get("typeID")
-        if tid is None:
-            tid = item.get("id")
+_, selected_blueprints, blueprints = load_blueprints_for_preset(
+    BLUEPRINTS_ALIAS_JSON, BLUEPRINTS_PRESET_JSON, BLUEPRINTS_PRESET, REPO_ROOT
+)
 
-        qty = item.get("quantity")
-        if qty is None:
-            qty = item.get("qty")
-        if qty is None:
-            qty = item.get("count")
-
-        if tid is None or qty is None:
-            return None, None
-        return int(tid), qty
-
-    if isinstance(item, (list, tuple)) and len(item) >= 2:
-        return int(item[0]), item[1]
-
-    return None, None
-
-
-inventory = {}
-if isinstance(raw_inventory, dict):
-    # 字典格式也可能有重复，需要累加
-    for k, v in raw_inventory.items():
-        tid = int(k)
-        inventory[tid] = inventory.get(tid, 0) + v
-elif isinstance(raw_inventory, list):
-    for item in raw_inventory:
-        tid, qty = _parse_inventory_entry(item)
-        if tid is None:
-            continue
-        inventory[tid] = inventory.get(tid, 0) + qty
-
-blueprints = _merge_blueprints_by_preset(BLUEPRINTS_ALIAS_JSON, BLUEPRINTS_PRESET_JSON, BLUEPRINTS_PRESET)
+# preset 直接考察的产物 id 集合
+final_product_ids = set()
+for bp in selected_blueprints:
+    act, _ = get_activity(bp)
+    if not act:
+        continue
+    for p in act.get("products", []):
+        if p.get("typeID") is not None:
+            final_product_ids.add(int(p["typeID"]))
 
 with JITA_PRICES_JSON.open("r", encoding="utf-8") as f:
-    jita_prices_raw = json.load(f)
-jita_prices = {}
-for k, v in jita_prices_raw.items():
-    jita_prices[int(k)] = {
-        "buy": v["jita"].get("buy") if isinstance(v["jita"].get("buy"), (int, float)) else 0,
-        "volume": v["jita"].get("volume", 0) if isinstance(v.get("volume", 0), (int, float)) else 0
-    }
+    jita_prices = build_jita_prices(json.load(f))
 
-# ------------------ 读取 types.json ------------------
 types_map = load_types_map(TYPES_JSON)
 
-# ------------------ 读取 types.json 体积数据 ------------------
 with TYPES_VOLUME_JSON.open("r", encoding="utf-8") as f:
     types_volume_list = json.load(f)
 
-# 创建物品ID到体积的映射
-item_volumes = {int(item["id"]): (item.get("volume") or 0) for item in types_volume_list}
+ship_ids      = load_ids_from_preset(BLUEPRINTS_ALIAS_JSON, BLUEPRINTS_PRESET_JSON, SHIPS_PRESET,   REPO_ROOT)
+module_ids    = load_ids_from_preset(BLUEPRINTS_ALIAS_JSON, BLUEPRINTS_PRESET_JSON, MODULES_PRESET, REPO_ROOT)
+rig_ids       = load_ids_from_preset(BLUEPRINTS_ALIAS_JSON, BLUEPRINTS_PRESET_JSON, RIGS_PRESET,    REPO_ROOT)
+basic_mat_ids = load_ids_from_preset(MATERIALS_ALIAS_JSON,  MATERIALS_PRESET_JSON,  MATERIALS_PRESET, REPO_ROOT)
 
-# ------------------ 读取各类 preset ------------------
-ship_ids = _load_ids_from_preset(BLUEPRINTS_ALIAS_JSON, BLUEPRINTS_PRESET_JSON, SHIPS_PRESET)
-module_product_ids = _load_ids_from_preset(BLUEPRINTS_ALIAS_JSON, BLUEPRINTS_PRESET_JSON, MODULES_PRESET)
-rig_product_ids = _load_ids_from_preset(BLUEPRINTS_ALIAS_JSON, BLUEPRINTS_PRESET_JSON, RIGS_PRESET)
-basic_material_ids = _load_ids_from_preset(MATERIALS_ALIAS_JSON, MATERIALS_PRESET_JSON, MATERIALS_PRESET)
+item_volumes = build_item_volumes(types_volume_list, ship_ids)
 
+print("蓝图总数（含依赖）: {}".format(len(blueprints)))
+print("考察最终产物数:     {}".format(len(final_product_ids)))
 
-# ------------------ 工具函数 ------------------
-def get_jita_price(tid, field="buy"):
-    item = jita_prices.get(int(tid), {})
-    val = item.get(field)
-    if isinstance(val, (int, float)):
-        return val
-    return 0
+# ==========================================================================
+# 预计算
+# ==========================================================================
+all_items      = set()
+material_items = set()
 
+for bp in blueprints:
+    act, _ = get_activity(bp)
+    if not act:
+        continue
+    for m in act.get("materials", []):
+        all_items.add(int(m["typeID"]))
+        material_items.add(int(m["typeID"]))
+    for p in act.get("products", []):
+        all_items.add(int(p["typeID"]))
 
-def get_price(tid, field="buy"):
-    return get_jita_price(tid, field)
+print("总物品数: {}".format(len(all_items)))
 
-
-def get_product_profit_factor(product_type_id):
-    tid = int(product_type_id)
-    if tid in ship_ids:
-        return SHIP_PROFIT_FACTOR
-    if tid in module_product_ids:
-        return MODULE_PROFIT_FACTOR
-    if tid in rig_product_ids:
-        return RIG_PROFIT_FACTOR
-    return 1.0
-
-
-def get_material_cost_factor(material_type_id):
-    return MATERIAL_COST_FACTOR if int(material_type_id) in basic_material_ids else 1.0
-
-
-def get_volume(tid):
-    """获取物品体积，如果是船只则除以10"""
-    volume = item_volumes.get(int(tid), 0)
-    if int(tid) in ship_ids:
-        volume = volume / 10
-    return volume
+# 稀疏系数矩阵
+mat_coef  = {tid: {} for tid in all_items}
+prod_coef = {tid: {} for tid in all_items}
+for i, bp in enumerate(blueprints):
+    act, _ = get_activity(bp)
+    if not act:
+        continue
+    for m in act.get("materials", []):
+        mat_coef[int(m["typeID"])][i] = float(m.get("quantity", 0))
+    for p in act.get("products", []):
+        prod_coef[int(p["typeID"])][i] = float(p.get("quantity", 0))
 
 
-def get_freight_cost(tid, quantity):
-    """计算运费成本：单位运费 × 体积 × 数量（可开关）"""
-    if not ENABLE_FREIGHT:
+def _max_runs(bp):
+    act, _ = get_activity(bp)
+    if not act or not act.get("products"):
         return 0
-    volume = get_volume(tid)
-    return FARE_JITA * volume * quantity
+    p = act["products"][0]
+    qty_per_run = p.get("quantity", 1) or 1
+    vol = jita_prices.get(int(p["typeID"]), {}).get("volume", 0)
+    return max(int(vol * MAX_PROD_FACTOR / qty_per_run), 0)
 
 
-# 建立蓝图ID → 名称映射
-bp_names = {}
-for bp in blueprints:
-    bp_id = bp.get("blueprintTypeID")
-    if bp_id:
-        bp_names[bp_id] = resolve_name(bp_id, types_map) if bp_id in types_map else {"zh": f"蓝图_{bp_id}",
-                                                                                     "en": f"BP_{bp_id}"}
+bp_max_runs = [_max_runs(bp) for bp in blueprints]
 
-# ------------------ 建立 ILP ------------------
-model = LpProblem("Max_Profit_Min_Products", LpMaximize)
-
-# ------------------ 物料集合 ------------------
-all_items = set()
-
-for bp in blueprints:
-    activity, _ = get_activity(bp)
-    if not activity:
-        continue
-    for m in activity.get("materials", []):
-        all_items.add(m["typeID"])
-    for p in activity.get("products", []):
-        all_items.add(p["typeID"])
-
-print(f"总物品数: {len(all_items)}")
-
-purchase = {tid: LpVariable(f"buy_{tid}", lowBound=0, cat=LpInteger) for tid in all_items}
-
-# ------------------ 计算蓝图最大可生产次数 ------------------
-bp_max_runs = []
-for i, bp in enumerate(blueprints):
-    activity, _ = get_activity(bp)
-    if not activity:
-        bp_max_runs.append(0)
-        continue
-    products = activity.get("products", [])
-    if not products:
-        bp_max_runs.append(0)
-        continue
-    # 默认只取第一个产物计算上限
-    p = products[0]
-    tid = p["typeID"]
-    qty_per_run = p.get("quantity", 1)
-    market_vol = jita_prices.get(tid, {}).get("volume", 0)
-    max_runs = int((market_vol * MAX_PROD_FACTOR) / qty_per_run) if qty_per_run > 0 else 0
-    bp_max_runs.append(max(max_runs, 0))  # 确保非负
-
-x = {i: LpVariable(f"bp_{i}", lowBound=0, upBound=bp_max_runs[i], cat=LpInteger)
-     for i in range(len(blueprints))}
-
-# ------------------ 引入二元变量：物品是否有净产出 ------------------
-# 关键修复：y[tid] = 1 表示该物品有净产出（可以出售）
-# 不再预先排除任何物品，而是在求解后根据净产出判断
-y = {tid: LpVariable(f"has_output_{tid}", cat=LpBinary) for tid in all_items}
-
-# 大M法：如果某个物品的净产出 > 0，则 y[tid] = 1
-M = 1e9  # 一个足够大的数
-
-# ------------------ 计算总市场价值（sell_price * volume） ------------------
-total_market_value = 0
-for tid in all_items:
-    sell = get_price(tid, "buy")
-    vol = jita_prices.get(tid, {}).get("volume", 0)
-    total_market_value += sell * vol
-
-# ------------------ 计算蓝图评分 ------------------
-bp_score = {}
-
-for i, bp in enumerate(blueprints):
-    activity, act_type = get_activity(bp)
-    if not activity:
-        bp_score[i] = 0
-        continue
-
-    # 材料成本（统一从Jita购买）
-    materials_cost = sum(
-        m.get("quantity", 0) * get_jita_price(m["typeID"], "buy") * get_material_cost_factor(m["typeID"])
-        for m in activity.get("materials", [])
-    )
-
-    jita_products_value = sum(
-        p.get("quantity", 0) * get_jita_price(p["typeID"], "buy")
-        for p in activity.get("products", [])
-    )
-    jita_freight_cost = sum(
-        get_freight_cost(p["typeID"], p.get("quantity", 0))
-        for p in activity.get("products", [])
-    )
-
-    product_factor = 1.0
-    products = activity.get("products", [])
-    if products:
-        product_factor = get_product_profit_factor(products[0]["typeID"])
-
-    if act_type == "manufacturing":
-        jita_profit = jita_products_value * product_factor - materials_cost * (1 - ME) - jita_freight_cost
-    else:
-        jita_profit = jita_products_value * product_factor - materials_cost - jita_freight_cost
-
-    profit = jita_profit
-
-    # 流动性系数始终以Jita为准
-    bp_market_value = sum(
-        p.get("quantity", 0) * get_jita_price(p["typeID"], "buy") *
-        jita_prices.get(p["typeID"], {}).get("volume", 0)
-        for p in activity.get("products", [])
-    )
-    liq_weight = bp_market_value / total_market_value if total_market_value > 0 else 0
-    profit_score = profit * (1 + ALPHA * liq_weight)
-    bp_score[i] = profit_score
-
-# ------------------ 目标函数 ------------------
-# 修复：最终产物种类数 = 所有有净产出的物品数量
-model += (
-        lpSum(bp_score[i] * x[i] for i in range(len(blueprints)))
-        - PRODUCT_DIVERSITY_PENALTY * lpSum(y[tid] for tid in all_items)
+# 市场权重总和（归一化用）
+total_market_weight = sum(
+    get_jita_price(jita_prices, tid) * jita_prices.get(tid, {}).get("volume", 0)
+    for tid in final_product_ids
 )
 
-# ------------------ 物料约束（递归利用产物） ------------------
-for tid in all_items:
-    total_needed = lpSum(
-        x[i] * next((m["quantity"] for m in get_activity(bp)[0].get("materials", [])
-                     if m["typeID"] == tid), 0)
-        for i, bp in enumerate(blueprints)
-        if get_activity(bp)[0] is not None
+
+def _bp_scores(i, bp):
+    """
+    返回 (inv_score, val_score)。
+    inv_score：库存利用得分（按市场权重的 preset 产物价值，含流动性加成）
+    val_score ：利润得分（preset 产物收入 - 材料成本×ME - 运费）
+    """
+    act, act_type = get_activity(bp)
+    if not act:
+        return 0.0, 0.0
+
+    products = act.get("products", [])
+    final_products = [p for p in products if int(p.get("typeID", -1)) in final_product_ids]
+
+    # 库存利用得分
+    final_value = sum(
+        p.get("quantity", 0) * get_jita_price(jita_prices, p["typeID"])
+        for p in final_products
     )
-    total_produced = lpSum(
-        x[i] * next((p["quantity"] for p in get_activity(bp)[0].get("products", [])
-                     if p["typeID"] == tid), 0)
-        for i, bp in enumerate(blueprints)
-        if get_activity(bp)[0] is not None
+    final_weight = sum(
+        p.get("quantity", 0)
+        * get_jita_price(jita_prices, p["typeID"])
+        * jita_prices.get(int(p["typeID"]), {}).get("volume", 0)
+        for p in final_products
     )
-    model += (inventory.get(tid, 0) + purchase[tid] + total_produced >= total_needed)
+    norm_w = final_weight / total_market_weight if total_market_weight > 0 else 0
+    inv_score = final_value * (1 + ALPHA * norm_w)
 
-# ------------------ 最终产物约束（修复）------------------
-# 关键修复：对所有物品，如果净产出 > 0，则 y[tid] = 1
-for tid in all_items:
-    total_produced = lpSum(
-        x[i] * next((p["quantity"] for p in get_activity(bp)[0].get("products", [])
-                     if p["typeID"] == tid), 0)
-        for i, bp in enumerate(blueprints)
-        if get_activity(bp)[0] is not None
+    # 价值得分（利润）
+    mat_cost = sum(
+        m.get("quantity", 0)
+        * get_jita_price(jita_prices, m["typeID"])
+        * (MATERIAL_COST_FACTOR if int(m["typeID"]) in basic_mat_ids else 1.0)
+        for m in act.get("materials", [])
     )
-    total_consumed = lpSum(
-        x[i] * next((m["quantity"] for m in get_activity(bp)[0].get("materials", [])
-                     if m["typeID"] == tid), 0)
-        for i, bp in enumerate(blueprints)
-        if get_activity(bp)[0] is not None
-    )
-    purchased = purchase[tid]
-
-    # 净产出 = 库存 + 生产 - 消耗 + 采购
-    net_output = inventory.get(tid, 0) + total_produced - total_consumed + purchased
-
-    # 如果 net_output > 0，则强制 y[tid] = 1
-    model += (net_output <= M * y[tid])
-
-# ------------------ 预算约束 ------------------
-model += lpSum(purchase[tid] * get_jita_price(tid, "buy") for tid in all_items) <= BUDGET
-
-# ------------------ 求解 ------------------
-print("开始求解...")
-model.solve()
-print(f"求解状态: {model.status}")
-
-if model.status == 1:  # Optimal
-    total_profit = sum(bp_score[i] * x[i].value() for i in range(len(blueprints)) if x[i].value() > 0)
-
-    # 计算制造的产物（仅包含制造的物品）和最终库存（所有物品）
-    manufactured_products = {}  # 仅制造的产物
-    final_inventory_dict = {}  # 完整的最终库存
-
-    for tid in all_items:
-        total_produced = sum(
-            (int(x[i].value()) if x[i].value() else 0) *
-            next((p["quantity"] for p in get_activity(bp)[0].get("products", [])
-                  if p["typeID"] == tid), 0)
-            for i, bp in enumerate(blueprints)
-            if get_activity(bp)[0] is not None
+    revenue = sum(
+        p.get("quantity", 0)
+        * get_jita_price(jita_prices, p["typeID"])
+        * get_product_profit_factor(
+            p["typeID"], ship_ids, module_ids, rig_ids,
+            SHIP_PROFIT_FACTOR, MODULE_PROFIT_FACTOR, RIG_PROFIT_FACTOR,
         )
-        total_consumed = sum(
-            (int(x[i].value()) if x[i].value() else 0) *
-            next((m["quantity"] for m in get_activity(bp)[0].get("materials", [])
-                  if m["typeID"] == tid), 0)
-            for i, bp in enumerate(blueprints)
-            if get_activity(bp)[0] is not None
-        )
-        purchased = int(purchase[tid].value()) if purchase[tid].value() else 0
+        for p in final_products
+    )
+    freight = sum(
+        get_freight_cost(item_volumes, FARE_JITA, ENABLE_FREIGHT, p["typeID"], p.get("quantity", 0))
+        for p in final_products
+    )
+    me_factor = (1 - ME) if act_type == "manufacturing" else 1.0
+    val_score = revenue - mat_cost * me_factor - freight
 
-        # 最终库存 = 初始库存 + 生产 - 消耗 + 采购
-        final_qty = inventory.get(tid, 0) + total_produced - total_consumed + purchased
-        if final_qty > 0:
-            final_inventory_dict[tid] = final_qty
+    return inv_score, val_score
 
-        # 制造产物 = 仅包含有生产量的物品
-        if total_produced > 0:
-            manufactured_products[tid] = total_produced
 
-    final_product_count = len(manufactured_products)
+inv_scores = {}
+val_scores = {}
+for i, bp in enumerate(blueprints):
+    inv_scores[i], val_scores[i] = _bp_scores(i, bp)
 
-    print(f"总利润: {total_profit:,.0f}")
-    print(f"最终产物种类数: {final_product_count}")
+# ==========================================================================
+# 建立 ILP 模型
+# ==========================================================================
+print("构建 ILP 模型...")
+model = LpProblem("EVE_Dual_Objective", LpMaximize)
 
-    # ------------------ 输出中文采购清单 CSV ------------------
-    with open(PURCHASE_CSV, "w", newline="", encoding="utf-8") as f:
-        writer = csv.writer(f, delimiter="\t")
-        total_purchase_cost = 0
-        for tid, var in purchase.items():
-            qty = int(var.value()) if var.value() else 0
-            if qty > 0:
-                price = get_jita_price(tid, "buy")
-                total_cost = qty * price
-                total_purchase_cost += total_cost
-                writer.writerow([resolve_name(tid, types_map)["zh"], qty])
+x = {
+    i: LpVariable("bp_{}".format(i), lowBound=0, upBound=bp_max_runs[i], cat=LpInteger)
+    for i in range(len(blueprints))
+}
 
-    # ------------------ 输出中文执行清单 CSV ------------------
-    with open(EXECUTION_CSV, "w", newline="", encoding="utf-8") as f:
-        writer = csv.writer(f, delimiter="\t")
-        for i, bp in enumerate(blueprints):
-            runs = int(x[i].value()) if x[i].value() else 0
-            if runs > 0:
-                activity, _ = get_activity(bp)
-                if not activity:
-                    continue
+purchase_cat = LpInteger if PURCHASE_INTEGER else "Continuous"
+purchase = {
+    tid: LpVariable("buy_{}".format(tid), lowBound=0, cat=purchase_cat)
+    for tid in material_items
+}
 
-                # 直接获取蓝图名称
-                bp_id = bp.get("blueprintTypeID")
-                bp_name = resolve_name(bp_id, types_map)["zh"] if bp_id in types_map else f"蓝图_{bp_id}"
+# 双目标加权和
+model += lpSum(
+    (W_INVENTORY * inv_scores[i] + W_VALUE * val_scores[i]) * x[i]
+    for i in range(len(blueprints))
+)
 
-                # 获取产物名称
-                products = activity.get("products", [])
-                product_names = ", ".join([resolve_name(p["typeID"], types_map)["zh"] for p in products])
-
-                # 计算该蓝图的利润
-                profit = bp_score[i] * runs
-
-                writer.writerow([bp_name, runs])
-
-    # ------------------ 输出最终产物总量 CSV ------------------
-    with open(FINAL_PRODUCTS_CSV, "w", newline="", encoding="utf-8") as f:
-        writer = csv.writer(f, delimiter="\t")
-        total_value = 0
-        for tid, qty in sorted(manufactured_products.items(), key=lambda x: x[1] * get_price(x[0], "buy"),
-                               reverse=True):
-            price = get_price(tid, "buy")
-            value = qty * price
-            total_value += value
-            writer.writerow([resolve_name(tid, types_map)["zh"], qty])
-
-    print(f"完成：采购清单 → {PURCHASE_CSV}")
-    print(f"完成：执行清单 → {EXECUTION_CSV}")
-    print(f"完成：最终产物总量 → {FINAL_PRODUCTS_CSV}")
-
-    # ------------------ 合并材料库存和采购清单为 initial_inventory.json ------------------
-    # 创建合并后的库存字典
-    merged_inventory = {}
-
-    # 添加原材料库存
-    for tid, qty in inventory.items():
-        merged_inventory[tid] = qty
-
-    # 添加采购清单
-    for tid, var in purchase.items():
-        qty = int(var.value()) if var.value() else 0
-        if qty > 0:
-            merged_inventory[tid] = merged_inventory.get(tid, 0) + qty
-
-    # 转换为列表格式（与materials.json格式一致）
-    initial_inventory_list = []
-    for tid, qty in sorted(merged_inventory.items()):
-        if qty > 0:
-            initial_inventory_list.append({
-                "type_id": tid,
-                "zh": resolve_name(tid, types_map)["zh"],
-                "en": resolve_name(tid, types_map)["en"],
-                "quantity": qty
-            })
-
-    # 写入JSON文件
-    with open(INITIAL_INVENTORY_JSON, "w", encoding="utf-8") as f:
-        json.dump(initial_inventory_list, f, ensure_ascii=False, indent=2)
-
-    print(f"完成：初始库存 → {INITIAL_INVENTORY_JSON}")
-
-    # ------------------ 输出最终库存为 final_inventory.json ------------------
-    # 转换为列表格式（与materials.json格式一致）
-    final_inventory_list = []
-    for tid, qty in sorted(final_inventory_dict.items()):
-        if qty > 0:
-            final_inventory_list.append({
-                "type_id": tid,
-                "zh": resolve_name(tid, types_map)["zh"],
-                "en": resolve_name(tid, types_map)["en"],
-                "quantity": qty
-            })
-
-    # 写入JSON文件
-    with open(FINAL_INVENTORY_JSON, "w", encoding="utf-8") as f:
-        json.dump(final_inventory_list, f, ensure_ascii=False, indent=2)
-
-    print(f"完成：最终库存 → {FINAL_INVENTORY_JSON}")
-    # 验证利润计算
-    print("\n" + "=" * 60)
-    print("利润验证")
-    print("=" * 60)
-
-    # 方法1：从蓝图评分
-    profit_from_blueprints = total_profit
-
-    # 方法2：从最终产物
-    final_revenue = sum(final_inventory_dict[tid] * get_price(tid, "buy") for tid in final_products)
-    purchase_cost = sum(
-        (int(purchase[tid].value()) if purchase[tid].value() else 0) * get_jita_price(tid, "buy")
-        for tid in all_items
+# 物料平衡约束：库存 + 采购 + 自产 >= 消耗
+for tid in all_items:
+    model += (
+        inventory.get(tid, 0)
+        + purchase.get(tid, 0)
+        + lpSum(x[i] * qty for i, qty in prod_coef[tid].items())
+        >= lpSum(x[i] * qty for i, qty in mat_coef[tid].items())
     )
 
-    # 计算使用的库存价值
-    inventory_value = 0
-    for tid in all_items:
-        inv_qty = inventory.get(tid, 0)
-        if inv_qty > 0:
-            total_needed = sum(
-                (int(x[i].value()) if x[i].value() else 0) *
-                next((m["quantity"] for m in get_activity(bp)[0].get("materials", [])
-                      if m["typeID"] == tid), 0)
-                for i, bp in enumerate(blueprints)
-                if get_activity(bp)[0] is not None
-            )
+# 预算约束
+model += lpSum(
+    purchase[tid] * get_jita_price(jita_prices, tid)
+    for tid in material_items
+) <= BUDGET
 
-            total_produced = sum(
-                (int(x[i].value()) if x[i].value() else 0) *
-                next((p["quantity"] for p in get_activity(bp)[0].get("products", [])
-                      if p["typeID"] == tid), 0)
-                for i, bp in enumerate(blueprints)
-                if get_activity(bp)[0] is not None
-            )
+# ==========================================================================
+# 求解
+# ==========================================================================
+print("开始求解（时限 {}s，相对 Gap {}）...".format(SOLVER_TIME_LIMIT, SOLVER_GAP_REL))
+solver = PULP_CBC_CMD(msg=True, timeLimit=SOLVER_TIME_LIMIT, gapRel=SOLVER_GAP_REL)
+model.solve(solver)
+print("求解状态: {}".format(model.status))
 
-            purchased_qty = int(purchase[tid].value()) if purchase[tid].value() else 0
-            used = max(0, total_needed - total_produced - purchased_qty)
-            used = min(used, inv_qty)
-
-            if used > 0:
-                price = get_jita_price(tid, "buy")
-                inventory_value += used * price
-
-    profit_from_final = final_revenue - purchase_cost - inventory_value
-
-    print(f"方法1（蓝图评分）: {profit_from_blueprints:15,.0f}")
-    print(f"方法2（产出-成本）: {profit_from_final:15,.0f}")
-    print(f"差异:              {abs(profit_from_blueprints - profit_from_final):15,.2f}")
-
-else:
+if model.status != 1:
     print("求解失败或无可行解")
+    sys.exit(1)
+
+# ==========================================================================
+# 输出结果
+# ==========================================================================
+x_vals        = {i: max(int(round(x[i].value() or 0)), 0) for i in range(len(blueprints))}
+purchase_vals = {tid: max(int(round(var.value() or 0)), 0) for tid, var in purchase.items()}
+
+flow = compute_flow(blueprints, x_vals, purchase_vals, prod_coef, mat_coef, inventory, all_items)
+
+# ------------------------------------------------------------------
+# 最终产物：preset 中直接考察的产物（final_product_ids）
+# 输出其最终库存量（初始库存 + 生产 - 消耗 + 采购），反映实际可售数量
+# ------------------------------------------------------------------
+net_final_products = {
+    tid: int(flow[tid]["final"])
+    for tid in final_product_ids
+    if tid in flow and flow[tid]["final"] > 0
+}
+
+final_inventory = {tid: int(f["final"]) for tid, f in flow.items() if f["final"] > 0}
+
+# ------------------------------------------------------------------
+# 库存利用率：实际消耗的原库存物品价值 / 初始库存总价值
+# 消耗量 = min(库存量, 总需求量 - 自产量 - 采购量)，下限为 0
+# ------------------------------------------------------------------
+total_inventory_value = sum(
+    inventory.get(tid, 0) * get_jita_price(jita_prices, tid)
+    for tid in inventory
+)
+used_inventory_value = 0.0
+for tid in all_items:
+    inv_qty = inventory.get(tid, 0)
+    if inv_qty <= 0:
+        continue
+    f = flow.get(tid, {})
+    consumed  = f.get("consumed",  0)
+    produced  = f.get("produced",  0)
+    purchased = f.get("purchased", 0)
+    # 实际从库存中取用的量：总消耗 - 自产补充 - 采购补充，不超过库存本身
+    used = max(0.0, consumed - produced - purchased)
+    used = min(used, inv_qty)
+    used_inventory_value += used * get_jita_price(jita_prices, tid)
+
+utilization_rate = (used_inventory_value / total_inventory_value) if total_inventory_value > 0 else 0.0
+
+# ------------------------------------------------------------------
+# 汇总统计
+# ------------------------------------------------------------------
+total_inv_score    = sum(inv_scores[i] * x_vals[i] for i in range(len(blueprints)))
+total_val_score    = sum(val_scores[i] * x_vals[i] for i in range(len(blueprints)))
+final_preset_value = sum(
+    flow[tid]["final"] * get_jita_price(jita_prices, tid)
+    for tid in final_product_ids if tid in flow
+)
+
+print("\n" + "=" * 60)
+print("库存利用得分:    {:>20,.0f}  (W_INVENTORY={})".format(total_inv_score, W_INVENTORY))
+print("最终产物价值得分:{:>20,.0f}  (W_VALUE={})".format(total_val_score, W_VALUE))
+print("preset 产物总价: {:>20,.0f} ISK".format(final_preset_value))
+print("初始库存总价值:  {:>20,.0f} ISK".format(total_inventory_value))
+print("已用库存价值:    {:>20,.0f} ISK".format(used_inventory_value))
+print("库存利用率:      {:>19.1f} %".format(utilization_rate * 100))
+print("最终产物种类数:  {}".format(len(net_final_products)))
+print("=" * 60)
+
+total_purchase_cost = write_purchase_csv(PURCHASE_CSV, purchase_vals, jita_prices, types_map)
+write_execution_csv(EXECUTION_CSV, blueprints, x_vals, {}, types_map)
+write_final_products_csv(FINAL_PRODUCTS_CSV, net_final_products, jita_prices, types_map)
+
+merged = dict(inventory)
+for tid, qty in purchase_vals.items():
+    if qty > 0:
+        merged[tid] = merged.get(tid, 0) + qty
+write_inventory_json(INITIAL_INVENTORY_JSON, merged, types_map)
+write_inventory_json(FINAL_INVENTORY_JSON, final_inventory, types_map)
+
+print("\n完成：采购清单     -> {}  (总计 {:,.0f} ISK)".format(PURCHASE_CSV, total_purchase_cost))
+print("完成：执行清单     -> {}".format(EXECUTION_CSV))
+print("完成：最终产物总量 -> {}".format(FINAL_PRODUCTS_CSV))
+print("完成：初始库存     -> {}".format(INITIAL_INVENTORY_JSON))
+print("完成：最终库存     -> {}".format(FINAL_INVENTORY_JSON))
