@@ -280,45 +280,49 @@ def _normalize_region_key(region_key):
     return alias_map.get(key, key.replace(" ", "_"))
 
 
-def _extract_market_price(entry, primary_region):
-    # type: (dict, str) -> Tuple[float, float]
-    """返回 (buy, volume)。当主区域价格缺失/为 0 时回退到 jita。"""
-    region_data = entry.get(primary_region, {}) if isinstance(entry, dict) else {}
-    jita_data = entry.get("jita", {}) if isinstance(entry, dict) else {}
-
-    buy = region_data.get("lowest", 0)
-    if not isinstance(buy, (int, float)) or buy <= 0:
-        buy = jita_data.get("lowest", 0)
-
-    volume = region_data.get("volume", 0)
-    if not isinstance(volume, (int, float)) or volume <= 0:
-        volume = jita_data.get("volume", 0)
-
-    return (
-        buy if isinstance(buy, (int, float)) else 0,
-        volume if isinstance(volume, (int, float)) else 0,
-    )
+def _normalize_price_field(field):
+    # type: (str) -> str
+    key = (field or "buy").strip().lower()
+    alias_map = {
+        "buy": "lowest",
+        "sell": "highest",
+        "lowest": "lowest",
+        "highest": "highest",
+        "average": "average",
+        "volume": "volume",
+    }
+    return alias_map.get(key, key)
 
 
-def build_jita_prices(raw, region_key="jita"):
-    # type: (Any, str) -> Dict[int, dict]
-    """将价格数据转换为 {type_id: {buy, volume}}，支持区域选择与 jita 回退。"""
-    region = _normalize_region_key(region_key)
+def _safe_num(value):
+    # type: (Any) -> float
+    return value if isinstance(value, (int, float)) else 0.0
+
+
+def build_prices(raw):
+    # type: (Any) -> Dict[int, dict]
+    """将价格数据转换为 {type_id: {region: {lowest, highest, average, volume}}}。"""
     result = {}  # type: Dict[int, dict]
     if isinstance(raw, dict):
         for k, v in raw.items():
-            buy, vol = _extract_market_price(v, region)
-            if isinstance(v, dict) and region == "jita":
-                # 兼容历史格式：{"jita":{"buy":...}}
-                jita = v.get("jita", {})
-                if buy <= 0:
-                    buy = jita.get("buy", jita.get("lowest", 0))
-                if vol <= 0:
-                    vol = v.get("volume", 0) or jita.get("volume", 0)
-            result[int(k)] = {
-                "buy": buy if isinstance(buy, (int, float)) else 0,
-                "volume": vol if isinstance(vol, (int, float)) else 0,
-            }
+            tid = int(k)
+            result[tid] = {}
+            if not isinstance(v, dict):
+                continue
+            for region, region_data in v.items():
+                if not isinstance(region_data, dict):
+                    continue
+                rkey = _normalize_region_key(region)
+                lowest = _safe_num(region_data.get("lowest", region_data.get("buy", 0)))
+                highest = _safe_num(region_data.get("highest", region_data.get("sell", 0)))
+                avg = _safe_num(region_data.get("average", 0))
+                vol = _safe_num(region_data.get("volume", v.get("volume", 0)))
+                result[tid][rkey] = {
+                    "lowest": lowest,
+                    "highest": highest,
+                    "average": avg,
+                    "volume": vol,
+                }
         return result
 
     if isinstance(raw, list):
@@ -326,17 +330,58 @@ def build_jita_prices(raw, region_key="jita"):
             tid = row.get("id")
             if tid is None:
                 continue
-            buy, vol = _extract_market_price(row, region)
-            result[int(tid)] = {
-                "buy": buy if isinstance(buy, (int, float)) else 0,
-                "volume": vol if isinstance(vol, (int, float)) else 0,
-            }
+            result[int(tid)] = {}
+            for region, region_data in row.items():
+                if region == "id" or not isinstance(region_data, dict):
+                    continue
+                rkey = _normalize_region_key(region)
+                result[int(tid)][rkey] = {
+                    "lowest": _safe_num(region_data.get("lowest", 0)),
+                    "highest": _safe_num(region_data.get("highest", 0)),
+                    "average": _safe_num(region_data.get("average", 0)),
+                    "volume": _safe_num(region_data.get("volume", 0)),
+                }
     return result
+
+
+def get_price(prices, tid, region_key="jita", field="buy", fallback_region="jita"):
+    # type: (dict, int, str, str, str) -> float
+    region = _normalize_region_key(region_key)
+    fallback = _normalize_region_key(fallback_region)
+    field_key = _normalize_price_field(field)
+    region_data = prices.get(int(tid), {}).get(region, {})
+    val = region_data.get(field_key)
+    if not isinstance(val, (int, float)) or val <= 0:
+        val = prices.get(int(tid), {}).get(fallback, {}).get(field_key)
+    return val if isinstance(val, (int, float)) else 0.0
+
+
+def get_volume(prices, tid, region_key="jita", fallback_region="jita"):
+    # type: (dict, int, str, str) -> float
+    return get_price(prices, tid, region_key=region_key, field="volume", fallback_region=fallback_region)
+
+
+def build_jita_prices(raw, region_key="jita"):
+    # type: (Any, str) -> Dict[int, dict]
+    """兼容旧接口：返回 {type_id: {buy, volume}}。"""
+    region = _normalize_region_key(region_key)
+    prices = build_prices(raw)
+    return {
+        tid: {
+            "buy": get_price(prices, tid, region_key=region, field="buy"),
+            "volume": get_volume(prices, tid, region_key=region),
+        }
+        for tid in prices
+    }
 
 
 def get_jita_price(jita_prices, tid, field="buy"):
     # type: (dict, int, str) -> float
     val = jita_prices.get(int(tid), {}).get(field)
+    if (not isinstance(val, (int, float))) and field == "buy":
+        val = jita_prices.get(int(tid), {}).get("lowest")
+    if (not isinstance(val, (int, float))) and field == "sell":
+        val = jita_prices.get(int(tid), {}).get("highest")
     return val if isinstance(val, (int, float)) else 0.0
 
 

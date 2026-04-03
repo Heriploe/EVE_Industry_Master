@@ -1,6 +1,6 @@
 import unittest
 
-from Utilities.blueprint_utils import build_jita_prices
+from Utilities.blueprint_utils import build_prices, get_price
 from Utilities.industry_cost import invention_T2_runs
 
 
@@ -45,9 +45,9 @@ class TestPriceRegionFallback(unittest.TestCase):
                 "vale_of_the_silent": {"lowest": 0.0, "volume": 0.0},
             }
         ]
-        prices = build_jita_prices(raw, region_key="vale of slience")
-        self.assertEqual(prices[34]["buy"], 100.0)
-        self.assertEqual(prices[34]["volume"], 1000)
+        prices = build_prices(raw)
+        self.assertEqual(get_price(prices, 34, region_key="vale of slience", field="buy"), 100.0)
+        self.assertEqual(get_price(prices, 34, region_key="vale of slience", field="volume"), 1000)
 
     def test_vale_price_used_when_available(self):
         raw = [
@@ -57,9 +57,9 @@ class TestPriceRegionFallback(unittest.TestCase):
                 "vale_of_the_silent": {"lowest": 120.0, "volume": 10.0},
             }
         ]
-        prices = build_jita_prices(raw, region_key="vale_of_the_silent")
-        self.assertEqual(prices[35]["buy"], 120.0)
-        self.assertEqual(prices[35]["volume"], 10.0)
+        prices = build_prices(raw)
+        self.assertEqual(get_price(prices, 35, region_key="vale_of_the_silent", field="buy"), 120.0)
+        self.assertEqual(get_price(prices, 35, region_key="vale_of_the_silent", field="volume"), 10.0)
 
 
 if __name__ == "__main__":

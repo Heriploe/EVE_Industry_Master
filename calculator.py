@@ -50,8 +50,9 @@ from Utilities.blueprint_utils import (
     load_ids_from_preset,
     load_blueprint_type_ids_from_preset,
     parse_inventory,
-    build_jita_prices,
-    get_jita_price,
+    build_prices,
+    get_price,
+    get_volume,
     build_item_volumes,
     get_freight_cost,
     get_product_profit_factor,
@@ -104,7 +105,6 @@ MODULE_PROFIT_FACTOR = _cfg("module_profit_factor",
                        _cfg("moudle_profit_factor", 1.0, float), float)
 RIG_PROFIT_FACTOR    = _cfg("rig_profit_factor",    1.0, float)
 MATERIAL_COST_FACTOR = _cfg("material_cost_factor", 1.0, float)
-PRICE_REGION_KEY = _cfg("price_region_key", "jita")
 
 # preset 名称
 BLUEPRINTS_PRESET = _cfg("blueprints_preset", "items_to_sell")
@@ -118,7 +118,8 @@ COMPONENTS_PRESET = _cfg("components_preset", "components_all")
 # 文件路径
 output_dir             = _rpath("output_dir",         "Cache/Output")
 INVENTORY_JSON         = _rpath("inventory_json",     "Cache/Asset/Corp/final_non_blueprints.json")
-JITA_PRICES_JSON       = _rpath("jita_prices_json",   "Cache/Market/price_materials_all.json")
+PRICE_JSON             = _rpath("jita_prices_json",   "Cache/Market/price_materials_all.json")
+PRESET_SETTING_CONFIG  = _rpath("preset_setting_config", "preset_setting.config")
 TYPES_JSON             = _rpath_paths("types_json",   "Data/types.json")
 TYPES_VOLUME_JSON      = _rpath("types_volume_json",  str(TYPES_JSON))
 BLUEPRINTS_ALIAS_JSON  = _rpath_paths("blueprints_alias_json",  "Data/Blueprints/alias.json")
@@ -159,8 +160,8 @@ for bp in selected_blueprints:
         if p.get("typeID") is not None:
             final_product_ids.add(int(p["typeID"]))
 
-with JITA_PRICES_JSON.open("r", encoding="utf-8") as f:
-    jita_prices = build_jita_prices(json.load(f), region_key=PRICE_REGION_KEY)
+with PRICE_JSON.open("r", encoding="utf-8") as f:
+    prices = build_prices(json.load(f))
 
 types_map = load_types_map(TYPES_JSON)
 
@@ -178,6 +179,88 @@ if T2_COSTS_JSON.exists():
     with T2_COSTS_JSON.open("r", encoding="utf-8") as f:
         raw_t2_costs = json.load(f)
     t2_costs_map = {int(k): v for k, v in raw_t2_costs.items()}
+
+def _load_preset_price_settings(config_path):
+    cfg = configparser.ConfigParser()
+    cfg.read(str(config_path), encoding="utf-8")
+
+    def _section(name):
+        if not cfg.has_section(name):
+            return {"region": "jita", "price_field": "buy", "volume_field": "volume"}
+        region = cfg.get(name, "region", fallback="jita")
+        price_field = cfg.get(name, "price_field", fallback="buy")
+        volume_field = cfg.get(name, "volume_field", fallback="volume")
+        return {"region": region, "price_field": price_field, "volume_field": volume_field}
+
+    return {
+        "blueprints_preset": _section("blueprints_preset"),
+        "ships_preset": _section("ships_preset"),
+        "modules_preset": _section("modules_preset"),
+        "rigs_preset": _section("rigs_preset"),
+        "materials_preset": _section("materials_preset"),
+        "reactions_preset": _section("reactions_preset"),
+        "components_preset": _section("components_preset"),
+    }
+
+
+def _build_product_ids_for_blueprint_ids(bp_list, include_bp_ids):
+    include_ids = {int(x) for x in include_bp_ids}
+    result = set()
+    for bp in bp_list:
+        bp_id = bp.get("blueprintTypeID")
+        if bp_id is None or int(bp_id) not in include_ids:
+            continue
+        act, _ = get_activity(bp)
+        if not act:
+            continue
+        for p in act.get("products", []):
+            if p.get("typeID") is not None:
+                result.add(int(p["typeID"]))
+    return result
+
+
+preset_price_settings = _load_preset_price_settings(PRESET_SETTING_CONFIG)
+reaction_product_ids = _build_product_ids_for_blueprint_ids(blueprints, reaction_bp_ids)
+component_product_ids = _build_product_ids_for_blueprint_ids(blueprints, component_bp_ids)
+
+
+def _get_item_price_rule(tid):
+    tid = int(tid)
+    if tid in ship_ids:
+        return preset_price_settings["ships_preset"]
+    if tid in module_ids:
+        return preset_price_settings["modules_preset"]
+    if tid in rig_ids:
+        return preset_price_settings["rigs_preset"]
+    if tid in basic_mat_ids:
+        return preset_price_settings["materials_preset"]
+    if tid in reaction_product_ids:
+        return preset_price_settings["reactions_preset"]
+    if tid in component_product_ids:
+        return preset_price_settings["components_preset"]
+    if tid in final_product_ids:
+        return preset_price_settings["blueprints_preset"]
+    return {"region": "jita", "price_field": "buy", "volume_field": "volume"}
+
+
+def get_item_price(tid):
+    rule = _get_item_price_rule(tid)
+    return get_price(prices, tid, region_key=rule["region"], field=rule["price_field"], fallback_region="jita")
+
+
+def get_item_volume(tid):
+    rule = _get_item_price_rule(tid)
+    return get_price(prices, tid, region_key=rule["region"], field=rule["volume_field"], fallback_region="jita")
+
+
+jita_price_view = {
+    tid: {
+        "buy": get_price(prices, tid, region_key="jita", field="buy", fallback_region="jita"),
+        "volume": get_volume(prices, tid, region_key="jita", fallback_region="jita"),
+    }
+    for tid in prices
+}
+
 
 item_volumes = build_item_volumes(types_volume_list, ship_ids)
 
@@ -221,7 +304,7 @@ def _max_runs(bp):
         return 0
     p = act["products"][0]
     qty_per_run = p.get("quantity", 1) or 1
-    vol = jita_prices.get(int(p["typeID"]), {}).get("volume", 0)
+    vol = get_item_volume(p["typeID"])
     return max(int(vol * MAX_PROD_FACTOR / qty_per_run), 0)
 
 
@@ -229,7 +312,7 @@ bp_max_runs = [_max_runs(bp) for bp in blueprints]
 
 # 市场权重总和（归一化用）
 total_market_weight = sum(
-    get_jita_price(jita_prices, tid) * jita_prices.get(tid, {}).get("volume", 0)
+    get_item_price(tid) * get_item_volume(tid)
     for tid in final_product_ids
 )
 
@@ -249,13 +332,13 @@ def _bp_scores(i, bp):
 
     # 库存利用得分
     final_value = sum(
-        p.get("quantity", 0) * get_jita_price(jita_prices, p["typeID"])
+        p.get("quantity", 0) * get_item_price(p["typeID"])
         for p in final_products
     )
     final_weight = sum(
         p.get("quantity", 0)
-        * get_jita_price(jita_prices, p["typeID"])
-        * jita_prices.get(int(p["typeID"]), {}).get("volume", 0)
+        * get_item_price(p["typeID"])
+        * get_item_volume(p["typeID"])
         for p in final_products
     )
     norm_w = final_weight / total_market_weight if total_market_weight > 0 else 0
@@ -270,13 +353,13 @@ def _bp_scores(i, bp):
     else:
         mat_cost = sum(
             m.get("quantity", 0)
-            * get_jita_price(jita_prices, m["typeID"])
+            * get_item_price(m["typeID"])
             * (MATERIAL_COST_FACTOR if int(m["typeID"]) in basic_mat_ids else 1.0)
             for m in act.get("materials", [])
         )
     revenue = sum(
         p.get("quantity", 0)
-        * get_jita_price(jita_prices, p["typeID"])
+        * get_item_price(p["typeID"])
         * get_product_profit_factor(
             p["typeID"], ship_ids, module_ids, rig_ids,
             SHIP_PROFIT_FACTOR, MODULE_PROFIT_FACTOR, RIG_PROFIT_FACTOR,
@@ -332,7 +415,7 @@ for tid in all_items:
 
 # 预算约束
 model += lpSum(
-    purchase[tid] * get_jita_price(jita_prices, tid)
+    purchase[tid] * get_item_price(tid)
     for tid in material_items
 ) <= BUDGET
 
@@ -373,7 +456,7 @@ final_inventory = {tid: int(f["final"]) for tid, f in flow.items() if f["final"]
 # 消耗量 = min(库存量, 总需求量 - 自产量 - 采购量)，下限为 0
 # ------------------------------------------------------------------
 total_inventory_value = sum(
-    inventory.get(tid, 0) * get_jita_price(jita_prices, tid)
+    inventory.get(tid, 0) * get_item_price(tid)
     for tid in inventory
 )
 used_inventory_value = 0.0
@@ -388,7 +471,7 @@ for tid in all_items:
     # 实际从库存中取用的量：总消耗 - 自产补充 - 采购补充，不超过库存本身
     used = max(0.0, consumed - produced - purchased)
     used = min(used, inv_qty)
-    used_inventory_value += used * get_jita_price(jita_prices, tid)
+    used_inventory_value += used * get_item_price(tid)
 
 utilization_rate = (used_inventory_value / total_inventory_value) if total_inventory_value > 0 else 0.0
 
@@ -398,7 +481,7 @@ utilization_rate = (used_inventory_value / total_inventory_value) if total_inven
 total_inv_score    = sum(inv_scores[i] * x_vals[i] for i in range(len(blueprints)))
 total_val_score    = sum(val_scores[i] * x_vals[i] for i in range(len(blueprints)))
 final_preset_value = sum(
-    flow[tid]["final"] * get_jita_price(jita_prices, tid)
+    flow[tid]["final"] * get_item_price(tid)
     for tid in final_product_ids if tid in flow
 )
 
@@ -412,12 +495,12 @@ print("库存利用率:      {:>19.1f} %".format(utilization_rate * 100))
 print("最终产物种类数:  {}".format(len(net_final_products)))
 print("=" * 60)
 
-total_purchase_cost = write_purchase_csv(PURCHASE_CSV, purchase_vals, jita_prices, types_map)
+total_purchase_cost = write_purchase_csv(PURCHASE_CSV, purchase_vals, jita_price_view, types_map)
 write_execution_csv(EXECUTION_CSV, blueprints, x_vals, {}, types_map)
 write_execution_csv_filtered(EXECUTION_FINAL_CSV, blueprints, x_vals, types_map, {int(bp.get("blueprintTypeID")) for bp in selected_blueprints if bp.get("blueprintTypeID") is not None})
 write_execution_csv_filtered(EXECUTION_REACTION_CSV, blueprints, x_vals, types_map, reaction_bp_ids)
 write_execution_csv_filtered(EXECUTION_COMPONENT_CSV, blueprints, x_vals, types_map, component_bp_ids)
-write_final_products_csv(FINAL_PRODUCTS_CSV, net_final_products, jita_prices, types_map)
+write_final_products_csv(FINAL_PRODUCTS_CSV, net_final_products, jita_price_view, types_map)
 
 merged = dict(inventory)
 for tid, qty in purchase_vals.items():
