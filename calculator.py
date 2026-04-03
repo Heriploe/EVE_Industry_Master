@@ -41,7 +41,7 @@ REPO_ROOT = next(
 if str(REPO_ROOT) not in sys.path:
     sys.path.append(str(REPO_ROOT))
 
-from Utilities.name_mapping import load_types_map
+from Utilities.name_mapping import load_types_map, name_to_id
 from Utilities.industry_cost import get_T1_from_T2
 from Utilities.blueprint_utils import (
     resolve_path,
@@ -127,6 +127,7 @@ BLUEPRINTS_PRESET_JSON = _rpath_paths("blueprints_preset_json", "Data/Blueprints
 MATERIALS_ALIAS_JSON   = _rpath_paths("materials_alias_json",   "Data/Materials/alias.json")
 MATERIALS_PRESET_JSON  = _rpath_paths("materials_preset_json",  "Data/Materials/preset.json")
 T2_COSTS_JSON          = _rpath("t2_costs_json", "Data/T2_blueprint_costs.json")
+EXCLUDED_ITEM_CSV      = _rpath("excluded_item_csv", "excluded_item.csv")
 
 output_dir.mkdir(parents=True, exist_ok=True)
 PURCHASE_CSV           = output_dir / "purchase_list.csv"
@@ -143,12 +144,60 @@ FINAL_INVENTORY_JSON   = output_dir / "final_inventory.json"
 # ==========================================================================
 print("正在加载数据...")
 
+types_map = load_types_map(TYPES_JSON)
+name_id_map = name_to_id(types_map)
+
 with INVENTORY_JSON.open("r", encoding="utf-8") as f:
     inventory = parse_inventory(json.load(f))
 
 _, selected_blueprints, blueprints = load_blueprints_for_preset(
     BLUEPRINTS_ALIAS_JSON, BLUEPRINTS_PRESET_JSON, BLUEPRINTS_PRESET, REPO_ROOT
 )
+
+
+def _load_excluded_item_ids(path):
+    result = set()
+    if not path.exists():
+        return result
+    with path.open("r", encoding="utf-8") as f:
+        for raw_line in f:
+            line = raw_line.strip()
+            if not line:
+                continue
+            first_col = line.split("\t", 1)[0].strip()
+            if not first_col:
+                continue
+            if first_col.isdigit():
+                result.add(int(first_col))
+                continue
+            if first_col in name_id_map:
+                result.add(int(name_id_map[first_col]))
+    return result
+
+
+def _blueprint_contains_excluded_item(bp, excluded_item_ids):
+    act, _ = get_activity(bp)
+    if not act:
+        return False
+    for section in ("materials", "products"):
+        for item in act.get(section, []):
+            tid = item.get("typeID")
+            if tid is not None and int(tid) in excluded_item_ids:
+                return True
+    return False
+
+
+excluded_item_ids = _load_excluded_item_ids(EXCLUDED_ITEM_CSV)
+if excluded_item_ids:
+    selected_blueprints = [
+        bp for bp in selected_blueprints
+        if not _blueprint_contains_excluded_item(bp, excluded_item_ids)
+    ]
+    blueprints = [
+        bp for bp in blueprints
+        if not _blueprint_contains_excluded_item(bp, excluded_item_ids)
+    ]
+    print("已排除物品数:      {}，移除相关蓝图后剩余: {}".format(len(excluded_item_ids), len(blueprints)))
 
 # preset 直接考察的产物 id 集合
 final_product_ids = set()
@@ -162,8 +211,6 @@ for bp in selected_blueprints:
 
 with PRICE_JSON.open("r", encoding="utf-8") as f:
     prices = build_prices(json.load(f))
-
-types_map = load_types_map(TYPES_JSON)
 
 with TYPES_VOLUME_JSON.open("r", encoding="utf-8") as f:
     types_volume_list = json.load(f)
