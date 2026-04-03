@@ -297,7 +297,13 @@ def get_item_price(tid):
 
 def get_item_volume(tid):
     rule = _get_item_price_rule(tid)
-    return get_volume(prices, tid, region_key=rule["volume_region"], fallback_region="jita")
+    # volume 使用独立区域限制；不回退到 jita，避免放大产能上限
+    return get_volume(
+        prices,
+        tid,
+        region_key=rule["volume_region"],
+        fallback_region=rule["volume_region"],
+    )
 
 
 jita_price_view = {
