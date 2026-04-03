@@ -168,6 +168,14 @@ def main():
     if not cache_market_dir.is_absolute():
         cache_market_dir = repo_root / cache_market_dir
     cache_market = cache_market_dir / f"{preset_name}_region_{region_id}.json"
+    if not cache_market.exists():
+        region_name_map = {
+            10000002: "jita",
+            10000003: "vale_of_the_silent",
+        }
+        named_cache = cache_market_dir / f"{preset_name}_{region_name_map.get(region_id, f'region_{region_id}')}_{region_id}.json"
+        if named_cache.exists():
+            cache_market = named_cache
 
     temp_dir = Path(config.get("paths", "temp_cache_dir", fallback="Cache/Temp"))
     if not temp_dir.is_absolute():
