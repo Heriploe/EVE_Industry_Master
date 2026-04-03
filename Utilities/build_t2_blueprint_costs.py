@@ -32,13 +32,21 @@ def _load_config():
     return cfg
 
 
-def _load_jita_buy_map(path):
+def _load_jita_buy_map(path, region_key="jita"):
     with open(path, "r", encoding="utf-8") as f:
         data = json.load(f)
     out = {}
-    for k, v in data.items():
-        buy = (v or {}).get("jita", {}).get("buy", 0)
-        out[int(k)] = float(buy or 0)
+    if isinstance(data, dict):
+        for k, v in data.items():
+            buy = (v or {}).get("jita", {}).get("lowest", (v or {}).get("jita", {}).get("buy", 0))
+            out[int(k)] = float(buy or 0)
+    elif isinstance(data, list):
+        for row in data:
+            tid = row.get("id")
+            if tid is None:
+                continue
+            buy = ((row.get(region_key) or {}).get("lowest", 0))
+            out[int(tid)] = float(buy or 0)
     return out
 
 
@@ -50,7 +58,7 @@ def _load_decryptors(path):
 
 def _build_costs():
     cfg = _load_config()
-    jita_path = _resolve(cfg.get("calculator", "jita_prices_json", fallback="Cache/Input/jita_prices.json"))
+    jita_path = _resolve(cfg.get("calculator", "jita_prices_json", fallback="Cache/Market/price_materials_all.json"))
     blueprints_yaml_path = _resolve(cfg.get("paths", "blueprints_yaml", fallback="Data/blueprints.yaml"))
     t2_t1_path = _resolve(cfg.get("paths", "t2_t1_json", fallback="Data/T2_T1.json"))
     decryptor_path = REPO_ROOT / "Data/Materials/Basic/decryptor.json"
@@ -64,7 +72,8 @@ def _build_costs():
     with open(t2_t1_path, "r", encoding="utf-8") as f:
         t2_t1_pairs = [(int(x[0]), int(x[1])) for x in json.load(f) if isinstance(x, list) and len(x) >= 2]
 
-    jita_buy = _load_jita_buy_map(jita_path)
+    region_key = cfg.get("calculator", "price_region_key", fallback="jita")
+    jita_buy = _load_jita_buy_map(jita_path, region_key=region_key)
     decryptors = _load_decryptors(decryptor_path)
     blueprints = _load_blueprints(blueprints_yaml_path=blueprints_yaml_path)
     price_adjusted_map = _load_price_adjusted_map(price_adjusted_json_path=price_adjusted_path)

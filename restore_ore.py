@@ -76,10 +76,19 @@ def load_reprocessing_data(path: Path, eff: float):
     return reprocessing_data, ore_to_materials, norm_eff
 
 
-def load_prices(price_json: Path):
+def load_prices(price_json: Path, region_key: str):
     with price_json.open("r", encoding="utf-8") as f:
         data = json.load(f)
-    return {int(item["id"]): item.get("buy", 0) for item in data}
+    result = {}
+    for item in data:
+        if item.get("id") is None:
+            continue
+        if region_key in item:
+            price = ((item.get(region_key) or {}).get("lowest", 0))
+        else:
+            price = item.get("lowest", item.get("buy", 0))
+        result[int(item["id"])] = float(price or 0)
+    return result
 
 
 def load_preset_type_ids(preset_json: Path, alias_json: Path, preset_name: str, repo_root: Path):
@@ -121,8 +130,8 @@ def run_price_fetcher(repo_root: Path, preset_name: str, region_id: int, request
         sys.executable,
         str(script),
         preset_name,
-        "--region-id",
-        str(region_id),
+        "--region-ids",
+        f"{region_id}",
         "--request-interval",
         str(request_interval),
     ]
@@ -167,12 +176,13 @@ def main():
     cache_market_dir = Path(config.get("paths", "market_cache_dir", fallback="Cache/Market"))
     if not cache_market_dir.is_absolute():
         cache_market_dir = repo_root / cache_market_dir
-    cache_market = cache_market_dir / f"{preset_name}_region_{region_id}.json"
+    region_name_map = {
+        10000002: "jita",
+        10000003: "vale_of_the_silent",
+    }
+    region_key = region_name_map.get(region_id, f"region_{region_id}")
+    cache_market = cache_market_dir / f"price_{preset_name}.json"
     if not cache_market.exists():
-        region_name_map = {
-            10000002: "jita",
-            10000003: "vale_of_the_silent",
-        }
         named_cache = cache_market_dir / f"{preset_name}_{region_name_map.get(region_id, f'region_{region_id}')}_{region_id}.json"
         if named_cache.exists():
             cache_market = named_cache
@@ -194,7 +204,7 @@ def main():
     else:
         print(f"检测到已有市场缓存，跳过拉价: {cache_market}")
 
-    mineral_id_to_price = load_prices(cache_market)
+    mineral_id_to_price = load_prices(cache_market, region_key=region_key)
 
     purchase_list = {}
     unmatched_purchase_names = []

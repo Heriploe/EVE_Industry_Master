@@ -267,18 +267,33 @@ def parse_inventory(raw):
 # 价格 & 体积
 # ---------------------------------------------------------------------------
 
-def build_jita_prices(raw):
-    # type: (dict) -> Dict[int, dict]
-    """将 jita_prices.json 原始数据转换为 {type_id: {buy, volume}}。"""
+def build_jita_prices(raw, region_key="jita"):
+    # type: (Any, str) -> Dict[int, dict]
+    """将价格数据转换为 {type_id: {buy, volume}}，兼容旧 jita_prices 和新 price_* 格式。"""
     result = {}  # type: Dict[int, dict]
-    for k, v in raw.items():
-        jita = v.get("jita", {})
-        buy = jita.get("buy")
-        vol = v.get("volume", 0) or jita.get("volume", 0)
-        result[int(k)] = {
-            "buy": buy if isinstance(buy, (int, float)) else 0,
-            "volume": vol if isinstance(vol, (int, float)) else 0,
-        }
+    if isinstance(raw, dict):
+        for k, v in raw.items():
+            jita = v.get("jita", {})
+            buy = jita.get("buy", jita.get("lowest", 0))
+            vol = v.get("volume", 0) or jita.get("volume", 0)
+            result[int(k)] = {
+                "buy": buy if isinstance(buy, (int, float)) else 0,
+                "volume": vol if isinstance(vol, (int, float)) else 0,
+            }
+        return result
+
+    if isinstance(raw, list):
+        for row in raw:
+            tid = row.get("id")
+            if tid is None:
+                continue
+            region_data = row.get(region_key, {})
+            buy = region_data.get("lowest", 0)
+            vol = region_data.get("volume", 0)
+            result[int(tid)] = {
+                "buy": buy if isinstance(buy, (int, float)) else 0,
+                "volume": vol if isinstance(vol, (int, float)) else 0,
+            }
     return result
 
 

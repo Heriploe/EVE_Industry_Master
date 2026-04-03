@@ -6,7 +6,7 @@ from pathlib import Path
 from typing import List, Tuple
 
 REPO_ROOT = Path(__file__).resolve().parent
-DEFAULT_JITA_PRICES = "Cache/Input/jita_prices.json"
+DEFAULT_JITA_PRICES = "Cache/Market/price_materials_all.json"
 DEFAULT_FINAL_PRODUCTS = "Cache/Output/final_products.csv"
 DEFAULT_OUTPUT = "Cache/Output/final_products_filtered.csv"
 DEFAULT_MIN_VALUE = 25_000_000
@@ -53,18 +53,32 @@ def load_simple_rows(path: Path) -> List[str]:
 def load_prices(path: Path):
     data = json.load(path.open("r", encoding="utf-8"))
     by_name = {}
-    for row in data.values():
-        zh = (row or {}).get("zh")
-        en = (row or {}).get("en")
-        buy = ((row or {}).get("jita") or {}).get("buy", 0)
-        try:
-            price = float(buy or 0)
-        except (TypeError, ValueError):
-            price = 0.0
-        if zh:
-            by_name[zh] = price
-        if en:
-            by_name[en] = price
+    if isinstance(data, dict):
+        for row in data.values():
+            zh = (row or {}).get("zh")
+            en = (row or {}).get("en")
+            buy = ((row or {}).get("jita") or {}).get("lowest", ((row or {}).get("jita") or {}).get("buy", 0))
+            try:
+                price = float(buy or 0)
+            except (TypeError, ValueError):
+                price = 0.0
+            if zh:
+                by_name[zh] = price
+            if en:
+                by_name[en] = price
+    elif isinstance(data, list):
+        for row in data:
+            region_data = (row or {}).get("jita", {})
+            try:
+                price = float((region_data or {}).get("lowest", 0) or 0)
+            except (TypeError, ValueError):
+                price = 0.0
+            zh = (row or {}).get("zh")
+            en = (row or {}).get("en")
+            if zh:
+                by_name[zh] = price
+            if en:
+                by_name[en] = price
     return by_name
 
 

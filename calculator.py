@@ -104,6 +104,7 @@ MODULE_PROFIT_FACTOR = _cfg("module_profit_factor",
                        _cfg("moudle_profit_factor", 1.0, float), float)
 RIG_PROFIT_FACTOR    = _cfg("rig_profit_factor",    1.0, float)
 MATERIAL_COST_FACTOR = _cfg("material_cost_factor", 1.0, float)
+PRICE_REGION_KEY = _cfg("price_region_key", "jita")
 
 # preset 名称
 BLUEPRINTS_PRESET = _cfg("blueprints_preset", "items_to_sell")
@@ -117,7 +118,7 @@ COMPONENTS_PRESET = _cfg("components_preset", "components_all")
 # 文件路径
 output_dir             = _rpath("output_dir",         "Cache/Output")
 INVENTORY_JSON         = _rpath("inventory_json",     "Cache/Asset/Corp/final_non_blueprints.json")
-JITA_PRICES_JSON       = _rpath("jita_prices_json",   "Cache/Input/jita_prices.json")
+JITA_PRICES_JSON       = _rpath("jita_prices_json",   "Cache/Market/price_materials_all.json")
 TYPES_JSON             = _rpath_paths("types_json",   "Data/types.json")
 TYPES_VOLUME_JSON      = _rpath("types_volume_json",  str(TYPES_JSON))
 BLUEPRINTS_ALIAS_JSON  = _rpath_paths("blueprints_alias_json",  "Data/Blueprints/alias.json")
@@ -159,7 +160,7 @@ for bp in selected_blueprints:
             final_product_ids.add(int(p["typeID"]))
 
 with JITA_PRICES_JSON.open("r", encoding="utf-8") as f:
-    jita_prices = build_jita_prices(json.load(f))
+    jita_prices = build_jita_prices(json.load(f), region_key=PRICE_REGION_KEY)
 
 types_map = load_types_map(TYPES_JSON)
 
