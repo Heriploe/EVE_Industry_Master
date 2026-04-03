@@ -267,15 +267,54 @@ def parse_inventory(raw):
 # 价格 & 体积
 # ---------------------------------------------------------------------------
 
+def _normalize_region_key(region_key):
+    # type: (str) -> str
+    """将配置中的区域名标准化为价格 JSON 中的键名。"""
+    key = (region_key or "jita").strip().lower()
+    alias_map = {
+        "vale of the silent": "vale_of_the_silent",
+        "vale_of_the_silent": "vale_of_the_silent",
+        "vale of slience": "vale_of_the_silent",
+        "vale_of_slience": "vale_of_the_silent",
+    }
+    return alias_map.get(key, key.replace(" ", "_"))
+
+
+def _extract_market_price(entry, primary_region):
+    # type: (dict, str) -> Tuple[float, float]
+    """返回 (buy, volume)。当主区域价格缺失/为 0 时回退到 jita。"""
+    region_data = entry.get(primary_region, {}) if isinstance(entry, dict) else {}
+    jita_data = entry.get("jita", {}) if isinstance(entry, dict) else {}
+
+    buy = region_data.get("lowest", 0)
+    if not isinstance(buy, (int, float)) or buy <= 0:
+        buy = jita_data.get("lowest", 0)
+
+    volume = region_data.get("volume", 0)
+    if not isinstance(volume, (int, float)) or volume <= 0:
+        volume = jita_data.get("volume", 0)
+
+    return (
+        buy if isinstance(buy, (int, float)) else 0,
+        volume if isinstance(volume, (int, float)) else 0,
+    )
+
+
 def build_jita_prices(raw, region_key="jita"):
     # type: (Any, str) -> Dict[int, dict]
-    """将价格数据转换为 {type_id: {buy, volume}}，兼容旧 jita_prices 和新 price_* 格式。"""
+    """将价格数据转换为 {type_id: {buy, volume}}，支持区域选择与 jita 回退。"""
+    region = _normalize_region_key(region_key)
     result = {}  # type: Dict[int, dict]
     if isinstance(raw, dict):
         for k, v in raw.items():
-            jita = v.get("jita", {})
-            buy = jita.get("buy", jita.get("lowest", 0))
-            vol = v.get("volume", 0) or jita.get("volume", 0)
+            buy, vol = _extract_market_price(v, region)
+            if isinstance(v, dict) and region == "jita":
+                # 兼容历史格式：{"jita":{"buy":...}}
+                jita = v.get("jita", {})
+                if buy <= 0:
+                    buy = jita.get("buy", jita.get("lowest", 0))
+                if vol <= 0:
+                    vol = v.get("volume", 0) or jita.get("volume", 0)
             result[int(k)] = {
                 "buy": buy if isinstance(buy, (int, float)) else 0,
                 "volume": vol if isinstance(vol, (int, float)) else 0,
@@ -287,9 +326,7 @@ def build_jita_prices(raw, region_key="jita"):
             tid = row.get("id")
             if tid is None:
                 continue
-            region_data = row.get(region_key, {})
-            buy = region_data.get("lowest", 0)
-            vol = region_data.get("volume", 0)
+            buy, vol = _extract_market_price(row, region)
             result[int(tid)] = {
                 "buy": buy if isinstance(buy, (int, float)) else 0,
                 "volume": vol if isinstance(vol, (int, float)) else 0,

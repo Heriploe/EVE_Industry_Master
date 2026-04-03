@@ -1,5 +1,6 @@
 import unittest
 
+from Utilities.blueprint_utils import build_jita_prices
 from Utilities.industry_cost import invention_T2_runs
 
 
@@ -33,6 +34,32 @@ class TestIndustryCostUtilities(unittest.TestCase):
         self.assertAlmostEqual(required_runs, 1 / (0.34 * 1.8 * 1.2) / (1 + 4))
         self.assertEqual(me, -1)
         self.assertEqual(te, 4)
+
+
+class TestPriceRegionFallback(unittest.TestCase):
+    def test_vale_price_fallback_to_jita_when_missing(self):
+        raw = [
+            {
+                "id": 34,
+                "jita": {"lowest": 100.0, "volume": 1000},
+                "vale_of_the_silent": {"lowest": 0.0, "volume": 0.0},
+            }
+        ]
+        prices = build_jita_prices(raw, region_key="vale of slience")
+        self.assertEqual(prices[34]["buy"], 100.0)
+        self.assertEqual(prices[34]["volume"], 1000)
+
+    def test_vale_price_used_when_available(self):
+        raw = [
+            {
+                "id": 35,
+                "jita": {"lowest": 100.0, "volume": 1000},
+                "vale_of_the_silent": {"lowest": 120.0, "volume": 10.0},
+            }
+        ]
+        prices = build_jita_prices(raw, region_key="vale_of_the_silent")
+        self.assertEqual(prices[35]["buy"], 120.0)
+        self.assertEqual(prices[35]["volume"], 10.0)
 
 
 if __name__ == "__main__":
