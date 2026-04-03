@@ -186,11 +186,11 @@ def _load_preset_price_settings(config_path):
 
     def _section(name):
         if not cfg.has_section(name):
-            return {"region": "jita", "price_field": "buy", "volume_field": "volume"}
+            return {"region": "jita", "price_field": "buy", "volume_region": "jita"}
         region = cfg.get(name, "region", fallback="jita")
         price_field = cfg.get(name, "price_field", fallback="buy")
-        volume_field = cfg.get(name, "volume_field", fallback="volume")
-        return {"region": region, "price_field": price_field, "volume_field": volume_field}
+        volume_region = cfg.get(name, "volume_region", fallback="jita")
+        return {"region": region, "price_field": price_field, "volume_region": volume_region}
 
     return {
         "blueprints_preset": _section("blueprints_preset"),
@@ -240,7 +240,7 @@ def _get_item_price_rule(tid):
         return preset_price_settings["components_preset"]
     if tid in final_product_ids:
         return preset_price_settings["blueprints_preset"]
-    return {"region": "jita", "price_field": "buy", "volume_field": "volume"}
+    return {"region": "jita", "price_field": "buy", "volume_region": "jita"}
 
 
 def get_item_price(tid):
@@ -250,7 +250,7 @@ def get_item_price(tid):
 
 def get_item_volume(tid):
     rule = _get_item_price_rule(tid)
-    return get_price(prices, tid, region_key=rule["region"], field=rule["volume_field"], fallback_region="jita")
+    return get_volume(prices, tid, region_key=rule["volume_region"], fallback_region="jita")
 
 
 jita_price_view = {
