@@ -1,5 +1,6 @@
 import configparser
 import json
+import re
 from pathlib import Path
 
 REPO_ROOT = next(
@@ -46,16 +47,98 @@ def _load_blueprints(blueprints_yaml_path=None):
         with open(path, "r", encoding="utf-8") as f:
             return yaml.safe_load(f)
     except ModuleNotFoundError:
-        fallback_path = REPO_ROOT / "Optimized Calculator/Source/blueprints_merged.json"
-        with open(fallback_path, "r", encoding="utf-8") as f:
-            blueprint_list = json.load(f)
-        return {
-            int(item["blueprintTypeID"]): {
-                "activities": {k: v for k, v in item.items() if k in {"manufacturing", "reaction", "copying", "invention"}}
-            }
-            for item in blueprint_list
-            if "blueprintTypeID" in item
-        }
+        # 轻量 fallback：无 PyYAML 时，手动解析 EVE SDE blueprints.yaml 中我们关心的字段。
+        return _load_blueprints_from_yaml_text(path)
+
+
+def _load_blueprints_from_yaml_text(path):
+    blueprints = {}
+    current_bp_id = None
+    current_activity = None
+    current_list = None
+    current_item = None
+
+    def _ensure_bp(bp_id):
+        if bp_id not in blueprints:
+            blueprints[bp_id] = {"activities": {}}
+        return blueprints[bp_id]
+
+    with open(path, "r", encoding="utf-8") as f:
+        for raw in f:
+            line = raw.rstrip("\n")
+            if not line.strip():
+                continue
+            indent = len(line) - len(line.lstrip(" "))
+            stripped = line.strip()
+
+            m_bp = re.match(r"^(\d+):$", stripped)
+            if indent == 0 and m_bp:
+                current_bp_id = int(m_bp.group(1))
+                _ensure_bp(current_bp_id)
+                current_activity = None
+                current_list = None
+                current_item = None
+                continue
+
+            if current_bp_id is None:
+                continue
+
+            m_bp_type = re.match(r"^blueprintTypeID:\s*(\d+)$", stripped)
+            if m_bp_type:
+                _ensure_bp(current_bp_id)["blueprintTypeID"] = int(m_bp_type.group(1))
+                continue
+
+            m_act = re.match(r"^(manufacturing|reaction|copying|invention):$", stripped)
+            if indent == 4 and m_act:
+                current_activity = m_act.group(1)
+                _ensure_bp(current_bp_id)["activities"].setdefault(current_activity, {})
+                current_list = None
+                current_item = None
+                continue
+
+            if current_activity is None:
+                continue
+
+            if indent == 6 and stripped in {"materials:", "products:"}:
+                current_list = stripped[:-1]
+                _ensure_bp(current_bp_id)["activities"][current_activity].setdefault(current_list, [])
+                current_item = None
+                continue
+
+            if current_list and indent == 6 and stripped.startswith("- "):
+                current_item = {}
+                _ensure_bp(current_bp_id)["activities"][current_activity][current_list].append(current_item)
+                payload = stripped[2:]
+                if ":" in payload:
+                    k, v = payload.split(":", 1)
+                    current_item[k.strip()] = _yaml_scalar(v.strip())
+                continue
+
+            if current_list and current_item is not None and indent >= 8 and ":" in stripped:
+                k, v = stripped.split(":", 1)
+                current_item[k.strip()] = _yaml_scalar(v.strip())
+                continue
+
+            if indent == 6 and ":" in stripped and current_list is None:
+                k, v = stripped.split(":", 1)
+                _ensure_bp(current_bp_id)["activities"][current_activity][k.strip()] = _yaml_scalar(v.strip())
+                continue
+
+    return blueprints
+
+
+def _yaml_scalar(value):
+    if value == "" or value is None:
+        return ""
+    low = value.lower()
+    if low in {"true", "false"}:
+        return low == "true"
+    try:
+        if "." in value:
+            return float(value)
+        return int(value)
+    except ValueError:
+        return value
 
 
 def _load_t2_t1_pairs(t2_t1_json_path=None):
