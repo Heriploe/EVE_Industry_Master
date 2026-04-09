@@ -5,7 +5,7 @@ from pathlib import Path
 
 from Utilities.name_mapping import load_types_map
 
-REPO_ROOT = Path(__file__).resolve().parent
+from Utilities.config_utils import REPO_ROOT
 DEFAULT_CORP_DIR = REPO_ROOT / "Cache" / "Asset" / "Corp"
 DEFAULT_OUTPUT_DIR = REPO_ROOT / "Cache" / "Output" / "Blueprints"
 DEFAULT_TYPES_FILE = REPO_ROOT / "Data" / "types.json"

@@ -1,161 +1,122 @@
+"""
+industry_cost.py
+================
+T2 蓝图成本、发明流程计算及 YAML 蓝图加载工具。
+
+修复：
+  - get_T1_from_T2 / _get_t2_from_t1 改为模块级缓存，不再每次重新读磁盘
+  - 移除 REPO_ROOT 自定义查找逻辑，改用 config_utils
+  - load_blueprints_from_file 与 blueprint_utils 共用同一实现
+
+兼容 Python 3.8+。
+"""
+
 import configparser
 import json
 import re
+from functools import lru_cache
 from pathlib import Path
+from typing import Dict, List, Optional, Tuple
 
-REPO_ROOT = next(
-    (p for p in [Path(__file__).resolve().parent, *Path(__file__).resolve().parent.parents] if (p / "config.ini").exists()),
-    Path(__file__).resolve().parent,
-)
-
-
-def _resolve_shared_path(config_key, default_rel_path):
-    config = configparser.ConfigParser()
-    config.read(REPO_ROOT / "config.ini", encoding="utf-8")
-
-    path_value = config.get("paths", config_key, fallback=default_rel_path)
-    candidate = Path(path_value)
-    if not candidate.is_absolute():
-        candidate = REPO_ROOT / candidate
-    return candidate
+from Utilities.config_utils import REPO_ROOT, load_config, resolve_config_path
+from Utilities.blueprint_utils import load_blueprints_from_file
 
 
-def _load_types_map(types_json_path=None):
+# ---------------------------------------------------------------------------
+# 内部配置加载（向后兼容旧调用方）
+# ---------------------------------------------------------------------------
+
+def _load_industry_cost_config() -> configparser.ConfigParser:
+    return load_config()
+
+
+def _resolve_shared_path(config_key: str, default_rel_path: str) -> Path:
+    cfg = load_config()
+    return resolve_config_path(cfg, "paths", config_key, default_rel_path)
+
+
+# ---------------------------------------------------------------------------
+# 类型数据加载
+# ---------------------------------------------------------------------------
+
+def _load_types_map(types_json_path=None) -> Dict[int, dict]:
     path = Path(types_json_path) if types_json_path else _resolve_shared_path("types_json", "Data/types.json")
     with open(path, "r", encoding="utf-8") as f:
         types_list = json.load(f)
     return {int(item["id"]): item for item in types_list if "id" in item}
 
 
-def _load_blueprints(blueprints_yaml_path=None):
+# ---------------------------------------------------------------------------
+# 蓝图加载（统一复用 blueprint_utils 实现）
+# ---------------------------------------------------------------------------
+
+def _load_blueprints(blueprints_yaml_path=None) -> Dict[int, dict]:
+    """加载蓝图文件，复用 blueprint_utils.load_blueprints_from_file。"""
     path = Path(blueprints_yaml_path) if blueprints_yaml_path else _resolve_shared_path("blueprints_yaml", "Data/blueprints.yaml")
-
-    if path.suffix.lower() == ".json":
-        with open(path, "r", encoding="utf-8") as f:
-            blueprint_list = json.load(f)
-        return {
-            int(item["blueprintTypeID"]): {
-                "activities": {k: v for k, v in item.items() if k in {"manufacturing", "reaction", "copying", "invention"}}
-            }
-            for item in blueprint_list
-            if "blueprintTypeID" in item
-        }
-
-    try:
-        import yaml
-
-        with open(path, "r", encoding="utf-8") as f:
-            return yaml.safe_load(f)
-    except ModuleNotFoundError:
-        # 轻量 fallback：无 PyYAML 时，手动解析 EVE SDE blueprints.yaml 中我们关心的字段。
-        return _load_blueprints_from_yaml_text(path)
+    return load_blueprints_from_file(path)
 
 
-def _load_blueprints_from_yaml_text(path):
-    blueprints = {}
-    current_bp_id = None
-    current_activity = None
-    current_list = None
-    current_item = None
+# ---------------------------------------------------------------------------
+# T2/T1 映射（模块级缓存，避免每次调用重新读磁盘）
+# ---------------------------------------------------------------------------
 
-    def _ensure_bp(bp_id):
-        if bp_id not in blueprints:
-            blueprints[bp_id] = {"activities": {}}
-        return blueprints[bp_id]
-
-    with open(path, "r", encoding="utf-8") as f:
-        for raw in f:
-            line = raw.rstrip("\n")
-            if not line.strip():
-                continue
-            indent = len(line) - len(line.lstrip(" "))
-            stripped = line.strip()
-
-            m_bp = re.match(r"^(\d+):$", stripped)
-            if indent == 0 and m_bp:
-                current_bp_id = int(m_bp.group(1))
-                _ensure_bp(current_bp_id)
-                current_activity = None
-                current_list = None
-                current_item = None
-                continue
-
-            if current_bp_id is None:
-                continue
-
-            m_bp_type = re.match(r"^blueprintTypeID:\s*(\d+)$", stripped)
-            if m_bp_type:
-                _ensure_bp(current_bp_id)["blueprintTypeID"] = int(m_bp_type.group(1))
-                continue
-
-            m_act = re.match(r"^(manufacturing|reaction|copying|invention):$", stripped)
-            if indent == 4 and m_act:
-                current_activity = m_act.group(1)
-                _ensure_bp(current_bp_id)["activities"].setdefault(current_activity, {})
-                current_list = None
-                current_item = None
-                continue
-
-            if current_activity is None:
-                continue
-
-            if indent == 6 and stripped in {"materials:", "products:"}:
-                current_list = stripped[:-1]
-                _ensure_bp(current_bp_id)["activities"][current_activity].setdefault(current_list, [])
-                current_item = None
-                continue
-
-            if current_list and indent == 6 and stripped.startswith("- "):
-                current_item = {}
-                _ensure_bp(current_bp_id)["activities"][current_activity][current_list].append(current_item)
-                payload = stripped[2:]
-                if ":" in payload:
-                    k, v = payload.split(":", 1)
-                    current_item[k.strip()] = _yaml_scalar(v.strip())
-                continue
-
-            if current_list and current_item is not None and indent >= 8 and ":" in stripped:
-                k, v = stripped.split(":", 1)
-                current_item[k.strip()] = _yaml_scalar(v.strip())
-                continue
-
-            if indent == 6 and ":" in stripped and current_list is None:
-                k, v = stripped.split(":", 1)
-                _ensure_bp(current_bp_id)["activities"][current_activity][k.strip()] = _yaml_scalar(v.strip())
-                continue
-
-    return blueprints
+_T2_T1_CACHE: Optional[List[Tuple[int, int]]] = None
+_T2_T1_PATH_USED: Optional[str] = None
 
 
-def _yaml_scalar(value):
-    if value == "" or value is None:
-        return ""
-    low = value.lower()
-    if low in {"true", "false"}:
-        return low == "true"
-    try:
-        if "." in value:
-            return float(value)
-        return int(value)
-    except ValueError:
-        return value
-
-
-def _load_t2_t1_pairs(t2_t1_json_path=None):
+def _load_t2_t1_pairs(t2_t1_json_path=None) -> List[Tuple[int, int]]:
+    """加载 T2→T1 映射对，相同路径只读一次磁盘。"""
+    global _T2_T1_CACHE, _T2_T1_PATH_USED
     path = Path(t2_t1_json_path) if t2_t1_json_path else _resolve_shared_path("t2_t1_json", "Data/T2_T1.json")
-    with open(path, "r", encoding="utf-8") as f:
-        pairs = json.load(f)
-    return [(int(pair[0]), int(pair[1])) for pair in pairs if isinstance(pair, list) and len(pair) >= 2]
+    path_str = str(path)
+    if _T2_T1_CACHE is None or _T2_T1_PATH_USED != path_str:
+        with open(path, "r", encoding="utf-8") as f:
+            pairs = json.load(f)
+        _T2_T1_CACHE = [
+            (int(pair[0]), int(pair[1]))
+            for pair in pairs
+            if isinstance(pair, list) and len(pair) >= 2
+        ]
+        _T2_T1_PATH_USED = path_str
+    return _T2_T1_CACHE
 
 
-def _load_price_adjusted_map(price_adjusted_json_path=None):
+def _build_t2_to_t1_map(t2_t1_json_path=None) -> Dict[int, int]:
+    """返回 {t2_blueprint_id: t1_blueprint_id} 字典。"""
+    return {t2: t1 for t2, t1 in _load_t2_t1_pairs(t2_t1_json_path)}
+
+
+def get_T1_from_T2(t2_blueprint_id, t2_t1_json_path=None) -> Optional[int]:
+    """通过 T2_T1.json 将 T2 蓝图 ID 映射到 T1 蓝图 ID（缓存版）。"""
+    mapping = _build_t2_to_t1_map(t2_t1_json_path)
+    return mapping.get(int(t2_blueprint_id))
+
+
+def _get_t2_from_t1(t1_blueprint_id, t2_t1_json_path=None) -> Optional[int]:
+    """反查：将 T1 蓝图 ID 映射到 T2 蓝图 ID（缓存版）。"""
+    t1_id = int(t1_blueprint_id)
+    for t2, t1 in _load_t2_t1_pairs(t2_t1_json_path):
+        if t1 == t1_id:
+            return t2
+    return None
+
+
+# ---------------------------------------------------------------------------
+# 调整价格
+# ---------------------------------------------------------------------------
+
+def _load_price_adjusted_map(price_adjusted_json_path=None) -> Dict[int, dict]:
     path = Path(price_adjusted_json_path) if price_adjusted_json_path else _resolve_shared_path("price_adjusted_json", "Data/price_adjusted.json")
     with open(path, "r", encoding="utf-8") as f:
         rows = json.load(f)
     return {int(item["type_id"]): item for item in rows if "type_id" in item}
 
 
-def _get_material_unit_price(type_id, *, source, types_map, price_adjusted_map=None):
+# ---------------------------------------------------------------------------
+# 材料单价
+# ---------------------------------------------------------------------------
+
+def _get_material_unit_price(type_id, *, source, types_map, price_adjusted_map=None) -> float:
     source = source.lower()
     if source == "types_base":
         value = types_map.get(type_id, {}).get("basePrice")
@@ -165,37 +126,26 @@ def _get_material_unit_price(type_id, *, source, types_map, price_adjusted_map=N
         value = (price_adjusted_map or {}).get(type_id, {}).get("average_price")
     else:
         raise ValueError("base_price_source 必须是 adjusted_price、average_price 或 types_base")
-
     return float(value) if isinstance(value, (int, float)) else 0.0
 
 
-def get_T1_from_T2(t2_blueprint_id, t2_t1_json_path=None):
-    """通过 T2_T1.json 将 T2 蓝图ID映射到 T1 蓝图ID。"""
-    t2_blueprint_id = int(t2_blueprint_id)
-    for t2_id, t1_blueprint_id in _load_t2_t1_pairs(t2_t1_json_path=t2_t1_json_path):
-        if t2_id == t2_blueprint_id:
-            return t1_blueprint_id
-    return None
+# ---------------------------------------------------------------------------
+# 蓝图查找辅助
+# ---------------------------------------------------------------------------
 
-
-def _get_t2_from_t1(t1_blueprint_id, t2_t1_json_path=None):
-    t1_blueprint_id = int(t1_blueprint_id)
-    for t2_blueprint_id, t1_id in _load_t2_t1_pairs(t2_t1_json_path=t2_t1_json_path):
-        if t1_id == t1_blueprint_id:
-            return t2_blueprint_id
-    return None
-
-
-def _find_blueprint_by_product_id(product_id, blueprints):
+def _find_blueprint_by_product_id(product_id: int, blueprints: dict) -> Optional[int]:
     product_id = int(product_id)
     for bp_id, bp_data in blueprints.items():
-        activities = bp_data.get("activities", {})
-        for activity_data in activities.values():
+        for activity_data in bp_data.get("activities", {}).values():
             for product in activity_data.get("products", []):
                 if int(product.get("typeID", -1)) == product_id:
                     return int(bp_id)
     return None
 
+
+# ---------------------------------------------------------------------------
+# EIV / 基础成本
+# ---------------------------------------------------------------------------
 
 def get_base_cost(
     blueprint_id,
@@ -206,16 +156,12 @@ def get_base_cost(
     t2_t1_json_path=None,
     base_price_source=None,
     price_adjusted_json_path=None,
-):
+) -> float:
     """
     计算 EIV（materials 的 basePrice * quantity 之和）。
 
-    - activity == "copy": 使用 manufacturing 活动材料
-    - activity == "invention": 需传入 invention_product_id，按对应 T2 蓝图的 manufacturing 活动计算
-    - base_price_source:
-      - "types_base"：使用 types.json 的 basePrice
-      - "adjusted_price"：使用 price_adjusted.json 的 adjusted_price
-      - "average_price"：使用 price_adjusted.json 的 average_price
+    - activity == "copy":      使用 manufacturing 活动材料
+    - activity == "invention": 需传入 invention_product_id，按对应 T2 蓝图 manufacturing 计算
     """
     blueprint_id = int(blueprint_id)
     activity = activity.lower()
@@ -276,16 +222,13 @@ def get_base_cost(
     return eiv
 
 
-def _load_industry_cost_config():
-    config = configparser.ConfigParser()
-    config.read(REPO_ROOT / "config.ini", encoding="utf-8")
-    return config
+# ---------------------------------------------------------------------------
+# 活动成本
+# ---------------------------------------------------------------------------
 
-
-def _get_activity_modifiers(activity, config):
+def _get_activity_modifiers(activity: str, config) -> dict:
     section = "industry_cost"
     activity = activity.lower()
-
     return {
         "system_modifier": config.getfloat(section, f"system_modifier_{activity}", fallback=1.0),
         "facility_reduction": config.getfloat(section, f"facility_reduction_{activity}", fallback=0.0),
@@ -303,11 +246,11 @@ def get_activity_cost(
     t2_t1_json_path=None,
     base_price_source=None,
     price_adjusted_json_path=None,
-):
+) -> float:
     """
     计算活动总花费：
       EIV = get_base_cost(...)
-      JCB = EIV (manufacturing) 或 0.02 * EIV (其他活动)
+      JCB = EIV (manufacturing/reaction) 或 0.02 * EIV (其他活动)
       单流程费用 = JCB * system_modifier * (1 - facility_reduction) * (1 - rig_reduction) + 0.04 * JCB
       总费用 = 单流程费用 * runs
     """
@@ -325,10 +268,7 @@ def get_activity_cost(
         price_adjusted_json_path=price_adjusted_json_path,
     )
 
-    if activity == "manufacturing" or activity == "reaction":
-        jcb = eiv
-    else:
-        jcb = 0.02 * eiv
+    jcb = eiv if activity in {"manufacturing", "reaction"} else 0.02 * eiv
 
     config = _load_industry_cost_config()
     modifiers = _get_activity_modifiers(activity, config)
@@ -343,16 +283,19 @@ def get_activity_cost(
     return per_run_cost * runs
 
 
-def _load_decryptor_modifiers(decryptor_modifier_csv_path=None):
+# ---------------------------------------------------------------------------
+# 解码器
+# ---------------------------------------------------------------------------
+
+def _load_decryptor_modifiers(decryptor_modifier_csv_path=None) -> dict:
     path = (
         Path(decryptor_modifier_csv_path)
         if decryptor_modifier_csv_path
         else REPO_ROOT / "Data/decryptor_modifier.csv"
     )
-
     modifiers = {}
     with open(path, "r", encoding="utf-8") as f:
-        header = f.readline()
+        f.readline()  # 跳过表头
         for line in f:
             line = line.strip()
             if not line:
@@ -360,20 +303,13 @@ def _load_decryptor_modifiers(decryptor_modifier_csv_path=None):
             cols = line.split()
             if len(cols) < 5:
                 continue
-
             decryptor_id = int(cols[0])
-            probability_multiplier = float(cols[1])
-            max_run_modifier = int(cols[2].replace("+", ""))
-            me_modifier = int(cols[3].replace("+", ""))
-            te_modifier = int(cols[4].replace("+", ""))
-
             modifiers[decryptor_id] = {
-                "probability_multiplier": probability_multiplier,
-                "max_run_modifier": max_run_modifier,
-                "me_modifier": me_modifier,
-                "te_modifier": te_modifier,
+                "probability_multiplier": float(cols[1]),
+                "max_run_modifier": int(cols[2].replace("+", "")),
+                "me_modifier": int(cols[3].replace("+", "")),
+                "te_modifier": int(cols[4].replace("+", "")),
             }
-
     return modifiers
 
 
@@ -382,19 +318,19 @@ def invention_T2_runs(
     decryptor_modifier_csv_path=None,
     base_success_rate=0.34,
     base_runs=1,
-    base_me=2,
-    base_te=4,
+    base_me=0,
+    base_te=0,
     invention_skill_modifier=None,
-):
+) -> Tuple[float, int, int]:
     """
-    计算产出 1 单位 T2 蓝图所需的平均发明流程数，以及产出蓝图的 ME/TE。
+    计算产出 1 单位 T2 蓝图所需的平均发明流程数，以及产出蓝图的 ME/TE 修正量。
 
-    公式：
-      modified_success_rate = base_success_rate * probability_multiplier * invention_skill_modifier
-      modified_runs = base_runs + max_run_modifier
-      required_invention_runs = 1 / modified_success_rate / modified_runs
+    参数：
+      base_me / base_te：基础 ME/TE（默认 0，即只返回解码器修正值）。
+        若需要计算含 T2 BPC 固有基础值（EVE 中通常 ME=2, TE=4）的绝对 ME/TE，
+        请显式传入 base_me=2, base_te=4（build_t2_blueprint_costs.py 中已如此调用）。
 
-    若 decryptor_id 为空或不在 decryptor_modifier.csv 中，则按无修正处理。
+    返回 (required_invention_runs, me, te)。
     """
     modifiers = _load_decryptor_modifiers(decryptor_modifier_csv_path=decryptor_modifier_csv_path)
     decryptor = modifiers.get(int(decryptor_id), {}) if decryptor_id is not None else {}

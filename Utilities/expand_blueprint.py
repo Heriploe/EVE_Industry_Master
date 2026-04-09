@@ -1,96 +1,65 @@
+"""
+expand_blueprint.py
+===================
+蓝图依赖树展开工具。
+
+修复：
+  - 移除硬编码的旧 fallback 路径 "Optimized Calculator/Source/blueprints_merged.json"
+  - 统一使用 blueprint_utils.load_blueprints_from_file 加载蓝图
+  - 使用 config_utils.REPO_ROOT
+
+兼容 Python 3.8+。
+"""
+
 import argparse
-import configparser
 import json
 from pathlib import Path
 
-REPO_ROOT = next(
-    (p for p in [Path(__file__).resolve().parent, *Path(__file__).resolve().parent.parents] if (p / "config.ini").exists()),
-    Path(__file__).resolve().parent,
-)
+from Utilities.config_utils import REPO_ROOT, load_config, resolve_config_path
+from Utilities.blueprint_utils import load_blueprints_from_file
 
-
-def _resolve_shared_path(config_key, default_rel_path):
-    config = configparser.ConfigParser()
-    config.read(REPO_ROOT / "config.ini", encoding="utf-8")
-
-    path_value = config.get("paths", config_key, fallback=default_rel_path)
-    candidate = Path(path_value)
-    if not candidate.is_absolute():
-        candidate = REPO_ROOT / candidate
-    return candidate
+ACTIVITY_PRIORITY = ["manufacturing", "reaction", "copying", "invention"]
 
 
 def _load_blueprints(blueprints_yaml_path=None):
-    path = Path(blueprints_yaml_path) if blueprints_yaml_path else _resolve_shared_path("blueprints_yaml", "Data/blueprints.yaml")
-
-    if path.suffix.lower() == ".json":
-        with open(path, "r", encoding="utf-8") as f:
-            blueprint_list = json.load(f)
-        return {
-            int(item["blueprintTypeID"]): {
-                "activities": {k: v for k, v in item.items() if k in {"manufacturing", "reaction", "copying", "invention"}}
-            }
-            for item in blueprint_list
-            if "blueprintTypeID" in item
-        }
-
-    try:
-        import yaml
-
-        with open(path, "r", encoding="utf-8") as f:
-            return yaml.safe_load(f)
-    except ModuleNotFoundError:
-        fallback_path = REPO_ROOT / "Optimized Calculator/Source/blueprints_merged.json"
-        with open(fallback_path, "r", encoding="utf-8") as f:
-            blueprint_list = json.load(f)
-        return {
-            int(item["blueprintTypeID"]): {
-                "activities": {k: v for k, v in item.items() if k in {"manufacturing", "reaction", "copying", "invention"}}
-            }
-            for item in blueprint_list
-            if "blueprintTypeID" in item
-        }
+    if blueprints_yaml_path:
+        path = Path(blueprints_yaml_path)
+    else:
+        cfg = load_config()
+        path = resolve_config_path(cfg, "paths", "blueprints_yaml", "Data/blueprints.yaml")
+    return load_blueprints_from_file(path)
 
 
 def _build_product_index(blueprints, preferred_activity):
-    priority = [preferred_activity, "manufacturing", "reaction", "copying", "invention"]
-    ordered = []
-    for item in priority:
-        if item and item not in ordered:
-            ordered.append(item)
+    priority = []
+    for item in [preferred_activity] + ACTIVITY_PRIORITY:
+        if item and item not in priority:
+            priority.append(item)
 
     index = {}
-    for activity in ordered:
+    for activity in priority:
         for blueprint_id, bp_data in blueprints.items():
             activity_data = bp_data.get("activities", {}).get(activity)
             if not activity_data:
                 continue
-
             for product in activity_data.get("products", []):
                 product_id = int(product.get("typeID", -1))
                 if product_id < 0 or product_id in index:
                     continue
-
                 index[product_id] = {
                     "blueprint_id": int(blueprint_id),
                     "activity": activity,
                     "product_quantity": float(product.get("quantity", 1) or 1),
                 }
-
     return index
 
 
 def _get_products(blueprints, blueprint_id, activity):
     activity_data = blueprints.get(blueprint_id, {}).get("activities", {}).get(activity, {})
-    products = []
-    for product in activity_data.get("products", []):
-        products.append(
-            {
-                "typeID": int(product.get("typeID", -1)),
-                "quantity": float(product.get("quantity", 0) or 0),
-            }
-        )
-    return products
+    return [
+        {"typeID": int(p.get("typeID", -1)), "quantity": float(p.get("quantity", 0) or 0)}
+        for p in activity_data.get("products", [])
+    ]
 
 
 def _expand_node(blueprint_id, activity, required_runs, blueprints, product_index, path, depth_left):
@@ -107,15 +76,11 @@ def _expand_node(blueprint_id, activity, required_runs, blueprints, product_inde
     }
 
     expanded_steps = 0
-
     for material in activity_data.get("materials", []):
         material_type_id = int(material["typeID"])
         material_qty = float(material.get("quantity", 0)) * required_runs
 
-        material_entry = {
-            "typeID": material_type_id,
-            "quantity": material_qty,
-        }
+        material_entry = {"typeID": material_type_id, "quantity": material_qty}
 
         producer = product_index.get(material_type_id)
         if producer is None or depth_left <= 0:
@@ -148,7 +113,6 @@ def _expand_node(blueprint_id, activity, required_runs, blueprints, product_inde
             "activity": producer_activity,
             "runs": child_runs,
         }
-
         material_entry["child_blueprint"] = child_node
         node["materials"].append(material_entry)
 
@@ -178,10 +142,7 @@ def expand_blueprint(blueprint_id, activity="manufacturing", blueprints_yaml_pat
         depth_left=max_iterations,
     )
 
-    return {
-        "blueprint": tree,
-        "iterations": executed_steps,
-    }
+    return {"blueprint": tree, "iterations": executed_steps}
 
 
 def main():

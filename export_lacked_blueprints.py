@@ -6,7 +6,7 @@ from pathlib import Path
 from Utilities.name_mapping import load_types_map
 
 
-REPO_ROOT = Path(__file__).resolve().parent
+from Utilities.config_utils import REPO_ROOT
 DEFAULT_ALL_BLUEPRINTS_YAML = REPO_ROOT / "Cache/Input/blueprints.yaml"
 DEFAULT_OWNED_BLUEPRINT_MAP = REPO_ROOT / "Cache/Asset/Corp/blueprint_id_name_map.json"
 DEFAULT_T2_BLUEPRINTS = REPO_ROOT / "Cache/Input/T2.json"

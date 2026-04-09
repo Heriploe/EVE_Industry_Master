@@ -67,7 +67,7 @@
   {
     "name": "ships_to_sell",
     "children": [
-      "Ships.ships_T2_blueprints"
+      "Ships.ships_T1_blueprints"
     ]
   },
   {

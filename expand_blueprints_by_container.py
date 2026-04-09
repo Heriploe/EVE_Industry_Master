@@ -6,8 +6,9 @@ from pathlib import Path
 from typing import Dict, List, Tuple
 
 from Utilities.name_mapping import load_types_map
+from Utilities.blueprint_utils import load_blueprints_from_file as load_blueprints
 
-REPO_ROOT = Path(__file__).resolve().parent
+from Utilities.config_utils import REPO_ROOT
 DEFAULT_INPUT_BLUEPRINTS = "Cache/Output/Blueprints/A-优先_1051326279872.json"
 DEFAULT_INVENTORY_JSON = "Cache/Asset/Corp/final_non_blueprints.json"
 DEFAULT_OUTPUT_DIR = "Cache/Output/Expand_Blueprints"
@@ -33,36 +34,7 @@ def load_json(path: Path):
         return json.load(f)
 
 
-def load_blueprints(path: Path) -> dict:
-    if path.suffix.lower() == ".json":
-        items = load_json(path)
-    else:
-        try:
-            import yaml
-
-            with path.open("r", encoding="utf-8") as f:
-                return yaml.safe_load(f)
-        except ModuleNotFoundError:
-            fallback = REPO_ROOT / "Cache" / "Input" / "blueprints_merged.json"
-            if not fallback.exists():
-                raise RuntimeError(
-                    "未安装 PyYAML，且未找到可用的 JSON 回退文件 Cache/Input/blueprints_merged.json"
-                )
-            items = load_json(fallback)
-
-    result = {}
-    for item in items:
-        bp_id = item.get("blueprintTypeID")
-        if bp_id is None:
-            continue
-        result[int(bp_id)] = {
-            "activities": {
-                key: value
-                for key, value in item.items()
-                if key in {"manufacturing", "reaction", "copying", "invention"}
-            }
-        }
-    return result
+# load_blueprints 已替换为 blueprint_utils.load_blueprints_from_file
 
 
 def pick_activity(bp_data: dict) -> str:
