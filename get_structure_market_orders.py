@@ -102,8 +102,10 @@ def ensure_access_token(settings):
 def fetch_structure_info(structure_id, access_token, user_agent):
     headers = {"Authorization": f"Bearer {access_token}", "User-Agent": user_agent}
     r = requests.get(f"{ESI_BASE}/universe/structures/{structure_id}/", headers=headers, timeout=20)
-    if r.status_code == 404:
+    if r.status_code in {403, 404}:
         return {"structure_id": structure_id, "name": None, "note": "不可见或无权限"}
+    if r.status_code == 503:
+        return {"structure_id": structure_id, "name": None, "note": "ESI 暂时不可用(503)"}
     r.raise_for_status()
     data = r.json()
     return {"structure_id": structure_id, "name": data.get("name"), "solar_system_id": data.get("solar_system_id")}
