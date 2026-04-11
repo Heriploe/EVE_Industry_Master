@@ -4,7 +4,7 @@ import json
 import statistics
 import time
 from pathlib import Path
-from typing import Optional
+from typing import Optional, Tuple
 from urllib.error import HTTPError, URLError
 from urllib.request import urlopen
 
@@ -55,7 +55,7 @@ def parse_region_ids(raw: Optional[str]) -> list[int]:
     return result
 
 
-def _iqr_bounds(values: list[float]) -> tuple[float, float] | None:
+def _iqr_bounds(values: list[float]) -> Optional[Tuple[float, float]]:
     if len(values) < 4:
         return None
     sorted_vals = sorted(values)
