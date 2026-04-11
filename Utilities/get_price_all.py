@@ -2,6 +2,7 @@ import argparse
 import configparser
 import json
 import statistics
+import socket
 import time
 from pathlib import Path
 from typing import Optional, Tuple
@@ -15,6 +16,8 @@ DEFAULT_REQUEST_INTERVAL = 0.05
 DEFAULT_LOOKBACK_DAYS = 14
 DEFAULT_PRICE_FIELD = "lowest"
 DEFAULT_OUTPUT_NAME = "price_all.json"
+DEFAULT_MAX_RETRIES = 3
+DEFAULT_RETRY_BACKOFF = 1.5
 REGION_NAME_MAP = {
     10000002: "jita",
     10000003: "vale_of_the_silent",
@@ -96,9 +99,10 @@ def get_item_price(
     lookback_days: int = DEFAULT_LOOKBACK_DAYS,
     use_iqr_filter: bool = True,
     price_field: str = DEFAULT_PRICE_FIELD,
+    timeout_seconds: int = 30,
 ) -> dict:
     url = f"https://esi.evetech.net/latest/markets/{region_id}/history/?datasource={DATASOURCE}&type_id={type_id}"
-    with urlopen(url, timeout=30) as response:
+    with urlopen(url, timeout=timeout_seconds) as response:
         history = json.loads(response.read().decode("utf-8"))
 
     if not history:
@@ -147,9 +151,44 @@ def _load_existing_output(output_file: Path) -> dict[int, dict]:
 
 def _write_output(output_file: Path, entries_map: dict[int, dict]) -> None:
     payload = [entries_map[k] for k in sorted(entries_map.keys())]
-    with output_file.open("w", encoding="utf-8") as f:
+    temp_file = output_file.with_suffix(output_file.suffix + ".tmp")
+    with temp_file.open("w", encoding="utf-8") as f:
         json.dump(payload, f, ensure_ascii=False, indent=2)
+    temp_file.replace(output_file)
 
+
+
+
+def _fetch_with_retry(
+    type_id: int,
+    region_id: int,
+    lookback_days: int,
+    use_iqr_filter: bool,
+    price_field: str,
+    max_retries: int,
+    retry_backoff: float,
+    timeout_seconds: int,
+) -> dict:
+    attempts = max(int(max_retries), 1)
+    for attempt in range(1, attempts + 1):
+        try:
+            return get_item_price(
+                type_id=type_id,
+                region_id=region_id,
+                lookback_days=lookback_days,
+                use_iqr_filter=use_iqr_filter,
+                price_field=price_field,
+                timeout_seconds=timeout_seconds,
+            )
+        except (HTTPError, URLError, TimeoutError, socket.timeout) as exc:
+            if attempt == attempts:
+                raise exc
+            sleep_seconds = retry_backoff * attempt
+            print(
+                f"请求失败(将重试) region={region_id} type_id={type_id} "
+                f"attempt={attempt}/{attempts} err={exc}"
+            )
+            time.sleep(sleep_seconds)
 
 def _resolve_type_ids(types_file: Path) -> list[int]:
     types_data = load_json(types_file)
@@ -189,6 +228,9 @@ def main() -> None:
     parser.add_argument("--disable-iqr-filter", action="store_true", help="禁用 IQR 异常值过滤")
     parser.add_argument("--force-refresh", action="store_true", help="忽略已有缓存，强制重拉")
     parser.add_argument("--output-name", default=DEFAULT_OUTPUT_NAME, help=f"输出文件名，默认 {DEFAULT_OUTPUT_NAME}")
+    parser.add_argument("--max-retries", type=int, default=DEFAULT_MAX_RETRIES, help=f"单次请求最大重试次数，默认 {DEFAULT_MAX_RETRIES}")
+    parser.add_argument("--retry-backoff", type=float, default=DEFAULT_RETRY_BACKOFF, help=f"重试退避秒数系数，默认 {DEFAULT_RETRY_BACKOFF}")
+    parser.add_argument("--timeout-seconds", type=int, default=30, help="单次 HTTP 读取超时秒数")
     parser.add_argument("--dry-run", action="store_true", help="仅解析类型，不请求 ESI")
     args = parser.parse_args()
 
@@ -220,14 +262,17 @@ def main() -> None:
             if region_name in entry and not args.force_refresh:
                 continue
             try:
-                entry[region_name] = get_item_price(
+                entry[region_name] = _fetch_with_retry(
                     type_id=type_id,
                     region_id=region_id,
                     lookback_days=args.lookback_days,
                     use_iqr_filter=not args.disable_iqr_filter,
                     price_field=args.price_field,
+                    max_retries=args.max_retries,
+                    retry_backoff=args.retry_backoff,
+                    timeout_seconds=args.timeout_seconds,
                 )
-            except (HTTPError, URLError) as exc:
+            except (HTTPError, URLError, TimeoutError, socket.timeout) as exc:
                 print(f"请求失败 region={region_id} type_id={type_id}: {exc}")
                 entry[region_name] = {"average": 0.0, "highest": 0.0, "lowest": 0.0, "order_count": 0.0, "volume": 0.0}
 
