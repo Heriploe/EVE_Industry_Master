@@ -151,10 +151,31 @@ def _load_existing_output(output_file: Path) -> dict[int, dict]:
 
 def _write_output(output_file: Path, entries_map: dict[int, dict]) -> None:
     payload = [entries_map[k] for k in sorted(entries_map.keys())]
-    temp_file = output_file.with_suffix(output_file.suffix + ".tmp")
-    with temp_file.open("w", encoding="utf-8") as f:
-        json.dump(payload, f, ensure_ascii=False, indent=2)
-    temp_file.replace(output_file)
+    for attempt in range(1, 6):
+        try:
+            with output_file.open("w", encoding="utf-8") as f:
+                json.dump(payload, f, ensure_ascii=False, indent=2)
+            return
+        except PermissionError as exc:
+            if attempt == 5:
+                raise exc
+            sleep_seconds = 0.5 * attempt
+            print(f"写入文件被占用，稍后重试 attempt={attempt}/5: {exc}")
+            time.sleep(sleep_seconds)
+
+
+def _find_resume_index(ids: list[int], existing: dict[int, dict], region_ids: list[int]) -> int:
+    if not ids:
+        return 0
+
+    required_regions = [REGION_NAME_MAP.get(rid, f"region_{rid}") for rid in region_ids]
+    for idx, type_id in enumerate(ids):
+        entry = existing.get(type_id)
+        if not entry:
+            return idx
+        if any(region_name not in entry for region_name in required_regions):
+            return idx
+    return len(ids)
 
 
 
@@ -253,8 +274,15 @@ def main() -> None:
     cache_dir.mkdir(parents=True, exist_ok=True)
     output_file = cache_dir / args.output_name
     existing = {} if args.force_refresh else _load_existing_output(output_file)
+    start_idx = 0 if args.force_refresh else _find_resume_index(ids, existing, region_ids)
 
-    for idx, type_id in enumerate(ids, 1):
+    if start_idx > 0:
+        print(f"检测到已有进度，将从第 {start_idx + 1} / {len(ids)} 个 type_id 继续")
+    elif existing and start_idx == len(ids):
+        print(f"已有文件已覆盖全部目标 type_id：{output_file}")
+        return
+
+    for idx, type_id in enumerate(ids[start_idx:], start_idx + 1):
         entry = existing.get(type_id, {"id": type_id})
 
         for region_id in region_ids:
