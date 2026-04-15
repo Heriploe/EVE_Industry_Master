@@ -190,3 +190,59 @@ def get_character_id(access_token, user_agent):
     r.raise_for_status()
     data = r.json()
     return data["CharacterID"], data["CharacterName"]
+
+
+def get_valid_token(settings: dict) -> str:
+    """
+    从缓存获取有效的 access_token，过期则用 refresh_token 自动续期。
+    首次运行（无缓存）则启动 OAuth 授权流程拿到 token 并缓存。
+
+    settings 字典需包含：
+        client_id, client_secret, redirect_uri, scope,
+        cache_file (Path 或 str), user_agent
+    """
+    client_id     = settings["client_id"]
+    client_secret = settings["client_secret"]
+    redirect_uri  = settings["redirect_uri"]
+    scope         = settings["scope"]
+    cache_path    = Path(settings["cache_file"])
+    user_agent    = settings.get("user_agent", "EVEIndustry/1.0")
+
+    cache = load_cached_tokens(cache_path)
+
+    # ── 1. 有缓存 refresh_token → 直接续期 ──────────────────────
+    if cache.get("refresh_token"):
+        try:
+            access_token, new_refresh = refresh_access_token(
+                client_id, client_secret,
+                cache["refresh_token"], user_agent
+            )
+            cache["access_token"]  = access_token
+            cache["refresh_token"] = new_refresh
+            cache["updated_at"]    = int(time.time())
+            save_json(cache_path, cache)
+            print(f"[esi_auth] ✓ Token 已续期（角色: {cache.get('character_name', '?')}）")
+            return access_token
+        except Exception as e:
+            print(f"[esi_auth] 续期失败，将重新授权: {e}")
+
+    # ── 2. 无缓存 / 续期失败 → 重新 OAuth 授权 ─────────────────
+    print("[esi_auth] 启动 EVE SSO 授权流程...")
+    code = get_authorization_code(redirect_uri, client_id, scope)
+    token_data = exchange_code_for_token(
+        client_id, client_secret, code, redirect_uri, user_agent
+    )
+    access_token  = token_data["access_token"]
+    refresh_token = token_data.get("refresh_token", "")
+
+    char_id, char_name = get_character_id(access_token, user_agent)
+    cache = {
+        "access_token":   access_token,
+        "refresh_token":  refresh_token,
+        "updated_at":     int(time.time()),
+        "character_id":   char_id,
+        "character_name": char_name,
+    }
+    save_json(cache_path, cache)
+    print(f"[esi_auth] ✓ 授权成功（角色: {char_name}）")
+    return access_token

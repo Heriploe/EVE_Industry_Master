@@ -3,6 +3,7 @@ import configparser
 import json
 import statistics
 import time
+from datetime import date, timedelta
 from pathlib import Path
 from typing import Optional
 from urllib.error import HTTPError, URLError
@@ -96,6 +97,7 @@ def get_item_price(
     lookback_days: int = DEFAULT_LOOKBACK_DAYS,
     use_iqr_filter: bool = True,
     price_field: str = DEFAULT_PRICE_FIELD,
+    reference_date: Optional[date] = None,
 ) -> dict:
     url = f"https://esi.evetech.net/latest/markets/{region_id}/history/?datasource={DATASOURCE}&type_id={type_id}"
     with urlopen(url, timeout=30) as response:
@@ -105,24 +107,38 @@ def get_item_price(
         return {"average": 0.0, "highest": 0.0, "lowest": 0.0, "order_count": 0.0, "volume": 0.0}
 
     lookback_days = max(int(lookback_days), 1)
-    rows = history[-lookback_days:]
+    today = reference_date or date.today()
+    cutoff = today - timedelta(days=lookback_days)  # 不含 cutoff 当天，含 today
+
+    # 按日期过滤：仅保留 cutoff < entry_date <= today 的条目
+    rows = [
+        r for r in history
+        if cutoff < date.fromisoformat(r["date"]) <= today
+    ]
+
+    if not rows:
+        return {"average": 0.0, "highest": 0.0, "lowest": 0.0, "order_count": 0.0, "volume": 0.0}
 
     filtered_rows = rows
-    if use_iqr_filter and rows:
+    if use_iqr_filter:
         metric_values = [float(r.get(price_field, 0) or 0) for r in rows]
         bounds = _iqr_bounds(metric_values)
         if bounds is not None:
             low, high = bounds
-            filtered_rows = [r for r in rows if low <= float(r.get(price_field, 0) or 0) <= high]
-            if not filtered_rows:
-                filtered_rows = rows
+            candidate = [r for r in rows if low <= float(r.get(price_field, 0) or 0) <= high]
+            if candidate:
+                filtered_rows = candidate
+
+    # volume 均值：总量 ÷ 总周期天数（无成交日计 0，不除以实际有数据天数）
+    total_volume = sum(float(r.get("volume", 0) or 0) for r in filtered_rows)
+    avg_volume = total_volume / lookback_days
 
     return {
         "average": _weighted_avg(filtered_rows, "average"),
         "highest": _weighted_avg(filtered_rows, "highest"),
         "lowest": _weighted_avg(filtered_rows, "lowest"),
         "order_count": _simple_avg(filtered_rows, "order_count"),
-        "volume": _simple_avg(filtered_rows, "volume"),
+        "volume": avg_volume,
     }
 
 

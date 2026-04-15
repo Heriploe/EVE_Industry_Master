@@ -326,13 +326,15 @@ def get_structure_token(config, repo_root: Path) -> Optional[str]:
     从 config.ini [esi_auth] 段获取有效 Bearer token。
     config: configparser.ConfigParser 对象。
     """
-    import sys
-    sys.path.insert(0, str(repo_root / "Utilities"))
     try:
-        from esi_auth import get_valid_token as _gvt
+        from Utilities.esi_auth import get_valid_token as _gvt
     except ImportError:
-        print("[market_order_utils] ✗ 无法导入 esi_auth，请检查 Utilities/esi_auth.py")
-        return None
+        # 兼容从 Utilities/ 子目录直接运行的场景
+        try:
+            from esi_auth import get_valid_token as _gvt
+        except ImportError:
+            print("[market_order_utils] ✗ 无法导入 esi_auth，请检查 Utilities/esi_auth.py")
+            return None
 
     cache_file_raw = config.get("esi_auth", "token_cache_file",
                                 fallback="Cache/Asset/token_cache.json")
