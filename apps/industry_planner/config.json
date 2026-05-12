@@ -1,0 +1,40 @@
+{
+  "_comment": "industry_planner 完整独立配置。所有路径相对于 eve/ 根目录。",
+  "data": {
+    "blueprints_yaml": "data/blueprints.yaml",
+    "types": "data/types.json",
+    "t2_map": "data/T2.json"
+  },
+  "resources": {
+    "corp_bpo": "resources/corp/bpo.json",
+    "corp_bpc": "resources/corp/bpc.json",
+    "corp_materials": "resources/corp/materials.json",
+    "corp_industry_jobs": "resources/corp/industry_jobs.json"
+  },
+  "targets": {
+    "final_products": "apps/industry_planner/final_products.csv"
+  },
+  "output_dir": "outputs/industry_planner",
+  "production": {
+    "days": 1.0,
+    "me_pct": 10,
+    "te_pct": 20,
+    "slots_mfg": 9,
+    "slots_inv": 9,
+    "slots_react": 9
+  },
+  "special_group_ids": {
+    "decryptors": [
+      1304,
+      367776
+    ],
+    "datacores": [
+      333,
+      314,
+      356,
+      474,
+      1416,
+      1709
+    ]
+  }
+}

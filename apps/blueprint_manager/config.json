@@ -1,0 +1,44 @@
+{
+  "_comment": "blueprint_manager — 蓝图管理",
+  "data": {
+    "blueprints_yaml": "data/blueprints.yaml",
+    "types": "data/types.json",
+    "t2_map": "data/T2.json"
+  },
+  "resources": {
+    "corp_blueprints": "resources/corp/blueprints.json",
+    "corp_materials": "resources/corp/materials.json"
+  },
+  "output_dir": "outputs/blueprint_manager",
+  "expand": {
+    "max_depth": 3,
+    "root_runs": 1.0,
+    "activity_priority": [
+      "manufacturing",
+      "reaction",
+      "copying",
+      "invention"
+    ],
+    "decryptor_name": ""
+  },
+  "filters": {
+    "excluded_keywords": [
+      "屹立",
+      "压缩",
+      "末日",
+      "长枪",
+      "工业",
+      "收割者",
+      "海军",
+      "控制塔",
+      "穿梭机",
+      "民用",
+      "旧",
+      "毁坏",
+      "失灵",
+      "完整",
+      "版",
+      "突变"
+    ]
+  }
+}

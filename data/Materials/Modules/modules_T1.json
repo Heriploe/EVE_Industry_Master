@@ -1,0 +1,3487 @@
+[
+  {
+    "id": 483,
+    "zh": "采矿器 I",
+    "en": "Miner I"
+  },
+  {
+    "id": 499,
+    "zh": "轻型导弹发射器 I",
+    "en": "Light Missile Launcher I"
+  },
+  {
+    "id": 501,
+    "zh": "重型导弹发射器 I",
+    "en": "Heavy Missile Launcher I"
+  },
+  {
+    "id": 503,
+    "zh": "鱼雷发射器 I",
+    "en": "Torpedo Launcher I"
+  },
+  {
+    "id": 202,
+    "zh": "雷神巡航导弹",
+    "en": "Mjolnir Cruise Missile"
+  },
+  {
+    "id": 203,
+    "zh": "鞭挞巡航导弹",
+    "en": "Scourge Cruise Missile"
+  },
+  {
+    "id": 204,
+    "zh": "炼狱巡航导弹",
+    "en": "Inferno Cruise Missile"
+  },
+  {
+    "id": 205,
+    "zh": "星爆巡航导弹",
+    "en": "Nova Cruise Missile"
+  },
+  {
+    "id": 206,
+    "zh": "星爆重型导弹",
+    "en": "Nova Heavy Missile"
+  },
+  {
+    "id": 207,
+    "zh": "雷神重型导弹",
+    "en": "Mjolnir Heavy Missile"
+  },
+  {
+    "id": 208,
+    "zh": "炼狱重型导弹",
+    "en": "Inferno Heavy Missile"
+  },
+  {
+    "id": 209,
+    "zh": "鞭挞重型导弹",
+    "en": "Scourge Heavy Missile"
+  },
+  {
+    "id": 210,
+    "zh": "鞭挞轻型导弹",
+    "en": "Scourge Light Missile"
+  },
+  {
+    "id": 211,
+    "zh": "炼狱轻型导弹",
+    "en": "Inferno Light Missile"
+  },
+  {
+    "id": 212,
+    "zh": "雷神轻型导弹",
+    "en": "Mjolnir Light Missile"
+  },
+  {
+    "id": 213,
+    "zh": "星爆轻型导弹",
+    "en": "Nova Light Missile"
+  },
+  {
+    "id": 484,
+    "zh": "125mm加特林自动加农炮 I",
+    "en": "125mm Gatling AutoCannon I"
+  },
+  {
+    "id": 485,
+    "zh": "150mm轻型自动加农炮 I",
+    "en": "150mm Light AutoCannon I"
+  },
+  {
+    "id": 486,
+    "zh": "200mm自动加农炮 I",
+    "en": "200mm AutoCannon I"
+  },
+  {
+    "id": 487,
+    "zh": "250mm轻型加农炮 I",
+    "en": "250mm Light Artillery Cannon I"
+  },
+  {
+    "id": 488,
+    "zh": "280mm榴弹炮 I",
+    "en": "280mm Howitzer Artillery I"
+  },
+  {
+    "id": 489,
+    "zh": "双联180mm自动加农炮 I",
+    "en": "Dual 180mm AutoCannon I"
+  },
+  {
+    "id": 490,
+    "zh": "220mm火神自动加农炮 I",
+    "en": "220mm Vulcan AutoCannon I"
+  },
+  {
+    "id": 491,
+    "zh": "425mm自动加农炮 I",
+    "en": "425mm AutoCannon I"
+  },
+  {
+    "id": 492,
+    "zh": "650mm加农炮 I",
+    "en": "650mm Artillery Cannon I"
+  },
+  {
+    "id": 493,
+    "zh": "720mm榴弹炮 I",
+    "en": "720mm Howitzer Artillery I"
+  },
+  {
+    "id": 494,
+    "zh": "双联425mm自动加农炮 I",
+    "en": "Dual 425mm AutoCannon I"
+  },
+  {
+    "id": 495,
+    "zh": "双联650mm频射加农炮 I",
+    "en": "Dual 650mm Repeating Cannon I"
+  },
+  {
+    "id": 496,
+    "zh": "800mm频射加农炮 I",
+    "en": "800mm Repeating Cannon I"
+  },
+  {
+    "id": 497,
+    "zh": "1200mm加农火炮 I",
+    "en": "1200mm Artillery Cannon I"
+  },
+  {
+    "id": 498,
+    "zh": "1400mm榴弹炮 I",
+    "en": "1400mm Howitzer Artillery I"
+  },
+  {
+    "id": 450,
+    "zh": "加特林脉冲激光器 I",
+    "en": "Gatling Pulse Laser I"
+  },
+  {
+    "id": 451,
+    "zh": "双联轻型脉冲激光器 I",
+    "en": "Dual Light Pulse Laser I"
+  },
+  {
+    "id": 452,
+    "zh": "双联轻型集束激光器 I",
+    "en": "Dual Light Beam Laser I"
+  },
+  {
+    "id": 453,
+    "zh": "小型聚焦脉冲激光器 I",
+    "en": "Small Focused Pulse Laser I"
+  },
+  {
+    "id": 454,
+    "zh": "小型聚焦集束激光器 I",
+    "en": "Small Focused Beam Laser I"
+  },
+  {
+    "id": 455,
+    "zh": "四联轻型集束激光器 I",
+    "en": "Quad Light Beam Laser I"
+  },
+  {
+    "id": 456,
+    "zh": "聚焦中型脉冲激光器 I",
+    "en": "Focused Medium Pulse Laser I"
+  },
+  {
+    "id": 457,
+    "zh": "聚焦中型集束激光器 I",
+    "en": "Focused Medium Beam Laser I"
+  },
+  {
+    "id": 458,
+    "zh": "重型脉冲激光器 I",
+    "en": "Heavy Pulse Laser I"
+  },
+  {
+    "id": 459,
+    "zh": "重型集束激光器 I",
+    "en": "Heavy Beam Laser I"
+  },
+  {
+    "id": 460,
+    "zh": "双联重型脉冲激光器 I",
+    "en": "Dual Heavy Pulse Laser I"
+  },
+  {
+    "id": 461,
+    "zh": "双联重型集束激光器 I",
+    "en": "Dual Heavy Beam Laser I"
+  },
+  {
+    "id": 462,
+    "zh": "超级脉冲激光器 I",
+    "en": "Mega Pulse Laser I"
+  },
+  {
+    "id": 463,
+    "zh": "超级集束激光器 I",
+    "en": "Mega Beam Laser I"
+  },
+  {
+    "id": 464,
+    "zh": "超光速粒子集束激光器 I",
+    "en": "Tachyon Beam Laser I"
+  },
+  {
+    "id": 178,
+    "zh": "碳铅弹 S",
+    "en": "Carbonized Lead S"
+  },
+  {
+    "id": 179,
+    "zh": "核芯弹 S",
+    "en": "Nuclear S"
+  },
+  {
+    "id": 180,
+    "zh": "质子弹 S",
+    "en": "Proton S"
+  },
+  {
+    "id": 181,
+    "zh": "硬钼弹 S",
+    "en": "Depleted Uranium S"
+  },
+  {
+    "id": 182,
+    "zh": "钛合金萨博弹 S",
+    "en": "Titanium Sabot S"
+  },
+  {
+    "id": 183,
+    "zh": "聚变弹 S",
+    "en": "Fusion S"
+  },
+  {
+    "id": 184,
+    "zh": "定相等离子弹 S",
+    "en": "Phased Plasma S"
+  },
+  {
+    "id": 185,
+    "zh": "电磁脉冲弹 S",
+    "en": "EMP S"
+  },
+  {
+    "id": 186,
+    "zh": "碳铅弹 M",
+    "en": "Carbonized Lead M"
+  },
+  {
+    "id": 187,
+    "zh": "核芯弹 M",
+    "en": "Nuclear M"
+  },
+  {
+    "id": 188,
+    "zh": "质子弹 M",
+    "en": "Proton M"
+  },
+  {
+    "id": 189,
+    "zh": "硬钼弹 M",
+    "en": "Depleted Uranium M"
+  },
+  {
+    "id": 190,
+    "zh": "钛合金萨博弹 M",
+    "en": "Titanium Sabot M"
+  },
+  {
+    "id": 191,
+    "zh": "聚变弹 M",
+    "en": "Fusion M"
+  },
+  {
+    "id": 192,
+    "zh": "定相等离子弹 M",
+    "en": "Phased Plasma M"
+  },
+  {
+    "id": 193,
+    "zh": "电磁脉冲弹 M",
+    "en": "EMP M"
+  },
+  {
+    "id": 194,
+    "zh": "碳铅弹 L",
+    "en": "Carbonized Lead L"
+  },
+  {
+    "id": 195,
+    "zh": "核芯弹 L",
+    "en": "Nuclear L"
+  },
+  {
+    "id": 196,
+    "zh": "质子弹 L",
+    "en": "Proton L"
+  },
+  {
+    "id": 197,
+    "zh": "硬钼弹 L",
+    "en": "Depleted Uranium L"
+  },
+  {
+    "id": 198,
+    "zh": "钛合金萨博弹 L",
+    "en": "Titanium Sabot L"
+  },
+  {
+    "id": 199,
+    "zh": "聚变弹 L",
+    "en": "Fusion L"
+  },
+  {
+    "id": 200,
+    "zh": "定相等离子弹 L",
+    "en": "Phased Plasma L"
+  },
+  {
+    "id": 201,
+    "zh": "电磁脉冲弹 L",
+    "en": "EMP L"
+  },
+  {
+    "id": 672,
+    "zh": "加达里穿梭机",
+    "en": "Caldari Shuttle"
+  },
+  {
+    "id": 377,
+    "zh": "小型护盾扩展装置 I",
+    "en": "Small Shield Extender I"
+  },
+  {
+    "id": 393,
+    "zh": "护盾回充器 I",
+    "en": "Shield Recharger I"
+  },
+  {
+    "id": 399,
+    "zh": "小型护盾回充增量器 I",
+    "en": "Small Shield Booster I"
+  },
+  {
+    "id": 434,
+    "zh": "5MN微型跃迁推进器 I",
+    "en": "5MN Microwarpdrive I"
+  },
+  {
+    "id": 439,
+    "zh": "1MN加力燃烧器 I",
+    "en": "1MN Afterburner I"
+  },
+  {
+    "id": 442,
+    "zh": "货柜扫描器 I",
+    "en": "Cargo Scanner I"
+  },
+  {
+    "id": 443,
+    "zh": "船体扫描器 I",
+    "en": "Ship Scanner I"
+  },
+  {
+    "id": 444,
+    "zh": "采矿调查芯片组 I",
+    "en": "Mining Survey Chipset I"
+  },
+  {
+    "id": 447,
+    "zh": "跃迁扰频器 I",
+    "en": "Warp Scrambler I"
+  },
+  {
+    "id": 520,
+    "zh": "回转稳定器 I",
+    "en": "Gyrostabilizer I"
+  },
+  {
+    "id": 523,
+    "zh": "小型装甲维修器 I",
+    "en": "Small Armor Repairer I"
+  },
+  {
+    "id": 524,
+    "zh": "小型结构维修器 I",
+    "en": "Small Hull Repairer I"
+  },
+  {
+    "id": 526,
+    "zh": "停滞缠绕光束 I",
+    "en": "Stasis Webifier I"
+  },
+  {
+    "id": 529,
+    "zh": "小型远程电容传输装置 I",
+    "en": "Small Remote Capacitor Transmitter I"
+  },
+  {
+    "id": 530,
+    "zh": "小型掠能器 I",
+    "en": "Small Energy Nosferatu I"
+  },
+  {
+    "id": 533,
+    "zh": "小型能量中和器 I",
+    "en": "Small Energy Neutralizer I"
+  },
+  {
+    "id": 561,
+    "zh": "75mm加特林磁轨炮 I",
+    "en": "75mm Gatling Rail I"
+  },
+  {
+    "id": 562,
+    "zh": "轻型电子疾速炮 I",
+    "en": "Light Electron Blaster I"
+  },
+  {
+    "id": 563,
+    "zh": "轻型离子疾速炮 I",
+    "en": "Light Ion Blaster I"
+  },
+  {
+    "id": 564,
+    "zh": "轻型中子疾速炮 I",
+    "en": "Light Neutron Blaster I"
+  },
+  {
+    "id": 565,
+    "zh": "150mm磁轨炮 I",
+    "en": "150mm Railgun I"
+  },
+  {
+    "id": 566,
+    "zh": "重型电子疾速炮 I",
+    "en": "Heavy Electron Blaster I"
+  },
+  {
+    "id": 567,
+    "zh": "双联150mm磁轨炮 I",
+    "en": "Dual 150mm Railgun I"
+  },
+  {
+    "id": 568,
+    "zh": "重型中子疾速炮 I",
+    "en": "Heavy Neutron Blaster I"
+  },
+  {
+    "id": 569,
+    "zh": "重型离子疾速炮 I",
+    "en": "Heavy Ion Blaster I"
+  },
+  {
+    "id": 570,
+    "zh": "250mm磁轨炮 I",
+    "en": "250mm Railgun I"
+  },
+  {
+    "id": 571,
+    "zh": "电子疾速加农炮 I",
+    "en": "Electron Blaster Cannon I"
+  },
+  {
+    "id": 572,
+    "zh": "双联250mm磁轨炮 I",
+    "en": "Dual 250mm Railgun I"
+  },
+  {
+    "id": 573,
+    "zh": "中子疾速加农炮 I",
+    "en": "Neutron Blaster Cannon I"
+  },
+  {
+    "id": 574,
+    "zh": "425mm磁轨炮 I",
+    "en": "425mm Railgun I"
+  },
+  {
+    "id": 575,
+    "zh": "离子疾速加农炮 I",
+    "en": "Ion Blaster Cannon I"
+  },
+  {
+    "id": 577,
+    "zh": "中型电容注电器 I",
+    "en": "Medium Capacitor Booster I"
+  },
+  {
+    "id": 578,
+    "zh": "多谱式护盾增强器 I",
+    "en": "Multispectrum Shield Hardener I"
+  },
+  {
+    "id": 215,
+    "zh": "铁质轨道弹 S",
+    "en": "Iron Charge S"
+  },
+  {
+    "id": 216,
+    "zh": "钨质轨道弹 S",
+    "en": "Tungsten Charge S"
+  },
+  {
+    "id": 217,
+    "zh": "铱质轨道弹 S",
+    "en": "Iridium Charge S"
+  },
+  {
+    "id": 218,
+    "zh": "铅质轨道弹 S",
+    "en": "Lead Charge S"
+  },
+  {
+    "id": 219,
+    "zh": "钍质轨道弹 S",
+    "en": "Thorium Charge S"
+  },
+  {
+    "id": 220,
+    "zh": "钼质轨道弹 S",
+    "en": "Uranium Charge S"
+  },
+  {
+    "id": 221,
+    "zh": "锰质轨道弹 S",
+    "en": "Plutonium Charge S"
+  },
+  {
+    "id": 222,
+    "zh": "反物质轨道弹 S",
+    "en": "Antimatter Charge S"
+  },
+  {
+    "id": 223,
+    "zh": "铁质轨道弹 M",
+    "en": "Iron Charge M"
+  },
+  {
+    "id": 224,
+    "zh": "钨质轨道弹 M",
+    "en": "Tungsten Charge M"
+  },
+  {
+    "id": 225,
+    "zh": "铱质轨道弹 M",
+    "en": "Iridium Charge M"
+  },
+  {
+    "id": 226,
+    "zh": "铅质轨道弹 M",
+    "en": "Lead Charge M"
+  },
+  {
+    "id": 227,
+    "zh": "钍质轨道弹 M",
+    "en": "Thorium Charge M"
+  },
+  {
+    "id": 228,
+    "zh": "钼质轨道弹 M",
+    "en": "Uranium Charge M"
+  },
+  {
+    "id": 229,
+    "zh": "锰质轨道弹 M",
+    "en": "Plutonium Charge M"
+  },
+  {
+    "id": 230,
+    "zh": "反物质轨道弹 M",
+    "en": "Antimatter Charge M"
+  },
+  {
+    "id": 231,
+    "zh": "铁质轨道弹 L",
+    "en": "Iron Charge L"
+  },
+  {
+    "id": 232,
+    "zh": "钨质轨道弹 L",
+    "en": "Tungsten Charge L"
+  },
+  {
+    "id": 233,
+    "zh": "铱质轨道弹 L",
+    "en": "Iridium Charge L"
+  },
+  {
+    "id": 234,
+    "zh": "铅质轨道弹 L",
+    "en": "Lead Charge L"
+  },
+  {
+    "id": 235,
+    "zh": "钍质轨道弹 L",
+    "en": "Thorium Charge L"
+  },
+  {
+    "id": 236,
+    "zh": "钼质轨道弹 L",
+    "en": "Uranium Charge L"
+  },
+  {
+    "id": 237,
+    "zh": "锰质轨道弹 L",
+    "en": "Plutonium Charge L"
+  },
+  {
+    "id": 238,
+    "zh": "反物质轨道弹 L",
+    "en": "Antimatter Charge L"
+  },
+  {
+    "id": 239,
+    "zh": "射频晶体 S",
+    "en": "Radio S"
+  },
+  {
+    "id": 240,
+    "zh": "微波晶体 S",
+    "en": "Microwave S"
+  },
+  {
+    "id": 241,
+    "zh": "红外晶体 S",
+    "en": "Infrared S"
+  },
+  {
+    "id": 242,
+    "zh": "标准晶体 S",
+    "en": "Standard S"
+  },
+  {
+    "id": 243,
+    "zh": "紫外晶体 S",
+    "en": "Ultraviolet S"
+  },
+  {
+    "id": 244,
+    "zh": "X射线晶体 S",
+    "en": "Xray S"
+  },
+  {
+    "id": 245,
+    "zh": "伽玛晶体 S",
+    "en": "Gamma S"
+  },
+  {
+    "id": 246,
+    "zh": "多频晶体 S",
+    "en": "Multifrequency S"
+  },
+  {
+    "id": 247,
+    "zh": "射频晶体 M",
+    "en": "Radio M"
+  },
+  {
+    "id": 248,
+    "zh": "微波晶体 M",
+    "en": "Microwave M"
+  },
+  {
+    "id": 249,
+    "zh": "红外晶体 M",
+    "en": "Infrared M"
+  },
+  {
+    "id": 250,
+    "zh": "标准晶体 M",
+    "en": "Standard M"
+  },
+  {
+    "id": 251,
+    "zh": "紫外晶体 M",
+    "en": "Ultraviolet M"
+  },
+  {
+    "id": 252,
+    "zh": "X射线晶体 M",
+    "en": "Xray M"
+  },
+  {
+    "id": 253,
+    "zh": "伽玛晶体 M",
+    "en": "Gamma M"
+  },
+  {
+    "id": 254,
+    "zh": "多频晶体 M",
+    "en": "Multifrequency M"
+  },
+  {
+    "id": 255,
+    "zh": "射频晶体 L",
+    "en": "Radio L"
+  },
+  {
+    "id": 256,
+    "zh": "微波晶体 L",
+    "en": "Microwave L"
+  },
+  {
+    "id": 257,
+    "zh": "红外晶体 L",
+    "en": "Infrared L"
+  },
+  {
+    "id": 258,
+    "zh": "标准晶体 L",
+    "en": "Standard L"
+  },
+  {
+    "id": 259,
+    "zh": "紫外晶体 L",
+    "en": "Ultraviolet L"
+  },
+  {
+    "id": 260,
+    "zh": "X射线晶体 L",
+    "en": "Xray L"
+  },
+  {
+    "id": 261,
+    "zh": "伽玛晶体 L",
+    "en": "Gamma L"
+  },
+  {
+    "id": 262,
+    "zh": "多频晶体 L",
+    "en": "Multifrequency L"
+  },
+  {
+    "id": 263,
+    "zh": "电容注电器装料 25",
+    "en": "Cap Booster 25"
+  },
+  {
+    "id": 264,
+    "zh": "电容注电器装料 50",
+    "en": "Cap Booster 50"
+  },
+  {
+    "id": 1185,
+    "zh": "小型电容器电池 I",
+    "en": "Small Cap Battery I"
+  },
+  {
+    "id": 1195,
+    "zh": "电容回充器 I",
+    "en": "Cap Recharger I"
+  },
+  {
+    "id": 1197,
+    "zh": "电磁涂层 I",
+    "en": "EM Coating I"
+  },
+  {
+    "id": 1182,
+    "zh": "自动锁定系统 I",
+    "en": "Auto Targeting System I"
+  },
+  {
+    "id": 580,
+    "zh": "脉冲干扰器 I",
+    "en": "Burst Jammer I"
+  },
+  {
+    "id": 581,
+    "zh": "被动锁定器 I",
+    "en": "Passive Targeter I"
+  },
+  {
+    "id": 1201,
+    "zh": "胡蜂 I",
+    "en": "Wasp I"
+  },
+  {
+    "id": 269,
+    "zh": "雷神自动锁定轻型导弹 I",
+    "en": "Mjolnir Auto-Targeting Light Missile I"
+  },
+  {
+    "id": 1202,
+    "zh": "民用采矿无人机",
+    "en": "Civilian Mining Drone"
+  },
+  {
+    "id": 266,
+    "zh": "鞭挞火箭",
+    "en": "Scourge Rocket"
+  },
+  {
+    "id": 267,
+    "zh": "鞭挞鱼雷",
+    "en": "Scourge Torpedo"
+  },
+  {
+    "id": 1244,
+    "zh": "超载喷注系统 I",
+    "en": "Overdrive Injector System I"
+  },
+  {
+    "id": 1246,
+    "zh": "电容通量线圈 I",
+    "en": "Capacitor Flux Coil I"
+  },
+  {
+    "id": 1254,
+    "zh": "护盾通量线圈 I",
+    "en": "Shield Flux Coil I"
+  },
+  {
+    "id": 1264,
+    "zh": "爆炸涂层 I",
+    "en": "Explosive Coating I"
+  },
+  {
+    "id": 1274,
+    "zh": "覆层式涂层 I",
+    "en": "Layered Coating I"
+  },
+  {
+    "id": 1284,
+    "zh": "动能涂层 I",
+    "en": "Kinetic Coating I"
+  },
+  {
+    "id": 1294,
+    "zh": "热能涂层 I",
+    "en": "Thermal Coating I"
+  },
+  {
+    "id": 1304,
+    "zh": "多谱式涂层 I",
+    "en": "Multispectrum Coating I"
+  },
+  {
+    "id": 1317,
+    "zh": "扩充货柜舱 I",
+    "en": "Expanded Cargohold I"
+  },
+  {
+    "id": 1333,
+    "zh": "强化舱隔壁 I",
+    "en": "Reinforced Bulkheads I"
+  },
+  {
+    "id": 1353,
+    "zh": "反应堆控制元件 I",
+    "en": "Reactor Control Unit I"
+  },
+  {
+    "id": 1403,
+    "zh": "惯性稳定器 I",
+    "en": "Inertial Stabilizers I"
+  },
+  {
+    "id": 1445,
+    "zh": "电容能源继电器 I",
+    "en": "Capacitor Power Relay I"
+  },
+  {
+    "id": 1539,
+    "zh": "能源诊断系统 I",
+    "en": "Power Diagnostic System I"
+  },
+  {
+    "id": 1547,
+    "zh": "小型质子立体炸弹 I",
+    "en": "Small Proton Smartbomb I"
+  },
+  {
+    "id": 1551,
+    "zh": "小型引力子立体炸弹 I",
+    "en": "Small Graviton Smartbomb I"
+  },
+  {
+    "id": 1557,
+    "zh": "小型等离子立体炸弹 I",
+    "en": "Small Plasma Smartbomb I"
+  },
+  {
+    "id": 1563,
+    "zh": "小型EMP立体炸弹 I",
+    "en": "Small EMP Smartbomb I"
+  },
+  {
+    "id": 1808,
+    "zh": "电磁护盾增效器I",
+    "en": "EM Shield Amplifier I"
+  },
+  {
+    "id": 1810,
+    "zh": "鞭挞自动锁定轻型导弹 I",
+    "en": "Scourge Auto-Targeting Light Missile I"
+  },
+  {
+    "id": 1814,
+    "zh": "星爆自动锁定轻型导弹 I",
+    "en": "Nova Auto-Targeting Light Missile I"
+  },
+  {
+    "id": 1816,
+    "zh": "炼狱自动锁定轻型导弹 I",
+    "en": "Inferno Auto-Targeting Light Missile I"
+  },
+  {
+    "id": 1818,
+    "zh": "鞭挞自动锁定重型导弹 I",
+    "en": "Scourge Auto-Targeting Heavy Missile I"
+  },
+  {
+    "id": 1820,
+    "zh": "雷神自动锁定重型导弹 I",
+    "en": "Mjolnir Auto-Targeting Heavy Missile I"
+  },
+  {
+    "id": 1822,
+    "zh": "星爆自动锁定重型导弹 I",
+    "en": "Nova Auto-Targeting Heavy Missile I"
+  },
+  {
+    "id": 1824,
+    "zh": "炼狱自动锁定重型导弹 I",
+    "en": "Inferno Auto-Targeting Heavy Missile I"
+  },
+  {
+    "id": 1826,
+    "zh": "鞭挞自动锁定巡航导弹 I",
+    "en": "Scourge Auto-Targeting Cruise Missile I"
+  },
+  {
+    "id": 1828,
+    "zh": "雷神自动锁定巡航导弹 I",
+    "en": "Mjolnir Auto-Targeting Cruise Missile I"
+  },
+  {
+    "id": 1830,
+    "zh": "星爆自动锁定巡航导弹 I",
+    "en": "Nova Auto-Targeting Cruise Missile I"
+  },
+  {
+    "id": 1832,
+    "zh": "炼狱自动锁定巡航导弹 I",
+    "en": "Inferno Auto-Targeting Cruise Missile I"
+  },
+  {
+    "id": 1875,
+    "zh": "轻型快速导弹发射器 I",
+    "en": "Rapid Light Missile Launcher I"
+  },
+  {
+    "id": 2018,
+    "zh": "中型电容器电池 I",
+    "en": "Medium Cap Battery I"
+  },
+  {
+    "id": 2020,
+    "zh": "大型电容器电池 I",
+    "en": "Large Cap Battery I"
+  },
+  {
+    "id": 2046,
+    "zh": "损伤控制 I",
+    "en": "Damage Control I"
+  },
+  {
+    "id": 2173,
+    "zh": "渗透者 I",
+    "en": "Infiltrator I"
+  },
+  {
+    "id": 2183,
+    "zh": "战锤 I",
+    "en": "Hammerhead I"
+  },
+  {
+    "id": 2193,
+    "zh": "执政官 I",
+    "en": "Praetor I"
+  },
+  {
+    "id": 2203,
+    "zh": "侍僧 I",
+    "en": "Acolyte I"
+  },
+  {
+    "id": 2289,
+    "zh": "爆炸护盾增强器 I",
+    "en": "Explosive Shield Hardener I"
+  },
+  {
+    "id": 2291,
+    "zh": "动能护盾增强器 I",
+    "en": "Kinetic Shield Hardener I"
+  },
+  {
+    "id": 2293,
+    "zh": "电磁护盾增强器 I",
+    "en": "EM Shield Hardener I"
+  },
+  {
+    "id": 2295,
+    "zh": "热能护盾增强器 I",
+    "en": "Thermal Shield Hardener I"
+  },
+  {
+    "id": 2331,
+    "zh": "护盾能源继电器 I",
+    "en": "Shield Power Relay I"
+  },
+  {
+    "id": 2444,
+    "zh": "蛮妖 I",
+    "en": "Ogre I"
+  },
+  {
+    "id": 2454,
+    "zh": "地精灵 I",
+    "en": "Hobgoblin I"
+  },
+  {
+    "id": 2464,
+    "zh": "大黄蜂 I",
+    "en": "Hornet I"
+  },
+  {
+    "id": 2476,
+    "zh": "狂战士 I",
+    "en": "Berserker I"
+  },
+  {
+    "id": 2486,
+    "zh": "武士 I",
+    "en": "Warrior I"
+  },
+  {
+    "id": 2506,
+    "zh": "雷神鱼雷",
+    "en": "Mjolnir Torpedo"
+  },
+  {
+    "id": 2508,
+    "zh": "星爆鱼雷",
+    "en": "Nova Torpedo"
+  },
+  {
+    "id": 2510,
+    "zh": "炼狱鱼雷",
+    "en": "Inferno Torpedo"
+  },
+  {
+    "id": 2512,
+    "zh": "雷神火箭",
+    "en": "Mjolnir Rocket"
+  },
+  {
+    "id": 2514,
+    "zh": "炼狱火箭",
+    "en": "Inferno Rocket"
+  },
+  {
+    "id": 2516,
+    "zh": "星爆火箭",
+    "en": "Nova Rocket"
+  },
+  {
+    "id": 2529,
+    "zh": "爆炸护盾增效器 I",
+    "en": "Explosive Shield Amplifier I"
+  },
+  {
+    "id": 2537,
+    "zh": "热能护盾增效器 I",
+    "en": "Thermal Shield Amplifier I"
+  },
+  {
+    "id": 2545,
+    "zh": "动能护盾增效器 I",
+    "en": "Kinetic Shield Amplifier I"
+  },
+  {
+    "id": 2603,
+    "zh": "纳米纤维内部构架 I",
+    "en": "Nanofiber Internal Structure I"
+  },
+  {
+    "id": 3242,
+    "zh": "跃迁扰断器 I",
+    "en": "Warp Disruptor I"
+  },
+  {
+    "id": 3528,
+    "zh": "中型装甲维修器 I",
+    "en": "Medium Armor Repairer I"
+  },
+  {
+    "id": 3538,
+    "zh": "大型装甲维修器 I",
+    "en": "Large Armor Repairer I"
+  },
+  {
+    "id": 3552,
+    "zh": "电容注电器装料 75",
+    "en": "Cap Booster 75"
+  },
+  {
+    "id": 3554,
+    "zh": "电容注电器装料 100",
+    "en": "Cap Booster 100"
+  },
+  {
+    "id": 3566,
+    "zh": "小型电容注电器 I",
+    "en": "Small Capacitor Booster I"
+  },
+  {
+    "id": 3576,
+    "zh": "重型电容注电器 I",
+    "en": "Heavy Capacitor Booster I"
+  },
+  {
+    "id": 3586,
+    "zh": "小型远程护盾回充增量器 I",
+    "en": "Small Remote Shield Booster I"
+  },
+  {
+    "id": 3596,
+    "zh": "中型远程护盾回充增量器 I",
+    "en": "Medium Remote Shield Booster I"
+  },
+  {
+    "id": 3606,
+    "zh": "大型远程护盾回充增量器 I",
+    "en": "Large Remote Shield Booster I"
+  },
+  {
+    "id": 3616,
+    "zh": "旗舰级远程护盾回充增量器 I",
+    "en": "Capital Remote Shield Booster I"
+  },
+  {
+    "id": 3653,
+    "zh": "中型结构维修器 I",
+    "en": "Medium Hull Repairer I"
+  },
+  {
+    "id": 3663,
+    "zh": "大型结构维修器 I",
+    "en": "Large Hull Repairer I"
+  },
+  {
+    "id": 3829,
+    "zh": "中型护盾扩展装置 I",
+    "en": "Medium Shield Extender I"
+  },
+  {
+    "id": 3839,
+    "zh": "大型护盾扩充器I",
+    "en": "Large Shield Extender I"
+  },
+  {
+    "id": 3937,
+    "zh": "中型质子立体炸弹 I",
+    "en": "Medium Proton Smartbomb I"
+  },
+  {
+    "id": 3941,
+    "zh": "中型引力子立体炸弹 I",
+    "en": "Medium Graviton Smartbomb I"
+  },
+  {
+    "id": 3947,
+    "zh": "中型等离子立体炸弹 I",
+    "en": "Medium Plasma Smartbomb I"
+  },
+  {
+    "id": 3953,
+    "zh": "中型EMP立体炸弹 I",
+    "en": "Medium EMP Smartbomb I"
+  },
+  {
+    "id": 3977,
+    "zh": "大型质子立体炸弹 I",
+    "en": "Large Proton Smartbomb I"
+  },
+  {
+    "id": 3981,
+    "zh": "大型引力子立体炸弹 I",
+    "en": "Large Graviton Smartbomb I"
+  },
+  {
+    "id": 3987,
+    "zh": "大型等离子立体炸弹 I",
+    "en": "Large Plasma Smartbomb I"
+  },
+  {
+    "id": 3993,
+    "zh": "大型EMP立体炸弹 I",
+    "en": "Large EMP Smartbomb I"
+  },
+  {
+    "id": 4393,
+    "zh": "无人机伤害增效装置 I",
+    "en": "Drone Damage Amplifier I"
+  },
+  {
+    "id": 9944,
+    "zh": "磁性力场稳定器 I",
+    "en": "Magnetic Field Stabilizer I"
+  },
+  {
+    "id": 10039,
+    "zh": "民用护盾回充增量器",
+    "en": "Civilian Shield Booster"
+  },
+  {
+    "id": 10246,
+    "zh": "采矿无人机 I",
+    "en": "Mining Drone I"
+  },
+  {
+    "id": 10629,
+    "zh": "火箭发射器 I",
+    "en": "Rocket Launcher I"
+  },
+  {
+    "id": 10678,
+    "zh": "125mm磁轨炮 I",
+    "en": "125mm Railgun I"
+  },
+  {
+    "id": 10836,
+    "zh": "中型护盾回充增量器 I",
+    "en": "Medium Shield Booster I"
+  },
+  {
+    "id": 10838,
+    "zh": "大型护盾回充增量器 I",
+    "en": "Large Shield Booster I"
+  },
+  {
+    "id": 10840,
+    "zh": "超大型护盾回充增量器 I",
+    "en": "X-Large Shield Booster I"
+  },
+  {
+    "id": 11129,
+    "zh": "盖伦特穿梭机",
+    "en": "Gallente Shuttle"
+  },
+  {
+    "id": 11132,
+    "zh": "米玛塔尔穿梭机",
+    "en": "Minmatar Shuttle"
+  },
+  {
+    "id": 11134,
+    "zh": "艾玛穿梭机",
+    "en": "Amarr Shuttle"
+  },
+  {
+    "id": 11217,
+    "zh": "电磁电压薄膜 I",
+    "en": "EM Energized Membrane I"
+  },
+  {
+    "id": 11227,
+    "zh": "爆炸电压薄膜 I",
+    "en": "Explosive Energized Membrane I"
+  },
+  {
+    "id": 11237,
+    "zh": "覆层电压薄膜 I",
+    "en": "Layered Energized Membrane I"
+  },
+  {
+    "id": 11247,
+    "zh": "动能电压薄膜 I",
+    "en": "Kinetic Energized Membrane I"
+  },
+  {
+    "id": 11257,
+    "zh": "热能电压薄膜 I",
+    "en": "Thermal Energized Membrane I"
+  },
+  {
+    "id": 11267,
+    "zh": "多谱式电压薄膜 I",
+    "en": "Multispectrum Energized Membrane I"
+  },
+  {
+    "id": 11277,
+    "zh": "热能装甲增强器 I",
+    "en": "Thermal Armor Hardener I"
+  },
+  {
+    "id": 11279,
+    "zh": "1600mm钢附甲板 I",
+    "en": "1600mm Steel Plates I"
+  },
+  {
+    "id": 11283,
+    "zh": "电容注电器装料 150",
+    "en": "Cap Booster 150"
+  },
+  {
+    "id": 11285,
+    "zh": "电容注电器装料 200",
+    "en": "Cap Booster 200"
+  },
+  {
+    "id": 11287,
+    "zh": "电容注电器装料 400",
+    "en": "Cap Booster 400"
+  },
+  {
+    "id": 11289,
+    "zh": "电容注电器装料 800",
+    "en": "Cap Booster 800"
+  },
+  {
+    "id": 11291,
+    "zh": "50mm钢附甲板 I",
+    "en": "50mm Steel Plates I"
+  },
+  {
+    "id": 11293,
+    "zh": "100mm钢附甲板 I",
+    "en": "100mm Steel Plates I"
+  },
+  {
+    "id": 11295,
+    "zh": "200mm钢附甲板 I",
+    "en": "200mm Steel Plates I"
+  },
+  {
+    "id": 11297,
+    "zh": "400mm钢附甲板 I",
+    "en": "400mm Steel Plates I"
+  },
+  {
+    "id": 11299,
+    "zh": "800mm钢附甲板 I",
+    "en": "800mm Steel Plates I"
+  },
+  {
+    "id": 11301,
+    "zh": "电磁装甲增强器 I",
+    "en": "EM Armor Hardener I"
+  },
+  {
+    "id": 11303,
+    "zh": "爆炸装甲增强器 I",
+    "en": "Explosive Armor Hardener I"
+  },
+  {
+    "id": 11305,
+    "zh": "动能装甲增强器 I",
+    "en": "Kinetic Armor Hardener I"
+  },
+  {
+    "id": 11355,
+    "zh": "小型远程装甲维修器 I",
+    "en": "Small Remote Armor Repairer I"
+  },
+  {
+    "id": 11357,
+    "zh": "中型远程装甲维修器 I",
+    "en": "Medium Remote Armor Repairer I"
+  },
+  {
+    "id": 11359,
+    "zh": "大型远程装甲维修器 I",
+    "en": "Large Remote Armor Repairer I"
+  },
+  {
+    "id": 11561,
+    "zh": "护盾回充增量增效器 I",
+    "en": "Shield Boost Amplifier I"
+  },
+  {
+    "id": 11563,
+    "zh": "微型辅助能源核心 I",
+    "en": "Micro Auxiliary Power Core I"
+  },
+  {
+    "id": 2363,
+    "zh": "散热槽 I",
+    "en": "Heat Sink I"
+  },
+  {
+    "id": 10998,
+    "zh": "跃迁核心稳定器 I",
+    "en": "Warp Core Stabilizer I"
+  },
+  {
+    "id": 2108,
+    "zh": "索敌扰断器 I",
+    "en": "Tracking Disruptor I"
+  },
+  {
+    "id": 1998,
+    "zh": "索敌增强器 I",
+    "en": "Tracking Enhancer I"
+  },
+  {
+    "id": 2103,
+    "zh": "远距索敌计算机 I",
+    "en": "Remote Tracking Computer I"
+  },
+  {
+    "id": 3887,
+    "zh": "协处理器 I",
+    "en": "Co-Processor I"
+  },
+  {
+    "id": 1973,
+    "zh": "感应增强器 I",
+    "en": "Sensor Booster I"
+  },
+  {
+    "id": 1977,
+    "zh": "索敌计算机 I",
+    "en": "Tracking Computer I"
+  },
+  {
+    "id": 1948,
+    "zh": "磁力ECM I",
+    "en": "Magnetometric ECM I"
+  },
+  {
+    "id": 1957,
+    "zh": "多谱式ECM I",
+    "en": "Multispectral ECM I"
+  },
+  {
+    "id": 1958,
+    "zh": "光雷达ECM I",
+    "en": "Ladar ECM I"
+  },
+  {
+    "id": 1955,
+    "zh": "引力ECM I",
+    "en": "Gravimetric ECM I"
+  },
+  {
+    "id": 1956,
+    "zh": "雷达ECM I",
+    "en": "Radar ECM I"
+  },
+  {
+    "id": 1986,
+    "zh": "信号放大器 I",
+    "en": "Signal Amplifier I"
+  },
+  {
+    "id": 1963,
+    "zh": "远程感应增强器 I",
+    "en": "Remote Sensor Booster I"
+  },
+  {
+    "id": 1968,
+    "zh": "远程感应抑阻器 I",
+    "en": "Remote Sensor Dampener I"
+  },
+  {
+    "id": 2579,
+    "zh": "引力感应器支援阵列 I",
+    "en": "Gravimetric Backup Array I"
+  },
+  {
+    "id": 2583,
+    "zh": "光雷达支援阵列 I",
+    "en": "Ladar Backup Array I"
+  },
+  {
+    "id": 2587,
+    "zh": "磁力感应器支援阵列 I",
+    "en": "Magnetometric Backup Array I"
+  },
+  {
+    "id": 2591,
+    "zh": "多谱感应器支援阵列 I",
+    "en": "Multi Sensor Backup Array I"
+  },
+  {
+    "id": 4013,
+    "zh": "雷达感应器支援阵列 I",
+    "en": "RADAR Backup Array I"
+  },
+  {
+    "id": 12052,
+    "zh": "50MN微型跃迁推进器 I",
+    "en": "50MN Microwarpdrive I"
+  },
+  {
+    "id": 12054,
+    "zh": "500MN微型跃迁推进器 I",
+    "en": "500MN Microwarpdrive I"
+  },
+  {
+    "id": 12056,
+    "zh": "10MN加力燃烧器 I",
+    "en": "10MN Afterburner I"
+  },
+  {
+    "id": 12066,
+    "zh": "100MN加力燃烧器 I",
+    "en": "100MN Afterburner I"
+  },
+  {
+    "id": 12217,
+    "zh": "中型远程电容传输装置 I",
+    "en": "Medium Remote Capacitor Transmitter I"
+  },
+  {
+    "id": 12219,
+    "zh": "旗舰级远程电容传输装置 I",
+    "en": "Capital Remote Capacitor Transmitter I"
+  },
+  {
+    "id": 12225,
+    "zh": "大型远程电容传输装置 I",
+    "en": "Large Remote Capacitor Transmitter I"
+  },
+  {
+    "id": 12257,
+    "zh": "中型掠能器 I",
+    "en": "Medium Energy Nosferatu I"
+  },
+  {
+    "id": 12261,
+    "zh": "重型掠能器 I",
+    "en": "Heavy Energy Nosferatu I"
+  },
+  {
+    "id": 12265,
+    "zh": "中型能量中和器 I",
+    "en": "Medium Energy Neutralizer I"
+  },
+  {
+    "id": 12269,
+    "zh": "重型能量中和器 I",
+    "en": "Heavy Energy Neutralizer I"
+  },
+  {
+    "id": 12274,
+    "zh": "弹道控制系统 I",
+    "en": "Ballistic Control System I"
+  },
+  {
+    "id": 12344,
+    "zh": "200mm磁轨炮 I",
+    "en": "200mm Railgun I"
+  },
+  {
+    "id": 12354,
+    "zh": "350mm磁轨炮 I",
+    "en": "350mm Railgun I"
+  },
+  {
+    "id": 12709,
+    "zh": "目标标记装置 I",
+    "en": "Target Painter I"
+  },
+  {
+    "id": 13320,
+    "zh": "巡航导弹发射器 I",
+    "en": "Cruise Missile Launcher I"
+  },
+  {
+    "id": 15508,
+    "zh": "金星 I",
+    "en": "Vespa I"
+  },
+  {
+    "id": 15510,
+    "zh": "瓦尔基里 I",
+    "en": "Valkyrie I"
+  },
+  {
+    "id": 16278,
+    "zh": "冰矿采集器 I",
+    "en": "Ice Harvester I"
+  },
+  {
+    "id": 17482,
+    "zh": "露天采矿器 I",
+    "en": "Strip Miner I"
+  },
+  {
+    "id": 17648,
+    "zh": "反物质轨道弹 XL",
+    "en": "Antimatter Charge XL"
+  },
+  {
+    "id": 17650,
+    "zh": "铱质轨道弹 XL",
+    "en": "Iridium Charge XL"
+  },
+  {
+    "id": 17652,
+    "zh": "铁质轨道弹 XL",
+    "en": "Iron Charge XL"
+  },
+  {
+    "id": 17654,
+    "zh": "铅质轨道弹 XL",
+    "en": "Lead Charge XL"
+  },
+  {
+    "id": 17656,
+    "zh": "锰质轨道弹 XL",
+    "en": "Plutonium Charge XL"
+  },
+  {
+    "id": 17658,
+    "zh": "钍质轨道弹 XL",
+    "en": "Thorium Charge XL"
+  },
+  {
+    "id": 17660,
+    "zh": "钨质轨道弹 XL",
+    "en": "Tungsten Charge XL"
+  },
+  {
+    "id": 17662,
+    "zh": "钼质轨道弹 XL",
+    "en": "Uranium Charge XL"
+  },
+  {
+    "id": 17664,
+    "zh": "碳铅弹 XL",
+    "en": "Carbonized Lead XL"
+  },
+  {
+    "id": 17666,
+    "zh": "硬钼弹 XL",
+    "en": "Depleted Uranium XL"
+  },
+  {
+    "id": 17668,
+    "zh": "电磁脉冲弹 XL",
+    "en": "EMP XL"
+  },
+  {
+    "id": 17670,
+    "zh": "聚变弹 XL",
+    "en": "Fusion XL"
+  },
+  {
+    "id": 17672,
+    "zh": "核芯弹 XL",
+    "en": "Nuclear XL"
+  },
+  {
+    "id": 17674,
+    "zh": "定相等离子弹 XL",
+    "en": "Phased Plasma XL"
+  },
+  {
+    "id": 17676,
+    "zh": "质子弹 XL",
+    "en": "Proton XL"
+  },
+  {
+    "id": 17678,
+    "zh": "钛合金萨博弹 XL",
+    "en": "Titanium Sabot XL"
+  },
+  {
+    "id": 17680,
+    "zh": "伽玛晶体 XL",
+    "en": "Gamma XL"
+  },
+  {
+    "id": 17682,
+    "zh": "红外晶体 XL",
+    "en": "Infrared XL"
+  },
+  {
+    "id": 17684,
+    "zh": "微波晶体 XL",
+    "en": "Microwave XL"
+  },
+  {
+    "id": 17686,
+    "zh": "多频晶体 XL",
+    "en": "Multifrequency XL"
+  },
+  {
+    "id": 17688,
+    "zh": "射频晶体 XL",
+    "en": "Radio XL"
+  },
+  {
+    "id": 17690,
+    "zh": "标准晶体 XL",
+    "en": "Standard XL"
+  },
+  {
+    "id": 17692,
+    "zh": "紫外晶体 XL",
+    "en": "Ultraviolet XL"
+  },
+  {
+    "id": 17694,
+    "zh": "X射线晶体 XL",
+    "en": "Xray XL"
+  },
+  {
+    "id": 17857,
+    "zh": "雷神超大型鱼雷",
+    "en": "Mjolnir XL Torpedo"
+  },
+  {
+    "id": 17859,
+    "zh": "鞭挞超大型鱼雷",
+    "en": "Scourge XL Torpedo"
+  },
+  {
+    "id": 17861,
+    "zh": "炼狱超大型鱼雷",
+    "en": "Inferno XL Torpedo"
+  },
+  {
+    "id": 17863,
+    "zh": "星爆超大型鱼雷",
+    "en": "Nova XL Torpedo"
+  },
+  {
+    "id": 17938,
+    "zh": "核心探针发射器 I",
+    "en": "Core Probe Launcher I"
+  },
+  {
+    "id": 18054,
+    "zh": "基腹断岩小行星采集晶体A型 I",
+    "en": "Mercoxit Asteroid Mining Crystal Type A I"
+  },
+  {
+    "id": 18639,
+    "zh": "延伸探针发射器 I",
+    "en": "Expanded Probe Launcher I"
+  },
+  {
+    "id": 20280,
+    "zh": "会战装备 I",
+    "en": "Siege Module I"
+  },
+  {
+    "id": 20444,
+    "zh": "双联千兆级脉冲激光器 I",
+    "en": "Dual Giga Pulse Laser I"
+  },
+  {
+    "id": 20446,
+    "zh": "双联千兆级集束激光器 I",
+    "en": "Dual Giga Beam Laser I"
+  },
+  {
+    "id": 20448,
+    "zh": "双联1000mm磁轨炮 I",
+    "en": "Dual 1000mm Railgun I"
+  },
+  {
+    "id": 20450,
+    "zh": "离子会战疾速炮 I",
+    "en": "Ion Siege Blaster I"
+  },
+  {
+    "id": 20452,
+    "zh": "六联2500mm频射加农炮 I",
+    "en": "Hexa 2500mm Repeating Cannon I"
+  },
+  {
+    "id": 20454,
+    "zh": "四联3500mm会战型火炮 I",
+    "en": "Quad 3500mm Siege Artillery I"
+  },
+  {
+    "id": 20539,
+    "zh": "超大型鱼雷发射器 I",
+    "en": "XL Torpedo Launcher I"
+  },
+  {
+    "id": 20701,
+    "zh": "旗舰级装甲维修器 I",
+    "en": "Capital Armor Repairer I"
+  },
+  {
+    "id": 20703,
+    "zh": "旗舰级护盾回充增量器 I",
+    "en": "Capital Shield Booster I"
+  },
+  {
+    "id": 21096,
+    "zh": "诱导力场发生器 I",
+    "en": "Cynosural Field Generator I"
+  },
+  {
+    "id": 21853,
+    "zh": "民用装甲维修器",
+    "en": "Civilian Armor Repairer"
+  },
+  {
+    "id": 21867,
+    "zh": "星爆重型攻击导弹",
+    "en": "Nova Heavy Assault Missile"
+  },
+  {
+    "id": 22175,
+    "zh": "数据分析仪 I",
+    "en": "Data Analyzer I"
+  },
+  {
+    "id": 22177,
+    "zh": "遗迹分析仪 I",
+    "en": "Relic Analyzer I"
+  },
+  {
+    "id": 22542,
+    "zh": "采矿激光器提升器 I",
+    "en": "Mining Laser Upgrade I"
+  },
+  {
+    "id": 22572,
+    "zh": "执政官EV-900",
+    "en": "Praetor EV-900"
+  },
+  {
+    "id": 22576,
+    "zh": "冰矿采集能力提升器 I",
+    "en": "Ice Harvester Upgrade I"
+  },
+  {
+    "id": 22765,
+    "zh": "重型护盾维护机器人 I",
+    "en": "Heavy Shield Maintenance Bot I"
+  },
+  {
+    "id": 22782,
+    "zh": "拦截泡发射器 I",
+    "en": "Interdiction Sphere Launcher I"
+  },
+  {
+    "id": 23055,
+    "zh": "圣殿骑士 I",
+    "en": "Templar I"
+  },
+  {
+    "id": 23057,
+    "zh": "蜻蜓 I",
+    "en": "Dragonfly I"
+  },
+  {
+    "id": 23059,
+    "zh": "掷矛手 I",
+    "en": "Firbolg I"
+  },
+  {
+    "id": 23061,
+    "zh": "因赫吉 I",
+    "en": "Einherji I"
+  },
+  {
+    "id": 23473,
+    "zh": "胡蜂EC-900",
+    "en": "Wasp EC-900"
+  },
+  {
+    "id": 23506,
+    "zh": "蛮妖SD-900",
+    "en": "Ogre SD-900"
+  },
+  {
+    "id": 23510,
+    "zh": "执政官TD-900",
+    "en": "Praetor TD-900"
+  },
+  {
+    "id": 23512,
+    "zh": "狂战士TP-900",
+    "en": "Berserker TP-900"
+  },
+  {
+    "id": 23523,
+    "zh": "重型装甲维护机器人 I",
+    "en": "Heavy Armor Maintenance Bot I"
+  },
+  {
+    "id": 23525,
+    "zh": "监护官 I",
+    "en": "Curator I"
+  },
+  {
+    "id": 23527,
+    "zh": "无人机链接增效器 I",
+    "en": "Drone Link Augmentor I"
+  },
+  {
+    "id": 23533,
+    "zh": "全方位索敌连接 I",
+    "en": "Omnidirectional Tracking Link I"
+  },
+  {
+    "id": 23536,
+    "zh": "狂战士SW-900",
+    "en": "Berserker SW-900"
+  },
+  {
+    "id": 23559,
+    "zh": "典狱官 I",
+    "en": "Warden I"
+  },
+  {
+    "id": 23561,
+    "zh": "卫兵 I",
+    "en": "Garde I"
+  },
+  {
+    "id": 23563,
+    "zh": "保镖 I",
+    "en": "Bouncer I"
+  },
+  {
+    "id": 23659,
+    "zh": "侍僧EV-300",
+    "en": "Acolyte EV-300"
+  },
+  {
+    "id": 23702,
+    "zh": "渗透者EV-600",
+    "en": "Infiltrator EV-600"
+  },
+  {
+    "id": 23705,
+    "zh": "金星EC-600",
+    "en": "Vespa EC-600"
+  },
+  {
+    "id": 23707,
+    "zh": "大黄蜂EC-300",
+    "en": "Hornet EC-300"
+  },
+  {
+    "id": 23709,
+    "zh": "中型装甲维护机器人 I",
+    "en": "Medium Armor Maintenance Bot I"
+  },
+  {
+    "id": 23711,
+    "zh": "轻型装甲维护机器人 I",
+    "en": "Light Armor Maintenance Bot I"
+  },
+  {
+    "id": 23713,
+    "zh": "战锤SD-600",
+    "en": "Hammerhead SD-600"
+  },
+  {
+    "id": 23715,
+    "zh": "地精灵SD-300",
+    "en": "Hobgoblin SD-300"
+  },
+  {
+    "id": 23717,
+    "zh": "中型护盾维护机器人 I",
+    "en": "Medium Shield Maintenance Bot I"
+  },
+  {
+    "id": 23719,
+    "zh": "轻型护盾维护机器人 I",
+    "en": "Light Shield Maintenance Bot I"
+  },
+  {
+    "id": 23721,
+    "zh": "瓦尔基里TP-600",
+    "en": "Valkyrie TP-600"
+  },
+  {
+    "id": 23723,
+    "zh": "武士TP-300",
+    "en": "Warrior TP-300"
+  },
+  {
+    "id": 23725,
+    "zh": "渗透者TD-600",
+    "en": "Infiltrator TD-600"
+  },
+  {
+    "id": 23727,
+    "zh": "侍僧TD-300",
+    "en": "Acolyte TD-300"
+  },
+  {
+    "id": 23729,
+    "zh": "瓦尔基里SW-600",
+    "en": "Valkyrie SW-600"
+  },
+  {
+    "id": 23731,
+    "zh": "武士SW-300",
+    "en": "Warrior SW-300"
+  },
+  {
+    "id": 23735,
+    "zh": "克隆舱 I",
+    "en": "Clone Vat Bay I"
+  },
+  {
+    "id": 23953,
+    "zh": "跳跃通道发生器 I",
+    "en": "Jump Portal Generator I"
+  },
+  {
+    "id": 24283,
+    "zh": "铁骑舰载机辅助单元 I",
+    "en": "Fighter Support Unit I"
+  },
+  {
+    "id": 24348,
+    "zh": "小型牵引光束 I",
+    "en": "Small Tractor Beam I"
+  },
+  {
+    "id": 24395,
+    "zh": "无人机导航电脑 I",
+    "en": "Drone Navigation Computer I"
+  },
+  {
+    "id": 23674,
+    "zh": "'赫姆达洱之咆哮'爆炸末日武器",
+    "en": "'Gjallarhorn' Explosive Doomsday"
+  },
+  {
+    "id": 24550,
+    "zh": "'审判之日'电磁末日武器",
+    "en": "'Judgment' Electromagnetic Doomsday"
+  },
+  {
+    "id": 24552,
+    "zh": "'湮没之圣光'动能末日武器",
+    "en": "'Oblivion' Kinetic Doomsday"
+  },
+  {
+    "id": 24554,
+    "zh": "'极光之仪'热能末日武器",
+    "en": "'Aurora Ominae' Thermal Doomsday"
+  },
+  {
+    "id": 24569,
+    "zh": "旗舰级远程装甲维修器 I",
+    "en": "Capital Remote Armor Repairer I"
+  },
+  {
+    "id": 24644,
+    "zh": "旗舰级牵引光束 I",
+    "en": "Capital Tractor Beam I"
+  },
+  {
+    "id": 25266,
+    "zh": "气云回收装置 I",
+    "en": "Gas Cloud Scoop I"
+  },
+  {
+    "id": 25561,
+    "zh": "信号畸变放大器 I",
+    "en": "Signal Distortion Amplifier I"
+  },
+  {
+    "id": 25861,
+    "zh": "打捞器 I",
+    "en": "Salvager I"
+  },
+  {
+    "id": 20138,
+    "zh": "重型攻击导弹发射器 I",
+    "en": "Heavy Assault Missile Launcher I"
+  },
+  {
+    "id": 20306,
+    "zh": "雷神重型攻击导弹",
+    "en": "Mjolnir Heavy Assault Missile"
+  },
+  {
+    "id": 20308,
+    "zh": "炼狱重型攻击导弹",
+    "en": "Inferno Heavy Assault Missile"
+  },
+  {
+    "id": 20307,
+    "zh": "鞭挞重型攻击导弹",
+    "en": "Scourge Heavy Assault Missile"
+  },
+  {
+    "id": 27014,
+    "zh": "民用数据分析仪",
+    "en": "Civilian Data Analyzer"
+  },
+  {
+    "id": 17368,
+    "zh": "空间站仓库货柜",
+    "en": "Station Warehouse Container"
+  },
+  {
+    "id": 27678,
+    "zh": "ECM干扰脉冲波投射器",
+    "en": "ECM Jammer Burst Projector"
+  },
+  {
+    "id": 27904,
+    "zh": "大型远程结构维修器 I",
+    "en": "Large Remote Hull Repairer I"
+  },
+  {
+    "id": 27912,
+    "zh": "震荡炸弹",
+    "en": "Concussion Bomb"
+  },
+  {
+    "id": 27914,
+    "zh": "炸弹发射器 I",
+    "en": "Bomb Launcher I"
+  },
+  {
+    "id": 27916,
+    "zh": "灼烧炸弹",
+    "en": "Scorch Bomb"
+  },
+  {
+    "id": 27918,
+    "zh": "榴霰炸弹",
+    "en": "Shrapnel Bomb"
+  },
+  {
+    "id": 27920,
+    "zh": "电子炸弹",
+    "en": "Electron Bomb"
+  },
+  {
+    "id": 27922,
+    "zh": "锁断者炸弹",
+    "en": "Lockbreaker Bomb"
+  },
+  {
+    "id": 27924,
+    "zh": "涅槃炸弹",
+    "en": "Void Bomb"
+  },
+  {
+    "id": 27930,
+    "zh": "中型远程结构维修器 I",
+    "en": "Medium Remote Hull Repairer I"
+  },
+  {
+    "id": 27932,
+    "zh": "小型远程结构维修器 I",
+    "en": "Small Remote Hull Repairer I"
+  },
+  {
+    "id": 27934,
+    "zh": "旗舰级远程结构维修器 I",
+    "en": "Capital Remote Hull Repairer I"
+  },
+  {
+    "id": 27951,
+    "zh": "会战型紧急修复增强模块 I",
+    "en": "Triage Module I"
+  },
+  {
+    "id": 28583,
+    "zh": "旗舰工业核心 I",
+    "en": "Capital Industrial Core I"
+  },
+  {
+    "id": 28646,
+    "zh": "隐秘诱导力场发生器 I",
+    "en": "Covert Cynosural Field Generator I"
+  },
+  {
+    "id": 28652,
+    "zh": "隐秘跳跃通道发生器 I",
+    "en": "Covert Jump Portal Generator I"
+  },
+  {
+    "id": 28654,
+    "zh": "跃迁扰断力场发生器 I",
+    "en": "Warp Disruption Field Generator I"
+  },
+  {
+    "id": 28999,
+    "zh": "最佳射程提升脚本",
+    "en": "Optimal Range Script"
+  },
+  {
+    "id": 29001,
+    "zh": "跟踪速度修正脚本",
+    "en": "Tracking Speed Script"
+  },
+  {
+    "id": 29003,
+    "zh": "聚焦跃迁干扰脚本",
+    "en": "Focused Warp Disruption Script"
+  },
+  {
+    "id": 29005,
+    "zh": "最佳射程干扰脚本",
+    "en": "Optimal Range Disruption Script"
+  },
+  {
+    "id": 29007,
+    "zh": "跟踪速度干扰脚本",
+    "en": "Tracking Speed Disruption Script"
+  },
+  {
+    "id": 29009,
+    "zh": "锁定距离修正脚本",
+    "en": "Targeting Range Script"
+  },
+  {
+    "id": 29011,
+    "zh": "扫描分辨率修正脚本",
+    "en": "Scan Resolution Script"
+  },
+  {
+    "id": 29013,
+    "zh": "扫描分辨率抑阻脚本",
+    "en": "Scan Resolution Dampening Script"
+  },
+  {
+    "id": 29015,
+    "zh": "锁定距离抑阻脚本",
+    "en": "Targeting Range Dampening Script"
+  },
+  {
+    "id": 30013,
+    "zh": "核心扫描探针 I",
+    "en": "Core Scanner Probe I"
+  },
+  {
+    "id": 32325,
+    "zh": "独眼巨人 I",
+    "en": "Cyclops I"
+  },
+  {
+    "id": 32340,
+    "zh": "槌骨 I",
+    "en": "Malleus I"
+  },
+  {
+    "id": 32342,
+    "zh": "斩裂剑 I",
+    "en": "Tyrfing I"
+  },
+  {
+    "id": 32344,
+    "zh": "螳螂 I",
+    "en": "Mantis I"
+  },
+  {
+    "id": 32436,
+    "zh": "鞭挞超大型巡航导弹",
+    "en": "Scourge XL Cruise Missile"
+  },
+  {
+    "id": 32438,
+    "zh": "星爆超大型巡航导弹",
+    "en": "Nova XL Cruise Missile"
+  },
+  {
+    "id": 32440,
+    "zh": "炼狱超大型巡航导弹",
+    "en": "Inferno XL Cruise Missile"
+  },
+  {
+    "id": 32442,
+    "zh": "雷神超大型巡航导弹",
+    "en": "Mjolnir XL Cruise Missile"
+  },
+  {
+    "id": 32444,
+    "zh": "超大型巡航导弹发射器 I",
+    "en": "XL Cruise Missile Launcher I"
+  },
+  {
+    "id": 32782,
+    "zh": "反弹道导弹 I",
+    "en": "Defender Missile I"
+  },
+  {
+    "id": 18626,
+    "zh": "追求者测量探针 I",
+    "en": "Quest Survey Probe I"
+  },
+  {
+    "id": 18635,
+    "zh": "发现号测量探针 I",
+    "en": "Discovery Survey Probe I"
+  },
+  {
+    "id": 18637,
+    "zh": "凝视测量探针 I",
+    "en": "Gaze Survey Probe I"
+  },
+  {
+    "id": 17366,
+    "zh": "空间站集装箱",
+    "en": "Station Container"
+  },
+  {
+    "id": 3297,
+    "zh": "小型标准货柜",
+    "en": "Small Standard Container"
+  },
+  {
+    "id": 3293,
+    "zh": "中型标准货柜",
+    "en": "Medium Standard Container"
+  },
+  {
+    "id": 3296,
+    "zh": "大型标准货柜",
+    "en": "Large Standard Container"
+  },
+  {
+    "id": 24445,
+    "zh": "巨大的货物集装箱",
+    "en": "Giant Freight Container"
+  },
+  {
+    "id": 11489,
+    "zh": "巨大的安全货柜",
+    "en": "Giant Secure Container"
+  },
+  {
+    "id": 11488,
+    "zh": "庞大的安全货柜",
+    "en": "Huge Secure Container"
+  },
+  {
+    "id": 3465,
+    "zh": "大型安全货柜",
+    "en": "Large Secure Container"
+  },
+  {
+    "id": 3466,
+    "zh": "中型安全货柜",
+    "en": "Medium Secure Container"
+  },
+  {
+    "id": 3467,
+    "zh": "小型安全货柜",
+    "en": "Small Secure Container"
+  },
+  {
+    "id": 17363,
+    "zh": "小型审计安全密码集装箱",
+    "en": "Small Audit Log Secure Container"
+  },
+  {
+    "id": 17364,
+    "zh": "中型审计安全密码集装箱",
+    "en": "Medium Audit Log Secure Container"
+  },
+  {
+    "id": 17365,
+    "zh": "大型审计安全密码集装箱",
+    "en": "Large Audit Log Secure Container"
+  },
+  {
+    "id": 17367,
+    "zh": "空间站保险库集装箱",
+    "en": "Station Vault Container"
+  },
+  {
+    "id": 32787,
+    "zh": "打捞无人机 I",
+    "en": "Salvage Drone I"
+  },
+  {
+    "id": 33003,
+    "zh": "巨型货物集装箱",
+    "en": "Enormous Freight Container"
+  },
+  {
+    "id": 33005,
+    "zh": "庞大的货物集装箱",
+    "en": "Huge Freight Container"
+  },
+  {
+    "id": 33007,
+    "zh": "大型货物集装箱",
+    "en": "Large Freight Container"
+  },
+  {
+    "id": 33009,
+    "zh": "中型货物集装箱",
+    "en": "Medium Freight Container"
+  },
+  {
+    "id": 33011,
+    "zh": "小型货物集装箱",
+    "en": "Small Freight Container"
+  },
+  {
+    "id": 33176,
+    "zh": "扫描精准阵列 I",
+    "en": "Scan Acquisition Array I"
+  },
+  {
+    "id": 33178,
+    "zh": "扫描定位阵列 I",
+    "en": "Scan Pinpointing Array I"
+  },
+  {
+    "id": 33180,
+    "zh": "扫描测距阵列 I",
+    "en": "Scan Rangefinding Array I"
+  },
+  {
+    "id": 33270,
+    "zh": "测量探针发射器 I",
+    "en": "Survey Probe Launcher I"
+  },
+  {
+    "id": 33400,
+    "zh": "堡垒装备 I",
+    "en": "Bastion Module I"
+  },
+  {
+    "id": 33448,
+    "zh": "重型快速导弹发射器 I",
+    "en": "Rapid Heavy Missile Launcher I"
+  },
+  {
+    "id": 33671,
+    "zh": "重型船体维护机器人 I",
+    "en": "Heavy Hull Maintenance Bot I"
+  },
+  {
+    "id": 33704,
+    "zh": "中型船体维护机器人 I",
+    "en": "Medium Hull Maintenance Bot I"
+  },
+  {
+    "id": 33706,
+    "zh": "轻型船体维护机器人 I",
+    "en": "Light Hull Maintenance Bot I"
+  },
+  {
+    "id": 33822,
+    "zh": "全方位索敌增强器 I",
+    "en": "Omnidirectional Tracking Enhancer I"
+  },
+  {
+    "id": 35770,
+    "zh": "导弹制导增强器 I",
+    "en": "Missile Guidance Enhancer I"
+  },
+  {
+    "id": 35788,
+    "zh": "导弹制导计算机 I",
+    "en": "Missile Guidance Computer I"
+  },
+  {
+    "id": 35794,
+    "zh": "导弹射程脚本",
+    "en": "Missile Range Script"
+  },
+  {
+    "id": 35795,
+    "zh": "导弹精确打击脚本",
+    "en": "Missile Precision Script"
+  },
+  {
+    "id": 35923,
+    "zh": "屹立制导炸弹发射器 I",
+    "en": "Standup Guided Bomb Launcher I"
+  },
+  {
+    "id": 35959,
+    "zh": "屹立弹道控制系统 I",
+    "en": "Standup Ballistic Control System I"
+  },
+  {
+    "id": 35963,
+    "zh": "屹立协处理器阵列 I",
+    "en": "Standup Co-Processor Array I"
+  },
+  {
+    "id": 35926,
+    "zh": "屹立定点防御炮塔 I",
+    "en": "Standup Point Defense Battery I"
+  },
+  {
+    "id": 35928,
+    "zh": "屹立电弧弦投射器 I",
+    "en": "Standup Arcing Vorton Projector I"
+  },
+  {
+    "id": 35940,
+    "zh": "屹立可变光谱ECM I",
+    "en": "Standup Variable Spectrum ECM I"
+  },
+  {
+    "id": 35924,
+    "zh": "屹立超大型能量中和器 I",
+    "en": "Standup XL Energy Neutralizer I"
+  },
+  {
+    "id": 35925,
+    "zh": "屹立重型能量中和器 I",
+    "en": "Standup Heavy Energy Neutralizer I"
+  },
+  {
+    "id": 35962,
+    "zh": "屹立导弹制导增强器 I",
+    "en": "Standup Missile Guidance Enhancer I"
+  },
+  {
+    "id": 35921,
+    "zh": "屹立反旗舰导弹发射器 I",
+    "en": "Standup Anticapital Missile Launcher I"
+  },
+  {
+    "id": 35922,
+    "zh": "屹立多功能导弹发射器 I",
+    "en": "Standup Multirole Missile Launcher I"
+  },
+  {
+    "id": 35965,
+    "zh": "屹立反应堆控制组件 I",
+    "en": "Standup Reactor Control Unit I"
+  },
+  {
+    "id": 35941,
+    "zh": "屹立远程感应抑阻器 I",
+    "en": "Standup Remote Sensor Dampener I"
+  },
+  {
+    "id": 35943,
+    "zh": "屹立停滞缠绕光束 I",
+    "en": "Standup Stasis Webifier I"
+  },
+  {
+    "id": 35947,
+    "zh": "屹立目标标记装置 I",
+    "en": "Standup Target Painter I"
+  },
+  {
+    "id": 35945,
+    "zh": "屹立武器扰断器 I",
+    "en": "Standup Weapon Disruptor I"
+  },
+  {
+    "id": 35949,
+    "zh": "屹立聚焦跃迁扰断器 I",
+    "en": "Standup Focused Warp Disruptor I"
+  },
+  {
+    "id": 37532,
+    "zh": "屹立信号放大器 I",
+    "en": "Standup Signal Amplifier I"
+  },
+  {
+    "id": 37479,
+    "zh": "微型跳跃力场发生器",
+    "en": "Micro Jump Field Generator"
+  },
+  {
+    "id": 37821,
+    "zh": "屹立引力ECM脚本",
+    "en": "Standup Gravimetric ECM Script"
+  },
+  {
+    "id": 37822,
+    "zh": "屹立光雷达ECM脚本",
+    "en": "Standup Ladar ECM Script"
+  },
+  {
+    "id": 37823,
+    "zh": "屹立磁力ECM脚本",
+    "en": "Standup Magnetometric ECM Script"
+  },
+  {
+    "id": 37824,
+    "zh": "屹立雷达ECM脚本",
+    "en": "Standup Radar ECM Script"
+  },
+  {
+    "id": 37843,
+    "zh": "屹立超级重型鱼雷",
+    "en": "Standup Super-heavy Torpedo"
+  },
+  {
+    "id": 37844,
+    "zh": "屹立超大型巡航导弹",
+    "en": "Standup XL Cruise Missile"
+  },
+  {
+    "id": 37845,
+    "zh": "屹立AXL-SR导弹",
+    "en": "Standup AXL-SR Missile"
+  },
+  {
+    "id": 37846,
+    "zh": "屹立巡航导弹",
+    "en": "Standup Cruise Missile"
+  },
+  {
+    "id": 37847,
+    "zh": "屹立重型导弹",
+    "en": "Standup Heavy Missile"
+  },
+  {
+    "id": 37848,
+    "zh": "屹立轻型导弹",
+    "en": "Standup Light Missile"
+  },
+  {
+    "id": 37849,
+    "zh": "屹立重型制导炸弹",
+    "en": "Standup Heavy Guided Bomb"
+  },
+  {
+    "id": 37850,
+    "zh": "屹立轻型制导炸弹",
+    "en": "Standup Light Guided Bomb"
+  },
+  {
+    "id": 37450,
+    "zh": "冰矿开采激光器 I",
+    "en": "Ice Mining Laser I"
+  },
+  {
+    "id": 40334,
+    "zh": "导弹射程干扰脚本",
+    "en": "Missile Range Disruption Script"
+  },
+  {
+    "id": 40335,
+    "zh": "导弹精准度干扰脚本",
+    "en": "Missile Precision Disruption Script"
+  },
+  {
+    "id": 37543,
+    "zh": "制导干扰器 I",
+    "en": "Guidance Disruptor I"
+  },
+  {
+    "id": 40659,
+    "zh": "旗舰级能量中和器 I",
+    "en": "Capital Energy Neutralizer I"
+  },
+  {
+    "id": 40665,
+    "zh": "旗舰级掠能器 I",
+    "en": "Capital Energy Nosferatu I"
+  },
+  {
+    "id": 40714,
+    "zh": "旗舰级紧急船体增能器 I",
+    "en": "Capital Emergency Hull Energizer I"
+  },
+  {
+    "id": 40730,
+    "zh": "重型跃迁扰断器 I",
+    "en": "Heavy Warp Disruptor I"
+  },
+  {
+    "id": 40750,
+    "zh": "重型跃迁扰频器 I",
+    "en": "Heavy Warp Scrambler I"
+  },
+  {
+    "id": 37290,
+    "zh": "四联超级脉冲激光器 I",
+    "en": "Quad Mega Pulse Laser I"
+  },
+  {
+    "id": 37291,
+    "zh": "三中子疾速加农炮 I",
+    "en": "Triple Neutron Blaster Cannon I"
+  },
+  {
+    "id": 37289,
+    "zh": "四联800mm频射加农炮 I",
+    "en": "Quad 800mm Repeating Cannon I"
+  },
+  {
+    "id": 41040,
+    "zh": "重型停滞捕捉光束 I",
+    "en": "Heavy Stasis Grappler I"
+  },
+  {
+    "id": 37288,
+    "zh": "快速鱼雷发射器 I",
+    "en": "Rapid Torpedo Launcher I"
+  },
+  {
+    "id": 41155,
+    "zh": "ECCM脚本",
+    "en": "ECCM Script"
+  },
+  {
+    "id": 41236,
+    "zh": "10000MN加力燃烧器 I",
+    "en": "10000MN Afterburner I"
+  },
+  {
+    "id": 41249,
+    "zh": "50000MN微型跃迁推进器 I",
+    "en": "50000MN Microwarpdrive I"
+  },
+  {
+    "id": 40362,
+    "zh": "阿米特 I",
+    "en": "Ametat I"
+  },
+  {
+    "id": 40363,
+    "zh": "白蚁 I",
+    "en": "Termite I"
+  },
+  {
+    "id": 40364,
+    "zh": "安泰 I",
+    "en": "Antaeus I"
+  },
+  {
+    "id": 40365,
+    "zh": "长枪 I",
+    "en": "Gungnir I"
+  },
+  {
+    "id": 37599,
+    "zh": "修道士 I",
+    "en": "Cenobite I"
+  },
+  {
+    "id": 40345,
+    "zh": "圣甲虫 I",
+    "en": "Scarab I"
+  },
+  {
+    "id": 40346,
+    "zh": "塞壬 I",
+    "en": "Siren I"
+  },
+  {
+    "id": 40347,
+    "zh": "德洛米 I",
+    "en": "Dromi I"
+  },
+  {
+    "id": 40358,
+    "zh": "骑士 I",
+    "en": "Equite I"
+  },
+  {
+    "id": 40359,
+    "zh": "蚱蜢 I",
+    "en": "Locust I"
+  },
+  {
+    "id": 40360,
+    "zh": "萨梯 I",
+    "en": "Satyr I"
+  },
+  {
+    "id": 40361,
+    "zh": "格拉墨 I",
+    "en": "Gram I"
+  },
+  {
+    "id": 40697,
+    "zh": "感应抑阻脉冲波投射器",
+    "en": "Sensor Dampening Burst Projector"
+  },
+  {
+    "id": 40700,
+    "zh": "AOE制导超级武器",
+    "en": "Superweapon_AOEGuide"
+  },
+  {
+    "id": 40636,
+    "zh": "能量中和脉冲波投射器",
+    "en": "Energy Neutralization Burst Projector"
+  },
+  {
+    "id": 40698,
+    "zh": "目标照明脉冲波投射器",
+    "en": "Target Illumination Burst Projector"
+  },
+  {
+    "id": 40699,
+    "zh": "武器扰断脉冲波投射器",
+    "en": "Weapon Disruption Burst Projector"
+  },
+  {
+    "id": 40635,
+    "zh": "停滞缠绕脉冲波投射器",
+    "en": "Stasis Webification Burst Projector"
+  },
+  {
+    "id": 40696,
+    "zh": "跃迁扰断脉冲波投射器",
+    "en": "Warp Disruption Burst Projector"
+  },
+  {
+    "id": 41350,
+    "zh": "AOE ECM超级武器",
+    "en": "Superweapon_AOEECM"
+  },
+  {
+    "id": 41411,
+    "zh": "联网感应器阵列",
+    "en": "Networked Sensor Array"
+  },
+  {
+    "id": 40634,
+    "zh": "引力传输力场振荡器",
+    "en": "Gravitational Transportation Field Oscillator"
+  },
+  {
+    "id": 40631,
+    "zh": "\"神圣命运\"电磁长枪",
+    "en": "'Holy Destiny' Electromagnetic Lance"
+  },
+  {
+    "id": 41439,
+    "zh": "\"铁矛\"动能长枪",
+    "en": "'Iron Pike' Kinetic Lance"
+  },
+  {
+    "id": 41440,
+    "zh": "\"费拉里卡\"热能长枪",
+    "en": "'Phalarica' Thermal Lance"
+  },
+  {
+    "id": 41441,
+    "zh": "\"吉拉沃\"爆炸长枪",
+    "en": "'Geiravor' Explosive Lance"
+  },
+  {
+    "id": 41442,
+    "zh": "\"寒风\"动能收割者",
+    "en": "'Cold Wind' Kinetic Reaper"
+  },
+  {
+    "id": 41443,
+    "zh": "\"断头台\"热能收割者",
+    "en": "'Guillotine' Thermal Reaper"
+  },
+  {
+    "id": 41444,
+    "zh": "\"耶梦加得\"爆炸收割者",
+    "en": "'Jormungandr' Explosive Reaper"
+  },
+  {
+    "id": 40632,
+    "zh": "\"神裁\"电磁收割者",
+    "en": "'Divine Harvest' Electromagnetic Reaper"
+  },
+  {
+    "id": 40633,
+    "zh": "玻色力场发生器",
+    "en": "Bosonic Field Generator"
+  },
+  {
+    "id": 41517,
+    "zh": "装甲电磁抗性脚本",
+    "en": "Armor EM Resistance Script"
+  },
+  {
+    "id": 41518,
+    "zh": "装甲热能抗性脚本",
+    "en": "Armor Thermal Resistance Script"
+  },
+  {
+    "id": 41519,
+    "zh": "装甲动能抗性脚本",
+    "en": "Armor Kinetic Resistance Script"
+  },
+  {
+    "id": 41520,
+    "zh": "装甲爆炸抗性脚本",
+    "en": "Armor Explosive Resistance Script"
+  },
+  {
+    "id": 41521,
+    "zh": "护盾电磁抗性脚本",
+    "en": "Shield EM Resistance Script"
+  },
+  {
+    "id": 41522,
+    "zh": "护盾热能抗性脚本",
+    "en": "Shield Thermal Resistance Script"
+  },
+  {
+    "id": 41523,
+    "zh": "护盾动能抗性脚本",
+    "en": "Shield Kinetic Resistance Script"
+  },
+  {
+    "id": 41524,
+    "zh": "护盾爆炸抗性脚本",
+    "en": "Shield Explosive Resistance Script"
+  },
+  {
+    "id": 41489,
+    "zh": "电容注电器装料 3200",
+    "en": "Cap Booster 3200"
+  },
+  {
+    "id": 40354,
+    "zh": "旗舰级护盾扩展装置 I",
+    "en": "Capital Shield Extender I"
+  },
+  {
+    "id": 40348,
+    "zh": "25000mm钢附甲板 I",
+    "en": "25000mm Steel Plates I"
+  },
+  {
+    "id": 41511,
+    "zh": "旗舰级结构维修器 I",
+    "en": "Capital Hull Repairer I"
+  },
+  {
+    "id": 41484,
+    "zh": "旗舰级电容器电池 I",
+    "en": "Capital Cap Battery I"
+  },
+  {
+    "id": 41491,
+    "zh": "旗舰级电容注电器 I",
+    "en": "Capital Capacitor Booster I"
+  },
+  {
+    "id": 41515,
+    "zh": "旗舰级弯曲装甲增强器 I",
+    "en": "Capital Flex Armor Hardener I"
+  },
+  {
+    "id": 41516,
+    "zh": "旗舰级弯曲护盾增强器 I",
+    "en": "Capital Flex Shield Hardener I"
+  },
+  {
+    "id": 43658,
+    "zh": "艾玛现象发生器",
+    "en": "Amarr Phenomena Generator"
+  },
+  {
+    "id": 43660,
+    "zh": "加达里现象发生器",
+    "en": "Caldari Phenomena Generator"
+  },
+  {
+    "id": 43662,
+    "zh": "盖伦特现象发生器",
+    "en": "Gallente Phenomena Generator"
+  },
+  {
+    "id": 43664,
+    "zh": "米玛塔尔现象发生器",
+    "en": "Minmatar Phenomena Generator"
+  },
+  {
+    "id": 43699,
+    "zh": "冰矿采集无人机 I",
+    "en": "Ice Harvesting Drone I"
+  },
+  {
+    "id": 44102,
+    "zh": "反弹道导弹发射器 I",
+    "en": "Defender Launcher I"
+  },
+  {
+    "id": 45010,
+    "zh": "聚焦跃迁扰频脚本",
+    "en": "Focused Warp Scrambling Script"
+  },
+  {
+    "id": 46355,
+    "zh": "常见卫星矿石采集晶体A型 I",
+    "en": "Ubiquitous Moon Mining Crystal Type A I"
+  },
+  {
+    "id": 46365,
+    "zh": "普通卫星矿石采集晶体A型 I",
+    "en": "Common Moon Mining Crystal Type A I"
+  },
+  {
+    "id": 46367,
+    "zh": "罕见卫星矿石采集晶体A型 I",
+    "en": "Uncommon Moon Mining Crystal Type A I"
+  },
+  {
+    "id": 46369,
+    "zh": "稀有卫星矿石采集晶体A型 I",
+    "en": "Rare Moon Mining Crystal Type A I"
+  },
+  {
+    "id": 46371,
+    "zh": "非凡卫星矿石采集晶体A型 I",
+    "en": "Exceptional Moon Mining Crystal Type A I"
+  },
+  {
+    "id": 47072,
+    "zh": "屹立目标照明脉冲波投射器",
+    "en": "Standup Target Illumination Burst Projector"
+  },
+  {
+    "id": 47074,
+    "zh": "屹立武器扰断脉冲波投射器",
+    "en": "Standup Weapon Disruption Burst Projector"
+  },
+  {
+    "id": 47069,
+    "zh": "屹立ECM干扰脉冲波投射器",
+    "en": "Standup ECM Jammer Burst Projector"
+  },
+  {
+    "id": 47070,
+    "zh": "屹立感应抑阻脉冲波投射器",
+    "en": "Standup Sensor Dampening Burst Projector"
+  },
+  {
+    "id": 47071,
+    "zh": "屹立停滞缠绕脉冲波投射器",
+    "en": "Standup Stasis Webification Burst Projector"
+  },
+  {
+    "id": 47073,
+    "zh": "屹立跃迁扰断脉冲波投射器",
+    "en": "Standup Warp Disruption Burst Projector"
+  },
+  {
+    "id": 35944,
+    "zh": "屹立能量中和脉冲波投射器",
+    "en": "Standup Energy Neutralization Burst Projector"
+  },
+  {
+    "id": 47035,
+    "zh": "屹立圣殿骑士 I",
+    "en": "Standup Templar I"
+  },
+  {
+    "id": 47138,
+    "zh": "屹立蜻蜓 I",
+    "en": "Standup Dragonfly I"
+  },
+  {
+    "id": 47139,
+    "zh": "屹立掷矛手 I",
+    "en": "Standup Firbolg I"
+  },
+  {
+    "id": 47140,
+    "zh": "屹立因赫吉 I",
+    "en": "Standup Einherji I"
+  },
+  {
+    "id": 47145,
+    "zh": "屹立骑士 I",
+    "en": "Standup Equite I"
+  },
+  {
+    "id": 47146,
+    "zh": "屹立蚱蜢 I",
+    "en": "Standup Locust I"
+  },
+  {
+    "id": 47147,
+    "zh": "屹立萨梯 I",
+    "en": "Standup Satyr I"
+  },
+  {
+    "id": 47036,
+    "zh": "屹立格拉墨 I",
+    "en": "Standup Gram I"
+  },
+  {
+    "id": 47131,
+    "zh": "屹立修道士 I",
+    "en": "Standup Cenobite I"
+  },
+  {
+    "id": 47132,
+    "zh": "屹立圣甲虫 I",
+    "en": "Standup Scarab I"
+  },
+  {
+    "id": 47037,
+    "zh": "屹立塞壬 I",
+    "en": "Standup Siren I"
+  },
+  {
+    "id": 47133,
+    "zh": "屹立德洛米 I",
+    "en": "Standup Dromi I"
+  },
+  {
+    "id": 47117,
+    "zh": "屹立独眼巨人 I",
+    "en": "Standup Cyclops I"
+  },
+  {
+    "id": 47116,
+    "zh": "屹立槌骨 I",
+    "en": "Standup Malleus I"
+  },
+  {
+    "id": 47118,
+    "zh": "屹立斩裂剑 I",
+    "en": "Standup Tyrfing I"
+  },
+  {
+    "id": 47038,
+    "zh": "屹立螳螂 I",
+    "en": "Standup Mantis I"
+  },
+  {
+    "id": 47124,
+    "zh": "屹立阿米特 I",
+    "en": "Standup Ametat I"
+  },
+  {
+    "id": 47125,
+    "zh": "屹立白蚁 I",
+    "en": "Standup Termite I"
+  },
+  {
+    "id": 47126,
+    "zh": "屹立安泰 I",
+    "en": "Standup Antaeus I"
+  },
+  {
+    "id": 47039,
+    "zh": "屹立长枪 I",
+    "en": "Standup Gungnir I"
+  },
+  {
+    "id": 47254,
+    "zh": "突击型损伤控制 I",
+    "en": "Assault Damage Control I"
+  },
+  {
+    "id": 47336,
+    "zh": "屹立聚焦跃迁扰频脚本",
+    "en": "Standup Focused Warp Scrambling Script"
+  },
+  {
+    "id": 47352,
+    "zh": "屹立电容器电池 I",
+    "en": "Standup Cap Battery I"
+  },
+  {
+    "id": 47356,
+    "zh": "屹立电容能源继电器 I",
+    "en": "Standup Capacitor Power Relay I"
+  },
+  {
+    "id": 47360,
+    "zh": "屹立覆层装甲附甲 I",
+    "en": "Standup Layered Armor Plating I"
+  },
+  {
+    "id": 47908,
+    "zh": "熵辐射槽 I",
+    "en": "Entropic Radiation Sink I"
+  },
+  {
+    "id": 52694,
+    "zh": "工业诱导力场发生器",
+    "en": "Industrial Cynosural Field Generator"
+  },
+  {
+    "id": 58919,
+    "zh": "拦截失效装置 I",
+    "en": "Interdiction Nullifier I"
+  },
+  {
+    "id": 58945,
+    "zh": "大型工业核心 I",
+    "en": "Large Industrial Core I"
+  },
+  {
+    "id": 60313,
+    "zh": "气云采集器 I",
+    "en": "Gas Cloud Harvester I"
+  },
+  {
+    "id": 60276,
+    "zh": "普通小行星采集晶体A型 I",
+    "en": "Simple Asteroid Mining Crystal Type A I"
+  },
+  {
+    "id": 60285,
+    "zh": "聚合小行星采集晶体A型 I",
+    "en": "Coherent Asteroid Mining Crystal Type A I"
+  },
+  {
+    "id": 60291,
+    "zh": "斑驳小行星采集晶体A型 I",
+    "en": "Variegated Asteroid Mining Crystal Type A I"
+  },
+  {
+    "id": 60297,
+    "zh": "死亡空间小行星采集晶体A型 I",
+    "en": "Complex Asteroid Mining Crystal Type A I"
+  },
+  {
+    "id": 60303,
+    "zh": "深渊小行星采集晶体A型 I",
+    "en": "Abyssal Asteroid Mining Crystal Type A I"
+  },
+  {
+    "id": 60279,
+    "zh": "普通小行星采集晶体B型 I",
+    "en": "Simple Asteroid Mining Crystal Type B I"
+  },
+  {
+    "id": 60280,
+    "zh": "普通小行星采集晶体C型 I",
+    "en": "Simple Asteroid Mining Crystal Type C I"
+  },
+  {
+    "id": 60286,
+    "zh": "聚合小行星采集晶体B型 I",
+    "en": "Coherent Asteroid Mining Crystal Type B I"
+  },
+  {
+    "id": 60287,
+    "zh": "聚合小行星采集晶体C型 I",
+    "en": "Coherent Asteroid Mining Crystal Type C I"
+  },
+  {
+    "id": 60292,
+    "zh": "斑驳小行星采集晶体B型 I",
+    "en": "Variegated Asteroid Mining Crystal Type B I"
+  },
+  {
+    "id": 60293,
+    "zh": "斑驳小行星采集晶体C型 I",
+    "en": "Variegated Asteroid Mining Crystal Type C I"
+  },
+  {
+    "id": 60298,
+    "zh": "死亡空间小行星采集晶体B型 I",
+    "en": "Complex Asteroid Mining Crystal Type B I"
+  },
+  {
+    "id": 60299,
+    "zh": "死亡空间小行星采集晶体C型 I",
+    "en": "Complex Asteroid Mining Crystal Type C I"
+  },
+  {
+    "id": 60304,
+    "zh": "深渊小行星采集晶体B型 I",
+    "en": "Abyssal Asteroid Mining Crystal Type B I"
+  },
+  {
+    "id": 60305,
+    "zh": "深渊小行星采集晶体C型 I",
+    "en": "Abyssal Asteroid Mining Crystal Type C I"
+  },
+  {
+    "id": 60309,
+    "zh": "基腹断岩小行星采集晶体B型 I",
+    "en": "Mercoxit Asteroid Mining Crystal Type B I"
+  },
+  {
+    "id": 60310,
+    "zh": "基腹断岩小行星采集晶体C型 I",
+    "en": "Mercoxit Asteroid Mining Crystal Type C I"
+  },
+  {
+    "id": 60766,
+    "zh": "翼灵级",
+    "en": "Aralez"
+  },
+  {
+    "id": 61197,
+    "zh": "常见卫星矿石采集晶体B型 I",
+    "en": "Ubiquitous Moon Mining Crystal Type B I"
+  },
+  {
+    "id": 61198,
+    "zh": "常见卫星矿石采集晶体C型 I",
+    "en": "Ubiquitous Moon Mining Crystal Type C I"
+  },
+  {
+    "id": 61201,
+    "zh": "普通卫星矿石采集晶体B型 I",
+    "en": "Common Moon Mining Crystal Type B I"
+  },
+  {
+    "id": 61202,
+    "zh": "普通卫星矿石采集晶体C型 I",
+    "en": "Common Moon Mining Crystal Type C I"
+  },
+  {
+    "id": 61205,
+    "zh": "罕见卫星矿石采集晶体B型 I",
+    "en": "Uncommon Moon Mining Crystal Type B I"
+  },
+  {
+    "id": 61206,
+    "zh": "罕见卫星矿石采集晶体C型 I",
+    "en": "Uncommon Moon Mining Crystal Type C I"
+  },
+  {
+    "id": 61209,
+    "zh": "稀有卫星矿石采集晶体B型 I",
+    "en": "Rare Moon Mining Crystal Type B I"
+  },
+  {
+    "id": 61210,
+    "zh": "稀有卫星矿石采集晶体C型 I",
+    "en": "Rare Moon Mining Crystal Type C I"
+  },
+  {
+    "id": 61213,
+    "zh": "非凡卫星矿石采集晶体B型 I",
+    "en": "Exceptional Moon Mining Crystal Type B I"
+  },
+  {
+    "id": 61214,
+    "zh": "非凡卫星矿石采集晶体C型 I",
+    "en": "Exceptional Moon Mining Crystal Type C I"
+  },
+  {
+    "id": 62590,
+    "zh": "中型工业核心 I",
+    "en": "Medium Industrial Core I"
+  },
+  {
+    "id": 62622,
+    "zh": "中型小行星矿石压缩装置 I",
+    "en": "Medium Asteroid Ore Compressor I"
+  },
+  {
+    "id": 62625,
+    "zh": "大型小行星矿石压缩装置 I",
+    "en": "Large Asteroid Ore Compressor I"
+  },
+  {
+    "id": 62632,
+    "zh": "旗舰级小行星矿石压缩装置 I",
+    "en": "Capital Asteroid Ore Compressor I"
+  },
+  {
+    "id": 62628,
+    "zh": "大型冰矿压缩装置 I",
+    "en": "Large Ice Compressor I"
+  },
+  {
+    "id": 62633,
+    "zh": "旗舰级冰矿压缩装置 I",
+    "en": "Capital Ice Compressor I"
+  },
+  {
+    "id": 62624,
+    "zh": "中型气云压缩装置 I",
+    "en": "Medium Gas Compressor I"
+  },
+  {
+    "id": 62626,
+    "zh": "大型气云压缩装置 I",
+    "en": "Large Gas Compressor I"
+  },
+  {
+    "id": 62634,
+    "zh": "旗舰级气云压缩装置 I",
+    "en": "Capital Gas Compressor I"
+  },
+  {
+    "id": 62630,
+    "zh": "大型基腹断岩压缩装置 I",
+    "en": "Large Mercoxit Compressor I"
+  },
+  {
+    "id": 62635,
+    "zh": "旗舰级基腹断岩压缩装置 I",
+    "en": "Capital Mercoxit Compressor I"
+  },
+  {
+    "id": 62631,
+    "zh": "大型卫星矿石压缩装置 I",
+    "en": "Large Moon Ore Compressor I"
+  },
+  {
+    "id": 62636,
+    "zh": "旗舰级卫星矿石压缩装置 I",
+    "en": "Capital Moon Ore Compressor I"
+  },
+  {
+    "id": 63140,
+    "zh": "工业舰跳跃通道发生器 I",
+    "en": "Industrial Jump Portal Generator I"
+  },
+  {
+    "id": 77398,
+    "zh": "“长戟”爆炸干扰长枪",
+    "en": "'Atgeir' Explosive Disruptive Lance"
+  },
+  {
+    "id": 77399,
+    "zh": "“阿兹玛鲁”电磁干扰长枪",
+    "en": "'Azmaru' Electromagnetic Disruptive Lance"
+  },
+  {
+    "id": 77400,
+    "zh": "“钢刀”动能干扰长枪",
+    "en": "'Steel Yari' Kinetic Disruptive Lance"
+  },
+  {
+    "id": 77401,
+    "zh": "“萨里沙”热能干扰长枪",
+    "en": "'Sarissa' Thermal Disruptive Lance"
+  },
+  {
+    "id": 85085,
+    "zh": "中型突破者座舱发射器",
+    "en": "Medium Breacher Pod Launcher"
+  },
+  {
+    "id": 85084,
+    "zh": "小型突破者座舱发射器",
+    "en": "Small Breacher Pod Launcher"
+  },
+  {
+    "id": 90045,
+    "zh": "不稳定矿石采集晶体A型 I",
+    "en": "Erratic Ore Mining Crystal Type A I"
+  },
+  {
+    "id": 90046,
+    "zh": "不稳定矿石采集晶体B型 I",
+    "en": "Erratic Ore Mining Crystal Type B I"
+  },
+  {
+    "id": 90048,
+    "zh": "不稳定矿石采集晶体C型 I",
+    "en": "Erratic Ore Mining Crystal Type C I"
+  },
+  {
+    "id": 90475,
+    "zh": "集成传感器阵列",
+    "en": "Integrated Sensor Array"
+  }
+]

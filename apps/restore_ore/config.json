@@ -1,0 +1,21 @@
+{
+  "_comment": "restore_ore — 矿石最优组合 ILP（从 production_calc 独立）",
+  "data": {
+    "types": "data/types.json",
+    "types_volume": "data/types_volume.json"
+  },
+  "resources": {
+    "price_all": "resources/market/price_all.json",
+    "price_materials": "resources/market/price_all.json",
+    "structure_orders": "resources/market/structure_cache.json"
+  },
+  "output_dir": "outputs/restore_ore",
+  "restore_ore": {
+    "batch_size": 100,
+    "budget": 350000000,
+    "eff": 0.9063,
+    "preset": "mineral&element",
+    "region_id": 10000002,
+    "request_interval": 0.05
+  }
+}

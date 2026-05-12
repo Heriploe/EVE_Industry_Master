@@ -1,0 +1,578 @@
+[
+  {
+    "blueprintTypeID": 29985,
+    "name": {
+      "zh": "金鹏级",
+      "en": "Tengu"
+    },
+    "manufacturing": {
+      "materials": [
+        {
+          "quantity": 2,
+          "typeID": 29996
+        },
+        {
+          "quantity": 2,
+          "typeID": 30470
+        },
+        {
+          "quantity": 3,
+          "typeID": 30476
+        },
+        {
+          "quantity": 8,
+          "typeID": 30002
+        },
+        {
+          "quantity": 8,
+          "typeID": 30466
+        },
+        {
+          "quantity": 12,
+          "typeID": 45653
+        },
+        {
+          "quantity": 15,
+          "typeID": 11478
+        },
+        {
+          "quantity": 16,
+          "typeID": 30464
+        },
+        {
+          "quantity": 21,
+          "typeID": 30474
+        }
+      ],
+      "products": [
+        {
+          "quantity": 1,
+          "typeID": 29984
+        }
+      ],
+      "skills": [
+        {
+          "level": 4,
+          "typeID": 11452
+        },
+        {
+          "level": 5,
+          "typeID": 3380
+        },
+        {
+          "level": 5,
+          "typeID": 3397
+        },
+        {
+          "level": 5,
+          "typeID": 11454
+        }
+      ],
+      "time": 300000
+    }
+  },
+  {
+    "blueprintTypeID": 29987,
+    "name": {
+      "zh": "圣卒级",
+      "en": "Legion"
+    },
+    "manufacturing": {
+      "materials": [
+        {
+          "quantity": 2,
+          "typeID": 29996
+        },
+        {
+          "quantity": 2,
+          "typeID": 30470
+        },
+        {
+          "quantity": 3,
+          "typeID": 30476
+        },
+        {
+          "quantity": 8,
+          "typeID": 30002
+        },
+        {
+          "quantity": 8,
+          "typeID": 30466
+        },
+        {
+          "quantity": 12,
+          "typeID": 45654
+        },
+        {
+          "quantity": 15,
+          "typeID": 11478
+        },
+        {
+          "quantity": 16,
+          "typeID": 30464
+        },
+        {
+          "quantity": 21,
+          "typeID": 30474
+        }
+      ],
+      "products": [
+        {
+          "quantity": 1,
+          "typeID": 29986
+        }
+      ],
+      "skills": [
+        {
+          "level": 4,
+          "typeID": 11452
+        },
+        {
+          "level": 5,
+          "typeID": 3380
+        },
+        {
+          "level": 5,
+          "typeID": 3397
+        },
+        {
+          "level": 5,
+          "typeID": 11444
+        }
+      ],
+      "time": 300000
+    }
+  },
+  {
+    "blueprintTypeID": 29989,
+    "name": {
+      "zh": "海神级",
+      "en": "Proteus"
+    },
+    "manufacturing": {
+      "materials": [
+        {
+          "quantity": 2,
+          "typeID": 29996
+        },
+        {
+          "quantity": 2,
+          "typeID": 30470
+        },
+        {
+          "quantity": 3,
+          "typeID": 30476
+        },
+        {
+          "quantity": 8,
+          "typeID": 30002
+        },
+        {
+          "quantity": 8,
+          "typeID": 30466
+        },
+        {
+          "quantity": 12,
+          "typeID": 45652
+        },
+        {
+          "quantity": 15,
+          "typeID": 11478
+        },
+        {
+          "quantity": 16,
+          "typeID": 30464
+        },
+        {
+          "quantity": 21,
+          "typeID": 30474
+        }
+      ],
+      "products": [
+        {
+          "quantity": 1,
+          "typeID": 29988
+        }
+      ],
+      "skills": [
+        {
+          "level": 4,
+          "typeID": 11452
+        },
+        {
+          "level": 5,
+          "typeID": 3380
+        },
+        {
+          "level": 5,
+          "typeID": 3397
+        },
+        {
+          "level": 5,
+          "typeID": 11450
+        }
+      ],
+      "time": 300000
+    }
+  },
+  {
+    "blueprintTypeID": 29991,
+    "name": {
+      "zh": "洛基级",
+      "en": "Loki"
+    },
+    "manufacturing": {
+      "materials": [
+        {
+          "quantity": 2,
+          "typeID": 29996
+        },
+        {
+          "quantity": 2,
+          "typeID": 30470
+        },
+        {
+          "quantity": 3,
+          "typeID": 30476
+        },
+        {
+          "quantity": 8,
+          "typeID": 30002
+        },
+        {
+          "quantity": 8,
+          "typeID": 30466
+        },
+        {
+          "quantity": 12,
+          "typeID": 45655
+        },
+        {
+          "quantity": 15,
+          "typeID": 11478
+        },
+        {
+          "quantity": 16,
+          "typeID": 30464
+        },
+        {
+          "quantity": 21,
+          "typeID": 30474
+        }
+      ],
+      "products": [
+        {
+          "quantity": 1,
+          "typeID": 29990
+        }
+      ],
+      "skills": [
+        {
+          "level": 4,
+          "typeID": 11452
+        },
+        {
+          "level": 5,
+          "typeID": 3380
+        },
+        {
+          "level": 5,
+          "typeID": 3397
+        },
+        {
+          "level": 5,
+          "typeID": 11445
+        }
+      ],
+      "time": 300000
+    }
+  },
+  {
+    "blueprintTypeID": 34318,
+    "name": {
+      "zh": "忏悔者级",
+      "en": "Confessor"
+    },
+    "manufacturing": {
+      "materials": [
+        {
+          "quantity": 2,
+          "typeID": 30466
+        },
+        {
+          "quantity": 2,
+          "typeID": 30002
+        },
+        {
+          "quantity": 2,
+          "typeID": 30476
+        },
+        {
+          "quantity": 8,
+          "typeID": 30464
+        },
+        {
+          "quantity": 2,
+          "typeID": 29992
+        },
+        {
+          "quantity": 2,
+          "typeID": 30478
+        },
+        {
+          "quantity": 3,
+          "typeID": 34396
+        },
+        {
+          "quantity": 2,
+          "typeID": 29994
+        },
+        {
+          "quantity": 10,
+          "typeID": 11478
+        }
+      ],
+      "products": [
+        {
+          "quantity": 1,
+          "typeID": 34317
+        }
+      ],
+      "skills": [
+        {
+          "level": 5,
+          "typeID": 3380
+        },
+        {
+          "level": 5,
+          "typeID": 3395
+        },
+        {
+          "level": 5,
+          "typeID": 11444
+        },
+        {
+          "level": 4,
+          "typeID": 11452
+        }
+      ],
+      "time": 180000
+    }
+  },
+  {
+    "blueprintTypeID": 34563,
+    "name": {
+      "zh": "斯威普级",
+      "en": "Svipul"
+    },
+    "manufacturing": {
+      "materials": [
+        {
+          "quantity": 2,
+          "typeID": 30466
+        },
+        {
+          "quantity": 2,
+          "typeID": 30002
+        },
+        {
+          "quantity": 2,
+          "typeID": 30476
+        },
+        {
+          "quantity": 8,
+          "typeID": 30464
+        },
+        {
+          "quantity": 2,
+          "typeID": 29992
+        },
+        {
+          "quantity": 2,
+          "typeID": 30478
+        },
+        {
+          "quantity": 3,
+          "typeID": 34396
+        },
+        {
+          "quantity": 2,
+          "typeID": 29994
+        },
+        {
+          "quantity": 10,
+          "typeID": 11478
+        }
+      ],
+      "products": [
+        {
+          "quantity": 1,
+          "typeID": 34562
+        }
+      ],
+      "skills": [
+        {
+          "level": 5,
+          "typeID": 3380
+        },
+        {
+          "level": 5,
+          "typeID": 3395
+        },
+        {
+          "level": 5,
+          "typeID": 11445
+        },
+        {
+          "level": 4,
+          "typeID": 11452
+        }
+      ],
+      "time": 180000
+    }
+  },
+  {
+    "blueprintTypeID": 34829,
+    "name": {
+      "zh": "寒鸦级",
+      "en": "Jackdaw"
+    },
+    "manufacturing": {
+      "materials": [
+        {
+          "quantity": 2,
+          "typeID": 30466
+        },
+        {
+          "quantity": 2,
+          "typeID": 30002
+        },
+        {
+          "quantity": 2,
+          "typeID": 30476
+        },
+        {
+          "quantity": 8,
+          "typeID": 30464
+        },
+        {
+          "quantity": 2,
+          "typeID": 29992
+        },
+        {
+          "quantity": 2,
+          "typeID": 30478
+        },
+        {
+          "quantity": 3,
+          "typeID": 34396
+        },
+        {
+          "quantity": 2,
+          "typeID": 29994
+        },
+        {
+          "quantity": 10,
+          "typeID": 11478
+        }
+      ],
+      "products": [
+        {
+          "quantity": 1,
+          "typeID": 34828
+        }
+      ],
+      "skills": [
+        {
+          "level": 5,
+          "typeID": 3380
+        },
+        {
+          "level": 5,
+          "typeID": 3395
+        },
+        {
+          "level": 5,
+          "typeID": 11454
+        },
+        {
+          "level": 4,
+          "typeID": 11452
+        }
+      ],
+      "time": 180000
+    }
+  },
+  {
+    "blueprintTypeID": 35684,
+    "name": {
+      "zh": "赫卡特级",
+      "en": "Hecate"
+    },
+    "manufacturing": {
+      "materials": [
+        {
+          "quantity": 2,
+          "typeID": 29992
+        },
+        {
+          "quantity": 2,
+          "typeID": 29994
+        },
+        {
+          "quantity": 2,
+          "typeID": 30002
+        },
+        {
+          "quantity": 2,
+          "typeID": 30466
+        },
+        {
+          "quantity": 2,
+          "typeID": 30476
+        },
+        {
+          "quantity": 2,
+          "typeID": 30478
+        },
+        {
+          "quantity": 3,
+          "typeID": 34396
+        },
+        {
+          "quantity": 8,
+          "typeID": 30464
+        },
+        {
+          "quantity": 10,
+          "typeID": 11478
+        }
+      ],
+      "products": [
+        {
+          "quantity": 1,
+          "typeID": 35683
+        }
+      ],
+      "skills": [
+        {
+          "level": 4,
+          "typeID": 11452
+        },
+        {
+          "level": 5,
+          "typeID": 3380
+        },
+        {
+          "level": 5,
+          "typeID": 3395
+        },
+        {
+          "level": 5,
+          "typeID": 11450
+        }
+      ],
+      "time": 180000
+    }
+  }
+]

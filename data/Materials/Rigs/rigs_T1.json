@@ -1,0 +1,2077 @@
+[
+  {
+    "id": 4395,
+    "zh": "中型处理器超频组件 I",
+    "en": "Medium Processor Overclocking Unit I"
+  },
+  {
+    "id": 4397,
+    "zh": "大型处理器超频组件 I",
+    "en": "Large Processor Overclocking Unit I"
+  },
+  {
+    "id": 25736,
+    "zh": "大型电磁装甲强化装置 I",
+    "en": "Large EM Armor Reinforcer I"
+  },
+  {
+    "id": 25888,
+    "zh": "大型爆炸装甲强化装置 I",
+    "en": "Large Explosive Armor Reinforcer I"
+  },
+  {
+    "id": 25890,
+    "zh": "大型动能装甲强化装置 I",
+    "en": "Large Kinetic Armor Reinforcer I"
+  },
+  {
+    "id": 25892,
+    "zh": "大型热能装甲强化装置 I",
+    "en": "Large Thermal Armor Reinforcer I"
+  },
+  {
+    "id": 25894,
+    "zh": "大型三角装甲聚合器 I",
+    "en": "Large Trimark Armor Pump I"
+  },
+  {
+    "id": 25896,
+    "zh": "大型辅助纳米聚合器 I",
+    "en": "Large Auxiliary Nano Pump I"
+  },
+  {
+    "id": 25898,
+    "zh": "大型纳米机器人加速器 I",
+    "en": "Large Nanobot Accelerator I"
+  },
+  {
+    "id": 25900,
+    "zh": "大型远程维修增效器 I",
+    "en": "Large Remote Repair Augmentor I"
+  },
+  {
+    "id": 25902,
+    "zh": "大型打捞回收工具 I",
+    "en": "Large Salvage Tackle I"
+  },
+  {
+    "id": 25906,
+    "zh": "大型核心防御电容器安全管理装置 I",
+    "en": "Large Core Defense Capacitor Safeguard I"
+  },
+  {
+    "id": 25908,
+    "zh": "大型无人机控制范围扩大装置 I",
+    "en": "Large Drone Control Range Augmentor I"
+  },
+  {
+    "id": 25910,
+    "zh": "大型无人机维修加速器 I",
+    "en": "Large Drone Repair Augmentor I"
+  },
+  {
+    "id": 25912,
+    "zh": "大型无人机射距芯片 I",
+    "en": "Large Drone Scope Chip I"
+  },
+  {
+    "id": 25914,
+    "zh": "大型无人机增速装置 I",
+    "en": "Large Drone Speed Augmentor I"
+  },
+  {
+    "id": 25916,
+    "zh": "大型无人机耐用性增强装置 I",
+    "en": "Large Drone Durability Enhancer I"
+  },
+  {
+    "id": 25918,
+    "zh": "大型无人机采矿增量器 I",
+    "en": "Large Drone Mining Augmentor I"
+  },
+  {
+    "id": 25920,
+    "zh": "大型岗哨炮伤害增强设备 I",
+    "en": "Large Sentry Damage Augmentor I"
+  },
+  {
+    "id": 25924,
+    "zh": "大型停滞无人机增强设备 I",
+    "en": "Large Stasis Drone Augmentor I"
+  },
+  {
+    "id": 25928,
+    "zh": "大型信号干扰增效装置 I",
+    "en": "Large Signal Disruption Amplifier I"
+  },
+  {
+    "id": 25930,
+    "zh": "大型放射范围约束装置 I",
+    "en": "Large Emission Scope Sharpener I"
+  },
+  {
+    "id": 25932,
+    "zh": "大型弥集进化演算法数据库 I",
+    "en": "Large Memetic Algorithm Bank I"
+  },
+  {
+    "id": 25934,
+    "zh": "大型水冷电子设备 I",
+    "en": "Large Liquid Cooled Electronics I"
+  },
+  {
+    "id": 25936,
+    "zh": "大型引力电容器升级 I",
+    "en": "Large Gravity Capacitor Upgrade I"
+  },
+  {
+    "id": 25948,
+    "zh": "大型电容器控制电路 I",
+    "en": "Large Capacitor Control Circuit I"
+  },
+  {
+    "id": 25950,
+    "zh": "大型出口端口放大器 I",
+    "en": "Large Egress Port Maximizer I"
+  },
+  {
+    "id": 25952,
+    "zh": "大型能量栅格子程序优化器 I",
+    "en": "Large Powergrid Subroutine Maximizer I"
+  },
+  {
+    "id": 25954,
+    "zh": "大型半导体记忆电池 I",
+    "en": "Large Semiconductor Memory Cell I"
+  },
+  {
+    "id": 25956,
+    "zh": "大型辅助电源路由器 I",
+    "en": "Large Ancillary Current Router I"
+  },
+  {
+    "id": 25968,
+    "zh": "大型能量武器释放过滤器 I",
+    "en": "Large Energy Discharge Elutriation I"
+  },
+  {
+    "id": 25970,
+    "zh": "大型能量武器范围扩大设备 I",
+    "en": "Large Energy Ambit Extension I"
+  },
+  {
+    "id": 25972,
+    "zh": "大型能量武器轨迹校准设备 I",
+    "en": "Large Energy Locus Coordinator I"
+  },
+  {
+    "id": 25974,
+    "zh": "大型能量武器急转控制器 I",
+    "en": "Large Energy Metastasis Adjuster I"
+  },
+  {
+    "id": 25976,
+    "zh": "大型冷凝能量管理单元 I",
+    "en": "Large Algid Energy Administrations Unit I"
+  },
+  {
+    "id": 25978,
+    "zh": "大型能量武器发散调节装置 I",
+    "en": "Large Energy Burst Aerator I"
+  },
+  {
+    "id": 25980,
+    "zh": "大型能量武器冲击加速器 I",
+    "en": "Large Energy Collision Accelerator I"
+  },
+  {
+    "id": 25996,
+    "zh": "大型混合武器节能设备 I",
+    "en": "Large Hybrid Discharge Elutriation I"
+  },
+  {
+    "id": 25998,
+    "zh": "大型混合武器范围扩大装置 I",
+    "en": "Large Hybrid Ambit Extension I"
+  },
+  {
+    "id": 26000,
+    "zh": "大型混合武器轨迹校准设备 I",
+    "en": "Large Hybrid Locus Coordinator I"
+  },
+  {
+    "id": 26002,
+    "zh": "大型混合武器急转控制器 I",
+    "en": "Large Hybrid Metastasis Adjuster I"
+  },
+  {
+    "id": 26004,
+    "zh": "大型冷凝混合管理单元 I",
+    "en": "Large Algid Hybrid Administrations Unit I"
+  },
+  {
+    "id": 26006,
+    "zh": "大型混合武器射速调节装置 I",
+    "en": "Large Hybrid Burst Aerator I"
+  },
+  {
+    "id": 26008,
+    "zh": "大型混合武器冲击加速器 I",
+    "en": "Large Hybrid Collision Accelerator I"
+  },
+  {
+    "id": 26016,
+    "zh": "大型液压舱推进器 I",
+    "en": "Large Hydraulic Bay Thrusters I"
+  },
+  {
+    "id": 26020,
+    "zh": "大型弹头强化辅助系统 I",
+    "en": "Large Warhead Rigor Catalyst I"
+  },
+  {
+    "id": 26022,
+    "zh": "大型火箭燃料缓冲隔离装置 I",
+    "en": "Large Rocket Fuel Cache Partition I"
+  },
+  {
+    "id": 26026,
+    "zh": "大型装卸加速装置 I",
+    "en": "Large Bay Loading Accelerator I"
+  },
+  {
+    "id": 26028,
+    "zh": "大型弹头爆燃辅助系统 I",
+    "en": "Large Warhead Flare Catalyst I"
+  },
+  {
+    "id": 26030,
+    "zh": "大型弹头加热辅助系统 I",
+    "en": "Large Warhead Calefaction Catalyst I"
+  },
+  {
+    "id": 26038,
+    "zh": "大型射弹武器范围扩大装置 I",
+    "en": "Large Projectile Ambit Extension I"
+  },
+  {
+    "id": 26040,
+    "zh": "大型射弹武器轨迹校准设备 I",
+    "en": "Large Projectile Locus Coordinator I"
+  },
+  {
+    "id": 26042,
+    "zh": "大型射弹武器急转控制器 I",
+    "en": "Large Projectile Metastasis Adjuster I"
+  },
+  {
+    "id": 26046,
+    "zh": "大型射弹武器射速调节装置 I",
+    "en": "Large Projectile Burst Aerator I"
+  },
+  {
+    "id": 26048,
+    "zh": "大型射弹武器冲击加速器 I",
+    "en": "Large Projectile Collision Accelerator I"
+  },
+  {
+    "id": 26056,
+    "zh": "大型动态燃料控制阀 I",
+    "en": "Large Dynamic Fuel Valve I"
+  },
+  {
+    "id": 26058,
+    "zh": "大型低摩擦喷嘴接口 I",
+    "en": "Large Low Friction Nozzle Joints I"
+  },
+  {
+    "id": 26060,
+    "zh": "大型辅助推进器 I",
+    "en": "Large Auxiliary Thrusters I"
+  },
+  {
+    "id": 26062,
+    "zh": "大型引擎热能防护装置 I",
+    "en": "Large Engine Thermal Shielding I"
+  },
+  {
+    "id": 26066,
+    "zh": "大型跃迁核心优化系统 I",
+    "en": "Large Warp Core Optimizer I"
+  },
+  {
+    "id": 26068,
+    "zh": "大型超空间速度调节器 I",
+    "en": "Large Hyperspatial Velocity Optimizer I"
+  },
+  {
+    "id": 26070,
+    "zh": "大型复合碳素引擎舱 I",
+    "en": "Large Polycarbon Engine Housing I"
+  },
+  {
+    "id": 26072,
+    "zh": "大型货柜舱优化改造 I",
+    "en": "Large Cargohold Optimization I"
+  },
+  {
+    "id": 26076,
+    "zh": "大型电磁护盾强化装置 I",
+    "en": "Large EM Shield Reinforcer I"
+  },
+  {
+    "id": 26078,
+    "zh": "大型爆炸护盾强化装置 I",
+    "en": "Large Explosive Shield Reinforcer I"
+  },
+  {
+    "id": 26080,
+    "zh": "大型动能护盾强化装置 I",
+    "en": "Large Kinetic Shield Reinforcer I"
+  },
+  {
+    "id": 26082,
+    "zh": "大型热能护盾强化装置 I",
+    "en": "Large Thermal Shield Reinforcer I"
+  },
+  {
+    "id": 26084,
+    "zh": "大型核心防御力场稳固装置 I",
+    "en": "Large Core Defense Field Purger I"
+  },
+  {
+    "id": 26086,
+    "zh": "大型核心防御操控稳定装置 I",
+    "en": "Large Core Defense Operational Solidifier I"
+  },
+  {
+    "id": 26088,
+    "zh": "大型核心防御力场扩张装置 I",
+    "en": "Large Core Defense Field Extender I"
+  },
+  {
+    "id": 26090,
+    "zh": "大型核心防御节能装置 I",
+    "en": "Large Core Defense Charge Economizer I"
+  },
+  {
+    "id": 26096,
+    "zh": "大型锁定系统稳定器 I",
+    "en": "Large Targeting Systems Stabilizer I"
+  },
+  {
+    "id": 26100,
+    "zh": "大型锁定系统辅助控制器 I",
+    "en": "Large Targeting System Subcontroller I"
+  },
+  {
+    "id": 26102,
+    "zh": "大型离子力场投射器 I",
+    "en": "Large Ionic Field Projector I"
+  },
+  {
+    "id": 26104,
+    "zh": "大型信号集中设备 I",
+    "en": "Large Signal Focusing Kit I"
+  },
+  {
+    "id": 26106,
+    "zh": "大型粒子散布放大器 I",
+    "en": "Large Particle Dispersion Augmentor I"
+  },
+  {
+    "id": 26108,
+    "zh": "大型粒子散布投放器 I",
+    "en": "Large Particle Dispersion Projector I"
+  },
+  {
+    "id": 26110,
+    "zh": "大型反信号区域投射器 I",
+    "en": "Large Inverted Signal Field Projector I"
+  },
+  {
+    "id": 26112,
+    "zh": "大型跟踪诊断子程序 I",
+    "en": "Large Tracking Diagnostic Subroutines I"
+  },
+  {
+    "id": 26929,
+    "zh": "小型处理器超频组件 I",
+    "en": "Small Processor Overclocking Unit I"
+  },
+  {
+    "id": 27064,
+    "zh": "旗舰级辅助纳米聚合器 I",
+    "en": "Capital Auxiliary Nano Pump I"
+  },
+  {
+    "id": 27068,
+    "zh": "小型远程维修增效器 I",
+    "en": "Small Remote Repair Augmentor I"
+  },
+  {
+    "id": 30987,
+    "zh": "小型三角装甲聚合器 I",
+    "en": "Small Trimark Armor Pump I"
+  },
+  {
+    "id": 30993,
+    "zh": "旗舰级三角装甲聚合器 I",
+    "en": "Capital Trimark Armor Pump I"
+  },
+  {
+    "id": 30997,
+    "zh": "小型电磁装甲强化装置 I",
+    "en": "Small EM Armor Reinforcer I"
+  },
+  {
+    "id": 30999,
+    "zh": "中型电磁装甲强化装置 I",
+    "en": "Medium EM Armor Reinforcer I"
+  },
+  {
+    "id": 31001,
+    "zh": "旗舰级电磁装甲强化装置 I",
+    "en": "Capital EM Armor Reinforcer I"
+  },
+  {
+    "id": 31009,
+    "zh": "小型爆炸装甲强化装置 I",
+    "en": "Small Explosive Armor Reinforcer I"
+  },
+  {
+    "id": 31011,
+    "zh": "中型爆炸装甲强化装置 I",
+    "en": "Medium Explosive Armor Reinforcer I"
+  },
+  {
+    "id": 31013,
+    "zh": "旗舰级爆炸装甲强化装置 I",
+    "en": "Capital Explosive Armor Reinforcer I"
+  },
+  {
+    "id": 31021,
+    "zh": "小型动能装甲强化装置 I",
+    "en": "Small Kinetic Armor Reinforcer I"
+  },
+  {
+    "id": 31023,
+    "zh": "中型动能装甲强化装置 I",
+    "en": "Medium Kinetic Armor Reinforcer I"
+  },
+  {
+    "id": 31025,
+    "zh": "旗舰级动能装甲强化装置 I",
+    "en": "Capital Kinetic Armor Reinforcer I"
+  },
+  {
+    "id": 31033,
+    "zh": "小型热能装甲强化装置 I",
+    "en": "Small Thermal Armor Reinforcer I"
+  },
+  {
+    "id": 31035,
+    "zh": "中型热能装甲强化装置 I",
+    "en": "Medium Thermal Armor Reinforcer I"
+  },
+  {
+    "id": 31037,
+    "zh": "旗舰级热能装甲强化装置 I",
+    "en": "Capital Thermal Armor Reinforcer I"
+  },
+  {
+    "id": 31045,
+    "zh": "小型辅助纳米聚合器 I",
+    "en": "Small Auxiliary Nano Pump I"
+  },
+  {
+    "id": 31047,
+    "zh": "中型辅助纳米聚合器 I",
+    "en": "Medium Auxiliary Nano Pump I"
+  },
+  {
+    "id": 31055,
+    "zh": "中型三角装甲聚合器 I",
+    "en": "Medium Trimark Armor Pump I"
+  },
+  {
+    "id": 31063,
+    "zh": "小型纳米机器人加速器 I",
+    "en": "Small Nanobot Accelerator I"
+  },
+  {
+    "id": 31065,
+    "zh": "中型纳米机器人加速器 I",
+    "en": "Medium Nanobot Accelerator I"
+  },
+  {
+    "id": 31067,
+    "zh": "旗舰级纳米机器人加速器 I",
+    "en": "Capital Nanobot Accelerator I"
+  },
+  {
+    "id": 31073,
+    "zh": "中型远程维修增效器 I",
+    "en": "Medium Remote Repair Augmentor I"
+  },
+  {
+    "id": 31075,
+    "zh": "旗舰级远程维修增效器 I",
+    "en": "Capital Remote Repair Augmentor I"
+  },
+  {
+    "id": 31083,
+    "zh": "小型打捞回收工具 I",
+    "en": "Small Salvage Tackle I"
+  },
+  {
+    "id": 31085,
+    "zh": "中型打捞回收工具 I",
+    "en": "Medium Salvage Tackle I"
+  },
+  {
+    "id": 31087,
+    "zh": "旗舰级打捞回收工具 I",
+    "en": "Capital Salvage Tackle I"
+  },
+  {
+    "id": 31105,
+    "zh": "小型辅助推进器 I",
+    "en": "Small Auxiliary Thrusters I"
+  },
+  {
+    "id": 31107,
+    "zh": "中型辅助推进器 I",
+    "en": "Medium Auxiliary Thrusters I"
+  },
+  {
+    "id": 31109,
+    "zh": "旗舰级辅助推进器 I",
+    "en": "Capital Auxiliary Thrusters I"
+  },
+  {
+    "id": 31117,
+    "zh": "小型货柜舱优化改造 I",
+    "en": "Small Cargohold Optimization I"
+  },
+  {
+    "id": 31119,
+    "zh": "中型货柜舱优化改造 I",
+    "en": "Medium Cargohold Optimization I"
+  },
+  {
+    "id": 31121,
+    "zh": "旗舰级货柜舱优化改造 I",
+    "en": "Capital Cargohold Optimization I"
+  },
+  {
+    "id": 31129,
+    "zh": "小型动态燃料控制阀 I",
+    "en": "Small Dynamic Fuel Valve I"
+  },
+  {
+    "id": 31131,
+    "zh": "中型动态燃料控制阀 I",
+    "en": "Medium Dynamic Fuel Valve I"
+  },
+  {
+    "id": 31133,
+    "zh": "旗舰级动态燃料控制阀 I",
+    "en": "Capital Dynamic Fuel Valve I"
+  },
+  {
+    "id": 31141,
+    "zh": "小型引擎热能防护装置 I",
+    "en": "Small Engine Thermal Shielding I"
+  },
+  {
+    "id": 31143,
+    "zh": "中型引擎热能防护装置 I",
+    "en": "Medium Engine Thermal Shielding I"
+  },
+  {
+    "id": 31145,
+    "zh": "旗舰级引擎热能防护装置 I",
+    "en": "Capital Engine Thermal Shielding I"
+  },
+  {
+    "id": 31153,
+    "zh": "小型低摩擦喷嘴接口 I",
+    "en": "Small Low Friction Nozzle Joints I"
+  },
+  {
+    "id": 31155,
+    "zh": "中型低摩擦喷嘴接口 I",
+    "en": "Medium Low Friction Nozzle Joints I"
+  },
+  {
+    "id": 31157,
+    "zh": "旗舰级低摩擦喷嘴接口 I",
+    "en": "Capital Low Friction Nozzle Joints I"
+  },
+  {
+    "id": 31159,
+    "zh": "小型超空间速度调节器 I",
+    "en": "Small Hyperspatial Velocity Optimizer I"
+  },
+  {
+    "id": 31161,
+    "zh": "中型超空间速度调节器 I",
+    "en": "Medium Hyperspatial Velocity Optimizer I"
+  },
+  {
+    "id": 31163,
+    "zh": "旗舰级超空间速度调节器 I",
+    "en": "Capital Hyperspatial Velocity Optimizer I"
+  },
+  {
+    "id": 31177,
+    "zh": "小型复合碳素引擎舱 I",
+    "en": "Small Polycarbon Engine Housing I"
+  },
+  {
+    "id": 31179,
+    "zh": "中型复合碳素引擎舱 I",
+    "en": "Medium Polycarbon Engine Housing I"
+  },
+  {
+    "id": 31181,
+    "zh": "旗舰级复合碳素引擎舱 I",
+    "en": "Capital Polycarbon Engine Housing I"
+  },
+  {
+    "id": 31189,
+    "zh": "小型跃迁核心优化系统 I",
+    "en": "Small Warp Core Optimizer I"
+  },
+  {
+    "id": 31191,
+    "zh": "中型跃迁核心优化系统 I",
+    "en": "Medium Warp Core Optimizer I"
+  },
+  {
+    "id": 31193,
+    "zh": "旗舰级跃迁核心优化系统 I",
+    "en": "Capital Warp Core Optimizer I"
+  },
+  {
+    "id": 31201,
+    "zh": "小型放射范围约束装置 I",
+    "en": "Small Emission Scope Sharpener I"
+  },
+  {
+    "id": 31203,
+    "zh": "中型放射范围约束装置 I",
+    "en": "Medium Emission Scope Sharpener I"
+  },
+  {
+    "id": 31205,
+    "zh": "旗舰级放射范围约束装置 I",
+    "en": "Capital Emission Scope Sharpener I"
+  },
+  {
+    "id": 31213,
+    "zh": "小型引力电容器升级 I",
+    "en": "Small Gravity Capacitor Upgrade I"
+  },
+  {
+    "id": 31215,
+    "zh": "中型引力电容器升级 I",
+    "en": "Medium Gravity Capacitor Upgrade I"
+  },
+  {
+    "id": 31217,
+    "zh": "旗舰级引力电容器升级 I",
+    "en": "Capital Gravity Capacitor Upgrade I"
+  },
+  {
+    "id": 31226,
+    "zh": "小型水冷电子设备 I",
+    "en": "Small Liquid Cooled Electronics I"
+  },
+  {
+    "id": 31228,
+    "zh": "中型水冷电子设备 I",
+    "en": "Medium Liquid Cooled Electronics I"
+  },
+  {
+    "id": 31230,
+    "zh": "旗舰级水冷电子设备 I",
+    "en": "Capital Liquid Cooled Electronics I"
+  },
+  {
+    "id": 31238,
+    "zh": "小型弥集进化演算法数据库 I",
+    "en": "Small Memetic Algorithm Bank I"
+  },
+  {
+    "id": 31240,
+    "zh": "中型弥集进化演算法数据库 I",
+    "en": "Medium Memetic Algorithm Bank I"
+  },
+  {
+    "id": 31242,
+    "zh": "旗舰级弥集进化演算法数据库 I",
+    "en": "Capital Memetic Algorithm Bank I"
+  },
+  {
+    "id": 31250,
+    "zh": "小型信号干扰增效装置 I",
+    "en": "Small Signal Disruption Amplifier I"
+  },
+  {
+    "id": 31252,
+    "zh": "中型信号干扰增效装置 I",
+    "en": "Medium Signal Disruption Amplifier I"
+  },
+  {
+    "id": 31254,
+    "zh": "旗舰级信号干扰增效装置 I",
+    "en": "Capital Signal Disruption Amplifier I"
+  },
+  {
+    "id": 31262,
+    "zh": "小型反信号区域投射器 I",
+    "en": "Small Inverted Signal Field Projector I"
+  },
+  {
+    "id": 31264,
+    "zh": "中型反信号区域投射器 I",
+    "en": "Medium Inverted Signal Field Projector I"
+  },
+  {
+    "id": 31266,
+    "zh": "旗舰级反信号区域投射器 I",
+    "en": "Capital Inverted Signal Field Projector I"
+  },
+  {
+    "id": 31274,
+    "zh": "小型离子力场投射器 I",
+    "en": "Small Ionic Field Projector I"
+  },
+  {
+    "id": 31276,
+    "zh": "中型离子力场投射器 I",
+    "en": "Medium Ionic Field Projector I"
+  },
+  {
+    "id": 31278,
+    "zh": "旗舰级离子力场投射器 I",
+    "en": "Capital Ionic Field Projector I"
+  },
+  {
+    "id": 31286,
+    "zh": "小型粒子散布放大器 I",
+    "en": "Small Particle Dispersion Augmentor I"
+  },
+  {
+    "id": 31288,
+    "zh": "中型粒子散布放大器 I",
+    "en": "Medium Particle Dispersion Augmentor I"
+  },
+  {
+    "id": 31290,
+    "zh": "旗舰级粒子散布放大器 I",
+    "en": "Capital Particle Dispersion Augmentor I"
+  },
+  {
+    "id": 31298,
+    "zh": "小型粒子散布投放器 I",
+    "en": "Small Particle Dispersion Projector I"
+  },
+  {
+    "id": 31300,
+    "zh": "中型粒子散布投放器 I",
+    "en": "Medium Particle Dispersion Projector I"
+  },
+  {
+    "id": 31302,
+    "zh": "旗舰级粒子散布投放器 I",
+    "en": "Capital Particle Dispersion Projector I"
+  },
+  {
+    "id": 31310,
+    "zh": "小型信号集中设备 I",
+    "en": "Small Signal Focusing Kit I"
+  },
+  {
+    "id": 31312,
+    "zh": "中型信号集中设备 I",
+    "en": "Medium Signal Focusing Kit I"
+  },
+  {
+    "id": 31314,
+    "zh": "旗舰级信号集中设备 I",
+    "en": "Capital Signal Focusing Kit I"
+  },
+  {
+    "id": 31322,
+    "zh": "小型锁定系统辅助控制器 I",
+    "en": "Small Targeting System Subcontroller I"
+  },
+  {
+    "id": 31324,
+    "zh": "中型锁定系统辅助控制器 I",
+    "en": "Medium Targeting System Subcontroller I"
+  },
+  {
+    "id": 31326,
+    "zh": "旗舰级锁定系统辅助控制器 I",
+    "en": "Capital Targeting System Subcontroller I"
+  },
+  {
+    "id": 31334,
+    "zh": "小型锁定系统稳定器 I",
+    "en": "Small Targeting Systems Stabilizer I"
+  },
+  {
+    "id": 31336,
+    "zh": "中型锁定系统稳定器 I",
+    "en": "Medium Targeting Systems Stabilizer I"
+  },
+  {
+    "id": 31338,
+    "zh": "旗舰级锁定系统稳定器 I",
+    "en": "Capital Targeting Systems Stabilizer I"
+  },
+  {
+    "id": 31346,
+    "zh": "小型跟踪诊断子程序 I",
+    "en": "Small Tracking Diagnostic Subroutines I"
+  },
+  {
+    "id": 31348,
+    "zh": "中型跟踪诊断子程序 I",
+    "en": "Medium Tracking Diagnostic Subroutines I"
+  },
+  {
+    "id": 31350,
+    "zh": "旗舰级跟踪诊断子程序 I",
+    "en": "Capital Tracking Diagnostic Subroutines I"
+  },
+  {
+    "id": 31358,
+    "zh": "小型辅助电源路由器 I",
+    "en": "Small Ancillary Current Router I"
+  },
+  {
+    "id": 31360,
+    "zh": "中型辅助电源路由器 I",
+    "en": "Medium Ancillary Current Router I"
+  },
+  {
+    "id": 31362,
+    "zh": "旗舰级辅助电源路由器 I",
+    "en": "Capital Ancillary Current Router I"
+  },
+  {
+    "id": 31370,
+    "zh": "小型电容器控制电路 I",
+    "en": "Small Capacitor Control Circuit I"
+  },
+  {
+    "id": 31372,
+    "zh": "中型电容器控制电路 I",
+    "en": "Medium Capacitor Control Circuit I"
+  },
+  {
+    "id": 31374,
+    "zh": "旗舰级电容器控制电路 I",
+    "en": "Capital Capacitor Control Circuit I"
+  },
+  {
+    "id": 31382,
+    "zh": "小型出口端口放大器 I",
+    "en": "Small Egress Port Maximizer I"
+  },
+  {
+    "id": 31384,
+    "zh": "中型出口端口放大器 I",
+    "en": "Medium Egress Port Maximizer I"
+  },
+  {
+    "id": 31386,
+    "zh": "旗舰级出口端口放大器 I",
+    "en": "Capital Egress Port Maximizer I"
+  },
+  {
+    "id": 31394,
+    "zh": "小型能量栅格子程序优化器 I",
+    "en": "Small Powergrid Subroutine Maximizer I"
+  },
+  {
+    "id": 31396,
+    "zh": "中型能量栅格子程序优化器 I",
+    "en": "Medium Powergrid Subroutine Maximizer I"
+  },
+  {
+    "id": 31398,
+    "zh": "旗舰级能量栅格子程序优化器 I",
+    "en": "Capital Powergrid Subroutine Maximizer I"
+  },
+  {
+    "id": 31406,
+    "zh": "小型半导体记忆电池 I",
+    "en": "Small Semiconductor Memory Cell I"
+  },
+  {
+    "id": 31408,
+    "zh": "中型半导体记忆电池 I",
+    "en": "Medium Semiconductor Memory Cell I"
+  },
+  {
+    "id": 31410,
+    "zh": "旗舰级半导体记忆电池 I",
+    "en": "Capital Semiconductor Memory Cell I"
+  },
+  {
+    "id": 31418,
+    "zh": "小型冷凝能量管理单元 I",
+    "en": "Small Algid Energy Administrations Unit I"
+  },
+  {
+    "id": 31420,
+    "zh": "中型冷凝能量管理单元 I",
+    "en": "Medium Algid Energy Administrations Unit I"
+  },
+  {
+    "id": 31422,
+    "zh": "旗舰级冷凝能量管理单元 I",
+    "en": "Capital Algid Energy Administrations Unit I"
+  },
+  {
+    "id": 31430,
+    "zh": "小型能量武器范围扩大设备 I",
+    "en": "Small Energy Ambit Extension I"
+  },
+  {
+    "id": 31432,
+    "zh": "中型能量武器范围扩大设备 I",
+    "en": "Medium Energy Ambit Extension I"
+  },
+  {
+    "id": 31434,
+    "zh": "旗舰级能量武器范围扩大设备 I",
+    "en": "Capital Energy Ambit Extension I"
+  },
+  {
+    "id": 31442,
+    "zh": "小型能量武器发散调节装置 I",
+    "en": "Small Energy Burst Aerator I"
+  },
+  {
+    "id": 31444,
+    "zh": "中型能量武器发散调节装置 I",
+    "en": "Medium Energy Burst Aerator I"
+  },
+  {
+    "id": 31446,
+    "zh": "旗舰级能量武器发散调节装置 I",
+    "en": "Capital Energy Burst Aerator I"
+  },
+  {
+    "id": 31454,
+    "zh": "小型能量武器冲击加速器 I",
+    "en": "Small Energy Collision Accelerator I"
+  },
+  {
+    "id": 31456,
+    "zh": "中型能量武器冲击加速器 I",
+    "en": "Medium Energy Collision Accelerator I"
+  },
+  {
+    "id": 31458,
+    "zh": "旗舰级能量武器冲击加速器 I",
+    "en": "Capital Energy Collision Accelerator I"
+  },
+  {
+    "id": 31466,
+    "zh": "小型能量武器释放过滤器 I",
+    "en": "Small Energy Discharge Elutriation I"
+  },
+  {
+    "id": 31468,
+    "zh": "中型能量武器释放过滤器 I",
+    "en": "Medium Energy Discharge Elutriation I"
+  },
+  {
+    "id": 31470,
+    "zh": "旗舰级能量武器释放过滤器 I",
+    "en": "Capital Energy Discharge Elutriation I"
+  },
+  {
+    "id": 31478,
+    "zh": "小型能量武器轨迹校准设备 I",
+    "en": "Small Energy Locus Coordinator I"
+  },
+  {
+    "id": 31480,
+    "zh": "中型能量武器轨迹校准设备 I",
+    "en": "Medium Energy Locus Coordinator I"
+  },
+  {
+    "id": 31482,
+    "zh": "旗舰级能量武器轨迹校准设备 I",
+    "en": "Capital Energy Locus Coordinator I"
+  },
+  {
+    "id": 31490,
+    "zh": "小型能量武器急转控制器 I",
+    "en": "Small Energy Metastasis Adjuster I"
+  },
+  {
+    "id": 31492,
+    "zh": "中型能量武器急转控制器 I",
+    "en": "Medium Energy Metastasis Adjuster I"
+  },
+  {
+    "id": 31494,
+    "zh": "旗舰级能量武器急转控制器 I",
+    "en": "Capital Energy Metastasis Adjuster I"
+  },
+  {
+    "id": 31502,
+    "zh": "小型冷凝混合管理单元 I",
+    "en": "Small Algid Hybrid Administrations Unit I"
+  },
+  {
+    "id": 31504,
+    "zh": "中型冷凝混合管理单元 I",
+    "en": "Medium Algid Hybrid Administrations Unit I"
+  },
+  {
+    "id": 31506,
+    "zh": "旗舰级冷凝混合管理单元 I",
+    "en": "Capital Algid Hybrid Administrations Unit I"
+  },
+  {
+    "id": 31514,
+    "zh": "小型混合武器范围扩大装置 I",
+    "en": "Small Hybrid Ambit Extension I"
+  },
+  {
+    "id": 31516,
+    "zh": "中型混合武器范围扩大装置 I",
+    "en": "Medium Hybrid Ambit Extension I"
+  },
+  {
+    "id": 31518,
+    "zh": "旗舰级混合武器范围扩大装置 I",
+    "en": "Capital Hybrid Ambit Extension I"
+  },
+  {
+    "id": 31526,
+    "zh": "小型混合武器射速调节装置 I",
+    "en": "Small Hybrid Burst Aerator I"
+  },
+  {
+    "id": 31528,
+    "zh": "中型混合武器射速调节装置 I",
+    "en": "Medium Hybrid Burst Aerator I"
+  },
+  {
+    "id": 31530,
+    "zh": "旗舰级混合武器射速调节装置 I",
+    "en": "Capital Hybrid Burst Aerator I"
+  },
+  {
+    "id": 31538,
+    "zh": "小型混合武器冲击加速器 I",
+    "en": "Small Hybrid Collision Accelerator I"
+  },
+  {
+    "id": 31540,
+    "zh": "中型混合武器冲击加速器 I",
+    "en": "Medium Hybrid Collision Accelerator I"
+  },
+  {
+    "id": 31542,
+    "zh": "旗舰级混合武器冲击加速器 I",
+    "en": "Capital Hybrid Collision Accelerator I"
+  },
+  {
+    "id": 31550,
+    "zh": "小型混合武器节能设备 I",
+    "en": "Small Hybrid Discharge Elutriation I"
+  },
+  {
+    "id": 31552,
+    "zh": "中型混合武器节能设备 I",
+    "en": "Medium Hybrid Discharge Elutriation I"
+  },
+  {
+    "id": 31554,
+    "zh": "旗舰级混合武器节能设备 I",
+    "en": "Capital Hybrid Discharge Elutriation I"
+  },
+  {
+    "id": 31562,
+    "zh": "小型混合武器轨迹校准设备 I",
+    "en": "Small Hybrid Locus Coordinator I"
+  },
+  {
+    "id": 31564,
+    "zh": "中型混合武器轨迹校准设备 I",
+    "en": "Medium Hybrid Locus Coordinator I"
+  },
+  {
+    "id": 31566,
+    "zh": "旗舰级混合武器轨迹校准设备 I",
+    "en": "Capital Hybrid Locus Coordinator I"
+  },
+  {
+    "id": 31574,
+    "zh": "小型混合武器急转控制器 I",
+    "en": "Small Hybrid Metastasis Adjuster I"
+  },
+  {
+    "id": 31576,
+    "zh": "中型混合武器急转控制器 I",
+    "en": "Medium Hybrid Metastasis Adjuster I"
+  },
+  {
+    "id": 31578,
+    "zh": "旗舰级混合武器急转控制器 I",
+    "en": "Capital Hybrid Metastasis Adjuster I"
+  },
+  {
+    "id": 31586,
+    "zh": "小型装卸加速装置 I",
+    "en": "Small Bay Loading Accelerator I"
+  },
+  {
+    "id": 31588,
+    "zh": "中型装卸加速装置 I",
+    "en": "Medium Bay Loading Accelerator I"
+  },
+  {
+    "id": 31590,
+    "zh": "旗舰级装卸加速装置 I",
+    "en": "Capital Bay Loading Accelerator I"
+  },
+  {
+    "id": 31598,
+    "zh": "小型液压舱推进器 I",
+    "en": "Small Hydraulic Bay Thrusters I"
+  },
+  {
+    "id": 31600,
+    "zh": "中型液压舱推进器 I",
+    "en": "Medium Hydraulic Bay Thrusters I"
+  },
+  {
+    "id": 31602,
+    "zh": "旗舰级液压舱推进器 I",
+    "en": "Capital Hydraulic Bay Thrusters I"
+  },
+  {
+    "id": 31608,
+    "zh": "小型火箭燃料缓冲隔离装置 I",
+    "en": "Small Rocket Fuel Cache Partition I"
+  },
+  {
+    "id": 31610,
+    "zh": "中型火箭燃料缓冲隔离装置 I",
+    "en": "Medium Rocket Fuel Cache Partition I"
+  },
+  {
+    "id": 31612,
+    "zh": "旗舰级火箭燃料缓冲隔离装置 I",
+    "en": "Capital Rocket Fuel Cache Partition I"
+  },
+  {
+    "id": 31620,
+    "zh": "小型弹头加热辅助系统 I",
+    "en": "Small Warhead Calefaction Catalyst I"
+  },
+  {
+    "id": 31622,
+    "zh": "中型弹头加热辅助系统 I",
+    "en": "Medium Warhead Calefaction Catalyst I"
+  },
+  {
+    "id": 31624,
+    "zh": "旗舰级弹头加热辅助系统 I",
+    "en": "Capital Warhead Calefaction Catalyst I"
+  },
+  {
+    "id": 31632,
+    "zh": "小型弹头爆燃辅助系统 I",
+    "en": "Small Warhead Flare Catalyst I"
+  },
+  {
+    "id": 31634,
+    "zh": "中型弹头爆燃辅助系统 I",
+    "en": "Medium Warhead Flare Catalyst I"
+  },
+  {
+    "id": 31636,
+    "zh": "旗舰级弹头爆燃辅助系统 I",
+    "en": "Capital Warhead Flare Catalyst I"
+  },
+  {
+    "id": 31644,
+    "zh": "小型弹头强化辅助系统 I",
+    "en": "Small Warhead Rigor Catalyst I"
+  },
+  {
+    "id": 31646,
+    "zh": "中型弹头强化辅助系统 I",
+    "en": "Medium Warhead Rigor Catalyst I"
+  },
+  {
+    "id": 31648,
+    "zh": "旗舰级弹头强化辅助系统 I",
+    "en": "Capital Warhead Rigor Catalyst I"
+  },
+  {
+    "id": 31656,
+    "zh": "小型射弹武器范围扩大装置 I",
+    "en": "Small Projectile Ambit Extension I"
+  },
+  {
+    "id": 31658,
+    "zh": "中型射弹武器范围扩大装置 I",
+    "en": "Medium Projectile Ambit Extension I"
+  },
+  {
+    "id": 31660,
+    "zh": "旗舰级射弹武器范围扩大装置 I",
+    "en": "Capital Projectile Ambit Extension I"
+  },
+  {
+    "id": 31668,
+    "zh": "小型射弹武器射速调节装置 I",
+    "en": "Small Projectile Burst Aerator I"
+  },
+  {
+    "id": 31670,
+    "zh": "中型射弹武器射速调节装置 I",
+    "en": "Medium Projectile Burst Aerator I"
+  },
+  {
+    "id": 31672,
+    "zh": "旗舰级射弹武器射速调节装置 I",
+    "en": "Capital Projectile Burst Aerator I"
+  },
+  {
+    "id": 31680,
+    "zh": "小型射弹武器冲击加速器 I",
+    "en": "Small Projectile Collision Accelerator I"
+  },
+  {
+    "id": 31682,
+    "zh": "中型射弹武器冲击加速器 I",
+    "en": "Medium Projectile Collision Accelerator I"
+  },
+  {
+    "id": 31684,
+    "zh": "旗舰级射弹武器冲击加速器 I",
+    "en": "Capital Projectile Collision Accelerator I"
+  },
+  {
+    "id": 31692,
+    "zh": "小型射弹武器轨迹校准设备 I",
+    "en": "Small Projectile Locus Coordinator I"
+  },
+  {
+    "id": 31694,
+    "zh": "中型射弹武器轨迹校准设备 I",
+    "en": "Medium Projectile Locus Coordinator I"
+  },
+  {
+    "id": 31696,
+    "zh": "旗舰级射弹武器轨迹校准设备 I",
+    "en": "Capital Projectile Locus Coordinator I"
+  },
+  {
+    "id": 31704,
+    "zh": "小型射弹武器急转控制器 I",
+    "en": "Small Projectile Metastasis Adjuster I"
+  },
+  {
+    "id": 31706,
+    "zh": "中型射弹武器急转控制器 I",
+    "en": "Medium Projectile Metastasis Adjuster I"
+  },
+  {
+    "id": 31708,
+    "zh": "旗舰级射弹武器急转控制器 I",
+    "en": "Capital Projectile Metastasis Adjuster I"
+  },
+  {
+    "id": 31716,
+    "zh": "小型电磁护盾强化装置 I",
+    "en": "Small EM Shield Reinforcer I"
+  },
+  {
+    "id": 31718,
+    "zh": "中型电磁护盾强化装置 I",
+    "en": "Medium EM Shield Reinforcer I"
+  },
+  {
+    "id": 31720,
+    "zh": "旗舰级电磁护盾强化装置 I",
+    "en": "Capital EM Shield Reinforcer I"
+  },
+  {
+    "id": 31728,
+    "zh": "小型爆炸护盾强化装置 I",
+    "en": "Small Explosive Shield Reinforcer I"
+  },
+  {
+    "id": 31730,
+    "zh": "中型爆炸护盾强化装置 I",
+    "en": "Medium Explosive Shield Reinforcer I"
+  },
+  {
+    "id": 31732,
+    "zh": "旗舰级爆炸护盾强化装置 I",
+    "en": "Capital Explosive Shield Reinforcer I"
+  },
+  {
+    "id": 31740,
+    "zh": "小型动能护盾强化装置 I",
+    "en": "Small Kinetic Shield Reinforcer I"
+  },
+  {
+    "id": 31742,
+    "zh": "中型动能护盾强化装置 I",
+    "en": "Medium Kinetic Shield Reinforcer I"
+  },
+  {
+    "id": 31744,
+    "zh": "旗舰级动能护盾强化装置 I",
+    "en": "Capital Kinetic Shield Reinforcer I"
+  },
+  {
+    "id": 31752,
+    "zh": "小型热能护盾强化装置 I",
+    "en": "Small Thermal Shield Reinforcer I"
+  },
+  {
+    "id": 31754,
+    "zh": "中型热能护盾强化装置 I",
+    "en": "Medium Thermal Shield Reinforcer I"
+  },
+  {
+    "id": 31756,
+    "zh": "旗舰级热能护盾强化装置 I",
+    "en": "Capital Thermal Shield Reinforcer I"
+  },
+  {
+    "id": 31764,
+    "zh": "小型核心防御电容器安全管理装置 I",
+    "en": "Small Core Defense Capacitor Safeguard I"
+  },
+  {
+    "id": 31766,
+    "zh": "中型核心防御电容器安全管理装置 I",
+    "en": "Medium Core Defense Capacitor Safeguard I"
+  },
+  {
+    "id": 31768,
+    "zh": "旗舰级核心防御电容器安全管理装置 I",
+    "en": "Capital Core Defense Capacitor Safeguard I"
+  },
+  {
+    "id": 31776,
+    "zh": "小型核心防御节能装置 I",
+    "en": "Small Core Defense Charge Economizer I"
+  },
+  {
+    "id": 31778,
+    "zh": "中型核心防御节能装置 I",
+    "en": "Medium Core Defense Charge Economizer I"
+  },
+  {
+    "id": 31780,
+    "zh": "旗舰级核心防御节能装置 I",
+    "en": "Capital Core Defense Charge Economizer I"
+  },
+  {
+    "id": 31788,
+    "zh": "小型核心防御力场扩张装置 I",
+    "en": "Small Core Defense Field Extender I"
+  },
+  {
+    "id": 31790,
+    "zh": "中型核心防御力场扩张装置 I",
+    "en": "Medium Core Defense Field Extender I"
+  },
+  {
+    "id": 31792,
+    "zh": "旗舰级核心防御力场扩张装置 I",
+    "en": "Capital Core Defense Field Extender I"
+  },
+  {
+    "id": 31800,
+    "zh": "小型核心防御力场稳固装置 I",
+    "en": "Small Core Defense Field Purger I"
+  },
+  {
+    "id": 31802,
+    "zh": "中型核心防御力场稳固装置 I",
+    "en": "Medium Core Defense Field Purger I"
+  },
+  {
+    "id": 31804,
+    "zh": "旗舰级核心防御力场稳固装置 I",
+    "en": "Capital Core Defense Field Purger I"
+  },
+  {
+    "id": 31816,
+    "zh": "小型核心防御操控稳定装置 I",
+    "en": "Small Core Defense Operational Solidifier I"
+  },
+  {
+    "id": 31818,
+    "zh": "中型核心防御操控稳定装置 I",
+    "en": "Medium Core Defense Operational Solidifier I"
+  },
+  {
+    "id": 31820,
+    "zh": "旗舰级核心防御操控稳定装置 I",
+    "en": "Capital Core Defense Operational Solidifier I"
+  },
+  {
+    "id": 32025,
+    "zh": "小型无人机控制范围扩大装置 I",
+    "en": "Small Drone Control Range Augmentor I"
+  },
+  {
+    "id": 32027,
+    "zh": "中型无人机控制范围扩大装置 I",
+    "en": "Medium Drone Control Range Augmentor I"
+  },
+  {
+    "id": 32033,
+    "zh": "小型无人机耐用性增强装置 I",
+    "en": "Small Drone Durability Enhancer I"
+  },
+  {
+    "id": 32035,
+    "zh": "中型无人机耐用性增强装置 I",
+    "en": "Medium Drone Durability Enhancer I"
+  },
+  {
+    "id": 32041,
+    "zh": "小型无人机采矿增量器 I",
+    "en": "Small Drone Mining Augmentor I"
+  },
+  {
+    "id": 32043,
+    "zh": "中型无人机采矿增量器 I",
+    "en": "Medium Drone Mining Augmentor I"
+  },
+  {
+    "id": 32049,
+    "zh": "小型无人机维修加速器 I",
+    "en": "Small Drone Repair Augmentor I"
+  },
+  {
+    "id": 32051,
+    "zh": "中型无人机维修加速器 I",
+    "en": "Medium Drone Repair Augmentor I"
+  },
+  {
+    "id": 32057,
+    "zh": "小型无人机增速装置 I",
+    "en": "Small Drone Speed Augmentor I"
+  },
+  {
+    "id": 32059,
+    "zh": "中型无人机增速装置 I",
+    "en": "Medium Drone Speed Augmentor I"
+  },
+  {
+    "id": 32069,
+    "zh": "小型无人机巡航芯片 I",
+    "en": "Small Drone Scope Chip I"
+  },
+  {
+    "id": 32071,
+    "zh": "中型无人机巡航芯片 I",
+    "en": "Medium Drone Scope Chip I"
+  },
+  {
+    "id": 32081,
+    "zh": "小型岗哨炮伤害增强设备 I",
+    "en": "Small Sentry Damage Augmentor I"
+  },
+  {
+    "id": 32083,
+    "zh": "中型岗哨炮伤害增强设备 I",
+    "en": "Medium Sentry Damage Augmentor I"
+  },
+  {
+    "id": 32089,
+    "zh": "小型停滞无人机增强设备 I",
+    "en": "Small Stasis Drone Augmentor I"
+  },
+  {
+    "id": 32091,
+    "zh": "中型停滞无人机增强设备 I",
+    "en": "Medium Stasis Drone Augmentor I"
+  },
+  {
+    "id": 32817,
+    "zh": "中型深层地核采矿优化I",
+    "en": "Medium Deep Core Mining Optimization I"
+  },
+  {
+    "id": 32819,
+    "zh": "中型冰矿采集器加速器 I",
+    "en": "Medium Ice Harvester Accelerator I"
+  },
+  {
+    "id": 33277,
+    "zh": "旗舰级无人机控制范围扩大装置 I",
+    "en": "Capital Drone Control Range Augmentor I"
+  },
+  {
+    "id": 33281,
+    "zh": "旗舰级无人机耐用性增强装置 I",
+    "en": "Capital Drone Durability Enhancer I"
+  },
+  {
+    "id": 33285,
+    "zh": "旗舰级无人机采矿增量器 I",
+    "en": "Capital Drone Mining Augmentor I"
+  },
+  {
+    "id": 33289,
+    "zh": "旗舰级无人机维修加速器 I",
+    "en": "Capital Drone Repair Augmentor I"
+  },
+  {
+    "id": 33293,
+    "zh": "旗舰级无人机射距芯片 I",
+    "en": "Capital Drone Scope Chip I"
+  },
+  {
+    "id": 33297,
+    "zh": "旗舰级无人机增速装置 I",
+    "en": "Capital Drone Speed Augmentor I"
+  },
+  {
+    "id": 33303,
+    "zh": "旗舰级处理器超频组件 I",
+    "en": "Capital Processor Overclocking Unit I"
+  },
+  {
+    "id": 33307,
+    "zh": "旗舰级岗哨炮伤害增强设备 I",
+    "en": "Capital Sentry Damage Augmentor I"
+  },
+  {
+    "id": 33311,
+    "zh": "旗舰级停滞无人机增强设备 I",
+    "en": "Capital Stasis Drone Augmentor I"
+  },
+  {
+    "id": 33890,
+    "zh": "小型横贯舱壁 I",
+    "en": "Small Transverse Bulkhead I"
+  },
+  {
+    "id": 33894,
+    "zh": "中型横贯舱壁 I",
+    "en": "Medium Transverse Bulkhead I"
+  },
+  {
+    "id": 33898,
+    "zh": "大型横贯舱壁 I",
+    "en": "Large Transverse Bulkhead I"
+  },
+  {
+    "id": 33902,
+    "zh": "旗舰级横贯舱壁 I",
+    "en": "Capital Transverse Bulkhead I"
+  },
+  {
+    "id": 34266,
+    "zh": "小型希格斯粒子锚 I",
+    "en": "Small Higgs Anchor I"
+  },
+  {
+    "id": 34268,
+    "zh": "中型希格斯粒子锚 I",
+    "en": "Medium Higgs Anchor I"
+  },
+  {
+    "id": 34306,
+    "zh": "大型希格斯粒子锚 I",
+    "en": "Large Higgs Anchor I"
+  },
+  {
+    "id": 34308,
+    "zh": "旗舰级希格斯粒子锚 I",
+    "en": "Capital Higgs Anchor I"
+  },
+  {
+    "id": 37164,
+    "zh": "屹立大型弹药制造效率 I",
+    "en": "Standup L-Set Ammunition Manufacturing Efficiency I"
+  },
+  {
+    "id": 37178,
+    "zh": "屹立超大型设备和消费品制造效率 I",
+    "en": "Standup XL-Set Equipment and Consumable Manufacturing Efficiency I"
+  },
+  {
+    "id": 37166,
+    "zh": "屹立大型基础大型舰船制造效率 I",
+    "en": "Standup L-Set Basic Large Ship Manufacturing Efficiency I"
+  },
+  {
+    "id": 37168,
+    "zh": "屹立大型高级大型舰船制造效率 I",
+    "en": "Standup L-Set Advanced Large Ship Manufacturing Efficiency I"
+  },
+  {
+    "id": 37170,
+    "zh": "屹立大型设备制造效率 I",
+    "en": "Standup L-Set Equipment Manufacturing Efficiency I"
+  },
+  {
+    "id": 37174,
+    "zh": "屹立大型高级组件制造效率 I",
+    "en": "Standup L-Set Advanced Component Manufacturing Efficiency I"
+  },
+  {
+    "id": 37180,
+    "zh": "屹立超大型舰船制造效率 I",
+    "en": "Standup XL-Set Ship Manufacturing Efficiency I"
+  },
+  {
+    "id": 37183,
+    "zh": "屹立超大型实验室优化 I",
+    "en": "Standup XL-Set Laboratory Optimization I"
+  },
+  {
+    "id": 43704,
+    "zh": "屹立超大型建筑和组件制造效率 I",
+    "en": "Standup XL-Set Structure and Component Manufacturing Efficiency I"
+  },
+  {
+    "id": 37216,
+    "zh": "屹立中型导弹精度 I",
+    "en": "Standup M-Set Missile Precision I"
+  },
+  {
+    "id": 37220,
+    "zh": "屹立中型导弹投射 I",
+    "en": "Standup M-Set Missile Projection I"
+  },
+  {
+    "id": 37218,
+    "zh": "屹立中型能量中和器投射 I",
+    "en": "Standup M-Set Energy Neutralizer Projection I"
+  },
+  {
+    "id": 37222,
+    "zh": "屹立中型能量中和器节能 I",
+    "en": "Standup M-Set Energy Neutralizer Economy I"
+  },
+  {
+    "id": 37224,
+    "zh": "屹立中型铁骑舰载机生存 I",
+    "en": "Standup M-Set Fighter Survival I"
+  },
+  {
+    "id": 37226,
+    "zh": "屹立中型铁骑舰载机导航 I",
+    "en": "Standup M-Set Fighter Navigation I"
+  },
+  {
+    "id": 37228,
+    "zh": "屹立中型电子战投射 I",
+    "en": "Standup M-Set Electronic Warfare Projection I"
+  },
+  {
+    "id": 37230,
+    "zh": "屹立中型电子战节能 I",
+    "en": "Standup M-Set Electronic Warfare Economy I"
+  },
+  {
+    "id": 37232,
+    "zh": "屹立中型建筑多重锁定装置 I",
+    "en": "Standup M-Set Structure Target Multiplexing I"
+  },
+  {
+    "id": 37234,
+    "zh": "屹立中型锁定增强系统 I",
+    "en": "Standup M-Set Enhanced Targeting System I"
+  },
+  {
+    "id": 37248,
+    "zh": "屹立大型导弹飞行处理器 I",
+    "en": "Standup L-Set Missile Flight Processor I"
+  },
+  {
+    "id": 37250,
+    "zh": "屹立大型能量中和器反馈控制 I",
+    "en": "Standup L-Set Energy Neutralizer Feedback Control I"
+  },
+  {
+    "id": 37252,
+    "zh": "屹立大型铁骑舰载机任务控制 I",
+    "en": "Standup L-Set Fighter Mission Control I"
+  },
+  {
+    "id": 37254,
+    "zh": "屹立大型电子战指挥系统 I",
+    "en": "Standup L-Set EW Command System I"
+  },
+  {
+    "id": 37256,
+    "zh": "屹立大型炸弹瞄准装置 I",
+    "en": "Standup L-Set Bomb Aimer I"
+  },
+  {
+    "id": 37258,
+    "zh": "屹立大型定点防御炮塔控制 I",
+    "en": "Standup L-Set Point Defense Battery Control I"
+  },
+  {
+    "id": 37260,
+    "zh": "屹立大型目标锁定阵列 I",
+    "en": "Standup L-Set Target Acquisition Array I"
+  },
+  {
+    "id": 37268,
+    "zh": "屹立超大型导弹火力控制计算机 I",
+    "en": "Standup XL-Set Missile Fire Control Computer I"
+  },
+  {
+    "id": 37270,
+    "zh": "屹立超大型集成式铁骑舰载机与定点防御网络 I",
+    "en": "Standup XL-Set Integrated Fighter and PD Network I"
+  },
+  {
+    "id": 37272,
+    "zh": "屹立超大型电子战和散热协调器 I",
+    "en": "Standup XL-Set EW and Emissions Co-ordinator I"
+  },
+  {
+    "id": 37274,
+    "zh": "屹立超大型毁灭级武器套装 I",
+    "en": "Standup XL-Set Extinction Level Weapons Suite I"
+  },
+  {
+    "id": 43894,
+    "zh": "小型指挥处理器 I",
+    "en": "Small Command Processor I"
+  },
+  {
+    "id": 43896,
+    "zh": "中型指挥处理器 I",
+    "en": "Medium Command Processor I"
+  },
+  {
+    "id": 43898,
+    "zh": "大型指挥处理器 I",
+    "en": "Large Command Processor I"
+  },
+  {
+    "id": 43900,
+    "zh": "旗舰级指挥处理器 I",
+    "en": "Capital Command Processor I"
+  },
+  {
+    "id": 43920,
+    "zh": "屹立中型设备制造材料效率 I",
+    "en": "Standup M-Set Equipment Manufacturing Material Efficiency I"
+  },
+  {
+    "id": 37160,
+    "zh": "屹立中型设备制造时间效率 I",
+    "en": "Standup M-Set Equipment Manufacturing Time Efficiency I"
+  },
+  {
+    "id": 37158,
+    "zh": "屹立中型弹药制造材料效率 I",
+    "en": "Standup M-Set Ammunition Manufacturing Material Efficiency I"
+  },
+  {
+    "id": 37150,
+    "zh": "屹立中型弹药制造时间效率 I",
+    "en": "Standup M-Set Ammunition Manufacturing Time Efficiency I"
+  },
+  {
+    "id": 37156,
+    "zh": "屹立中型无人机和铁骑舰载机制造材料效率 I",
+    "en": "Standup M-Set Drone and Fighter Manufacturing Material Efficiency I"
+  },
+  {
+    "id": 37148,
+    "zh": "屹立中型无人机和铁骑舰载机制造时间效率 I",
+    "en": "Standup M-Set Drone and Fighter Manufacturing Time Efficiency I"
+  },
+  {
+    "id": 37154,
+    "zh": "屹立中型基础小型舰船制造材料效率 I",
+    "en": "Standup M-Set Basic Small Ship Manufacturing Material Efficiency I"
+  },
+  {
+    "id": 37162,
+    "zh": "屹立中型基础小型舰船制造时间效率 I",
+    "en": "Standup M-Set Basic Small Ship Manufacturing Time Efficiency I"
+  },
+  {
+    "id": 37146,
+    "zh": "屹立中型基础中型舰船制造材料效率 I",
+    "en": "Standup M-Set Basic Medium Ship Manufacturing Material Efficiency I"
+  },
+  {
+    "id": 43919,
+    "zh": "屹立中型基础中型舰船制造时间效率 I",
+    "en": "Standup M-Set Basic Medium Ship Manufacturing Time Efficiency I"
+  },
+  {
+    "id": 43732,
+    "zh": "屹立中型基础大型舰船制造材料效率 I",
+    "en": "Standup M-Set Basic Large Ship Manufacturing Material Efficiency I"
+  },
+  {
+    "id": 43733,
+    "zh": "屹立中型基础大型舰船制造时间效率 I",
+    "en": "Standup M-Set Basic Large Ship Manufacturing Time Efficiency I"
+  },
+  {
+    "id": 43855,
+    "zh": "屹立中型高级小型舰船制造材料效率 I",
+    "en": "Standup M-Set Advanced Small Ship Manufacturing Material Efficiency I"
+  },
+  {
+    "id": 43856,
+    "zh": "屹立中型高级小型舰船制造时间效率 I",
+    "en": "Standup M-Set Advanced Small Ship Manufacturing Time Efficiency I"
+  },
+  {
+    "id": 43858,
+    "zh": "屹立中型高级中型舰船制造材料效率 I",
+    "en": "Standup M-Set Advanced Medium Ship Manufacturing Material Efficiency I"
+  },
+  {
+    "id": 43860,
+    "zh": "屹立中型高级中型舰船制造时间效率 I",
+    "en": "Standup M-Set Advanced Medium Ship Manufacturing Time Efficiency I"
+  },
+  {
+    "id": 43862,
+    "zh": "屹立中型高级大型舰船制造材料效率 I",
+    "en": "Standup M-Set Advanced Large Ship Manufacturing Material Efficiency I"
+  },
+  {
+    "id": 43865,
+    "zh": "屹立中型高级大型舰船制造时间效率 I",
+    "en": "Standup M-Set Advanced Large Ship Manufacturing Time Efficiency I"
+  },
+  {
+    "id": 43867,
+    "zh": "屹立中型高级组件制造材料效率 I",
+    "en": "Standup M-Set Advanced Component Manufacturing Material Efficiency I"
+  },
+  {
+    "id": 43869,
+    "zh": "屹立中型高级组件制造时间效率 I",
+    "en": "Standup M-Set Advanced Component Manufacturing Time Efficiency I"
+  },
+  {
+    "id": 43870,
+    "zh": "屹立中型基础旗舰组件制造材料效率 I",
+    "en": "Standup M-Set Basic Capital Component Manufacturing Material Efficiency I"
+  },
+  {
+    "id": 43872,
+    "zh": "屹立中型基础旗舰组件制造时间效率 I",
+    "en": "Standup M-Set Basic Capital Component Manufacturing Time Efficiency I"
+  },
+  {
+    "id": 43875,
+    "zh": "屹立中型建筑制造材料效率 I",
+    "en": "Standup M-Set Structure Manufacturing Material Efficiency I"
+  },
+  {
+    "id": 43876,
+    "zh": "屹立中型建筑制造时间效率 I",
+    "en": "Standup M-Set Structure Manufacturing Time Efficiency I"
+  },
+  {
+    "id": 43879,
+    "zh": "屹立中型发明成本优化 I",
+    "en": "Standup M-Set Invention Cost Optimization I"
+  },
+  {
+    "id": 43880,
+    "zh": "屹立中型发明加速 I",
+    "en": "Standup M-Set Invention Accelerator I"
+  },
+  {
+    "id": 43885,
+    "zh": "屹立中型材料效率研究成本优化 I",
+    "en": "Standup M-Set ME Research Cost Optimization I"
+  },
+  {
+    "id": 43883,
+    "zh": "屹立中型材料效率研究加速 I",
+    "en": "Standup M-Set ME Research Accelerator I"
+  },
+  {
+    "id": 43887,
+    "zh": "屹立中型时间效率研究成本优化 I",
+    "en": "Standup M-Set TE Research Cost Optimization I"
+  },
+  {
+    "id": 43889,
+    "zh": "屹立中型时间效率研究加速器 I",
+    "en": "Standup M-Set TE Research Accelerator I"
+  },
+  {
+    "id": 43891,
+    "zh": "屹立中型蓝图拷贝成本优化 I",
+    "en": "Standup M-Set Blueprint Copy Cost Optimization I"
+  },
+  {
+    "id": 43893,
+    "zh": "屹立中型蓝图拷贝加速 I",
+    "en": "Standup M-Set Blueprint Copy Accelerator I"
+  },
+  {
+    "id": 43709,
+    "zh": "屹立大型高级中型舰船制造效率 I",
+    "en": "Standup L-Set Advanced Medium Ship Manufacturing Efficiency I"
+  },
+  {
+    "id": 43707,
+    "zh": "屹立大型高级小型舰船制造效率 I",
+    "en": "Standup L-Set Advanced Small Ship Manufacturing Efficiency I"
+  },
+  {
+    "id": 43718,
+    "zh": "屹立大型基础旗舰组件制造效率 I",
+    "en": "Standup L-Set Basic Capital Component Manufacturing Efficiency I"
+  },
+  {
+    "id": 43716,
+    "zh": "屹立大型基础中型舰船制造效率 I",
+    "en": "Standup L-Set Basic Medium Ship Manufacturing Efficiency I"
+  },
+  {
+    "id": 43714,
+    "zh": "屹立大型基础小型舰船制造效率 I",
+    "en": "Standup L-Set Basic Small Ship Manufacturing Efficiency I"
+  },
+  {
+    "id": 43729,
+    "zh": "屹立大型蓝图拷贝优化 I",
+    "en": "Standup L-Set Blueprint Copy Optimization I"
+  },
+  {
+    "id": 37173,
+    "zh": "屹立大型旗舰制造效率 I",
+    "en": "Standup L-Set Capital Ship Manufacturing Efficiency I"
+  },
+  {
+    "id": 43712,
+    "zh": "屹立大型无人机和铁骑舰载机制造效率 I",
+    "en": "Standup L-Set Drone and Fighter Manufacturing Efficiency I"
+  },
+  {
+    "id": 43722,
+    "zh": "屹立大型发明优化 I",
+    "en": "Standup L-Set Invention Optimization I"
+  },
+  {
+    "id": 43724,
+    "zh": "屹立大型材料效率研究优化 I",
+    "en": "Standup L-Set ME Research Optimization I"
+  },
+  {
+    "id": 43720,
+    "zh": "屹立大型建筑制造效率 I",
+    "en": "Standup L-Set Structure Manufacturing Efficiency I"
+  },
+  {
+    "id": 43726,
+    "zh": "屹立大型时间效率研究优化 I",
+    "en": "Standup L-Set TE Research Optimization I"
+  },
+  {
+    "id": 46327,
+    "zh": "屹立大型卫星钻探精通 I",
+    "en": "Standup L-Set Moon Drilling Proficiency I"
+  },
+  {
+    "id": 46325,
+    "zh": "屹立中型卫星钻探稳定 I",
+    "en": "Standup M-Set Moon Drilling Stability I"
+  },
+  {
+    "id": 46323,
+    "zh": "屹立中型卫星钻探效率 I",
+    "en": "Standup M-Set Moon Drilling Efficiency I"
+  },
+  {
+    "id": 46484,
+    "zh": "屹立中型复合反应堆时间效率 I",
+    "en": "Standup M-Set Composite Reactor Time Efficiency I"
+  },
+  {
+    "id": 46486,
+    "zh": "屹立中型复合反应堆材料效率 I",
+    "en": "Standup M-Set Composite Reactor Material Efficiency I"
+  },
+  {
+    "id": 46488,
+    "zh": "屹立中型混合反应堆时间效率 I",
+    "en": "Standup M-Set Hybrid Reactor Time Efficiency I"
+  },
+  {
+    "id": 46490,
+    "zh": "屹立中型混合反应堆材料效率 I",
+    "en": "Standup M-Set Hybrid Reactor Material Efficiency I"
+  },
+  {
+    "id": 46492,
+    "zh": "屹立中型生化反应堆时间效率 I",
+    "en": "Standup M-Set Biochemical Reactor Time Efficiency I"
+  },
+  {
+    "id": 46494,
+    "zh": "屹立中型生化反应堆材料效率 I",
+    "en": "Standup M-Set Biochemical Reactor Material Efficiency I"
+  },
+  {
+    "id": 46496,
+    "zh": "屹立大型反应堆效率 I",
+    "en": "Standup L-Set Reactor Efficiency I"
+  },
+  {
+    "id": 46633,
+    "zh": "屹立中型小行星矿石分级处理器 I",
+    "en": "Standup M-Set Asteroid Ore Grading Processor I"
+  },
+  {
+    "id": 46635,
+    "zh": "屹立中型冰矿分级处理器 I",
+    "en": "Standup M-Set Ice Grading Processor I"
+  },
+  {
+    "id": 46637,
+    "zh": "屹立中型卫星矿石分级处理器 I",
+    "en": "Standup M-Set Moon Ore Grading Processor I"
+  },
+  {
+    "id": 46639,
+    "zh": "屹立大型提炼监控 I",
+    "en": "Standup L-Set Reprocessing Monitor I"
+  },
+  {
+    "id": 46641,
+    "zh": "屹立超大型提炼监控 I",
+    "en": "Standup XL-Set Reprocessing Monitor I"
+  }
+]

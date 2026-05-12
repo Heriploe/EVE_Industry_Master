@@ -1,0 +1,494 @@
+[
+  {
+    "type_id": 34,
+    "zh": "三钛合金",
+    "en": "Tritanium",
+    "quantity": 11584400
+  },
+  {
+    "type_id": 377,
+    "zh": "小型护盾扩展装置 I",
+    "en": "Small Shield Extender I",
+    "quantity": 7
+  },
+  {
+    "type_id": 380,
+    "zh": "小型护盾扩展装置 II",
+    "en": "Small Shield Extender II",
+    "quantity": 1
+  },
+  {
+    "type_id": 439,
+    "zh": "1MN加力燃烧器 I",
+    "en": "1MN Afterburner I",
+    "quantity": 1
+  },
+  {
+    "type_id": 503,
+    "zh": "鱼雷发射器 I",
+    "en": "Torpedo Launcher I",
+    "quantity": 1
+  },
+  {
+    "type_id": 585,
+    "zh": "伐木者级",
+    "en": "Slasher",
+    "quantity": 58
+  },
+  {
+    "type_id": 1182,
+    "zh": "自动锁定系统 I",
+    "en": "Auto Targeting System I",
+    "quantity": 1
+  },
+  {
+    "type_id": 1236,
+    "zh": "超载喷注系统 II",
+    "en": "Overdrive Injector System II",
+    "quantity": 3
+  },
+  {
+    "type_id": 1296,
+    "zh": "热能涂层 II",
+    "en": "Thermal Coating II",
+    "quantity": 1
+  },
+  {
+    "type_id": 1306,
+    "zh": "多谱式涂层 II",
+    "en": "Multispectrum Coating II",
+    "quantity": 2
+  },
+  {
+    "type_id": 1319,
+    "zh": "扩充货柜舱 II",
+    "en": "Expanded Cargohold II",
+    "quantity": 4
+  },
+  {
+    "type_id": 1405,
+    "zh": "惯性稳定器 II",
+    "en": "Inertial Stabilizers II",
+    "quantity": 3
+  },
+  {
+    "type_id": 1447,
+    "zh": "电容能源继电器 II",
+    "en": "Capacitor Power Relay II",
+    "quantity": 1
+  },
+  {
+    "type_id": 1978,
+    "zh": "索敌计算机 II",
+    "en": "Tracking Computer II",
+    "quantity": 1
+  },
+  {
+    "type_id": 2032,
+    "zh": "电容回充器 II",
+    "en": "Cap Recharger II",
+    "quantity": 1
+  },
+  {
+    "type_id": 2048,
+    "zh": "损伤控制 II",
+    "en": "Damage Control II",
+    "quantity": 1
+  },
+  {
+    "type_id": 2281,
+    "zh": "多谱式护盾增强器 II",
+    "en": "Multispectrum Shield Hardener II",
+    "quantity": 1
+  },
+  {
+    "type_id": 2456,
+    "zh": "地精灵 II",
+    "en": "Hobgoblin II",
+    "quantity": 1
+  },
+  {
+    "type_id": 2488,
+    "zh": "武士 II",
+    "en": "Warrior II",
+    "quantity": 45
+  },
+  {
+    "type_id": 2605,
+    "zh": "纳米纤维内部构架 II",
+    "en": "Nanofiber Internal Structure II",
+    "quantity": 5
+  },
+  {
+    "type_id": 2629,
+    "zh": "鞭挞愤怒重型导弹",
+    "en": "Scourge Fury Heavy Missile",
+    "quantity": 974
+  },
+  {
+    "type_id": 2977,
+    "zh": "280mm榴弹炮 II",
+    "en": "280mm Howitzer Artillery II",
+    "quantity": 1
+  },
+  {
+    "type_id": 3041,
+    "zh": "小型聚焦脉冲激光器 II",
+    "en": "Small Focused Pulse Laser II",
+    "quantity": 1
+  },
+  {
+    "type_id": 3568,
+    "zh": "小型电容注电器 II",
+    "en": "Small Capacitor Booster II",
+    "quantity": 1
+  },
+  {
+    "type_id": 3831,
+    "zh": "中型护盾扩展装置 II",
+    "en": "Medium Shield Extender II",
+    "quantity": 8
+  },
+  {
+    "type_id": 3841,
+    "zh": "大型护盾扩展装置 II",
+    "en": "Large Shield Extender II",
+    "quantity": 3
+  },
+  {
+    "type_id": 3888,
+    "zh": "协处理器 II",
+    "en": "Co-Processor II",
+    "quantity": 3
+  },
+  {
+    "type_id": 4399,
+    "zh": "中型处理器超频组件 II",
+    "en": "Medium Processor Overclocking Unit II",
+    "quantity": 8
+  },
+  {
+    "type_id": 4405,
+    "zh": "无人机伤害增效装置 II",
+    "en": "Drone Damage Amplifier II",
+    "quantity": 1
+  },
+  {
+    "type_id": 10250,
+    "zh": "采矿无人机 II",
+    "en": "Mining Drone II",
+    "quantity": 5
+  },
+  {
+    "type_id": 11563,
+    "zh": "微型辅助能源核心 I",
+    "en": "Micro Auxiliary Power Core I",
+    "quantity": 2
+  },
+  {
+    "type_id": 12274,
+    "zh": "弹道控制系统 I",
+    "en": "Ballistic Control System I",
+    "quantity": 7
+  },
+  {
+    "type_id": 12557,
+    "zh": "微光 S",
+    "en": "Gleam S",
+    "quantity": 2
+  },
+  {
+    "type_id": 12559,
+    "zh": "极光 S",
+    "en": "Aurora S",
+    "quantity": 2
+  },
+  {
+    "type_id": 12563,
+    "zh": "灼烧 S",
+    "en": "Scorch S",
+    "quantity": 6
+  },
+  {
+    "type_id": 12565,
+    "zh": "爆燃 S",
+    "en": "Conflagration S",
+    "quantity": 215
+  },
+  {
+    "type_id": 12608,
+    "zh": "冰雹 S",
+    "en": "Hail S",
+    "quantity": 3840
+  },
+  {
+    "type_id": 12612,
+    "zh": "涅槃 S",
+    "en": "Void S",
+    "quantity": 6320
+  },
+  {
+    "type_id": 12618,
+    "zh": "钉刺 S",
+    "en": "Spike S",
+    "quantity": 3284
+  },
+  {
+    "type_id": 12620,
+    "zh": "标枪 S",
+    "en": "Javelin S",
+    "quantity": 8196
+  },
+  {
+    "type_id": 12625,
+    "zh": "雷暴 S",
+    "en": "Barrage S",
+    "quantity": 600
+  },
+  {
+    "type_id": 12631,
+    "zh": "地震 S",
+    "en": "Quake S",
+    "quantity": 920
+  },
+  {
+    "type_id": 16240,
+    "zh": "促进级",
+    "en": "Catalyst",
+    "quantity": 1
+  },
+  {
+    "type_id": 16273,
+    "zh": "液化臭氧",
+    "en": "Liquid Ozone",
+    "quantity": 44175
+  },
+  {
+    "type_id": 16679,
+    "zh": "富勒化合物",
+    "en": "Fullerides",
+    "quantity": 15
+  },
+  {
+    "type_id": 17478,
+    "zh": "回旋者级",
+    "en": "Retriever",
+    "quantity": 8
+  },
+  {
+    "type_id": 17912,
+    "zh": "调制型露天采矿器 II",
+    "en": "Modulated Strip Miner II",
+    "quantity": 16
+  },
+  {
+    "type_id": 19744,
+    "zh": "魔符级",
+    "en": "Sigil",
+    "quantity": 4
+  },
+  {
+    "type_id": 20347,
+    "zh": "200mm钢附甲板 II",
+    "en": "200mm Steel Plates II",
+    "quantity": 2
+  },
+  {
+    "type_id": 20349,
+    "zh": "400mm钢附甲板 II",
+    "en": "400mm Steel Plates II",
+    "quantity": 1
+  },
+  {
+    "type_id": 21640,
+    "zh": "瓦尔基里 II",
+    "en": "Valkyrie II",
+    "quantity": 5
+  },
+  {
+    "type_id": 24417,
+    "zh": "无人机导航电脑 II",
+    "en": "Drone Navigation Computer II",
+    "quantity": 1
+  },
+  {
+    "type_id": 24507,
+    "zh": "星爆愤怒重型导弹",
+    "en": "Nova Fury Heavy Missile",
+    "quantity": 2227
+  },
+  {
+    "type_id": 24509,
+    "zh": "雷神愤怒重型导弹",
+    "en": "Mjolnir Fury Heavy Missile",
+    "quantity": 2400
+  },
+  {
+    "type_id": 24511,
+    "zh": "炼狱愤怒重型导弹",
+    "en": "Inferno Fury Heavy Missile",
+    "quantity": 1000
+  },
+  {
+    "type_id": 24523,
+    "zh": "雷神狂乱鱼雷",
+    "en": "Mjolnir Rage Torpedo",
+    "quantity": 30000
+  },
+  {
+    "type_id": 24529,
+    "zh": "鞭挞标枪鱼雷",
+    "en": "Scourge Javelin Torpedo",
+    "quantity": 2
+  },
+  {
+    "type_id": 26108,
+    "zh": "大型粒子散布投放器 I",
+    "en": "Large Particle Dispersion Projector I",
+    "quantity": 35
+  },
+  {
+    "type_id": 28576,
+    "zh": "采矿激光器提升器 II",
+    "en": "Mining Laser Upgrade II",
+    "quantity": 24
+  },
+  {
+    "type_id": 30836,
+    "zh": "打捞器 II",
+    "en": "Salvager II",
+    "quantity": 8
+  },
+  {
+    "type_id": 31089,
+    "zh": "小型打捞回收工具 II",
+    "en": "Small Salvage Tackle II",
+    "quantity": 3
+  },
+  {
+    "type_id": 31117,
+    "zh": "小型货柜舱优化改造 I",
+    "en": "Small Cargohold Optimization I",
+    "quantity": 12
+  },
+  {
+    "type_id": 31292,
+    "zh": "小型粒子散布放大器 II",
+    "en": "Small Particle Dispersion Augmentor II",
+    "quantity": 1
+  },
+  {
+    "type_id": 31346,
+    "zh": "小型跟踪诊断子程序 I",
+    "en": "Small Tracking Diagnostic Subroutines I",
+    "quantity": 5
+  },
+  {
+    "type_id": 31448,
+    "zh": "小型能量武器发散调节装置 II",
+    "en": "Small Energy Burst Aerator II",
+    "quantity": 453
+  },
+  {
+    "type_id": 31460,
+    "zh": "小型能量武器冲击加速器 II",
+    "en": "Small Energy Collision Accelerator II",
+    "quantity": 74
+  },
+  {
+    "type_id": 31484,
+    "zh": "小型能量武器轨迹校准设备 II",
+    "en": "Small Energy Locus Coordinator II",
+    "quantity": 304
+  },
+  {
+    "type_id": 31496,
+    "zh": "小型能量武器急转控制器 II",
+    "en": "Small Energy Metastasis Adjuster II",
+    "quantity": 10
+  },
+  {
+    "type_id": 31718,
+    "zh": "中型电磁护盾强化装置 I",
+    "en": "Medium EM Shield Reinforcer I",
+    "quantity": 8
+  },
+  {
+    "type_id": 31754,
+    "zh": "中型热能护盾强化装置 I",
+    "en": "Medium Thermal Shield Reinforcer I",
+    "quantity": 8
+  },
+  {
+    "type_id": 31764,
+    "zh": "小型核心防御电容器安全管理装置 I",
+    "en": "Small Core Defense Capacitor Safeguard I",
+    "quantity": 225
+  },
+  {
+    "type_id": 31790,
+    "zh": "中型核心防御力场扩张装置 I",
+    "en": "Medium Core Defense Field Extender I",
+    "quantity": 3
+  },
+  {
+    "type_id": 31802,
+    "zh": "中型核心防御力场稳固装置 I",
+    "en": "Medium Core Defense Field Purger I",
+    "quantity": 12
+  },
+  {
+    "type_id": 32880,
+    "zh": "冲锋者级",
+    "en": "Venture",
+    "quantity": 4
+  },
+  {
+    "type_id": 41314,
+    "zh": "冰雹 XL",
+    "en": "Hail XL",
+    "quantity": 20000
+  },
+  {
+    "type_id": 47257,
+    "zh": "突击型损伤控制 II",
+    "en": "Assault Damage Control II",
+    "quantity": 1
+  },
+  {
+    "type_id": 58919,
+    "zh": "拦截失效装置 I",
+    "en": "Interdiction Nullifier I",
+    "quantity": 1
+  },
+  {
+    "type_id": 58972,
+    "zh": "拦截失效装置 II",
+    "en": "Interdiction Nullifier II",
+    "quantity": 2
+  },
+  {
+    "type_id": 60289,
+    "zh": "聚合小行星采集晶体B型 II",
+    "en": "Coherent Asteroid Mining Crystal Type B II",
+    "quantity": 80
+  },
+  {
+    "type_id": 60295,
+    "zh": "斑驳小行星采集晶体B型 II",
+    "en": "Variegated Asteroid Mining Crystal Type B II",
+    "quantity": 80
+  },
+  {
+    "type_id": 60301,
+    "zh": "死亡空间小行星采集晶体B型 II",
+    "en": "Complex Asteroid Mining Crystal Type B II",
+    "quantity": 80
+  },
+  {
+    "type_id": 62591,
+    "zh": "中型工业核心 II",
+    "en": "Medium Industrial Core II",
+    "quantity": 1
+  }
+]

@@ -1,0 +1,10 @@
+{
+  "_comment": "asset_fetcher — ESI资产同步。ESI认证配置见 eve/config_meta.json",
+  "data": {
+    "types": "data/types.json"
+  },
+  "output": {
+    "corp_dir": "resources/corp",
+    "char_dir": "resources/character"
+  }
+}

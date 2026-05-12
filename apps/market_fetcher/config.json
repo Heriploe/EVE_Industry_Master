@@ -1,0 +1,21 @@
+{
+  "_comment": "market_fetcher — 市场价格抓取。ESI认证配置见 eve/config_meta.json",
+  "data": {
+    "types": "data/types.json"
+  },
+  "output": {
+    "price_all": "resources/market/price_all.json",
+    "price_materials": "resources/market/price_all.json",
+    "jita_prices": "resources/market/price_all.json",
+    "structure_orders": "resources/market/structure_cache.json"
+  },
+  "fetch": {
+    "region_ids": [
+      10000002
+    ],
+    "lookback_days": 14,
+    "price_field": "lowest",
+    "request_interval": 0.05,
+    "max_retries": 3
+  }
+}

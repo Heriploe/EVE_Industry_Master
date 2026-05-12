@@ -1,0 +1,1991 @@
+[
+  {
+    "item_id": 1051107920543,
+    "name": "C",
+    "type_id": 17366,
+    "type_zh": "空间站集装箱",
+    "type_en": "Station Container",
+    "contents": [
+      {
+        "type_id": 16272,
+        "zh": "重水",
+        "en": "Heavy Water",
+        "quantity": 33320
+      }
+    ]
+  },
+  {
+    "item_id": 1052355374544,
+    "name": "None",
+    "type_id": 17366,
+    "type_zh": "空间站集装箱",
+    "type_en": "Station Container",
+    "contents": []
+  },
+  {
+    "item_id": 1052535938275,
+    "name": "垃圾",
+    "type_id": 17366,
+    "type_zh": "空间站集装箱",
+    "type_en": "Station Container",
+    "contents": [
+      {
+        "type_id": 5971,
+        "zh": "冷气持久型5MN微型跃迁推进器",
+        "en": "5MN Cold-Gas Enduring Microwarpdrive",
+        "quantity": 4
+      },
+      {
+        "type_id": 37545,
+        "zh": "A-211持久型制导干扰器",
+        "en": "A-211 Enduring Guidance Disruptor",
+        "quantity": 1
+      },
+      {
+        "type_id": 16383,
+        "zh": "尖端型紧凑型热能装甲增强器 I",
+        "en": "Prototype Compact Thermal Armor Hardener I",
+        "quantity": 4
+      },
+      {
+        "type_id": 5361,
+        "zh": "洪水持久型脉冲干扰器",
+        "en": "Deluge Enduring Burst Jammer",
+        "quantity": 1
+      },
+      {
+        "type_id": 4025,
+        "zh": "X5持久型停滞缠绕光束",
+        "en": "X5 Enduring Stasis Webifier",
+        "quantity": 8
+      },
+      {
+        "type_id": 216,
+        "zh": "钨质轨道弹 S",
+        "en": "Tungsten Charge S",
+        "quantity": 500
+      },
+      {
+        "type_id": 5445,
+        "zh": "初始紧凑型跃迁扰频器",
+        "en": "Initiated Compact Warp Scrambler",
+        "quantity": 3
+      },
+      {
+        "type_id": 16439,
+        "zh": "小型抚慰视野型远程装甲维修器",
+        "en": "Small Solace Scoped Remote Armor Repairer",
+        "quantity": 3
+      },
+      {
+        "type_id": 219,
+        "zh": "钍质轨道弹 S",
+        "en": "Thorium Charge S",
+        "quantity": 300
+      },
+      {
+        "type_id": 5299,
+        "zh": "LFT持久型感应抑阻器",
+        "en": "LFT Enduring Sensor Dampener",
+        "quantity": 5
+      },
+      {
+        "type_id": 4787,
+        "zh": "小型紧凑型铅酸电容器电池",
+        "en": "Small Compact Pb-Acid Cap Battery",
+        "quantity": 4
+      },
+      {
+        "type_id": 5011,
+        "zh": "小型F-RX紧凑型电容注电器",
+        "en": "Small F-RX Compact Capacitor Booster",
+        "quantity": 1
+      },
+      {
+        "type_id": 11309,
+        "zh": "400mm紧凑型包金钨附甲板",
+        "en": "400mm Rolled Tungsten Compact Plates",
+        "quantity": 3
+      },
+      {
+        "type_id": 5011,
+        "zh": "小型F-RX紧凑型电容注电器",
+        "en": "Small F-RX Compact Capacitor Booster",
+        "quantity": 1
+      },
+      {
+        "type_id": 7585,
+        "zh": "阳极轻型中子加农炮 I",
+        "en": "Anode Light Neutron Particle Cannon I",
+        "quantity": 1
+      },
+      {
+        "type_id": 16357,
+        "zh": "实验型持久型电磁装甲增强器 I",
+        "en": "Experimental Enduring EM Armor Hardener I",
+        "quantity": 1
+      },
+      {
+        "type_id": 16381,
+        "zh": "实验型持久型热能装甲增强器 I",
+        "en": "Experimental Enduring Thermal Armor Hardener I",
+        "quantity": 13
+      },
+      {
+        "type_id": 41034,
+        "zh": "AE-K紧凑型无人机伤害增效装置",
+        "en": "AE-K Compact Drone Damage Amplifier",
+        "quantity": 1
+      },
+      {
+        "type_id": 233,
+        "zh": "铱质轨道弹 L",
+        "en": "Iridium Charge L",
+        "quantity": 2000
+      },
+      {
+        "type_id": 7373,
+        "zh": "250mm压缩型线圈炮 I",
+        "en": "250mm Compressed Coil Gun I",
+        "quantity": 1
+      },
+      {
+        "type_id": 7451,
+        "zh": "425mm碳化物磁轨炮 I",
+        "en": "425mm Carbide Railgun I",
+        "quantity": 4
+      },
+      {
+        "type_id": 16455,
+        "zh": "大型抚慰视野型远程装甲维修器",
+        "en": "Large Solace Scoped Remote Armor Repairer",
+        "quantity": 13
+      },
+      {
+        "type_id": 19944,
+        "zh": "CZ-4紧凑型引力ECM",
+        "en": "CZ-4 Compact Gravimetric ECM",
+        "quantity": 1
+      },
+      {
+        "type_id": 6003,
+        "zh": "单元推进持久型1MN加力燃烧器",
+        "en": "1MN Monopropellant Enduring Afterburner",
+        "quantity": 2
+      },
+      {
+        "type_id": 16433,
+        "zh": "小型I-ax持久型远程装甲维修器",
+        "en": "Small I-ax Enduring Remote Armor Repairer",
+        "quantity": 4
+      },
+      {
+        "type_id": 4833,
+        "zh": "中型F-RX紧凑型电容注电器",
+        "en": "Medium F-RX Compact Capacitor Booster",
+        "quantity": 2
+      },
+      {
+        "type_id": 16451,
+        "zh": "大型共轴紧凑型远程装甲维修器",
+        "en": "Large Coaxial Compact Remote Armor Repairer",
+        "quantity": 16
+      },
+      {
+        "type_id": 4573,
+        "zh": "中型ACM紧凑型装甲维修器",
+        "en": "Medium ACM Compact Armor Repairer",
+        "quantity": 4
+      },
+      {
+        "type_id": 216,
+        "zh": "钨质轨道弹 S",
+        "en": "Tungsten Charge S",
+        "quantity": 100
+      },
+      {
+        "type_id": 35657,
+        "zh": "Y-S8紧凑型100MN加力燃烧器",
+        "en": "100MN Y-S8 Compact Afterburner",
+        "quantity": 17
+      },
+      {
+        "type_id": 5723,
+        "zh": "中型I-b偏振式结构再生器",
+        "en": "Medium I-b Polarized Structural Regenerator",
+        "quantity": 1
+      },
+      {
+        "type_id": 236,
+        "zh": "钼质轨道弹 L",
+        "en": "Uranium Charge L",
+        "quantity": 1600
+      },
+      {
+        "type_id": 7785,
+        "zh": "有限超级中子疾速炮 I",
+        "en": "Limited Mega Neutron Blaster I",
+        "quantity": 2
+      },
+      {
+        "type_id": 226,
+        "zh": "铅质轨道弹 M",
+        "en": "Lead Charge M",
+        "quantity": 1000
+      },
+      {
+        "type_id": 5137,
+        "zh": "小型流氓视野型掠能器",
+        "en": "Small Knave Scoped Energy Nosferatu",
+        "quantity": 2
+      },
+      {
+        "type_id": 16375,
+        "zh": "尖端型紧凑型动能装甲增强器 I",
+        "en": "Prototype Compact Kinetic Armor Hardener I",
+        "quantity": 8
+      },
+      {
+        "type_id": 6131,
+        "zh": "持久型货柜扫描器 E型",
+        "en": "Type-E Enduring Cargo Scanner",
+        "quantity": 6
+      },
+      {
+        "type_id": 19946,
+        "zh": "BZ-5视野型引力ECM",
+        "en": "BZ-5 Scoped Gravimetric ECM",
+        "quantity": 1
+      },
+      {
+        "type_id": 1201,
+        "zh": "胡蜂 I",
+        "en": "Wasp I",
+        "quantity": 11
+      },
+      {
+        "type_id": 7539,
+        "zh": "校准型轻型离子相位加农炮 I",
+        "en": "Regulated Light Ion Phase Cannon I",
+        "quantity": 3
+      },
+      {
+        "type_id": 6159,
+        "zh": "电偶合金线持久型感应增强器",
+        "en": "Alumel-Wired Enduring Sensor Booster",
+        "quantity": 3
+      },
+      {
+        "type_id": 5302,
+        "zh": "定相介子视野型感应抑阻器",
+        "en": "Phased Muon Scoped Sensor Dampener",
+        "quantity": 1
+      },
+      {
+        "type_id": 19944,
+        "zh": "CZ-4紧凑型引力ECM",
+        "en": "CZ-4 Compact Gravimetric ECM",
+        "quantity": 1
+      },
+      {
+        "type_id": 12540,
+        "zh": "天蛇白金铭牌",
+        "en": "Serpentis Platinum Tag",
+        "quantity": 2
+      },
+      {
+        "type_id": 6160,
+        "zh": "F-90紧凑型感应增强器",
+        "en": "F-90 Compact Sensor Booster",
+        "quantity": 2
+      },
+      {
+        "type_id": 7783,
+        "zh": "增强模式超级中子加速器 I",
+        "en": "Modal Mega Neutron Particle Accelerator I",
+        "quantity": 4
+      },
+      {
+        "type_id": 5493,
+        "zh": "抑制型扩充货柜 D型",
+        "en": "Type-D Restrained Expanded Cargo",
+        "quantity": 1
+      },
+      {
+        "type_id": 227,
+        "zh": "钍质轨道弹 M",
+        "en": "Thorium Charge M",
+        "quantity": 700
+      },
+      {
+        "type_id": 35658,
+        "zh": "四联氟化锂抑制型5MN微型跃迁推进器",
+        "en": "5MN Quad LiF Restrained Microwarpdrive",
+        "quantity": 2
+      },
+      {
+        "type_id": 7447,
+        "zh": "425mm尖端型高斯炮 I",
+        "en": "425mm Prototype Gauss Gun",
+        "quantity": 2
+      },
+      {
+        "type_id": 5439,
+        "zh": "J5b持久型跃迁扰频器",
+        "en": "J5b Enduring Warp Scrambler",
+        "quantity": 3
+      },
+      {
+        "type_id": 35660,
+        "zh": "四联氟化锂抑制型50MN微型跃迁推进器",
+        "en": "50MN Quad LiF Restrained Microwarpdrive",
+        "quantity": 3
+      },
+      {
+        "type_id": 11351,
+        "zh": "200mm抑制型碳化晶体附甲板",
+        "en": "200mm Crystalline Carbonide Restrained Plates",
+        "quantity": 2
+      },
+      {
+        "type_id": 1201,
+        "zh": "胡蜂 I",
+        "en": "Wasp I",
+        "quantity": 42
+      },
+      {
+        "type_id": 5445,
+        "zh": "初始紧凑型跃迁扰频器",
+        "en": "Initiated Compact Warp Scrambler",
+        "quantity": 6
+      },
+      {
+        "type_id": 5363,
+        "zh": "鲁莽紧凑型脉冲干扰器",
+        "en": "Rash Compact Burst Jammer",
+        "quantity": 3
+      },
+      {
+        "type_id": 235,
+        "zh": "钍质轨道弹 L",
+        "en": "Thorium Charge L",
+        "quantity": 2500
+      },
+      {
+        "type_id": 5697,
+        "zh": "大型基础结构维修组件",
+        "en": "Large Inefficient Hull Repair Unit",
+        "quantity": 5
+      },
+      {
+        "type_id": 2183,
+        "zh": "战锤 I",
+        "en": "Hammerhead I",
+        "quantity": 1
+      },
+      {
+        "type_id": 217,
+        "zh": "铱质轨道弹 S",
+        "en": "Iridium Charge S",
+        "quantity": 300
+      },
+      {
+        "type_id": 7787,
+        "zh": "校准型超级中子相位加农炮 I",
+        "en": "Regulated Mega Neutron Phase Cannon I",
+        "quantity": 5
+      },
+      {
+        "type_id": 5745,
+        "zh": "小型自动结构复位装置",
+        "en": "Small Automated Structural Restoration",
+        "quantity": 2
+      },
+      {
+        "type_id": 235,
+        "zh": "钍质轨道弹 L",
+        "en": "Thorium Charge L",
+        "quantity": 1000
+      },
+      {
+        "type_id": 4609,
+        "zh": "大型I-a持久型装甲维修器",
+        "en": "Large I-a Enduring Armor Repairer",
+        "quantity": 6
+      },
+      {
+        "type_id": 2454,
+        "zh": "地精灵 I",
+        "en": "Hobgoblin I",
+        "quantity": 4
+      },
+      {
+        "type_id": 7789,
+        "zh": "阳极超级中子加农炮 I",
+        "en": "Anode Mega Neutron Particle Cannon I",
+        "quantity": 1
+      },
+      {
+        "type_id": 225,
+        "zh": "铱质轨道弹 M",
+        "en": "Iridium Charge M",
+        "quantity": 300
+      },
+      {
+        "type_id": 16441,
+        "zh": "中型I-ax持久型远程装甲维修器",
+        "en": "Medium I-ax Enduring Remote Armor Repairer",
+        "quantity": 1
+      },
+      {
+        "type_id": 237,
+        "zh": "锰质轨道弹 L",
+        "en": "Plutonium Charge L",
+        "quantity": 600
+      },
+      {
+        "type_id": 6135,
+        "zh": "PL-0视野型货柜扫描器",
+        "en": "PL-0 Scoped Cargo Scanner",
+        "quantity": 1
+      },
+      {
+        "type_id": 4609,
+        "zh": "大型I-a持久型装甲维修器",
+        "en": "Large I-a Enduring Armor Repairer",
+        "quantity": 11
+      },
+      {
+        "type_id": 5301,
+        "zh": "卡普坦紧凑型感应抑阻器",
+        "en": "Kapteyn Compact Sensor Dampener",
+        "quantity": 3
+      },
+      {
+        "type_id": 7291,
+        "zh": "150mm碳化物磁轨炮 I",
+        "en": "150mm Carbide Railgun I",
+        "quantity": 1
+      },
+      {
+        "type_id": 7371,
+        "zh": "250mm碳化物磁轨炮 I",
+        "en": "250mm Carbide Railgun I",
+        "quantity": 1
+      },
+      {
+        "type_id": 5399,
+        "zh": "J5持久型跃迁扰断器",
+        "en": "J5 Enduring Warp Disruptor",
+        "quantity": 1
+      },
+      {
+        "type_id": 215,
+        "zh": "铁质轨道弹 S",
+        "en": "Iron Charge S",
+        "quantity": 200
+      },
+      {
+        "type_id": 228,
+        "zh": "钼质轨道弹 M",
+        "en": "Uranium Charge M",
+        "quantity": 100
+      },
+      {
+        "type_id": 6073,
+        "zh": "中型紧凑型铅酸电容器电池",
+        "en": "Medium Compact Pb-Acid Cap Battery",
+        "quantity": 5
+      },
+      {
+        "type_id": 4529,
+        "zh": "小型I-a持久型装甲维修器",
+        "en": "Small I-a Enduring Armor Repairer",
+        "quantity": 3
+      },
+      {
+        "type_id": 2203,
+        "zh": "侍僧 I",
+        "en": "Acolyte I",
+        "quantity": 3
+      },
+      {
+        "type_id": 5403,
+        "zh": "眩晕视野型跃迁扰断器",
+        "en": "Faint Scoped Warp Disruptor",
+        "quantity": 5
+      },
+      {
+        "type_id": 4027,
+        "zh": "骤停紧凑型停滞缠绕光束",
+        "en": "Fleeting Compact Stasis Webifier",
+        "quantity": 3
+      },
+      {
+        "type_id": 5239,
+        "zh": "EP-S高斯视野型采矿激光器",
+        "en": "EP-S Gaussian Scoped Mining Laser",
+        "quantity": 4
+      },
+      {
+        "type_id": 4613,
+        "zh": "大型ACM紧凑型装甲维修器",
+        "en": "Large ACM Compact Armor Repairer",
+        "quantity": 9
+      },
+      {
+        "type_id": 6005,
+        "zh": "单元推进持久型10MN加力燃烧器",
+        "en": "10MN Monopropellant Enduring Afterburner",
+        "quantity": 5
+      },
+      {
+        "type_id": 5282,
+        "zh": "连接式持久型远程感应增强器",
+        "en": "Linked Enduring Remote Sensor Booster",
+        "quantity": 3
+      },
+      {
+        "type_id": 230,
+        "zh": "反物质轨道弹 M",
+        "en": "Antimatter Charge M",
+        "quantity": 100
+      },
+      {
+        "type_id": 7289,
+        "zh": "150mm侦查员飞速加农炮 I",
+        "en": "150mm 'Scout' Accelerator Cannon",
+        "quantity": 1
+      },
+      {
+        "type_id": 35657,
+        "zh": "Y-S8紧凑型100MN加力燃烧器",
+        "en": "100MN Y-S8 Compact Afterburner",
+        "quantity": 7
+      },
+      {
+        "type_id": 17218,
+        "zh": "天蛇钯金铭牌",
+        "en": "Serpentis Palladium Tag",
+        "quantity": 2
+      },
+      {
+        "type_id": 5755,
+        "zh": "曙光大型结构再造装置 I",
+        "en": "Large 'Hope' Hull Reconstructor I",
+        "quantity": 16
+      },
+      {
+        "type_id": 4027,
+        "zh": "骤停紧凑型停滞缠绕光束",
+        "en": "Fleeting Compact Stasis Webifier",
+        "quantity": 1
+      },
+      {
+        "type_id": 223,
+        "zh": "铁质轨道弹 M",
+        "en": "Iron Charge M",
+        "quantity": 300
+      },
+      {
+        "type_id": 6001,
+        "zh": "Y-S8紧凑型1MN加力燃烧器",
+        "en": "1MN Y-S8 Compact Afterburner",
+        "quantity": 4
+      },
+      {
+        "type_id": 41056,
+        "zh": "贾格罗持久型重型停滞捕捉光束",
+        "en": "Heavy Jigoro Enduring Stasis Grappler",
+        "quantity": 4
+      },
+      {
+        "type_id": 37545,
+        "zh": "A-211持久型制导干扰器",
+        "en": "A-211 Enduring Guidance Disruptor",
+        "quantity": 3
+      },
+      {
+        "type_id": 2486,
+        "zh": "武士 I",
+        "en": "Warrior I",
+        "quantity": 6
+      },
+      {
+        "type_id": 5363,
+        "zh": "鲁莽紧凑型脉冲干扰器",
+        "en": "Rash Compact Burst Jammer",
+        "quantity": 1
+      },
+      {
+        "type_id": 6296,
+        "zh": "F-89紧凑型信号放大器",
+        "en": "F-89 Compact Signal Amplifier",
+        "quantity": 2
+      },
+      {
+        "type_id": 220,
+        "zh": "钼质轨道弹 S",
+        "en": "Uranium Charge S",
+        "quantity": 500
+      },
+      {
+        "type_id": 5971,
+        "zh": "冷气持久型5MN微型跃迁推进器",
+        "en": "5MN Cold-Gas Enduring Microwarpdrive",
+        "quantity": 2
+      },
+      {
+        "type_id": 41031,
+        "zh": "AML紧凑型全方位索敌连接",
+        "en": "AML Compact Omnidirectional Tracking Link",
+        "quantity": 1
+      },
+      {
+        "type_id": 5342,
+        "zh": "艾弗雯持久型远距索敌计算机",
+        "en": "Alfven Enduring Remote Tracking Computer",
+        "quantity": 1
+      },
+      {
+        "type_id": 5721,
+        "zh": "中型自动结构复位装置",
+        "en": "Medium Automated Structural Restoration",
+        "quantity": 3
+      },
+      {
+        "type_id": 7703,
+        "zh": "增强模式中子加速器 I",
+        "en": "Modal Neutron Particle Accelerator I",
+        "quantity": 2
+      },
+      {
+        "type_id": 5439,
+        "zh": "J5b持久型跃迁扰频器",
+        "en": "J5b Enduring Warp Scrambler",
+        "quantity": 4
+      },
+      {
+        "type_id": 17218,
+        "zh": "天蛇钯金铭牌",
+        "en": "Serpentis Palladium Tag",
+        "quantity": 3
+      },
+      {
+        "type_id": 15510,
+        "zh": "瓦尔基里 I",
+        "en": "Valkyrie I",
+        "quantity": 9
+      },
+      {
+        "type_id": 16443,
+        "zh": "中型共轴紧凑型远程装甲维修器",
+        "en": "Medium Coaxial Compact Remote Armor Repairer",
+        "quantity": 1
+      },
+      {
+        "type_id": 16375,
+        "zh": "尖端型紧凑型动能装甲增强器 I",
+        "en": "Prototype Compact Kinetic Armor Hardener I",
+        "quantity": 4
+      },
+      {
+        "type_id": 2454,
+        "zh": "地精灵 I",
+        "en": "Hobgoblin I",
+        "quantity": 4
+      },
+      {
+        "type_id": 5319,
+        "zh": "贝克伦持久型索敌扰断器 I",
+        "en": "Baker Nunn Enduring Tracking Disruptor I",
+        "quantity": 5
+      },
+      {
+        "type_id": 7669,
+        "zh": "阳极离子加农炮 I",
+        "en": "Anode Ion Particle Cannon I",
+        "quantity": 1
+      },
+      {
+        "type_id": 232,
+        "zh": "钨质轨道弹 L",
+        "en": "Tungsten Charge L",
+        "quantity": 1200
+      },
+      {
+        "type_id": 5051,
+        "zh": "重型F-RX紧凑型电容注电器",
+        "en": "Heavy F-RX Compact Capacitor Booster",
+        "quantity": 14
+      },
+      {
+        "type_id": 16367,
+        "zh": "尖端型紧凑型爆炸装甲增强器 I",
+        "en": "Prototype Compact Explosive Armor Hardener I",
+        "quantity": 8
+      },
+      {
+        "type_id": 2444,
+        "zh": "蛮妖 I",
+        "en": "Ogre I",
+        "quantity": 14
+      },
+      {
+        "type_id": 16381,
+        "zh": "实验型持久型热能装甲增强器 I",
+        "en": "Experimental Enduring Thermal Armor Hardener I",
+        "quantity": 5
+      },
+      {
+        "type_id": 231,
+        "zh": "铁质轨道弹 L",
+        "en": "Iron Charge L",
+        "quantity": 600
+      },
+      {
+        "type_id": 19929,
+        "zh": "感应紧凑型多谱式ECM",
+        "en": "Induced Compact Multispectral ECM",
+        "quantity": 1
+      },
+      {
+        "type_id": 5399,
+        "zh": "J5持久型跃迁扰断器",
+        "en": "J5 Enduring Warp Disruptor",
+        "quantity": 1
+      },
+      {
+        "type_id": 218,
+        "zh": "铅质轨道弹 S",
+        "en": "Lead Charge S",
+        "quantity": 100
+      },
+      {
+        "type_id": 6131,
+        "zh": "持久型货柜扫描器 E型",
+        "en": "Type-E Enduring Cargo Scanner",
+        "quantity": 15
+      },
+      {
+        "type_id": 5975,
+        "zh": "冷气持久型50MN微型跃迁推进器",
+        "en": "50MN Cold-Gas Enduring Microwarpdrive",
+        "quantity": 1
+      },
+      {
+        "type_id": 5747,
+        "zh": "小型I-b偏振式结构再生器",
+        "en": "Small I-b Polarized Structural Regenerator",
+        "quantity": 1
+      },
+      {
+        "type_id": 5281,
+        "zh": "互接入视野型远程感应增强器",
+        "en": "Coadjunct Scoped Remote Sensor Booster",
+        "quantity": 2
+      },
+      {
+        "type_id": 7583,
+        "zh": "校准型轻型中子相位加农炮 I",
+        "en": "Regulated Light Neutron Phase Cannon I",
+        "quantity": 3
+      },
+      {
+        "type_id": 41033,
+        "zh": "N-JM紧凑型全方位索敌增强器",
+        "en": "N-JM Compact Omnidirectional Tracking Enhancer",
+        "quantity": 1
+      },
+      {
+        "type_id": 222,
+        "zh": "反物质轨道弹 S",
+        "en": "Antimatter Charge S",
+        "quantity": 700
+      },
+      {
+        "type_id": 237,
+        "zh": "锰质轨道弹 L",
+        "en": "Plutonium Charge L",
+        "quantity": 1800
+      },
+      {
+        "type_id": 16359,
+        "zh": "尖端型紧凑型电磁装甲增强器 I",
+        "en": "Prototype Compact EM Armor Hardener I",
+        "quantity": 10
+      },
+      {
+        "type_id": 16383,
+        "zh": "尖端型紧凑型热能装甲增强器 I",
+        "en": "Prototype Compact Thermal Armor Hardener I",
+        "quantity": 9
+      },
+      {
+        "type_id": 7789,
+        "zh": "阳极超级中子加农炮 I",
+        "en": "Anode Mega Neutron Particle Cannon I",
+        "quantity": 2
+      },
+      {
+        "type_id": 2444,
+        "zh": "蛮妖 I",
+        "en": "Ogre I",
+        "quantity": 30
+      },
+      {
+        "type_id": 41031,
+        "zh": "AML紧凑型全方位索敌连接",
+        "en": "AML Compact Omnidirectional Tracking Link",
+        "quantity": 6
+      },
+      {
+        "type_id": 5141,
+        "zh": "小型盗墓者紧凑型掠能器",
+        "en": "Small Ghoul Compact Energy Nosferatu",
+        "quantity": 7
+      },
+      {
+        "type_id": 5322,
+        "zh": "DDO视野型索敌扰断器 I",
+        "en": "DDO Scoped Tracking Disruptor I",
+        "quantity": 2
+      },
+      {
+        "type_id": 228,
+        "zh": "钼质轨道弹 M",
+        "en": "Uranium Charge M",
+        "quantity": 300
+      },
+      {
+        "type_id": 2183,
+        "zh": "战锤 I",
+        "en": "Hammerhead I",
+        "quantity": 12
+      },
+      {
+        "type_id": 11311,
+        "zh": "400mm抑制型碳化晶体附甲板",
+        "en": "400mm Crystalline Carbonide Restrained Plates",
+        "quantity": 7
+      },
+      {
+        "type_id": 5405,
+        "zh": "初始紧凑型跃迁扰断器",
+        "en": "Initiated Compact Warp Disruptor",
+        "quantity": 4
+      },
+      {
+        "type_id": 19942,
+        "zh": "FZ-3a持久型引力ECM",
+        "en": "FZ-3a Enduring Gravimetric ECM",
+        "quantity": 4
+      },
+      {
+        "type_id": 41032,
+        "zh": "丹尼持久型全方位索敌连接",
+        "en": "Denny Enduring Omnidirectional Tracking Link",
+        "quantity": 6
+      },
+      {
+        "type_id": 9670,
+        "zh": "震荡紧凑小型引力子立体炸弹",
+        "en": "'Concussion' Compact Small Graviton Smartbomb",
+        "quantity": 5
+      },
+      {
+        "type_id": 5093,
+        "zh": "小型辐射视野型远程电容传输装置",
+        "en": "Small Radiative Scoped Remote Capacitor Transmitter",
+        "quantity": 8
+      },
+      {
+        "type_id": 215,
+        "zh": "铁质轨道弹 S",
+        "en": "Iron Charge S",
+        "quantity": 700
+      },
+      {
+        "type_id": 11309,
+        "zh": "400mm紧凑型包金钨附甲板",
+        "en": "400mm Rolled Tungsten Compact Plates",
+        "quantity": 4
+      },
+      {
+        "type_id": 231,
+        "zh": "铁质轨道弹 L",
+        "en": "Iron Charge L",
+        "quantity": 2000
+      },
+      {
+        "type_id": 2203,
+        "zh": "侍僧 I",
+        "en": "Acolyte I",
+        "quantity": 12
+      },
+      {
+        "type_id": 16367,
+        "zh": "尖端型紧凑型爆炸装甲增强器 I",
+        "en": "Prototype Compact Explosive Armor Hardener I",
+        "quantity": 12
+      },
+      {
+        "type_id": 7453,
+        "zh": "425mm压缩型线圈炮 I",
+        "en": "425mm Compressed Coil Gun I",
+        "quantity": 6
+      },
+      {
+        "type_id": 5757,
+        "zh": "大型自动结构复位装置",
+        "en": "Large Automated Structural Restoration",
+        "quantity": 13
+      },
+      {
+        "type_id": 7787,
+        "zh": "校准型超级中子相位加农炮 I",
+        "en": "Regulated Mega Neutron Phase Cannon I",
+        "quantity": 8
+      },
+      {
+        "type_id": 5302,
+        "zh": "定相介子视野型感应抑阻器",
+        "en": "Phased Muon Scoped Sensor Dampener",
+        "quantity": 4
+      },
+      {
+        "type_id": 16447,
+        "zh": "中型抚慰视野型远程装甲维修器",
+        "en": "Medium Solace Scoped Remote Armor Repairer",
+        "quantity": 2
+      },
+      {
+        "type_id": 2173,
+        "zh": "渗透者 I",
+        "en": "Infiltrator I",
+        "quantity": 10
+      },
+      {
+        "type_id": 234,
+        "zh": "铅质轨道弹 L",
+        "en": "Lead Charge L",
+        "quantity": 1500
+      },
+      {
+        "type_id": 17266,
+        "zh": "暗影天蛇水晶铭牌",
+        "en": "Shadow Serpentis Crystal Tag",
+        "quantity": 2
+      },
+      {
+        "type_id": 7831,
+        "zh": "校准型超级离子相位加农炮 I",
+        "en": "Regulated Mega Ion Phase Cannon I",
+        "quantity": 1
+      },
+      {
+        "type_id": 35656,
+        "zh": "Y-S8紧凑型10MN加力燃烧器",
+        "en": "10MN Y-S8 Compact Afterburner",
+        "quantity": 6
+      },
+      {
+        "type_id": 6176,
+        "zh": "F-12持久型索敌计算机",
+        "en": "F-12 Enduring Tracking Computer",
+        "quantity": 3
+      },
+      {
+        "type_id": 5955,
+        "zh": "单元推进持久型100MN加力燃烧器",
+        "en": "100MN Monopropellant Enduring Afterburner",
+        "quantity": 13
+      },
+      {
+        "type_id": 7663,
+        "zh": "增强模式离子加速器 I",
+        "en": "Modal Ion Particle Accelerator I",
+        "quantity": 1
+      },
+      {
+        "type_id": 2193,
+        "zh": "执政官 I",
+        "en": "Praetor I",
+        "quantity": 21
+      },
+      {
+        "type_id": 2464,
+        "zh": "大黄蜂 I",
+        "en": "Hornet I",
+        "quantity": 6
+      },
+      {
+        "type_id": 5759,
+        "zh": "大型I-b偏振式结构再生器",
+        "en": "Large I-b Polarized Structural Regenerator",
+        "quantity": 10
+      },
+      {
+        "type_id": 221,
+        "zh": "锰质轨道弹 S",
+        "en": "Plutonium Charge S",
+        "quantity": 500
+      },
+      {
+        "type_id": 6001,
+        "zh": "Y-S8紧凑型1MN加力燃烧器",
+        "en": "1MN Y-S8 Compact Afterburner",
+        "quantity": 6
+      },
+      {
+        "type_id": 11349,
+        "zh": "200mm紧凑型包金钨附甲板",
+        "en": "200mm Rolled Tungsten Compact Plates",
+        "quantity": 3
+      },
+      {
+        "type_id": 2476,
+        "zh": "狂战士 I",
+        "en": "Berserker I",
+        "quantity": 26
+      },
+      {
+        "type_id": 5321,
+        "zh": "C-IR紧凑型制导干扰器",
+        "en": "C-IR Compact Guidance Disruptor",
+        "quantity": 4
+      },
+      {
+        "type_id": 17216,
+        "zh": "天蛇钻石铭牌",
+        "en": "Serpentis Diamond Tag",
+        "quantity": 12
+      },
+      {
+        "type_id": 12540,
+        "zh": "天蛇白金铭牌",
+        "en": "Serpentis Platinum Tag",
+        "quantity": 2
+      },
+      {
+        "type_id": 7449,
+        "zh": "425mm侦查员飞速加农炮 I",
+        "en": "425mm 'Scout' Accelerator Cannon",
+        "quantity": 6
+      },
+      {
+        "type_id": 6527,
+        "zh": "Ta3紧凑型船体扫描器",
+        "en": "Ta3 Compact Ship Scanner",
+        "quantity": 6
+      },
+      {
+        "type_id": 4533,
+        "zh": "小型ACM紧凑型装甲维修器",
+        "en": "Small ACM Compact Armor Repairer",
+        "quantity": 3
+      },
+      {
+        "type_id": 7287,
+        "zh": "150mm尖端型高斯炮 I",
+        "en": "150mm Prototype Gauss Gun",
+        "quantity": 1
+      },
+      {
+        "type_id": 11341,
+        "zh": "100mm紧凑型包金钨附甲板",
+        "en": "100mm Rolled Tungsten Compact Plates",
+        "quantity": 2
+      },
+      {
+        "type_id": 227,
+        "zh": "钍质轨道弹 M",
+        "en": "Thorium Charge M",
+        "quantity": 1000
+      },
+      {
+        "type_id": 5320,
+        "zh": "巴尔默序列紧凑型索敌扰断器 I",
+        "en": "Balmer Series Compact Tracking Disruptor I",
+        "quantity": 2
+      },
+      {
+        "type_id": 15508,
+        "zh": "金星 I",
+        "en": "Vespa I",
+        "quantity": 7
+      },
+      {
+        "type_id": 11105,
+        "zh": "涡流紧凑型磁场稳定器",
+        "en": "Vortex Compact Magnetic Field Stabilizer",
+        "quantity": 4
+      },
+      {
+        "type_id": 16365,
+        "zh": "实验型持久型爆炸装甲增强器 I",
+        "en": "Experimental Enduring Explosive Armor Hardener I",
+        "quantity": 5
+      },
+      {
+        "type_id": 16449,
+        "zh": "大型I-ax持久型远程装甲维修器",
+        "en": "Large I-ax Enduring Remote Armor Repairer",
+        "quantity": 6
+      },
+      {
+        "type_id": 5697,
+        "zh": "大型基础结构维修组件",
+        "en": "Large Inefficient Hull Repair Unit",
+        "quantity": 7
+      },
+      {
+        "type_id": 230,
+        "zh": "反物质轨道弹 M",
+        "en": "Antimatter Charge M",
+        "quantity": 400
+      },
+      {
+        "type_id": 6569,
+        "zh": "ML-3紧凑型采矿调查芯片组",
+        "en": "ML-3 Compact Mining Survey Chipset",
+        "quantity": 5
+      },
+      {
+        "type_id": 238,
+        "zh": "反物质轨道弹 L",
+        "en": "Antimatter Charge L",
+        "quantity": 1100
+      },
+      {
+        "type_id": 5301,
+        "zh": "卡普坦紧凑型感应抑阻器",
+        "en": "Kapteyn Compact Sensor Dampener",
+        "quantity": 5
+      },
+      {
+        "type_id": 218,
+        "zh": "铅质轨道弹 S",
+        "en": "Lead Charge S",
+        "quantity": 400
+      },
+      {
+        "type_id": 5137,
+        "zh": "小型流氓视野型掠能器",
+        "en": "Small Knave Scoped Energy Nosferatu",
+        "quantity": 5
+      },
+      {
+        "type_id": 5245,
+        "zh": "紧凑型采矿粒子激光钻",
+        "en": "Particle Bore Compact Mining Laser",
+        "quantity": 8
+      },
+      {
+        "type_id": 9728,
+        "zh": "震荡紧凑中型引力子立体炸弹",
+        "en": "'Concussion' Compact Medium Graviton Smartbomb",
+        "quantity": 3
+      },
+      {
+        "type_id": 5747,
+        "zh": "小型I-b偏振式结构再生器",
+        "en": "Small I-b Polarized Structural Regenerator",
+        "quantity": 3
+      },
+      {
+        "type_id": 225,
+        "zh": "铱质轨道弹 M",
+        "en": "Iridium Charge M",
+        "quantity": 700
+      },
+      {
+        "type_id": 4871,
+        "zh": "大型紧凑型铅酸电容器电池",
+        "en": "Large Compact Pb-Acid Cap Battery",
+        "quantity": 22
+      },
+      {
+        "type_id": 30497,
+        "zh": "强化金属碎片",
+        "en": "Reinforced Metal Scraps",
+        "quantity": 2
+      },
+      {
+        "type_id": 16357,
+        "zh": "实验型持久型电磁装甲增强器 I",
+        "en": "Experimental Enduring EM Armor Hardener I",
+        "quantity": 8
+      },
+      {
+        "type_id": 5973,
+        "zh": "Y-T8紧凑型5MN微型跃迁推进器",
+        "en": "5MN Y-T8 Compact Microwarpdrive",
+        "quantity": 1
+      },
+      {
+        "type_id": 41034,
+        "zh": "AE-K紧凑型无人机伤害增效装置",
+        "en": "AE-K Compact Drone Damage Amplifier",
+        "quantity": 2
+      },
+      {
+        "type_id": 12539,
+        "zh": "天蛇黄金铭牌",
+        "en": "Serpentis Gold Tag",
+        "quantity": 1
+      },
+      {
+        "type_id": 223,
+        "zh": "铁质轨道弹 M",
+        "en": "Iron Charge M",
+        "quantity": 400
+      },
+      {
+        "type_id": 7785,
+        "zh": "有限超级中子疾速炮 I",
+        "en": "Limited Mega Neutron Blaster I",
+        "quantity": 11
+      },
+      {
+        "type_id": 11327,
+        "zh": "1600mm抑制型碳化晶体附甲板",
+        "en": "1600mm Crystalline Carbonide Restrained Plates",
+        "quantity": 7
+      },
+      {
+        "type_id": 11351,
+        "zh": "200mm抑制型碳化晶体附甲板",
+        "en": "200mm Crystalline Carbonide Restrained Plates",
+        "quantity": 3
+      },
+      {
+        "type_id": 37611,
+        "zh": "M-36持久型跃迁扰断力场发生器",
+        "en": "M-36 Enduring Warp Disruption Field Generator",
+        "quantity": 1
+      },
+      {
+        "type_id": 5339,
+        "zh": "F-293视野型远距索敌计算机",
+        "en": "F-293 Scoped Remote Tracking Computer",
+        "quantity": 3
+      },
+      {
+        "type_id": 19946,
+        "zh": "BZ-5视野型引力ECM",
+        "en": "BZ-5 Scoped Gravimetric ECM",
+        "quantity": 5
+      },
+      {
+        "type_id": 4573,
+        "zh": "中型ACM紧凑型装甲维修器",
+        "en": "Medium ACM Compact Armor Repairer",
+        "quantity": 1
+      },
+      {
+        "type_id": 7451,
+        "zh": "425mm碳化物磁轨炮 I",
+        "en": "425mm Carbide Railgun I",
+        "quantity": 8
+      },
+      {
+        "type_id": 5279,
+        "zh": "F-23紧凑型远程感应增强器",
+        "en": "F-23 Compact Remote Sensor Booster",
+        "quantity": 3
+      },
+      {
+        "type_id": 35658,
+        "zh": "四联氟化锂抑制型5MN微型跃迁推进器",
+        "en": "5MN Quad LiF Restrained Microwarpdrive",
+        "quantity": 1
+      },
+      {
+        "type_id": 11343,
+        "zh": "100mm抑制型碳化晶体附甲板",
+        "en": "100mm Crystalline Carbonide Restrained Plates",
+        "quantity": 3
+      },
+      {
+        "type_id": 11317,
+        "zh": "800mm紧凑型包金钨附甲板",
+        "en": "800mm Rolled Tungsten Compact Plates",
+        "quantity": 2
+      },
+      {
+        "type_id": 5365,
+        "zh": "鲸鱼座视野型脉冲干扰器",
+        "en": "Cetus Scoped Burst Jammer",
+        "quantity": 1
+      },
+      {
+        "type_id": 9521,
+        "zh": "初始持久型多谱式ECM",
+        "en": "Initiated Enduring Multispectral ECM",
+        "quantity": 1
+      },
+      {
+        "type_id": 35659,
+        "zh": "Y-T8紧凑型50MN微型跃迁推进器",
+        "en": "50MN Y-T8 Compact Microwarpdrive",
+        "quantity": 3
+      },
+      {
+        "type_id": 229,
+        "zh": "锰质轨道弹 M",
+        "en": "Plutonium Charge M",
+        "quantity": 300
+      },
+      {
+        "type_id": 5745,
+        "zh": "小型自动结构复位装置",
+        "en": "Small Automated Structural Restoration",
+        "quantity": 2
+      },
+      {
+        "type_id": 7783,
+        "zh": "增强模式超级中子加速器 I",
+        "en": "Modal Mega Neutron Particle Accelerator I",
+        "quantity": 3
+      },
+      {
+        "type_id": 37544,
+        "zh": "高冲程视野型制导干扰器",
+        "en": "Highstroke Scoped Guidance Disruptor",
+        "quantity": 2
+      },
+      {
+        "type_id": 5869,
+        "zh": "抑制型锁定系统 I",
+        "en": "Suppressed Targeting System I",
+        "quantity": 1
+      },
+      {
+        "type_id": 7585,
+        "zh": "阳极轻型中子加农炮 I",
+        "en": "Anode Light Neutron Particle Cannon I",
+        "quantity": 1
+      },
+      {
+        "type_id": 5443,
+        "zh": "伊普西隆眩晕视野型跃迁扰频器",
+        "en": "Faint Epsilon Scoped Warp Scrambler",
+        "quantity": 1
+      },
+      {
+        "type_id": 224,
+        "zh": "钨质轨道弹 M",
+        "en": "Tungsten Charge M",
+        "quantity": 100
+      },
+      {
+        "type_id": 7709,
+        "zh": "阳极中子加农炮 I",
+        "en": "Anode Neutron Particle Cannon I",
+        "quantity": 1
+      },
+      {
+        "type_id": 16475,
+        "zh": "重型小鬼紧凑型能量中和器",
+        "en": "Heavy Gremlin Compact Energy Neutralizer",
+        "quantity": 6
+      },
+      {
+        "type_id": 2476,
+        "zh": "狂战士 I",
+        "en": "Berserker I",
+        "quantity": 18
+      },
+      {
+        "type_id": 4613,
+        "zh": "大型ACM紧凑型装甲维修器",
+        "en": "Large ACM Compact Armor Repairer",
+        "quantity": 10
+      },
+      {
+        "type_id": 2464,
+        "zh": "大黄蜂 I",
+        "en": "Hornet I",
+        "quantity": 5
+      },
+      {
+        "type_id": 233,
+        "zh": "铱质轨道弹 L",
+        "en": "Iridium Charge L",
+        "quantity": 800
+      },
+      {
+        "type_id": 11325,
+        "zh": "1600mm紧凑型包金钨附甲板",
+        "en": "1600mm Rolled Tungsten Compact Plates",
+        "quantity": 6
+      },
+      {
+        "type_id": 217,
+        "zh": "铱质轨道弹 S",
+        "en": "Iridium Charge S",
+        "quantity": 200
+      },
+      {
+        "type_id": 2486,
+        "zh": "武士 I",
+        "en": "Warrior I",
+        "quantity": 3
+      },
+      {
+        "type_id": 2173,
+        "zh": "渗透者 I",
+        "en": "Infiltrator I",
+        "quantity": 6
+      },
+      {
+        "type_id": 6159,
+        "zh": "电偶合金线持久型感应增强器",
+        "en": "Alumel-Wired Enduring Sensor Booster",
+        "quantity": 4
+      },
+      {
+        "type_id": 234,
+        "zh": "铅质轨道弹 L",
+        "en": "Lead Charge L",
+        "quantity": 900
+      },
+      {
+        "type_id": 4871,
+        "zh": "大型紧凑型铅酸电容器电池",
+        "en": "Large Compact Pb-Acid Cap Battery",
+        "quantity": 5
+      },
+      {
+        "type_id": 11327,
+        "zh": "1600mm抑制型碳化晶体附甲板",
+        "en": "1600mm Crystalline Carbonide Restrained Plates",
+        "quantity": 7
+      },
+      {
+        "type_id": 7539,
+        "zh": "校准型轻型离子相位加农炮 I",
+        "en": "Regulated Light Ion Phase Cannon I",
+        "quantity": 1
+      },
+      {
+        "type_id": 16449,
+        "zh": "大型I-ax持久型远程装甲维修器",
+        "en": "Large I-ax Enduring Remote Armor Repairer",
+        "quantity": 4
+      },
+      {
+        "type_id": 5759,
+        "zh": "大型I-b偏振式结构再生器",
+        "en": "Large I-b Polarized Structural Regenerator",
+        "quantity": 3
+      },
+      {
+        "type_id": 232,
+        "zh": "钨质轨道弹 L",
+        "en": "Tungsten Charge L",
+        "quantity": 900
+      },
+      {
+        "type_id": 5757,
+        "zh": "大型自动结构复位装置",
+        "en": "Large Automated Structural Restoration",
+        "quantity": 5
+      },
+      {
+        "type_id": 17216,
+        "zh": "天蛇钻石铭牌",
+        "en": "Serpentis Diamond Tag",
+        "quantity": 6
+      },
+      {
+        "type_id": 238,
+        "zh": "反物质轨道弹 L",
+        "en": "Antimatter Charge L",
+        "quantity": 700
+      },
+      {
+        "type_id": 16365,
+        "zh": "实验型持久型爆炸装甲增强器 I",
+        "en": "Experimental Enduring Explosive Armor Hardener I",
+        "quantity": 8
+      },
+      {
+        "type_id": 5755,
+        "zh": "曙光大型结构再造装置 I",
+        "en": "Large 'Hope' Hull Reconstructor I",
+        "quantity": 9
+      },
+      {
+        "type_id": 5279,
+        "zh": "F-23紧凑型远程感应增强器",
+        "en": "F-23 Compact Remote Sensor Booster",
+        "quantity": 1
+      },
+      {
+        "type_id": 5239,
+        "zh": "EP-S高斯视野型采矿激光器",
+        "en": "EP-S Gaussian Scoped Mining Laser",
+        "quantity": 3
+      },
+      {
+        "type_id": 11319,
+        "zh": "800mm抑制型碳化晶体附甲板",
+        "en": "800mm Crystalline Carbonide Restrained Plates",
+        "quantity": 3
+      },
+      {
+        "type_id": 236,
+        "zh": "钼质轨道弹 L",
+        "en": "Uranium Charge L",
+        "quantity": 1000
+      },
+      {
+        "type_id": 221,
+        "zh": "锰质轨道弹 S",
+        "en": "Plutonium Charge S",
+        "quantity": 400
+      },
+      {
+        "type_id": 5955,
+        "zh": "单元推进持久型100MN加力燃烧器",
+        "en": "100MN Monopropellant Enduring Afterburner",
+        "quantity": 6
+      },
+      {
+        "type_id": 7449,
+        "zh": "425mm侦查员飞速加农炮 I",
+        "en": "425mm 'Scout' Accelerator Cannon",
+        "quantity": 4
+      },
+      {
+        "type_id": 2193,
+        "zh": "执政官 I",
+        "en": "Praetor I",
+        "quantity": 18
+      },
+      {
+        "type_id": 15510,
+        "zh": "瓦尔基里 I",
+        "en": "Valkyrie I",
+        "quantity": 4
+      },
+      {
+        "type_id": 5141,
+        "zh": "小型盗墓者紧凑型掠能器",
+        "en": "Small Ghoul Compact Energy Nosferatu",
+        "quantity": 1
+      },
+      {
+        "type_id": 5403,
+        "zh": "眩晕视野型跃迁扰断器",
+        "en": "Faint Scoped Warp Disruptor",
+        "quantity": 4
+      },
+      {
+        "type_id": 5320,
+        "zh": "巴尔默序列紧凑型索敌扰断器 I",
+        "en": "Balmer Series Compact Tracking Disruptor I",
+        "quantity": 4
+      },
+      {
+        "type_id": 15508,
+        "zh": "金星 I",
+        "en": "Vespa I",
+        "quantity": 3
+      },
+      {
+        "type_id": 11317,
+        "zh": "800mm紧凑型包金钨附甲板",
+        "en": "800mm Rolled Tungsten Compact Plates",
+        "quantity": 6
+      },
+      {
+        "type_id": 16451,
+        "zh": "大型共轴紧凑型远程装甲维修器",
+        "en": "Large Coaxial Compact Remote Armor Repairer",
+        "quantity": 7
+      },
+      {
+        "type_id": 35656,
+        "zh": "Y-S8紧凑型10MN加力燃烧器",
+        "en": "10MN Y-S8 Compact Afterburner",
+        "quantity": 1
+      },
+      {
+        "type_id": 6073,
+        "zh": "中型紧凑型铅酸电容器电池",
+        "en": "Medium Compact Pb-Acid Cap Battery",
+        "quantity": 1
+      },
+      {
+        "type_id": 5322,
+        "zh": "DDO视野型索敌扰断器 I",
+        "en": "DDO Scoped Tracking Disruptor I",
+        "quantity": 2
+      },
+      {
+        "type_id": 5723,
+        "zh": "中型I-b偏振式结构再生器",
+        "en": "Medium I-b Polarized Structural Regenerator",
+        "quantity": 2
+      },
+      {
+        "type_id": 5051,
+        "zh": "重型F-RX紧凑型电容注电器",
+        "en": "Heavy F-RX Compact Capacitor Booster",
+        "quantity": 4
+      },
+      {
+        "type_id": 11311,
+        "zh": "400mm抑制型碳化晶体附甲板",
+        "en": "400mm Crystalline Carbonide Restrained Plates",
+        "quantity": 1
+      },
+      {
+        "type_id": 6003,
+        "zh": "单元推进持久型1MN加力燃烧器",
+        "en": "1MN Monopropellant Enduring Afterburner",
+        "quantity": 4
+      },
+      {
+        "type_id": 19942,
+        "zh": "FZ-3a持久型引力ECM",
+        "en": "FZ-3a Enduring Gravimetric ECM",
+        "quantity": 2
+      },
+      {
+        "type_id": 7287,
+        "zh": "150mm尖端型高斯炮 I",
+        "en": "150mm Prototype Gauss Gun",
+        "quantity": 2
+      },
+      {
+        "type_id": 6527,
+        "zh": "Ta3紧凑型船体扫描器",
+        "en": "Ta3 Compact Ship Scanner",
+        "quantity": 3
+      },
+      {
+        "type_id": 16373,
+        "zh": "实验型持久型动能装甲增强器 I",
+        "en": "Experimental Enduring Kinetic Armor Hardener I",
+        "quantity": 4
+      },
+      {
+        "type_id": 7447,
+        "zh": "425mm尖端型高斯炮 I",
+        "en": "425mm Prototype Gauss Gun",
+        "quantity": 1
+      },
+      {
+        "type_id": 11343,
+        "zh": "100mm抑制型碳化晶体附甲板",
+        "en": "100mm Crystalline Carbonide Restrained Plates",
+        "quantity": 2
+      },
+      {
+        "type_id": 220,
+        "zh": "钼质轨道弹 S",
+        "en": "Uranium Charge S",
+        "quantity": 500
+      },
+      {
+        "type_id": 7453,
+        "zh": "425mm压缩型线圈炮 I",
+        "en": "425mm Compressed Coil Gun I",
+        "quantity": 1
+      },
+      {
+        "type_id": 11349,
+        "zh": "200mm紧凑型包金钨附甲板",
+        "en": "200mm Rolled Tungsten Compact Plates",
+        "quantity": 2
+      },
+      {
+        "type_id": 5245,
+        "zh": "紧凑型采矿粒子激光钻",
+        "en": "Particle Bore Compact Mining Laser",
+        "quantity": 5
+      },
+      {
+        "type_id": 5281,
+        "zh": "互接入视野型远程感应增强器",
+        "en": "Coadjunct Scoped Remote Sensor Booster",
+        "quantity": 2
+      },
+      {
+        "type_id": 7665,
+        "zh": "有限离子疾速炮 I",
+        "en": "Limited Ion Blaster I",
+        "quantity": 1
+      },
+      {
+        "type_id": 219,
+        "zh": "钍质轨道弹 S",
+        "en": "Thorium Charge S",
+        "quantity": 200
+      },
+      {
+        "type_id": 222,
+        "zh": "反物质轨道弹 S",
+        "en": "Antimatter Charge S",
+        "quantity": 100
+      },
+      {
+        "type_id": 41055,
+        "zh": "卡列林视野型重型停滞捕捉光束",
+        "en": "Heavy Karelin Scoped Stasis Grappler",
+        "quantity": 5
+      },
+      {
+        "type_id": 9521,
+        "zh": "初始持久型多谱式ECM",
+        "en": "Initiated Enduring Multispectral ECM",
+        "quantity": 1
+      },
+      {
+        "type_id": 11341,
+        "zh": "100mm紧凑型包金钨附甲板",
+        "en": "100mm Rolled Tungsten Compact Plates",
+        "quantity": 2
+      },
+      {
+        "type_id": 35659,
+        "zh": "Y-T8紧凑型50MN微型跃迁推进器",
+        "en": "50MN Y-T8 Compact Microwarpdrive",
+        "quantity": 1
+      },
+      {
+        "type_id": 16443,
+        "zh": "中型共轴紧凑型远程装甲维修器",
+        "en": "Medium Coaxial Compact Remote Armor Repairer",
+        "quantity": 3
+      },
+      {
+        "type_id": 5319,
+        "zh": "贝克伦持久型索敌扰断器 I",
+        "en": "Baker Nunn Enduring Tracking Disruptor I",
+        "quantity": 2
+      },
+      {
+        "type_id": 224,
+        "zh": "钨质轨道弹 M",
+        "en": "Tungsten Charge M",
+        "quantity": 400
+      },
+      {
+        "type_id": 6005,
+        "zh": "单元推进持久型10MN加力燃烧器",
+        "en": "10MN Monopropellant Enduring Afterburner",
+        "quantity": 1
+      },
+      {
+        "type_id": 17266,
+        "zh": "暗影天蛇水晶铭牌",
+        "en": "Shadow Serpentis Crystal Tag",
+        "quantity": 2
+      },
+      {
+        "type_id": 7831,
+        "zh": "校准型超级离子相位加农炮 I",
+        "en": "Regulated Mega Ion Phase Cannon I",
+        "quantity": 1
+      },
+      {
+        "type_id": 9808,
+        "zh": "YF-12a紧凑大型等离子立体炸弹",
+        "en": "'YF-12a' Compact Large Plasma Smartbomb",
+        "quantity": 2
+      },
+      {
+        "type_id": 5093,
+        "zh": "小型辐射视野型远程电容传输装置",
+        "en": "Small Radiative Scoped Remote Capacitor Transmitter",
+        "quantity": 2
+      },
+      {
+        "type_id": 35660,
+        "zh": "四联氟化锂抑制型50MN微型跃迁推进器",
+        "en": "50MN Quad LiF Restrained Microwarpdrive",
+        "quantity": 1
+      },
+      {
+        "type_id": 7703,
+        "zh": "增强模式中子加速器 I",
+        "en": "Modal Neutron Particle Accelerator I",
+        "quantity": 1
+      },
+      {
+        "type_id": 7581,
+        "zh": "有限轻型中子疾速炮 I",
+        "en": "Limited Light Neutron Blaster I",
+        "quantity": 1
+      },
+      {
+        "type_id": 4529,
+        "zh": "小型I-a持久型装甲维修器",
+        "en": "Small I-a Enduring Armor Repairer",
+        "quantity": 1
+      },
+      {
+        "type_id": 9670,
+        "zh": "震荡紧凑小型引力子立体炸弹",
+        "en": "'Concussion' Compact Small Graviton Smartbomb",
+        "quantity": 1
+      },
+      {
+        "type_id": 7707,
+        "zh": "校准型中子相位加农炮 I",
+        "en": "Regulated Neutron Phase Cannon I",
+        "quantity": 3
+      },
+      {
+        "type_id": 7667,
+        "zh": "校准型离子相位加农炮 I",
+        "en": "Regulated Ion Phase Cannon I",
+        "quantity": 1
+      },
+      {
+        "type_id": 6569,
+        "zh": "ML-3紧凑型采矿调查芯片组",
+        "en": "ML-3 Compact Mining Survey Chipset",
+        "quantity": 1
+      },
+      {
+        "type_id": 6135,
+        "zh": "PL-0视野型货柜扫描器",
+        "en": "PL-0 Scoped Cargo Scanner",
+        "quantity": 1
+      },
+      {
+        "type_id": 5340,
+        "zh": "P-S紧凑型远距索敌计算机",
+        "en": "P-S Compact Remote Tracking Computer",
+        "quantity": 1
+      },
+      {
+        "type_id": 7829,
+        "zh": "有限超级离子疾速炮 I",
+        "en": "Limited Mega Ion Blaster I",
+        "quantity": 1
+      },
+      {
+        "type_id": 20915,
+        "zh": "暗影钨质轨道弹 L",
+        "en": "Shadow Tungsten Charge L",
+        "quantity": 1000
+      },
+      {
+        "type_id": 16359,
+        "zh": "尖端型紧凑型电磁装甲增强器 I",
+        "en": "Prototype Compact EM Armor Hardener I",
+        "quantity": 2
+      },
+      {
+        "type_id": 226,
+        "zh": "铅质轨道弹 M",
+        "en": "Lead Charge M",
+        "quantity": 100
+      },
+      {
+        "type_id": 5321,
+        "zh": "C-IR紧凑型制导干扰器",
+        "en": "C-IR Compact Guidance Disruptor",
+        "quantity": 1
+      },
+      {
+        "type_id": 4569,
+        "zh": "中型I-a持久型装甲维修器",
+        "en": "Medium I-a Enduring Armor Repairer",
+        "quantity": 1
+      },
+      {
+        "type_id": 4787,
+        "zh": "小型紧凑型铅酸电容器电池",
+        "en": "Small Compact Pb-Acid Cap Battery",
+        "quantity": 1
+      },
+      {
+        "type_id": 7369,
+        "zh": "250mm侦查员飞速加农炮 I",
+        "en": "250mm 'Scout' Accelerator Cannon",
+        "quantity": 2
+      },
+      {
+        "type_id": 7583,
+        "zh": "校准型轻型中子相位加农炮 I",
+        "en": "Regulated Light Neutron Phase Cannon I",
+        "quantity": 1
+      },
+      {
+        "type_id": 37544,
+        "zh": "高冲程视野型制导干扰器",
+        "en": "Highstroke Scoped Guidance Disruptor",
+        "quantity": 1
+      },
+      {
+        "type_id": 229,
+        "zh": "锰质轨道弹 M",
+        "en": "Plutonium Charge M",
+        "quantity": 100
+      }
+    ]
+  },
+  {
+    "item_id": 1045697865281,
+    "name": "None",
+    "type_id": 17366,
+    "type_zh": "空间站集装箱",
+    "type_en": "Station Container",
+    "contents": []
+  },
+  {
+    "item_id": 1050975154051,
+    "name": "垃圾",
+    "type_id": 17366,
+    "type_zh": "空间站集装箱",
+    "type_en": "Station Container",
+    "contents": []
+  },
+  {
+    "item_id": 1050984373327,
+    "name": "特殊",
+    "type_id": 17366,
+    "type_zh": "空间站集装箱",
+    "type_en": "Station Container",
+    "contents": []
+  },
+  {
+    "item_id": 1051107921099,
+    "name": "舰船",
+    "type_id": 17366,
+    "type_zh": "空间站集装箱",
+    "type_en": "Station Container",
+    "contents": []
+  },
+  {
+    "item_id": 1051143295805,
+    "name": "B",
+    "type_id": 17366,
+    "type_zh": "空间站集装箱",
+    "type_en": "Station Container",
+    "contents": [
+      {
+        "type_id": 16273,
+        "zh": "液化臭氧",
+        "en": "Liquid Ozone",
+        "quantity": 22240
+      }
+    ]
+  },
+  {
+    "item_id": 1052298564649,
+    "name": "高价",
+    "type_id": 17366,
+    "type_zh": "空间站集装箱",
+    "type_en": "Station Container",
+    "contents": []
+  }
+]

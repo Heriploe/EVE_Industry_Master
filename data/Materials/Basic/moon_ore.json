@@ -1,0 +1,602 @@
+[
+  {
+    "id": 45490,
+    "zh": "沸石",
+    "en": "Zeolites"
+  },
+  {
+    "id": 45491,
+    "zh": "钾盐",
+    "en": "Sylvite"
+  },
+  {
+    "id": 45492,
+    "zh": "沥青",
+    "en": "Bitumens"
+  },
+  {
+    "id": 45493,
+    "zh": "柯石英",
+    "en": "Coesite"
+  },
+  {
+    "id": 45494,
+    "zh": "钴酸盐",
+    "en": "Cobaltite"
+  },
+  {
+    "id": 45495,
+    "zh": "黑稀金矿",
+    "en": "Euxenite"
+  },
+  {
+    "id": 45496,
+    "zh": "榍石",
+    "en": "Titanite"
+  },
+  {
+    "id": 45497,
+    "zh": "白钨矿",
+    "en": "Scheelite"
+  },
+  {
+    "id": 45498,
+    "zh": "菱镉矿",
+    "en": "Otavite"
+  },
+  {
+    "id": 45499,
+    "zh": "砷铂矿",
+    "en": "Sperrylite"
+  },
+  {
+    "id": 45500,
+    "zh": "钒铅矿",
+    "en": "Vanadinite"
+  },
+  {
+    "id": 45501,
+    "zh": "铬铁矿",
+    "en": "Chromite"
+  },
+  {
+    "id": 45502,
+    "zh": "钒钾铀矿",
+    "en": "Carnotite"
+  },
+  {
+    "id": 45503,
+    "zh": "锆石",
+    "en": "Zircon"
+  },
+  {
+    "id": 45504,
+    "zh": "铯榴石",
+    "en": "Pollucite"
+  },
+  {
+    "id": 45506,
+    "zh": "朱砂",
+    "en": "Cinnabar"
+  },
+  {
+    "id": 45510,
+    "zh": "磷钇矿",
+    "en": "Xenotime"
+  },
+  {
+    "id": 45511,
+    "zh": "独居石",
+    "en": "Monazite"
+  },
+  {
+    "id": 45512,
+    "zh": "铈铌钙钛矿",
+    "en": "Loparite"
+  },
+  {
+    "id": 45513,
+    "zh": "硅铍钇矿",
+    "en": "Ytterbite"
+  },
+  {
+    "id": 46280,
+    "zh": "富沸石",
+    "en": "Brimful Zeolites"
+  },
+  {
+    "id": 46281,
+    "zh": "耀沸石",
+    "en": "Glistening Zeolites"
+  },
+  {
+    "id": 46282,
+    "zh": "富钾盐",
+    "en": "Brimful Sylvite"
+  },
+  {
+    "id": 46283,
+    "zh": "耀钾盐",
+    "en": "Glistening Sylvite"
+  },
+  {
+    "id": 46284,
+    "zh": "富沥青",
+    "en": "Brimful Bitumens"
+  },
+  {
+    "id": 46285,
+    "zh": "耀沥青",
+    "en": "Glistening Bitumens"
+  },
+  {
+    "id": 46286,
+    "zh": "富柯石英",
+    "en": "Brimful Coesite"
+  },
+  {
+    "id": 46287,
+    "zh": "耀柯石英",
+    "en": "Glistening Coesite"
+  },
+  {
+    "id": 46288,
+    "zh": "多钴酸盐",
+    "en": "Copious Cobaltite"
+  },
+  {
+    "id": 46289,
+    "zh": "荧钴酸盐",
+    "en": "Twinkling Cobaltite"
+  },
+  {
+    "id": 46290,
+    "zh": "多黑稀金矿",
+    "en": "Copious Euxenite"
+  },
+  {
+    "id": 46291,
+    "zh": "荧黑稀金矿",
+    "en": "Twinkling Euxenite"
+  },
+  {
+    "id": 46292,
+    "zh": "多榍石",
+    "en": "Copious Titanite"
+  },
+  {
+    "id": 46293,
+    "zh": "荧榍石",
+    "en": "Twinkling Titanite"
+  },
+  {
+    "id": 46294,
+    "zh": "多白钨矿",
+    "en": "Copious Scheelite"
+  },
+  {
+    "id": 46295,
+    "zh": "荧白钨矿",
+    "en": "Twinkling Scheelite"
+  },
+  {
+    "id": 46296,
+    "zh": "丰菱镉矿",
+    "en": "Lavish Otavite"
+  },
+  {
+    "id": 46297,
+    "zh": "闪菱镉矿",
+    "en": "Shimmering Otavite"
+  },
+  {
+    "id": 46298,
+    "zh": "丰砷铂矿",
+    "en": "Lavish Sperrylite"
+  },
+  {
+    "id": 46299,
+    "zh": "闪砷铂矿",
+    "en": "Shimmering Sperrylite"
+  },
+  {
+    "id": 46300,
+    "zh": "丰钒铅矿",
+    "en": "Lavish Vanadinite"
+  },
+  {
+    "id": 46301,
+    "zh": "闪钒铅矿",
+    "en": "Shimmering Vanadinite"
+  },
+  {
+    "id": 46302,
+    "zh": "丰铬铁矿",
+    "en": "Lavish Chromite"
+  },
+  {
+    "id": 46303,
+    "zh": "闪铬铁矿",
+    "en": "Shimmering Chromite"
+  },
+  {
+    "id": 46304,
+    "zh": "盈钒钾铀矿",
+    "en": "Replete Carnotite"
+  },
+  {
+    "id": 46305,
+    "zh": "灼钒钾铀矿",
+    "en": "Glowing Carnotite"
+  },
+  {
+    "id": 46306,
+    "zh": "盈锆石",
+    "en": "Replete Zircon"
+  },
+  {
+    "id": 46307,
+    "zh": "灼锆石",
+    "en": "Glowing Zircon"
+  },
+  {
+    "id": 46308,
+    "zh": "盈铯榴石",
+    "en": "Replete Pollucite"
+  },
+  {
+    "id": 46309,
+    "zh": "灼铯榴石",
+    "en": "Glowing Pollucite"
+  },
+  {
+    "id": 46310,
+    "zh": "盈朱砂",
+    "en": "Replete Cinnabar"
+  },
+  {
+    "id": 46311,
+    "zh": "灼朱砂",
+    "en": "Glowing Cinnabar"
+  },
+  {
+    "id": 46312,
+    "zh": "裕磷钇矿",
+    "en": "Bountiful Xenotime"
+  },
+  {
+    "id": 46313,
+    "zh": "辉磷钇矿",
+    "en": "Shining Xenotime"
+  },
+  {
+    "id": 46314,
+    "zh": "裕独居石",
+    "en": "Bountiful Monazite"
+  },
+  {
+    "id": 46315,
+    "zh": "辉独居石",
+    "en": "Shining Monazite"
+  },
+  {
+    "id": 46316,
+    "zh": "裕铈铌钙钛矿",
+    "en": "Bountiful Loparite"
+  },
+  {
+    "id": 46317,
+    "zh": "辉铈铌钙钛矿",
+    "en": "Shining Loparite"
+  },
+  {
+    "id": 46318,
+    "zh": "裕硅铍钇矿",
+    "en": "Bountiful Ytterbite"
+  },
+  {
+    "id": 46319,
+    "zh": "辉硅铍钇矿",
+    "en": "Shining Ytterbite"
+  },
+  {
+    "id": 62454,
+    "zh": "高密度沥青",
+    "en": "Compressed Bitumens"
+  },
+  {
+    "id": 62455,
+    "zh": "高密度富沥青",
+    "en": "Compressed Brimful Bitumens"
+  },
+  {
+    "id": 62456,
+    "zh": "高密度耀沥青",
+    "en": "Compressed Glistening Bitumens"
+  },
+  {
+    "id": 62457,
+    "zh": "高密度柯石英",
+    "en": "Compressed Coesite"
+  },
+  {
+    "id": 62458,
+    "zh": "高密度富柯石英",
+    "en": "Compressed Brimful Coesite"
+  },
+  {
+    "id": 62459,
+    "zh": "高密度耀柯石英",
+    "en": "Compressed Glistening Coesite"
+  },
+  {
+    "id": 62460,
+    "zh": "高密度钾盐",
+    "en": "Compressed Sylvite"
+  },
+  {
+    "id": 62461,
+    "zh": "高密度富钾盐",
+    "en": "Compressed Brimful Sylvite"
+  },
+  {
+    "id": 62463,
+    "zh": "高密度沸石",
+    "en": "Compressed Zeolites"
+  },
+  {
+    "id": 62464,
+    "zh": "高密度富沸石",
+    "en": "Compressed Brimful Zeolites"
+  },
+  {
+    "id": 62466,
+    "zh": "高密度耀钾盐",
+    "en": "Compressed Glistening Sylvite"
+  },
+  {
+    "id": 62467,
+    "zh": "高密度耀沸石",
+    "en": "Compressed Glistening Zeolites"
+  },
+  {
+    "id": 62468,
+    "zh": "高密度白钨矿",
+    "en": "Compressed Scheelite"
+  },
+  {
+    "id": 62469,
+    "zh": "高密度多白钨矿",
+    "en": "Compressed Copious Scheelite"
+  },
+  {
+    "id": 62470,
+    "zh": "高密度荧白钨矿",
+    "en": "Compressed Twinkling Scheelite"
+  },
+  {
+    "id": 62471,
+    "zh": "高密度黑稀金矿",
+    "en": "Compressed Euxenite"
+  },
+  {
+    "id": 62472,
+    "zh": "高密度多黑稀金矿",
+    "en": "Compressed Copious Euxenite"
+  },
+  {
+    "id": 62473,
+    "zh": "高密度荧黑稀金矿",
+    "en": "Compressed Twinkling Euxenite"
+  },
+  {
+    "id": 62474,
+    "zh": "高密度钴酸盐",
+    "en": "Compressed Cobaltite"
+  },
+  {
+    "id": 62475,
+    "zh": "高密度多钴酸盐",
+    "en": "Compressed Copious Cobaltite"
+  },
+  {
+    "id": 62476,
+    "zh": "高密度荧钴酸盐",
+    "en": "Compressed Twinkling Cobaltite"
+  },
+  {
+    "id": 62477,
+    "zh": "高密度榍石",
+    "en": "Compressed Titanite"
+  },
+  {
+    "id": 62478,
+    "zh": "高密度多榍石",
+    "en": "Compressed Copious Titanite"
+  },
+  {
+    "id": 62479,
+    "zh": "高密度荧榍石",
+    "en": "Compressed Twinkling Titanite"
+  },
+  {
+    "id": 62480,
+    "zh": "高密度铬铁矿",
+    "en": "Compressed Chromite"
+  },
+  {
+    "id": 62481,
+    "zh": "高密度丰铬铁矿",
+    "en": "Compressed Lavish Chromite"
+  },
+  {
+    "id": 62482,
+    "zh": "高密度闪铬铁矿",
+    "en": "Compressed Shimmering Chromite"
+  },
+  {
+    "id": 62483,
+    "zh": "高密度菱镉矿",
+    "en": "Compressed Otavite"
+  },
+  {
+    "id": 62484,
+    "zh": "高密度丰菱镉矿",
+    "en": "Compressed Lavish Otavite"
+  },
+  {
+    "id": 62485,
+    "zh": "高密度闪菱镉矿",
+    "en": "Compressed Shimmering Otavite"
+  },
+  {
+    "id": 62486,
+    "zh": "高密度砷铂矿",
+    "en": "Compressed Sperrylite"
+  },
+  {
+    "id": 62487,
+    "zh": "高密度丰砷铂矿",
+    "en": "Compressed Lavish Sperrylite"
+  },
+  {
+    "id": 62488,
+    "zh": "高密度闪砷铂矿",
+    "en": "Compressed Shimmering Sperrylite"
+  },
+  {
+    "id": 62489,
+    "zh": "高密度钒铅矿",
+    "en": "Compressed Vanadinite"
+  },
+  {
+    "id": 62490,
+    "zh": "高密度丰钒铅矿",
+    "en": "Compressed Lavish Vanadinite"
+  },
+  {
+    "id": 62491,
+    "zh": "高密度闪钒铅矿",
+    "en": "Compressed Shimmering Vanadinite"
+  },
+  {
+    "id": 62492,
+    "zh": "高密度钒钾铀矿",
+    "en": "Compressed Carnotite"
+  },
+  {
+    "id": 62493,
+    "zh": "压缩盈钒钾铀矿",
+    "en": "Compressed Replete Carnotite"
+  },
+  {
+    "id": 62494,
+    "zh": "高密度灼钒钾铀矿",
+    "en": "Compressed Glowing Carnotite"
+  },
+  {
+    "id": 62495,
+    "zh": "高密度朱砂",
+    "en": "Compressed Cinnabar"
+  },
+  {
+    "id": 62496,
+    "zh": "高密度盈朱砂",
+    "en": "Compressed Replete Cinnabar"
+  },
+  {
+    "id": 62497,
+    "zh": "高密度灼朱砂",
+    "en": "Compressed Glowing Cinnabar"
+  },
+  {
+    "id": 62498,
+    "zh": "高密度铯榴石",
+    "en": "Compressed Pollucite"
+  },
+  {
+    "id": 62499,
+    "zh": "高密度盈铯榴石",
+    "en": "Compressed Replete Pollucite"
+  },
+  {
+    "id": 62500,
+    "zh": "高密度灼铯榴石",
+    "en": "Compressed Glowing Pollucite"
+  },
+  {
+    "id": 62501,
+    "zh": "高密度锆石",
+    "en": "Compressed Zircon"
+  },
+  {
+    "id": 62502,
+    "zh": "高密度盈锆石",
+    "en": "Compressed Replete Zircon"
+  },
+  {
+    "id": 62503,
+    "zh": "高密度灼锆石",
+    "en": "Compressed Glowing Zircon"
+  },
+  {
+    "id": 62504,
+    "zh": "高密度铈铌钙钛矿",
+    "en": "Compressed Loparite"
+  },
+  {
+    "id": 62505,
+    "zh": "高密度裕铈铌钙钛矿",
+    "en": "Compressed Bountiful Loparite"
+  },
+  {
+    "id": 62506,
+    "zh": "高密度辉铈铌钙钛矿",
+    "en": "Compressed Shining Loparite"
+  },
+  {
+    "id": 62507,
+    "zh": "高密度独居石",
+    "en": "Compressed Monazite"
+  },
+  {
+    "id": 62508,
+    "zh": "高密度裕独居石",
+    "en": "Compressed Bountiful Monazite"
+  },
+  {
+    "id": 62509,
+    "zh": "高密度辉独居石",
+    "en": "Compressed Shining Monazite"
+  },
+  {
+    "id": 62510,
+    "zh": "高密度磷钇矿",
+    "en": "Compressed Xenotime"
+  },
+  {
+    "id": 62511,
+    "zh": "高密度裕磷钇矿",
+    "en": "Compressed Bountiful Xenotime"
+  },
+  {
+    "id": 62512,
+    "zh": "高密度辉磷钇矿",
+    "en": "Compressed Shining Xenotime"
+  },
+  {
+    "id": 62513,
+    "zh": "高密度硅铍钇矿",
+    "en": "Compressed Ytterbite"
+  },
+  {
+    "id": 62514,
+    "zh": "高密度裕硅铍钇矿",
+    "en": "Compressed Bountiful Ytterbite"
+  },
+  {
+    "id": 62515,
+    "zh": "高密度辉硅铍钇矿",
+    "en": "Compressed Shining Ytterbite"
+  }
+]

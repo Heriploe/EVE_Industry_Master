@@ -1,0 +1,29 @@
+{
+  "_comment": "market_analyzer — 市场分析。ESI认证配置见 eve/config_meta.json",
+  "data": {
+    "types": "data/types.json"
+  },
+  "resources": {
+    "price_all": "resources/market/price_all.json",
+    "price_materials": "resources/market/price_all.json",
+    "jita_prices": "resources/market/price_all.json",
+    "structure_orders": "resources/market/structure_cache.json"
+  },
+  "output_dir": "outputs/market_analyzer",
+  "sell_tools": {
+    "region_id": 10000002,
+    "station_id": 60003760,
+    "structure_id": 1053654548169,
+    "structure_label": "4-HWWF",
+    "cache_ttl_hours": 24.0,
+    "check_volume": true,
+    "min_volume": 1.0,
+    "direct_sell_threshold": 0.05,
+    "scrap_threshold": 0.8,
+    "min_value_isk": 25000000,
+    "price_source": "region",
+    "order_type": "sell",
+    "discount": 0.001,
+    "output_file": "sell_export.csv"
+  }
+}

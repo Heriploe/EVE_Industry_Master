@@ -1,0 +1,138 @@
+{
+  "description": "Alias list for JSON files under Data/Blueprints subfolders",
+  "count": 22,
+  "aliases": [
+    {
+      "alias": "Components.components_Capital_Advanced_blueprints",
+      "folder": "Components",
+      "file": "components_Capital_Advanced_blueprints.json",
+      "path": "Data/Blueprints/Components/components_Capital_Advanced_blueprints.json"
+    },
+    {
+      "alias": "Components.components_Capital_blueprints",
+      "folder": "Components",
+      "file": "components_Capital_blueprints.json",
+      "path": "Data/Blueprints/Components/components_Capital_blueprints.json"
+    },
+    {
+      "alias": "Components.components_T2_blueprints",
+      "folder": "Components",
+      "file": "components_T2_blueprints.json",
+      "path": "Data/Blueprints/Components/components_T2_blueprints.json"
+    },
+    {
+      "alias": "Components.components_T3_blueprints",
+      "folder": "Components",
+      "file": "components_T3_blueprints.json",
+      "path": "Data/Blueprints/Components/components_T3_blueprints.json"
+    },
+    {
+      "alias": "Modules.modules_T1_blueprints",
+      "folder": "Modules",
+      "file": "modules_T1_blueprints.json",
+      "path": "Data/Blueprints/Modules/modules_T1_blueprints.json"
+    },
+    {
+      "alias": "Modules.modules_T2_blueprints",
+      "folder": "Modules",
+      "file": "modules_T2_blueprints.json",
+      "path": "Data/Blueprints/Modules/modules_T2_blueprints.json"
+    },
+    {
+      "alias": "Reactions.complex_reaction_blueprints",
+      "folder": "Reactions",
+      "file": "complex_reaction_blueprints.json",
+      "path": "Data/Blueprints/Reactions/complex_reaction_blueprints.json"
+    },
+    {
+      "alias": "Reactions.polymer_reaction_blueprints",
+      "folder": "Reactions",
+      "file": "polymer_reaction_blueprints.json",
+      "path": "Data/Blueprints/Reactions/polymer_reaction_blueprints.json"
+    },
+    {
+      "alias": "Reactions.simple_reaction_blueprints",
+      "folder": "Reactions",
+      "file": "simple_reaction_blueprints.json",
+      "path": "Data/Blueprints/Reactions/simple_reaction_blueprints.json"
+    },
+    {
+      "alias": "Rigs.rigs_T1_blueprints",
+      "folder": "Rigs",
+      "file": "rigs_T1_blueprints.json",
+      "path": "Data/Blueprints/Rigs/rigs_T1_blueprints.json"
+    },
+    {
+      "alias": "Rigs.rigs_T2_blueprints",
+      "folder": "Rigs",
+      "file": "rigs_T2_blueprints.json",
+      "path": "Data/Blueprints/Rigs/rigs_T2_blueprints.json"
+    },
+    {
+      "alias": "Ships.ships_Capital_T1_Navy_Issue_blueprints",
+      "folder": "Ships",
+      "file": "ships_Capital_T1_Navy_Issue_blueprints.json",
+      "path": "Data/Blueprints/Ships/ships_Capital_T1_Navy_Issue_blueprints.json"
+    },
+    {
+      "alias": "Ships.ships_Capital_T1_Special_blueprints",
+      "folder": "Ships",
+      "file": "ships_Capital_T1_Special_blueprints.json",
+      "path": "Data/Blueprints/Ships/ships_Capital_T1_Special_blueprints.json"
+    },
+    {
+      "alias": "Ships.ships_Capital_T1_blueprints",
+      "folder": "Ships",
+      "file": "ships_Capital_T1_blueprints.json",
+      "path": "Data/Blueprints/Ships/ships_Capital_T1_blueprints.json"
+    },
+    {
+      "alias": "Ships.ships_Capital_T2_blueprints",
+      "folder": "Ships",
+      "file": "ships_Capital_T2_blueprints.json",
+      "path": "Data/Blueprints/Ships/ships_Capital_T2_blueprints.json"
+    },
+    {
+      "alias": "Ships.ships_T1_Navy_Issue_blueprints",
+      "folder": "Ships",
+      "file": "ships_T1_Navy_Issue_blueprints.json",
+      "path": "Data/Blueprints/Ships/ships_T1_Navy_Issue_blueprints.json"
+    },
+    {
+      "alias": "Ships.ships_T1_Special_blueprints",
+      "folder": "Ships",
+      "file": "ships_T1_Special_blueprints.json",
+      "path": "Data/Blueprints/Ships/ships_T1_Special_blueprints.json"
+    },
+    {
+      "alias": "Ships.ships_T1_blueprints",
+      "folder": "Ships",
+      "file": "ships_T1_blueprints.json",
+      "path": "Data/Blueprints/Ships/ships_T1_blueprints.json"
+    },
+    {
+      "alias": "Ships.ships_T2_Special_blueprints",
+      "folder": "Ships",
+      "file": "ships_T2_Special_blueprints.json",
+      "path": "Data/Blueprints/Ships/ships_T2_Special_blueprints.json"
+    },
+    {
+      "alias": "Ships.ships_T2_blueprints",
+      "folder": "Ships",
+      "file": "ships_T2_blueprints.json",
+      "path": "Data/Blueprints/Ships/ships_T2_blueprints.json"
+    },
+    {
+      "alias": "Ships.ships_T3_blueprints",
+      "folder": "Ships",
+      "file": "ships_T3_blueprints.json",
+      "path": "Data/Blueprints/Ships/ships_T3_blueprints.json"
+    },
+    {
+      "alias": "Blueprints.fuel_blocks_blueprint",
+      "folder": "Blueprints",
+      "file": "fuel_blocks_blueprint.json",
+      "path": "Data/Blueprints/fuel_blocks_blueprint.json"
+    }
+  ]
+}

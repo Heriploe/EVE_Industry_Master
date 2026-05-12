@@ -1,0 +1,62 @@
+[
+  {
+    "item_id": 1053168705199,
+    "type_id": 53303,
+    "zh": "四重子异种等离子弹蓝图 XL",
+    "en": "Tetryon Exotic Plasma XL Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": 5,
+    "location_id": 1035602413974,
+    "location_flag": "Hangar",
+    "container_name": ""
+  },
+  {
+    "item_id": 1053168705200,
+    "type_id": 47967,
+    "zh": "维德马克级蓝图",
+    "en": "Vedmak Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": 1,
+    "location_id": 1035602413974,
+    "location_flag": "Hangar",
+    "container_name": ""
+  },
+  {
+    "item_id": 1053550411392,
+    "type_id": 86048,
+    "zh": "荣耀级怀璧型跃迁扰断器突变质体蓝图",
+    "en": "Glorified Gravid Warp Disruptor Mutaplasmid Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": 1,
+    "location_id": 1035602413974,
+    "location_flag": "Hangar",
+    "container_name": ""
+  },
+  {
+    "item_id": 1050718040917,
+    "type_id": 41536,
+    "zh": "轭式集成式分析仪蓝图",
+    "en": "Zeugma Integrated Analyzer Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": 2,
+    "location_id": 1035602413974,
+    "location_flag": "Hangar",
+    "container_name": ""
+  },
+  {
+    "item_id": 1053168705205,
+    "type_id": 49775,
+    "zh": "重型突变适应远程装甲维修器蓝图 I",
+    "en": "Heavy Mutadaptive Remote Armor Repairer I Blueprint",
+    "material_efficiency": 0,
+    "time_efficiency": 0,
+    "runs": 5,
+    "location_id": 1035602413974,
+    "location_flag": "Hangar",
+    "container_name": ""
+  }
+]

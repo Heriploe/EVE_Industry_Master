@@ -1,0 +1,28 @@
+{
+  "_comment": "production_calc — 整数规划生产",
+  "data": {
+    "blueprints_yaml": "data/blueprints.yaml",
+    "blueprints_merged": "data/blueprints_merged.json",
+    "types": "data/types.json",
+    "t2_map": "data/T2.json",
+    "types_volume": "data/types_volume.json"
+  },
+  "resources": {
+    "corp_blueprints": "resources/corp/blueprints.json",
+    "corp_materials": "resources/corp/materials.json",
+    "jita_prices": "resources/market/price_all.json",
+    "price_all": "resources/market/price_all.json",
+    "price_materials": "resources/market/price_all.json",
+    "structure_orders": "resources/market/structure_cache.json",
+    "inventory_json": "resources/corp/materials.json",
+    "jita_prices_json": "resources/market/price_all.json"
+  },
+  "output_dir": "outputs/production_calc",
+  "calculator": {
+    "w_inventory": 0.5,
+    "w_value": 0.5,
+    "budget_isk": 0,
+    "enable_freight": true,
+    "purchase_integer": false
+  }
+}

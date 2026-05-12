@@ -1,0 +1,2507 @@
+[
+  {
+    "id": 482,
+    "zh": "采矿器 II",
+    "en": "Miner II"
+  },
+  {
+    "id": 2404,
+    "zh": "轻型导弹发射器 II",
+    "en": "Light Missile Launcher II"
+  },
+  {
+    "id": 2410,
+    "zh": "重型导弹发射器 II",
+    "en": "Heavy Missile Launcher II"
+  },
+  {
+    "id": 2420,
+    "zh": "鱼雷发射器 II",
+    "en": "Torpedo Launcher II"
+  },
+  {
+    "id": 24535,
+    "zh": "雷神愤怒巡航导弹",
+    "en": "Mjolnir Fury Cruise Missile"
+  },
+  {
+    "id": 24539,
+    "zh": "雷神精准巡航导弹",
+    "en": "Mjolnir Precision Cruise Missile"
+  },
+  {
+    "id": 24533,
+    "zh": "鞭挞愤怒巡航导弹",
+    "en": "Scourge Fury Cruise Missile"
+  },
+  {
+    "id": 24541,
+    "zh": "鞭挞精准巡航导弹",
+    "en": "Scourge Precision Cruise Missile"
+  },
+  {
+    "id": 2621,
+    "zh": "炼狱愤怒巡航导弹",
+    "en": "Inferno Fury Cruise Missile"
+  },
+  {
+    "id": 2637,
+    "zh": "炼狱精准巡航导弹",
+    "en": "Inferno Precision Cruise Missile"
+  },
+  {
+    "id": 24531,
+    "zh": "星爆愤怒巡航导弹",
+    "en": "Nova Fury Cruise Missile"
+  },
+  {
+    "id": 24537,
+    "zh": "星爆精准巡航导弹",
+    "en": "Nova Precision Cruise Missile"
+  },
+  {
+    "id": 2655,
+    "zh": "星爆精准重型导弹",
+    "en": "Nova Precision Heavy Missile"
+  },
+  {
+    "id": 24507,
+    "zh": "星爆愤怒重型导弹",
+    "en": "Nova Fury Heavy Missile"
+  },
+  {
+    "id": 24509,
+    "zh": "雷神愤怒重型导弹",
+    "en": "Mjolnir Fury Heavy Missile"
+  },
+  {
+    "id": 24517,
+    "zh": "雷神精准重型导弹",
+    "en": "Mjolnir Precision Heavy Missile"
+  },
+  {
+    "id": 24511,
+    "zh": "炼狱愤怒重型导弹",
+    "en": "Inferno Fury Heavy Missile"
+  },
+  {
+    "id": 24515,
+    "zh": "炼狱精准重型导弹",
+    "en": "Inferno Precision Heavy Missile"
+  },
+  {
+    "id": 2629,
+    "zh": "鞭挞愤怒重型导弹",
+    "en": "Scourge Fury Heavy Missile"
+  },
+  {
+    "id": 24513,
+    "zh": "鞭挞精准重型导弹",
+    "en": "Scourge Precision Heavy Missile"
+  },
+  {
+    "id": 24495,
+    "zh": "鞭挞愤怒轻型导弹",
+    "en": "Scourge Fury Light Missile"
+  },
+  {
+    "id": 24501,
+    "zh": "鞭挞精准轻型导弹",
+    "en": "Scourge Precision Light Missile"
+  },
+  {
+    "id": 2647,
+    "zh": "炼狱精准轻型导弹",
+    "en": "Inferno Precision Light Missile"
+  },
+  {
+    "id": 24499,
+    "zh": "炼狱愤怒轻型导弹",
+    "en": "Inferno Fury Light Missile"
+  },
+  {
+    "id": 2613,
+    "zh": "雷神愤怒轻型导弹",
+    "en": "Mjolnir Fury Light Missile"
+  },
+  {
+    "id": 24505,
+    "zh": "雷神精准轻型导弹",
+    "en": "Mjolnir Precision Light Missile"
+  },
+  {
+    "id": 24497,
+    "zh": "星爆愤怒轻型导弹",
+    "en": "Nova Fury Light Missile"
+  },
+  {
+    "id": 24503,
+    "zh": "星爆精准轻型导弹",
+    "en": "Nova Precision Light Missile"
+  },
+  {
+    "id": 2873,
+    "zh": "125mm加特林自动加农炮 II",
+    "en": "125mm Gatling AutoCannon II"
+  },
+  {
+    "id": 2881,
+    "zh": "150mm轻型自动加农炮 II",
+    "en": "150mm Light AutoCannon II"
+  },
+  {
+    "id": 2889,
+    "zh": "200mm自动加农炮 II",
+    "en": "200mm AutoCannon II"
+  },
+  {
+    "id": 2905,
+    "zh": "250mm轻型加农炮 II",
+    "en": "250mm Light Artillery Cannon II"
+  },
+  {
+    "id": 2977,
+    "zh": "280mm榴弹炮 II",
+    "en": "280mm Howitzer Artillery II"
+  },
+  {
+    "id": 2937,
+    "zh": "双联180mm自动加农炮 II",
+    "en": "Dual 180mm AutoCannon II"
+  },
+  {
+    "id": 2897,
+    "zh": "220mm火神自动加农炮 II",
+    "en": "220mm Vulcan AutoCannon II"
+  },
+  {
+    "id": 2913,
+    "zh": "425mm自动加农炮 II",
+    "en": "425mm AutoCannon II"
+  },
+  {
+    "id": 2921,
+    "zh": "650mm加农炮 II",
+    "en": "650mm Artillery Cannon II"
+  },
+  {
+    "id": 2969,
+    "zh": "720mm榴弹炮 II",
+    "en": "720mm Howitzer Artillery II"
+  },
+  {
+    "id": 2945,
+    "zh": "双联425mm自动加农炮 II",
+    "en": "Dual 425mm AutoCannon II"
+  },
+  {
+    "id": 2953,
+    "zh": "双联650mm频射加农炮 II",
+    "en": "Dual 650mm Repeating Cannon II"
+  },
+  {
+    "id": 2929,
+    "zh": "800mm频射加农炮 II",
+    "en": "800mm Repeating Cannon II"
+  },
+  {
+    "id": 2865,
+    "zh": "1200mm加农火炮 II",
+    "en": "1200mm Artillery Cannon II"
+  },
+  {
+    "id": 2961,
+    "zh": "1400mm榴弹炮 II",
+    "en": "1400mm Howitzer Artillery II"
+  },
+  {
+    "id": 3017,
+    "zh": "加特林脉冲激光器 II",
+    "en": "Gatling Pulse Laser II"
+  },
+  {
+    "id": 3001,
+    "zh": "双联轻型脉冲激光器 II",
+    "en": "Dual Light Pulse Laser II"
+  },
+  {
+    "id": 2993,
+    "zh": "双联轻型集束激光器 II",
+    "en": "Dual Light Beam Laser II"
+  },
+  {
+    "id": 3041,
+    "zh": "小型聚焦脉冲激光器 II",
+    "en": "Small Focused Pulse Laser II"
+  },
+  {
+    "id": 3033,
+    "zh": "小型聚焦集束激光器 II",
+    "en": "Small Focused Beam Laser II"
+  },
+  {
+    "id": 3285,
+    "zh": "四联轻型集束激光器 II",
+    "en": "Quad Light Beam Laser II"
+  },
+  {
+    "id": 3512,
+    "zh": "聚焦中型脉冲激光器 II",
+    "en": "Focused Medium Pulse Laser II"
+  },
+  {
+    "id": 3009,
+    "zh": "聚焦中型集束激光器 II",
+    "en": "Focused Medium Beam Laser II"
+  },
+  {
+    "id": 3520,
+    "zh": "重型脉冲激光器 II",
+    "en": "Heavy Pulse Laser II"
+  },
+  {
+    "id": 3025,
+    "zh": "重型集束激光器 II",
+    "en": "Heavy Beam Laser II"
+  },
+  {
+    "id": 4147,
+    "zh": "双联重型脉冲激光器 II",
+    "en": "Dual Heavy Pulse Laser II"
+  },
+  {
+    "id": 2985,
+    "zh": "双联重型集束激光器 II",
+    "en": "Dual Heavy Beam Laser II"
+  },
+  {
+    "id": 3057,
+    "zh": "超级脉冲激光器 II",
+    "en": "Mega Pulse Laser II"
+  },
+  {
+    "id": 3049,
+    "zh": "超级集束激光器 II",
+    "en": "Mega Beam Laser II"
+  },
+  {
+    "id": 3065,
+    "zh": "超光速粒子集束激光器 II",
+    "en": "Tachyon Beam Laser II"
+  },
+  {
+    "id": 12633,
+    "zh": "战栗 S",
+    "en": "Tremor S"
+  },
+  {
+    "id": 12625,
+    "zh": "雷暴 S",
+    "en": "Barrage S"
+  },
+  {
+    "id": 12608,
+    "zh": "冰雹 S",
+    "en": "Hail S"
+  },
+  {
+    "id": 12631,
+    "zh": "地震 S",
+    "en": "Quake S"
+  },
+  {
+    "id": 12771,
+    "zh": "战栗 M",
+    "en": "Tremor M"
+  },
+  {
+    "id": 12773,
+    "zh": "雷暴 M",
+    "en": "Barrage M"
+  },
+  {
+    "id": 12777,
+    "zh": "冰雹 M",
+    "en": "Hail M"
+  },
+  {
+    "id": 12767,
+    "zh": "地震 M",
+    "en": "Quake M"
+  },
+  {
+    "id": 12765,
+    "zh": "战栗 L",
+    "en": "Tremor L"
+  },
+  {
+    "id": 12775,
+    "zh": "雷暴 L",
+    "en": "Barrage L"
+  },
+  {
+    "id": 12779,
+    "zh": "冰雹 L",
+    "en": "Hail L"
+  },
+  {
+    "id": 12761,
+    "zh": "地震 L",
+    "en": "Quake L"
+  },
+  {
+    "id": 380,
+    "zh": "小型护盾扩展装置 II",
+    "en": "Small Shield Extender II"
+  },
+  {
+    "id": 394,
+    "zh": "护盾回充器 II",
+    "en": "Shield Recharger II"
+  },
+  {
+    "id": 400,
+    "zh": "小型护盾回充增量器 II",
+    "en": "Small Shield Booster II"
+  },
+  {
+    "id": 440,
+    "zh": "5MN微型跃迁推进器 II",
+    "en": "5MN Microwarpdrive II"
+  },
+  {
+    "id": 438,
+    "zh": "1MN加力燃烧器 II",
+    "en": "1MN Afterburner II"
+  },
+  {
+    "id": 2038,
+    "zh": "货柜扫描器 II",
+    "en": "Cargo Scanner II"
+  },
+  {
+    "id": 1855,
+    "zh": "船体扫描器 II",
+    "en": "Ship Scanner II"
+  },
+  {
+    "id": 2333,
+    "zh": "采矿调查芯片组 II",
+    "en": "Mining Survey Chipset II"
+  },
+  {
+    "id": 448,
+    "zh": "跃迁扰频器 II",
+    "en": "Warp Scrambler II"
+  },
+  {
+    "id": 519,
+    "zh": "回转稳定器 II",
+    "en": "Gyrostabilizer II"
+  },
+  {
+    "id": 1183,
+    "zh": "小型装甲维修器 II",
+    "en": "Small Armor Repairer II"
+  },
+  {
+    "id": 2355,
+    "zh": "小型结构维修器 II",
+    "en": "Small Hull Repairer II"
+  },
+  {
+    "id": 527,
+    "zh": "停滞缠绕光束 II",
+    "en": "Stasis Webifier II"
+  },
+  {
+    "id": 1190,
+    "zh": "小型远程电容传输装置 II",
+    "en": "Small Remote Capacitor Transmitter II"
+  },
+  {
+    "id": 13001,
+    "zh": "小型掠能器 II",
+    "en": "Small Energy Nosferatu II"
+  },
+  {
+    "id": 13003,
+    "zh": "小型能量中和器 II",
+    "en": "Small Energy Neutralizer II"
+  },
+  {
+    "id": 3098,
+    "zh": "75mm加特林磁轨炮 II",
+    "en": "75mm Gatling Rail II"
+  },
+  {
+    "id": 3162,
+    "zh": "轻型电子疾速炮 II",
+    "en": "Light Electron Blaster II"
+  },
+  {
+    "id": 3170,
+    "zh": "轻型离子疾速炮 II",
+    "en": "Light Ion Blaster II"
+  },
+  {
+    "id": 3178,
+    "zh": "轻型中子疾速炮 II",
+    "en": "Light Neutron Blaster II"
+  },
+  {
+    "id": 3074,
+    "zh": "150mm磁轨炮 II",
+    "en": "150mm Railgun II"
+  },
+  {
+    "id": 3130,
+    "zh": "重型电子疾速炮 II",
+    "en": "Heavy Electron Blaster II"
+  },
+  {
+    "id": 3106,
+    "zh": "双联150mm磁轨炮 II",
+    "en": "Dual 150mm Railgun II"
+  },
+  {
+    "id": 3146,
+    "zh": "重型中子疾速炮 II",
+    "en": "Heavy Neutron Blaster II"
+  },
+  {
+    "id": 3138,
+    "zh": "重型离子疾速炮 II",
+    "en": "Heavy Ion Blaster II"
+  },
+  {
+    "id": 3082,
+    "zh": "250mm磁轨炮 II",
+    "en": "250mm Railgun II"
+  },
+  {
+    "id": 3122,
+    "zh": "电子疾速加农炮 II",
+    "en": "Electron Blaster Cannon II"
+  },
+  {
+    "id": 3114,
+    "zh": "双联250mm磁轨炮 II",
+    "en": "Dual 250mm Railgun II"
+  },
+  {
+    "id": 3186,
+    "zh": "中子疾速加农炮 II",
+    "en": "Neutron Blaster Cannon II"
+  },
+  {
+    "id": 3090,
+    "zh": "425mm磁轨炮 II",
+    "en": "425mm Railgun II"
+  },
+  {
+    "id": 3154,
+    "zh": "离子疾速加农炮 II",
+    "en": "Ion Blaster Cannon II"
+  },
+  {
+    "id": 2024,
+    "zh": "中型电容注电器 II",
+    "en": "Medium Capacitor Booster II"
+  },
+  {
+    "id": 2281,
+    "zh": "多谱式护盾增强器 II",
+    "en": "Multispectrum Shield Hardener II"
+  },
+  {
+    "id": 12620,
+    "zh": "标枪 S",
+    "en": "Javelin S"
+  },
+  {
+    "id": 12614,
+    "zh": "虚空 S",
+    "en": "Null S"
+  },
+  {
+    "id": 12618,
+    "zh": "钉刺 S",
+    "en": "Spike S"
+  },
+  {
+    "id": 12612,
+    "zh": "涅槃 S",
+    "en": "Void S"
+  },
+  {
+    "id": 12801,
+    "zh": "标枪 M",
+    "en": "Javelin M"
+  },
+  {
+    "id": 12785,
+    "zh": "虚空 M",
+    "en": "Null M"
+  },
+  {
+    "id": 12805,
+    "zh": "钉刺 M",
+    "en": "Spike M"
+  },
+  {
+    "id": 12789,
+    "zh": "涅槃 M",
+    "en": "Void M"
+  },
+  {
+    "id": 12803,
+    "zh": "标枪 L",
+    "en": "Javelin L"
+  },
+  {
+    "id": 12787,
+    "zh": "虚空 L",
+    "en": "Null L"
+  },
+  {
+    "id": 12807,
+    "zh": "钉刺 L",
+    "en": "Spike L"
+  },
+  {
+    "id": 12791,
+    "zh": "涅槃 L",
+    "en": "Void L"
+  },
+  {
+    "id": 12559,
+    "zh": "极光 S",
+    "en": "Aurora S"
+  },
+  {
+    "id": 12563,
+    "zh": "灼烧 S",
+    "en": "Scorch S"
+  },
+  {
+    "id": 12565,
+    "zh": "爆燃 S",
+    "en": "Conflagration S"
+  },
+  {
+    "id": 12557,
+    "zh": "微光 S",
+    "en": "Gleam S"
+  },
+  {
+    "id": 12822,
+    "zh": "极光 M",
+    "en": "Aurora M"
+  },
+  {
+    "id": 12818,
+    "zh": "灼烧 M",
+    "en": "Scorch M"
+  },
+  {
+    "id": 12814,
+    "zh": "爆燃 M",
+    "en": "Conflagration M"
+  },
+  {
+    "id": 12826,
+    "zh": "微光 M",
+    "en": "Gleam M"
+  },
+  {
+    "id": 12824,
+    "zh": "极光 L",
+    "en": "Aurora L"
+  },
+  {
+    "id": 12820,
+    "zh": "灼烧 L",
+    "en": "Scorch L"
+  },
+  {
+    "id": 12816,
+    "zh": "爆燃 L",
+    "en": "Conflagration L"
+  },
+  {
+    "id": 12828,
+    "zh": "微光 L",
+    "en": "Gleam L"
+  },
+  {
+    "id": 3488,
+    "zh": "小型电容器电池 II",
+    "en": "Small Cap Battery II"
+  },
+  {
+    "id": 2032,
+    "zh": "电容回充器 II",
+    "en": "Cap Recharger II"
+  },
+  {
+    "id": 1198,
+    "zh": "电磁涂层 II",
+    "en": "EM Coating II"
+  },
+  {
+    "id": 1436,
+    "zh": "自动锁定系统 II",
+    "en": "Auto Targeting System II"
+  },
+  {
+    "id": 2117,
+    "zh": "脉冲干扰器 II",
+    "en": "Burst Jammer II"
+  },
+  {
+    "id": 2341,
+    "zh": "被动锁定器 II",
+    "en": "Passive Targeter II"
+  },
+  {
+    "id": 2436,
+    "zh": "胡蜂 II",
+    "en": "Wasp II"
+  },
+  {
+    "id": 24471,
+    "zh": "鞭挞狂乱火箭",
+    "en": "Scourge Rage Rocket"
+  },
+  {
+    "id": 24477,
+    "zh": "鞭挞标枪火箭",
+    "en": "Scourge Javelin Rocket"
+  },
+  {
+    "id": 24521,
+    "zh": "鞭挞狂乱鱼雷",
+    "en": "Scourge Rage Torpedo"
+  },
+  {
+    "id": 24529,
+    "zh": "鞭挞标枪鱼雷",
+    "en": "Scourge Javelin Torpedo"
+  },
+  {
+    "id": 1236,
+    "zh": "超载喷注系统 II",
+    "en": "Overdrive Injector System II"
+  },
+  {
+    "id": 1248,
+    "zh": "电容通量线圈 II",
+    "en": "Capacitor Flux Coil II"
+  },
+  {
+    "id": 1256,
+    "zh": "护盾通量线圈 II",
+    "en": "Shield Flux Coil II"
+  },
+  {
+    "id": 1266,
+    "zh": "爆炸涂层 II",
+    "en": "Explosive Coating II"
+  },
+  {
+    "id": 1276,
+    "zh": "覆层式涂层 II",
+    "en": "Layered Coating II"
+  },
+  {
+    "id": 1286,
+    "zh": "动能涂层 II",
+    "en": "Kinetic Coating II"
+  },
+  {
+    "id": 1296,
+    "zh": "热能涂层 II",
+    "en": "Thermal Coating II"
+  },
+  {
+    "id": 1306,
+    "zh": "多谱式涂层 II",
+    "en": "Multispectrum Coating II"
+  },
+  {
+    "id": 1319,
+    "zh": "扩充货柜舱 II",
+    "en": "Expanded Cargohold II"
+  },
+  {
+    "id": 1335,
+    "zh": "强化舱隔壁 II",
+    "en": "Reinforced Bulkheads II"
+  },
+  {
+    "id": 1355,
+    "zh": "反应堆控制元件 II",
+    "en": "Reactor Control Unit II"
+  },
+  {
+    "id": 1405,
+    "zh": "惯性稳定器 II",
+    "en": "Inertial Stabilizers II"
+  },
+  {
+    "id": 1447,
+    "zh": "电容能源继电器 II",
+    "en": "Capacitor Power Relay II"
+  },
+  {
+    "id": 1541,
+    "zh": "能源诊断系统 II",
+    "en": "Power Diagnostic System II"
+  },
+  {
+    "id": 1549,
+    "zh": "小型质子立体炸弹 II",
+    "en": "Small Proton Smartbomb II"
+  },
+  {
+    "id": 1553,
+    "zh": "小型引力子立体炸弹 II",
+    "en": "Small Graviton Smartbomb II"
+  },
+  {
+    "id": 1559,
+    "zh": "小型等离子立体炸弹 II",
+    "en": "Small Plasma Smartbomb II"
+  },
+  {
+    "id": 1565,
+    "zh": "小型EMP立体炸弹 II",
+    "en": "Small EMP Smartbomb II"
+  },
+  {
+    "id": 2553,
+    "zh": "电磁护盾增效器 II",
+    "en": "EM Shield Amplifier II"
+  },
+  {
+    "id": 1877,
+    "zh": "轻型快速导弹发射器 II",
+    "en": "Rapid Light Missile Launcher II"
+  },
+  {
+    "id": 3496,
+    "zh": "中型电容器电池 II",
+    "en": "Medium Cap Battery II"
+  },
+  {
+    "id": 3504,
+    "zh": "大型电容器电池 II",
+    "en": "Large Cap Battery II"
+  },
+  {
+    "id": 2048,
+    "zh": "损伤控制 II",
+    "en": "Damage Control II"
+  },
+  {
+    "id": 2175,
+    "zh": "渗透者 II",
+    "en": "Infiltrator II"
+  },
+  {
+    "id": 2185,
+    "zh": "战锤 II",
+    "en": "Hammerhead II"
+  },
+  {
+    "id": 2195,
+    "zh": "执政官 II",
+    "en": "Praetor II"
+  },
+  {
+    "id": 2205,
+    "zh": "侍僧 II",
+    "en": "Acolyte II"
+  },
+  {
+    "id": 2297,
+    "zh": "爆炸护盾增强器 II",
+    "en": "Explosive Shield Hardener II"
+  },
+  {
+    "id": 2299,
+    "zh": "动能护盾增强器 II",
+    "en": "Kinetic Shield Hardener II"
+  },
+  {
+    "id": 2301,
+    "zh": "电磁护盾增强器 II",
+    "en": "EM Shield Hardener II"
+  },
+  {
+    "id": 2303,
+    "zh": "热能护盾增强器 II",
+    "en": "Thermal Shield Hardener II"
+  },
+  {
+    "id": 1422,
+    "zh": "护盾能源继电器 II",
+    "en": "Shield Power Relay II"
+  },
+  {
+    "id": 2446,
+    "zh": "蛮妖 II",
+    "en": "Ogre II"
+  },
+  {
+    "id": 2456,
+    "zh": "地精灵 II",
+    "en": "Hobgoblin II"
+  },
+  {
+    "id": 2466,
+    "zh": "大黄蜂 II",
+    "en": "Hornet II"
+  },
+  {
+    "id": 2478,
+    "zh": "狂战士 II",
+    "en": "Berserker II"
+  },
+  {
+    "id": 2488,
+    "zh": "武士 II",
+    "en": "Warrior II"
+  },
+  {
+    "id": 24523,
+    "zh": "雷神狂乱鱼雷",
+    "en": "Mjolnir Rage Torpedo"
+  },
+  {
+    "id": 24527,
+    "zh": "雷神标枪鱼雷",
+    "en": "Mjolnir Javelin Torpedo"
+  },
+  {
+    "id": 2801,
+    "zh": "星爆标枪鱼雷",
+    "en": "Nova Javelin Torpedo"
+  },
+  {
+    "id": 24519,
+    "zh": "星爆狂乱鱼雷",
+    "en": "Nova Rage Torpedo"
+  },
+  {
+    "id": 2811,
+    "zh": "炼狱狂乱鱼雷",
+    "en": "Inferno Rage Torpedo"
+  },
+  {
+    "id": 24525,
+    "zh": "炼狱标枪鱼雷",
+    "en": "Inferno Javelin Torpedo"
+  },
+  {
+    "id": 2817,
+    "zh": "雷神狂乱火箭",
+    "en": "Mjolnir Rage Rocket"
+  },
+  {
+    "id": 13119,
+    "zh": "雷神标枪火箭",
+    "en": "Mjolnir Javelin Rocket"
+  },
+  {
+    "id": 24475,
+    "zh": "炼狱狂乱火箭",
+    "en": "Inferno Rage Rocket"
+  },
+  {
+    "id": 24479,
+    "zh": "炼狱标枪火箭",
+    "en": "Inferno Javelin Rocket"
+  },
+  {
+    "id": 24473,
+    "zh": "星爆狂乱火箭",
+    "en": "Nova Rage Rocket"
+  },
+  {
+    "id": 24478,
+    "zh": "星爆标枪火箭",
+    "en": "Nova Javelin Rocket"
+  },
+  {
+    "id": 2531,
+    "zh": "爆炸护盾增效器 II",
+    "en": "Explosive Shield Amplifier II"
+  },
+  {
+    "id": 2539,
+    "zh": "热能护盾增效器 II",
+    "en": "Thermal Shield Amplifier II"
+  },
+  {
+    "id": 2547,
+    "zh": "动能护盾增效器 II",
+    "en": "Kinetic Shield Amplifier II"
+  },
+  {
+    "id": 2605,
+    "zh": "纳米纤维内部构架 II",
+    "en": "Nanofiber Internal Structure II"
+  },
+  {
+    "id": 3244,
+    "zh": "跃迁扰断器 II",
+    "en": "Warp Disruptor II"
+  },
+  {
+    "id": 3530,
+    "zh": "中型装甲维修器 II",
+    "en": "Medium Armor Repairer II"
+  },
+  {
+    "id": 3540,
+    "zh": "大型装甲维修器 II",
+    "en": "Large Armor Repairer II"
+  },
+  {
+    "id": 3568,
+    "zh": "小型电容注电器 II",
+    "en": "Small Capacitor Booster II"
+  },
+  {
+    "id": 3578,
+    "zh": "重型电容注电器 II",
+    "en": "Heavy Capacitor Booster II"
+  },
+  {
+    "id": 3588,
+    "zh": "小型远程护盾回充增量器 II",
+    "en": "Small Remote Shield Booster II"
+  },
+  {
+    "id": 3598,
+    "zh": "中型远程护盾回充增量器 II",
+    "en": "Medium Remote Shield Booster II"
+  },
+  {
+    "id": 3608,
+    "zh": "大型远程护盾回充增量器 II",
+    "en": "Large Remote Shield Booster II"
+  },
+  {
+    "id": 3618,
+    "zh": "旗舰级远程护盾回充增量器 II",
+    "en": "Capital Remote Shield Booster II"
+  },
+  {
+    "id": 3655,
+    "zh": "中型结构维修器 II",
+    "en": "Medium Hull Repairer II"
+  },
+  {
+    "id": 3665,
+    "zh": "大型结构维修器 II",
+    "en": "Large Hull Repairer II"
+  },
+  {
+    "id": 3831,
+    "zh": "中型护盾扩展装置 II",
+    "en": "Medium Shield Extender II"
+  },
+  {
+    "id": 3841,
+    "zh": "大型护盾扩展装置 II",
+    "en": "Large Shield Extender II"
+  },
+  {
+    "id": 3939,
+    "zh": "中型质子立体炸弹 II",
+    "en": "Medium Proton Smartbomb II"
+  },
+  {
+    "id": 3943,
+    "zh": "中型引力子立体炸弹 II",
+    "en": "Medium Graviton Smartbomb II"
+  },
+  {
+    "id": 3949,
+    "zh": "中型等离子立体炸弹 II",
+    "en": "Medium Plasma Smartbomb II"
+  },
+  {
+    "id": 3955,
+    "zh": "中型EMP立体炸弹 II",
+    "en": "Medium EMP Smartbomb II"
+  },
+  {
+    "id": 3979,
+    "zh": "大型质子立体炸弹 II",
+    "en": "Large Proton Smartbomb II"
+  },
+  {
+    "id": 3983,
+    "zh": "大型引力子立体炸弹 II",
+    "en": "Large Graviton Smartbomb II"
+  },
+  {
+    "id": 3989,
+    "zh": "大型等离子立体炸弹 II",
+    "en": "Large Plasma Smartbomb II"
+  },
+  {
+    "id": 3995,
+    "zh": "大型EMP立体炸弹 II",
+    "en": "Large EMP Smartbomb II"
+  },
+  {
+    "id": 4405,
+    "zh": "无人机伤害增效装置 II",
+    "en": "Drone Damage Amplifier II"
+  },
+  {
+    "id": 10190,
+    "zh": "磁性力场稳定器 II",
+    "en": "Magnetic Field Stabilizer II"
+  },
+  {
+    "id": 10250,
+    "zh": "采矿无人机 II",
+    "en": "Mining Drone II"
+  },
+  {
+    "id": 10631,
+    "zh": "火箭发射器 II",
+    "en": "Rocket Launcher II"
+  },
+  {
+    "id": 10680,
+    "zh": "125mm磁轨炮 II",
+    "en": "125mm Railgun II"
+  },
+  {
+    "id": 10850,
+    "zh": "中型护盾回充增量器 II",
+    "en": "Medium Shield Booster II"
+  },
+  {
+    "id": 10858,
+    "zh": "大型护盾回充增量器 II",
+    "en": "Large Shield Booster II"
+  },
+  {
+    "id": 10842,
+    "zh": "超大型护盾回充增量器 II",
+    "en": "X-Large Shield Booster II"
+  },
+  {
+    "id": 11219,
+    "zh": "电磁电压薄膜 II",
+    "en": "EM Energized Membrane II"
+  },
+  {
+    "id": 11229,
+    "zh": "爆炸电压薄膜 II",
+    "en": "Explosive Energized Membrane II"
+  },
+  {
+    "id": 11239,
+    "zh": "覆层电压薄膜 II",
+    "en": "Layered Energized Membrane II"
+  },
+  {
+    "id": 11249,
+    "zh": "动能电压薄膜 II",
+    "en": "Kinetic Energized Membrane II"
+  },
+  {
+    "id": 11259,
+    "zh": "热能电压薄膜 II",
+    "en": "Thermal Energized Membrane II"
+  },
+  {
+    "id": 11269,
+    "zh": "多谱式电压薄膜 II",
+    "en": "Multispectrum Energized Membrane II"
+  },
+  {
+    "id": 11648,
+    "zh": "热能装甲增强器 II",
+    "en": "Thermal Armor Hardener II"
+  },
+  {
+    "id": 20353,
+    "zh": "1600mm钢附甲板 II",
+    "en": "1600mm Steel Plates II"
+  },
+  {
+    "id": 20343,
+    "zh": "50mm钢附甲板 II",
+    "en": "50mm Steel Plates II"
+  },
+  {
+    "id": 20345,
+    "zh": "100mm钢附甲板 II",
+    "en": "100mm Steel Plates II"
+  },
+  {
+    "id": 20347,
+    "zh": "200mm钢附甲板 II",
+    "en": "200mm Steel Plates II"
+  },
+  {
+    "id": 20349,
+    "zh": "400mm钢附甲板 II",
+    "en": "400mm Steel Plates II"
+  },
+  {
+    "id": 20351,
+    "zh": "800mm钢附甲板 II",
+    "en": "800mm Steel Plates II"
+  },
+  {
+    "id": 11642,
+    "zh": "电磁装甲增强器 II",
+    "en": "EM Armor Hardener II"
+  },
+  {
+    "id": 11646,
+    "zh": "爆炸装甲增强器 II",
+    "en": "Explosive Armor Hardener II"
+  },
+  {
+    "id": 11644,
+    "zh": "动能装甲增强器 II",
+    "en": "Kinetic Armor Hardener II"
+  },
+  {
+    "id": 26912,
+    "zh": "小型远程装甲维修器 II",
+    "en": "Small Remote Armor Repairer II"
+  },
+  {
+    "id": 26913,
+    "zh": "中型远程装甲维修器 II",
+    "en": "Medium Remote Armor Repairer II"
+  },
+  {
+    "id": 26914,
+    "zh": "大型远程装甲维修器 II",
+    "en": "Large Remote Armor Repairer II"
+  },
+  {
+    "id": 24443,
+    "zh": "护盾回充增量增效器 II",
+    "en": "Shield Boost Amplifier II"
+  },
+  {
+    "id": 4254,
+    "zh": "微型辅助能源核心 II",
+    "en": "Micro Auxiliary Power Core II"
+  },
+  {
+    "id": 2364,
+    "zh": "散热槽 II",
+    "en": "Heat Sink II"
+  },
+  {
+    "id": 11640,
+    "zh": "跃迁核心稳定器 II",
+    "en": "Warp Core Stabilizer II"
+  },
+  {
+    "id": 2109,
+    "zh": "索敌扰断器 II",
+    "en": "Tracking Disruptor II"
+  },
+  {
+    "id": 1999,
+    "zh": "索敌增强器 II",
+    "en": "Tracking Enhancer II"
+  },
+  {
+    "id": 2104,
+    "zh": "远距索敌计算机 II",
+    "en": "Remote Tracking Computer II"
+  },
+  {
+    "id": 3888,
+    "zh": "协处理器 II",
+    "en": "Co-Processor II"
+  },
+  {
+    "id": 1952,
+    "zh": "感应增强器 II",
+    "en": "Sensor Booster II"
+  },
+  {
+    "id": 1978,
+    "zh": "索敌计算机 II",
+    "en": "Tracking Computer II"
+  },
+  {
+    "id": 2563,
+    "zh": "磁力ECM II",
+    "en": "Magnetometric ECM II"
+  },
+  {
+    "id": 2567,
+    "zh": "多谱式ECM II",
+    "en": "Multispectral ECM II"
+  },
+  {
+    "id": 2559,
+    "zh": "光雷达ECM II",
+    "en": "Ladar ECM II"
+  },
+  {
+    "id": 2571,
+    "zh": "引力ECM II",
+    "en": "Gravimetric ECM II"
+  },
+  {
+    "id": 2575,
+    "zh": "雷达ECM II",
+    "en": "Radar ECM II"
+  },
+  {
+    "id": 1987,
+    "zh": "信号放大器 II",
+    "en": "Signal Amplifier II"
+  },
+  {
+    "id": 1964,
+    "zh": "远程感应增强器 II",
+    "en": "Remote Sensor Booster II"
+  },
+  {
+    "id": 1969,
+    "zh": "远程感应抑阻器 II",
+    "en": "Remote Sensor Dampener II"
+  },
+  {
+    "id": 2580,
+    "zh": "引力感应器支援阵列 II",
+    "en": "Gravimetric Backup Array II"
+  },
+  {
+    "id": 2584,
+    "zh": "光雷达支援阵列 II",
+    "en": "Ladar Backup Array II"
+  },
+  {
+    "id": 2588,
+    "zh": "磁力感应器支援阵列 II",
+    "en": "Magnetometric Backup Array II"
+  },
+  {
+    "id": 2592,
+    "zh": "多谱感应器支援阵列 II",
+    "en": "Multi Sensor Backup Array II"
+  },
+  {
+    "id": 4014,
+    "zh": "雷达感应器支援阵列 II",
+    "en": "RADAR Backup Array II"
+  },
+  {
+    "id": 12076,
+    "zh": "50MN微型跃迁推进器 II",
+    "en": "50MN Microwarpdrive II"
+  },
+  {
+    "id": 12084,
+    "zh": "500MN微型跃迁推进器 II",
+    "en": "500MN Microwarpdrive II"
+  },
+  {
+    "id": 12058,
+    "zh": "10MN加力燃烧器 II",
+    "en": "10MN Afterburner II"
+  },
+  {
+    "id": 12068,
+    "zh": "100MN加力燃烧器 II",
+    "en": "100MN Afterburner II"
+  },
+  {
+    "id": 12221,
+    "zh": "中型远程电容传输装置 II",
+    "en": "Medium Remote Capacitor Transmitter II"
+  },
+  {
+    "id": 12223,
+    "zh": "旗舰级远程电容传输装置 II",
+    "en": "Capital Remote Capacitor Transmitter II"
+  },
+  {
+    "id": 12102,
+    "zh": "大型远程电容传输装置 II",
+    "en": "Large Remote Capacitor Transmitter II"
+  },
+  {
+    "id": 12259,
+    "zh": "中型掠能器 II",
+    "en": "Medium Energy Nosferatu II"
+  },
+  {
+    "id": 12263,
+    "zh": "重型掠能器 II",
+    "en": "Heavy Energy Nosferatu II"
+  },
+  {
+    "id": 12267,
+    "zh": "中型能量中和器 II",
+    "en": "Medium Energy Neutralizer II"
+  },
+  {
+    "id": 12271,
+    "zh": "重型能量中和器 II",
+    "en": "Heavy Energy Neutralizer II"
+  },
+  {
+    "id": 22291,
+    "zh": "弹道控制系统 II",
+    "en": "Ballistic Control System II"
+  },
+  {
+    "id": 12346,
+    "zh": "200mm磁轨炮 II",
+    "en": "200mm Railgun II"
+  },
+  {
+    "id": 12356,
+    "zh": "350mm磁轨炮 II",
+    "en": "350mm Railgun II"
+  },
+  {
+    "id": 19806,
+    "zh": "目标标记装置 II",
+    "en": "Target Painter II"
+  },
+  {
+    "id": 19739,
+    "zh": "巡航导弹发射器 II",
+    "en": "Cruise Missile Launcher II"
+  },
+  {
+    "id": 21638,
+    "zh": "金星 II",
+    "en": "Vespa II"
+  },
+  {
+    "id": 21640,
+    "zh": "瓦尔基里 II",
+    "en": "Valkyrie II"
+  },
+  {
+    "id": 22229,
+    "zh": "冰矿采集器 II",
+    "en": "Ice Harvester II"
+  },
+  {
+    "id": 17912,
+    "zh": "调制型露天采矿器 II",
+    "en": "Modulated Strip Miner II"
+  },
+  {
+    "id": 24305,
+    "zh": "调制型深层地核露天采矿器 II",
+    "en": "Modulated Deep Core Strip Miner II"
+  },
+  {
+    "id": 41322,
+    "zh": "涅槃 XL",
+    "en": "Void XL"
+  },
+  {
+    "id": 41326,
+    "zh": "标枪 XL",
+    "en": "Javelin XL"
+  },
+  {
+    "id": 41328,
+    "zh": "钉刺 XL",
+    "en": "Spike XL"
+  },
+  {
+    "id": 41324,
+    "zh": "虚空 XL",
+    "en": "Null XL"
+  },
+  {
+    "id": 41318,
+    "zh": "战栗 XL",
+    "en": "Tremor XL"
+  },
+  {
+    "id": 41314,
+    "zh": "冰雹 XL",
+    "en": "Hail XL"
+  },
+  {
+    "id": 41316,
+    "zh": "雷暴 XL",
+    "en": "Barrage XL"
+  },
+  {
+    "id": 41320,
+    "zh": "地震 XL",
+    "en": "Quake XL"
+  },
+  {
+    "id": 41334,
+    "zh": "微光 XL",
+    "en": "Gleam XL"
+  },
+  {
+    "id": 41336,
+    "zh": "极光 XL",
+    "en": "Aurora XL"
+  },
+  {
+    "id": 41330,
+    "zh": "灼烧 XL",
+    "en": "Scorch XL"
+  },
+  {
+    "id": 41332,
+    "zh": "爆燃 XL",
+    "en": "Conflagration XL"
+  },
+  {
+    "id": 41274,
+    "zh": "雷神标枪超大型鱼雷",
+    "en": "Mjolnir Javelin XL Torpedo"
+  },
+  {
+    "id": 41275,
+    "zh": "雷神狂乱超大型鱼雷",
+    "en": "Mjolnir Rage XL Torpedo"
+  },
+  {
+    "id": 41270,
+    "zh": "鞭挞标枪超大型鱼雷",
+    "en": "Scourge Javelin XL Torpedo"
+  },
+  {
+    "id": 41271,
+    "zh": "鞭挞狂乱超大型鱼雷",
+    "en": "Scourge Rage XL Torpedo"
+  },
+  {
+    "id": 41276,
+    "zh": "炼狱标枪超大型鱼雷",
+    "en": "Inferno Javelin XL Torpedo"
+  },
+  {
+    "id": 41277,
+    "zh": "炼狱狂乱超大型鱼雷",
+    "en": "Inferno Rage XL Torpedo"
+  },
+  {
+    "id": 41272,
+    "zh": "星爆标枪超大型鱼雷",
+    "en": "Nova Javelin XL Torpedo"
+  },
+  {
+    "id": 41273,
+    "zh": "星爆狂乱超大型鱼雷",
+    "en": "Nova Rage XL Torpedo"
+  },
+  {
+    "id": 4258,
+    "zh": "核心探针发射器 II",
+    "en": "Core Probe Launcher II"
+  },
+  {
+    "id": 18608,
+    "zh": "基腹断岩小行星采集晶体A型 II",
+    "en": "Mercoxit Asteroid Mining Crystal Type A II"
+  },
+  {
+    "id": 4260,
+    "zh": "延伸探针发射器 II",
+    "en": "Expanded Probe Launcher II"
+  },
+  {
+    "id": 4292,
+    "zh": "会战装备 II",
+    "en": "Siege Module II"
+  },
+  {
+    "id": 37298,
+    "zh": "双联千兆级脉冲激光器 II",
+    "en": "Dual Giga Pulse Laser II"
+  },
+  {
+    "id": 37299,
+    "zh": "双联千兆级集束激光器 II",
+    "en": "Dual Giga Beam Laser II"
+  },
+  {
+    "id": 37303,
+    "zh": "双联1000mm磁轨炮 II",
+    "en": "Dual 1000mm Railgun II"
+  },
+  {
+    "id": 37302,
+    "zh": "离子会战疾速炮 II",
+    "en": "Ion Siege Blaster II"
+  },
+  {
+    "id": 37306,
+    "zh": "六联2500mm频射加农炮 II",
+    "en": "Hexa 2500mm Repeating Cannon II"
+  },
+  {
+    "id": 37307,
+    "zh": "四联3500mm会战型火炮 II",
+    "en": "Quad 3500mm Siege Artillery II"
+  },
+  {
+    "id": 37294,
+    "zh": "超大型鱼雷发射器 II",
+    "en": "XL Torpedo Launcher II"
+  },
+  {
+    "id": 41500,
+    "zh": "旗舰级装甲维修器 II",
+    "en": "Capital Armor Repairer II"
+  },
+  {
+    "id": 41507,
+    "zh": "旗舰级护盾回充增量器 II",
+    "en": "Capital Shield Booster II"
+  },
+  {
+    "id": 24488,
+    "zh": "星爆狂乱重型攻击导弹",
+    "en": "Nova Rage Heavy Assault Missile"
+  },
+  {
+    "id": 13856,
+    "zh": "星爆标枪重型攻击导弹",
+    "en": "Nova Javelin Heavy Assault Missile"
+  },
+  {
+    "id": 30834,
+    "zh": "数据分析仪 II",
+    "en": "Data Analyzer II"
+  },
+  {
+    "id": 30832,
+    "zh": "遗迹分析仪 II",
+    "en": "Relic Analyzer II"
+  },
+  {
+    "id": 28576,
+    "zh": "采矿激光器提升器 II",
+    "en": "Mining Laser Upgrade II"
+  },
+  {
+    "id": 28578,
+    "zh": "冰矿采集能力提升器 II",
+    "en": "Ice Harvester Upgrade II"
+  },
+  {
+    "id": 28199,
+    "zh": "重型护盾维护机器人 II",
+    "en": "Heavy Shield Maintenance Bot II"
+  },
+  {
+    "id": 40556,
+    "zh": "圣殿骑士 II",
+    "en": "Templar II"
+  },
+  {
+    "id": 40557,
+    "zh": "蜻蜓 II",
+    "en": "Dragonfly II"
+  },
+  {
+    "id": 40558,
+    "zh": "掷矛手 II",
+    "en": "Firbolg II"
+  },
+  {
+    "id": 40559,
+    "zh": "因赫吉 II",
+    "en": "Einherji II"
+  },
+  {
+    "id": 28197,
+    "zh": "重型装甲维护机器人 II",
+    "en": "Heavy Armor Maintenance Bot II"
+  },
+  {
+    "id": 28213,
+    "zh": "监护官 II",
+    "en": "Curator II"
+  },
+  {
+    "id": 24427,
+    "zh": "无人机链接增效器 II",
+    "en": "Drone Link Augmentor II"
+  },
+  {
+    "id": 24438,
+    "zh": "全方位索敌连接 II",
+    "en": "Omnidirectional Tracking Link II"
+  },
+  {
+    "id": 28209,
+    "zh": "典狱官 II",
+    "en": "Warden II"
+  },
+  {
+    "id": 28211,
+    "zh": "卫兵 II",
+    "en": "Garde II"
+  },
+  {
+    "id": 28215,
+    "zh": "保镖 II",
+    "en": "Bouncer II"
+  },
+  {
+    "id": 28205,
+    "zh": "中型装甲维护机器人 II",
+    "en": "Medium Armor Maintenance Bot II"
+  },
+  {
+    "id": 28201,
+    "zh": "轻型装甲维护机器人 II",
+    "en": "Light Armor Maintenance Bot II"
+  },
+  {
+    "id": 28207,
+    "zh": "中型护盾维护机器人 II",
+    "en": "Medium Shield Maintenance Bot II"
+  },
+  {
+    "id": 28203,
+    "zh": "轻型护盾维护机器人 II",
+    "en": "Light Shield Maintenance Bot II"
+  },
+  {
+    "id": 41415,
+    "zh": "铁骑舰载机辅助单元 II",
+    "en": "Fighter Support Unit II"
+  },
+  {
+    "id": 4250,
+    "zh": "小型牵引光束 II",
+    "en": "Small Tractor Beam II"
+  },
+  {
+    "id": 24417,
+    "zh": "无人机导航电脑 II",
+    "en": "Drone Navigation Computer II"
+  },
+  {
+    "id": 41466,
+    "zh": "旗舰级远程装甲维修器 II",
+    "en": "Capital Remote Armor Repairer II"
+  },
+  {
+    "id": 4252,
+    "zh": "旗舰级牵引光束 II",
+    "en": "Capital Tractor Beam II"
+  },
+  {
+    "id": 25812,
+    "zh": "气云回收装置 II",
+    "en": "Gas Cloud Scoop II"
+  },
+  {
+    "id": 25563,
+    "zh": "信号畸变放大器 II",
+    "en": "Signal Distortion Amplifier II"
+  },
+  {
+    "id": 30836,
+    "zh": "打捞器 II",
+    "en": "Salvager II"
+  },
+  {
+    "id": 25715,
+    "zh": "重型攻击导弹发射器 II",
+    "en": "Heavy Assault Missile Launcher II"
+  },
+  {
+    "id": 24490,
+    "zh": "雷神狂乱重型攻击导弹",
+    "en": "Mjolnir Rage Heavy Assault Missile"
+  },
+  {
+    "id": 24493,
+    "zh": "雷神标枪重型攻击导弹",
+    "en": "Mjolnir Javelin Heavy Assault Missile"
+  },
+  {
+    "id": 24486,
+    "zh": "炼狱狂乱重型攻击导弹",
+    "en": "Inferno Rage Heavy Assault Missile"
+  },
+  {
+    "id": 24494,
+    "zh": "炼狱标枪重型攻击导弹",
+    "en": "Inferno Javelin Heavy Assault Missile"
+  },
+  {
+    "id": 2679,
+    "zh": "鞭挞狂乱重型攻击导弹",
+    "en": "Scourge Rage Heavy Assault Missile"
+  },
+  {
+    "id": 24492,
+    "zh": "鞭挞标枪重型攻击导弹",
+    "en": "Scourge Javelin Heavy Assault Missile"
+  },
+  {
+    "id": 3986,
+    "zh": "大型远程结构维修器 II",
+    "en": "Large Remote Hull Repairer II"
+  },
+  {
+    "id": 4256,
+    "zh": "炸弹发射器 II",
+    "en": "Bomb Launcher II"
+  },
+  {
+    "id": 4296,
+    "zh": "中型远程结构维修器 II",
+    "en": "Medium Remote Hull Repairer II"
+  },
+  {
+    "id": 4299,
+    "zh": "小型远程结构维修器 II",
+    "en": "Small Remote Hull Repairer II"
+  },
+  {
+    "id": 41475,
+    "zh": "旗舰级远程结构维修器 II",
+    "en": "Capital Remote Hull Repairer II"
+  },
+  {
+    "id": 4294,
+    "zh": "会战型紧急修复增强模块 II",
+    "en": "Triage Module II"
+  },
+  {
+    "id": 42890,
+    "zh": "旗舰工业核心 II",
+    "en": "Capital Industrial Core II"
+  },
+  {
+    "id": 4248,
+    "zh": "跃迁扰断力场发生器 II",
+    "en": "Warp Disruption Field Generator II"
+  },
+  {
+    "id": 40563,
+    "zh": "独眼巨人 II",
+    "en": "Cyclops II"
+  },
+  {
+    "id": 40561,
+    "zh": "槌骨 II",
+    "en": "Malleus II"
+  },
+  {
+    "id": 40565,
+    "zh": "斩裂剑 II",
+    "en": "Tyrfing II"
+  },
+  {
+    "id": 40567,
+    "zh": "螳螂 II",
+    "en": "Mantis II"
+  },
+  {
+    "id": 41290,
+    "zh": "鞭挞精准超大型巡航导弹",
+    "en": "Scourge Precision XL Cruise Missile"
+  },
+  {
+    "id": 41291,
+    "zh": "鞭挞愤怒超大型巡航导弹",
+    "en": "Scourge Fury XL Cruise Missile"
+  },
+  {
+    "id": 41294,
+    "zh": "星爆愤怒超大型巡航导弹",
+    "en": "Nova Fury XL Cruise Missile"
+  },
+  {
+    "id": 41295,
+    "zh": "星爆精准超大型巡航导弹",
+    "en": "Nova Precision XL Cruise Missile"
+  },
+  {
+    "id": 41286,
+    "zh": "炼狱精准超大型巡航导弹",
+    "en": "Inferno Precision XL Cruise Missile"
+  },
+  {
+    "id": 41287,
+    "zh": "炼狱愤怒超大型巡航导弹",
+    "en": "Inferno Fury XL Cruise Missile"
+  },
+  {
+    "id": 41298,
+    "zh": "雷神精准超大型巡航导弹",
+    "en": "Mjolnir Precision XL Cruise Missile"
+  },
+  {
+    "id": 41299,
+    "zh": "雷神愤怒超大型巡航导弹",
+    "en": "Mjolnir Fury XL Cruise Missile"
+  },
+  {
+    "id": 37295,
+    "zh": "超大型巡航导弹发射器 II",
+    "en": "XL Cruise Missile Launcher II"
+  },
+  {
+    "id": 55760,
+    "zh": "打捞无人机 II",
+    "en": "Salvage Drone II"
+  },
+  {
+    "id": 33197,
+    "zh": "扫描精准阵列 II",
+    "en": "Scan Acquisition Array II"
+  },
+  {
+    "id": 33199,
+    "zh": "扫描定位阵列 II",
+    "en": "Scan Pinpointing Array II"
+  },
+  {
+    "id": 33201,
+    "zh": "扫描测距阵列 II",
+    "en": "Scan Rangefinding Array II"
+  },
+  {
+    "id": 33272,
+    "zh": "测量探针发射器 II",
+    "en": "Survey Probe Launcher II"
+  },
+  {
+    "id": 33450,
+    "zh": "重型快速导弹发射器 II",
+    "en": "Rapid Heavy Missile Launcher II"
+  },
+  {
+    "id": 33708,
+    "zh": "重型船体维护机器人 II",
+    "en": "Heavy Hull Maintenance Bot II"
+  },
+  {
+    "id": 33710,
+    "zh": "中型船体维护机器人 II",
+    "en": "Medium Hull Maintenance Bot II"
+  },
+  {
+    "id": 33712,
+    "zh": "轻型船体维护机器人 II",
+    "en": "Light Hull Maintenance Bot II"
+  },
+  {
+    "id": 33824,
+    "zh": "全方位索敌增强器 II",
+    "en": "Omnidirectional Tracking Enhancer II"
+  },
+  {
+    "id": 35771,
+    "zh": "导弹制导增强器 II",
+    "en": "Missile Guidance Enhancer II"
+  },
+  {
+    "id": 35790,
+    "zh": "导弹制导计算机 II",
+    "en": "Missile Guidance Computer II"
+  },
+  {
+    "id": 47325,
+    "zh": "屹立制导炸弹发射器 II",
+    "en": "Standup Guided Bomb Launcher II"
+  },
+  {
+    "id": 47342,
+    "zh": "屹立弹道控制系统 II",
+    "en": "Standup Ballistic Control System II"
+  },
+  {
+    "id": 47344,
+    "zh": "屹立协处理器阵列 II",
+    "en": "Standup Co-Processor Array II"
+  },
+  {
+    "id": 47327,
+    "zh": "屹立定点防御炮塔 II",
+    "en": "Standup Point Defense Battery II"
+  },
+  {
+    "id": 47338,
+    "zh": "屹立可变光谱ECM II",
+    "en": "Standup Variable Spectrum ECM II"
+  },
+  {
+    "id": 47330,
+    "zh": "屹立超大型能量中和器 II",
+    "en": "Standup XL Energy Neutralizer II"
+  },
+  {
+    "id": 47332,
+    "zh": "屹立重型能量中和器 II",
+    "en": "Standup Heavy Energy Neutralizer II"
+  },
+  {
+    "id": 47340,
+    "zh": "屹立导弹制导增强器 II",
+    "en": "Standup Missile Guidance Enhancer II"
+  },
+  {
+    "id": 47323,
+    "zh": "屹立反旗舰导弹发射器 II",
+    "en": "Standup Anticapital Missile Launcher II"
+  },
+  {
+    "id": 47298,
+    "zh": "屹立多功能导弹发射器 II",
+    "en": "Standup Multirole Missile Launcher II"
+  },
+  {
+    "id": 47347,
+    "zh": "屹立反应堆控制组件 II",
+    "en": "Standup Reactor Control Unit II"
+  },
+  {
+    "id": 47368,
+    "zh": "屹立远程感应抑阻器 II",
+    "en": "Standup Remote Sensor Dampener II"
+  },
+  {
+    "id": 47351,
+    "zh": "屹立停滞缠绕光束 II",
+    "en": "Standup Stasis Webifier II"
+  },
+  {
+    "id": 47366,
+    "zh": "屹立目标标记装置 II",
+    "en": "Standup Target Painter II"
+  },
+  {
+    "id": 47364,
+    "zh": "屹立武器扰断器 II",
+    "en": "Standup Weapon Disruptor II"
+  },
+  {
+    "id": 47334,
+    "zh": "屹立聚焦跃迁扰断器 II",
+    "en": "Standup Focused Warp Disruptor II"
+  },
+  {
+    "id": 47348,
+    "zh": "屹立信号放大器 II",
+    "en": "Standup Signal Amplifier II"
+  },
+  {
+    "id": 37451,
+    "zh": "冰矿开采激光器 II",
+    "en": "Ice Mining Laser II"
+  },
+  {
+    "id": 37546,
+    "zh": "制导干扰器 II",
+    "en": "Guidance Disruptor II"
+  },
+  {
+    "id": 40662,
+    "zh": "旗舰级能量中和器 II",
+    "en": "Capital Energy Neutralizer II"
+  },
+  {
+    "id": 40668,
+    "zh": "旗舰级掠能器 II",
+    "en": "Capital Energy Nosferatu II"
+  },
+  {
+    "id": 40717,
+    "zh": "旗舰级紧急船体增能器 II",
+    "en": "Capital Emergency Hull Energizer II"
+  },
+  {
+    "id": 40734,
+    "zh": "重型跃迁扰断器 II",
+    "en": "Heavy Warp Disruptor II"
+  },
+  {
+    "id": 40758,
+    "zh": "重型跃迁扰频器 II",
+    "en": "Heavy Warp Scrambler II"
+  },
+  {
+    "id": 37296,
+    "zh": "四联超级脉冲激光器 II",
+    "en": "Quad Mega Pulse Laser II"
+  },
+  {
+    "id": 37300,
+    "zh": "三中子疾速加农炮 II",
+    "en": "Triple Neutron Blaster Cannon II"
+  },
+  {
+    "id": 37304,
+    "zh": "四联800mm频射加农炮 II",
+    "en": "Quad 800mm Repeating Cannon II"
+  },
+  {
+    "id": 41057,
+    "zh": "重型停滞捕捉光束 II",
+    "en": "Heavy Stasis Grappler II"
+  },
+  {
+    "id": 37292,
+    "zh": "快速鱼雷发射器 II",
+    "en": "Rapid Torpedo Launcher II"
+  },
+  {
+    "id": 41239,
+    "zh": "10000MN加力燃烧器 II",
+    "en": "10000MN Afterburner II"
+  },
+  {
+    "id": 41253,
+    "zh": "50000MN微型跃迁推进器 II",
+    "en": "50000MN Microwarpdrive II"
+  },
+  {
+    "id": 40560,
+    "zh": "阿米特 II",
+    "en": "Ametat II"
+  },
+  {
+    "id": 40566,
+    "zh": "白蚁 II",
+    "en": "Termite II"
+  },
+  {
+    "id": 40562,
+    "zh": "安泰 II",
+    "en": "Antaeus II"
+  },
+  {
+    "id": 40564,
+    "zh": "长枪 II",
+    "en": "Gungnir II"
+  },
+  {
+    "id": 40568,
+    "zh": "修道士 II",
+    "en": "Cenobite II"
+  },
+  {
+    "id": 40569,
+    "zh": "圣甲虫 II",
+    "en": "Scarab II"
+  },
+  {
+    "id": 40570,
+    "zh": "塞壬 II",
+    "en": "Siren II"
+  },
+  {
+    "id": 40571,
+    "zh": "德洛米 II",
+    "en": "Dromi II"
+  },
+  {
+    "id": 40552,
+    "zh": "骑士 II",
+    "en": "Equite II"
+  },
+  {
+    "id": 40554,
+    "zh": "蚱蜢 II",
+    "en": "Locust II"
+  },
+  {
+    "id": 40555,
+    "zh": "萨梯 II",
+    "en": "Satyr II"
+  },
+  {
+    "id": 40553,
+    "zh": "格拉墨 II",
+    "en": "Gram II"
+  },
+  {
+    "id": 40357,
+    "zh": "旗舰级护盾扩展装置 II",
+    "en": "Capital Shield Extender II"
+  },
+  {
+    "id": 40351,
+    "zh": "25000mm钢附甲板 II",
+    "en": "25000mm Steel Plates II"
+  },
+  {
+    "id": 41514,
+    "zh": "旗舰级结构维修器 II",
+    "en": "Capital Hull Repairer II"
+  },
+  {
+    "id": 41486,
+    "zh": "旗舰级电容器电池 II",
+    "en": "Capital Cap Battery II"
+  },
+  {
+    "id": 41493,
+    "zh": "旗舰级电容注电器 II",
+    "en": "Capital Capacitor Booster II"
+  },
+  {
+    "id": 41525,
+    "zh": "旗舰级弯曲装甲增强器 II",
+    "en": "Capital Flex Armor Hardener II"
+  },
+  {
+    "id": 41528,
+    "zh": "旗舰级弯曲护盾增强器 II",
+    "en": "Capital Flex Shield Hardener II"
+  },
+  {
+    "id": 43700,
+    "zh": "冰矿采集无人机 II",
+    "en": "Ice Harvesting Drone II"
+  },
+  {
+    "id": 46356,
+    "zh": "常见卫星矿石采集晶体A型 II",
+    "en": "Ubiquitous Moon Mining Crystal Type A II"
+  },
+  {
+    "id": 46366,
+    "zh": "普通卫星矿石采集晶体A型 II",
+    "en": "Common Moon Mining Crystal Type A II"
+  },
+  {
+    "id": 46368,
+    "zh": "罕见卫星矿石采集晶体A型 II",
+    "en": "Uncommon Moon Mining Crystal Type A II"
+  },
+  {
+    "id": 46370,
+    "zh": "稀有卫星矿石采集晶体A型 II",
+    "en": "Rare Moon Mining Crystal Type A II"
+  },
+  {
+    "id": 46372,
+    "zh": "非凡卫星矿石采集晶体A型 II",
+    "en": "Exceptional Moon Mining Crystal Type A II"
+  },
+  {
+    "id": 47141,
+    "zh": "屹立圣殿骑士 II",
+    "en": "Standup Templar II"
+  },
+  {
+    "id": 47142,
+    "zh": "屹立蜻蜓 II",
+    "en": "Standup Dragonfly II"
+  },
+  {
+    "id": 47143,
+    "zh": "屹立掷矛手 II",
+    "en": "Standup Firbolg II"
+  },
+  {
+    "id": 47144,
+    "zh": "屹立因赫吉 II",
+    "en": "Standup Einherji II"
+  },
+  {
+    "id": 47148,
+    "zh": "屹立骑士 II",
+    "en": "Standup Equite II"
+  },
+  {
+    "id": 47149,
+    "zh": "屹立蚱蜢 II",
+    "en": "Standup Locust II"
+  },
+  {
+    "id": 47150,
+    "zh": "屹立萨梯 II",
+    "en": "Standup Satyr II"
+  },
+  {
+    "id": 47151,
+    "zh": "屹立格拉墨 II",
+    "en": "Standup Gram II"
+  },
+  {
+    "id": 47134,
+    "zh": "屹立修道士 II",
+    "en": "Standup Cenobite II"
+  },
+  {
+    "id": 47135,
+    "zh": "屹立圣甲虫 II",
+    "en": "Standup Scarab II"
+  },
+  {
+    "id": 47136,
+    "zh": "屹立塞壬 II",
+    "en": "Standup Siren II"
+  },
+  {
+    "id": 47137,
+    "zh": "屹立德洛米 II",
+    "en": "Standup Dromi II"
+  },
+  {
+    "id": 47121,
+    "zh": "屹立独眼巨人 II",
+    "en": "Standup Cyclops II"
+  },
+  {
+    "id": 47119,
+    "zh": "屹立槌骨 II",
+    "en": "Standup Malleus II"
+  },
+  {
+    "id": 47122,
+    "zh": "屹立斩裂剑 II",
+    "en": "Standup Tyrfing II"
+  },
+  {
+    "id": 47120,
+    "zh": "屹立螳螂 II",
+    "en": "Standup Mantis II"
+  },
+  {
+    "id": 47127,
+    "zh": "屹立阿米特 II",
+    "en": "Standup Ametat II"
+  },
+  {
+    "id": 47128,
+    "zh": "屹立白蚁 II",
+    "en": "Standup Termite II"
+  },
+  {
+    "id": 47129,
+    "zh": "屹立安泰 II",
+    "en": "Standup Antaeus II"
+  },
+  {
+    "id": 47130,
+    "zh": "屹立长枪 II",
+    "en": "Standup Gungnir II"
+  },
+  {
+    "id": 47257,
+    "zh": "突击型损伤控制 II",
+    "en": "Assault Damage Control II"
+  },
+  {
+    "id": 47353,
+    "zh": "屹立电容器电池 II",
+    "en": "Standup Cap Battery II"
+  },
+  {
+    "id": 47358,
+    "zh": "屹立电容能源继电器 II",
+    "en": "Standup Capacitor Power Relay II"
+  },
+  {
+    "id": 47362,
+    "zh": "屹立覆层装甲附甲 II",
+    "en": "Standup Layered Armor Plating II"
+  },
+  {
+    "id": 47911,
+    "zh": "熵辐射槽 II",
+    "en": "Entropic Radiation Sink II"
+  },
+  {
+    "id": 58972,
+    "zh": "拦截失效装置 II",
+    "en": "Interdiction Nullifier II"
+  },
+  {
+    "id": 58950,
+    "zh": "大型工业核心 II",
+    "en": "Large Industrial Core II"
+  },
+  {
+    "id": 60314,
+    "zh": "气云采集器 II",
+    "en": "Gas Cloud Harvester II"
+  },
+  {
+    "id": 60281,
+    "zh": "普通小行星采集晶体A型 II",
+    "en": "Simple Asteroid Mining Crystal Type A II"
+  },
+  {
+    "id": 60288,
+    "zh": "聚合小行星采集晶体A型 II",
+    "en": "Coherent Asteroid Mining Crystal Type A II"
+  },
+  {
+    "id": 60294,
+    "zh": "斑驳小行星采集晶体A型 II",
+    "en": "Variegated Asteroid Mining Crystal Type A II"
+  },
+  {
+    "id": 60300,
+    "zh": "死亡空间小行星采集晶体A型 II",
+    "en": "Complex Asteroid Mining Crystal Type A II"
+  },
+  {
+    "id": 60306,
+    "zh": "深渊小行星采集晶体A型 II",
+    "en": "Abyssal Asteroid Mining Crystal Type A II"
+  },
+  {
+    "id": 60283,
+    "zh": "普通小行星采集晶体B型 II",
+    "en": "Simple Asteroid Mining Crystal Type B II"
+  },
+  {
+    "id": 60284,
+    "zh": "普通小行星采集晶体C型 II",
+    "en": "Simple Asteroid Mining Crystal Type C II"
+  },
+  {
+    "id": 60289,
+    "zh": "聚合小行星采集晶体B型 II",
+    "en": "Coherent Asteroid Mining Crystal Type B II"
+  },
+  {
+    "id": 60290,
+    "zh": "聚合小行星采集晶体C型 II",
+    "en": "Coherent Asteroid Mining Crystal Type C II"
+  },
+  {
+    "id": 60295,
+    "zh": "斑驳小行星采集晶体B型 II",
+    "en": "Variegated Asteroid Mining Crystal Type B II"
+  },
+  {
+    "id": 60296,
+    "zh": "斑驳小行星采集晶体C型 II",
+    "en": "Variegated Asteroid Mining Crystal Type C II"
+  },
+  {
+    "id": 60301,
+    "zh": "死亡空间小行星采集晶体B型 II",
+    "en": "Complex Asteroid Mining Crystal Type B II"
+  },
+  {
+    "id": 60302,
+    "zh": "死亡空间小行星采集晶体C型 II",
+    "en": "Complex Asteroid Mining Crystal Type C II"
+  },
+  {
+    "id": 60307,
+    "zh": "深渊小行星采集晶体B型 II",
+    "en": "Abyssal Asteroid Mining Crystal Type B II"
+  },
+  {
+    "id": 60308,
+    "zh": "深渊小行星采集晶体C型 II",
+    "en": "Abyssal Asteroid Mining Crystal Type C II"
+  },
+  {
+    "id": 60311,
+    "zh": "基腹断岩小行星采集晶体B型 II",
+    "en": "Mercoxit Asteroid Mining Crystal Type B II"
+  },
+  {
+    "id": 60312,
+    "zh": "基腹断岩小行星采集晶体C型 II",
+    "en": "Mercoxit Asteroid Mining Crystal Type C II"
+  },
+  {
+    "id": 61199,
+    "zh": "常见卫星矿石采集晶体B型 II",
+    "en": "Ubiquitous Moon Mining Crystal Type B II"
+  },
+  {
+    "id": 61200,
+    "zh": "常见卫星矿石采集晶体C型 II",
+    "en": "Ubiquitous Moon Mining Crystal Type C II"
+  },
+  {
+    "id": 61203,
+    "zh": "普通卫星矿石采集晶体B型 II",
+    "en": "Common Moon Mining Crystal Type B II"
+  },
+  {
+    "id": 61204,
+    "zh": "普通卫星矿石采集晶体C型 II",
+    "en": "Common Moon Mining Crystal Type C II"
+  },
+  {
+    "id": 61207,
+    "zh": "罕见卫星矿石采集晶体B型 II",
+    "en": "Uncommon Moon Mining Crystal Type B II"
+  },
+  {
+    "id": 61208,
+    "zh": "罕见卫星矿石采集晶体C型 II",
+    "en": "Uncommon Moon Mining Crystal Type C II"
+  },
+  {
+    "id": 61211,
+    "zh": "稀有卫星矿石采集晶体B型 II",
+    "en": "Rare Moon Mining Crystal Type B II"
+  },
+  {
+    "id": 61212,
+    "zh": "稀有卫星矿石采集晶体C型 II",
+    "en": "Rare Moon Mining Crystal Type C II"
+  },
+  {
+    "id": 61215,
+    "zh": "非凡卫星矿石采集晶体B型 II",
+    "en": "Exceptional Moon Mining Crystal Type B II"
+  },
+  {
+    "id": 61216,
+    "zh": "非凡卫星矿石采集晶体C型 II",
+    "en": "Exceptional Moon Mining Crystal Type C II"
+  },
+  {
+    "id": 62591,
+    "zh": "中型工业核心 II",
+    "en": "Medium Industrial Core II"
+  },
+  {
+    "id": 90047,
+    "zh": "不稳定矿石采集晶体A型 II",
+    "en": "Erratic Ore Mining Crystal Type A II"
+  },
+  {
+    "id": 90050,
+    "zh": "不稳定矿石采集晶体B型 II",
+    "en": "Erratic Ore Mining Crystal Type B II"
+  },
+  {
+    "id": 90049,
+    "zh": "不稳定矿石采集晶体C型 II",
+    "en": "Erratic Ore Mining Crystal Type C II"
+  }
+]

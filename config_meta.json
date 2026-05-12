@@ -1,0 +1,30 @@
+{
+  "_comment": "ESI 认证配置（所有 app 共享）。client_id/client_secret 从 EVE 开发者控制台申请。",
+  "esi": {
+    "client_id": "acbc2d81feaf4be6a9d9fb93adef2ae4",
+    "client_secret": "eat_AO7mAL5LeMDdObuwrJwF64b4t1h7kgQH_RxLbc",
+    "redirect_uri": "http://localhost:5050/callback",
+    "user_agent": "eve-tools/1.0 (contact: your@email.com)",
+    "base_url": "https://esi.evetech.net/latest",
+    "_scopes_comment": "以下为所有 app 所需 scope 的合集，按需授权",
+    "scopes": [
+      "esi-assets.read_assets.v1",
+      "esi-assets.read_corporation_assets.v1",
+      "esi-characters.read_blueprints.v1",
+      "esi-corporations.read_blueprints.v1",
+      "esi-industry.read_character_jobs.v1",
+      "esi-industry.read_corporation_jobs.v1",
+      "esi-markets.structure_markets.v1",
+      "esi-universe.read_structures.v1"
+    ]
+  },
+  "token_cache": "resources/auth/token_cache.json",
+  "_inputs_comment": "用户手动维护的输入文件（相对 eve/ 根目录）",
+  "inputs": {
+    "item_list": "inputs/item_list.csv",
+    "brought_blueprints": "inputs/brought_blueprints.csv",
+    "excluded_blueprints": "inputs/excluded_blueprints.csv",
+    "provider": "inputs/provider.csv",
+    "purchase_list": "inputs/purchase_list.csv"
+  }
+}

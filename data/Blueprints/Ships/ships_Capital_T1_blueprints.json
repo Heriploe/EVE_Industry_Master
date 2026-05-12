@@ -1,0 +1,2462 @@
+[
+  {
+    "blueprintTypeID": 1002,
+    "name": {
+      "zh": "俄洛巴斯级",
+      "en": "Erebus"
+    },
+    "manufacturing": {
+      "materials": [
+        {
+          "quantity": 1,
+          "typeID": 57489
+        },
+        {
+          "quantity": 25,
+          "typeID": 57487
+        },
+        {
+          "quantity": 80,
+          "typeID": 21009
+        },
+        {
+          "quantity": 100,
+          "typeID": 21035
+        },
+        {
+          "quantity": 150,
+          "typeID": 21023
+        },
+        {
+          "quantity": 192,
+          "typeID": 57472
+        },
+        {
+          "quantity": 200,
+          "typeID": 21013
+        },
+        {
+          "quantity": 200,
+          "typeID": 21037
+        },
+        {
+          "quantity": 250,
+          "typeID": 57476
+        },
+        {
+          "quantity": 300,
+          "typeID": 21017
+        },
+        {
+          "quantity": 300,
+          "typeID": 21021
+        },
+        {
+          "quantity": 300,
+          "typeID": 21025
+        },
+        {
+          "quantity": 400,
+          "typeID": 21011
+        },
+        {
+          "quantity": 400,
+          "typeID": 21019
+        },
+        {
+          "quantity": 500,
+          "typeID": 24545
+        },
+        {
+          "quantity": 500,
+          "typeID": 24547
+        },
+        {
+          "quantity": 500,
+          "typeID": 24556
+        },
+        {
+          "quantity": 500,
+          "typeID": 24558
+        },
+        {
+          "quantity": 500,
+          "typeID": 24560
+        },
+        {
+          "quantity": 1600,
+          "typeID": 57486
+        },
+        {
+          "quantity": 3200,
+          "typeID": 57478
+        }
+      ],
+      "products": [
+        {
+          "quantity": 1,
+          "typeID": 671
+        }
+      ],
+      "skills": [
+        {
+          "level": 5,
+          "typeID": 22242
+        }
+      ],
+      "time": 9000000
+    }
+  },
+  {
+    "blueprintTypeID": 3765,
+    "name": {
+      "zh": "勒维亚坦级",
+      "en": "Leviathan"
+    },
+    "manufacturing": {
+      "materials": [
+        {
+          "quantity": 1,
+          "typeID": 57489
+        },
+        {
+          "quantity": 25,
+          "typeID": 57487
+        },
+        {
+          "quantity": 80,
+          "typeID": 21009
+        },
+        {
+          "quantity": 100,
+          "typeID": 21035
+        },
+        {
+          "quantity": 150,
+          "typeID": 21017
+        },
+        {
+          "quantity": 192,
+          "typeID": 57471
+        },
+        {
+          "quantity": 200,
+          "typeID": 21013
+        },
+        {
+          "quantity": 200,
+          "typeID": 21037
+        },
+        {
+          "quantity": 250,
+          "typeID": 57475
+        },
+        {
+          "quantity": 300,
+          "typeID": 21019
+        },
+        {
+          "quantity": 300,
+          "typeID": 21023
+        },
+        {
+          "quantity": 300,
+          "typeID": 21025
+        },
+        {
+          "quantity": 400,
+          "typeID": 21021
+        },
+        {
+          "quantity": 400,
+          "typeID": 21041
+        },
+        {
+          "quantity": 500,
+          "typeID": 24545
+        },
+        {
+          "quantity": 500,
+          "typeID": 24547
+        },
+        {
+          "quantity": 500,
+          "typeID": 24556
+        },
+        {
+          "quantity": 500,
+          "typeID": 24558
+        },
+        {
+          "quantity": 500,
+          "typeID": 24560
+        },
+        {
+          "quantity": 1600,
+          "typeID": 57486
+        },
+        {
+          "quantity": 3200,
+          "typeID": 57478
+        }
+      ],
+      "products": [
+        {
+          "quantity": 1,
+          "typeID": 3764
+        }
+      ],
+      "skills": [
+        {
+          "level": 5,
+          "typeID": 22242
+        }
+      ],
+      "time": 9000000
+    }
+  },
+  {
+    "blueprintTypeID": 11568,
+    "name": {
+      "zh": "神使级",
+      "en": "Avatar"
+    },
+    "manufacturing": {
+      "materials": [
+        {
+          "quantity": 1,
+          "typeID": 57489
+        },
+        {
+          "quantity": 25,
+          "typeID": 57487
+        },
+        {
+          "quantity": 50,
+          "typeID": 21023
+        },
+        {
+          "quantity": 80,
+          "typeID": 21009
+        },
+        {
+          "quantity": 100,
+          "typeID": 21013
+        },
+        {
+          "quantity": 192,
+          "typeID": 57470
+        },
+        {
+          "quantity": 200,
+          "typeID": 21035
+        },
+        {
+          "quantity": 200,
+          "typeID": 21037
+        },
+        {
+          "quantity": 250,
+          "typeID": 57474
+        },
+        {
+          "quantity": 300,
+          "typeID": 21021
+        },
+        {
+          "quantity": 300,
+          "typeID": 21025
+        },
+        {
+          "quantity": 400,
+          "typeID": 21011
+        },
+        {
+          "quantity": 400,
+          "typeID": 21017
+        },
+        {
+          "quantity": 400,
+          "typeID": 21019
+        },
+        {
+          "quantity": 500,
+          "typeID": 24545
+        },
+        {
+          "quantity": 500,
+          "typeID": 24547
+        },
+        {
+          "quantity": 500,
+          "typeID": 24556
+        },
+        {
+          "quantity": 500,
+          "typeID": 24558
+        },
+        {
+          "quantity": 500,
+          "typeID": 24560
+        },
+        {
+          "quantity": 1600,
+          "typeID": 57486
+        },
+        {
+          "quantity": 3200,
+          "typeID": 57478
+        }
+      ],
+      "products": [
+        {
+          "quantity": 1,
+          "typeID": 11567
+        }
+      ],
+      "skills": [
+        {
+          "level": 5,
+          "typeID": 22242
+        }
+      ],
+      "time": 9000000
+    }
+  },
+  {
+    "blueprintTypeID": 19721,
+    "name": {
+      "zh": "神示级",
+      "en": "Revelation"
+    },
+    "manufacturing": {
+      "materials": [
+        {
+          "quantity": 1,
+          "typeID": 57487
+        },
+        {
+          "quantity": 1,
+          "typeID": 57488
+        },
+        {
+          "quantity": 2,
+          "typeID": 21019
+        },
+        {
+          "quantity": 2,
+          "typeID": 21021
+        },
+        {
+          "quantity": 2,
+          "typeID": 21023
+        },
+        {
+          "quantity": 2,
+          "typeID": 21025
+        },
+        {
+          "quantity": 2,
+          "typeID": 21035
+        },
+        {
+          "quantity": 2,
+          "typeID": 21037
+        },
+        {
+          "quantity": 2,
+          "typeID": 24560
+        },
+        {
+          "quantity": 2,
+          "typeID": 57474
+        },
+        {
+          "quantity": 4,
+          "typeID": 21009
+        },
+        {
+          "quantity": 4,
+          "typeID": 21013
+        },
+        {
+          "quantity": 4,
+          "typeID": 21017
+        },
+        {
+          "quantity": 4,
+          "typeID": 24558
+        },
+        {
+          "quantity": 15,
+          "typeID": 21011
+        },
+        {
+          "quantity": 15,
+          "typeID": 21039
+        },
+        {
+          "quantity": 16,
+          "typeID": 57470
+        },
+        {
+          "quantity": 200,
+          "typeID": 57486
+        },
+        {
+          "quantity": 400,
+          "typeID": 57478
+        }
+      ],
+      "products": [
+        {
+          "quantity": 1,
+          "typeID": 19720
+        }
+      ],
+      "skills": [
+        {
+          "level": 3,
+          "typeID": 22242
+        }
+      ],
+      "time": 2000000
+    }
+  },
+  {
+    "blueprintTypeID": 19723,
+    "name": {
+      "zh": "纳迦法级",
+      "en": "Naglfar"
+    },
+    "manufacturing": {
+      "materials": [
+        {
+          "quantity": 1,
+          "typeID": 57487
+        },
+        {
+          "quantity": 1,
+          "typeID": 57488
+        },
+        {
+          "quantity": 2,
+          "typeID": 21013
+        },
+        {
+          "quantity": 2,
+          "typeID": 21019
+        },
+        {
+          "quantity": 2,
+          "typeID": 21021
+        },
+        {
+          "quantity": 2,
+          "typeID": 21025
+        },
+        {
+          "quantity": 2,
+          "typeID": 21037
+        },
+        {
+          "quantity": 2,
+          "typeID": 24560
+        },
+        {
+          "quantity": 2,
+          "typeID": 57477
+        },
+        {
+          "quantity": 3,
+          "typeID": 21017
+        },
+        {
+          "quantity": 3,
+          "typeID": 21023
+        },
+        {
+          "quantity": 3,
+          "typeID": 21035
+        },
+        {
+          "quantity": 4,
+          "typeID": 21009
+        },
+        {
+          "quantity": 4,
+          "typeID": 24558
+        },
+        {
+          "quantity": 15,
+          "typeID": 21011
+        },
+        {
+          "quantity": 15,
+          "typeID": 21039
+        },
+        {
+          "quantity": 16,
+          "typeID": 57473
+        },
+        {
+          "quantity": 200,
+          "typeID": 57486
+        },
+        {
+          "quantity": 400,
+          "typeID": 57478
+        }
+      ],
+      "products": [
+        {
+          "quantity": 1,
+          "typeID": 19722
+        }
+      ],
+      "skills": [
+        {
+          "level": 3,
+          "typeID": 22242
+        }
+      ],
+      "time": 2000000
+    }
+  },
+  {
+    "blueprintTypeID": 19725,
+    "name": {
+      "zh": "莫洛级",
+      "en": "Moros"
+    },
+    "manufacturing": {
+      "materials": [
+        {
+          "quantity": 1,
+          "typeID": 57487
+        },
+        {
+          "quantity": 1,
+          "typeID": 57488
+        },
+        {
+          "quantity": 2,
+          "typeID": 21019
+        },
+        {
+          "quantity": 2,
+          "typeID": 21021
+        },
+        {
+          "quantity": 2,
+          "typeID": 21025
+        },
+        {
+          "quantity": 2,
+          "typeID": 21035
+        },
+        {
+          "quantity": 2,
+          "typeID": 21037
+        },
+        {
+          "quantity": 2,
+          "typeID": 24560
+        },
+        {
+          "quantity": 2,
+          "typeID": 57476
+        },
+        {
+          "quantity": 3,
+          "typeID": 21013
+        },
+        {
+          "quantity": 3,
+          "typeID": 21017
+        },
+        {
+          "quantity": 3,
+          "typeID": 21023
+        },
+        {
+          "quantity": 4,
+          "typeID": 21009
+        },
+        {
+          "quantity": 4,
+          "typeID": 24558
+        },
+        {
+          "quantity": 15,
+          "typeID": 21011
+        },
+        {
+          "quantity": 15,
+          "typeID": 21039
+        },
+        {
+          "quantity": 16,
+          "typeID": 57472
+        },
+        {
+          "quantity": 200,
+          "typeID": 57486
+        },
+        {
+          "quantity": 400,
+          "typeID": 57478
+        }
+      ],
+      "products": [
+        {
+          "quantity": 1,
+          "typeID": 19724
+        }
+      ],
+      "skills": [
+        {
+          "level": 3,
+          "typeID": 22242
+        }
+      ],
+      "time": 2000000
+    }
+  },
+  {
+    "blueprintTypeID": 19727,
+    "name": {
+      "zh": "凤凰级",
+      "en": "Phoenix"
+    },
+    "manufacturing": {
+      "materials": [
+        {
+          "quantity": 1,
+          "typeID": 57487
+        },
+        {
+          "quantity": 1,
+          "typeID": 57488
+        },
+        {
+          "quantity": 2,
+          "typeID": 21013
+        },
+        {
+          "quantity": 2,
+          "typeID": 21017
+        },
+        {
+          "quantity": 2,
+          "typeID": 21019
+        },
+        {
+          "quantity": 2,
+          "typeID": 21021
+        },
+        {
+          "quantity": 2,
+          "typeID": 21025
+        },
+        {
+          "quantity": 2,
+          "typeID": 21037
+        },
+        {
+          "quantity": 2,
+          "typeID": 24560
+        },
+        {
+          "quantity": 2,
+          "typeID": 57475
+        },
+        {
+          "quantity": 4,
+          "typeID": 21009
+        },
+        {
+          "quantity": 4,
+          "typeID": 21023
+        },
+        {
+          "quantity": 4,
+          "typeID": 21035
+        },
+        {
+          "quantity": 4,
+          "typeID": 24558
+        },
+        {
+          "quantity": 15,
+          "typeID": 21039
+        },
+        {
+          "quantity": 15,
+          "typeID": 21041
+        },
+        {
+          "quantity": 16,
+          "typeID": 57471
+        },
+        {
+          "quantity": 200,
+          "typeID": 57486
+        },
+        {
+          "quantity": 400,
+          "typeID": 57478
+        }
+      ],
+      "products": [
+        {
+          "quantity": 1,
+          "typeID": 19726
+        }
+      ],
+      "skills": [
+        {
+          "level": 3,
+          "typeID": 22242
+        }
+      ],
+      "time": 2000000
+    }
+  },
+  {
+    "blueprintTypeID": 20184,
+    "name": {
+      "zh": "普罗维登斯级",
+      "en": "Providence"
+    },
+    "manufacturing": {
+      "materials": [
+        {
+          "quantity": 15,
+          "typeID": 21009
+        },
+        {
+          "quantity": 5,
+          "typeID": 21017
+        },
+        {
+          "quantity": 40,
+          "typeID": 21027
+        },
+        {
+          "quantity": 5,
+          "typeID": 21037
+        },
+        {
+          "quantity": 16,
+          "typeID": 57470
+        },
+        {
+          "quantity": 1,
+          "typeID": 57474
+        },
+        {
+          "quantity": 400,
+          "typeID": 57478
+        },
+        {
+          "quantity": 200,
+          "typeID": 57486
+        },
+        {
+          "quantity": 1,
+          "typeID": 57487
+        }
+      ],
+      "products": [
+        {
+          "quantity": 1,
+          "typeID": 20183
+        }
+      ],
+      "skills": [
+        {
+          "level": 1,
+          "typeID": 22242
+        }
+      ],
+      "time": 1500000
+    }
+  },
+  {
+    "blueprintTypeID": 20186,
+    "name": {
+      "zh": "渡神级",
+      "en": "Charon"
+    },
+    "manufacturing": {
+      "materials": [
+        {
+          "quantity": 5,
+          "typeID": 21009
+        },
+        {
+          "quantity": 5,
+          "typeID": 21017
+        },
+        {
+          "quantity": 50,
+          "typeID": 21027
+        },
+        {
+          "quantity": 5,
+          "typeID": 21037
+        },
+        {
+          "quantity": 16,
+          "typeID": 57471
+        },
+        {
+          "quantity": 1,
+          "typeID": 57475
+        },
+        {
+          "quantity": 400,
+          "typeID": 57478
+        },
+        {
+          "quantity": 200,
+          "typeID": 57486
+        },
+        {
+          "quantity": 1,
+          "typeID": 57487
+        }
+      ],
+      "products": [
+        {
+          "quantity": 1,
+          "typeID": 20185
+        }
+      ],
+      "skills": [
+        {
+          "level": 1,
+          "typeID": 22242
+        }
+      ],
+      "time": 1500000
+    }
+  },
+  {
+    "blueprintTypeID": 20188,
+    "name": {
+      "zh": "方尖塔级",
+      "en": "Obelisk"
+    },
+    "manufacturing": {
+      "materials": [
+        {
+          "quantity": 10,
+          "typeID": 21009
+        },
+        {
+          "quantity": 5,
+          "typeID": 21017
+        },
+        {
+          "quantity": 45,
+          "typeID": 21027
+        },
+        {
+          "quantity": 5,
+          "typeID": 21037
+        },
+        {
+          "quantity": 16,
+          "typeID": 57472
+        },
+        {
+          "quantity": 1,
+          "typeID": 57476
+        },
+        {
+          "quantity": 400,
+          "typeID": 57478
+        },
+        {
+          "quantity": 200,
+          "typeID": 57486
+        },
+        {
+          "quantity": 1,
+          "typeID": 57487
+        }
+      ],
+      "products": [
+        {
+          "quantity": 1,
+          "typeID": 20187
+        }
+      ],
+      "skills": [
+        {
+          "level": 1,
+          "typeID": 22242
+        }
+      ],
+      "time": 1500000
+    }
+  },
+  {
+    "blueprintTypeID": 20190,
+    "name": {
+      "zh": "芬利厄级",
+      "en": "Fenrir"
+    },
+    "manufacturing": {
+      "materials": [
+        {
+          "quantity": 20,
+          "typeID": 21009
+        },
+        {
+          "quantity": 5,
+          "typeID": 21017
+        },
+        {
+          "quantity": 35,
+          "typeID": 21027
+        },
+        {
+          "quantity": 5,
+          "typeID": 21037
+        },
+        {
+          "quantity": 16,
+          "typeID": 57473
+        },
+        {
+          "quantity": 1,
+          "typeID": 57477
+        },
+        {
+          "quantity": 400,
+          "typeID": 57478
+        },
+        {
+          "quantity": 200,
+          "typeID": 57486
+        },
+        {
+          "quantity": 1,
+          "typeID": 57487
+        }
+      ],
+      "products": [
+        {
+          "quantity": 1,
+          "typeID": 20189
+        }
+      ],
+      "skills": [
+        {
+          "level": 1,
+          "typeID": 22242
+        }
+      ],
+      "time": 1500000
+    }
+  },
+  {
+    "blueprintTypeID": 22853,
+    "name": {
+      "zh": "冥府级",
+      "en": "Hel"
+    },
+    "manufacturing": {
+      "materials": [
+        {
+          "quantity": 50,
+          "typeID": 21009
+        },
+        {
+          "quantity": 40,
+          "typeID": 21013
+        },
+        {
+          "quantity": 50,
+          "typeID": 21017
+        },
+        {
+          "quantity": 150,
+          "typeID": 21019
+        },
+        {
+          "quantity": 50,
+          "typeID": 21021
+        },
+        {
+          "quantity": 100,
+          "typeID": 21023
+        },
+        {
+          "quantity": 100,
+          "typeID": 21025
+        },
+        {
+          "quantity": 250,
+          "typeID": 21029
+        },
+        {
+          "quantity": 10,
+          "typeID": 21035
+        },
+        {
+          "quantity": 50,
+          "typeID": 21037
+        },
+        {
+          "quantity": 100,
+          "typeID": 24558
+        },
+        {
+          "quantity": 50,
+          "typeID": 24560
+        },
+        {
+          "quantity": 64,
+          "typeID": 57473
+        },
+        {
+          "quantity": 125,
+          "typeID": 57477
+        },
+        {
+          "quantity": 800,
+          "typeID": 57478
+        },
+        {
+          "quantity": 400,
+          "typeID": 57486
+        },
+        {
+          "quantity": 10,
+          "typeID": 57487
+        },
+        {
+          "quantity": 1,
+          "typeID": 57489
+        }
+      ],
+      "products": [
+        {
+          "quantity": 1,
+          "typeID": 22852
+        }
+      ],
+      "skills": [
+        {
+          "level": 4,
+          "typeID": 22242
+        }
+      ],
+      "time": 6000000
+    }
+  },
+  {
+    "blueprintTypeID": 23758,
+    "name": {
+      "zh": "执政官级",
+      "en": "Archon"
+    },
+    "manufacturing": {
+      "materials": [
+        {
+          "quantity": 1,
+          "typeID": 57474
+        },
+        {
+          "quantity": 1,
+          "typeID": 57487
+        },
+        {
+          "quantity": 1,
+          "typeID": 57488
+        },
+        {
+          "quantity": 3,
+          "typeID": 21019
+        },
+        {
+          "quantity": 3,
+          "typeID": 21021
+        },
+        {
+          "quantity": 3,
+          "typeID": 21023
+        },
+        {
+          "quantity": 3,
+          "typeID": 21035
+        },
+        {
+          "quantity": 3,
+          "typeID": 24560
+        },
+        {
+          "quantity": 4,
+          "typeID": 21009
+        },
+        {
+          "quantity": 4,
+          "typeID": 21013
+        },
+        {
+          "quantity": 4,
+          "typeID": 21025
+        },
+        {
+          "quantity": 4,
+          "typeID": 21037
+        },
+        {
+          "quantity": 6,
+          "typeID": 21017
+        },
+        {
+          "quantity": 6,
+          "typeID": 24558
+        },
+        {
+          "quantity": 12,
+          "typeID": 21029
+        },
+        {
+          "quantity": 12,
+          "typeID": 57470
+        },
+        {
+          "quantity": 200,
+          "typeID": 57486
+        },
+        {
+          "quantity": 400,
+          "typeID": 57478
+        }
+      ],
+      "products": [
+        {
+          "quantity": 1,
+          "typeID": 23757
+        }
+      ],
+      "skills": [
+        {
+          "level": 3,
+          "typeID": 22242
+        }
+      ],
+      "time": 1800000
+    }
+  },
+  {
+    "blueprintTypeID": 23774,
+    "name": {
+      "zh": "拉格纳洛克级",
+      "en": "Ragnarok"
+    },
+    "manufacturing": {
+      "materials": [
+        {
+          "quantity": 1,
+          "typeID": 57489
+        },
+        {
+          "quantity": 25,
+          "typeID": 57487
+        },
+        {
+          "quantity": 80,
+          "typeID": 21009
+        },
+        {
+          "quantity": 100,
+          "typeID": 21013
+        },
+        {
+          "quantity": 150,
+          "typeID": 21023
+        },
+        {
+          "quantity": 192,
+          "typeID": 57473
+        },
+        {
+          "quantity": 200,
+          "typeID": 21035
+        },
+        {
+          "quantity": 200,
+          "typeID": 21037
+        },
+        {
+          "quantity": 250,
+          "typeID": 57477
+        },
+        {
+          "quantity": 300,
+          "typeID": 21017
+        },
+        {
+          "quantity": 300,
+          "typeID": 21019
+        },
+        {
+          "quantity": 300,
+          "typeID": 21025
+        },
+        {
+          "quantity": 400,
+          "typeID": 21011
+        },
+        {
+          "quantity": 400,
+          "typeID": 21021
+        },
+        {
+          "quantity": 500,
+          "typeID": 24545
+        },
+        {
+          "quantity": 500,
+          "typeID": 24547
+        },
+        {
+          "quantity": 500,
+          "typeID": 24556
+        },
+        {
+          "quantity": 500,
+          "typeID": 24558
+        },
+        {
+          "quantity": 500,
+          "typeID": 24560
+        },
+        {
+          "quantity": 1600,
+          "typeID": 57486
+        },
+        {
+          "quantity": 3200,
+          "typeID": 57478
+        }
+      ],
+      "products": [
+        {
+          "quantity": 1,
+          "typeID": 23773
+        }
+      ],
+      "skills": [
+        {
+          "level": 5,
+          "typeID": 22242
+        }
+      ],
+      "time": 9000000
+    }
+  },
+  {
+    "blueprintTypeID": 23912,
+    "name": {
+      "zh": "绝念级",
+      "en": "Thanatos"
+    },
+    "manufacturing": {
+      "materials": [
+        {
+          "quantity": 1,
+          "typeID": 57476
+        },
+        {
+          "quantity": 1,
+          "typeID": 57487
+        },
+        {
+          "quantity": 1,
+          "typeID": 57488
+        },
+        {
+          "quantity": 3,
+          "typeID": 21019
+        },
+        {
+          "quantity": 3,
+          "typeID": 21021
+        },
+        {
+          "quantity": 3,
+          "typeID": 21023
+        },
+        {
+          "quantity": 3,
+          "typeID": 21035
+        },
+        {
+          "quantity": 3,
+          "typeID": 24560
+        },
+        {
+          "quantity": 4,
+          "typeID": 21009
+        },
+        {
+          "quantity": 4,
+          "typeID": 21013
+        },
+        {
+          "quantity": 4,
+          "typeID": 21025
+        },
+        {
+          "quantity": 4,
+          "typeID": 21037
+        },
+        {
+          "quantity": 6,
+          "typeID": 21017
+        },
+        {
+          "quantity": 6,
+          "typeID": 24558
+        },
+        {
+          "quantity": 12,
+          "typeID": 21029
+        },
+        {
+          "quantity": 12,
+          "typeID": 57472
+        },
+        {
+          "quantity": 200,
+          "typeID": 57486
+        },
+        {
+          "quantity": 400,
+          "typeID": 57478
+        }
+      ],
+      "products": [
+        {
+          "quantity": 1,
+          "typeID": 23911
+        }
+      ],
+      "skills": [
+        {
+          "level": 3,
+          "typeID": 22242
+        }
+      ],
+      "time": 1800000
+    }
+  },
+  {
+    "blueprintTypeID": 23914,
+    "name": {
+      "zh": "夜神级",
+      "en": "Nyx"
+    },
+    "manufacturing": {
+      "materials": [
+        {
+          "quantity": 50,
+          "typeID": 21009
+        },
+        {
+          "quantity": 10,
+          "typeID": 21013
+        },
+        {
+          "quantity": 50,
+          "typeID": 21017
+        },
+        {
+          "quantity": 100,
+          "typeID": 21019
+        },
+        {
+          "quantity": 100,
+          "typeID": 21021
+        },
+        {
+          "quantity": 100,
+          "typeID": 21023
+        },
+        {
+          "quantity": 100,
+          "typeID": 21025
+        },
+        {
+          "quantity": 250,
+          "typeID": 21029
+        },
+        {
+          "quantity": 40,
+          "typeID": 21035
+        },
+        {
+          "quantity": 50,
+          "typeID": 21037
+        },
+        {
+          "quantity": 100,
+          "typeID": 24558
+        },
+        {
+          "quantity": 50,
+          "typeID": 24560
+        },
+        {
+          "quantity": 64,
+          "typeID": 57472
+        },
+        {
+          "quantity": 125,
+          "typeID": 57476
+        },
+        {
+          "quantity": 800,
+          "typeID": 57478
+        },
+        {
+          "quantity": 400,
+          "typeID": 57486
+        },
+        {
+          "quantity": 10,
+          "typeID": 57487
+        },
+        {
+          "quantity": 1,
+          "typeID": 57489
+        }
+      ],
+      "products": [
+        {
+          "quantity": 1,
+          "typeID": 23913
+        }
+      ],
+      "skills": [
+        {
+          "level": 4,
+          "typeID": 22242
+        }
+      ],
+      "time": 6000000
+    }
+  },
+  {
+    "blueprintTypeID": 23916,
+    "name": {
+      "zh": "奇美拉级",
+      "en": "Chimera"
+    },
+    "manufacturing": {
+      "materials": [
+        {
+          "quantity": 1,
+          "typeID": 57475
+        },
+        {
+          "quantity": 1,
+          "typeID": 57487
+        },
+        {
+          "quantity": 1,
+          "typeID": 57488
+        },
+        {
+          "quantity": 3,
+          "typeID": 21013
+        },
+        {
+          "quantity": 3,
+          "typeID": 21017
+        },
+        {
+          "quantity": 3,
+          "typeID": 21019
+        },
+        {
+          "quantity": 3,
+          "typeID": 21021
+        },
+        {
+          "quantity": 3,
+          "typeID": 24560
+        },
+        {
+          "quantity": 4,
+          "typeID": 21009
+        },
+        {
+          "quantity": 4,
+          "typeID": 21025
+        },
+        {
+          "quantity": 4,
+          "typeID": 21035
+        },
+        {
+          "quantity": 4,
+          "typeID": 21037
+        },
+        {
+          "quantity": 6,
+          "typeID": 21023
+        },
+        {
+          "quantity": 6,
+          "typeID": 24558
+        },
+        {
+          "quantity": 12,
+          "typeID": 21029
+        },
+        {
+          "quantity": 12,
+          "typeID": 57471
+        },
+        {
+          "quantity": 200,
+          "typeID": 57486
+        },
+        {
+          "quantity": 400,
+          "typeID": 57478
+        }
+      ],
+      "products": [
+        {
+          "quantity": 1,
+          "typeID": 23915
+        }
+      ],
+      "skills": [
+        {
+          "level": 3,
+          "typeID": 22242
+        }
+      ],
+      "time": 1800000
+    }
+  },
+  {
+    "blueprintTypeID": 23918,
+    "name": {
+      "zh": "飞龙级",
+      "en": "Wyvern"
+    },
+    "manufacturing": {
+      "materials": [
+        {
+          "quantity": 50,
+          "typeID": 21009
+        },
+        {
+          "quantity": 10,
+          "typeID": 21013
+        },
+        {
+          "quantity": 25,
+          "typeID": 21017
+        },
+        {
+          "quantity": 75,
+          "typeID": 21019
+        },
+        {
+          "quantity": 125,
+          "typeID": 21021
+        },
+        {
+          "quantity": 125,
+          "typeID": 21023
+        },
+        {
+          "quantity": 100,
+          "typeID": 21025
+        },
+        {
+          "quantity": 250,
+          "typeID": 21029
+        },
+        {
+          "quantity": 40,
+          "typeID": 21035
+        },
+        {
+          "quantity": 50,
+          "typeID": 21037
+        },
+        {
+          "quantity": 100,
+          "typeID": 24558
+        },
+        {
+          "quantity": 50,
+          "typeID": 24560
+        },
+        {
+          "quantity": 64,
+          "typeID": 57471
+        },
+        {
+          "quantity": 125,
+          "typeID": 57475
+        },
+        {
+          "quantity": 800,
+          "typeID": 57478
+        },
+        {
+          "quantity": 400,
+          "typeID": 57486
+        },
+        {
+          "quantity": 10,
+          "typeID": 57487
+        },
+        {
+          "quantity": 1,
+          "typeID": 57489
+        }
+      ],
+      "products": [
+        {
+          "quantity": 1,
+          "typeID": 23917
+        }
+      ],
+      "skills": [
+        {
+          "level": 4,
+          "typeID": 22242
+        }
+      ],
+      "time": 6000000
+    }
+  },
+  {
+    "blueprintTypeID": 23920,
+    "name": {
+      "zh": "万古级",
+      "en": "Aeon"
+    },
+    "manufacturing": {
+      "materials": [
+        {
+          "quantity": 50,
+          "typeID": 21009
+        },
+        {
+          "quantity": 40,
+          "typeID": 21013
+        },
+        {
+          "quantity": 125,
+          "typeID": 21017
+        },
+        {
+          "quantity": 100,
+          "typeID": 21019
+        },
+        {
+          "quantity": 100,
+          "typeID": 21021
+        },
+        {
+          "quantity": 25,
+          "typeID": 21023
+        },
+        {
+          "quantity": 100,
+          "typeID": 21025
+        },
+        {
+          "quantity": 250,
+          "typeID": 21029
+        },
+        {
+          "quantity": 10,
+          "typeID": 21035
+        },
+        {
+          "quantity": 50,
+          "typeID": 21037
+        },
+        {
+          "quantity": 100,
+          "typeID": 24558
+        },
+        {
+          "quantity": 50,
+          "typeID": 24560
+        },
+        {
+          "quantity": 64,
+          "typeID": 57470
+        },
+        {
+          "quantity": 125,
+          "typeID": 57474
+        },
+        {
+          "quantity": 800,
+          "typeID": 57478
+        },
+        {
+          "quantity": 400,
+          "typeID": 57486
+        },
+        {
+          "quantity": 10,
+          "typeID": 57487
+        },
+        {
+          "quantity": 1,
+          "typeID": 57489
+        }
+      ],
+      "products": [
+        {
+          "quantity": 1,
+          "typeID": 23919
+        }
+      ],
+      "skills": [
+        {
+          "level": 4,
+          "typeID": 22242
+        }
+      ],
+      "time": 6000000
+    }
+  },
+  {
+    "blueprintTypeID": 24484,
+    "name": {
+      "zh": "尼铎格尔级",
+      "en": "Nidhoggur"
+    },
+    "manufacturing": {
+      "materials": [
+        {
+          "quantity": 1,
+          "typeID": 57477
+        },
+        {
+          "quantity": 1,
+          "typeID": 57487
+        },
+        {
+          "quantity": 1,
+          "typeID": 57488
+        },
+        {
+          "quantity": 3,
+          "typeID": 21013
+        },
+        {
+          "quantity": 3,
+          "typeID": 21017
+        },
+        {
+          "quantity": 3,
+          "typeID": 21019
+        },
+        {
+          "quantity": 3,
+          "typeID": 21021
+        },
+        {
+          "quantity": 3,
+          "typeID": 24560
+        },
+        {
+          "quantity": 4,
+          "typeID": 21009
+        },
+        {
+          "quantity": 4,
+          "typeID": 21025
+        },
+        {
+          "quantity": 4,
+          "typeID": 21035
+        },
+        {
+          "quantity": 4,
+          "typeID": 21037
+        },
+        {
+          "quantity": 6,
+          "typeID": 21023
+        },
+        {
+          "quantity": 6,
+          "typeID": 24558
+        },
+        {
+          "quantity": 12,
+          "typeID": 21029
+        },
+        {
+          "quantity": 12,
+          "typeID": 57473
+        },
+        {
+          "quantity": 200,
+          "typeID": 57486
+        },
+        {
+          "quantity": 400,
+          "typeID": 57478
+        }
+      ],
+      "products": [
+        {
+          "quantity": 1,
+          "typeID": 24483
+        }
+      ],
+      "skills": [
+        {
+          "level": 3,
+          "typeID": 22242
+        }
+      ],
+      "time": 1800000
+    }
+  },
+  {
+    "blueprintTypeID": 28353,
+    "name": {
+      "zh": "长须鲸级",
+      "en": "Rorqual"
+    },
+    "manufacturing": {
+      "materials": [
+        {
+          "quantity": 1,
+          "typeID": 57487
+        },
+        {
+          "quantity": 5,
+          "typeID": 21009
+        },
+        {
+          "quantity": 5,
+          "typeID": 21013
+        },
+        {
+          "quantity": 5,
+          "typeID": 21017
+        },
+        {
+          "quantity": 5,
+          "typeID": 21023
+        },
+        {
+          "quantity": 5,
+          "typeID": 21029
+        },
+        {
+          "quantity": 5,
+          "typeID": 24545
+        },
+        {
+          "quantity": 10,
+          "typeID": 21019
+        },
+        {
+          "quantity": 10,
+          "typeID": 21021
+        },
+        {
+          "quantity": 10,
+          "typeID": 21025
+        },
+        {
+          "quantity": 15,
+          "typeID": 24558
+        },
+        {
+          "quantity": 15,
+          "typeID": 24560
+        },
+        {
+          "quantity": 20,
+          "typeID": 21027
+        },
+        {
+          "quantity": 30,
+          "typeID": 21035
+        },
+        {
+          "quantity": 30,
+          "typeID": 24547
+        },
+        {
+          "quantity": 40,
+          "typeID": 21037
+        },
+        {
+          "quantity": 200,
+          "typeID": 57486
+        },
+        {
+          "quantity": 400,
+          "typeID": 57478
+        }
+      ],
+      "products": [
+        {
+          "quantity": 1,
+          "typeID": 28352
+        }
+      ],
+      "skills": [
+        {
+          "level": 4,
+          "typeID": 22242
+        }
+      ],
+      "time": 2000000
+    }
+  },
+  {
+    "blueprintTypeID": 34329,
+    "name": {
+      "zh": "弓头鲸级",
+      "en": "Bowhead"
+    },
+    "manufacturing": {
+      "materials": [
+        {
+          "quantity": 15,
+          "typeID": 21009
+        },
+        {
+          "quantity": 5,
+          "typeID": 21017
+        },
+        {
+          "quantity": 5,
+          "typeID": 21023
+        },
+        {
+          "quantity": 30,
+          "typeID": 21027
+        },
+        {
+          "quantity": 5,
+          "typeID": 21037
+        },
+        {
+          "quantity": 7,
+          "typeID": 24558
+        },
+        {
+          "quantity": 400,
+          "typeID": 57478
+        },
+        {
+          "quantity": 200,
+          "typeID": 57486
+        },
+        {
+          "quantity": 1,
+          "typeID": 57487
+        }
+      ],
+      "products": [
+        {
+          "quantity": 1,
+          "typeID": 34328
+        }
+      ],
+      "skills": [
+        {
+          "level": 1,
+          "typeID": 22242
+        }
+      ],
+      "time": 1500000
+    }
+  },
+  {
+    "blueprintTypeID": 41582,
+    "name": {
+      "zh": "使徒级",
+      "en": "Apostle"
+    },
+    "manufacturing": {
+      "materials": [
+        {
+          "quantity": 10,
+          "typeID": 21009
+        },
+        {
+          "quantity": 15,
+          "typeID": 21013
+        },
+        {
+          "quantity": 20,
+          "typeID": 21017
+        },
+        {
+          "quantity": 15,
+          "typeID": 21019
+        },
+        {
+          "quantity": 10,
+          "typeID": 21021
+        },
+        {
+          "quantity": 10,
+          "typeID": 21023
+        },
+        {
+          "quantity": 5,
+          "typeID": 21025
+        },
+        {
+          "quantity": 5,
+          "typeID": 21029
+        },
+        {
+          "quantity": 10,
+          "typeID": 21035
+        },
+        {
+          "quantity": 10,
+          "typeID": 21037
+        },
+        {
+          "quantity": 25,
+          "typeID": 21039
+        },
+        {
+          "quantity": 15,
+          "typeID": 24558
+        },
+        {
+          "quantity": 8,
+          "typeID": 24560
+        },
+        {
+          "quantity": 32,
+          "typeID": 57470
+        },
+        {
+          "quantity": 5,
+          "typeID": 57474
+        },
+        {
+          "quantity": 400,
+          "typeID": 57478
+        },
+        {
+          "quantity": 200,
+          "typeID": 57486
+        },
+        {
+          "quantity": 1,
+          "typeID": 57487
+        },
+        {
+          "quantity": 1,
+          "typeID": 57488
+        }
+      ],
+      "products": [
+        {
+          "quantity": 1,
+          "typeID": 37604
+        }
+      ],
+      "skills": [
+        {
+          "level": 3,
+          "typeID": 22242
+        }
+      ],
+      "time": 2000000
+    }
+  },
+  {
+    "blueprintTypeID": 41583,
+    "name": {
+      "zh": "龙鸟级",
+      "en": "Minokawa"
+    },
+    "manufacturing": {
+      "materials": [
+        {
+          "quantity": 10,
+          "typeID": 21009
+        },
+        {
+          "quantity": 10,
+          "typeID": 21013
+        },
+        {
+          "quantity": 10,
+          "typeID": 21017
+        },
+        {
+          "quantity": 15,
+          "typeID": 21019
+        },
+        {
+          "quantity": 10,
+          "typeID": 21021
+        },
+        {
+          "quantity": 20,
+          "typeID": 21023
+        },
+        {
+          "quantity": 5,
+          "typeID": 21025
+        },
+        {
+          "quantity": 5,
+          "typeID": 21029
+        },
+        {
+          "quantity": 15,
+          "typeID": 21035
+        },
+        {
+          "quantity": 10,
+          "typeID": 21037
+        },
+        {
+          "quantity": 25,
+          "typeID": 21039
+        },
+        {
+          "quantity": 15,
+          "typeID": 24558
+        },
+        {
+          "quantity": 8,
+          "typeID": 24560
+        },
+        {
+          "quantity": 32,
+          "typeID": 57471
+        },
+        {
+          "quantity": 5,
+          "typeID": 57475
+        },
+        {
+          "quantity": 400,
+          "typeID": 57478
+        },
+        {
+          "quantity": 200,
+          "typeID": 57486
+        },
+        {
+          "quantity": 1,
+          "typeID": 57487
+        },
+        {
+          "quantity": 1,
+          "typeID": 57488
+        }
+      ],
+      "products": [
+        {
+          "quantity": 1,
+          "typeID": 37605
+        }
+      ],
+      "skills": [
+        {
+          "level": 3,
+          "typeID": 22242
+        }
+      ],
+      "time": 2000000
+    }
+  },
+  {
+    "blueprintTypeID": 41585,
+    "name": {
+      "zh": "利夫级",
+      "en": "Lif"
+    },
+    "manufacturing": {
+      "materials": [
+        {
+          "quantity": 10,
+          "typeID": 21009
+        },
+        {
+          "quantity": 10,
+          "typeID": 21013
+        },
+        {
+          "quantity": 10,
+          "typeID": 21017
+        },
+        {
+          "quantity": 15,
+          "typeID": 21019
+        },
+        {
+          "quantity": 10,
+          "typeID": 21021
+        },
+        {
+          "quantity": 20,
+          "typeID": 21023
+        },
+        {
+          "quantity": 5,
+          "typeID": 21025
+        },
+        {
+          "quantity": 5,
+          "typeID": 21029
+        },
+        {
+          "quantity": 15,
+          "typeID": 21035
+        },
+        {
+          "quantity": 10,
+          "typeID": 21037
+        },
+        {
+          "quantity": 25,
+          "typeID": 21039
+        },
+        {
+          "quantity": 15,
+          "typeID": 24558
+        },
+        {
+          "quantity": 8,
+          "typeID": 24560
+        },
+        {
+          "quantity": 32,
+          "typeID": 57473
+        },
+        {
+          "quantity": 5,
+          "typeID": 57477
+        },
+        {
+          "quantity": 400,
+          "typeID": 57478
+        },
+        {
+          "quantity": 200,
+          "typeID": 57486
+        },
+        {
+          "quantity": 1,
+          "typeID": 57487
+        },
+        {
+          "quantity": 1,
+          "typeID": 57488
+        }
+      ],
+      "products": [
+        {
+          "quantity": 1,
+          "typeID": 37606
+        }
+      ],
+      "skills": [
+        {
+          "level": 3,
+          "typeID": 22242
+        }
+      ],
+      "time": 2000000
+    }
+  },
+  {
+    "blueprintTypeID": 41584,
+    "name": {
+      "zh": "尼纳苏级",
+      "en": "Ninazu"
+    },
+    "manufacturing": {
+      "materials": [
+        {
+          "quantity": 10,
+          "typeID": 21009
+        },
+        {
+          "quantity": 15,
+          "typeID": 21013
+        },
+        {
+          "quantity": 20,
+          "typeID": 21017
+        },
+        {
+          "quantity": 15,
+          "typeID": 21019
+        },
+        {
+          "quantity": 10,
+          "typeID": 21021
+        },
+        {
+          "quantity": 10,
+          "typeID": 21023
+        },
+        {
+          "quantity": 5,
+          "typeID": 21025
+        },
+        {
+          "quantity": 5,
+          "typeID": 21029
+        },
+        {
+          "quantity": 10,
+          "typeID": 21035
+        },
+        {
+          "quantity": 10,
+          "typeID": 21037
+        },
+        {
+          "quantity": 25,
+          "typeID": 21039
+        },
+        {
+          "quantity": 15,
+          "typeID": 24558
+        },
+        {
+          "quantity": 8,
+          "typeID": 24560
+        },
+        {
+          "quantity": 32,
+          "typeID": 57472
+        },
+        {
+          "quantity": 5,
+          "typeID": 57476
+        },
+        {
+          "quantity": 400,
+          "typeID": 57478
+        },
+        {
+          "quantity": 200,
+          "typeID": 57486
+        },
+        {
+          "quantity": 1,
+          "typeID": 57487
+        },
+        {
+          "quantity": 1,
+          "typeID": 57488
+        }
+      ],
+      "products": [
+        {
+          "quantity": 1,
+          "typeID": 37607
+        }
+      ],
+      "skills": [
+        {
+          "level": 3,
+          "typeID": 22242
+        }
+      ],
+      "time": 2000000
+    }
+  },
+  {
+    "blueprintTypeID": 28607,
+    "name": {
+      "zh": "逆戟鲸级",
+      "en": "Orca"
+    },
+    "manufacturing": {
+      "materials": [
+        {
+          "quantity": 4,
+          "typeID": 21013
+        },
+        {
+          "quantity": 9,
+          "typeID": 21019
+        },
+        {
+          "quantity": 38,
+          "typeID": 21027
+        },
+        {
+          "quantity": 7,
+          "typeID": 21035
+        },
+        {
+          "quantity": 16,
+          "typeID": 21037
+        },
+        {
+          "quantity": 7,
+          "typeID": 24558
+        },
+        {
+          "quantity": 4,
+          "typeID": 24560
+        },
+        {
+          "quantity": 200,
+          "typeID": 57478
+        },
+        {
+          "quantity": 25,
+          "typeID": 57479
+        },
+        {
+          "quantity": 100,
+          "typeID": 57486
+        }
+      ],
+      "products": [
+        {
+          "quantity": 1,
+          "typeID": 28606
+        }
+      ],
+      "skills": [
+        {
+          "level": 1,
+          "typeID": 22242
+        }
+      ],
+      "time": 1500000
+    }
+  }
+]
